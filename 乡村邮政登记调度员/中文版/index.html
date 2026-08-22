@@ -11,7 +11,7 @@
   --text: #333;
   --muted: #666;
   --line: #d9d9d9;
-  --blue: #1890ff;
+  --blue: #2a5caa;
   --blue-dk: #1a365d;
   --warn: #fff3cd;
   --danger: #8b0000;
@@ -26,9 +26,9 @@
 * { box-sizing: border-box; }
 html, body { margin: 0; height: 100%; }
 body {
-  font: 13px/1.45 system-ui, -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  font: 12px/1.5 SimSun, "宋体", "NSimSun", serif;
   color: var(--text);
-  background: #3d4450;
+  background: #d4d0c8;
   min-height: 100%;
 }
 button, input, select { font: inherit; }
@@ -46,16 +46,16 @@ button { cursor: pointer; }
 #boot .boot-log { white-space: pre-wrap; font-size: 13px; max-width: 640px; }
 #boot .blink { animation: blink 1s step-end infinite; }
 #login {
-  background: linear-gradient(#1b3a6b, #0d2244);
+  background: #d4d0c8;
   display: flex; align-items: center; justify-content: center;
   min-height: 100%;
 }
 .login-box {
-  width: 360px; background: var(--oa); border: 2px solid #0a246a;
-  box-shadow: 6px 6px 0 #0005;
+  width: 360px; background: #f0f0f0; border: 2px solid; border-color: #fff #808080 #808080 #fff;
+  
 }
 .login-title {
-  background: linear-gradient(90deg, #0a246a, #3a6ea5);
+  background: #0a246a;
   color: #fff; padding: 6px 10px; font-size: 13px; font-weight: 700;
 }
 .login-body { padding: 18px 20px 16px; }
@@ -64,29 +64,30 @@ button { cursor: pointer; }
 .row { display: flex; align-items: center; gap: 8px; margin: 8px 0; }
 .row label { width: 72px; color: #444; }
 .row input {
-  flex: 1; height: 26px; border: 1px solid #7f9db9; padding: 0 8px; background: #fff;
+  flex: 1; height: 26px; border: 2px inset #d4d0c8; padding: 0 8px; background: #fff;
 }
 .row input[readonly] { background: #eee; color: #555; }
 .login-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 16px; }
 .btn {
-  height: 28px; padding: 0 14px; border: 1px solid #8c8c8c;
-  background: linear-gradient(#fff, #e6e6e6); color: #222;
+  height: 28px; padding: 0 14px; border: 1px solid;
+  border-color: #fff #808080 #808080 #fff;
+  background: #d4d0c8; color: #000;
 }
 .btn:hover { filter: brightness(1.04); }
 .btn:disabled { opacity: .5; cursor: not-allowed; }
-.btn-pri { background: linear-gradient(#4a90d9, #2b6cb0); color: #fff; border-color: #1a4a8a; }
-.btn-danger { background: linear-gradient(#a33, #8b0000); color: #fff; border-color: #5a0000; }
-.btn-warn { background: linear-gradient(#ffe08a, #e6b422); border-color: #b8860b; }
+.btn-pri { background: #d4d0c8; color: #000; border-color: #fff #808080 #808080 #fff; }
+.btn-danger { background: #8b0000; color: #fff; border-color: #5a0000; }
+.btn-warn { background: #e6b422; border-color: #b8860b; }
 .btn-ghost { background: #f5f5f5; }
 
 /* ===== desktop ===== */
-#desk { display: flex; flex-direction: column; height: 100vh; background: #7a8494; }
+#desk { display: flex; flex-direction: column; height: 100vh; background: #d4d0c8; }
 .win {
   flex: 1; margin: 8px; background: var(--bg); border: 2px solid #2a3340;
-  display: flex; flex-direction: column; min-height: 0; box-shadow: 0 8px 24px #0005;
+  display: flex; flex-direction: column; min-height: 0; 
 }
 .titlebar {
-  background: linear-gradient(90deg, #1a365d, #2c5282);
+  background: #1a365d;
   color: #fff; display: flex; align-items: center; gap: 10px;
   padding: 6px 10px; font-size: 13px; user-select: none;
 }
@@ -105,7 +106,7 @@ button { cursor: pointer; }
   height: 22px; padding: 0 7px; font-size: 11px; border: 1px solid #3d6a9a;
   background: #163154; color: #d6e6f7;
 }
-.speedbar button.on { background: #1890ff; border-color: #7ec1ff; color: #fff; }
+.speedbar button.on { background: #2a5caa; border-color: #7ec1ff; color: #fff; }
 .menubar {
   background: #e8eaed; border-bottom: 1px solid var(--line);
   display: flex; gap: 2px; padding: 2px 8px; font-size: 12px;
@@ -188,7 +189,7 @@ button { cursor: pointer; }
 }
 .scanline {
   position: absolute; left: 0; right: 0; height: 2px; background: #ff2a2a;
-  box-shadow: 0 0 8px #ff2a2a; display: none; top: 0;
+   display: none; top: 0;
 }
 .scanning .scanline { display: block; animation: scan 1.25s linear; }
 .lamp { display: inline-block; width: 10px; height: 10px; border-radius: 50%; border: 1px solid #333; vertical-align: middle; margin-right: 6px; }
@@ -301,7 +302,7 @@ table.oa tr.dead td { text-decoration: line-through; outline: 1px solid var(--ba
 .tl-item { position: relative; margin: 0 0 16px; background: #fff; border: 1px solid #d9e4ef; padding: 10px 12px; }
 .tl-item::before {
   content: ""; position: absolute; left: -24px; top: 12px; width: 10px; height: 10px;
-  border-radius: 50%; background: #1890ff; border: 2px solid #fff;
+  border-radius: 50%; background: #2a5caa; border: 2px solid #fff;
 }
 .tl-item.bad { border-color: var(--bad-bd); }
 .tl-item.bad::before { background: #f5222d; }
@@ -339,7 +340,7 @@ table.oa tr.dead td { text-decoration: line-through; outline: 1px solid var(--ba
 
 .zhao {
   position: absolute; right: 18px; bottom: 36px; width: 280px;
-  background: #fff; border: 1px solid #4a6fa5; box-shadow: 4px 4px 0 #0002;
+  background: #fff; border: 1px solid #4a6fa5; 
   z-index: 8; font-size: 12px;
 }
 .zhao .zt {
@@ -356,8 +357,8 @@ table.oa tr.dead td { text-decoration: line-through; outline: 1px solid var(--ba
   align-items: center; justify-content: center; z-index: 20;
 }
 #modal.on { display: flex; }
-.dlg { width: min(520px, 92vw); background: var(--oa); border: 2px solid #0a246a; box-shadow: 8px 8px 0 #0004; }
-.dlg-title { background: linear-gradient(90deg, #0a246a, #3a6ea5); color: #fff; padding: 5px 10px; font-weight: 700; }
+.dlg { width: min(520px, 92vw); background: #f0f0f0; border: 2px solid #0a246a;  }
+.dlg-title { background: #0a246a; color: #fff; padding: 5px 10px; font-weight: 700; }
 .dlg-body { padding: 14px 16px; font-size: 13px; }
 .dlg-body p { margin: 0 0 8px; }
 .dlg-acts { display: flex; justify-content: flex-end; gap: 8px; padding: 0 16px 14px; }
@@ -375,7 +376,7 @@ table.oa tr.dead td { text-decoration: line-through; outline: 1px solid var(--ba
 }
 .polaroid {
   width: min(420px, 92vw); background: #efe6d6; color: #333; padding: 12px 12px 18px;
-  box-shadow: 0 12px 40px #000a; transform: rotate(-1.5deg);
+   transform: rotate(-1.5deg);
 }
 .polaroid .pic {
   height: 220px;
@@ -397,7 +398,7 @@ table.oa tr.dead td { text-decoration: line-through; outline: 1px solid var(--ba
   .ending-copy { margin: 18px 0 0; }
 }
 
-.guide { outline: 2px dashed #1890ff !important; outline-offset: -2px; }
+.guide { outline: 2px dashed #2a5caa !important; outline-offset: -2px; }
 
 .acro-bar {
   display: flex; gap: 6px; align-items: center; flex-wrap: wrap;
