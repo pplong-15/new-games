@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-intro-manual">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>班前纸　槐荫网格</title>
+  <link rel="stylesheet" href="css/intro-manual.css">
+  <link rel="stylesheet" href="css/pick.css">
+</head>
+<body>
+  <header class="intro-hero">
+    <div class="image-area"><img alt="" src="img/alley.jpg"></div>
+    <h1>二十二点前把那户传上去</h1>
+  </header>
+  <main>
+    <section>
+      <h2>今晚的班</h2>
+      <p>你是卞梁。槐荫街道网格员，入职第八个月。今天不是下户的日子，综治科把单子甩到屏上：枣树巷十七号，过继纠纷，必须在二十二点前上传摘要。</p>
+      <p>下午尤广路过你桌子，敲了两下杯盖。字段你自己对。对完传上去。回访车按你传的问。他不看你信谁，只看栏齐不齐。</p>
+      <p>你没有核定权。改不了户口，也碰不了祠堂柜子里的纸。能做的是把互相打架的说法，勾成一版给系统。系统认上传，不认你心里觉得哪边像人话。</p>
+    </section>
+    <section>
+      <h2>桌上有什么</h2>
+      <p>值班台左边是工单，右边是上传台，顶上有系统钟。采集目录里能调户政查阅、红纸抄件、谱牒公司摘页、巷里的民情通、网格信箱。有的地址要信里点到才打得开，别去站外乱撞。</p>
+      <p>一栏只能留一版。传出去撤不回来。三栏齐了才能签发回访口径。拖过二十二点，空单会被退。</p>
+      <p class="boot-actions">
+        <a class="enter-link" href="desk.html">打开综治值班台</a>
+        <button type="button" class="ghost" id="wipe">清掉本机上次没传完的草稿</button>
+      </p>
+    </section>
+    <section>
+      <h2>卡住的时候</h2>
+      <p>科长便笺在值班台底下，一次只多翻一张。前几张只指方向，不替你勾。</p>
+      <p>人名地名都是编的。别拿去对现实户口。</p>
+    </section>
+  </main>
+  <script src="js/state.js"></script>
+  <script>
+    document.getElementById("wipe").onclick = function () {
+      HY.reset();
+      this.textContent = "草稿清了，从值班台重新进";
+    };
+  </script>
+</body>
+</html>

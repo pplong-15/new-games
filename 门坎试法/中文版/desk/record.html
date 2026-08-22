@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>过门记录</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/desk-extra.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>过门格子</strong>
+      <div>
+        <a class="ghost-btn" href="home.html">回台</a>
+        <a class="ghost-btn" href="try.html">试记</a>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>本台已写下的过门</h2>
+      <p>记录员栏空着，不等于没发生。空着只说明当时没人肯签名。</p>
+    </div>
+    <div id="chips"></div>
+    <table>
+      <thead><tr><th>时刻</th><th>门</th><th>队伍</th><th>动作</th><th>备注</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>19:10</td>
+          <td>正门坎</td>
+          <td>贺连舟队</td>
+          <td>待记</td>
+          <td>自称要进堂，红布罩着</td>
+        </tr>
+        <tr>
+          <td>19:40</td>
+          <td>正门坎</td>
+          <td>贺连舟队前排</td>
+          <td>踩踏</td>
+          <td>有人脚在坎上，摄像还蹲着</td>
+        </tr>
+        <tr>
+          <td>19:52</td>
+          <td>二门坎</td>
+          <td>施工</td>
+          <td>顶物</td>
+          <td>姜篾的柜，跟这队不是一回事</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="mk-side">十九点四十那一格已经脏了。你今晚一次试记都没做，这格也在。姜篾那行是二门，别并进正门。03/44</p>
+    <p class="mk-side"><a href="../public/noise.html">施工投诉在对外页</a>　<a href="../forum/step.html">卜巷也写过脚</a></p>
+
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    MK.mark("seen.record");
+    document.getElementById("chips").innerHTML = MK.chipsHtml();
+</script>
+<p class="mk-side">记录员栏空。第一眼当没人值班——错。有人看见，不肯签名。空≠干净。干净会写「正常跨」。空＝那一脚没人认。别把空栏抄成可进堂。</p>
+<p class="mk-side">同队前排四个字含糊。含糊正好。本台不认脸，认动作。动作写踩踏，备注写摄像还蹲着。</p>
+</body>
+</html>

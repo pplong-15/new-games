@@ -1,0 +1,156 @@
+/* ==========================================================================
+   工作台真皮覆盖层（追加在民俗站层之后）
+   取自若依 RuoYi 后台模板真实设计语言（ry-ui.css 实测）
+   核心：深蓝侧栏 #263238 / 浅灰内容区 #f4f4f4 / 白卡片 #ddd 边 /
+        蓝主色 #1890ff / .box 顶部 3px #d2d6de / 绿强调 #1ab394
+   ========================================================================== */
+
+/* 页面底：浅灰 */
+.workbench-page,.workbench-tool,.workbench-result,.related-chain,
+.workbench-source,.ending-page,.not-found{background:#f4f4f4 !important}
+
+/* 顶栏：白底 */
+.institution-topbar{background:#fff !important;border-bottom:1px solid #e7eaec !important;border-top:none !important}
+.institution-wordmark{color:#333 !important;font-family:"Microsoft YaHei","微软雅黑",Arial,sans-serif !important;font-weight:700 !important;letter-spacing:0 !important}
+.institution-system-name{color:#888 !important}
+.institution-session{color:#666 !important}
+.institution-topbar-actions a{color:#1890ff !important;border:1px solid #dcdfe6 !important;background:#fff !important}
+.institution-topbar .session-record-actions a,
+.institution-topbar .session-record-actions button,
+.institution-topbar .session-record-actions .excerpt-status{color:#1890ff !important;background:#fff !important;border:1px solid #dcdfe6 !important}
+
+/* 头部标题：白底 + 深灰字（覆盖色彩层 #efe6d4 米色残留） */
+.workbench-app-header,.tool-heading.workbench-app-header,
+.receipt-header.workbench-app-header,.controlled-source-header.workbench-app-header{background:#fff !important;border-bottom:1px solid #e7eaec !important}
+.workbench-app-header h1,.tool-heading h1{font-family:"Microsoft YaHei","微软雅黑",Arial,sans-serif !important;color:#333 !important;letter-spacing:0 !important}
+.workbench-app-header .eyebrow,.workbench-app-header .assignment-label{color:#888 !important}
+
+/* 工具栏：白底灰边 */
+.workbench-toolbar{background:#fff !important;border-bottom:1px solid #e7eaec !important;color:#333 !important}
+.workbench-toolbar a{color:#1890ff !important}
+.workbench-toolbar button{color:#333 !important;background:#fff !important;border:1px solid #dcdfe6 !important}
+
+/* 左侧菜单树：深蓝 */
+.workbench-process-tree,.tool-task-rail{background:#263238 !important;border-right:1px solid #1a2229 !important;border-top:none !important;color:#a7b1c2 !important}
+.workbench-process-tree>h2,.tool-task-rail>h2{color:#fff !important;font-size:13px !important}
+.workbench-process-tree li,.workbench-process-tree li>div strong{color:#a7b1c2 !important}
+.workbench-process-tree small{color:#6a7683 !important}
+.workbench-process-tree>ol>li:not(:last-child)::after{background:#3d4a55 !important}
+.workbench-process-tree li>span,.panel-procedure span{background:transparent !important;border:1px solid #4a5560 !important;color:#a7b1c2 !important}
+.workbench-process-tree li.is-complete>span{background:#1ab394 !important;border-color:#1ab394 !important;color:#fff !important}
+.workbench-process-tree li.is-current>span,.panel-procedure li.is-current span{background:#1890ff !important;border-color:#1890ff !important;color:#fff !important}
+.workbench-task-rail{border-top:1px solid #1a2229 !important}
+.workbench-task-rail h3{color:#fff !important;font-size:12px !important}
+.panel-procedure li{color:#a7b1c2 !important}
+
+/* 队列卡 */
+.workbench-job-row{background:#2e3d46 !important;border-color:#1a2229 !important;color:#a7b1c2 !important}
+.workbench-task-rail .workbench-job-row,
+.task-rail-current.workbench-job-row{background:#1890ff !important;border-color:#1890ff !important;box-shadow:none !important}
+.task-rail-current .job-title{color:#fff !important}
+.task-rail-current .job-code{color:#d6e9ff !important}
+.task-rail-current .job-status{color:#fff !important}
+.task-rail-paused{background:#8a6d3b !important;border-color:#6d5630 !important}
+
+/* 内容区卡片：白底 + 灰边 + 顶部 3px 灰条（若依 .box） */
+.workbench-case-area,.tool-case-area{background:#f4f4f4 !important}
+.case-area-heading{background:#fff !important;border-bottom:1px solid #e7eaec !important}
+.case-area-heading h2,.case-area-heading dl{color:#333 !important}
+.case-area-heading>div>span{color:#888 !important}
+
+.current-assignment,.receipt-ready{background:#fff !important;border:1px solid #e7eaec !important;border-left:3px solid #1890ff !important;border-top:none !important}
+.project-reaction{background:#fff !important;border:1px solid #e7eaec !important;border-left:3px solid #1ab394 !important;color:#333 !important}
+.project-reaction blockquote{background:#fafafa !important;border-left:3px solid #1ab394 !important;color:#333 !important}
+.project-reaction .reaction-label{color:#888 !important}
+.reaction-channel{color:#888 !important}
+
+.operation-sheet{background:#fff !important;border:1px solid #e7eaec !important;border-top:3px solid #d2d6de !important}
+.operation-sheet-heading{background:#fff !important;border-bottom:1px solid #eee !important}
+.operation-sheet-heading h2{color:#333 !important}
+.operation-sheet-heading h2::before{content:none !important}
+.operation-sheet-heading p{color:#666 !important}
+
+/* 表单 */
+.form-header{color:#6379bb !important}
+.question-block>span,.question-block legend{color:#333 !important}
+.question-block select,.question-block input{background:#fff !important;border:1px solid #dcdfe6 !important;border-radius:2px !important;color:#333 !important}
+.choice-option{background:#fff !important;border-bottom:1px solid #eee !important}
+.choice-option:has(input:checked){background:#e6f0fb !important;border-color:#1890ff !important}
+.choice-option input{accent-color:#1890ff !important}
+.form-actions{background:#fafafa !important;border-top:1px solid #e7eaec !important}
+.form-actions>div>span{color:#888 !important}
+
+/* 状态提示 */
+.saved-panel{background:#e8f8f2 !important;border-left:3px solid #1ab394 !important;color:#145e50 !important}
+.form-error{background:#fef0f0 !important;border-color:#fbc4c4 !important;border-left:3px solid #f56c6c !important;color:#c0392b !important}
+.hint-drawer{background:#fff !important;border:1px solid #e7eaec !important}
+.direct-hint-confirm{background:#fffbe6 !important;border:1px solid #ffe58f !important;color:#8a6d3b !important}
+.next-question{background:#e6f0fb !important;border:1px solid #b3d1f5 !important;color:#1f5fa8 !important}
+.next-question h2,.next-question p{color:#1f5fa8 !important}
+
+/* 来源链接 */
+.source-links{background:#fff !important;border:1px solid #e7eaec !important}
+.source-links-heading{background:#263238 !important;color:#fff !important}
+.source-links-heading h3,.source-links-heading p{color:#fff !important}
+.source-links-heading>span{color:#7fd4c1 !important}
+.source-links li{border-color:#e7eaec !important}
+.source-links li a{color:#1890ff !important}
+.source-links li a small{color:#999 !important}
+.source-links li>b{color:#1ab394 !important}
+
+/* 面板导航 */
+.panel-nav{border:1px solid #e7eaec !important;background:#fff !important}
+.panel-nav>*{background:#fff !important;border-right:1px solid #e7eaec !important;color:#333 !important}
+.panel-nav>a[aria-current="step"]{background:#e6f0fb !important;box-shadow:inset 0 -2px #1890ff !important;color:#1890ff !important}
+.locked-panel{color:#bbb !important}
+.tool-task-rail .panel-nav>*{background:rgba(255,255,255,0.06) !important;border-color:#3d4a55 !important;color:#a7b1c2 !important}
+.tool-task-rail .panel-nav>a[aria-current="step"]{background:#1890ff !important;color:#fff !important}
+
+/* 材料提示卡 */
+.artifact-cue>div,.tool-task-rail .artifact-cue>div,
+.workbench-operation-shell>.tool-task-rail .artifact-cue>div{background:rgba(255,255,255,0.06) !important;border-color:#3d4a55 !important;color:#a7b1c2 !important}
+.tool-task-rail .artifact-cue h3{color:#fff !important}
+.tool-task-rail .artifact-cue p{color:#a7b1c2 !important}
+
+/* 受控附件页 */
+.controlled-source-header{background:#fff !important;border-bottom:1px solid #e7eaec !important}
+.controlled-source-header h1{color:#333 !important}
+.controlled-source-header p{color:#666 !important}
+.controlled-source-nav{background:#fff !important;border-bottom:1px solid #e7eaec !important}
+.controlled-source-nav a{color:#1890ff !important}
+.controlled-source-nav span{color:#666 !important}
+.controlled-document{border:1px solid #e7eaec !important;background:#fff !important}
+.document-stamp{background:#fafafa !important;border-right:1px solid #e7eaec !important}
+.document-stamp span{border:2px solid #1890ff !important;color:#1890ff !important}
+.document-stamp small{color:#999 !important}
+.document-body{background:#fff !important}
+.custody-boundary{background:#fafafa !important;border:1px solid #e7eaec !important;border-left:3px solid #d2d6de !important;color:#666 !important}
+
+/* 回单/结局/参见链 */
+.derived-receipt,.branch-status,.chain-premise,.next-source,.chain-closure,
+.execution-summary,.shared-ending-boundary{background:#fff !important;border:1px solid #e7eaec !important}
+.receipt-context-rail,.related-chain-context,.tool-context-rail{background:#fafafa !important;border-left:1px solid #e7eaec !important}
+.endpoint-header{background:#fff !important;border-bottom:2px solid #1890ff !important}
+.endpoint-header h1{color:#333 !important}
+.endpoint-status-grid,.endpoint-ledger{border-color:#e7eaec !important}
+.endpoint-status-grid>div,.endpoint-ledger>div{border-color:#e7eaec !important;background:#fff !important}
+.endpoint-status-grid dt,.endpoint-ledger dt{color:#999 !important}
+.unresolved-list{border-color:#e7eaec !important;background:#fff !important}
+.workbench-bottom-actions{background:#fff !important;border-top:1px solid #e7eaec !important;color:#666 !important}
+.workbench-bottom-actions a{background:#1890ff !important;color:#fff !important;border-radius:2px !important}
+.workbench-support-register>section{background:#fff !important;border:1px solid #e7eaec !important}
+.opened-sources li,.ordinary-jobs li,.human-receipts li,.related-records li{border-bottom:1px solid #eee !important}
+
+/* 交接层（落地页 in-world 层）：深蓝 */
+.handover-inworld-layer{background:#263238 !important;border-color:#1a2229 !important}
+.handover-inworld-layer .creator-contract>div{background:#2e3d46 !important;border-color:#3d4a55 !important}
+.handover-inworld-layer .creator-contract dt{color:#7fd4c1 !important}
+.handover-inworld-layer .creator-contract dd{color:#fff !important}
+.handover-actions{background:#fff !important;border-top:1px solid #e7eaec !important}
+
+/* 按钮：若依蓝（覆盖 v5 的 Win 经典灰圆角） */
+.primary-action,.primary-link{background:#1890ff !important;color:#fff !important;border:1px solid #1890ff !important;border-radius:2px !important;font-weight:400 !important}
+.primary-action:hover,.primary-link:hover{background:#40a9ff !important}
+.secondary-action,.secondary-link,.previous-panel-link{background:#fff !important;color:#333 !important;border:1px solid #dcdfe6 !important;border-radius:2px !important}
+.danger-action{background:#f56c6c !important;color:#fff !important;border:1px solid #f56c6c !important;border-radius:2px !important}
+.form-actions .primary-action,.form-actions .primary-link{background:#1890ff !important;border-color:#1890ff !important}

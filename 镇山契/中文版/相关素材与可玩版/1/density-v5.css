@@ -1,0 +1,276 @@
+/* ==========================================================================
+   密度层 v5：气质修正——宋体、去饱和、灰扑扑、table质感
+   依据真实素材实测:宋体/#f2f2f2背景/#dcdcdc边框/#cce6ff色块/#0066cc链接
+   ========================================================================== */
+
+/* ---------- 论坛:改宋体+去饱和 ---------- */
+.forum-page{font-family:SimSun,"Songti SC",STSong,serif !important;background:#f2f2f2 !important;color:#333 !important}
+.forum-frame{background:#fff !important;border:1px solid #dcdcdc !important}
+.forum-masthead{background:#fff !important;border-bottom:1px solid #dcdcdc !important}
+.forum-title-row h1,.forum-logo{color:#0066cc !important;font-family:SimSun,"Songti SC",serif !important;font-weight:700 !important}
+.forum-title-row p{color:#666 !important}
+.forum-utility{background:#fff !important;color:#666 !important;border-bottom:1px dashed #dcdcdc !important}
+.forum-utility a{color:#0066cc !important}
+.forum-primary-nav{background:#cce6ff !important;border-bottom:1px solid #a8c8e8 !important}
+.forum-primary-nav a,.forum-primary-nav span{color:#0066cc !important;border-right:1px solid #a8c8e8 !important}
+.forum-breadcrumb{background:#f2f2f2 !important;color:#666 !important;border-bottom:1px solid #dcdcdc !important}
+.forum-breadcrumb a{color:#0066cc !important}
+.forum-board-toolbar,.forum-search-row{background:#f2f2f2 !important;border-color:#dcdcdc !important;color:#555 !important}
+.forum-search-row input{border:1px solid #999 !important;background:#fff !important;font-family:SimSun,serif !important}
+.forum-search-row button{background:#e8e8e8 !important;border:1px solid #999 !important;color:#333 !important}
+.forum-board-stats{background:#f2f2f2 !important;border-color:#dcdcdc !important;color:#666 !important}
+.forum-board-stats dd{color:#cc0066 !important;font-weight:400 !important}
+.forum-result-line{color:#666 !important}
+.forum-board{border:1px solid #dcdcdc !important;margin:4px !important}
+.forum-board-head{background:#cce6ff !important;color:#336699 !important;border-bottom:1px solid #a8c8e8 !important;font-weight:400 !important}
+.forum-topic-row{background:#fff !important;border-bottom:1px solid #ececec !important}
+.forum-topic-row:nth-child(odd){background:#f8f8f8 !important}
+.forum-topic-row b{color:#0066cc !important;font-weight:400 !important}
+.forum-topic-row small{color:#888 !important}
+.forum-topic-row .forum-topic-author b,.forum-topic-row .forum-topic-activity b{color:#cc0066 !important;font-weight:400 !important}
+.forum-login-box,.forum-section-tree,.forum-era-warning{background:#fff !important;border:1px solid #dcdcdc !important}
+.forum-login-box h2,.forum-section-tree h2{background:#cce6ff !important;color:#336699 !important;font-weight:400 !important}
+.forum-login-box label{color:#555 !important}
+.forum-login-box input{border:1px solid #999 !important;background:#fff !important;font-family:SimSun,serif !important}
+.forum-login-box button{background:#e8e8e8 !important;border:1px solid #999 !important;color:#333 !important}
+.forum-section-tree>*{color:#333 !important;border-bottom:1px solid #f2f2f2 !important}
+.forum-section-tree a{color:#0066cc !important}
+.forum-era-warning{background:#fffff0 !important;border-color:#dcdcaa !important;color:#666633 !important}
+.forum-footer{background:#f2f2f2 !important;border-top:1px solid #dcdcdc !important;color:#888 !important}
+.forum-footer span,.forum-footer a{color:#888 !important}
+/* 论坛楼层页 */
+.forum-thread{border:1px solid #dcdcdc !important}
+.forum-floor{background:#fff !important;border-bottom:1px solid #dcdcdc !important}
+.forum-floor-header,.forum-post-head{background:#f2f2f2 !important;border-bottom:1px solid #dcdcdc !important}
+.forum-floor-header h1,.forum-post-head h1,.forum-post-head h2{color:#0066cc !important;font-weight:400 !important;font-family:SimSun,serif !important}
+.forum-floor-header time,.forum-floor-no{color:#888 !important}
+.forum-author{background:#f8f8f8 !important;border-right:1px solid #dcdcdc !important;color:#666 !important}
+.forum-author b{color:#0066cc !important}
+.forum-avatar{background:#fff !important;border:1px solid #dcdcdc !important;color:#0066cc !important}
+.forum-post-body{color:#333 !important}
+.forum-post-body p{color:#333 !important}
+.forum-edit-state,.forum-signature{border-top:1px dashed #dcdcdc !important;color:#999 !important}
+.forum-post-tools{color:#888 !important}
+.forum-post-tools span{color:#0066cc !important}
+.forum-thread-status{border-color:#dcdcdc !important}
+.forum-thread-status>div{border-color:#dcdcdc !important}
+.forum-thread-status dt{background:#f2f2f2 !important;color:#666 !important}
+.forum-thread-footer{background:#f2f2f2 !important;border-top:1px solid #dcdcdc !important;color:#888 !important}
+.forum-thread-footer a{color:#0066cc !important}
+.forum-thread-footer span{color:#888 !important}
+
+/* ---------- 民俗站:改宋体+更素 ---------- */
+.site-folk{background:#f5f5f0 !important;font-family:SimSun,"Songti SC",STSong,serif !important}
+.folk-site-frame{background:#fff !important;border:1px solid #ccccbb !important;box-shadow:none !important}
+.folk-masthead{background:#eef2e6 !important;border-bottom:1px solid #b8c4a8 !important}
+.folk-masthead h1,.folk-site-name{color:#335533 !important;font-family:SimSun,"Songti SC",serif !important}
+.folk-masthead p{color:#667766 !important}
+.folk-text-nav{background:#eef2e6 !important;border-bottom:1px solid #b8c4a8 !important}
+.folk-text-nav a,.folk-text-nav span{color:#0066cc !important}
+.folk-directory{background:#f8f8f4 !important;border-right:1px solid #ddd8cc !important}
+.folk-directory h2,.folk-directory h3{background:#eef2e6 !important;color:#446644 !important;font-weight:400 !important}
+.folk-directory ul li,.folk-directory>a,.folk-directory>span{color:#333 !important;border-bottom:1px dotted #ccccbb !important}
+.folk-directory a{color:#0066cc !important}
+.folk-counter{border:1px solid #ccccbb !important;background:#f8f8f4 !important;color:#889988 !important}
+.folk-content{color:#333 !important}
+.folk-search-block{background:#f4f4ee !important;border:1px solid #ccccbb !important;color:#555 !important}
+.folk-search-block input{border:1px inset #99aa88 !important;background:#fff !important;font-family:SimSun,serif !important}
+.folk-search-block button{border:1px outset #aabb99 !important;background:#eef2e6 !important;color:#333 !important;font-family:SimSun,serif !important}
+.folk-result-line,.site-folk .result-count{color:#889988 !important}
+.folk-index li{border-bottom:1px dotted #ccccbb !important}
+.folk-index a{color:#0066cc !important}
+.folk-index a>span{color:#889988 !important}
+.folk-index p{color:#777 !important}
+.folk-service-rail{background:#f8f8f4 !important;border-left:1px solid #ddd8cc !important}
+.folk-service-rail h2{background:#eef2e6 !important;color:#446644 !important;font-weight:400 !important}
+.folk-service-rail a,.folk-service-rail span{color:#335533 !important;border-bottom:1px dotted #ccccbb !important}
+.folk-service-rail a{color:#0066cc !important}
+.folk-side-note{border-color:#ccccbb !important;background:#fff !important;color:#555 !important}
+.folk-site-footer{background:#eef2e6 !important;border-top:2px solid #99aa88 !important;color:#889988 !important}
+.folk-site-footer a{color:#0066cc !important}
+/* 民俗文章页 */
+.paper-article h1,.folk-article h1{color:#335533 !important}
+.ink-rule{border-top:1px solid #99aa88 !important;border-bottom:2px solid #99aa88 !important}
+.paper-article>p:not(.paper-date):not(.paper-deck){color:#333 !important}
+.paper-date{color:#889988 !important}
+.paper-deck{color:#667766 !important}
+.folk-article .paper-date,.folk-article .paper-deck{color:#889988 !important;text-align:center !important}
+
+/* ---------- 档案:改宋体+去饱和蓝 ---------- */
+.archive-page{background:#f4f4f4 !important;color:#333 !important}
+.archive-masthead{background:#fff !important;border-bottom:2px solid #336699 !important}
+.archive-identity h1,.archive-identity>div>a,.archive-title{color:#336699 !important;font-family:SimSun,"Songti SC",serif !important}
+.archive-identity p,.archive-era{color:#888 !important}
+.archive-seal{background:#336699 !important;font-family:SimSun,serif !important}
+.archive-primary-nav{background:#336699 !important}
+.archive-primary-nav a,.archive-primary-nav span{color:#fff !important;border-right:1px solid #4477aa !important;font-weight:400 !important}
+.archive-sidebar{background:#fff !important;border:1px solid #cccccc !important}
+.archive-sidebar h2,.archive-sidebar h3{background:#336699 !important;color:#fff !important;font-weight:400 !important}
+.archive-sidebar nav>*{color:#333 !important;border-bottom:1px solid #eeeeee !important}
+.archive-sidebar nav>*::before{color:#336699 !important}
+.archive-sidebar nav a{color:#333 !important}
+.archive-sidebar nav a[aria-current]{color:#336699 !important}
+.archive-facets{background:#f4f6f8 !important;color:#666 !important}
+.archive-facets dd{color:#336699 !important}
+.filter-details{background:#f4f6f8 !important;border-color:#cccccc !important;color:#666 !important}
+.archive-search-panel{background:#eef2f6 !important;border-bottom-color:#cccccc !important}
+.archive-search-panel legend{color:#336699 !important}
+.archive-search-panel input{border:1px solid #999 !important;background:#fff !important}
+.archive-search-panel button{background:#336699 !important;border-color:#224466 !important;color:#fff !important;font-weight:400 !important}
+.archive-result-toolbar,.archive-result-summary,.archive-page .result-count{background:#f4f4f4 !important;color:#666 !important;border-color:#cccccc !important}
+.directory-head{background:#eef2f6 !important;color:#445566 !important;border-bottom:2px solid #336699 !important;font-weight:400 !important}
+.directory-row{border-bottom:1px solid #e8e8e8 !important;background:#fff !important}
+.directory-row:nth-child(even){background:#fafafa !important}
+.directory-row b{color:#333 !important}
+.directory-row code{color:#336699 !important}
+.directory-row small{color:#888 !important}
+.archive-catalog-identity .catalog-id{color:#336699 !important}
+.archive-catalog-identity h1{color:#333 !important;font-family:SimSun,serif !important}
+.archive-page .catalog-record>section:not(.archive-record-fields){background:#f4f6f8 !important;border-left:4px solid #336699 !important}
+.archive-page .record-metadata dt{background:#eef2f6 !important;color:#445566 !important}
+.archive-finding-aid p{color:#888 !important}
+.archive-site-footer{background:#eef2f6 !important;border-top:1px solid #cccccc !important;color:#888 !important}
+.archive-site-footer a{color:#0066cc !important}
+
+/* ---------- 旧报:改宋体+红白更朴素 ---------- */
+.news-page{background:#fff !important;font-family:Georgia,SimSun,"Songti SC",serif !important}
+.news-masthead{background:#fff !important;border-bottom:3px solid #aa0000 !important}
+.news-wordmark,.news-title,.news-masthead h1{color:#aa0000 !important;font-family:SimSun,"Songti SC",STSong,serif !important}
+.news-masthead p,.news-masthead small,.news-era{color:#888 !important}
+.news-library-mark>span{color:#888 !important}
+.news-library-bar{background:#f5f5f5 !important;border-bottom:1px solid #ddd !important}
+.news-library-bar a,.news-library-bar span{color:#880000 !important;border-right:1px solid #e3e3e3 !important;font-family:-apple-system,sans-serif !important}
+.news-search-tools{background:#fff !important;border:1px solid #ddd !important;font-family:-apple-system,sans-serif !important}
+.news-search-tools h2{color:#880000 !important}
+.news-search-tools input{border:1px solid #bbb !important}
+.news-search-tools button{background:#aa0000 !important;border-color:#880000 !important;color:#fff !important;font-weight:400 !important}
+.news-calendar header strong{color:#880000 !important}
+.news-calendar>div>b{background:#aa0000 !important}
+.news-edition-picker{border-color:#ddd !important}
+.news-edition-picker>b{background:#aa0000 !important}
+.news-date-strip{background:#f9eeee !important;border-color:#e3c1c1 !important;color:#663333 !important}
+.news-result-summary,.news-page .result-count{color:#888 !important;background:#fafafa !important;border-color:#e3e3e3 !important}
+.news-index article{border-bottom:1px dashed #ccc !important}
+.news-index h2 a{color:#880000 !important;font-family:SimSun,"Songti SC",serif !important}
+.news-index article>p:first-child{color:#aa0000 !important}
+.news-index small{color:#888 !important}
+.news-site-footer{background:#333 !important;border-top:2px solid #aa0000 !important;color:#bbb !important}
+.news-record-furniture{background:#f7ecec !important;border-color:#e3c1c1 !important;color:#663333 !important}
+.news-edition-running-head{color:#880000 !important;border-bottom-color:#e3c1c1 !important}
+.news-issue-scan h1,.news-page .scan-sheet h1,.news-page .scan-sheet h2{color:#222 !important}
+.news-page .ocr-panel{border-top:4px solid #aa0000 !important;background:#fafafa !important;font-family:-apple-system,sans-serif !important}
+.news-correction-header{border-bottom-color:#aa0000 !important}
+.news-film-strip{background:#1a1a1a !important;border-color:#000 !important}
+.news-film-identity h1{color:#f3ecdd !important;font-family:SimSun,"Songti SC",serif !important}
+
+/* ---------- 地质:改宋体+深蓝更稳 ---------- */
+.geo-page{background:#f2f4f6 !important;font-family:Arial,SimSun,"Microsoft YaHei",sans-serif !important}
+.geo-masthead{background:#0d3b66 !important}
+.geo-agency h1,.geo-agency>div>a,.geo-title{color:#fff !important;font-weight:700 !important}
+.geo-agency p,.geo-agency>span:last-child{color:#bcd6ee !important}
+.geo-agency-code{background:#0a2f52 !important;border:1px solid #3a6ea5 !important;color:#fff !important}
+.geo-primary-nav{background:#14507e !important;border-bottom:3px solid #0d3b66 !important}
+.geo-primary-nav a,.geo-primary-nav span{color:#fff !important;border-right:1px solid #2a6296 !important;font-weight:400 !important}
+.geo-data-tree{background:#fff !important;border:1px solid #cccccc !important}
+.geo-data-tree h2,.geo-data-tree h3{background:#14507e !important;color:#fff !important;font-weight:400 !important}
+.geo-data-tree nav>*{color:#333 !important;border-bottom:1px solid #eeeeee !important}
+.geo-data-tree li{color:#666 !important}
+.geo-map-tools{background:#f0f4f8 !important;border-color:#cccccc !important}
+.geo-search-tools{background:#eef2f6 !important;border-bottom-color:#cccccc !important}
+.geo-search-tools input{border:1px solid #999 !important;background:#fff !important}
+.geo-search-tools button{background:#14507e !important;border-color:#0d3b66 !important;color:#fff !important;font-weight:400 !important}
+.geo-facet-strip{background:#fff !important;border-color:#cccccc !important}
+.geo-facet-strip>div{border-bottom-color:#eeeeee !important}
+.geo-facet-strip strong{background:#f0f2f5 !important;color:#445566 !important}
+.geo-facet-strip span{color:#333 !important}
+.geo-result-toolbar,.geo-result-summary,.geo-page .result-count{background:#f0f4f8 !important;color:#666 !important;border-color:#cccccc !important}
+.geo-dataset-list>a{border-bottom:1px solid #e8e8e8 !important;background:#fff !important}
+.geo-dataset-list>a:nth-child(even){background:#fafafa !important}
+.geo-dataset-list code{color:#0066cc !important}
+.geo-dataset-list b{color:#0066cc !important;font-weight:400 !important}
+.geo-dataset-list small{color:#888 !important}
+.geo-report-header{background:#eef2f6 !important;border-bottom:3px solid #14507e !important}
+.geo-report-header code{background:#14507e !important}
+.geo-source-register{border-color:#cccccc !important}
+.geo-source-register dt{background:#eef2f6 !important;color:#445566 !important}
+.geo-site-footer{background:#0d3b66 !important;border-top:2px solid #0a2f52 !important;color:#bcd6ee !important}
+
+/* ---------- 工作台:宋体标题+去饱和棕 ---------- */
+.workbench-page,.workbench-tool,.workbench-result,.related-chain,
+.workbench-source,.ending-page,.not-found{background:#f6f1e7 !important}
+.institution-topbar{background:#6e5236 !important;border-bottom:3px solid #4e3a26 !important}
+.institution-wordmark{color:#fff !important;font-family:SimSun,"Songti SC",serif !important}
+.workbench-app-header h1,.tool-heading h1{font-family:SimSun,"Songti SC",serif !important;color:#4a3a24 !important}
+.workbench-toolbar{background:#7a5c3e !important;border-bottom:2px solid #4e3a26 !important}
+.workbench-process-tree,.tool-task-rail{background:#efe6d4 !important;border-right:1px solid #d8c9a8 !important}
+.workbench-process-tree>h2,.tool-task-rail>h2{color:#4a3a24 !important}
+.workbench-process-tree li.is-complete>span{background:#b8d4a8 !important;border-color:#8aa87a !important;color:#2a4a22 !important}
+.workbench-process-tree li.is-current>span,.panel-procedure li.is-current span{background:#e0c98f !important;border-color:#b39a6f !important;color:#4a3a24 !important}
+.workbench-job-row{background:#fff !important;border-color:#e2d7c0 !important}
+.workbench-task-rail .workbench-job-row,
+.task-rail-current.workbench-job-row{background:#f3e5c3 !important;border-color:#b39a6f !important;box-shadow:inset 4px 0 #8a6a48 !important}
+.current-assignment,.receipt-ready{background:#fff !important;border:1px solid #d8c9a8 !important;border-left:5px solid #8a6a48 !important}
+.project-reaction{background:#f3e5c3 !important;border-color:#b39a6f !important;color:#4a3a24 !important}
+.project-reaction blockquote{background:#fff !important;border-left:3px solid #8a6a48 !important}
+.operation-sheet{background:#fff !important;border:1px solid #d8c9a8 !important;border-top:3px solid #8a6a48 !important}
+.operation-sheet-heading{background:#f3ecdd !important;border-bottom-color:#d8c9a8 !important}
+.operation-sheet-heading h2{color:#1a7a1a !important}
+.operation-sheet-heading h2::before{content:"● " !important;color:#2a9a2a !important}
+.choice-option{background:#fff !important;border-bottom:1px solid #e8dfc9 !important}
+.choice-option:has(input:checked){background:#eef6ea !important;border-color:#8aa87a !important}
+.form-actions{background:#f3ecdd !important;border-top:1px solid #d8c9a8 !important}
+.saved-panel{background:#eef6ea !important;border-left:5px solid #2a9a2a !important;color:#2a4a22 !important}
+.form-error{background:#fbeeee !important;border-color:#c98a80 !important;border-left:5px solid #a03030 !important;color:#6a2a22 !important}
+.hint-drawer{background:#f7f2e6 !important;border-color:#d8c9a8 !important}
+.direct-hint-confirm{background:#f3e5c3 !important;border-color:#b39a6f !important}
+.next-question{background:#e8f0e4 !important;border:1px solid #b9d2b3 !important;color:#2a4a22 !important}
+.next-question h2,.next-question p{color:#2a4a22 !important}
+.source-links{background:#fff !important;border:1px solid #d8c9a8 !important}
+.source-links-heading{background:#7a5c3e !important}
+.source-links-heading>span{color:#e0c98f !important}
+.source-links li{border-color:#e8dfc9 !important}
+.source-links li a{color:#0066cc !important}
+.panel-nav{border:1px solid #d8c9a8 !important}
+.panel-nav>*{background:#f3ecdd !important;border-right:1px solid #d8c9a8 !important;color:#4a3a24 !important}
+.panel-nav>a[aria-current="step"]{background:#f3e5c3 !important;box-shadow:inset 0 -3px #8a6a48 !important}
+.locked-panel{color:#a09070 !important}
+.artifact-cue>div,.tool-task-rail .artifact-cue>div,
+.workbench-operation-shell>.tool-task-rail .artifact-cue>div{background:#efe6d4 !important;border-color:#c9b795 !important;color:#5a4a30 !important}
+.controlled-source-header{background:#efe6d4 !important;border-bottom:2px solid #b39a6f !important}
+.controlled-source-nav{background:#7a5c3e !important}
+.controlled-document{border:1px solid #d8c9a8 !important;background:#fff !important}
+.document-stamp{background:#f3ecdd !important;border-right:1px solid #d8c9a8 !important}
+.document-stamp span{border:2px solid #8a6a48 !important;color:#6a5236 !important}
+.custody-boundary{background:#f7f2e6 !important;border-left:4px solid #8a6a48 !important}
+.derived-receipt,.branch-status,.chain-premise,.next-source,.chain-closure,
+.execution-summary,.shared-ending-boundary{background:#fff !important;border:1px solid #d8c9a8 !important}
+.receipt-context-rail,.related-chain-context,.tool-context-rail{background:#f3ecdd !important;border-left:1px solid #d8c9a8 !important}
+.endpoint-header{background:#efe6d4 !important;border-bottom:3px solid #8a6a48 !important}
+.endpoint-status-grid,.endpoint-ledger{border-color:#d8c9a8 !important}
+.endpoint-status-grid>div,.endpoint-ledger>div{border-color:#d8c9a8 !important;background:#fff !important}
+.endpoint-status-grid dt,.endpoint-ledger dt{color:#8a7452 !important}
+.unresolved-list{border-color:#d8c9a8 !important;background:#fff !important}
+.workbench-bottom-actions{background:#7a5c3e !important}
+.workbench-bottom-actions a{background:#e8dfc9 !important;color:#4a3a24 !important}
+.workbench-support-register>section{background:#fff !important;border:1px solid #d8c9a8 !important}
+.opened-sources li,.ordinary-jobs li,.human-receipts li,.related-records li{border-bottom:1px solid #e8dfc9 !important}
+.case-area-heading{background:#fff !important;border-bottom:1px solid #d8c9a8 !important}
+.handover-inworld-layer{background:#5d4732 !important;border-color:#4e3a26 !important}
+.handover-inworld-layer .creator-contract>div{background:#6e5236 !important;border-color:#8a6a48 !important}
+.handover-actions{background:#efe6d4 !important;border-top-color:#c9b795 !important}
+/* 会话条:灰扑扑 */
+.external-session-strip{background:#f2f2f2 !important;border-bottom:1px solid #dcdcdc !important;font-family:SimSun,serif !important}
+.external-session-strip a,.external-session-strip button,
+.external-session-strip .excerpt-status{background:#fff !important;border:1px solid #999 !important;color:#0066cc !important}
+.external-session-id{color:#888 !important;border-right-color:#dcdcdc !important}
+/* 按钮统一:Win经典灰 */
+button{font-family:inherit !important}
+.primary-action,.primary-link{background:linear-gradient(#fdfdfd,#d9d9d9) !important;color:#222 !important;border:1px solid #8f8f8f !important;border-radius:14px !important;font-weight:400 !important}
+.secondary-action,.secondary-link,.previous-panel-link{background:linear-gradient(#fdfdfd,#e2e2e2) !important;color:#333 !important;border:1px solid #9a9a9a !important;border-radius:14px !important}
+.danger-action{background:linear-gradient(#f8e8e4,#dcb8b0) !important;color:#6a2a22 !important;border:1px solid #a06a60 !important;border-radius:14px !important}
+/* 证据影像:灰框 */
+.evidence-visual{background:#e8e8e8 !important;border:1px solid #bbb !important}
+.evidence-visual figcaption{background:#f5f5f5 !important;border-top:1px solid #ccc !important;color:#555 !important}
+/* 全局:去圆角残留 */
+.fictional-site,.institution-page,.workbench-tool,.workbench-result,
+.related-chain,.workbench-source,.ending-page,.not-found{border-radius:0 !important;box-shadow:none !important}

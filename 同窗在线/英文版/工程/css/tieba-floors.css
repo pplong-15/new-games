@@ -1,0 +1,180 @@
+/* tieba-floors
+ * 记忆 2011 楼层回帖：蓝顶栏 + 白帖盒 + 左 ID 右正文 + 楼中楼。不要贴吧商标。
+ * 页底 #eef2f5，14px 雅黑，栏宽 980。楼层用 float，禁止 CSS Grid。
+ */
+html.skin-tieba-floors {
+  --bar: #2d64b3;
+  --line: #e4e6eb;
+  --who: #f7f8fa;
+  --link: #2d64b3;
+  --bevel-hi: #6a9ad4;
+  --bevel-lo: #1b3f74;
+}
+html.skin-tieba-floors,
+html.skin-tieba-floors body,
+html.skin-tieba-floors div,
+html.skin-tieba-floors span,
+html.skin-tieba-floors p,
+html.skin-tieba-floors a,
+html.skin-tieba-floors b,
+html.skin-tieba-floors form,
+html.skin-tieba-floors input,
+html.skin-tieba-floors button {
+  margin: 0;
+  padding: 0;
+}
+html.skin-tieba-floors body {
+  background: #eef2f5;
+  color: #333;
+  font: 14px/1.6 "Microsoft YaHei", SimSun, sans-serif;
+}
+html.skin-tieba-floors a { color: var(--link); text-decoration: none; }
+html.skin-tieba-floors a:hover { text-decoration: underline; }
+html.skin-tieba-floors input,
+html.skin-tieba-floors button {
+  font: 12px "Microsoft YaHei", SimSun, sans-serif;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+
+/* 满宽蓝条，内槽 980×36，白链 */
+html.skin-tieba-floors .bar {
+  background: var(--bar);
+  height: 36px;
+  color: #fff;
+}
+html.skin-tieba-floors .bar .in {
+  width: 980px;
+  height: 36px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+html.skin-tieba-floors .bar .site,
+html.skin-tieba-floors .bar > span:first-child {
+  float: left;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 12px 0 0;
+  font-weight: 700;
+  color: #fff;
+}
+html.skin-tieba-floors .bar a {
+  float: left;
+  color: #fff;
+  text-decoration: none;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 10px;
+}
+html.skin-tieba-floors .bar a:hover {
+  background: #245394;
+  text-decoration: none;
+  color: #fff;
+}
+html.skin-tieba-floors .bar form {
+  float: right;
+  height: 36px;
+  padding: 7px 0 0;
+}
+html.skin-tieba-floors .bar input {
+  float: left;
+  width: 148px;
+  height: 14px;
+  line-height: 14px;
+  border: 1px solid #1b3f74;
+  padding: 3px 4px;
+  background: #fff;
+  color: #333;
+}
+html.skin-tieba-floors .bar button {
+  float: left;
+  height: 22px;
+  margin-left: 4px;
+  padding: 0 8px;
+  color: #fff;
+  background: var(--bar);
+  border: 1px solid;
+  border-color: var(--bevel-hi) var(--bevel-lo) var(--bevel-lo) var(--bevel-hi);
+  cursor: pointer;
+}
+
+html.skin-tieba-floors .title {
+  width: 948px;
+  margin: 10px auto;
+  background: #fff;
+  padding: 10px 16px;
+  border: 1px solid var(--line);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* 楼层：左 130px float 灰底，右正文。不是 grid */
+html.skin-tieba-floors .floor {
+  width: 980px;
+  margin: 0 auto 8px;
+  background: #fff;
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+html.skin-tieba-floors .who {
+  float: left;
+  width: 130px;
+  background: var(--who);
+  padding: 12px 0;
+  text-align: center;
+  border-right: 1px solid #eee;
+  font-size: 12px;
+  color: #666;
+  overflow: hidden;
+}
+html.skin-tieba-floors .who .av {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 8px;
+  border: 1px solid #ccc;
+  background: #c8c8c8;
+  background-image:
+    radial-gradient(circle at 50% 38%, #eee 0 12px, transparent 13px),
+    radial-gradient(ellipse at 50% 78%, #eee 0 22px, transparent 23px);
+}
+html.skin-tieba-floors .who b {
+  display: block;
+  color: var(--link);
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+html.skin-tieba-floors .who .n { display: block; margin-top: 6px; }
+html.skin-tieba-floors .txt {
+  margin-left: 130px;
+  padding: 12px 16px;
+  min-height: 80px;
+}
+html.skin-tieba-floors .txt p { margin: 0 0 8px; }
+html.skin-tieba-floors .n {
+  color: #999;
+  font-size: 12px;
+}
+html.skin-tieba-floors .txt > .n { float: right; margin: 0 0 8px 12px; }
+html.skin-tieba-floors .lzl {
+  background: var(--who);
+  margin-top: 12px;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  font-size: 13px;
+  clear: both;
+}
+html.skin-tieba-floors .lzl .row {
+  padding: 6px 0;
+  border-bottom: 1px dashed var(--line);
+  overflow: hidden;
+}
+html.skin-tieba-floors .lzl .row:last-child { border-bottom: 0; }
+html.skin-tieba-floors .lzl b { color: var(--link); margin-right: 6px; }
+html.skin-tieba-floors .ft {
+  width: 980px;
+  margin: 16px auto 24px;
+  text-align: center;
+  color: #999;
+  font-size: 12px;
+}

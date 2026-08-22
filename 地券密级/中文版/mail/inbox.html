@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-mail-web-2010">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>值班箱　收件</title>
+  <link rel="stylesheet" href="../css/mail-web-2010.css">
+  <link rel="stylesheet" href="../css/game-extra.css">
+</head>
+<body>
+  <div class="top">
+    <b>ye-anpu 收件箱</b>
+    <span class="unread-n">未读 <b>2</b></span>
+    <a href="login.html">退出</a>
+  </div>
+  <div class="panes">
+    <div class="folders">
+      <a class="write" href="inbox.html">写信（停）</a>
+      <a class="on" href="inbox.html">收件箱 (4)</a>
+      <a href="spam.html">垃圾箱</a>
+    </div>
+    <div class="mails">
+      <h4>今夜还能点开的</h4>
+      <div class="m unread"><b><a href="qu.html">限制层备用牌</a></b><span>曲晚棠　8月21日 17:06</span></div>
+      <div class="m unread"><b><a href="zhai.html">我请了假</a></b><span>翟浦　8月15日 01:12</span></div>
+      <div class="m"><b><a href="spam.html">扫描仪保养通知</a></b><span>设备科　8月10日</span></div>
+      <div class="m"><b>空主题</b><span>无发件人　7月02日</span></div>
+    </div>
+    <div class="read">
+      <h3>先点左边那两封</h3>
+      <p class="meta">本箱是夜班公共邮箱。曲晚棠白班走之前会丢一句。翟浦请假后还留着半封。</p>
+      <p>第三封是设备科群发，没有工号。空主题那封打不开，服务器报旧。所里例会说明若要看，不在这只箱子里，在文保所那栏。</p>
+      <p><img class="dq-inline" alt="" src="../img/window.jpg"></p>
+    </div>
+  </div>
+  <p class="ft">收件箱列表　四封不是同一件急事</p>
+  <script src="../js/state.js"></script>
+  <script>
+    if (DQ.requireSess("mail", "login.html")) DQ.visit("inbox");
+  </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>烈士园集体柜门</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<div id="wrap">
+  <header><strong>南阶批次</strong><div><a class="ghost-btn" href="desk.html">回柜</a></div></header>
+  <div class="notice">
+    <h2>烈士园集体</h2>
+    <p id="mini" class="sm-mini"></p>
+    <p>粮库工会那一批。缪石桥只要南阶格子。码的底页在门后。名录里不列真烈士姓名，也不列十二区穴号。</p>
+    <p>第一班若开了这户，白板上能留下「码走集体」。没这句，流水后头那钮不亮。</p>
+    <p><button type="button" class="sm-btn" id="opbtn">拆批次袋（算一户）</button></p>
+    <div id="fullbox" class="closed-box" style="display:none">
+      <p>袋今晚拆不了，三户已经占完。南阶的字不会自己跑到板上。</p>
+      <p><a href="desk.html">先交班再来</a></p>
+    </div>
+    <div id="openbox" style="display:none">
+      <p class="sm-ok">袋拆开。批次、码页、须知、缪石桥来信都可以看。</p>
+      <p>一码多人。持码进南阶闸。持码不自动变成北坡送货口令。有人抄走，底页不管。</p>
+      <p><a href="lie-pi.html">批次</a>　<a href="lie-ma.html">码页</a>　<a href="lie-hui.html">须知</a>　<a href="jing-you.html">来信</a></p>
+    </div>
+    <p>南阶袋　红绳还在</p>
+  </div>
+</div>
+
+<script src="js/sanmen.js"></script>
+<script>
+
+(function(){
+  var id="lie";
+  function show(){
+    Sanmen.paintMini(document.getElementById("mini"));
+    var opened=Sanmen.isOpen(id);
+    document.getElementById("openbox").style.display=opened?"block":"none";
+    document.getElementById("fullbox").style.display="none";
+  }
+  document.getElementById("opbtn").addEventListener("click",function(){
+    var r=Sanmen.openDoor(id);
+    if(!r.ok){ document.getElementById("fullbox").style.display="block"; }
+    show();
+  });
+  show();
+})();
+
+</script>
+</body>
+</html>

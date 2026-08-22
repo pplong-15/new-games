@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>值班白板</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<div id="wrap">
+  <header><strong>白板</strong><div><a class="ghost-btn" href="desk.html">回柜</a></div></header>
+  <div class="notice">
+    <h2>见过和采信分开写</h2>
+    <p id="mini" class="sm-mini"></p>
+    <img src="img/board-empty.jpg" alt="白板" class="doc-img">
+    <p>见过的户</p>
+    <div id="seenbox"></div>
+    <p>已采信的句子</p>
+    <div id="verbox"></div>
+    <p>备注只认下面这几句。上面那些户名不够。</p>
+    <p><a href="xian-zhi.html">柜侧那张限写</a></p>
+  </div>
+</div>
+
+<section class="pad"><p>板上两栏不能混。见过只是户名，像仇麦秋那种开过又没点采信的，天亮纸就被收走。杭疏若把户名抄进备注，系统不认。条皖看的是下面那几句完整的话。空板不是没干活，是还没把能留下的句子按上去。交班以后再看，户名还在见过栏，句子还在采信栏，已开的格子会回到零。</p></section>
+<script src="js/sanmen.js"></script>
+<script>
+Sanmen.paintMini(document.getElementById('mini'));
+Sanmen.paintBoard(document.getElementById('seenbox'), document.getElementById('verbox'));
+</script>
+</body>
+</html>

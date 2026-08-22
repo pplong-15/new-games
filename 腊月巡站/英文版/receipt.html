@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-winxp-luna">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Joint-inspection return slip</title>
+  <link rel="stylesheet" href="css/winxp-luna.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body class="xp-scroll">
+  <div class="desk">
+    <div class="window center-doc">
+      <div class="title-bar">
+        <span>West Gate return slip - WordPad</span>
+        <span class="ctrls"><b>_</b><b>□</b><b class="close">×</b></span>
+      </div>
+      <div class="menubar"><span>File(F)</span><span>Edit(E)</span></div>
+      <div class="body">
+        <p>Filled by Star Glow night shift. Tick sites you think are still live and that match the subdistrict’s three wordings. Empty send: she will not stamp. Extra ticks: she bounces it.</p>
+        <form id="slip">
+          <label class="chk"><input type="checkbox" value="fushun"> Fushun New Year Goods (Ma Xiulan)</label>
+          <label class="chk"><input type="checkbox" value="cuiji"> Cuiji Kitchen God Prints (Cui Jianguo)</label>
+          <label class="chk"><input type="checkbox" value="jingxuan"> Jingxuan Housekeeping (Qi Xiaoman)</label>
+          <label class="chk"><input type="checkbox" value="chunni"> Chunni Year-End Sweeping (Zhang Shusheng)</label>
+          <label class="chk"><input type="checkbox" value="jiedao"> West Gate Information Station</label>
+          <label class="chk"><input type="checkbox" value="baike"> Anjin Little New Year entry</label>
+          <label class="chk"><input type="checkbox" value="forum"> West Gate Life Forum</label>
+          <label class="chk"><input type="checkbox" value="portal"> Star Glow Site Directory</label>
+          <label class="chk"><input type="checkbox" value="tanggua"> West Gate Malt-Sugar Stall (Gan Laosan)</label>
+          <label class="chk"><input type="checkbox" value="jingua"> Jingua Window Cleaning (Hou Qiusheng)</label>
+          <label class="chk"><input type="checkbox" value="stock"> Anjin Quotes</label>
+          <p><button class="btn3d" type="submit">Send to duty room</button>
+          <button class="btn3d" type="button" onclick="location.href='desktop.html'">Not yet</button></p>
+        </form>
+        <p class="warn">Lu Guifen does not open a computer until morning. Once you send, you cannot change it.</p>
+      </div>
+    </div>
+  </div>
+  <div class="taskbar">
+    <span class="start">Start</span>
+    <span class="task">WordPad</span>
+    <span class="tray">22:03</span>
+  </div>
+  <script src="js/patrol.js"></script>
+  <script>Patrol.bindForm(document.getElementById("slip"));</script>
+</body>
+</html>

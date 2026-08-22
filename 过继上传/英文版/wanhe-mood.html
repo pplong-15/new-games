@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-qzone-modules">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wanhe — posts</title>
+  <link rel="stylesheet" href="css/qzone-modules.css">
+  <link rel="stylesheet" href="css/pick.css">
+</head>
+<body>
+  <div id="gate">
+    <div class="topbar"><div class="topbar-inner"><span class="logo">Personal space</span></div></div>
+    <div class="banner">Owner set a visit question</div>
+    <div class="cols">
+      <div></div>
+      <div>
+        <div class="mod">
+          <h3>Won’t open</h3>
+          <div class="bd">
+            <p>Posts closed to visitors. Go to the mailbox first. See if her mother stuffed the green homepage into the attachment.</p>
+            <p><a href="letter.html">Back to mailbox for the attachment</a>  <a href="desk.html">Back to duty</a></p>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </div>
+  </div>
+  <div id="space" hidden>
+    <div class="topbar">
+      <div class="topbar-inner">
+        <span class="logo">Personal space</span>
+        <a href="wanhe.html">Home</a>
+        <a href="wanhe-msg.html">Guestbook</a>
+        <a href="wanhe-photo.html">Album</a>
+        <a href="wanhe-mood.html">Posts</a>
+        <span class="extra"><a href="desk.html">Leave</a></span>
+      </div>
+    </div>
+    <div class="banner yard">Posts  late July</div>
+    <div class="cols">
+      <div></div>
+      <div>
+        <div class="mod talk">
+          <h3>Posts</h3>
+          <div class="bd">
+            <div class="feed-li">
+              <div class="mini"></div>
+              <div class="txt"><span class="name">Wanhe</span> That line from the wall again. Girls don’t count. I sat in the kitchen listening. Medicine pot at the second hoop. Time to change the water.<div class="time">Jul 29 23:40</div></div>
+            </div>
+            <div class="feed-li">
+              <div class="mini"></div>
+              <div class="txt"><span class="name">Wanhe</span> Electric bill name still the dead father. Window wants a death proof to change the name. Line too long. I fingerprinted and paid first. Person still in this house.<div class="time">Aug 1 12:06</div></div>
+            </div>
+            <div class="feed-li">
+              <div class="mini"></div>
+              <div class="txt"><span class="name">Wanhe</span> Anyone writes me as a son, I didn’t see it. Anyone asks if I still live here, look at the bill. Don’t ask me what I’m being.<div class="time">Aug 1 12:09</div></div>
+            </div>
+            <p>These three lines are not a hukou statement. Girls don’t count is what she heard. Medicine pot is what she was washing. Electric is what she fingerprinted and paid. Anyone wants to write she already moved out, the bill is still in this house.</p>
+            <p>
+              <button type="button" class="pick" data-block="live-wanhe">Extract: Wanhe says she still lives here</button>
+              <button type="button" class="pick" data-block="kind-care">Extract: care not on any roll</button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </div>
+    <p class="site-foot">Posts stopped  not a hukou statement</p>
+  </div>
+  <script src="js/state.js"></script>
+  <script>
+    var s = HY.visit("wanhe-mood", 2);
+    if (!s.wanhe) {
+      document.getElementById("gate").hidden = false;
+    } else {
+      document.getElementById("space").hidden = false;
+      HY.bindPicks();
+    }
+  </script>
+</body>
+</html>

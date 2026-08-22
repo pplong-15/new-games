@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>麦记·邵庭丧单</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>丧单抄件</strong>
+      <div>
+        <a class="ghost-btn" href="desk.html">台</a>
+        <a class="ghost-btn" href="yard.html">堆</a>
+        <a class="ghost-btn" href="invoice.html">票</a>
+        <form id="search-form" action="#" method="get" style="display:inline">
+          <input id="search-input" name="q" placeholder="查单号…">
+          <button type="submit">查找</button>
+        </form>
+      </div>
+    </header>
+    
+    <div class="notice">
+      <h2>订货单·丧用</h2>
+      <p>复写第三联发脆。井秋白按过指印，印色偏淡，像垫纸吸走过。柜台用回形针把这一联和发票别在一起，别针已经松了，两张随时会滑开。</p>
+      <p>抄自柜台复写。本页只能对户名和订的品类，不能证明货已经在炉里，也不能证明后院那叠红金是这一单。</p>
+      <table>
+        <tr><th>栏</th><th>字</th></tr>
+        <tr><td>户名</td><td><a class="pick" data-w="邵庭" href="#">邵庭</a></td></tr>
+        <tr><td>丧主</td><td>井秋白</td></tr>
+        <tr><td>窗口</td><td>五七前夜待焚</td></tr>
+        <tr><td>品类</td><td><a class="pick" data-w="童女" href="#">童女</a> 一、<a class="pick" data-w="楼库" href="#">楼库</a> 一、金山 一</td></tr>
+        <tr><td>落点</td><td>按<a class="pick" data-w="邵庭丧扎" href="#">邵庭丧扎</a>收，待焚区西侧</td></tr>
+        <tr><td>备注</td><td>不接开业件。开业另票。</td></tr>
+      </table>
+      <p><img alt="" src="../img/paper-maiden.jpg" style="max-width:280px;height:auto;display:block;margin:8px 0"></p>
+      <p>童女纸面空白，没有五官。井秋白催的是这一件，不是狮头。单上没有<a class="pick" data-w="开业彩扎" href="#">开业彩扎</a>四个字。若把红金写成这一栏，户名会对不上。</p>
+      <div class="bagbox" id="wordbag"></div>
+      <p id="bagflash"></p>
+      <p>隔壁夹着另一张票。户名换了。</p>
+      <p><a href="invoice.html">夹着的发票</a> · <a href="../jing/urge.html">她催的原文</a></p>
+    </div>
+
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>ZJ.bootPage("v-order");</script>
+</body>
+</html>

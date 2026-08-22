@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-mail-web-2010">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>催到场</title>
+  <link rel="stylesheet" href="css/mail-web-2010.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<div class="top"><b>值箱</b><a href="mail-inbox.html">收件箱</a><a href="desk.html">回柜</a></div>
+<div class="panes">
+  <div class="folders"><a class="on" href="mail-inbox.html">收件箱</a></div>
+  <div class="mails"><div class="m unread on"><b>南阶人数不够</b><span>缪石桥</span></div></div>
+  <div class="read">
+    <p id="mini" class="sm-mini"></p>
+    
+<div id="shut" class="closed-box"><p>催信跟考勤户，未开读不到人数。</p><p><a href="desk.html">回柜</a></p></div>
+<div id="live" style="display:none">
+    <h3>请转告仍未到南阶的同志</h3>
+    <p class="meta">发件：缪石桥　粮库工会</p>
+    <p>各位：清明当天南阶签到缺员。集体码已发。请勿自行改去别处。考勤格空着，我这边不好交。</p>
+    <p>有家属说要先去北坡，请自行克服。工会车辆只跑南阶一趟。</p>
+    <p>预约台若接到改号请求，请勿办理。我们只要格子。</p>
+    <p><a href="kao-ming.html">空表</a>　<a href="jing-you.html">另一封</a></p>
+    </div>
+
+  </div>
+</div>
+<p class="ft">工会套话　末尾补人数</p>
+
+<section class="pad"><p>催信开头「各位」是群发。中间「请勿自行改去别处」是对着顾晚禾那种人写的，名字没点。车辆只跑南阶一趟，是工会车队自己定的，不是园里限的。预约台勿办改号，这句话他抄给杭疏，也抄给白天窗口。人数请看空表，他懒得在信里再列。</p></section>
+<script src="js/sanmen.js"></script>
+<script>
+Sanmen.paintMini(document.getElementById('mini'));
+Sanmen.gate('kao','shut','live');
+
+</script>
+</body>
+</html>

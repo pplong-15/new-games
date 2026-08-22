@@ -1,0 +1,59 @@
+/* ==========================================================================
+   民俗站真皮覆盖层（追加在 Discuz 论坛层之后）
+   取自中国民俗学网 2003 年 archive 快照的真实 CSS（qz.css）
+   核心：橙标题 #FF9900 / 橄榄绿正文 #506A00 / 纯黑链接 #333 / 素白无阴影
+   ========================================================================== */
+
+/* 素白底 */
+.site-folk{background:#fff !important;font-family:"SimSun","宋体",serif !important}
+.folk-site-frame{background:#fff !important;border:1px solid #ccc !important;box-shadow:none !important}
+
+/* 橙色主标题（真站 .title 类） */
+.folk-masthead{background:#fff !important;border-bottom:1px solid #ccc !important;text-align:center !important;padding:18px 12px 8px !important}
+.folk-masthead h1,.folk-site-name{color:#FF9900 !important;font:700 24px/1.4 "SimSun","宋体",serif !important;letter-spacing:0.06em !important}
+.folk-masthead p{color:#000 !important;font-size:12px !important;word-spacing:8px !important}
+
+/* 文本导航：蓝紫（真站 .top_title 蓝紫 + 蓝链接 .blue） */
+.folk-text-nav{background:#fff !important;border-bottom:1px solid #ccc !important;text-align:center !important;padding:6px 8px !important}
+
+/* 链接：真站 A 是纯黑 #333 */
+.site-folk a{color:#333 !important;text-decoration:none !important}
+.site-folk a:hover{color:#315494 !important;text-decoration:underline !important}
+
+/* 导航链接是蓝紫（区别于正文黑链接，需放在 .site-folk a 之后） */
+.folk-text-nav a,.folk-text-nav span{color:#315494 !important;font-size:13px !important;text-decoration:none !important}
+
+/* 左栏目录：素白 + 黑字 + 点线 */
+.folk-directory{background:#fff !important;border-right:1px dotted #ccc !important}
+.folk-directory h2,.folk-directory h3{background:#fff !important;color:#000 !important;font-weight:700 !important;text-align:left !important;border-bottom:1px solid #ccc !important;padding:4px 6px !important}
+.folk-directory a,.folk-directory>span{color:#333 !important;border-bottom:1px dotted #ccc !important}
+.folk-directory ul li{border-bottom:1px dotted #ccc !important}
+.folk-counter{border:1px solid #ccc !important;background:#fff !important;color:#666 !important;text-align:center !important}
+
+/* 中栏正文：橄榄绿（真站 .article 类 10.5pt / 180% 行高） */
+.folk-content{color:#333 !important}
+.paper-article>p:not(.paper-date):not(.paper-deck){color:#506A00 !important;font-size:10.5pt !important;line-height:180% !important}
+.folk-article .paper-date,.paper-date{color:#666 !important}
+.folk-article .paper-deck,.paper-deck{color:#333 !important}
+.folk-index p{color:#506A00 !important}
+.folk-index a>span{color:#666 !important}
+.folk-index li{border-bottom:1px dotted #ccc !important}
+
+/* 搜索块 */
+.folk-search-block{background:#fff !important;border:1px solid #ccc !important;color:#333 !important}
+.folk-search-block input{border:1px solid #999 !important;background:#fff !important;font-family:"SimSun",serif !important}
+.folk-search-block button{border:1px solid #999 !important;background:#fff !important;color:#333 !important;font-family:"SimSun",serif !important}
+.folk-result-line,.site-folk .result-count{color:#666 !important}
+
+/* 右栏站务 */
+.folk-service-rail{background:#fff !important;border-left:1px dotted #ccc !important}
+.folk-service-rail h2{background:#fff !important;color:#000 !important;font-weight:700 !important;border-bottom:1px solid #ccc !important;padding:4px 6px !important}
+.folk-service-rail a,.folk-service-rail span{color:#333 !important;border-bottom:1px dotted #ccc !important}
+.folk-side-note{border-color:#ccc !important;background:#fff !important;color:#333 !important}
+
+/* 文章页 + 页脚 */
+.folk-nav{border-bottom:1px solid #ccc !important}
+.folk-article h1{color:#FF9900 !important}
+.ink-rule{border-top:1px solid #ccc !important;border-bottom:2px solid #ccc !important}
+.folk-site-footer{background:#fff !important;border-top:1px solid #ccc !important;color:#666 !important}
+.folk-site-footer a{color:#333 !important}

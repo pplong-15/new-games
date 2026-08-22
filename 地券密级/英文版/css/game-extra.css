@@ -1,0 +1,60 @@
+.dq-toast {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  background: #222;
+  color: #fff;
+  padding: 8px 12px;
+  font: 13px/1.4 "Microsoft YaHei", sans-serif;
+  z-index: 9;
+  max-width: 70%;
+}
+.dq-write,
+.dq-go {
+  border: 1px solid #333;
+  background: #eee;
+  padding: 4px 10px;
+  font: 13px/1.4 inherit;
+  cursor: pointer;
+}
+html.skin-service-cyan-desk .dq-go {
+  background: #007bff;
+  color: #fff;
+  border: 0;
+  padding: 8px 16px;
+}
+.dq-fs {
+  border: 1px solid #ccc;
+  margin: 0 0 12px;
+  padding: 8px 12px;
+}
+.dq-opt {
+  display: block;
+  margin: 6px 0;
+}
+.dq-opt i { color: #666; font-style: normal; font-size: 12px; }
+.dq-empty { color: #666; margin: 4px 0; }
+.dq-err { color: #a40000; }
+.dq-hero {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  display: block;
+}
+.dq-inline {
+  width: min(100%, 420px);
+  height: auto;
+  display: block;
+  margin: 8px 0 16px;
+}
+form.dq-dead {
+  display: inline;
+}
+form.dq-dead input {
+  width: 8em;
+}
+.boot-actions { margin-top: 1em; }
+.enter-link {
+  display: inline-block;
+  margin-right: 12px;
+}

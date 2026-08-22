@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>West Branch Vol. II · Electronic Page</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>Hengpu Hall page library</strong>
+      <div>
+        <a class="ghost-btn" href="desk.html">Desk</a>
+        <a class="ghost-btn" href="compare.html">Go spread</a>
+        <form id="search-form" action="#" method="get" style="display:inline">
+          <input id="search-input" name="q" placeholder="find in page…">
+          <button type="submit">Find</button>
+        </form>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>West Branch Vol. II · row 14</h2>
+      <p>Library time: last saved tonight 17:12. Editor number GT-Ye. Saver was not on the west port.</p>
+      <p>This page can only show what words the library holds right now. It cannot show whether a real paper existed in 1962.</p>
+    </div>
+    <table>
+      <thead><tr><th>Row</th><th>Lineage</th><th>Note</th></tr></thead>
+      <tbody>
+        <tr><td>12</td><td>Rui Huaibai　west-2, second son</td><td>in the village</td></tr>
+        <tr><td>13</td><td>Rui Huaishi　west-2, third son</td><td>in the village</td></tr>
+        <tr style="background:#111;color:#eee"><td>14</td><td>████████</td><td>Adopted-out, not returned; not entering the new book</td></tr>
+        <tr><td>15</td><td>Rui Yanmu　Huaishan's eldest</td><td>deceased, still holds the cell</td></tr>
+        <tr><td>16</td><td>Rui Qiu　Yanmu's eldest</td><td>this branch's client</td></tr>
+      </tbody>
+    </table>
+    <div class="notice">
+      <h2>Attachment column</h2>
+      <p>HP-Bu-19-07. Filename: "1962 adopted-out paper, scan." Upload mouth marked: east branch. Ingest date hung after 2019-03, not generated tonight.</p>
+      <p>Four words in the side note were typed by the editor. The ink blot is a layer, not a scanner track. To match the old line, go back to the desk and spread.</p>
+    </div>
+    <p style="text-align:center;padding:16px;color:#666;font-size:12px">
+      <a href="desk.html">Back to desk</a> ·
+      <a href="../library/rules.html">To the library</a> ·
+      <a href="../forum/thread.html">To the floor</a>
+    </p>
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    XP.add("v-new");
+    document.getElementById("search-form").onsubmit = function (e) {
+      e.preventDefault();
+      var q = document.getElementById("search-input").value;
+      if (/fourteen|14|paint|ink|adopt|row/i.test(q)) location.hash = "";
+      else if (/compare|spread/i.test(q)) location.href = "compare.html";
+      else alert("No such locator on this page.");
+    };
+  </script>
+</body>
+</html>

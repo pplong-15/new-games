@@ -1,0 +1,118 @@
+/* 队列、推送栏、建议栏。不充当关卡仪表盘。 */
+.fz-toast {
+  position: fixed;
+  right: 12px;
+  bottom: 12px;
+  max-width: 16em;
+  background: #2a2a2a;
+  color: #fff;
+  padding: 8px 12px;
+  font: 13px/1.45 "Microsoft YaHei", sans-serif;
+  z-index: 40;
+}
+.pageft {
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  margin: 16px 0 24px;
+}
+html.skin-service-cyan-desk .desk-clock {
+  font: 13px/1.4 Consolas, "Courier New", monospace;
+  color: #555;
+}
+html.skin-service-cyan-desk .desk-clock.late {
+  color: #b00020;
+  font-weight: 700;
+}
+html.skin-service-cyan-desk .desk-split {
+  width: 94%;
+  margin: 8px auto 20px;
+  border-collapse: collapse;
+}
+html.skin-service-cyan-desk .desk-split > tbody > tr > td {
+  width: 50%;
+  vertical-align: top;
+  border: 1px solid #d5e4ef;
+  padding: 12px 14px;
+  background: #fbfdff;
+}
+html.skin-service-cyan-desk fieldset.tray {
+  border: 1px solid #c5d8e6;
+  margin: 0 0 10px;
+  padding: 8px 10px 10px;
+}
+html.skin-service-cyan-desk fieldset.tray legend {
+  color: #0a6e8a;
+  font-weight: 700;
+  padding: 0 6px;
+}
+html.skin-service-cyan-desk .auth {
+  font-size: 12px;
+  color: #666;
+  margin: 0 0 8px;
+}
+html.skin-service-cyan-desk .memo {
+  width: 94%;
+  margin: 0 auto 24px;
+  border: 1px dashed #c5b48a;
+  background: #fffbeb;
+  padding: 10px 14px;
+  font-size: 13px;
+}
+html.skin-service-cyan-desk .memo p { margin: 6px 0; }
+html.skin-service-cyan-desk .sortbox {
+  width: 94%;
+  margin: 12px auto 24px;
+  border: 1px solid #c5d8e6;
+  padding: 10px 14px 14px;
+  background: #f7fcfe;
+}
+html.skin-service-cyan-desk .sortbox label {
+  display: block;
+  margin: 8px 0;
+}
+html.skin-service-cyan-desk .sortbox select,
+html.skin-service-cyan-desk .sortbox textarea {
+  width: 96%;
+  margin-top: 4px;
+}
+html.skin-service-cyan-desk .hero-pic,
+html.skin-shop-local-2010s .hero-pic,
+html.skin-gov-redbar .hero-pic,
+html.skin-archive-simsun .hero-pic,
+html.skin-wechat-mp-article .hero-pic,
+html.skin-classified-yellow .hero-pic,
+html.skin-blog-personal-2008 .hero-pic,
+html.skin-corp-table-2005 .hero-pic {
+  display: block;
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  margin: 0 0 12px;
+  border: 1px solid #ccc;
+}
+html.skin-gov-redbar .sheet {
+  width: 96%;
+  margin: 12px auto;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+html.skin-gov-redbar .sheet th,
+html.skin-gov-redbar .sheet td {
+  border: 1px solid #c9c9c9;
+  padding: 5px 8px;
+  text-align: left;
+}
+html.skin-gov-redbar .sheet th { background: #f7e6e6; }
+html.skin-intro-manual .image-area img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  display: block;
+}
+@media (max-width: 800px) {
+  html.skin-service-cyan-desk .desk-split > tbody > tr > td {
+    display: block;
+    width: auto;
+  }
+}

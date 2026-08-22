@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fuzhe web-orders  shift queue</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>Fuzhe Agency  web-order night</strong>
+      <div>
+        <span class="desk-clock" id="clock"></span>
+        <form id="search-form" action="search-closed.html" method="get" style="display:inline">
+          <input id="search-input" name="q" placeholder="Night search closed">
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </header>
+    <div class="notice">
+      <img class="hero-pic" alt="" src="img/folders.jpg">
+      <h2>Night desk</h2>
+      <p>Qiu Shi. Badge FZ-Night-09. This shift writes sort notes only. No niche approval. No walk-ins. New applications push themselves. Attachments follow the ticket.</p>
+      <p>When the clock hits 05:30 on the 15th, an empty Ji field files empty. If you are hungry there is bread in the drawer. Do not unwrap the coil incense.</p>
+      <p>If the push tray is empty, open the He ticket already in the queue. Right-side attachments come with the ticket. They are not search hits.</p>
+      <p>Always on: <a href="shift-note.html">Qu Nan's whiteboard</a>　<a href="desk-help.html">How the fields work</a>　<a href="im-mi.html">Mi Sui off-shift scrap</a>　<a href="night-log.html">Shift log</a></p>
+    </div>
+    <table class="desk-split">
+      <tr>
+        <td>
+          <fieldset class="tray">
+            <legend>Queue to write</legend>
+            <table id="qtb">
+              <thead><tr><th>No.</th><th>Summary</th><th>Status</th></tr></thead>
+              <tbody></tbody>
+            </table>
+          </fieldset>
+        </td>
+        <td>
+          <fieldset class="tray">
+            <legend>Attachments pushed this shift</legend>
+            <ul id="pushul"></ul>
+          </fieldset>
+        </td>
+      </tr>
+    </table>
+    <div class="memo" id="memo">
+      <p>Qu Nan scraps. One card at a time.</p>
+      <p id="hintp">Not turned yet.</p>
+      <p><button type="button" id="hintbtn">Turn one more</button>
+      <a id="closea" href="result.html" style="display:none;margin-left:12px">File shift receipt</a></p>
+    </div>
+  </div>
+  <p class="pageft">South Gate back cabinet  light still on  2/40</p>
+  <script src="js/state.js"></script>
+  <script>
+    FZ.visit("desk");
+    var s = FZ.load();
+    var clk = document.getElementById("clock");
+    clk.textContent = FZ.clock();
+    if (FZ.isLate()) clk.className += " late";
+    var vis = FZ.visibleIds();
+    var tb = document.querySelector("#qtb tbody");
+    vis.forEach(function (id) {
+      var t = FZ.TICKETS[id];
+      var done = s.sorted[id];
+      var tr = document.createElement("tr");
+      var st = done ? ("Written  " + (done.action === "hold" ? "Hold" : "Release")) : (s.opened[id] ? "Opened" : "Just pushed");
+      tr.innerHTML = "<td>" + t.no + "</td><td>" + (done ? t.title : ("<a href=\"" + t.href + "\">" + t.title + "</a>")) + "</td><td>" + st + "</td>";
+      tb.appendChild(tr);
+    });
+    if (!vis.length) tb.innerHTML = "<tr><td colspan=3>Queue empty</td></tr>";
+    var ul = document.getElementById("pushul");
+    var items = FZ.pushedList();
+    if (!items.length) {
+      var li = document.createElement("li");
+      li.textContent = "No ticket attachments yet. They come after you open the first one.";
+      ul.appendChild(li);
+    } else {
+      items.forEach(function (it) {
+        var li = document.createElement("li");
+        li.innerHTML = "<a href=\"" + it.href + "\">" + it.label + "</a>";
+        ul.appendChild(li);
+      });
+    }
+    var hp = document.getElementById("hintp");
+    if (s.hint > 0) hp.textContent = FZ.HINTS[s.hint - 1];
+    document.getElementById("hintbtn").onclick = function () {
+      var n = FZ.hintNext();
+      hp.textContent = FZ.HINTS[n - 1] || FZ.HINTS[FZ.HINTS.length - 1];
+      if (n >= FZ.HINTS.length) this.disabled = true;
+    };
+    if (FZ.canClose()) document.getElementById("closea").style.display = "inline";
+  </script>
+</body>
+</html>

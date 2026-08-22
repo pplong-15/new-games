@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-intro-manual">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wei Tang · locker note</title>
+  <link rel="stylesheet" href="css/intro-manual.css">
+</head>
+<body>
+  <header class="intro-hero">
+    <div class="image-area"><img alt="" src="img/cover-desk.jpg"></div>
+    <h1>The slip was stuck inside the locker</h1>
+  </header>
+  <main>
+    <section>
+      <h2>◯ Who called me in</h2>
+      <p>I’m Wei Tang. Temp. The day clerk called in sick after lunch. Huo Mian rang, said be at the records room by 17:30. Key under the mat, he said. I felt for it. Cold. Dust.</p>
+      <p>He didn’t wait. I peeled the note off the locker door later: tonight a row of paper funeral tablets needs cataloging recommendations. File by 22:00. Staff id Wei-0821. Use that to get on the desk. Don’t ask for another password. Then a squeezed half-line, like he didn’t want it long — copying the print is fine. Don’t go looking for trouble.</p>
+      <p>I’m not a lisheng. dianzhu isn’t mine. anwei in the hall is tomorrow. What I can do is one card, six fields, recommendation. Whether it sticks is for day shift. After the window, the red paper still goes out.</p>
+    </section>
+    <section>
+      <h2>◯ What to open first</h2>
+      <p>Desk is on. Tablet row on the first layer. I glanced at Huo Mian’s handover and a ballpoint scrap in the drawer: someone wrote “my brother is still here.” I filed that as family noise. Noise doesn’t go in the deceased field.</p>
+      <p>Public house rules, evening-paper obituaries, the clan’s old site, those household-rite copies at County Library — bookmarks hang on the left. Public-mailbox password is on the same slip as the staff id, under the drawer. Burial bulletin has the commission summaries. I’m not here to solve a case. I match, then I write. If it doesn’t match I leave it blank. Blank beats writing a living man as late father.</p>
+      <p class="boot-actions">
+        <a class="enter-link" href="desk/login.html">Open the catalog desk</a>
+        <a class="ghost" href="index.html">House public site first</a>
+        <a class="ghost" href="gov/weituo.html">Commission summary first</a>
+      </p>
+    </section>
+    <section>
+      <h2>◯ Overreach gets kicked</h2>
+      <p>Card header is stamped: recommendation. Approve a pull, perform dianzhu, edit the printed paper — tick those and it bounces. I know. Hand still itches. Huo Mian’s “just copy it” sits wrong, but a temp’s name doesn’t print on the return slip.</p>
+      <p>Lijiang place names and people are house names. Don’t go looking them up outside. You’ll land in someone else’s county.</p>
+      <p><a href="#" id="tear">Peel the note and start over</a></p>
+    </section>
+  </main>
+  <script src="js/engine.js"></script>
+  <script>
+    document.getElementById("tear").onclick = function (e) {
+      e.preventDefault();
+      PW.reset();
+      location.reload();
+    };
+  </script>
+</body>
+</html>

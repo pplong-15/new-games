@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>著录回单·暂扣</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>回单　暂扣</strong>
+      <div>
+        <a class="ghost-btn" href="home.html">台</a>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>白班预览：建议暂扣改著录</h2>
+      <p id="why"></p>
+      <p>讳按受理亡者写翟守椿。牌面那个粮库的人标在世，不进今晚丧期排。配氏不按江纫回填。东昭留给亡者，生位另窗。主件用委托摘要和见报讣告。权限停在建议。</p>
+      <p>原红纸仍在业务组架子上。本回单不能把它揭下来。点主仍要礼生。霍勉名下没有这一笔。</p>
+    </div>
+    <p style="padding:12px 16px;font-size:13px">你若还想看他为什么把「抄原件」写得那么死，公示最底下有一九九九年那张通报。不看也不影响本回单。</p>
+    <p style="padding:0 16px 16px"><a href="#" id="tear">揭纸条重来</a></p>
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    var f = PW.get("card") || {};
+    var how = f.pei === "blank_hold"
+      ? "配氏你勾的是今晚不写。继室若以后要上双人牌，得另注在世，不走这张丧期纸。"
+      : "配氏你勾了继室并注在世。没有把已离的那位写回去，也没有把活人写成双亡。";
+    document.getElementById("why").textContent = how;
+    document.getElementById("tear").onclick = function (e) {
+      e.preventDefault();
+      PW.reset();
+      location.href = "../introduction.html";
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+/* 本局热区与窄屏，不改皮肤骨架 */
+.shot {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+}
+.shot img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #bbb;
+}
+.hot {
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  border: 1px dashed rgba(176, 48, 32, 0.7);
+  background: rgba(220, 70, 40, 0.08);
+  cursor: pointer;
+  text-decoration: none;
+}
+.hot:hover,
+.hot:focus {
+  background: rgba(220, 70, 40, 0.2);
+  outline: 0;
+}
+.hot.quiet {
+  border-color: rgba(176, 48, 32, 0.15);
+  background: transparent;
+}
+.hot.quiet:hover,
+.hot.quiet:focus {
+  border-color: rgba(176, 48, 32, 0.55);
+  background: rgba(220, 70, 40, 0.12);
+}
+.cap {
+  font-size: 12px;
+  color: #666;
+  margin: 6px 0 14px;
+}
+html.skin-archive-simsun p.cap,
+html.skin-archive-simsun p.noin {
+  text-indent: 0;
+}
+html.skin-intro-manual .shot {
+  display: block;
+  margin: 0 auto 8px;
+}
+html.skin-service-cyan-desk .notice .shot {
+  display: block;
+  margin: 8px auto;
+}
+html.skin-service-cyan-desk .choice {
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+  border: 1px solid #d0e4ee;
+  background: #fff;
+}
+html.skin-service-cyan-desk .warn {
+  color: #a40000;
+}
+html.skin-gov-redbar .wrap {
+  max-width: 100%;
+  width: auto;
+}
+html.skin-gov-redbar .article {
+  padding: 16px 20px 8px;
+  font: 14px/1.8 SimSun, "Songti SC", serif;
+}
+html.skin-gov-redbar .article h2 {
+  font-size: 16px;
+  margin: 0 0 10px;
+  color: #9f0a12;
+}
+html.skin-gov-redbar .article p {
+  margin: 0 0 10px;
+  text-indent: 2em;
+}
+html.skin-gov-redbar .article p.noin {
+  text-indent: 0;
+}
+@media (max-width: 820px) {
+  html.skin-classified-yellow .top-inner,
+  html.skin-classified-yellow .layout {
+    width: 100% !important;
+    max-width: 100%;
+  }
+  html.skin-classified-yellow .list {
+    width: auto !important;
+    float: none !important;
+  }
+  html.skin-archive-simsun .record {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  html.skin-corp-table-2005 table.site {
+    width: 100%;
+  }
+  html.skin-blog-personal-2008 .wrap,
+  html.skin-blog-personal-2008 .ft {
+    width: auto;
+    max-width: 780px;
+  }
+  html.skin-blog-personal-2008 .main,
+  html.skin-blog-personal-2008 .post,
+  html.skin-blog-personal-2008 article {
+    width: auto;
+    float: none;
+  }
+  html.skin-blog-personal-2008 .side,
+  html.skin-blog-personal-2008 aside {
+    float: none;
+    width: auto;
+    margin: 8px 8px 0;
+  }
+  html.skin-wechat-mp-article .article {
+    width: auto;
+    max-width: 677px;
+  }
+  html.skin-classified-yellow .top-inner,
+  html.skin-classified-yellow .layout,
+  html.skin-classified-yellow .ft {
+    width: auto;
+    max-width: 960px;
+  }
+  html.skin-classified-yellow nav,
+  html.skin-classified-yellow .list {
+    float: none;
+    width: auto;
+    margin: 0 8px 8px;
+  }
+  html.skin-classified-yellow .top input {
+    width: 46%;
+  }
+  html.skin-classified-yellow .row a,
+  html.skin-classified-yellow .hd-row .t {
+    float: none;
+    width: auto;
+    display: block;
+    white-space: normal;
+  }
+  html.skin-classified-yellow .row span,
+  html.skin-classified-yellow .hd-row span {
+    float: none;
+    width: auto;
+    display: inline;
+    margin-right: 8px;
+  }
+  html.skin-archive-simsun .record {
+    width: auto;
+    padding: 16px;
+    margin: 12px;
+  }
+  html.skin-service-cyan-desk header {
+    flex-wrap: wrap;
+  }
+  html.skin-service-cyan-desk #search-input {
+    max-width: 42vw;
+  }
+  html.skin-gov-redbar .wrap table td.box {
+    display: block;
+    width: auto;
+  }
+}

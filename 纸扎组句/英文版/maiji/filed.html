@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mai · Line Accepted</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>Return · accepted</strong>
+      <div>
+        <a class="ghost-btn" href="desk.html">Desk</a>
+        <a class="ghost-btn" href="../introduction.html">Slip</a>
+        <form id="search-form" action="#" method="get" style="display:inline">
+          <input id="search-input" name="q" placeholder="Look up a slip…">
+          <button type="submit">Find</button>
+        </form>
+      </div>
+    </header>
+    
+    <div class="notice">
+      <h2>One line on the books</h2>
+      <p>The return printer jammed once. The second sheet came out. The staff chop is blue, not like the pale fingerprint on the funeral order. Mai Lao is not in. The system still takes the columns he set.</p>
+      <p id="why"></p>
+      <p>Mai Lao staff return: restack the mixed pile separately. Tonight Unburned. Shao Pu living. Jing Qiubai's side only returned "PaperAttendant still in the waiting-burn zone, talk at fifth-seven." Approve-burn was not checked. Method was not attached. This line passed.</p>
+      <p>Yard red-gold was pulled out of the white paper and sent back to Puye's delivery mouth. The funeral-order column is still there. The furnace mouth stays shut on the schedule. The night helper did not light anything, and did not teach anyone how to make a figure.</p>
+      <p>Shop-number paper is clean. Last year's file is not written into this line. You filed an incident, not a tale.</p>
+      <p>The night helper can go. Glue smell is still on the cuff. If Jing Qiubai calls again, tell her to look at the second return sheet, not the first card stock.</p>
+      <p><a href="../introduction.html">Back to the slip</a> · <a href="#" id="tear2">Tear it and start over</a></p>
+    </div>
+    <script>
+      document.getElementById("tear2").onclick = function (e) {
+        e.preventDefault();
+        ZJ.reset();
+        location.href = "../introduction.html";
+      };
+    </script>
+
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    ZJ.bootPage("end-filed");
+    var f = ZJ.endingWhy();
+    var el = document.getElementById("why");
+    if (el) el.textContent = "You filed: " + (f.who||"") + "'s " + (f.what||"") + " was " + (f.act||"") + " " + (f.where||"") + ", tonight " + (f.night||"") + ". " + (f.life||"") + ". Authority: recommend.";
+</script>
+</body>
+</html>

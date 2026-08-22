@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FZ-0714-03　何培年</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>福泽网单　家祭</strong>
+      <div>
+        <a class="ghost-btn" href="desk.html">回队列</a> <a class="ghost-btn" href="shift-note.html">白板</a>
+        <form id="search-form" action="search-closed.html" method="get" style="display:inline">
+          <input id="search-input" name="q" placeholder="夜间已关">
+          <button type="submit">检索</button>
+        </form>
+      </div>
+    </header>
+    <div class="notice">
+      <img class="hero-pic" alt="" src="img/folders.jpg">
+      <h2>新弹入　FZ-0714-03</h2>
+<p>申请人何培年，湄湾北堤住。往生对象写亡父何立山，桌次勾了正祀，忌日六月初三。附件里有去年家祭回执号，系统说底账对得上。</p>
+<p>何培年在备注里写：年年这一套，别漏了香和纸马。电话留的是白天能接通的号。没有改名，没有把旁人塞进龛。</p>
+<p>屈南白板写过，齐整的家祭按正祀走。这封不像要抢别人的格子。</p>
+<p>何培年白天来过店里一次，米穗见过他。夜班仍按附件写，别因为熟客就跳过底账。这封底账对得上，才叫齐。</p>
+<form class="sortbox" id="sort-form" data-id="he">
+  <fieldset>
+    <legend>何家这封怎么走</legend>
+    <p class="auth">齐整家祭可以往晨班推。本班仍只是建议，碰不了何家那块牌。</p>
+    <label>这一封的处置
+      <select name="action">
+        <option value="pass">放行</option>
+        <option value="hold">暂扣</option>
+      </select>
+    </label>
+    <label>摆哪一桌
+      <select name="desk">
+        <option value="zheng">正祀</option>
+        <option value="gu">孤魂席</option>
+        <option value="deng">供灯</option>
+        <option value="none">不接桌</option>
+      </select>
+    </label>
+    <label>留给米穗的话
+      <textarea name="note" rows="3"></textarea>
+    </label>
+    <button type="submit">写下何家建议</button>
+  </fieldset>
+</form>
+<script>
+document.getElementById("sort-form").onsubmit = function (e) {
+  e.preventDefault();
+  var id = this.getAttribute("data-id");
+  if (!FZ.canOpen(id)) { FZ.toast("这封还不该写。"); return; }
+  FZ.openTicket(id);
+    var ok = FZ.submitTicket(id, this.elements.namedItem("action").value, this.elements.namedItem("desk").value, this.elements.namedItem("note").value);
+  if (ok) location.href = "desk.html";
+};
+</script>
+
+    </div>
+  </div>
+  <p class="pageft">何家这一封先到　6/40</p>
+  <script src="js/state.js"></script>
+  <script>
+    FZ.visit('he');
+    if (!FZ.guard('ticket-he.html')) {}
+    FZ.openTicket('he');
+  </script>
+</body>
+</html>

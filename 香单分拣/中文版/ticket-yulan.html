@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FZ-0714-18　童霜</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>福泽网单　供灯</strong>
+      <div>
+        <a class="ghost-btn" href="desk.html">回队列</a> <a class="ghost-btn" href="shop-rule.html">三桌</a>
+        <form id="search-form" action="search-closed.html" method="get" style="display:inline">
+          <input id="search-input" name="q" placeholder="夜间已关">
+          <button type="submit">检索</button>
+        </form>
+      </div>
+    </header>
+    <div class="notice">
+      <img class="hero-pic" alt="" src="img/courtyard.jpg">
+      <h2>新弹入　FZ-0714-18</h2>
+<p>童霜续广慈寺网上供灯，功德主姓名与去年灯号一致。她把灯号抄在备注里，问能不能顺便写进祖龛，好让家里老人看见。</p>
+<p>寺里须知若已推过来，供灯不是入龛。芳名正祀页也搜不到她要挂的那个家族名。这封该走灯，不该走龛。</p>
+<p>钱她付过。退款不归夜班。你要做的是别让打印单把灯写成牌。</p>
+<p>她问「顺便写进祖龛」那句，按须知回。供灯栏没有家族称谓可改。老人要看见灯，让他们白天去廊上看灯号。</p>
+<form class="sortbox" id="sort-form" data-id="yulan">
+  <fieldset>
+    <legend>续灯这封怎么走</legend>
+    <p class="auth">灯号对得上只说明她续过。入龛是另一回事，本班写不了准。</p>
+    <label>放不放给晨班印
+      <select name="action">
+        <option value="pass">放行</option>
+        <option value="hold">暂扣</option>
+      </select>
+    </label>
+    <label>灯、龛还是都不接
+      <select name="desk">
+        <option value="zheng">正祀</option>
+        <option value="gu">孤魂席</option>
+        <option value="deng">供灯</option>
+        <option value="none">不接桌</option>
+      </select>
+    </label>
+    <label>给寺务窗口的一句
+      <textarea name="note" rows="3"></textarea>
+    </label>
+    <button type="submit">写下续灯建议</button>
+  </fieldset>
+</form>
+<script>
+document.getElementById("sort-form").onsubmit = function (e) {
+  e.preventDefault();
+  var id = this.getAttribute("data-id");
+  if (!FZ.canOpen(id)) { FZ.toast("这封还不该写。"); return; }
+  FZ.openTicket(id);
+    var ok = FZ.submitTicket(id, this.elements.namedItem("action").value, this.elements.namedItem("desk").value, this.elements.namedItem("note").value);
+  if (ok) location.href = "desk.html";
+};
+</script>
+
+    </div>
+  </div>
+  <p class="pageft">供灯单夹在中间　12/40</p>
+  <script src="js/state.js"></script>
+  <script>
+    FZ.visit('yulan');
+    if (!FZ.guard('ticket-yulan.html')) {}
+    FZ.openTicket('yulan');
+  </script>
+</body>
+</html>

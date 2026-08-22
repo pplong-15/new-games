@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-archive-simsun">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>值班袋</title>
+  <link rel="stylesheet" href="../css/archive-simsun.css">
+  <link rel="stylesheet" href="../css/shots.css">
+  <script src="../js/tokens.js"></script>
+  <script src="../js/keyword-search.js"></script>
+  <script src="../js/ending.js"></script>
+  <script>document.addEventListener("DOMContentLoaded",function(){QTG.grant("t_endingpage");});</script>
+</head>
+<body>
+  <article class="record">
+    <h1>今晚能交的单</h1>
+    <div class="meta"><span>陈迈</span><span>2026-08-21</span></div>
+    <img class="shot" alt="夜里的铁门" src="../assets/night-door.jpg">
+    <p>袋子里四张单。没齐的先灰着。交出去一张，其余作废。</p>
+    <div id="ending-box">
+      <button class="end-btn" id="end-transfer" type="button">过户给下家</button>
+      <button class="end-btn" id="end-refund" type="button">冷静期退回名市</button>
+      <button class="end-btn" id="end-empty" type="button">备案改到已拆的12号</button>
+      <button class="end-btn" id="end-unbind" type="button">须知回滚到2009</button>
+      <p class="err" id="end-msg"></p>
+    </div>
+    <p>灰的也能点，点了会回你还缺哪份。</p>
+    <form id="search-form" action="../search-results.html" method="get">
+      <input id="search-input" name="q" placeholder="关键词">
+      <button type="submit">搜本地</button>
+    </form>
+  </article>
+</body>
+</html>

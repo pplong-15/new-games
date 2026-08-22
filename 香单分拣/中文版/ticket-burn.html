@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FZ-0714-11　严秋禾</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>福泽网单　烧衣</strong>
+      <div>
+        <a class="ghost-btn" href="desk.html">回队列</a> <a class="ghost-btn" href="desk-help.html">栏位</a>
+        <form id="search-form" action="search-closed.html" method="get" style="display:inline">
+          <input id="search-input" name="q" placeholder="夜间已关">
+          <button type="submit">检索</button>
+        </form>
+      </div>
+    </header>
+    <div class="notice">
+      <img class="hero-pic" alt="" src="img/wet-street.jpg">
+      <h2>新弹入　FZ-0714-11</h2>
+<p>严秋禾要代办南门巷口烧衣，时间写今夜十二点前后。附件只有一张手机拍照，巷口那块空地，看不见指定点的栏杆。</p>
+<p>她备注写：离家近，老人走不动。没有写往生姓名，也没有桌次。像是要把一堆纸直接倒在巷里。</p>
+<p>屈南让禁烧的扣住。通告若已推到栏里，对一下路段再写。本店不代路边那一堆，也开不出点火的条。</p>
+<p>严秋禾没写往生姓名。没有名字的烧衣更不该在巷口倒。指定点在旧粮站，她要走，让她白天自己去排。</p>
+<form class="sortbox" id="sort-form" data-id="burn">
+  <fieldset>
+    <legend>巷口这封怎么处理</legend>
+    <p class="auth">本店没有批准点火的权。对过通告再写，别替城管签字。</p>
+    <label>先放还是先扣
+      <select name="action">
+        <option value="pass">放行</option>
+        <option value="hold">暂扣</option>
+      </select>
+    </label>
+    <label>还要不要给她排桌
+      <select name="desk">
+        <option value="zheng">正祀</option>
+        <option value="gu">孤魂席</option>
+        <option value="deng">供灯</option>
+        <option value="none">不接桌</option>
+      </select>
+    </label>
+    <label>早上怎么回她
+      <textarea name="note" rows="3"></textarea>
+    </label>
+    <button type="submit">写下烧衣建议</button>
+  </fieldset>
+</form>
+<script>
+document.getElementById("sort-form").onsubmit = function (e) {
+  e.preventDefault();
+  var id = this.getAttribute("data-id");
+  if (!FZ.canOpen(id)) { FZ.toast("这封还不该写。"); return; }
+  FZ.openTicket(id);
+    var ok = FZ.submitTicket(id, this.elements.namedItem("action").value, this.elements.namedItem("desk").value, this.elements.namedItem("note").value);
+  if (ok) location.href = "desk.html";
+};
+</script>
+
+    </div>
+  </div>
+  <p class="pageft">烧衣这封跟在何家后面　9/40</p>
+  <script src="js/state.js"></script>
+  <script>
+    FZ.visit('burn');
+    if (!FZ.guard('ticket-burn.html')) {}
+    FZ.openTicket('burn');
+  </script>
+</body>
+</html>

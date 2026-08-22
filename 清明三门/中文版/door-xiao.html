@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>核销流水柜门</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<div id="wrap">
+  <header><strong>对账那沓</strong><div><a class="ghost-btn" href="desk.html">回柜</a></div></header>
+  <div class="notice">
+    <h2>核销流水</h2>
+    <p id="mini" class="sm-mini"></p>
+    <p>仇麦秋便条提过：这沓要对照别的页才读得懂。缺「码走集体」和「货落十二区」，采信钮是灰的。</p>
+    <p>流水自己不讲鬼，也不批准改号。它只把一码两记摊开。</p>
+    <p><button type="button" class="sm-btn" id="opbtn">摊流水（算一户）</button></p>
+    <div id="fullbox" class="closed-box" style="display:none">
+      <p>流水摊不开。名额满了。对账的人明天还要这沓，你先交班。</p>
+      <p><a href="desk.html">去腾名额</a></p>
+    </div>
+    <div id="openbox" style="display:none">
+      <p class="sm-ok">摊开了。上一行两处地块不是一块。</p>
+      <p>记一是南阶签到，记二是三十七穴收货。中间没有「改成同一块地」的手续。</p>
+      <p><a href="xiao-liu.html">流水表</a>　<a href="xiao-li.html">何谓串穴</a></p>
+    </div>
+    <p>对账柜　订书针生锈</p>
+  </div>
+</div>
+
+<script src="js/sanmen.js"></script>
+<script>
+
+(function(){
+  var id="xiao";
+  function show(){
+    Sanmen.paintMini(document.getElementById("mini"));
+    var opened=Sanmen.isOpen(id);
+    document.getElementById("openbox").style.display=opened?"block":"none";
+    document.getElementById("fullbox").style.display="none";
+  }
+  document.getElementById("opbtn").addEventListener("click",function(){
+    var r=Sanmen.openDoor(id);
+    if(!r.ok){ document.getElementById("fullbox").style.display="block"; }
+    show();
+  });
+  show();
+})();
+
+</script>
+</body>
+</html>

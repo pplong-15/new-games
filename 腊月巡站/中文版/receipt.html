@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-winxp-luna">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>协查回执</title>
+  <link rel="stylesheet" href="css/winxp-luna.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body class="xp-scroll">
+  <div class="desk">
+    <div class="window center-doc">
+      <div class="title-bar">
+        <span>西关协查回执 - 写字板</span>
+        <span class="ctrls"><b>_</b><b>□</b><b class="close">×</b></span>
+      </div>
+      <div class="menubar"><span>文件(F)</span><span>编辑(E)</span></div>
+      <div class="body">
+        <p>星辉网吧夜班代填。勾你认为仍挂着、并能对上街道那三种写法的站。空交她不盖章。多勾她打回。</p>
+        <form id="slip">
+          <label class="chk"><input type="checkbox" value="fushun"> 福顺年货（马秀兰）</label>
+          <label class="chk"><input type="checkbox" value="cuiji"> 崔记灶码（崔建国）</label>
+          <label class="chk"><input type="checkbox" value="jingxuan"> 净轩家政（齐小满）</label>
+          <label class="chk"><input type="checkbox" value="chunni"> 春泥扫尘（章树生）</label>
+          <label class="chk"><input type="checkbox" value="jiedao"> 西关街道信息站</label>
+          <label class="chk"><input type="checkbox" value="baike"> 安津小年词条</label>
+          <label class="chk"><input type="checkbox" value="forum"> 西关生活论坛</label>
+          <label class="chk"><input type="checkbox" value="portal"> 星辉网址之家</label>
+          <label class="chk"><input type="checkbox" value="tanggua"> 西关糖瓜铺（甘老三）</label>
+          <label class="chk"><input type="checkbox" value="jingua"> 净瓜家政（侯秋生）</label>
+          <label class="chk"><input type="checkbox" value="stock"> 安津行情小站</label>
+          <p><button class="btn3d" type="submit">送值班室</button>
+          <button class="btn3d" type="button" onclick="location.href='desktop.html'">先不送</button></p>
+        </form>
+        <p class="warn">路桂芬上午才看电脑。送出去就改不了。</p>
+      </div>
+    </div>
+  </div>
+  <div class="taskbar">
+    <span class="start">开始</span>
+    <span class="task">写字板</span>
+    <span class="tray">22:03</span>
+  </div>
+  <script src="js/patrol.js"></script>
+  <script>Patrol.bindForm(document.getElementById("slip"));</script>
+</body>
+</html>

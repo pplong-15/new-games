@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-discuz-board">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>鬼烧邻穴那层</title>
+  <link rel="stylesheet" href="css/discuz-board.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<div class="wp">
+  <div class="hd"><a class="logo" href="forum-index.html">涟县闲聊</a></div>
+  <div class="nv"><a href="forum-index.html">论坛</a><a href="desk.html">回柜</a></div>
+  <p id="mini" class="sm-mini"></p>
+  
+<div id="shut" class="closed-box"><p>停更帖跟传说户，未开只剩蓝头。</p><p><a href="desk.html">回柜</a></p></div>
+<div id="live" style="display:none">
+  <div class="floor"><div class="u"><div class="av"></div><b>巷口老K</b><p>积分 9</p></div>
+  <div class="t"><div class="ti">去年清明 | 只看该作者</div>
+  <p>东岗园十二区有人半夜听见纸响，第二天灰在隔壁。老人说鬼把钱烧错坟。我叔信这个。</p>
+  <div class="sig">信则有</div></div></div>
+  <div class="floor"><div class="u"><div class="av"></div><b>售货亭</b><p>积分 2</p></div>
+  <div class="t"><div class="ti">去年清明 | 只看该作者</div>
+  <p>配送的箱子我也见过，哪有鬼推箱。你们爱讲就讲，别写进园里的单子。</p>
+  <div class="sig">不信</div></div></div>
+  <div class="floor"><div class="u"><div class="av"></div><b>过路</b><p>积分 1</p></div>
+  <div class="t"><div class="ti">今年三月 | 只看该作者</div>
+  <p>园务贴了：传说不作结案。还顶这帖的，自己开心。</p>
+  <div class="sig">转贴</div></div></div>
+  <p><button type="button" class="sm-btn" id="vbtn">采信：有人讲鬼烧邻穴（不能结案）</button></p>
+  <p id="vok" class="sm-ok" style="display:none">这句会干扰性质栏。勾鬼会退。</p>
+  <p id="vbad" class="sm-warn" style="display:none"></p>
+  <p>帖子能证明有人这样讲，不能证明今夜。</p>
+  </div>
+
+  <div class="ft">停更版　楼层还在</div>
+</div>
+
+<section class="pad"><p>三层楼三种嘴。老K信，售货亭不信，过路把园务转进来。群嘴拼完，仍没有穴号，没有码。采信钮会把「有人讲鬼」写上板，性质栏若跟着勾鬼，退回单会点名这句。杭疏开这户等于花一个名额买干扰，可以不买。</p></section>
+<script src="js/sanmen.js"></script>
+<script>
+Sanmen.paintMini(document.getElementById('mini'));
+Sanmen.gate('shuo','shut','live');
+Sanmen.bindVerify(document.getElementById('vbtn'),'lore-ghost',document.getElementById('vok'),document.getElementById('vbad'));
+
+</script>
+</body>
+</html>

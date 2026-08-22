@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>站长空间登录</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/shots.css">
+  <script src="../js/tokens.js"></script>
+  <script src="../js/keyword-search.js"></script>
+  <script>document.addEventListener("DOMContentLoaded",function(){QTG.grant("t_loginpage");});</script>
+</head>
+<body class="login-page">
+  <div id="wrap">
+    <header>
+      <strong>桥头港 · 站长空间</strong>
+      <form id="search-form" action="../search-results.html" method="get">
+        <input id="search-input" name="q" placeholder="关键词">
+        <button type="submit">搜本地</button>
+      </form>
+    </header>
+    <form class="login-box" id="login-box" action="#" method="post">
+      <h1>登录</h1>
+      <label for="user">账号</label>
+      <input id="user" name="user" type="text" autocomplete="off">
+      <label for="pass">密码</label>
+      <input id="pass" name="pass" type="password" autocomplete="off">
+      <button type="submit">登录</button>
+      <p class="hint" id="login-hint">账号填站长登记名。别拿电话碰。</p>
+    </form>
+  </div>
+  <p style="text-align:center;font:12px SimSun,serif;color:#666">桥头问问　咨询台已停人工</p>
+  <script>
+  document.getElementById("login-box").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var u = document.getElementById("user").value.trim();
+    var p = document.getElementById("pass").value.trim();
+    var h = document.getElementById("login-hint");
+    if (u === "刘石桥" && p === "勿问") {
+      QTG.grant("t_login");
+      location.href = "space.html";
+      return;
+    }
+    if (u === "刘石桥" && p !== "勿问") {
+      h.textContent = "账号对。这不是电话，也不是水管。";
+      return;
+    }
+    if (u === "电工刘石桥" || u === "顺子" || u === "吴秋") {
+      h.textContent = "这人进不了站长空间。";
+      return;
+    }
+    h.textContent = "账号或口令不对。";
+  });
+  </script>
+</body>
+</html>

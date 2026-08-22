@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Martyrs' terrace collective · cabinet door</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<div id="wrap">
+  <header><strong>South-steps batch</strong><div><a class="ghost-btn" href="desk.html">Back to desk</a></div></header>
+  <div class="notice">
+    <h2>Martyrs' terrace collective</h2>
+    <p id="mini" class="sm-mini"></p>
+    <p>The grain-depot union batch. Miao Shiqiao only wants south-steps boxes filled. The code's backing page is behind the door. The roster lists no real martyr names and no Plot 12 grave numbers.</p>
+    <p>If the first shift opens this household, the board can keep "code went to the collective." Without that sentence, the button later on the ledger stays grey.</p>
+    <p><button type="button" class="sm-btn" id="opbtn">Open the batch sack (counts as one household)</button></p>
+    <div id="fullbox" class="closed-box" style="display:none">
+      <p>Sack will not open tonight. Three households already taken. South-steps words will not walk onto the board by themselves.</p>
+      <p><a href="desk.html">Hand over first, then come back</a></p>
+    </div>
+    <div id="openbox" style="display:none">
+      <p class="sm-ok">Sack open. Batch, code page, notice, Miao Shiqiao's letter — all readable.</p>
+      <p>One code, many people. Hold the code, enter the south-steps gate. Holding the code does not automatically become a north-slope delivery password. If someone copies it away, the backing page does not manage that.</p>
+      <p><a href="lie-pi.html">Batch</a>　<a href="lie-ma.html">Code page</a>　<a href="lie-hui.html">Notice</a>　<a href="jing-you.html">Letter</a></p>
+    </div>
+    <p>South-steps sack · red cord still on</p>
+  </div>
+</div>
+
+<script src="js/sanmen.js"></script>
+<script>
+
+(function(){
+  var id="lie";
+  function show(){
+    Sanmen.paintMini(document.getElementById("mini"));
+    var opened=Sanmen.isOpen(id);
+    document.getElementById("openbox").style.display=opened?"block":"none";
+    document.getElementById("fullbox").style.display="none";
+  }
+  document.getElementById("opbtn").addEventListener("click",function(){
+    var r=Sanmen.openDoor(id);
+    if(!r.ok){ document.getElementById("fullbox").style.display="block"; }
+    show();
+  });
+  show();
+})();
+
+</script>
+</body>
+</html>

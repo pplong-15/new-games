@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trial entry bounced</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/desk-extra.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>Bounce</strong>
+      <div><a class="ghost-btn" href="home.html">Back to desk</a></div>
+    </header>
+    <div class="mk-err" id="why">Under the duty rule, this crossing cannot be taken as valid.</div>
+    <div class="notice">
+      <h2>It stayed</h2>
+      <p>The temporary fill is cleared. Verified is still here: the rule was broken once. Refresh this page. The mark will not be gone. A handover preview cannot clear it either.</p>
+      <p>A bounce only proves the rule bites. It does not determine whether the door crew's mouth is wedding or funeral. Wedding or funeral needs other sources.</p>
+    </div>
+    <div id="chips"></div>
+    <p class="mk-side">
+      <a href="try.html">Try another</a>
+      <a href="record.html">See the cells</a>
+      <a href="advise.html">Write a recommendation</a>
+      <a href="#" id="ref">Refresh this page</a>
+    </p>
+    <p class="mk-side">05/44</p>
+
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    var k = MK.get("last-try");
+    var box = document.getElementById("why");
+    if (k === "step") box.textContent = "Under the duty rule, stepping on the threshold cannot be recorded as a valid crossing. This desk has noted: the rule was broken once.";
+    if (k === "pole") box.textContent = "Funeral coffin-bearing: the pole must not scrape the threshold. This desk has noted: the rule was broken once.";
+    document.getElementById("chips").innerHTML = MK.chipsHtml();
+    document.getElementById("ref").onclick = function (e) { e.preventDefault(); location.reload(); };
+</script>
+<p class="mk-side">A bounce is not a fine. A fine would destroy the file. This desk wants the hit left in place, so when you file you have something to point at. After you point, it is still only a recommendation. The key is in the east wing. Gu Jiong will not look at the return slip until morning.</p>
+<p class="mk-side">The refresh button is right there. Press it. The yellow strip is still there. Still there, and then you believe this desk is not bluffing.</p>
+</body>
+</html>

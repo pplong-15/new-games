@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FZ-0714-27　同乡会</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>福泽网单　孤衣</strong>
+      <div>
+        <a class="ghost-btn" href="desk.html">回队列</a>
+        <form id="search-form" action="search-closed.html" method="get" style="display:inline">
+          <input id="search-input" name="q" placeholder="夜间已关">
+          <button type="submit">检索</button>
+        </form>
+      </div>
+    </header>
+    <div class="notice">
+      <img class="hero-pic" alt="" src="img/folders.jpg">
+      <h2>新弹入　FZ-0714-27</h2>
+<p>湄湾潮籍同乡会文书司徒秋，代办客死无嗣者孤衣一桌。对象栏写纪守成，桌次孤魂席，费用走会里预算，不走家族。</p>
+<p>她备注写：会籍名录仍列无嗣，请勿改印成祖龛。若有私人网单要把此人改正祀，与会务无关。</p>
+<p>这封和晚秋那封不是同一申请人。会里认的是孤衣，不是先考。</p>
+<p>司徒秋若看见打印单把会务预算印成祖龛，会务会来店里对账。对账对的是桌签，不是你的动机。</p>
+<form class="sortbox" id="sort-form" data-id="guest">
+  <fieldset>
+    <legend>会里这封怎么走</legend>
+    <p class="auth">会务预算只覆盖孤衣。本班不能把会里的单改成家族正祀。</p>
+    <label>给不给晨班印孤衣
+      <select name="action">
+        <option value="pass">放行</option>
+        <option value="hold">暂扣</option>
+      </select>
+    </label>
+    <label>跟会里的桌还是跟表妹的桌
+      <select name="desk">
+        <option value="zheng">正祀</option>
+        <option value="gu">孤魂席</option>
+        <option value="deng">供灯</option>
+        <option value="none">不接桌</option>
+      </select>
+    </label>
+    <label>回司徒秋的一句
+      <textarea name="note" rows="3"></textarea>
+    </label>
+    <button type="submit">写下孤衣建议</button>
+  </fieldset>
+</form>
+<script>
+document.getElementById("sort-form").onsubmit = function (e) {
+  e.preventDefault();
+  var id = this.getAttribute("data-id");
+  if (!FZ.canOpen(id)) { FZ.toast("这封还不该写。"); return; }
+  FZ.openTicket(id);
+    var ok = FZ.submitTicket(id, this.elements.namedItem("action").value, this.elements.namedItem("desk").value, this.elements.namedItem("note").value);
+  if (ok) location.href = "desk.html";
+};
+</script>
+
+    </div>
+  </div>
+  <p class="pageft">会里自己来的那封　31/40</p>
+  <script src="js/state.js"></script>
+  <script>
+    FZ.visit('guest');
+    if (!FZ.guard('ticket-guest.html')) {}
+    FZ.openTicket('guest');
+  </script>
+</body>
+</html>

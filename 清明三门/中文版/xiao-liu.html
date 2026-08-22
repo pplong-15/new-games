@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-corp-table-2005">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>核销流水四月</title>
+  <link rel="stylesheet" href="css/corp-table-2005.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<table class="site" cellspacing="0" cellpadding="0">
+  <tr><td colspan="2" class="banner">核销流水四月</td></tr>
+  <tr><td colspan="2" class="nav"><a href="desk.html">回柜</a>|<a href="javascript:void(0)">打印</a></td></tr>
+  <tr>
+    <td class="left"><h4>流水</h4><p>一码</p><p>两记</p></td>
+    <td class="main"><p id="mini" class="sm-mini"></p>
+<div id="shut" class="closed-box"><p>流水未摊，对账数字不外露。</p><p><a href="desk.html">回柜</a></p></div>
+<div id="live" style="display:none">
+<p class="scroll">对账未完，勿改原号。</p>
+<table>
+<tr><th>码</th><th>记一</th><th>记二</th></tr>
+<tr><td>烈集-〇四〇五-二粮</td><td>南阶集体签到（缪石桥批次）</td><td>十二区三十七穴收货（皮厚山回执）</td></tr>
+<tr><td>私约-十二-一九</td><td>十二区十九穴</td><td>无第二记</td></tr>
+</table>
+<p>上一行两处地块不是一块。本组称串穴核销。采信以前要先有码的去向和货的落点。</p>
+<p><button type="button" class="sm-btn" id="vbtn">采信：一码两记，串穴核销</button></p>
+<p id="vok" class="sm-ok" style="display:none">这句能进备注性质栏。</p>
+<p id="vbad" class="sm-warn" style="display:none">今晚还缺能对上的那一页。先留下码和送货。</p>
+<p>流水能证明记法拧了，不能证明谁授意借码。</p>
+<p><a href="xiao-li.html">何谓串穴</a>　<a href="door-xiao.html">回门</a></p>
+</div>
+</td>
+  </tr>
+  <tr><td colspan="2" class="ft">核销组二〇〇五式表格</td></tr>
+</table>
+
+<section class="pad"><p>流水上一行是本夜要看的，下一行私约十二十九是干净反例：一码一记，没有第二处。杭疏别把反例勾进备注。对账未完勿改原号，印在滚条上。采信钮灰着的时候，先去看批次底页和配送回执，别在这一页穷点。</p></section>
+<script src="js/sanmen.js"></script>
+<script>
+Sanmen.paintMini(document.getElementById('mini'));
+Sanmen.gate('xiao','shut','live');
+Sanmen.bindVerify(document.getElementById('vbtn'),'cross-hexiao',document.getElementById('vok'),document.getElementById('vbad'));
+
+</script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+/* shop-local-2010s：中小商家官网 / 日式免费企业模板记忆。登山公开壳的对标。 */
+html.skin-shop-local-2010s {
+  --bg: #f9ebde;
+  --ink: #555;
+  --accent: #d15c20;
+  --nav: #777;
+  --footer: #eee;
+}
+html.skin-shop-local-2010s body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.8 "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+html.skin-shop-local-2010s #container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+html.skin-shop-local-2010s header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+}
+html.skin-shop-local-2010s .logo {
+  font-size: 22px;
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+html.skin-shop-local-2010s #search-form { display: flex; }
+html.skin-shop-local-2010s #search-input {
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  padding: 10px 14px;
+  width: 220px;
+  background: #fff;
+}
+html.skin-shop-local-2010s #search-form button {
+  border: 0;
+  background: var(--accent);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 0 5px 5px 0;
+}
+html.skin-shop-local-2010s nav ul,
+html.skin-shop-local-2010s #menubar ul {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+  margin: 0 24px;
+  padding: 0;
+}
+html.skin-shop-local-2010s nav a,
+html.skin-shop-local-2010s #menubar a {
+  display: block;
+  background: var(--nav);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  height: 56px;
+  line-height: 56px;
+  padding: 0 18px;
+  border-radius: 10px 10px 0 0;
+}
+html.skin-shop-local-2010s main {
+  padding: 16px 24px 32px;
+}
+html.skin-shop-local-2010s .notice dt {
+  display: inline-block;
+  background: #f4edb9;
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+html.skin-shop-local-2010s .menu-section h2 {
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+}
+html.skin-shop-local-2010s .price { color: var(--accent); font-weight: 700; }
+html.skin-shop-local-2010s footer {
+  background: var(--footer);
+  text-align: center;
+  font-size: 12px;
+  padding: 8px;
+}
+html.skin-shop-local-2010s .hero-photo { width: 100%; height: auto; display: block; }

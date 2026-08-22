@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>衡谱堂·退回</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>衡谱堂回单</strong>
+      <div>
+        <a class="ghost-btn" href="desk.html">台面</a>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>整条作废</h2>
+      <p>工号 GT-夜。你把产业或仪程写进来了。本台受托范围止于世系建议。岁修、停抬，写一个就整条作废。</p>
+      <p>作废之后库里还是原页。上传窗按原页走。你勾对的那些世系，今晚不算数。不是我跟你过不去，是合同第一页就写了：不批祠产。</p>
+      <p id="why"></p>
+      <p>西房出的钱买不到理事会的章。你想争丁口，明天去厅堂，别在我夜班的口上争。</p>
+    </div>
+    <p style="text-align:center;padding:24px">
+      <a href="slip.html">重新填一栏</a> ·
+      <a href="../introduction.html">收起字条</a>
+    </p>
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    var s = XP.read().slip || {};
+    var t = document.getElementById("why");
+    if (s.extra === "stop") t.textContent = "停抬这一项，谱社做不了主。仪在祠里。";
+    else t.textContent = "丁口岁修在理事会簿上。挂条带不去那本簿。";
+  </script>
+</body>
+</html>

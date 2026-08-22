@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-mail-web-2010">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Duty box · inbox</title>
+  <link rel="stylesheet" href="../css/mail-web-2010.css">
+  <link rel="stylesheet" href="../css/game-extra.css">
+</head>
+<body>
+  <div class="top">
+    <b>ye-anpu inbox</b>
+    <span class="unread-n">Unread <b>2</b></span>
+    <a href="login.html">Sign out</a>
+  </div>
+  <div class="panes">
+    <div class="folders">
+      <a class="write" href="inbox.html">Compose (stopped)</a>
+      <a class="on" href="inbox.html">Inbox (4)</a>
+      <a href="spam.html">Junk</a>
+    </div>
+    <div class="mails">
+      <h4>Still clickable tonight</h4>
+      <div class="m unread"><b><a href="qu.html">Restricted-layer spare badge</a></b><span>Qu Wantang · 2026-08-21 17:06</span></div>
+      <div class="m unread"><b><a href="zhai.html">I took leave</a></b><span>Zhai Pu · 2026-08-15 01:12</span></div>
+      <div class="m"><b><a href="spam.html">Scanner maintenance notice</a></b><span>Equipment · 2026-08-10</span></div>
+      <div class="m"><b>Empty subject</b><span>No sender · 07-02</span></div>
+    </div>
+    <div class="read">
+      <h3>Open the two on the left first</h3>
+      <p class="meta">This is the night-shift shared mailbox. Qu Wantang drops a line before day shift leaves. Zhai Pu left half a letter after he took leave.</p>
+      <p>The third is an equipment blast. No badge id. The empty-subject one will not open. Server says old. If you need the meeting note, it is not in this box. It is in the Heritage Office column.</p>
+      <p><img class="dq-inline" alt="" src="../img/window.jpg"></p>
+    </div>
+  </div>
+  <p class="ft">Inbox list · four letters are not one emergency</p>
+  <script src="../js/state.js"></script>
+  <script>
+    if (DQ.requireSess("mail", "login.html")) DQ.visit("inbox");
+  </script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+/* ==========================================================================
+   密度层 v3 微调：压标题、紧间距、控宽度
+   ========================================================================== */
+
+/* ---------- 全局标题再压缩 ---------- */
+h1{font-size:14px !important}
+h2{font-size:13px !important}
+h3{font-size:12px !important}
+
+/* ---------- 论坛：压头部、控宽度 ---------- */
+.forum-masthead{padding:0 !important}
+.forum-title-row{padding:4px 10px !important;min-height:auto !important}
+.forum-title-row h1,.forum-logo{font-size:14px !important}
+.forum-title-row p{font-size:10px !important;max-width:36em}
+.forum-utility{padding:2px 10px !important}
+.forum-primary-nav a,.forum-primary-nav span{padding:2px 8px !important}
+.forum-breadcrumb{padding:3px 10px !important}
+.forum-frame{max-width:980px !important;margin-left:auto !important;margin-right:auto !important}
+.forum-operations-shell{grid-template-columns:170px minmax(0,1fr) !important;padding:3px !important;gap:3px !important}
+.forum-topic-row{padding:2px 6px !important}
+.forum-floor-header,.forum-post-head{padding:2px 6px !important}
+.forum-post-body{padding:6px 10px !important}
+.forum-author{padding:6px 4px !important;width:110px !important}
+
+/* ---------- 民俗站：压标题、紧间距 ---------- */
+.folk-site-frame{max-width:960px !important;margin-left:auto !important;margin-right:auto !important}
+.folk-masthead{padding:6px 12px !important}
+.folk-masthead h1,.folk-site-name{font-size:14px !important;margin:0 0 2px !important}
+.folk-masthead p{font-size:10px !important}
+.folk-text-nav{padding:2px 6px !important}
+.folk-text-nav a,.folk-text-nav span{padding:1px 5px !important}
+.folk-layout{gap:0 !important}
+.folk-directory{padding:6px 4px !important}
+.folk-directory h2,.folk-directory h3{font-size:12px !important;padding:2px 4px !important;margin:0 0 4px !important}
+.folk-directory ul li{padding:1px 0 !important}
+.folk-directory>a,.folk-directory>span{padding:1px 3px !important}
+.folk-directory hr{margin:4px 0}
+.folk-directory p{font-size:10px !important;margin:2px 0 !important}
+.folk-counter{margin-top:6px !important;padding:3px !important}
+.folk-content{padding:8px 10px !important}
+.folk-search-block{padding:4px 6px !important;margin-bottom:8px !important}
+.folk-search-block input{min-height:18px !important}
+.folk-search-block button{min-height:20px !important}
+.folk-index{padding:0 0 10px 18px !important}
+.folk-index li{padding:3px 1px !important}
+.folk-index p{margin:1px 0 0 !important}
+.folk-service-rail{padding:6px 4px !important}
+.folk-service-rail h2{font-size:12px !important;padding:2px 4px !important;margin:0 0 4px !important}
+.folk-service-rail a,.folk-service-rail span{padding:1px 0 !important}
+.folk-side-note{padding:6px !important}
+.folk-site-footer{padding:4px 8px !important}
+.folk-nav{padding:3px 6px !important}
+.paper-article{padding:8px 10px !important}
+.paper-article h1{font-size:13px !important;margin:3px 0 !important}
+.ink-rule{margin:8px 0 !important;height:2px !important}
+
+/* ---------- 档案：紧间距 ---------- */
+.archive-identity{padding:8px 14px !important}
+.archive-identity h1,.archive-identity>div>a,.archive-title{font-size:14px !important;margin:0 0 1px !important}
+.archive-primary-nav a,.archive-primary-nav span{padding:3px 10px !important}
+.archive-shell,.archive-record-shell{margin:10px auto 20px !important;gap:10px !important}
+.archive-sidebar nav>*{padding:3px 6px !important}
+.archive-facets dl>div{padding:1px 3px !important}
+.archive-search-panel{padding:8px 10px !important}
+.directory-row{padding:3px 6px !important}
+.institution-breadcrumb{padding:3px 6px !important}
+.catalog-record{padding:10px 0 20px !important}
+.archive-catalog-identity{padding:10px 14px !important}
+.archive-catalog-identity h1{font-size:13px !important;margin:0 0 3px !important}
+.archive-record-fields{padding:10px 14px 0 !important}
+.archive-page .catalog-record>section:not(.archive-record-fields){margin:10px 14px 0 !important;padding:8px 10px !important}
+.archive-page .record-metadata dt,.archive-page .record-metadata dd{padding:3px 5px !important}
+.archive-finding-aid{padding:6px 10px !important}
+.archive-site-footer{padding:6px 10px !important}
+
+/* ---------- 旧报：紧间距 ---------- */
+.news-masthead{padding:10px 14px !important}
+.news-masthead h1,.news-wordmark,.news-title{font-size:14px !important}
+.news-library-bar a,.news-library-bar span{padding:4px 8px !important}
+.news-layout,.news-record-layout{margin:10px auto 20px !important;gap:10px !important}
+.news-search-tools{padding:6px 8px !important}
+.news-search-tools h2{font-size:12px !important;margin:0 0 4px !important}
+.news-calendar>div{padding:2px !important}
+.news-edition-picker>*{padding:2px 5px !important}
+.news-date-strip{padding:5px 8px !important}
+.news-index article{padding:5px 8px !important}
+.news-site-footer{padding:6px 10px !important}
+.news-breadcrumb{padding:3px 6px !important}
+.news-record-furniture{padding:3px 8px !important}
+.scan-record{gap:12px !important;padding:10px !important}
+.scan-sheet{padding:10px !important}
+.ocr-panel{padding:8px !important}
+.news-page .record-metadata>div{padding:3px 0 !important}
+.news-film-strip{padding:10px !important}
+.news-film-identity{padding:5px 0 8px !important}
+.news-film-identity h1{font-size:13px !important}
+.news-film-frame-rail{margin:-10px -10px 8px !important;padding:3px 10px !important;gap:10px !important}
+.news-correction-header{padding:0 0 6px !important}
+.news-correction-header h1{font-size:13px !important;margin-bottom:3px !important}
+.news-correction-before,.news-correction-after{padding:8px !important}
+.news-correction-note{padding:6px 8px !important}
+.news-correction-log{padding:8px !important}
+
+/* ---------- 地质：紧间距 ---------- */
+.geo-agency{padding:8px 12px !important}
+.geo-agency h1,.geo-agency>div>a,.geo-title{font-size:14px !important;margin:0 0 1px !important}
+.geo-primary-nav a,.geo-primary-nav span{padding:3px 10px !important}
+.geo-shell{margin:10px auto 20px !important;gap:10px !important}
+.geo-data-tree nav>*{padding:3px 6px !important}
+.geo-data-tree li{padding:1px 0 !important}
+.geo-map-tools{padding:5px 6px !important;margin-top:6px !important}
+.filter-details{padding:5px 6px !important}
+.geo-search-tools{padding:8px 10px !important}
+.geo-facet-strip{margin:6px 0 !important}
+.geo-facet-strip>div{padding:2px 6px !important}
+.geo-dataset-list>a{padding:3px 6px !important;gap:6px !important}
+.geo-site-footer{padding:6px 10px !important}
+.geo-breadcrumb{padding:3px 6px !important}
+.geo-report-header{padding:8px 12px !important}
+.geo-report-header h1{font-size:13px !important;margin:0 0 3px !important}
+.geo-report-workspace{gap:8px !important;margin:8px 0 !important}
+.geo-attachment-register{padding:6px 8px !important}
+.geo-attachment-register h2{font-size:12px !important;margin:0 0 4px !important}
+.geo-technical-fields{padding:8px 12px !important}
+.geo-source-register{margin:4px 12px !important}
+.geo-source-register>div{padding:3px 5px !important}
+.technical-body{padding:8px 12px !important}
+.technical-report>footer{margin-top:8px !important;padding:6px 12px !important}
+
+/* ---------- 工作台：紧间距 ---------- */
+.workbench-app-header,.tool-heading.workbench-app-header,
+.receipt-header.workbench-app-header,.controlled-source-header.workbench-app-header{padding:10px 14px !important}
+.workbench-app-header h1,.tool-heading h1{font-size:13px !important;margin:0 0 3px !important}
+.workbench-header-fields>div{padding:3px 6px !important}
+.workbench-toolbar{padding:5px 10px !important;gap:12px !important}
+.workbench-process-tree,.tool-task-rail{padding:8px 6px !important}
+.workbench-process-tree>h2,.tool-task-rail>h2{font-size:12px !important;margin:0 0 6px !important}
+.workbench-process-tree>ol>li{padding:4px 0 !important;gap:5px !important}
+.workbench-task-rail{padding-top:6px !important}
+.workbench-task-rail h3{font-size:12px !important;margin:0 0 4px !important}
+.workbench-job-row{padding:3px 5px !important;gap:5px !important}
+.case-area-heading{padding:8px 14px !important}
+.workbench-primary-pane{padding:12px 14px !important}
+.current-assignment,.receipt-ready{margin:0 0 10px !important;padding:8px 10px !important}
+.project-reaction{margin:0 0 10px !important;padding:8px 10px !important}
+.workbench-receipts{margin-top:10px !important}
+.human-receipts li{padding:3px 5px !important}
+.workbench-support-register{margin:0 14px 10px !important}
+.workbench-support-register>section{padding:8px 10px !important}
+.opened-sources li,.ordinary-jobs li,.related-records li{padding:3px 5px !important}
+.workbench-bottom-actions{padding:6px 14px !important}
+.operation-sheet-heading{padding:8px 12px !important}
+.operation-sheet form,.operation-sheet>.saved-panel,.operation-sheet>.form-error{margin:10px 12px !important}
+.question-block{padding:8px 0 !important}
+.choice-option{padding:3px 6px !important}
+.order-grid label{padding:2px 0 !important;gap:5px !important}
+.form-actions{margin:14px -12px -10px !important;padding:8px 12px !important;gap:6px !important}
+.saved-panel,.form-error{margin:6px 0 !important;padding:6px 8px !important}
+.hint-drawer{margin:6px 0 !important;padding:5px 8px !important}
+.hint-drawer li{padding:5px 0 !important}
+.next-question{margin:6px 0 !important;padding:6px 8px !important}
+.tool-support-row{gap:8px !important;margin-top:8px !important}
+.source-links{margin:0 0 8px !important}
+.source-links-heading{padding:6px 10px !important;gap:6px !important}
+.source-links li{padding:3px 6px !important}
+.panel-nav{margin:0 0 8px !important}
+.panel-nav>*{padding:3px 6px !important}
+.artifact-cue{margin:6px 0 !important}
+.artifact-cue>div{padding:6px 8px !important}
+.panel-procedure li{padding:2px 0 !important}
+.controlled-source-header{padding:10px 14px !important}
+.controlled-source-header h1{font-size:13px !important;margin:0 0 3px !important}
+.controlled-source-nav{padding:5px 14px !important;gap:10px !important}
+.controlled-source-shell{gap:12px !important}
+.controlled-document{gap:12px !important}
+.document-stamp{padding:8px 6px !important}
+.document-stamp>span{padding:1px 6px !important;margin-bottom:5px !important}
+.document-body{padding:10px 14px !important}
+.source-view-heading{margin-bottom:8px !important;padding-bottom:5px !important}
+.source-view-heading h2{font-size:13px !important}
+.source-table-notes,.source-media-transcript{padding:6px 8px !important}
+.custody-boundary{padding:8px 12px !important;margin-top:8px !important}
+.evidence-visual{margin:0 0 8px !important}
+.evidence-visual figcaption{padding:5px 6px !important}
+.evidence-placeholder-sheet{padding:10px !important}
+.receipt-primary-pane,.related-chain-primary{padding:10px 14px !important}
+.receipt-context-rail,.related-chain-context,.tool-context-rail{padding:8px 10px !important}
+.derived-receipt,.branch-status,.chain-premise,.next-source,.chain-closure,
+.execution-summary,.shared-ending-boundary{margin:0 0 10px !important;padding:8px 10px !important}
+.prediction-receipt{margin:0 0 10px !important;padding:8px 10px !important}
+.endpoint-header{padding:10px 14px !important}
+.endpoint-header h1{font-size:13px !important;margin:0 0 3px !important}
+.endpoint-status-grid,.endpoint-ledger{margin:10px 0 !important}
+.endpoint-status-grid>div,.endpoint-ledger>div{padding:5px 8px !important}
+.endpoint-body-grid{gap:12px !important}
+.endpoint-primary-pane{padding:10px 14px !important}
+.endpoint-context-rail{padding:8px 10px !important}
+.unresolved-list{padding:6px 8px !important}
+.unresolved-list li{padding:1px 0 !important}
+.ending-actions{padding:10px 14px !important;gap:6px !important}
+.false-conclusion fieldset{padding:8px !important}
+.system-message{margin:10px 14px !important;padding:8px 10px !important}
+.system-error-header{padding:10px 14px !important}
+.reset-dialog{padding:12px !important}
+.reset-dialog h2{font-size:13px !important;margin:0 0 6px !important}
+.reset-dialog p{margin:0 0 8px !important}
+.dialog-actions{gap:6px !important;padding-top:6px !important}
+.storage-notice{padding:5px 14px !important}
+/* 内部系统宽度控制 */
+.institution-page,.workbench-tool,.workbench-result,.related-chain,
+.workbench-source,.ending-page,.not-found{max-width:1100px !important;margin-left:auto !important;margin-right:auto !important}
+.workbench-business-shell,.workbench-operation-shell{grid-template-columns:190px minmax(0,1fr) !important}
+.receipt-system-layout,.related-chain-shell{grid-template-columns:minmax(0,1.45fr) minmax(190px,.65fr) !important}
+.endpoint-body-grid{grid-template-columns:minmax(0,1.45fr) minmax(190px,.7fr) !important}

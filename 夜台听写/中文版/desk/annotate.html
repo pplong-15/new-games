@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-win7-aero" data-seen="annotate">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>夜班标注单</title>
+  <link rel="stylesheet" href="../css/win7-aero.css">
+  <link rel="stylesheet" href="../css/patches.css">
+</head>
+<body>
+  <div class="desk">
+    <div class="window">
+      <div class="title-bar">
+        <span>标注建议　蒲生</span>
+        <span class="ctrls"><span>_</span><span>□</span><span class="x">×</span></span>
+      </div>
+      <div class="addr">C:\\Duty\\mark.htm</div>
+      <div class="body">
+        <p class="tiny"><a href="desktop.html">桌</a><a href="timeline.html">轴</a></p>
+        <p>权限只到建议。翟台生拿去决定六点那档要不要改口。不是让你批准谁出钱。主段按二十二点到二十三点三十算。后到的人可以进厅，不必勾进主段。</p>
+        <p>四路都能交。信听写、对纸、信油印、空着，机器都收。收完锁单。要改只能作废重开。</p>
+        <p>西房若被你写成出钱的一房，建议会按油印那条路走偏。西厢是屋子。屋子。别写成房份。</p>
+        <div id="formbox">
+          <p>主段在场（可多勾）</p>
+          <label><input type="checkbox" name="p" value="bochuan"> 顾柏川</label>
+          <label><input type="checkbox" name="p" value="wanqiu"> 汤晚秋</label>
+          <label><input type="checkbox" name="p" value="zhonghuai"> 顾仲槐</label>
+          <label><input type="checkbox" name="p" value="jiping"> 顾季萍</label>
+          <label><input type="checkbox" name="p" value="houshui"> 顾厚水</label>
+          <label><input type="checkbox" name="p" value="luan"> 栾守一</label>
+          <label>二十二点十四说话人
+            <select id="s2214">
+              <option value="unsure">说不清</option>
+              <option value="bochuan">顾柏川</option>
+              <option value="zhonghuai">顾仲槐</option>
+              <option value="houshui">顾厚水</option>
+            </select>
+          </label>
+          <label>二十二点三十一说话人
+            <select id="s2231">
+              <option value="unsure">说不清</option>
+              <option value="jiping">顾季萍</option>
+              <option value="wanqiu">汤晚秋</option>
+            </select>
+          </label>
+          <label>头七钱记哪一房
+            <select id="pay">
+              <option value="blank">先不写</option>
+              <option value="chang">长房（含代交）</option>
+              <option value="er">二房</option>
+              <option value="san">季萍那房</option>
+              <option value="xi">西房</option>
+            </select>
+          </label>
+          <p><button type="button" id="go">交建议</button></p>
+        </div>
+        <div class="endbox" id="endbox" hidden></div>
+      </div>
+    </div>
+  </div>
+  <div class="taskbar">
+    <span class="orb"></span>
+    <span class="pin">单</span>
+    <span class="tray">05:12</span>
+  </div>
+  <script src="../js/seen.js"></script>
+  <script>
+    (function () {
+      function present() {
+        var o = {};
+        var boxes = document.querySelectorAll("input[name=p]");
+        for (var i = 0; i < boxes.length; i++) if (boxes[i].checked) o[boxes[i].value] = 1;
+        return o;
+      }
+      function grade(p, a, b, pay) {
+        var need = p.zhonghuai && p.wanqiu && p.houshui && p.luan;
+        if (need && !p.bochuan && !p.jiping && a === "zhonghuai" && b === "wanqiu" && pay === "chang") return "true";
+        if (pay === "er" || pay === "xi") return "erfang";
+        if (p.bochuan || a === "bochuan") return "tape";
+        return "hold";
+      }
+      function reason(key, s, p, a, pay) {
+        if (key === "true") {
+          if (s.shift && s.chang) return "你把打卡和代字对上了。厅里那句自称没压过夜板，信封上的代也没被读稿里的出嫁女带走。";
+          return "三项你标成：主段没有柏川和季萍，近距那句收尾跟店里一样，带钱那档对着代交，钱记长房。";
+        }
+        if (key === "tape") {
+          if (p.bochuan && s.shift) return "夜板你开过，仍把柏川勾进主段。听写里的名字比打卡更听得进。";
+          if (a === "bochuan") return "二十二点十四你写成柏川自己开口。收尾那两个字，店页里也有。";
+          return "你按听写的自称交了。明早播音会把到场认账锁在长房头上。";
+        }
+        if (key === "erfang") {
+          if (pay === "xi") return "西房你当成谱上的一份。铁盒在西厢，消防那张纸也在说厢房，不是又冒出一房出钱。";
+          if (s.ban) return "油印你看见了，就把头七钱记到二房。席面零头和承办不是同一笔。";
+          return "钱记到二房。当场管事的人会继续被找，长房那封代交的信封算不进名份。";
+        }
+        if (s.s2340 && p.jiping) return "季萍下车那截你听见了，仍把她勾进主段。末班到点在二十三点四十。";
+        return "三项你没标死。翟台生只能改口说以簿子为准，两房早上仍会来站门口问。";
+      }
+      function after(key) {
+        if (key === "true") return "建议写：主段在场仲槐、晚秋、厚水、栾守一；近距自称是仲槐借名；带钱是晚秋；头七钱按长房代交。承办油印与礼簿不一致，播音只提钱的名份，不替村委改印。柏川那头不会被写成逃席又到场。";
+        if (key === "tape") return "六点那档会播出长房到场认账。柏川人在病房走廊，晚秋只想放下信封。仲槐卸下承办，后续的账会顺着广播找长房。工号蒲生。";
+        if (key === "erfang") return "播音不拆油印。二房继续当承办，加菜和铁丝还是找仲槐。长房那笔代交会变成好像没认过。";
+        return "站里播「治丧以礼簿为准」。没有三项，门口的人不会散。你这班能下班，纸上的名份还悬着。";
+      }
+      function titles() {
+        return { true: "建议已交　按对过的纸", tape: "建议已交　按听写自称", erfang: "建议已交　按油印房份", hold: "建议已交　只报对不上" };
+      }
+      function render(key, p, a, pay) {
+        var s = window.ytSeen ? window.ytSeen() : {};
+        var box = document.getElementById("endbox");
+        box.hidden = false;
+        box.innerHTML = "<h3>" + titles()[key] + "</h3><p>" + reason(key, s, p, a, pay) + "</p><p>" + after(key) + "</p><p><a href=\"timeline.html\">回轴</a>　<a href=\"#\" id=\"again\">作废重开（仅本机）</a></p>";
+        document.getElementById("formbox").style.opacity = "0.45";
+        var ag = document.getElementById("again");
+        if (ag) ag.onclick = function (e) {
+          e.preventDefault();
+          localStorage.removeItem("yt_end");
+          location.reload();
+        };
+      }
+      var saved = localStorage.getItem("yt_end");
+      if (saved) {
+        try { render(saved, {}, "unsure", "blank"); } catch (e) {}
+      }
+      document.getElementById("go").onclick = function () {
+        var p = present();
+        var a = document.getElementById("s2214").value;
+        var b = document.getElementById("s2231").value;
+        var pay = document.getElementById("pay").value;
+        var key = grade(p, a, b, pay);
+        localStorage.setItem("yt_end", key);
+        render(key, p, a, pay);
+      };
+    })();
+  </script>
+</body>
+</html>

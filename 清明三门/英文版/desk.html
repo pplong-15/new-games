@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>East Ridge Garden reservation desk on duty</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<div id="wrap">
+  <header>
+    <strong>East Ridge Garden reservation desk</strong>
+    <div>
+      <a class="ghost-btn" href="clock.html">Clock</a>
+      <a class="ghost-btn" href="board.html">Board</a>
+      <a class="ghost-btn" href="note.html">File remark</a>
+    </div>
+  </header>
+  <div class="notice">
+    <h2>Counter this shift</h2>
+    <p id="mini" class="sm-mini"></p>
+    <p>This shift opens three households. Clicking a door takes a slot. Handover clears what you opened. It does not clear verified sentences on the board.</p>
+    <p><button type="button" class="sm-btn" id="hand">Hand over. Pull the paper back</button>
+       <a class="sm-btn" href="yuan-tiao.html">Three-door slip</a>
+       <a class="sm-btn" href="qian-ban.html">Last shift's note</a>
+       <a class="sm-btn" href="mail-inbox.html">Duty inbox</a></p>
+  </div>
+  <div class="tabs">
+    <a href="desk.html">Cabinet doors</a>
+    <a href="gov-index.html">Garden-affairs page</a>
+    <a href="min-su.html">Qingming notice</a>
+  </div>
+  <div class="door-list" id="doors"></div>
+  <p>The pale-cyan terminal belongs to the reservation desk. Dummy columns do not open another system.</p>
+</div>
+
+<section class="pad"><p>All eight doors sit on this machine. This shift may lift three. Directory and change-number buttons are props. Click them and you stay on this page. Garden-affairs and the Qingming notice are pinned to the wall. They do not take a slot. Press handover and opened cells go empty. Household names you have seen stay on the board. Verified sentences stay. The checkout stack usually waits for a second shift before it will come out.</p></section>
+<script src="js/sanmen.js"></script>
+<script>
+
+Sanmen.paintMini(document.getElementById("mini"));
+var order=["tousu","qu12","lie","song","xiao","kao","han","shuo"];
+var box=document.getElementById("doors");
+var s=Sanmen.load();
+order.forEach(function(id){
+  var a=document.createElement("a");
+  a.href="door-"+id+".html";
+  a.textContent=Sanmen.doorName(id)+(Sanmen.isOpen(id)?" · open this shift":(Sanmen.hasSeenDoor(id)?" · seen before":" · not opened"));
+  if(Sanmen.isOpen(id)) a.className="used";
+  else if(s.opened.length>=3 && !Sanmen.isOpen(id)) a.className="locked";
+  box.appendChild(a);
+});
+document.getElementById("hand").addEventListener("click",function(){
+  Sanmen.handover();
+  location.href="desk.html";
+});
+
+</script>
+</body>
+</html>

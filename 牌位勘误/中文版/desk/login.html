@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>著录台·工号</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+</head>
+<body class="login-page">
+  <div id="wrap">
+    <header>
+      <strong>沥江殡仪文书室</strong>
+    </header>
+    <form class="login-box" id="in" action="#" method="post">
+      <h1>夜班登录</h1>
+      <label for="user">临工号</label>
+      <input id="user" name="user" type="text" autocomplete="off" placeholder="柜门纸条">
+      <p class="hint" id="hint">霍勉写过：进台用条子上的号，不必另要口令。白班工号进不来夜班这扇。访客号早就停了。输错三次不会锁，只会让你在这页坐着。</p>
+      <p class="hint">本页不管灵位对不对。对错在台面那张单，和后面六栏。登进去只证明你是今夜顶班的临工。</p>
+      <button type="submit">进入台面</button>
+      <p class="hint"><a href="#" id="fill">用条子上的号</a> · <a href="../introduction.html">回柜门</a></p>
+    </form>
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    document.getElementById("fill").onclick = function (e) {
+      e.preventDefault();
+      document.getElementById("user").value = "卫-0821";
+    };
+    document.getElementById("in").onsubmit = function (e) {
+      e.preventDefault();
+      var v = document.getElementById("user").value.replace(/\s/g, "");
+      if (v === "卫-0821") {
+        PW.set("in", 1);
+        location.href = "home.html";
+      } else {
+        document.getElementById("hint").textContent = "号对不上。更衣柜里面那张，卫字开头。";
+      }
+    };
+  </script>
+</body>
+</html>

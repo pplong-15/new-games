@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FZ-0714-22  Ji Wanqiu</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>Fuzhe web-orders  Ji</strong>
+      <div>
+        <a class="ghost-btn" href="desk.html">Back to queue</a> <a class="ghost-btn" href="im-mi.html">Mi Sui scrap</a>
+        <form id="search-form" action="search-closed.html" method="get" style="display:inline">
+          <input id="search-input" name="q" placeholder="Night search closed">
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </header>
+    <div class="notice">
+      <img class="hero-pic" alt="" src="img/tablets.jpg">
+      <h2>Just pushed  FZ-0714-22</h2>
+<p>Ji Wanqiu, resident in Dongguan, old registration Meiwan. Deceased: Ji Shoucheng. Relationship field: late father. Table: ancestral-niche ancestral seat. Death anniversary: July 12. Attachments were pushed up in a string by the system. You did not search them out.</p>
+<p>Her sentences are complete: kindly arrange ancestral-niche ancestral seat; the family is willing to make up the incense fee. Phone is a Dongguan number. The Meiwan contact she left blank.</p>
+<p>Mi Sui said not to walk it blind. The ledger, the donor list, and the association name will follow this ticket. Open the push first, then write the fields. This shift is still only a note. You cannot change the characters in the niche. You can only decide which table morning prints.</p>
+<p>A Dongguan number may not pick up at night. The few lines you leave for morning shift are what morning can use. The "late father" in the relationship field is checked against the ledger, not against the applicant's tone.</p>
+<form class="sortbox" id="sort-form" data-id="ji">
+  <fieldset>
+    <legend>Where Ji Wanqiu's ticket lands</legend>
+    <p class="auth">The table the applicant ticked is not the ledger. You can only recommend hold or walk, and which table to change to. You cannot approve niche entry.</p>
+    <label>Hold it or release it to print
+      <select name="action">
+        <option value="pass">Release</option>
+        <option value="hold">Hold</option>
+      </select>
+    </label>
+    <label>Which table this name enters
+      <select name="desk">
+        <option value="zheng">Ancestral seat</option>
+        <option value="gu">Solitary-soul table</option>
+        <option value="deng">Lamp offering</option>
+        <option value="none">No table</option>
+      </select>
+    </label>
+    <label>For Qu Nan and Mi Sui
+      <textarea name="note" rows="3"></textarea>
+    </label>
+    <button type="submit">Write the Ji note</button>
+  </fieldset>
+</form>
+<script>
+document.getElementById("sort-form").onsubmit = function (e) {
+  e.preventDefault();
+  var id = this.getAttribute("data-id");
+  if (!FZ.canOpen(id)) { FZ.toast("This ticket is not due yet."); return; }
+  FZ.openTicket(id);
+    var ok = FZ.submitTicket(id, this.elements.namedItem("action").value, this.elements.namedItem("desk").value, this.elements.namedItem("note").value);
+  if (ok) location.href = "desk.html";
+};
+</script>
+
+    </div>
+  </div>
+  <p class="pageft">Ji ticket sits after midnight  16/40</p>
+  <script src="js/state.js"></script>
+  <script>
+    FZ.visit('ji');
+    if (!FZ.guard('ticket-ji.html')) {}
+    FZ.openTicket('ji');
+  </script>
+</body>
+</html>

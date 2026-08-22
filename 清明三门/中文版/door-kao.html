@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>集体考勤柜门</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<div id="wrap">
+  <header><strong>工会空格</strong><div><a class="ghost-btn" href="desk.html">回柜</a></div></header>
+  <div class="notice">
+    <h2>集体考勤</h2>
+    <p id="mini" class="sm-mini"></p>
+    <p>缪石桥催到场。顾晚禾留言说十二区那天要人。同一天。这户给第二层，不给改号的理由。</p>
+    <p>先留下私坟或集体码的一句，空格才读得懂为什么缺人。</p>
+    <p><button type="button" class="sm-btn" id="opbtn">抽签到夹（算一户）</button></p>
+    <div id="fullbox" class="closed-box" style="display:none">
+      <p>签到夹今晚抽不出来。三户占满。空格还在工会桌上。</p>
+      <p><a href="desk.html">交班后再抽</a></p>
+    </div>
+    <div id="openbox" style="display:none">
+      <p class="sm-ok">夹在手里。空表、催信、顾晚禾留言能对着看。</p>
+      <p>南阶要十二人，写到场七。北坡那头顾晚禾说她不去南阶。两头都要人，车只有工会那一趟。</p>
+      <p><a href="kao-ming.html">空表</a>　<a href="kao-tong.html">催信</a>　<a href="jia-xin.html">留言</a></p>
+    </div>
+    <p>考勤柜　夹子松</p>
+  </div>
+</div>
+
+<script src="js/sanmen.js"></script>
+<script>
+
+(function(){
+  var id="kao";
+  function show(){
+    Sanmen.paintMini(document.getElementById("mini"));
+    var opened=Sanmen.isOpen(id);
+    document.getElementById("openbox").style.display=opened?"block":"none";
+    document.getElementById("fullbox").style.display="none";
+  }
+  document.getElementById("opbtn").addEventListener("click",function(){
+    var r=Sanmen.openDoor(id);
+    if(!r.ok){ document.getElementById("fullbox").style.display="block"; }
+    show();
+  });
+  show();
+})();
+
+</script>
+</body>
+</html>

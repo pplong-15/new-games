@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="backroom">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>后仓门口</title>
+  <link rel="stylesheet" href="css/phone.css">
+</head>
+<body>
+  <div class="wrap">
+    <h1>灯管嗡一声</h1>
+    <p>你把机子扣在纸箱上。后仓门口能听见前厅冷柜跳闸。匡守业在抽烟，烟灰弹在消防砂里。他不要经过，只要一句能拿去排班的话。纸箱是空的油壶箱，盖上还有一圈没干的油。机子平放着，线够不着插座。</p>
+    <p class="how" id="how"></p>
+    <p>你开口以前还能回去再翻。开口以后这句话就跟他走。</p>
+    <a href="home.html">再拿起机子</a>
+    <a href="end-return.html">机子放回三号柜。我跟人还在，只是落了东西。</a>
+    <a href="end-new.html">八月十二那张我交给你。你要过检就用这张。</a>
+    <a href="end-old.html">三月十四那张我交给你。后来补的我没带出来。</a>
+    <a href="end-off.html">我把机子关掉。照片我谁都不给。</a>
+  </div>
+  <script src="js/phone.js"></script>
+  <script>
+    var bits = [];
+    if (gys.seen("seen0314")) bits.push("白底甲你打开过。");
+    if (gys.seen("seen0812")) bits.push("白底乙你也打开过。");
+    if (gys.seen("seenmemo")) bits.push("她自己写过两张该怎么分。");
+    if (gys.seen("seencalls")) bits.push("通话停在二十日凌晨。");
+    if (gys.seen("seencal")) bits.push("日历上她把办证和补拍写成两条。");
+    if (gys.seen("seenlocker")) bits.push("隔板那张是通话之后拍的。");
+    if (!bits.length) bits.push("你还没怎么翻，也可以先把话说出去。");
+    document.getElementById("how").textContent = bits.join("");
+  </script>
+</body>
+</html>

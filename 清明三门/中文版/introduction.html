@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-intro-manual">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>东岗园预约台　夜班接班</title>
+  <link rel="stylesheet" href="css/intro-manual.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+  <header class="intro-hero">
+    <div class="image-area"><img alt="园内夜路" src="img/path-night.jpg"></div>
+    <h1>涟县东岗园预约台　夜班接班</h1>
+  </header>
+  <main>
+    <section>
+      <h2>你是杭疏</h2>
+      <p>清明还没到，寒食刚过。条皖把油印件按在柜上：邻穴烧纸的投诉今夜必须交备注。预约台不批原物，不改号。你只写建议。</p>
+      <p>系统本班只许打开三户。交班把没打开的桌面清掉。白板上采信过的句子会留下。见过的纸页，天亮会被收走。</p>
+      <p id="mini" class="sm-mini"></p>
+      <p class="boot-actions">
+        <a class="enter-link" id="fresh" href="door-tousu.html">新开夜班，先开最左那户</a>
+        <a class="ghost" id="cont" href="desk.html" style="display:none">接着上个班的白板</a>
+        <a class="ghost" href="desk.html">去值班台看柜</a>
+      </p>
+    </section>
+    <section>
+      <h2>三扇已经能点的门</h2>
+      <p>条皖说先开邻穴投诉。另两扇也在桌上。柜里还有户，要等你交班再占名额。</p>
+      <div class="sm-doors">
+        <div class="door hot">
+          <img src="img/cabinets-three.jpg" alt="文件柜" class="doc-img">
+          <p>邻穴投诉</p>
+          <p>申柏报十二区邻界有灰。几乎不用猜。</p>
+          <p><a href="door-tousu.html">打开这户</a></p>
+        </div>
+        <div class="door">
+          <p>十二区顾户</p>
+          <p>顾松年的穴。私坟还是别的，要开门才写得清。</p>
+          <p><a href="door-qu12.html">打开这户</a></p>
+        </div>
+        <div class="door">
+          <p>烈士园集体</p>
+          <p>粮库工会那一批。码在不在这户里。</p>
+          <p><a href="door-lie.html">打开这户</a></p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="sm-grid">
+        <div class="c">
+          <h2>钟</h2>
+          <div class="sm-clock">
+            <img src="img/wall-clock.jpg" alt="墙上的钟">
+            <p>五时交班。交不完备注也可以先交班，白板留下的还能用。</p>
+            <p><a href="clock.html">看交班须知</a></p>
+          </div>
+        </div>
+        <div class="c">
+          <h2>白板</h2>
+          <div class="sm-board">
+            <img src="img/board-empty.jpg" alt="空白板">
+            <p>见过</p>
+            <div id="seenbox">空</div>
+            <p>已采信</p>
+            <div id="verbox">空</div>
+            <p><a href="board.html">看整块板</a>　<a href="yuan-tiao.html">园长限开条</a>　<a href="qian-ban.html">仇麦秋便条</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <p>油印件只此一份。县名园名都是编的，别拿去对现实的园。</p>
+  </main>
+
+<section class="pad"><p>油印件的印油未干，杭疏接班时还沾手。三扇门是条皖摆在桌上的，柜里另五户要自己去预约台那台机器里找。钟和白板就压在油印件下头，他怕你读完字还不知道先开哪扇。点新开夜班，板上旧句会抹掉。接着上个班，是给交过班又回来的人。县名园名都是编的，墓主姓名也是编的，别拿去对现实的园。</p></section>
+<script src="js/sanmen.js"></script>
+<script>
+
+Sanmen.paintMini(document.getElementById("mini"));
+Sanmen.paintBoard(document.getElementById("seenbox"), document.getElementById("verbox"));
+if (localStorage.getItem(Sanmen.KEY)) document.getElementById("cont").style.display = "inline-block";
+document.getElementById("fresh").addEventListener("click", function () { Sanmen.bootFresh(); });
+
+</script>
+</body>
+</html>

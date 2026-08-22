@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-discuz-board">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ghost-burn-next-grave floor</title>
+  <link rel="stylesheet" href="css/discuz-board.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<div class="wp">
+  <div class="hd"><a class="logo" href="forum-index.html">Lian County Chat</a></div>
+  <div class="nv"><a href="forum-index.html">Forum</a><a href="desk.html">Back to desk</a></div>
+  <p id="mini" class="sm-mini"></p>
+  
+<div id="shut" class="closed-box"><p>Frozen thread travels with the lore household. Unopened, only the blue header left.</p><p><a href="desk.html">Back to desk</a></p></div>
+<div id="live" style="display:none">
+  <div class="floor"><div class="u"><div class="av"></div><b>AlleyK</b><p>pts 9</p></div>
+  <div class="t"><div class="ti">last qingming | this author only</div>
+  <p>east ridge plot 12 someone heard paper at night, next day ash in the next grave. old people say ghost burned the money wrong. my uncle buys it</p>
+  <div class="sig">believe it then its there</div></div></div>
+  <div class="floor"><div class="u"><div class="av"></div><b>Kiosk</b><p>pts 2</p></div>
+  <div class="t"><div class="ti">last qingming | this author only</div>
+  <p>i seen the delivery boxes too, no ghost pushing a crate. talk if you want, dont write it on a garden form</p>
+  <div class="sig">dont buy it</div></div></div>
+  <div class="floor"><div class="u"><div class="av"></div><b>Passer</b><p>pts 1</p></div>
+  <div class="t"><div class="ti">this march | this author only</div>
+  <p>garden affairs posted: lore doesnt close a case. still bumping this, knock yourselves out</p>
+  <div class="sig">fwd</div></div></div>
+  <p><button type="button" class="sm-btn" id="vbtn">Verify: people tell a ghost-burn-next-grave story (cannot close the case)</button></p>
+  <p id="vok" class="sm-ok" style="display:none">This sentence will interfere with the nature field. Tick ghost and it comes back.</p>
+  <p id="vbad" class="sm-warn" style="display:none"></p>
+  <p>The thread can prove people talk this way. It cannot prove tonight.</p>
+  </div>
+
+  <div class="ft">Frozen board · floors still here</div>
+</div>
+
+<section class="pad"><p>Three floors, three mouths. AlleyK buys it. Kiosk doesn't. Passer forwarded garden affairs in. Floor mouths stacked, still no grave number, still no code. The verify button will put "people tell a ghost story" on the board. Tick ghost in nature and the return form will name that sentence. Opening this household is spending a slot on interference. You can not buy it.</p></section>
+<script src="js/sanmen.js"></script>
+<script>
+Sanmen.paintMini(document.getElementById('mini'));
+Sanmen.gate('shuo','shut','live');
+Sanmen.bindVerify(document.getElementById('vbtn'),'lore-ghost',document.getElementById('vok'),document.getElementById('vbad'));
+
+</script>
+</body>
+</html>

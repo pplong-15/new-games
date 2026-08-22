@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catalog desk · staff id</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+</head>
+<body class="login-page">
+  <div id="wrap">
+    <header>
+      <strong>Lijiang Funeral Records Room</strong>
+    </header>
+    <form class="login-box" id="in" action="#" method="post">
+      <h1>Night login</h1>
+      <label for="user">Temp staff id</label>
+      <input id="user" name="user" type="text" autocomplete="off" placeholder="locker note">
+      <p class="hint" id="hint">Huo Mian already wrote it: use the number on the slip. No extra password. Day-shift ids do not open this night door. Visitor ids were killed years ago. Three wrong tries will not lock you out. You just sit here.</p>
+      <p class="hint">This page does not decide whether a tablet is right. Right and wrong live on the row and the six fields after. Getting in only proves you are tonight’s covering temp.</p>
+      <button type="submit">Enter the desk</button>
+      <p class="hint"><a href="#" id="fill">Use the number on the slip</a> · <a href="../introduction.html">Back to the locker</a></p>
+    </form>
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    document.getElementById("fill").onclick = function (e) {
+      e.preventDefault();
+      document.getElementById("user").value = "Wei-0821";
+    };
+    document.getElementById("in").onsubmit = function (e) {
+      e.preventDefault();
+      var v = document.getElementById("user").value.replace(/\s/g, "");
+      if (v === "Wei-0821") {
+        PW.set("in", 1);
+        location.href = "home.html";
+      } else {
+        document.getElementById("hint").textContent = "That number does not match. Inside the locker: Wei-0821.";
+      }
+    };
+  </script>
+</body>
+</html>

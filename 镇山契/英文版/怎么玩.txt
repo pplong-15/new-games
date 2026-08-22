@@ -1,0 +1,37 @@
+Mountain-Garrison Compact: Ninth Visitor — live-entry note
+(records QC / source search — not a stamp-approval game)
+
+[Only live entry]
+相关素材与可玩版/镇山契_第九位到访者_v0_3_真实网页与可视证据版.html
+
+You can also open 上线版/index.html in this folder; it jumps to the same file.
+
+v0.1, v0.2, the materials-review build, and old drafts under 相关素材与可玩版/1/ are backups. Do not use them as the entry, and do not delete them.
+
+[Local server]
+Single-file HTML. Open it in a browser. No server required.
+
+[Main loop]
+Same loop shape as the campus-mountain missing-person games (loop only — not their skin or plot):
+read a page → pull ONE word → search a public site → open a hidden page.
+First word is already on the handover sheet: AShan.
+Search Huaishui Locals with that single token to open the hidden thread, then pull the next word into the archive / old-paper / folk / geology sites.
+Later you can return to the workbench, check fields, and file a disposition *suggestion*. You have no approval power and no right to receive originals. Do not treat this as a stamp game.
+
+[If you are stuck, search]
+Finish the handover sheet first. Pull one word from an opened page and search a public site.
+Empty search only shows ordinary public posts; it does not list hidden mainline pages.
+Two words with a space fail. Hyphens become spaces, so do not type Ice-Block — use CamelCase: AShan, IceBlock, ThreeNights.
+A single English token from an opened page can hit. Chinese aliases still work as hidden compatibility.
+
+[Refresh]
+Progress is stored in this browser. Opened sources stay on the workbench. The menu can clear the local QC session.
+
+[Playtest]
+UNTESTED. This round is code/structure self-check only. No full English-only browser blind playtest.
+
+[Window]
+Desktop recommended. About 390px should still reach the main buttons. Not claimed Mobile Friendly.
+
+[Fiction]
+Huaixian, the Mountain-Garrison Compact, the visitors, and the file numbers are fiction. Do not match them to real heritage offices, real missing persons, or real people. No keys, no fake payments.

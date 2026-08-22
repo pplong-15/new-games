@@ -1,0 +1,43 @@
+/* search-and-forbidden：搜索命中盒与禁止访问页。 */
+html.skin-search-results body {
+  margin: 0;
+  background: #e0f7fa;
+  font: 14px/1.6 "Microsoft YaHei", sans-serif;
+  color: #333;
+}
+html.skin-search-results .box {
+  max-width: 720px;
+  margin: 40px auto;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+}
+html.skin-search-results h2 { text-align: center; }
+html.skin-search-results a { display: block; margin-top: 10px; color: #337ab7; }
+html.skin-search-results .hit { margin-top: 14px; }
+html.skin-search-results .hit a { font-size: 16px; margin-top: 0; }
+html.skin-search-results .hit p { color: #666; font-size: 13px; margin: 4px 0 0; }
+html.skin-search-results .miss { color: #666; }
+
+html.skin-forbidden body {
+  margin: 0;
+  background: #1b1c1d;
+  color: #f00;
+  font: 14px/1.6 "Microsoft YaHei", sans-serif;
+}
+html.skin-forbidden .box {
+  max-width: 720px;
+  margin: 40px auto;
+  background: #2a0a0a;
+  border: 1px solid #f00;
+  padding: 24px;
+  text-align: center;
+}
+html.skin-forbidden h2 { color: #f00; }
+html.skin-forbidden .hidden-ink {
+  background: #000;
+  color: #000;
+  padding: 2px 6px;
+}
+html.skin-forbidden .hidden-ink::selection { color: #f00; background: #333; }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>邻穴烧纸投诉备注</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<div id="wrap">
+  <header><strong>交备注</strong><div><a class="ghost-btn" href="desk.html">回柜</a></div></header>
+  <div class="notice">
+    <h2>四栏一次交。不闪格。</h2>
+    <p id="mini" class="sm-mini"></p>
+    <p>权威：备注建议。下面有改号和放行，那是越权，正确的人不点。</p>
+    <p>已采信：</p>
+    <div id="verbox"></div>
+    <form id="nf">
+      <table class="note-table">
+        <tr><th>邻穴纸灰性质</th><td>
+          <label><input type="radio" name="nature" value="cross" required> 串穴核销</label><br>
+          <label><input type="radio" name="nature" value="ghost"> 鬼烧邻穴</label><br>
+          <label><input type="radio" name="nature" value="private"> 申家私烧未登记</label>
+        </td></tr>
+        <tr><th>预约码去向</th><td>
+          <label><input type="radio" name="codeTo" value="martyr" required> 烈士园集体扫墓</label><br>
+          <label><input type="radio" name="codeTo" value="plot12"> 十二区私坟预约</label><br>
+          <label><input type="radio" name="codeTo" value="none"> 未核销</label>
+        </td></tr>
+        <tr><th>供品去向</th><td>
+          <label><input type="radio" name="goodsTo" value="plot12" required> 十二区私坟</label><br>
+          <label><input type="radio" name="goodsTo" value="martyr"> 烈士园南阶</label><br>
+          <label><input type="radio" name="goodsTo" value="none"> 未送达</label>
+        </td></tr>
+        <tr><th>处置建议</th><td>
+          <label><input type="radio" name="act" value="note" required> 只交备注，不改号</label><br>
+          <label><input type="radio" name="act" value="change"> 把预约改到十二区</label><br>
+          <label><input type="radio" name="act" value="pass"> 按烈士园放行十二区</label>
+        </td></tr>
+      </table>
+      <p><button type="submit" class="sm-btn">提交备注</button></p>
+    </form>
+    <p>栏没齐会退回。白板上的句子还在。</p>
+  </div>
+</div>
+
+<section class="pad"><p>四栏排成一张旧表，格子不会单独变色。权威写在顶上：备注建议。改号和放行画出来，是让越权的人自己走锁。见过的户名列在板上也不够，缺串穴那句，性质栏勾对了也会退。杭疏交早了可以退回再写，白板不清。</p></section>
+<script src="js/sanmen.js"></script>
+<script>
+
+Sanmen.paintMini(document.getElementById("mini"));
+Sanmen.paintBoard(null, document.getElementById("verbox"));
+document.getElementById("nf").addEventListener("submit", function (ev) {
+  ev.preventDefault();
+  var f = ev.target;
+  var end = Sanmen.submitNote(f.nature.value, f.codeTo.value, f.goodsTo.value, f.act.value);
+  location.href = "ending-" + end + ".html";
+});
+
+</script>
+</body>
+</html>

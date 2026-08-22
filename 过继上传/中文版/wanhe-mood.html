@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-qzone-modules">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>晚禾　说说</title>
+  <link rel="stylesheet" href="css/qzone-modules.css">
+  <link rel="stylesheet" href="css/pick.css">
+</head>
+<body>
+  <div id="gate">
+    <div class="topbar"><div class="topbar-inner"><span class="logo">个人空间</span></div></div>
+    <div class="banner">主人设置了访问问答</div>
+    <div class="cols">
+      <div></div>
+      <div>
+        <div class="mod">
+          <h3>打不开</h3>
+          <div class="bd">
+            <p>说说关了访客。先去信箱，看她母亲有没有把绿色主页塞进附件。</p>
+            <p><a href="letter.html">回信箱找附件</a>　<a href="desk.html">回值班</a></p>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </div>
+  </div>
+  <div id="space" hidden>
+    <div class="topbar">
+      <div class="topbar-inner">
+        <span class="logo">个人空间</span>
+        <a href="wanhe.html">主页</a>
+        <a href="wanhe-msg.html">留言</a>
+        <a href="wanhe-photo.html">相册</a>
+        <a href="wanhe-mood.html">说说</a>
+        <span class="extra"><a href="desk.html">离开</a></span>
+      </div>
+    </div>
+    <div class="banner yard">说说　七月尾</div>
+    <div class="cols">
+      <div></div>
+      <div>
+        <div class="mod talk">
+          <h3>说说</h3>
+          <div class="bd">
+            <div class="feed-li">
+              <div class="mini"></div>
+              <div class="txt"><span class="name">晚禾</span> 墙里那句又来了。女的不算。我坐厨房听着。药罐水位到第二道箍，该换水。<div class="time">7月29日 23:40</div></div>
+            </div>
+            <div class="feed-li">
+              <div class="mini"></div>
+              <div class="txt"><span class="name">晚禾</span> 电费单户名还是亡父。窗口让带死亡证明换户名，队太长，我按指纹先把钱交了。人还在这屋。<div class="time">8月1日 12:06</div></div>
+            </div>
+            <div class="feed-li">
+              <div class="mini"></div>
+              <div class="txt"><span class="name">晚禾</span> 谁要把我写成儿子，当我没看见。谁要问还住不住，看缴费。别问我当不当什么。<div class="time">8月1日 12:09</div></div>
+            </div>
+            <p>这三句不是户籍声明。女的不算是她听见的。药罐是她在刷的。电费是她按指纹交的。谁要写她已经搬走，缴费单还在这屋。</p>
+            <p>
+              <button type="button" class="pick" data-block="live-wanhe">摘：晚禾自称仍住这边</button>
+              <button type="button" class="pick" data-block="kind-care">摘：侍奉未入册</button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </div>
+    <p class="site-foot">说说停更　不是户籍声明</p>
+  </div>
+  <script src="js/state.js"></script>
+  <script>
+    var s = HY.visit("wanhe-mood", 2);
+    if (!s.wanhe) {
+      document.getElementById("gate").hidden = false;
+    } else {
+      document.getElementById("space").hidden = false;
+      HY.bindPicks();
+    }
+  </script>
+</body>
+</html>

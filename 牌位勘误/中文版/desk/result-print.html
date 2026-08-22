@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>著录回单·依原件</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>回单　依原件</strong>
+      <div>
+        <a class="ghost-btn" href="card.html">改卡</a>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>白班预览：按窗口原件走</h2>
+      <p id="why"></p>
+      <p>建议口收了，可收的是「维持已印」。明天厅里东昭仍可能竖着先考翟公禾生。粮库那边若有人来认，吵的是业务组和宗亲会，临工名不印在这张回单上——霍勉就是这么躲的。</p>
+      <p>晚香那张圆珠笔还在抽屉。她会去帖上再骂一回。骂不到回单。回单已经认了打印件或生位传真。</p>
+    </div>
+    <p style="padding:12px 16px;font-size:13px"><a href="card.html">六栏重选</a>　<a href="../forum/wanxiang.html">她在楼下怎么说</a></p>
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    var f = PW.get("card") || {};
+    var how = f.proof === "fax"
+      ? "主件你勾了宗亲会那张预留传真。预留能进会里的生位窗，定不了丧期亡者栏，你还是把它当主件了。"
+      : f.hui === "hesheng"
+        ? "讳仍按打印件写翟禾生。委托摘要里的亡者没有落到这一栏。"
+        : "六栏里有一处把窗口原件认成了依据，白班按「维持已印」预览。";
+    document.getElementById("why").textContent = how;
+  </script>
+</body>
+</html>

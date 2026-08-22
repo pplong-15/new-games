@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>委托台·对照</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <style>
+    html.skin-service-cyan-desk .pair { width: 90%; margin: 12px auto; }
+    html.skin-service-cyan-desk .pair select { padding: 4px; }
+    html.skin-service-cyan-desk #grid { width: 90%; margin: 12px auto; }
+    html.skin-service-cyan-desk #grid th, html.skin-service-cyan-desk #grid td { font-size: 13px; }
+    html.skin-service-cyan-desk #msg { width: 80%; margin: 12px auto; color: #333; }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>对照台</strong>
+      <div>
+        <a class="ghost-btn" href="desk.html">台面</a>
+        <a class="ghost-btn" href="slip.html">挂条口</a>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>左右摊开</h2>
+      <p>选两份已经打开过的来源。没打开的，栏里是虚的，勾了也不写差。字段用短词，不把整页贴过来。</p>
+    </div>
+    <p class="pair">
+      左
+      <select id="left">
+        <option value="old">续修抄件</option>
+        <option value="neu">电子页</option>
+        <option value="hk">迁出底册</option>
+        <option value="bbs">房头旧帖</option>
+        <option value="east">东房扫描</option>
+        <option value="fac">厂函</option>
+        <option value="bor">借阅条</option>
+      </select>
+      右
+      <select id="right">
+        <option value="neu" selected>电子页</option>
+        <option value="old">续修抄件</option>
+        <option value="hk">迁出底册</option>
+        <option value="bbs">房头旧帖</option>
+        <option value="east">东房扫描</option>
+        <option value="fac">厂函</option>
+        <option value="bor">借阅条</option>
+      </select>
+      <button type="button" id="spread">摊开</button>
+    </p>
+    <table id="grid"></table>
+    <p id="msg"></p>
+    <p style="text-align:center;padding:8px">
+      <button type="button" id="write">写入对照条</button>
+    </p>
+    <p style="text-align:center;padding:16px;color:#666;font-size:12px">
+      <a href="newpage.html">电子页</a> ·
+      <a href="../library/scan1998.html">抄件</a> ·
+      <a href="../hukou/move1987.html">底册</a> ·
+      <a href="../forum/fang.html">旧帖</a> ·
+      <a href="../library/scan-east.html">东房抄</a> ·
+      <a href="../hukou/factory.html">厂函</a> ·
+      <a href="../library/borrow.html">借阅条</a>
+    </p>
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    var SRC = {
+      old: { need: "v-old", title: "续修抄件", f: { row: "西二长尚在", note: "行内无过嗣字", move: "谱面未记走", year: "续修落在九八", seal: "馆藏抄章" } },
+      neu: { need: "v-new", title: "电子页", f: { row: "十四行墨污", note: "旁注写出嗣", move: "页上无迁字", year: "附件落在一九", seal: "补扫蓝印" } },
+      hk: { need: "v-hk", title: "迁出底册", f: { row: "户主名未销", note: "事由填务工", move: "七月离籍", year: "底册落在八七", seal: "钢印" } },
+      bbs: { need: "v-bbs", title: "房头旧帖", f: { row: "楼主问还在否", note: "东房称有据", move: "有人提起厂", year: "补据落在一九年春", seal: "楼下嫌印淡" } },
+      east: { need: "v-east", title: "东房扫描", f: { row: "旁支出嗣有名", note: "写出嗣林氏", move: "人已离支", year: "续修同年抄", seal: "厅堂验抄朱" } },
+      fac: { need: "v-factory", title: "厂方来函", f: { row: "工人名未销", note: "请按死亡清", move: "床位要收回", year: "函落在丙子", seal: "厂章模糊" } },
+      bor: { need: "v-borrow", title: "借阅条", f: { row: "续修曾外借", note: "借主署怀川", move: "还书未损", year: "己亥三月还", seal: "馆员钉孔" } }
+    };
+    var LABELS = { row: "这一行", note: "身份注", move: "走留", year: "落成年份", seal: "印色" };
+    var KEYS = ["row", "note", "move", "year", "seal"];
+    var NEED = {
+      "neu|old": { fields: ["row", "note"], token: "cmp-erase" },
+      "hk|neu": { fields: ["note", "move"], token: "cmp-reason" },
+      "bbs|neu": { fields: ["year"], token: "cmp-year" },
+      "hk|old": { fields: ["move"], token: "cmp-move" }
+    };
+    var leftEl = document.getElementById("left");
+    var rightEl = document.getElementById("right");
+    var grid = document.getElementById("grid");
+    var msg = document.getElementById("msg");
+
+    function pairKey() {
+      return [leftEl.value, rightEl.value].sort().join("|");
+    }
+
+    function spread() {
+      var L = SRC[leftEl.value], R = SRC[rightEl.value];
+      if (leftEl.value === rightEl.value) {
+        grid.innerHTML = "";
+        msg.textContent = "左右同一份，摊开也是白纸。";
+        return;
+      }
+      var html = "<thead><tr><th>栏</th><th>" + L.title + "</th><th>" + R.title + "</th><th>对不上</th></tr></thead><tbody>";
+      KEYS.forEach(function (k) {
+        html += "<tr><td>" + LABELS[k] + "</td><td>" + L.f[k] + "</td><td>" + R.f[k] + "</td><td><input type=checkbox data-k='" + k + "'></td></tr>";
+      });
+      html += "</tbody>";
+      grid.innerHTML = html;
+      msg.textContent = "";
+    }
+
+    document.getElementById("spread").onclick = spread;
+    document.getElementById("write").onclick = function () {
+      var L = SRC[leftEl.value], R = SRC[rightEl.value];
+      if (leftEl.value === rightEl.value) {
+        msg.textContent = "左右同一份，写不进条。";
+        return;
+      }
+      if (!XP.has(L.need) || !XP.has(R.need)) {
+        msg.textContent = "有一份你还没打开过，虚栏不能当差。";
+        return;
+      }
+      var rule = NEED[pairKey()];
+      if (!rule) {
+        msg.textContent = "这两份摊开，看不出今晚要用的差。换一对。";
+        return;
+      }
+      var ticked = {};
+      [].forEach.call(grid.querySelectorAll("input[type=checkbox]"), function (box) {
+        if (box.checked) ticked[box.getAttribute("data-k")] = true;
+      });
+      var miss = rule.fields.filter(function (k) { return !ticked[k]; });
+      if (miss.length) {
+        msg.textContent = "还有栏没勾实。差不完整，条不写。";
+        return;
+      }
+      XP.add(rule.token);
+      msg.textContent = "差已写入。可回台面看留言，或去挂条口。";
+    };
+    spread();
+  </script>
+</body>
+</html>

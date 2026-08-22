@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FZ-0714-31  river lamps</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>Fuzhe web-orders  lamp release</strong>
+      <div>
+        <a class="ghost-btn" href="desk.html">Back to queue</a>
+        <form id="search-form" action="search-closed.html" method="get" style="display:inline">
+          <input id="search-input" name="q" placeholder="Night search closed">
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </header>
+    <div class="notice">
+      <img class="hero-pic" alt="" src="img/lanterns.jpg">
+      <h2>Just pushed  FZ-0714-31</h2>
+<p>Tong Shuang again, this time lamps on the east embankment. She wrote her own name. Attached a hand-drawn site. The drawing puts lamps under the second tree east of the bridge. That stretch is marked no-release by city management.</p>
+<p>She said the west stretch is crowded, the east is quiet. The quiet stretch is the one that does not allow release. This shop has proxied the west designated site. It has not taken the east.</p>
+<p>Tong Shuang's lamp-renewal ticket and this one are not the same matter. Lamp number matches. Site does not. Do not release both because she is a regular.</p>
+<p>If the river-lamp piece pushes over, read it as custom. Do not treat it as a permit.</p>
+<form class="sortbox" id="sort-form" data-id="lamp">
+  <fieldset>
+    <legend>How the embankment ticket is written</legend>
+    <p class="auth">Wrong site means this shop cannot proxy a release. This shift cannot issue a river permit.</p>
+    <label>Hold this lamp-release or not
+      <select name="action">
+        <option value="pass">Release</option>
+        <option value="hold">Hold</option>
+      </select>
+    </label>
+    <label>If it still gets a class, which
+      <select name="desk">
+        <option value="zheng">Ancestral seat</option>
+        <option value="gu">Solitary-soul table</option>
+        <option value="deng">Lamp offering</option>
+        <option value="none">No table</option>
+      </select>
+    </label>
+    <label>How morning answers Tong Shuang
+      <textarea name="note" rows="3"></textarea>
+    </label>
+    <button type="submit">Write the river-lamp note</button>
+  </fieldset>
+</form>
+<script>
+document.getElementById("sort-form").onsubmit = function (e) {
+  e.preventDefault();
+  var id = this.getAttribute("data-id");
+  if (!FZ.canOpen(id)) { FZ.toast("This ticket is not due yet."); return; }
+  FZ.openTicket(id);
+    var ok = FZ.submitTicket(id, this.elements.namedItem("action").value, this.elements.namedItem("desk").value, this.elements.namedItem("note").value);
+  if (ok) location.href = "desk.html";
+};
+</script>
+
+    </div>
+  </div>
+  <p class="pageft">River-lamp site is counted separately  32/40</p>
+  <script src="js/state.js"></script>
+  <script>
+    FZ.visit('lamp');
+    if (!FZ.guard('ticket-lamp.html')) {}
+    FZ.openTicket('lamp');
+  </script>
+</body>
+</html>

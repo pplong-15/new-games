@@ -1,0 +1,50 @@
+/* classified-yellow：分类信息黄页。不要 58 商标。 */
+html.skin-classified-yellow body {
+  margin: 0;
+  background: #fff;
+  color: #333;
+  font: 12px/1.7 "Microsoft YaHei", SimSun, sans-serif;
+}
+html.skin-classified-yellow .top {
+  background: #f5c518;
+  padding: 12px 16px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+html.skin-classified-yellow .top b { font-size: 20px; }
+html.skin-classified-yellow .top input {
+  width: 360px;
+  height: 28px;
+  border: 1px solid #c90;
+  padding: 0 8px;
+}
+html.skin-classified-yellow .top button {
+  background: #c30;
+  color: #fff;
+  border: 0;
+  height: 30px;
+  padding: 0 14px;
+}
+html.skin-classified-yellow .layout {
+  width: 960px;
+  margin: 12px auto;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 12px;
+}
+html.skin-classified-yellow nav {
+  border: 1px solid #eee;
+  padding: 8px;
+  background: #fffdf2;
+}
+html.skin-classified-yellow nav h4 { margin: 0 0 8px; }
+html.skin-classified-yellow nav a { display: block; padding: 4px 0; color: #00e; }
+html.skin-classified-yellow .row {
+  display: grid;
+  grid-template-columns: 1fr 80px 80px;
+  border-bottom: 1px dashed #ddd;
+  padding: 8px 0;
+}
+html.skin-classified-yellow .row a { color: #00e; }
+html.skin-classified-yellow .row span { color: #888; }

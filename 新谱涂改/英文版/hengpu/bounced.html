@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hengpu Hall · Bounced</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>Hengpu Hall receipt</strong>
+      <div>
+        <a class="ghost-btn" href="desk.html">Desk</a>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>Whole slip void</h2>
+      <p>Work number GT-Ye. You wrote property or rite schedule into the slip. This desk's commission stops at lineage recommendation. Hall-upkeep, stop-the-carry: write either one, whole slip voids.</p>
+      <p>After void, the library still holds the original page. Upload window follows the original page. Lineage boxes you ticked correctly do not count tonight. Not a personal quarrel. Page one of the contract: this shop does not stamp hall property.</p>
+      <p id="why"></p>
+      <p>West-branch money cannot buy a council chop. You want dingkou, go to the hall tomorrow. Do not fight it on my night mouth.</p>
+    </div>
+    <p style="text-align:center;padding:24px">
+      <a href="slip.html">Fill one box again</a> ·
+      <a href="../introduction.html">Put the note away</a>
+    </p>
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    var s = XP.read().slip || {};
+    var t = document.getElementById("why");
+    if (s.extra === "stop") t.textContent = "Stop-the-carry is not a genealogy shop's call. The rite sits in the hall.";
+    else t.textContent = "Dingkou hall-upkeep sits on the council book. A hung slip does not take that book with it.";
+  </script>
+</body>
+</html>

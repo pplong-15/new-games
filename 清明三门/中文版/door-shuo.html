@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>传说页柜门</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<div id="wrap">
+  <header><strong>闲聊停更</strong><div><a class="ghost-btn" href="desk.html">回柜</a></div></header>
+  <div class="notice">
+    <h2>传说页</h2>
+    <p id="mini" class="sm-mini"></p>
+    <p>巷口有人顶旧帖，讲鬼把纸钱烧到隔壁。园务写过不作结案。采信这句会干扰性质栏。勾鬼，单子退。</p>
+    <p>售货亭那层说见过配送箱。群嘴拼在一起，仍不能当核销。</p>
+    <p><button type="button" class="sm-btn" id="opbtn">开停更帖（算一户）</button></p>
+    <div id="fullbox" class="closed-box" style="display:none">
+      <p>帖今晚打不开。三户用完。传说爱讲也得等交班。</p>
+      <p><a href="desk.html">回柜面</a></p>
+    </div>
+    <div id="openbox" style="display:none">
+      <p class="sm-ok">帖打开了。目录和那层楼在。园务那则也链着。</p>
+      <p>第一班若把名额花在这里，码和货还在柜里。交班还能补。写进性质栏当鬼，补不回来。</p>
+      <p><a href="forum-index.html">目录</a>　<a href="shuo-gui.html">那层</a>　<a href="gov-wen.html">园务则</a></p>
+    </div>
+    <p>闲聊镜像　斑竹停更</p>
+  </div>
+</div>
+
+<script src="js/sanmen.js"></script>
+<script>
+
+(function(){
+  var id="shuo";
+  function show(){
+    Sanmen.paintMini(document.getElementById("mini"));
+    var opened=Sanmen.isOpen(id);
+    document.getElementById("openbox").style.display=opened?"block":"none";
+    document.getElementById("fullbox").style.display="none";
+  }
+  document.getElementById("opbtn").addEventListener("click",function(){
+    var r=Sanmen.openDoor(id);
+    if(!r.ok){ document.getElementById("fullbox").style.display="block"; }
+    show();
+  });
+  show();
+})();
+
+</script>
+</body>
+</html>

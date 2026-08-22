@@ -1,0 +1,66 @@
+/* qzone-modules：2009 个人空间模块墙。不要放企鹅商标。 */
+html.skin-qzone-modules {
+  --bar: #6ea3d4;
+  --mod-head: #8fbc5a;
+  --mod-border: #b7d48a;
+}
+html.skin-qzone-modules body {
+  margin: 0;
+  color: #333;
+  font: 12px/1.6 Tahoma, "SimSun", sans-serif;
+  background: #cde8a0 url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='8' height='8'><rect fill='%23c5e090' width='8' height='8'/><rect fill='%23d4eead' width='4' height='4'/></svg>");
+}
+html.skin-qzone-modules .topbar {
+  background: var(--bar);
+  color: #fff;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 12px;
+  font-size: 12px;
+}
+html.skin-qzone-modules .topbar a { color: #fff; margin-right: 12px; text-decoration: none; }
+html.skin-qzone-modules .banner {
+  height: 180px;
+  background: #7eb6e9;
+  border-bottom: 4px solid #fff;
+  display: flex;
+  align-items: flex-end;
+  padding: 12px 20px;
+  color: #fff;
+  font-size: 22px;
+  text-shadow: 1px 1px 0 #333;
+}
+html.skin-qzone-modules .cols {
+  width: 900px;
+  margin: 8px auto;
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  gap: 8px;
+}
+html.skin-qzone-modules .mod {
+  background: #fff;
+  border: 1px solid var(--mod-border);
+  margin-bottom: 8px;
+}
+html.skin-qzone-modules .mod h3 {
+  margin: 0;
+  background: var(--mod-head);
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 8px;
+  font-weight: 700;
+}
+html.skin-qzone-modules .mod .bd { padding: 8px; background: rgba(255,255,255,.92); }
+html.skin-qzone-modules .avatar {
+  width: 120px;
+  height: 120px;
+  border: 1px solid #ccc;
+  background: #eee;
+}
+html.skin-qzone-modules .music {
+  background: #f7f0d8;
+  border: 1px solid #e0d19a;
+  padding: 6px;
+  font-size: 12px;
+}
+html.skin-qzone-modules footer { text-align: center; font-size: 12px; color: #666; padding: 12px; }

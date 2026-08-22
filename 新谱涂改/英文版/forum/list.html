@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-discuz-board">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wankou Town Board</title>
+  <link rel="stylesheet" href="../css/discuz-board.css">
+</head>
+<body>
+  <div class="wp">
+    <div class="hd">
+      <a class="logo" href="list.html">Wankou Town Board</a>
+      <span class="y"><a href="#">Login</a><a href="#">Register</a></span>
+      <form id="sform" action="#" method="get">
+        <input name="q" value="" id="sq" placeholder="keyword">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+    <div class="nv"><a href="list.html">Forum</a><a href="#">Home</a><a href="#">Guide</a><a href="../hengpu/desk.html">Commission desk</a></div>
+    <table class="forum">
+      <tr>
+        <th></th>
+        <th>Board</th>
+        <th>Threads / Posts</th>
+        <th>Last post</th>
+      </tr>
+      <tr>
+        <td></td>
+        <td><a href="fang.html">Branch-head floor</a><p>Fixing the book, yuanpu, who paid, who talks. Dont split grain here.</p></td>
+        <td class="num">5 / 19</td>
+        <td class="last">2024-11<br>Qiu</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><a href="board-idle.html">Market idle</a><p>Pork price, blackouts, whose wedding. Nothing to do with the book.</p></td>
+        <td class="num">1 / 4</td>
+        <td class="last">day before yesterday<br>FishStall</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><a href="#">Site desk</a><p>Mirror froze. Old floors still up, thats already luck.</p></td>
+        <td class="num">4 / 19</td>
+        <td class="last">2019-09<br>BanZhu</td>
+      </tr>
+    </table>
+    <div class="ft">Wankou Town Board mirror　no suite badge　5/12</div>
+  </div>
+  <script>
+    document.getElementById("sform").onsubmit = function (e) {
+      e.preventDefault();
+      alert("Use a thread to enter a floor. Site search doesnt open another page.");
+    };
+  </script>
+</body>
+</html>

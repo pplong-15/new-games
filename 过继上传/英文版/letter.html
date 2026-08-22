@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-mail-web-2010">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grid web mailbox</title>
+  <link rel="stylesheet" href="css/mail-web-2010.css">
+  <link rel="stylesheet" href="css/pick.css">
+</head>
+<body>
+  <div class="top">
+    <b>Huaiyin grid mailbox</b>
+    <span class="unread-n">Unread <b>1</b></span>
+    <a href="desk.html">Back to night desk</a>
+    <a href="#">Settings</a>
+  </div>
+  <div class="panes">
+    <div class="folders">
+      <a class="write" href="#">Write</a>
+      <a class="on" href="letter-list.html">Inbox (<span class="n">4</span>)</a>
+      <a href="#">Sent</a>
+      <a href="letter-spam.html">Junk</a>
+    </div>
+    <div class="mails">
+      <h4>Inbox</h4>
+      <div class="m unread on">
+        <b>Comrade Bian read it then delete</b>
+        <span>Suqiu  Aug 19</span>
+      </div>
+      <div class="m">
+        <b><a href="letter-list.html">Other three: see the list</a></b>
+        <span>Mailbox  tonight</span>
+      </div>
+    </div>
+    <div class="read">
+      <div class="toolbar">
+        <button type="button">Reply</button>
+        <button type="button">Delete</button>
+      </div>
+      <h3>Comrade Bian read it then delete</h3>
+      <p class="meta">
+        From: Suqiu (resident self-serve)<br>
+        To: Grid-Bian Liang<br>
+        Time: 2026-08-19 21:46
+      </p>
+      <p>Comrade Bian, I want to tell you about that red paper—no. Back yard first. Shouren gone, Bochuan comes every day to measure that back-yard room. He says Xiaoman already did guoji, so that room is the child’s. Tape scrapes white marks on the wall.</p>
+      <p>I pressed a stamp. Hall was a mess. Someone pushed my finger down. I took it for a joss-paper receipt. I didn’t finish the characters. Don’t write that I agreed to have the child come over. The child has not lived at my place. Who lives at my place is Wanhe. Medicine pot still on the stove.</p>
+      <p>I don’t want you writing anyone as a son. I want you not to empty the house while I still live in it. Share business, let them fight it at a table. Don’t go at a kid who holds a pencil backward.</p>
+      <p>Wanhe put up a green homepage the year before last. Still has the complaint from the day the genealogy office came to photograph. In the attachment I had her paste the old address. If you can open it, look yourself. I can’t read those boxes.</p>
+      <p>Electric bill name is still Shouren. I went to change it once. Window said bring the death proof. Line was long. I didn’t finish waiting. If you write who lives there, write Wanhe. Don’t write the child already moved in. He has not moved in.</p>
+      <p>Read it then delete. Don’t read it out to the lane.</p>
+      <p>
+        <button type="button" class="pick" data-block="consent-letter">Extract: she stamped it as a receipt</button>
+        <button type="button" class="pick" data-block="kind-share">Extract: share in that back-yard room</button>
+        <a href="wanhe.html">Open the old address in the letter</a>
+      </p>
+    </div>
+  </div>
+  <p class="ft">Grid mailbox is small  Attachments kept thirty days  Do not forward to resident groups</p>
+  <script src="js/state.js"></script>
+  <script>
+    HY.visit("letter", 4);
+    HY.bindPicks();
+  </script>
+</body>
+</html>

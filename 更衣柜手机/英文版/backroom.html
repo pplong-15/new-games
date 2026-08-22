@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" class="backroom">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Back-room door</title>
+  <link rel="stylesheet" href="css/phone.css">
+</head>
+<body>
+  <div class="wrap">
+    <h1>The tube hums once</h1>
+    <p>You set the handset on a carton. From the door you can hear the front cooler trip. Kuang Shouye is smoking. Ash goes in the fire-sand. He doesn't want a write-up. He wants one sentence he can take to the roster. The box is empty oil jugs. Lid still has a wet ring. Phone lies flat. The cord doesn't reach a socket.</p>
+    <p class="how" id="how"></p>
+    <p>You can still go back and look. Once you open your mouth the sentence walks with him.</p>
+    <a href="home.html">Pick the handset up again</a>
+    <a href="end-return.html">Phone back on locker 3. I figure she's still here. She just left stuff.</a>
+    <a href="end-new.html">The 2026-08-12 one I hand to you. You need to pass, use this.</a>
+    <a href="end-old.html">The 2023-03-14 one I hand to you. The later shoot I didn't bring out.</a>
+    <a href="end-off.html">I shut the phone off. Photos I give to nobody.</a>
+  </div>
+  <script src="js/phone.js"></script>
+  <script>
+    var bits = [];
+    if (gys.seen("seen0314")) bits.push("White-bg A you opened. ");
+    if (gys.seen("seen0812")) bits.push("White-bg B you opened too. ");
+    if (gys.seen("seenmemo")) bits.push("She wrote how she would split the two. ");
+    if (gys.seen("seencalls")) bits.push("Calls stop on the 20th, early. ");
+    if (gys.seen("seencal")) bits.push("Calendar she logged the certificate sitting and the reshoot as two lines. ");
+    if (gys.seen("seenlocker")) bits.push("The shelf shot is after the call. ");
+    if (!bits.length) bits.push("You barely looked. You can still send the word first.");
+    document.getElementById("how").textContent = bits.join("");
+  </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-mail-web-2010">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>County government mail · login</title>
+  <link rel="stylesheet" href="../css/mail-web-2010.css">
+  <link rel="stylesheet" href="../css/game-extra.css">
+</head>
+<body>
+  <div class="top">
+    <b>Anpu government mail</b>
+    <span class="unread-n">Night-shift duty box</span>
+  </div>
+  <div class="panes">
+    <div class="folders">
+      <a class="write" href="login.html">Compose (stopped)</a>
+      <a class="on" href="login.html">Log in first</a>
+    </div>
+    <div class="mails">
+      <h4>Not logged in</h4>
+      <div class="m"><b>Mail is behind the door</b><span>Badge id and password are not in this column</span></div>
+    </div>
+    <div class="read">
+      <h3>Duty-box login</h3>
+      <form id="dq-login" action="inbox.html" method="post">
+        <p><label for="user">Account</label><br><input id="user" name="user" autocomplete="off"></p>
+        <p><label for="pass">Password</label><br><input id="pass" name="pass" type="password" autocomplete="off"></p>
+        <p><button type="submit">Open inbox</button></p>
+        <p class="dq-err" id="dq-err"></p>
+      </form>
+      <p class="meta">Account and password are on page two of the handover book. This page does not teach a first word and does not keep a column search.</p>
+      <p><a href="../desk/shift.html">Back to the handover book</a></p>
+    </div>
+  </div>
+  <p class="ft">Government-mail login · limited quota · attachments: scans only</p>
+  <script src="../js/state.js"></script>
+  <script>DQ.bindLogin("mail", "inbox.html");</script>
+</body>
+</html>

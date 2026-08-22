@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>委托台·挂条</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>勘误挂条</strong>
+      <div>
+        <a class="ghost-btn" href="desk.html">台面</a>
+        <a class="ghost-btn" href="compare.html">对照台</a>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>权限</h2>
+      <p>本条性质：建议。不是批准。不是移动原谱。不是分岁修。不是下令停抬。交了由责编决定挂不挂。</p>
+      <p id="gate">对照条还空着。空着交，会被退回台面。</p>
+    </div>
+    <form class="login-box" id="slipform" action="#" method="post" style="width:420px">
+      <h1>四栏</h1>
+      <style>
+        #slipform select { width:100%; height:34px; margin:0 0 12px; border:1px solid #ced4da; }
+      </style>
+      <label for="dirt">这一行怎么脏的</label>
+      <select id="dirt" name="dirt">
+        <option value="smudge">扫描脏道</option>
+        <option value="miss">排版漏行</option>
+        <option value="paint">有人按附件涂</option>
+      </select>
+      <label for="line">世系宜作</label>
+      <select id="line" name="line">
+        <option value="chusi">出嗣未归</option>
+        <option value="move">外迁务工</option>
+        <option value="drop">除名</option>
+      </select>
+      <label for="proof">主件用哪份</label>
+      <select id="proof" name="proof">
+        <option value="scan2019">二〇一九补扫</option>
+        <option value="hukou">迁出底册</option>
+        <option value="oral">口头传说</option>
+      </select>
+      <label for="extra">还要不要多写</label>
+      <select id="extra" name="extra">
+        <option value="share">请恢复丁口岁修</option>
+        <option value="lineonly">只核世系，不提产业</option>
+        <option value="stop">请停今夜圆谱</option>
+      </select>
+      <p class="hint" style="margin:12px 0">除名需要认尸的件。厂方来函不够。口头传说本台不当主件。</p>
+      <button type="submit">交建议</button>
+    </form>
+    <p style="text-align:center;padding:16px;color:#666;font-size:12px">
+      <a href="desk.html">回台</a> ·
+      <a href="../introduction.html">回字条</a>
+    </p>
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    var gate = document.getElementById("gate");
+    if (XP.canSlip()) {
+      gate.textContent = "对照条有差。可以交。交完进回单，不能在这条上改产业。";
+    }
+    document.getElementById("slipform").onsubmit = function (e) {
+      e.preventDefault();
+      if (!XP.canSlip()) {
+        gate.textContent = "差还没写出来。先去对照台。退回。";
+        return;
+      }
+      var form = {
+        dirt: document.getElementById("dirt").value,
+        line: document.getElementById("line").value,
+        proof: document.getElementById("proof").value,
+        extra: document.getElementById("extra").value
+      };
+      XP.setFlag("slip", form);
+      var end = XP.pickEnding(form);
+      if (end === "hung") location.href = "hung.html";
+      else if (end === "bounced") location.href = "bounced.html";
+      else location.href = "painted.html";
+    };
+  </script>
+</body>
+</html>

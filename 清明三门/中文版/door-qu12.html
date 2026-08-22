@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>十二区顾户柜门</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<div id="wrap">
+  <header><strong>北坡户</strong><div><a class="ghost-btn" href="desk.html">回柜</a></div></header>
+  <div class="notice">
+    <h2>十二区顾户</h2>
+    <p id="mini" class="sm-mini"></p>
+    <p>顾松年的名字写在北坡，不写在南阶名录。顾晚禾自己搭过一个米色小站，字又改口。开门才能看户档和邻界图。</p>
+    <p>有人想把这户写成集体预约。表上「私坟」两个字还在，写了也对不上。</p>
+    <p><button type="button" class="sm-btn" id="opbtn">抽顾户夹（算一户）</button></p>
+    <div id="fullbox" class="closed-box" style="display:none">
+      <p>名额满了。顾户夹今晚抽不出来。交班以后再占位子。</p>
+      <p><a href="desk.html">回浅青柜面</a></p>
+    </div>
+    <div id="openbox" style="display:none">
+      <p class="sm-ok">夹抽出来了。户档、摘抄、图说、家属备忘都在。</p>
+      <p>三七穴东侧就是申老山。浅沟一条。配送若沿沟放箱，灰先沾这边。</p>
+      <p><a href="qu12-hu.html">户档</a>　<a href="qu12-yu.html">摘抄</a>　<a href="qu12-lin.html">图说</a>　<a href="qu12-jia.html">备忘</a></p>
+    </div>
+    <p>北坡柜第二层　夹边磨白</p>
+  </div>
+</div>
+
+<script src="js/sanmen.js"></script>
+<script>
+
+(function(){
+  var id="qu12";
+  function show(){
+    Sanmen.paintMini(document.getElementById("mini"));
+    var opened=Sanmen.isOpen(id);
+    document.getElementById("openbox").style.display=opened?"block":"none";
+    document.getElementById("fullbox").style.display="none";
+  }
+  document.getElementById("opbtn").addEventListener("click",function(){
+    var r=Sanmen.openDoor(id);
+    if(!r.ok){ document.getElementById("fullbox").style.display="block"; }
+    show();
+  });
+  show();
+})();
+
+</script>
+</body>
+</html>

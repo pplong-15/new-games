@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-qzone-modules">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>刘石桥的空间</title>
+  <link rel="stylesheet" href="../css/qzone-modules.css">
+  <link rel="stylesheet" href="../css/shots.css">
+  <script src="../js/tokens.js"></script>
+  <script src="../js/keyword-search.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (!QTG.has("t_login")) location.replace("login.html");
+    else QTG.grant("t_space");
+  });
+  </script>
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <span class="logo">个人空间</span>
+      <a href="space.html">主页</a>
+      <a href="javascript:void(0)">日志</a>
+      <a href="javascript:void(0)">相册</a>
+      <span class="extra">
+        <form id="search-form" action="../search-results.html" method="get" style="display:inline">
+          <input id="search-input" name="q" placeholder="关键词">
+          <button type="submit">搜本地</button>
+        </form>
+      </span>
+    </div>
+  </div>
+  <div class="banner">刘石桥的空间</div>
+  <div class="cols">
+    <div>
+      <div class="mod">
+        <h3>主人信息</h3>
+        <div class="bd">
+          <img class="shot" alt="桌上积灰的U盘和光盘" src="../assets/dusty-usb.jpg" style="width:140px">
+          <div class="info-row"><b>刘石桥</b></div>
+          <div class="info-row">桥头 / 站点维护</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="mod talk">
+        <h3>说说</h3>
+        <div class="bd">
+          <div class="feed-li">
+            <div class="txt"><span class="name">刘石桥</span> 须知改过了。名跟道绑在一起。我把这个名扔了就能脱。没脱干净。
+              <div class="time">2016-03-18 02:11</div></div>
+          </div>
+          <div class="feed-li">
+            <div class="txt"><span class="name">刘石桥</span> 回滚写了没发。要对上祭桥那天。不敢点发送。
+              <div class="time">2016-03-19 00:07</div></div>
+          </div>
+          <div class="feed-li">
+            <div class="txt"><span class="name">吴秋</span> 我关过站。你自己看停用。别只听我转让那几句。
+              <div class="time">2023-10-09 16:44</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="mod">
+        <h3>相册</h3>
+        <div class="bd">
+          <div class="thumbs">
+            <img alt="半刷的墙" src="../assets/renovation-room.jpg">
+            <img alt="夜里的门" src="../assets/night-door.jpg">
+            <img alt="旧石桥" src="../assets/stone-bridge.jpg">
+          </div>
+          <p class="grey">第三张备注只写了祭桥两个字，点开是空的。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p style="text-align:center;font:12px SimSun,serif;color:#666">个人空间　2009–2016</p>
+</body>
+</html>

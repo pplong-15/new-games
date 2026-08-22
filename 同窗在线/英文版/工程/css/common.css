@@ -1,0 +1,355 @@
+/* 同窗在线：皮肤之上的页脚、搜索、窄屏与无障碍。不要做成游戏 HUD。 */
+:root { --ft-muted: #888; }
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+img { max-width: 100%; height: auto; }
+:focus-visible { outline: 2px solid #005eac; outline-offset: 2px; }
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); border: 0;
+}
+.game-ft {
+  clear: both;
+  text-align: center;
+  font-size: 12px;
+  color: var(--ft-muted);
+  padding: 16px 8px 28px;
+  line-height: 1.7;
+}
+.game-ft a { color: inherit; }
+.ph {
+  background: repeating-linear-gradient(135deg, #ddd 0 8px, #ececec 8px 16px);
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 12px;
+  min-height: 72px;
+  border: 1px solid #ccc;
+}
+.ph.sq { width: 120px; height: 120px; min-height: 0; }
+.ph.wide { min-height: 140px; }
+/* 真实配图：继承 .ph 的尺寸，改用 img 显示 */
+img.ph {
+  display: block;
+  object-fit: cover;
+  padding: 0;
+}
+img.ph.wide {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  object-fit: contain;
+}
+.muted { color: #888; }
+.disabled-note { color: #999; font-size: 12px; }
+button { font: inherit; cursor: pointer; }
+input, textarea, select { font: inherit; }
+html.reduce *, html.reduce *::before, html.reduce *::after {
+  animation: none !important;
+  transition: none !important;
+}
+html.large body { font-size: 18px !important; line-height: 1.7; }
+html.large .top, html.large .topbar, html.large .hd { font-size: 16px; }
+
+/* —— 校园社交扩充：蓝条三栏、状态框、新鲜事、来访 —— */
+html.skin-campus-sns-2010 .top {
+  display: block;
+  height: 36px;
+  padding: 0;
+}
+html.skin-campus-sns-2010 .top-inner {
+  width: 960px;
+  max-width: 100%;
+  height: 36px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  gap: 2px;
+}
+html.skin-campus-sns-2010 .top .logo {
+  display: inline-block;
+  background: #fff;
+  color: #005eac;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  height: 22px;
+  line-height: 22px;
+  padding: 0 8px;
+  margin-right: 12px;
+  flex: 0 0 auto;
+}
+html.skin-campus-sns-2010 .top a {
+  margin-right: 12px;
+  white-space: nowrap;
+}
+html.skin-campus-sns-2010 .top form {
+  margin-left: auto;
+  display: flex;
+  gap: 4px;
+  flex: 0 0 auto;
+}
+html.skin-campus-sns-2010 .top input {
+  width: 168px !important;
+  margin-left: 0 !important;
+}
+html.skin-campus-sns-2010 .top button {
+  height: 22px;
+  border: 0;
+  background: #3d7bb8;
+  color: #fff;
+  padding: 0 10px;
+}
+html.skin-campus-sns-2010 .nav-off {
+  display: block;
+  padding: 6px 12px;
+  color: #999;
+}
+html.skin-campus-sns-2010 .ph.face {
+  background: #c8c8c8;
+  background-image:
+    radial-gradient(circle at 50% 38%, #eee 0 10px, transparent 11px),
+    radial-gradient(ellipse at 50% 78%, #eee 0 18px, transparent 19px);
+  color: #555;
+  font-size: 11px;
+  align-items: flex-end;
+  padding-bottom: 4px;
+}
+html.skin-campus-sns-2010 .item {
+  position: relative;
+  padding-left: 58px;
+}
+html.skin-campus-sns-2010 .item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #bbb;
+  background: #c8c8c8;
+  background-image:
+    radial-gradient(circle at 50% 38%, #eee 0 8px, transparent 9px),
+    radial-gradient(ellipse at 50% 78%, #eee 0 14px, transparent 15px);
+}
+html.skin-campus-sns-2010 .who {
+  text-align: center;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+html.skin-campus-sns-2010 .who .ph.sq { margin: 0 auto 6px; }
+html.skin-campus-sns-2010 .who strong { display: block; color: #005eac; }
+html.skin-campus-sns-2010 .status-box {
+  border: 1px solid #b4b4b4;
+  padding: 8px;
+  margin-bottom: 12px;
+  background: #f7f7f7;
+}
+html.skin-campus-sns-2010 .status-box .lab { color: #666; margin-bottom: 4px; }
+html.skin-campus-sns-2010 .feed h2 {
+  font-size: 14px;
+  border-bottom: 1px solid #e5e5e5;
+  margin: 0 0 8px;
+  padding-bottom: 4px;
+}
+html.skin-campus-sns-2010 .pub[disabled] {
+  background: #bbb;
+  cursor: not-allowed;
+  float: right;
+  margin-top: 6px;
+}
+html.skin-campus-sns-2010 .status-box { overflow: hidden; }
+html.skin-search-results .mini-bar {
+  background: #005eac;
+  color: #fff;
+  height: 36px;
+  display: flex;
+  align-items: center;
+}
+html.skin-search-results .mini-bar .top-inner {
+  width: 720px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 8px;
+}
+html.skin-search-results .mini-bar a { color: #fff; text-decoration: none; }
+html.skin-search-results .mini-bar .logo {
+  background: #fff;
+  color: #005eac;
+  font-weight: 700;
+  padding: 0 8px;
+  letter-spacing: 2px;
+}
+html.skin-search-results .mini-bar form { margin-left: auto; display: flex; gap: 4px; }
+html.skin-search-results .box { margin-top: 16px; }
+html.skin-qzone-modules .topbar {
+  display: flex;
+  justify-content: center;
+}
+html.skin-qzone-modules .topbar-inner {
+  width: 900px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+}
+html.skin-campus-sns-2010 .item p { margin: 4px 0; }
+html.skin-campus-sns-2010 .item .name { cursor: default; }
+html.skin-campus-sns-2010 .item .acts { color: #005eac; font-size: 12px; }
+html.skin-campus-sns-2010 .item .acts span { margin-right: 10px; }
+html.skin-campus-sns-2010 .rail h3 {
+  font-size: 12px;
+  background: #f0f0f0;
+  margin: 0 0 8px;
+  padding: 4px 6px;
+}
+html.skin-campus-sns-2010 .visit {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+html.skin-campus-sns-2010 .visit .ph { width: 40px; height: 40px; min-height: 0; flex: 0 0 40px; }
+html.skin-campus-sns-2010 .appad {
+  border: 1px dashed #ccc;
+  padding: 8px;
+  color: #888;
+  font-size: 12px;
+  margin-top: 10px;
+}
+html.skin-campus-sns-2010 .wall { border: 1px solid #e5e5e5; padding: 8px; margin-top: 10px; }
+html.skin-campus-sns-2010 .album-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+html.skin-campus-sns-2010 .msg {
+  border-bottom: 1px solid #eee;
+  padding: 8px 0;
+}
+html.skin-campus-sns-2010 .paused {
+  background: #fff8e1;
+  border: 1px solid #e6d28a;
+  padding: 12px;
+}
+html.skin-campus-sns-2010 .profile-head {
+  display: flex;
+  gap: 12px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+html.skin-campus-sns-2010 .tabs-inline a {
+  margin-right: 12px;
+  color: #005eac;
+  text-decoration: none;
+}
+html.skin-campus-sns-2010 .tabs-inline a[aria-current="page"] { font-weight: 700; }
+
+html.skin-campus-sns-2010 .layout,
+html.skin-qzone-modules .cols,
+html.skin-blog-personal-2008 .wrap,
+html.skin-gov-redbar .wrap,
+html.skin-discuz-board .wp,
+html.skin-corp-table-2005 table.site {
+  max-width: 100%;
+}
+
+@media (max-width: 800px) {
+  html.skin-campus-sns-2010 .layout {
+    width: auto;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+  html.skin-qzone-modules .cols,
+  html.skin-blog-personal-2008 .wrap,
+  html.skin-gov-redbar .wrap { width: auto; display: block; margin: 8px; }
+  html.skin-discuz-board .wp { width: auto; padding: 0 8px; }
+  html.skin-corp-table-2005 table.site { width: 100%; }
+  html.skin-campus-sns-2010 .top { flex-wrap: wrap; height: auto; padding: 6px; gap: 6px; }
+  html.skin-campus-sns-2010 .top-inner { width: auto; height: auto; flex-wrap: wrap; }
+  html.skin-campus-sns-2010 .top form { width: 100%; margin-left: 0; }
+  html.skin-campus-sns-2010 .top input { width: 100% !important; flex: 1; height: 32px; }
+  html.skin-campus-sns-2010 .top button { height: 32px; }
+  html.skin-service-cyan-desk .login-box,
+  html.skin-service-cyan-desk table,
+  html.skin-service-cyan-desk .notice { width: auto; margin: 12px; }
+  html.skin-discuz-board .floor { grid-template-columns: 1fr; }
+}
+
+html.skin-service-cyan-desk header form,
+html.skin-qzone-modules .topbar form,
+html.skin-blog-personal-2008 .nav form,
+html.skin-gov-redbar .links form,
+html.skin-discuz-board .hd form,
+html.skin-corp-table-2005 .nav form,
+html.skin-wechat-mp-article .meta form,
+html.skin-archive-simsun .meta form,
+html.skin-search-results .box form {
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+}
+html.skin-service-cyan-desk header input,
+html.skin-qzone-modules .topbar input,
+html.skin-blog-personal-2008 .nav input,
+html.skin-gov-redbar .links input,
+html.skin-discuz-board .hd input,
+html.skin-corp-table-2005 .nav input,
+html.skin-archive-simsun .meta input,
+html.skin-search-results .box input {
+  height: 22px;
+  width: min(220px, 52vw);
+}
+html.skin-wechat-mp-article .meta input { height: 28px; }
+html.skin-search-results .hit a { font-size: 16px; }
+html.skin-search-results .hit p { color: #666; font-size: 13px; margin: 4px 0 12px; }
+html.skin-search-results .visited { color: #609; }
+html.skin-intro-manual .enter-link {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 18px;
+}
+html.skin-intro-manual .boot-actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+html.skin-intro-manual .boot-actions button,
+html.skin-intro-manual .boot-actions a {
+  background: #333;
+  color: #fff;
+  border: 0;
+  padding: 8px 14px;
+  text-decoration: none;
+}
+html.skin-intro-manual .boot-actions .ghost { background: #fff; color: #333; border: 1px solid #333; }
+html.skin-archive-simsun table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+html.skin-archive-simsun td, html.skin-archive-simsun th {
+  border: 1px solid #ccc;
+  padding: 6px 8px;
+  text-indent: 0;
+}
+html.skin-archive-simsun .choice-row { text-align: center; margin-top: 24px; }
+html.skin-archive-simsun .choice-row button {
+  margin: 6px;
+  padding: 8px 16px;
+  min-height: 44px;
+  background: #333;
+  color: #fff;
+  border: 0;
+}
+html.skin-service-cyan-desk .login-box label { display: block; margin: 8px 0 4px; }
+html.skin-service-cyan-desk .login-box input { width: 100%; height: 32px; }
+html.skin-forbidden .box a { color: #f88; }
+.flash {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  margin: 8px 0;
+  background: #fffbe6;
+}
+.flash-bad { background: #fdecea; border-color: #f5c2c0; }
+.flash-ok { background: #eaf7ea; border-color: #b7dfb9; }

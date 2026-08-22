@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-qzone-modules">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LiuShiqiao's space</title>
+  <link rel="stylesheet" href="../css/qzone-modules.css">
+  <link rel="stylesheet" href="../css/shots.css">
+  <script src="../js/tokens.js"></script>
+  <script src="../js/keyword-search.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (!QTG.has("t_login")) location.replace("login.html");
+    else QTG.grant("t_space");
+  });
+  </script>
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <span class="logo">Personal space</span>
+      <a href="space.html">Home</a>
+      <a href="javascript:void(0)">Journal</a>
+      <a href="javascript:void(0)">Albums</a>
+      <span class="extra">
+        <form id="search-form" action="../search-results.html" method="get" style="display:inline">
+          <input id="search-input" name="q" type="text" placeholder="Keyword" maxlength="32">
+          <button type="submit">Search local</button>
+        </form>
+      </span>
+    </div>
+  </div>
+  <div class="banner">LiuShiqiao's space</div>
+  <div class="cols">
+    <div>
+      <div class="mod">
+        <h3>Owner</h3>
+        <div class="bd">
+          <img class="shot" alt="Dusty USB stick and discs on a desk" src="../assets/dusty-usb.jpg" style="width:140px">
+          <div class="info-row"><b>LiuShiqiao</b></div>
+          <div class="info-row">Qiaotou / site maintenance</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="mod talk">
+        <h3>Talk</h3>
+        <div class="bd">
+          <div class="feed-li">
+            <div class="txt"><span class="name">LiuShiqiao</span> Notice is revised. The name is bound to the road. I figured if I threw the name I'd be clear. Wasn't.
+              <div class="time">2016-03-18 02:11</div></div>
+          </div>
+          <div class="feed-li">
+            <div class="txt"><span class="name">LiuShiqiao</span> Wrote a Rollback. Never sent. Had to land on the BridgeRite day. Didn't hit send.
+              <div class="time">2016-03-19 00:07</div></div>
+          </div>
+          <div class="feed-li">
+            <div class="txt"><span class="name">WuQiu</span> I shut the site. Read Suspended yourself. Don't just go by those transfer lines.
+              <div class="time">2023-10-09 16:44</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="mod">
+        <h3>Albums</h3>
+        <div class="bd">
+          <div class="thumbs">
+            <img alt="A half-painted wall" src="../assets/renovation-room.jpg">
+            <img alt="A door at night" src="../assets/night-door.jpg">
+            <img alt="An old stone bridge" src="../assets/stone-bridge.jpg">
+          </div>
+          <p class="grey">Third photo's note only says BridgeRite. Opens empty.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p style="text-align:center;font:12px SimSun,serif;color:#666">Personal space　2009–2016</p>
+</body>
+</html>

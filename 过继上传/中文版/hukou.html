@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-gov-redbar">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>浦阳县户政查阅</title>
+  <link rel="stylesheet" href="css/gov-redbar.css">
+  <link rel="stylesheet" href="css/pick.css">
+</head>
+<body>
+  <div class="red">
+    <h1>浦阳县户政查阅</h1>
+    <p>扫描件托管　不设现场窗口预约　虚构站点</p>
+  </div>
+  <div class="links">
+    <a href="hukou.html">在册查询</a>
+    <a href="hukou-refuse.html">对照拒件</a>
+    <a href="hukou-channel.html">协查回执</a>
+    <a href="hukou-death.html">死亡注销</a>
+    <a href="office.html">窗口告知</a>
+    <a href="desk.html">返回值班台</a>
+  </div>
+  <div class="wrap">
+    <table cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="box">
+          <h3>查阅须知</h3>
+          <ol>
+            <li>本页只显示已扫描户页<span class="date">2026-08</span></li>
+            <li>变更仍须持人到窗口<span class="date">长期</span></li>
+            <li>红纸、族谱、口头约定不代替迁入<span class="date">重申</span></li>
+            <li>周末机器不停，人不值班<span class="date">2024</span></li>
+          </ol>
+        </td>
+        <td class="box">
+          <h3>最近机打备注</h3>
+          <ol>
+            <li>十七号户主已改素秋<span class="date">05-22</span></li>
+            <li>守仁死亡注销办结<span class="date">05-22</span></li>
+            <li>有人持红纸要求对照，未变更<span class="date">05-20</span></li>
+            <li>渠沿路九号协查回执已挂<span class="date">06-03</span></li>
+          </ol>
+        </td>
+      </tr>
+    </table>
+    <p class="note">户号浦槐枣-17。地址写枣树巷十七号。原户主耿守仁，男，一九五一年生。二零二六年五月二十二日因死亡注销。同日户主改为配偶耿素秋。在册人口目前两人：素秋、女耿晚禾。没有第三行叫嗣子的空位，也没有叫耿小满的人。<a href="hukou-death.html">注销呈批</a></p>
+    <table class="sheet">
+      <tr><th>称谓</th><th>姓名</th><th>状态</th><th>备注</th></tr>
+      <tr><td>原户主</td><td>耿守仁</td><td>注销</td><td>死亡。档案号户销-0522。</td></tr>
+      <tr><td>现户主</td><td>耿素秋</td><td>在册</td><td>故后改主。</td></tr>
+      <tr><td>女</td><td>耿晚禾</td><td>在册</td><td>二〇〇二年生。未婚栏未动。</td></tr>
+    </table>
+    <p class="note">迁入栏：二零二三年一月至今无迁入。五月二十日有人持红纸到窗口，要求把耿小满写入本户。当班写了六个字：无迁入手续。人走了，册没改。<a href="hukou-refuse.html">对照拒件全文</a></p>
+    <p class="note">协查：渠沿路九号守礼户下有一未成年男性耿小满，二零一四年生，与本户不是同一本。协查员只核到人在册，没核人住哪。<a href="hukou-channel.html">协查回执</a></p>
+    <p class="note">五月二十日手写便条夹在扫描缝：来人三十多岁，红纸叠成四折，要窗口对照一下就改。窗口回了「无迁入手续」，他把纸拍在玻璃上，没留电话。便条没进正式栏，机房拍照时一起带进来。</p>
+    <p class="note">
+      <button type="button" class="pick" data-block="heir-hukou">摘：本户未登记嗣子</button>
+      <button type="button" class="pick" data-block="when-hukou">摘：近三年无迁入</button>
+      <button type="button" class="pick" data-block="live-hukou">摘：小满在渠沿路九号</button>
+    </p>
+    <p class="ft">浦阳县户政机房　扫描仅供对照　要改册请带人来　机器编号户阅-3</p>
+  </div>
+  <script src="js/state.js"></script>
+  <script>
+    HY.visit("hukou", 4);
+    HY.bindPicks();
+  </script>
+</body>
+</html>

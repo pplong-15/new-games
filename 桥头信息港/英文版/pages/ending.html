@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-archive-simsun">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Night pouch</title>
+  <link rel="stylesheet" href="../css/archive-simsun.css">
+  <link rel="stylesheet" href="../css/shots.css">
+  <script src="../js/tokens.js"></script>
+  <script src="../js/keyword-search.js"></script>
+  <script src="../js/ending.js"></script>
+  <script>document.addEventListener("DOMContentLoaded",function(){QTG.grant("t_endingpage");});</script>
+</head>
+<body>
+  <article class="record">
+    <h1>Slips that can go out tonight</h1>
+    <div class="meta"><span>Chen Mai</span><span>2026-08-21</span></div>
+    <img class="shot" alt="An iron door at night" src="../assets/night-door.jpg">
+    <p>Four slips in the pouch. The ones that aren't complete stay grey. You send one. The rest void.</p>
+    <div id="ending-box">
+      <button class="end-btn" id="end-transfer" type="button">Transfer the name to the next holder</button>
+      <button class="end-btn" id="end-refund" type="button">CoolingOff refund to Nameship</button>
+      <button class="end-btn" id="end-empty" type="button">Change filing to the demolished No. 12</button>
+      <button class="end-btn" id="end-unbind" type="button">Roll the notice back to 2009</button>
+      <p class="err" id="end-msg"></p>
+    </div>
+    <p>Grey ones still take a click. Click and it tells you which copy is still missing.</p>
+    <form id="search-form" action="../search-results.html" method="get">
+      <input id="search-input" name="q" type="text" placeholder="Keyword" maxlength="32">
+      <button type="submit">Search local</button>
+    </form>
+  </article>
+</body>
+</html>

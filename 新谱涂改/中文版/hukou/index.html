@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-gov-redbar">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>湾口户政旧档</title>
+  <link rel="stylesheet" href="../css/gov-redbar.css">
+</head>
+<body>
+  <div class="red">
+    <h1>湾口户政旧档</h1>
+    <p>二零一一年镜像　非正式窗口　不要国徽</p>
+  </div>
+  <div class="links">
+    <a href="index.html">查迁出</a>
+    <a href="#">沿革摘要</a>
+    <a href="#">道路更名</a>
+    <a href="../hengpu/desk.html">回委托台</a>
+  </div>
+  <div class="wrap">
+    <table cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="box">
+          <h3>迁出簿检索</h3>
+          <p style="padding:8px;text-indent:0">凡户之迁，皆入此簿。簿止于集体户与分户，不含祠产。输入户主常用名，命中则开底册一叶。空页不是隐瞒，是本卷没有。</p>
+          <form id="qform" action="#" method="get" style="padding:8px">
+            <input id="q" name="q" value="" style="width:70%;border:1px solid #999;padding:4px">
+            <button type="submit">开簿</button>
+          </form>
+          <p id="miss" style="padding:8px;color:#900"></p>
+        </td>
+        <td class="box">
+          <h3>站务残页</h3>
+          <ol>
+            <li><a href="tongbu.html">集体户说明</a><span class="date">2011-06-02</span></li>
+            <li><a href="mirror-about.html">镜像停更说明</a><span class="date">2011-08-19</span></li>
+            <li><a href="factory.html">厂方来函过录</a><span class="date">1996-11</span></li>
+            <li><a href="move1987.html">已知一叶：八七年迁</a><span class="date">1987-07</span></li>
+            <li><a href="miss.html">开簿无命中样张</a><span class="date">—</span></li>
+          </ol>
+        </td>
+      </tr>
+    </table>
+    <p class="ft">旧站镜像　栏目是死的　能用的只有开簿　3/12</p>
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    document.getElementById("qform").onsubmit = function (e) {
+      e.preventDefault();
+      var q = document.getElementById("q").value.replace(/\s/g, "");
+      var miss = document.getElementById("miss");
+      if (/怀山|芮怀山/.test(q)) {
+        location.href = "move1987.html";
+        return;
+      }
+      if (/芮秋|^秋$/.test(q)) {
+        miss.textContent = "二〇〇一年分立。分立页不在迁出簿。";
+        return;
+      }
+      location.href = "miss.html";
+    };
+  </script>
+</body>
+</html>

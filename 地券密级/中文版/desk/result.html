@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>备注回执</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/game-extra.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>数字化室回执</strong>
+      <a class="ghost-btn" href="note.html">回备注台</a>
+    </header>
+    <div class="notice">
+      <h2 id="dq-rt">回执</h2>
+      <div id="dq-rb"></div>
+    </div>
+    <p style="width:80%;margin:16px auto 32px"><a href="../introduction.html">回抽屉纸</a>　<button type="button" class="dq-write" id="wipe">清草稿</button></p>
+  </div>
+  <script src="../js/state.js"></script>
+  <script>
+    var s = DQ.load();
+    var t = document.getElementById("dq-rt");
+    var b = document.getElementById("dq-rb");
+    function p(s) { var e = document.createElement("p"); e.textContent = s; b.appendChild(e); }
+    var how = "";
+    if (s.picks.dead === "dead-unique") how = "亡者那一栏你写成了唯一认定。";
+    else if (s.picks.dead === "dead-conflict") how = "亡者你写成两版打架，让所里另核。";
+    else if (s.picks.bound && /internal|restrict|conflict/.test(s.picks.bound)) how = "四至你没有只抄公开层那句石阶。";
+    else if (s.picks.money && /internal|restrict|conflict/.test(s.picks.money)) how = "钱主你写了公开层以外的名字。";
+    else how = "五栏大体按公开目录复述。";
+    if (s.ending === "overclaim") {
+      t.textContent = "退回　请改亡者栏";
+      p(how);
+      p("系统不收「据此认定」。查阅备注只能写各层看见什么，不能替原件下唯一结论。回备注台改一栏即可，不必重抄五栏。");
+      p("西库门仍然锁着。没有人因为你这句话去开穴。");
+    } else if (s.ending === "three") {
+      t.textContent = "已收　三层对照进表";
+      p(how);
+      p("中保你写了申敬之。限制层也进了投影稿。曲晚棠早上会先看到分柜那一行，所里可能问前馆长，也可能问你夜班为什么进限制柜。");
+      p("侯启明那堵墙和南岭那个岑守山都会被点到名。你没有批准迁葬，只是让例会没法装没看见。");
+    } else if (s.ending === "internal") {
+      t.textContent = "已收　内部冲突进表";
+      p(how);
+      p("所里会拿宅基地公告对东至。侯启明可能被回访。限制柜转写仍不在投影上，晨会不必立刻问亡者是谁。");
+      p("翟浦信里那句「别只看公开层」，你做到了一半。");
+    } else if (s.ending === "public") {
+      t.textContent = "已收　按公开层复述";
+      p(how);
+      p("缪秋白能投影。侯启明要的那版东至还在。展陈口径又被说了一遍。限制柜那张纸继续待在夜里。");
+      p("抽屉里的牌你可以放回去。试用期的夜班看起来像做满了。");
+    } else {
+      t.textContent = "未交齐";
+      p("五栏还空着，回执不能出。");
+    }
+    document.getElementById("wipe").onclick = function () {
+      DQ.reset();
+      location.href = "../introduction.html";
+    };
+  </script>
+</body>
+</html>

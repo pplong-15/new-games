@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>麦记·夜班台</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>麦记夜班台</strong>
+      <div>
+        <a class="ghost-btn" href="yard.html">后院</a>
+        <a class="ghost-btn" href="order.html">丧单</a>
+        <a class="ghost-btn" href="sentence.html">句卡</a>
+        <form id="search-form" action="#" method="get" style="display:inline">
+          <input id="search-input" name="q" placeholder="查单号…">
+          <button type="submit">查找</button>
+        </form>
+      </div>
+    </header>
+    
+    <div class="notice">
+      <h2>台面</h2>
+      <p>复写纸味和胶味搅在一起。柜台灯管跳了两次，跳完还是这几份。临工手册没有今晚这页，只有一句：看堆、对单、成句。别的闲话不要写进卡。</p>
+      <p>临工盛麦。铺主麦老人不在。截止写在电话条上：五七前夜交一句。窗关只看这一句。</p>
+      <p>待对：邵庭那一单，旁边还夹着邵浦的发票。后院堆颜色不对。娄石照片在侧栏。</p>
+      <p>句卡开着。空格没收齐会退。准烧、做法，本台不收。</p>
+      <div class="bagbox" id="wordbag"></div>
+      <p id="bagflash"></p>
+    </div>
+    <div class="tabs">
+      <a href="yard.html">后院堆</a>
+      <a href="invoice.html">发票</a>
+      <a href="../lou/index.html">娄石那边</a>
+    </div>
+    <table>
+      <thead><tr><th>台面</th><th>备注</th></tr></thead>
+      <tbody>
+        <tr><td><a href="yard.html">后院现码</a></td><td>白纸压着红金</td></tr>
+        <tr><td><a href="order.html">邵庭丧单</a></td><td>户名邵庭</td></tr>
+        <tr><td><a href="invoice.html">邵浦发票</a></td><td>户名不是丧单那个</td></tr>
+        <tr><td><a href="../pu/group.html">浦页店群摘</a></td><td>今晚还在跳</td></tr>
+        <tr><td><a href="../lou/schedule.html">炉口档期</a></td><td>今夜哪炉开</td></tr>
+      </tbody>
+    </table>
+    <div class="notice">
+      <h2>侧栏</h2>
+      <p>
+        <a href="phone.html">电话条全文</a> ·
+        <a href="shift.html">夜班权限</a> ·
+        <a href="pricelist.html">价目分列</a> ·
+        <a href="oldslip.html">旧著录样</a><br>
+        <a href="../jing/urge.html">井秋白转文</a> ·
+        <a href="../xian/rule.html">县摘</a> ·
+        <a href="../bbs/list.html">街坊楼</a>
+      </p>
+    </div>
+    <div class="notice">
+      <h2>麦老留的半句</h2>
+      <p>先按台上那件记。写事件，不写准烧。</p>
+      <p id="mai-2" hidden></p>
+      <p id="mai-3" hidden></p>
+      <p id="mai-4" hidden></p>
+    </div>
+    <div class="notice">
+      <h2>抽屉</h2>
+      <p>他自己撕的。从上往下看。别先翻最底。</p>
+      <details><summary>第一张</summary><p>先看堆上红的那一叠，再去对丧单和发票。</p></details>
+      <details><summary>第二张</summary><p>品名对不上的那一栏，店群今晚还有人说话。</p></details>
+      <details><summary>第三张</summary><p>词要点进袋。句卡要六格都从袋里填。炉口档期也看。权限别勾准烧。</p></details>
+      <details><summary>最底一张</summary><p>邵浦 / 开业彩扎 / 混进 / 邵庭丧扎 / 未焚 / 邵浦在世。权限选建议。</p></details>
+    </div>
+    <p style="text-align:center;padding:16px;color:#666;font-size:12px">
+      <a href="../introduction.html">回字条</a>
+    </p>
+
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>ZJ.bootDesk();</script>
+</body>
+</html>

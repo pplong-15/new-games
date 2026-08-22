@@ -1,0 +1,9 @@
+assets/*.png
+assets/*.jpg
+assets/*.json
+tmp/
+*.bak
+_*.js
+_*.py
+_*.mk
+_*.txt

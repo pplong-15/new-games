@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Digitization duty desk</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/game-extra.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>Digitization duty desk</strong>
+      <div>
+        <a class="ghost-btn" href="shift.html">Handover book</a>
+        <a class="ghost-btn" href="note.html">Viewing note</a>
+        <form class="dq-dead" action="home.html" method="get">
+          <input name="q" placeholder="Title scan only, not opened">
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>Tonight's ticket</h2>
+      <p>Incoming: Miao Qiubai, Heritage Office. File id Anpu-Deed-1983-047. Morning meeting needs a viewing note on the projector. All five boxes must have text. Authority stops at recommend. There is no “certified true” button. There is no unlock-cabinet button.</p>
+      <p>Public layer is on the public-information site. Internal needs a login first. Restricted is a separate door. The layer you have seen is the layer you may write, plus a cross-check.</p>
+    </div>
+    <div class="tabs">
+      <a href="login.html">Internal login</a>
+      <a href="lock.html">Restricted cabinet</a>
+      <a href="internal-047.html">Internal 047</a>
+      <a href="restricted-047.html">Restricted 047</a>
+    </div>
+    <table>
+      <thead><tr><th>Window</th><th>Note</th></tr></thead>
+      <tbody>
+        <tr><td><a href="../public/catalog.html">Public catalog</a></td><td>No badge</td></tr>
+        <tr><td><a href="memo.html">2019 sort memo</a></td><td>Needs internal session</td></tr>
+        <tr><td><a href="log.html">Restricted call log</a></td><td>Needs clearance session</td></tr>
+        <tr><td><a href="../gov/request.html">Office request</a></td><td>Five-box requirement is in the header</td></tr>
+        <tr><td><a href="../mail/inbox.html">Duty mailbox</a></td><td>Log in as ye-anpu first</td></tr>
+        <tr><td><a href="hint.html">Qu Wantang slips</a></td><td>One slip at a time</td></tr>
+        <tr><td><a href="scanlog.html">Scan log</a></td><td>Platen record. Does not decide fields</td></tr>
+        <tr><td><a href="../baike/nanshan.html">Nanling Township lemma</a></td><td>West Slope and East Ridge split by the ridge</td></tr>
+      </tbody>
+    </table>
+    <p style="width:80%;margin:0 auto 24px">Draft has <b id="dq-draft-n">0</b> boxes filled. Count them yourself before you submit.</p>
+  </div>
+  <script src="../js/state.js"></script>
+  <script>
+    DQ.visit("home");
+    document.getElementById("dq-draft-n").textContent = String(DQ.noteCount());
+  </script>
+</body>
+</html>

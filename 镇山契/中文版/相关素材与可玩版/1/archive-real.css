@@ -1,0 +1,66 @@
+/* ==========================================================================
+   档案站真皮覆盖层（追加在工作台层之后）
+   取自北京档案馆检索系统 + 杨浦/浙江档案 真实截图主色
+   核心：档案蓝 #006cd8 / 红印章 #bd1a2d / 白底 / 浅蓝链接
+   ========================================================================== */
+
+/* 页面：白底（真实档案检索系统是白底，不是灰） */
+.archive-page{background:#fff !important;color:#333 !important}
+
+/* 站头：白底 + 深蓝下边 */
+.archive-masthead{background:#fff !important;border-bottom:3px solid #006cd8 !important}
+.archive-identity h1,.archive-identity>div>a,.archive-title{color:#006cd8 !important;font-family:"SimSun","宋体",serif !important;font-weight:700 !important}
+.archive-identity p,.archive-era{color:#888 !important}
+.archive-identity small{color:#999 !important}
+
+/* 红色圆形印章（北京档案标志） */
+.archive-seal{background:#bd1a2d !important;color:#fff !important;border-radius:50% !important;font-family:"SimSun","宋体",serif !important}
+
+/* 主导航：档案蓝 */
+.archive-primary-nav{background:#006cd8 !important}
+.archive-primary-nav a,.archive-primary-nav span{color:#fff !important;border-right:1px solid #4a9ae0 !important;font-weight:400 !important}
+
+/* 侧栏 */
+.archive-sidebar{background:#fff !important;border:1px solid #d5d5d5 !important}
+.archive-sidebar h2,.archive-sidebar h3{background:#006cd8 !important;color:#fff !important;font-weight:400 !important}
+.archive-sidebar nav>*{color:#333 !important;border-bottom:1px solid #ececec !important}
+.archive-sidebar nav>*::before{color:#006cd8 !important}
+.archive-sidebar nav a{color:#333 !important}
+.archive-sidebar nav a[aria-current]{color:#006cd8 !important}
+
+/* 分面筛选 */
+.archive-facets{background:#fafafa !important;color:#666 !important}
+.archive-facets dd{color:#006cd8 !important}
+.filter-details{background:#fafafa !important;border-color:#d5d5d5 !important;color:#666 !important}
+
+/* 搜索面板 */
+.archive-search-panel{background:#f5f8fc !important;border-bottom-color:#d5d5d5 !important}
+.archive-search-panel legend{color:#006cd8 !important}
+.archive-search-panel input{border:1px solid #999 !important;background:#fff !important}
+.archive-search-panel button{background:#006cd8 !important;border-color:#0056b3 !important;color:#fff !important;font-weight:400 !important}
+
+/* 结果工具栏/摘要 */
+.archive-result-toolbar,.archive-result-summary,.archive-page .result-count{background:#fafafa !important;color:#666 !important;border-color:#d5d5d5 !important}
+
+/* 目录表：高密度档号 */
+.directory-head{background:#eef4fb !important;color:#445566 !important;border-bottom:2px solid #006cd8 !important;font-weight:400 !important}
+.directory-row{border-bottom:1px solid #ececec !important;background:#fff !important}
+.directory-row:nth-child(even){background:#fafafa !important}
+.directory-row b{color:#333 !important}
+.directory-row code{color:#006cd8 !important}
+.directory-row small{color:#888 !important}
+
+/* 目录树 + 统计 */
+.archive-directory-tree>*{color:#333 !important;border-bottom:1px solid #ececec !important}
+.archive-tree-stats{color:#888 !important}
+
+/* 卷宗身份 */
+.archive-catalog-identity .catalog-id{color:#006cd8 !important}
+.archive-catalog-identity h1{color:#333 !important;font-family:"SimSun","宋体",serif !important}
+.archive-page .catalog-record>section:not(.archive-record-fields){background:#fafafa !important;border-left:4px solid #006cd8 !important}
+.archive-page .record-metadata dt{background:#eef4fb !important;color:#445566 !important}
+.archive-finding-aid p{color:#888 !important}
+
+/* 页脚 */
+.archive-site-footer{background:#f5f8fc !important;border-top:1px solid #d5d5d5 !important;color:#888 !important}
+.archive-site-footer a{color:#006cd8 !important}

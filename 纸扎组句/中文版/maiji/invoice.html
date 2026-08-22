@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>麦记·邵浦发票</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>发票存根</strong>
+      <div>
+        <a class="ghost-btn" href="desk.html">台</a>
+        <a class="ghost-btn" href="order.html">单</a>
+        <a class="ghost-btn" href="sentence.html">卡</a>
+        <form id="search-form" action="#" method="get" style="display:inline">
+          <input id="search-input" name="q" placeholder="查单号…">
+          <button type="submit">查找</button>
+        </form>
+      </div>
+    </header>
+    
+    <div class="notice">
+      <h2>发票·开业</h2>
+      <p>油墨在指腹上会黑一道。邵浦没来柜台签字，是阿豆代领的。代领栏写着「店员」，没有丧主两个字。谁把这一联跟丧单别在一起，现在已经说不清。</p>
+      <p><img alt="" src="../img/desk-papers.jpg" style="max-width:100%;height:auto;display:block;margin:8px 0"></p>
+      <p>复写纸油还在。这一张不是丧单。户名、品名、摘要都换了嘴。它能对谁付了钱、钱买的什么名，不能证明货到了店门口，也不能证明后院有没有人拆包。</p>
+      <table>
+        <tr><th>栏</th><th>字</th></tr>
+        <tr><td>户名</td><td><a class="pick" data-w="邵浦" href="#">邵浦</a></td></tr>
+        <tr><td>摘要</td><td><a class="pick" data-w="开业彩扎" href="#">开业彩扎</a></td></tr>
+        <tr><td>细目</td><td><a class="pick" data-w="狮头" href="#">狮头</a> 一对、门面灯四盏</td></tr>
+        <tr><td>送货窗</td><td>与邵庭那一单写在同一晚</td></tr>
+        <tr><td>落款店</td><td>浦页，巷口那间<a class="pick" data-w="文具店" href="#">文具店</a></td></tr>
+      </table>
+      <p>丧单写童女。这里写狮头。同一铺，两个户名，一晚出货。品名冲突就在这两栏，不是传说里换人。</p>
+      <p>麦老接两头活。夜班手看见堆上红金，应当回来对这一栏，不要用丧单的品类去填。</p>
+      <div class="bagbox" id="wordbag"></div>
+      <p id="bagflash"></p>
+      <p>人还在不在，发票定不了。店群今晚还在跳。</p>
+      <p><a href="../pu/group.html">浦页店群</a> · <a href="../pu/receipt.html">开业收据</a></p>
+    </div>
+
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>ZJ.bootPage("v-invoice");</script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-qzone-modules">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wanhe — album</title>
+  <link rel="stylesheet" href="css/qzone-modules.css">
+  <link rel="stylesheet" href="css/pick.css">
+</head>
+<body>
+  <div id="gate">
+    <div class="topbar"><div class="topbar-inner"><span class="logo">Personal space</span></div></div>
+    <div class="banner">Owner set a visit question</div>
+    <div class="cols">
+      <div></div>
+      <div>
+        <div class="mod">
+          <h3>Won’t open</h3>
+          <div class="bd">
+            <p>Album is not public. Attachment address is at the end of Suqiu’s letter. If you bumped in from somewhere else, go back and find the letter first.</p>
+            <p><a href="letter.html">Open the mailbox body</a>  <a href="desk.html">Leave the space</a></p>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </div>
+  </div>
+  <div id="space" hidden>
+    <div class="topbar">
+      <div class="topbar-inner">
+        <span class="logo">Personal space</span>
+        <a href="wanhe.html">Home</a>
+        <a href="wanhe-msg.html">Guestbook</a>
+        <a href="wanhe-photo.html">Album</a>
+        <a href="wanhe-mood.html">Posts</a>
+        <span class="extra"><a href="desk.html">Leave</a></span>
+      </div>
+    </div>
+    <div class="banner yard">Album  yard</div>
+    <div class="cols">
+      <div></div>
+      <div>
+        <div class="mod">
+          <h3>2026-07-29  empty frames</h3>
+          <div class="bd">
+            <div class="thumbs">
+              <i>stove edge</i><i>empty yard</i><i>wall foot</i>
+            </div>
+            <p>None of the three has a face. First one at the stove edge, pot lid glare, person already out of frame. Second at the empty yard, a pale mark on the ground, like a tape hook, or a broom. Third, wall foot, half a red-paper edge, characters smeared.</p>
+            <p>Caption she added later: people from the genealogy office told me stand aside, said no women in the frame. I backed to the kitchen door, phone still up, shot these. Bochuan off-frame yelling move over. Little Xiaoman at the table. I didn’t shoot his face. Didn’t want to.</p>
+            <p>Album permission written as “only people who have been to the old address.” No house number. No station mark. Nobody’s front. An empty yard cannot be written as the child already moved in. These three only show: the photo day, someone was pushed out of the picture.</p>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </div>
+    <p class="site-foot">Album stopped  no faces</p>
+  </div>
+  <script src="js/state.js"></script>
+  <script>
+    var s = HY.visit("wanhe-photo", 1);
+    if (!s.wanhe) {
+      document.getElementById("gate").hidden = false;
+    } else {
+      document.getElementById("space").hidden = false;
+    }
+  </script>
+</body>
+</html>

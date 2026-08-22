@@ -1,0 +1,55 @@
+/* 站内用户上传图：细边框，不要圆角卡片 */
+img.shot {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  border: 1px solid #808080;
+  margin: 8px 0;
+}
+img.shot-wide {
+  max-width: 960px;
+}
+.thumbs {
+  overflow: hidden;
+  zoom: 1;
+  margin: 8px 0 12px;
+}
+.thumbs img {
+  float: left;
+  width: 31%;
+  height: 90px;
+  object-fit: cover;
+  margin: 0 2% 8px 0;
+  border: 1px solid #808080;
+}
+.thumbs img:nth-child(3n) { margin-right: 0; }
+.grey {
+  color: #666;
+}
+.strike {
+  text-decoration: line-through;
+  color: #888;
+}
+.paused {
+  color: #999;
+}
+button.end-btn {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  margin: 8px 0;
+  padding: 8px 10px;
+  font: 14px SimSun, "Songti SC", serif;
+  cursor: pointer;
+}
+button.end-btn:disabled {
+  cursor: not-allowed;
+  color: #888;
+}
+.err {
+  color: #a00;
+  margin-top: 8px;
+}
+
+html { overflow-x: auto; }

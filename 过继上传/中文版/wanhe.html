@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-qzone-modules">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>晚禾的空间</title>
+  <link rel="stylesheet" href="css/qzone-modules.css">
+  <link rel="stylesheet" href="css/pick.css">
+</head>
+<body>
+  <div id="gate">
+    <div class="topbar"><div class="topbar-inner"><span class="logo">个人空间</span></div></div>
+    <div class="banner">主人设置了访问问答</div>
+    <div class="cols">
+      <div></div>
+      <div>
+        <div class="mod">
+          <h3>打不开</h3>
+          <div class="bd">
+            <p>她问：你从哪封信里翻到的旧址？答不上来就别进。</p>
+            <p><a href="letter.html">去网格信箱</a>　<a href="desk.html">回值班台</a></p>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </div>
+  </div>
+  <div id="space" hidden>
+    <div class="topbar">
+      <div class="topbar-inner">
+        <span class="logo">个人空间</span>
+        <a href="wanhe.html">主页</a>
+        <a href="wanhe-msg.html">留言</a>
+        <a href="wanhe-photo.html">相册</a>
+        <a href="wanhe-mood.html">说说</a>
+        <span class="extra"><a href="desk.html">离开</a></span>
+      </div>
+    </div>
+    <div class="banner yard">晚禾　偶尔上来看看</div>
+    <div class="cols">
+      <div>
+        <div class="mod">
+          <h3>主人信息</h3>
+          <div class="bd">
+            <div class="avatar ph face"></div>
+            <div class="info-row"><b>晚禾</b></div>
+            <div class="info-row">浦阳 / 药店上白班</div>
+          </div>
+        </div>
+        <div class="music">
+          <div class="now">暂停在半首歌</div>
+          <div class="bar"><i></i></div>
+          <div class="ctrl"><span class="muted">不要外链自动播</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="mod talk">
+          <h3>说说</h3>
+          <div class="bd">
+            <div class="feed-li">
+              <div class="mini"></div>
+              <div class="txt"><span class="name">晚禾</span> 谱局来拍照，让我站旁边别入镜。伯川说女的不算。小满弟被按在桌边写名字，铅笔都拿反了。<div class="time">7月29日 22:11</div></div>
+            </div>
+            <div class="feed-li">
+              <div class="mini"></div>
+              <div class="txt"><span class="name">晚禾</span> 药罐子洗了。电费我交。别问我当不当儿子，我不当。我在这儿。<div class="time">7月30日 00:04</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="mod">
+          <h3>留言板</h3>
+          <div class="bd">
+            <div class="gb-li">
+              <div class="mini"></div>
+              <div class="txt"><span class="name">同班杏</span> 你还住那边？<div class="time">8月2日</div></div>
+            </div>
+            <div class="gb-li">
+              <div class="mini"></div>
+              <div class="txt"><span class="name">晚禾</span> 在。别转发。<div class="time">8月2日</div></div>
+            </div>
+            <div class="gb-li">
+              <div class="mini"></div>
+              <div class="txt"><span class="name">晚禾</span> 去年那张照料补贴，窗口说同住关系写不清，退了。我不想再填一回「女」。谁要把我写成嗣子，当我没看见。<div class="time">8月3日</div></div>
+            </div>
+            <p>
+              <button type="button" class="pick" data-block="kind-care">摘：侍奉未入册</button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="mod">
+          <h3>相册</h3>
+          <div class="bd">
+            <div class="thumbs">
+              <i>灶</i><i>院</i><i>停更</i>
+            </div>
+            <p class="muted">三张糊的，没有脸。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="site-foot">空间停在前年装扮　访客请自己关音乐</p>
+  </div>
+  <script src="js/state.js"></script>
+  <script>
+    var s = HY.visit("wanhe", 3);
+    if (!s.wanhe) {
+      document.getElementById("gate").hidden = false;
+    } else {
+      document.getElementById("space").hidden = false;
+      HY.bindPicks();
+    }
+  </script>
+</body>
+</html>

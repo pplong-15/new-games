@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>数字化室值班台</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/game-extra.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>数字化室值班台</strong>
+      <div>
+        <a class="ghost-btn" href="shift.html">交接本</a>
+        <a class="ghost-btn" href="note.html">查阅备注</a>
+        <form class="dq-dead" action="home.html" method="get">
+          <input name="q" placeholder="只扫标题，未开通">
+          <button type="submit">检索</button>
+        </form>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>今夜工单</h2>
+      <p>来文：文保所缪秋白。档号安档-地券-1983-047。明早例会要投查阅备注，五栏都要有字。权威只到建议，不许点「认定属实」，没有开柜钮。</p>
+      <p>公开层在信息公开网。内部层要先登入。限制层另开一扇门。你看见哪一层，备注就只能写那一层加对照。</p>
+    </div>
+    <div class="tabs">
+      <a href="login.html">内部登入</a>
+      <a href="lock.html">限制柜</a>
+      <a href="internal-047.html">内部 047</a>
+      <a href="restricted-047.html">限制 047</a>
+    </div>
+    <table>
+      <thead><tr><th>窗口</th><th>备注</th></tr></thead>
+      <tbody>
+        <tr><td><a href="../public/catalog.html">公开目录</a></td><td>不用牌</td></tr>
+        <tr><td><a href="memo.html">二〇一九年分拣备忘</a></td><td>要内部会话</td></tr>
+        <tr><td><a href="log.html">限制调阅日志</a></td><td>要密级会话</td></tr>
+        <tr><td><a href="../gov/request.html">所里申请</a></td><td>五栏要求写在抬头</td></tr>
+        <tr><td><a href="../mail/inbox.html">值班邮箱</a></td><td>先登 ye-anpu</td></tr>
+        <tr><td><a href="hint.html">曲晚棠便笺</a></td><td>一次揭一张</td></tr>
+        <tr><td><a href="scanlog.html">扫描流水</a></td><td>稿台记录，不裁决字段</td></tr>
+        <tr><td><a href="../baike/nanshan.html">南岭乡条</a></td><td>西坡东岗分梁</td></tr>
+      </tbody>
+    </table>
+    <p style="width:80%;margin:0 auto 24px">草稿已选 <b id="dq-draft-n">0</b> 项。交之前自己数。</p>
+  </div>
+  <script src="../js/state.js"></script>
+  <script>
+    DQ.visit("home");
+    document.getElementById("dq-draft-n").textContent = String(DQ.noteCount());
+  </script>
+</body>
+</html>

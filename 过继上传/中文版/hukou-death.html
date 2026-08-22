@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-gov-redbar">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>死亡注销呈批</title>
+  <link rel="stylesheet" href="css/gov-redbar.css">
+  <link rel="stylesheet" href="css/pick.css">
+</head>
+<body>
+  <div class="red">
+    <h1>浦阳县户政查阅</h1>
+    <p>死亡注销呈批扫描　虚构站点</p>
+  </div>
+  <div class="links">
+    <a href="hukou.html">户页扫描</a>
+    <a href="hukou-refuse.html">持纸拒件</a>
+    <a href="hukou-channel.html">九号协查</a>
+    <a href="hukou-death.html">本页呈批</a>
+    <a href="office.html">告知单</a>
+    <a href="desk.html">回上传台</a>
+  </div>
+  <div class="wrap">
+    <table cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="box">
+          <h3>呈批摘要</h3>
+          <ol>
+            <li>档案号户销-0522<span class="date">05-22</span></li>
+            <li>医学证明日期五月十八<span class="date">医院</span></li>
+            <li>到窗办理五月二十二<span class="date">滞后</span></li>
+            <li>承办人注：红纸不能顶死亡证明<span class="date">内部</span></li>
+          </ol>
+        </td>
+        <td class="box">
+          <h3>改主</h3>
+          <ol>
+            <li>原户主守仁注销<span class="date">05-22</span></li>
+            <li>现户主改配偶素秋<span class="date">同日</span></li>
+            <li>在册女儿晚禾未动<span class="date">女栏</span></li>
+            <li>打印项无「继子」<span class="date">版式</span></li>
+          </ol>
+        </td>
+      </tr>
+    </table>
+    <p class="note">县医院死亡医学证明开在五月十八日。二十二日素秋带证明到窗。中间隔了灵堂那几天。承办人问有没有同时办迁入，她摇头，说先把死人销掉。系统里户主变更与死亡注销绑在同一张呈批上，改主完成后，本户在册只剩素秋和女儿耿晚禾。</p>
+    <table class="sheet">
+      <tr><th>栏</th><th>填写</th><th>系统校验</th></tr>
+      <tr><td>死亡人</td><td>耿守仁</td><td>与医学证明一致</td></tr>
+      <tr><td>新户主</td><td>耿素秋</td><td>配偶关系已有档</td></tr>
+      <tr><td>随迁子女</td><td>无</td><td>未申报</td></tr>
+      <tr><td>在册其他</td><td>女　耿晚禾</td><td>未婚栏未动</td></tr>
+    </table>
+    <p class="note">打印模板没有「嗣子」这一行。有人后来打电话问能不能手写补一格。值班回：手写无效。五月二十二日本户完成死亡注销和改主，在册女儿仍是晚禾。十九日那张红纸作不作数，本呈批不答。小满有没有在别的窗口另立案，本呈批也没有那一行。</p>
+    <p class="note">
+      <button type="button" class="pick" data-block="heir-hukou">摘：本户未登记嗣子</button>
+    </p>
+    <p class="ft">户销呈批　仅供对照　手写加行无效</p>
+  </div>
+  <script src="js/state.js"></script>
+  <script>
+    HY.visit("hukou-death", 2);
+    HY.bindPicks();
+  </script>
+</body>
+</html>

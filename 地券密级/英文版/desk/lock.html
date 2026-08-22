@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Digitization desk · Restricted-cabinet login</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/game-extra.css">
+</head>
+<body class="login-page">
+  <div id="wrap">
+    <header>
+      <strong>Anpu Archives · Restricted reading</strong>
+      <span>Put the spare badge back when you are done</span>
+    </header>
+    <form class="login-box" id="dq-login" action="restricted-047.html" method="post">
+      <h1>Restricted layer</h1>
+      <label for="user">Clearance badge ID</label>
+      <input id="user" name="user" type="text" autocomplete="off">
+      <label for="pass">Clearance password</label>
+      <input id="pass" name="pass" type="password" autocomplete="off">
+      <button type="submit">Open restricted catalog</button>
+      <p class="hint">Qu Wantang's spare badge from day shift. Number and password are in the letter she sent to the duty mailbox. This page does not hint the first character and does not keep a gray column.</p>
+      <p class="dq-err" id="dq-err"></p>
+    </form>
+    <p style="text-align:center"><a href="login.html">Internal login</a>　<a href="../mail/login.html">Open mail first</a>　<a href="home.html">Duty desk</a></p>
+  </div>
+  <script src="../js/state.js"></script>
+  <script>DQ.bindLogin("restrict", "restricted-047.html");</script>
+</body>
+</html>

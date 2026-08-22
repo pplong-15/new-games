@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>限制层　047</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/game-extra.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>限制柜转写</strong>
+      <div>
+        <a class="ghost-btn" href="log.html">调阅日志</a>
+        <a class="ghost-btn" href="note.html">备注台</a>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>原钞件转写　未进展陈</h2>
+      <p>下列按限制柜纸片过录。朱书有缺，缺处不补。本页不是让你重写一张新券。</p>
+    </div>
+    <table>
+      <thead><tr><th>要项</th><th>限制层所见</th></tr></thead>
+      <tbody>
+        <tr><td>时间</td><td>甲子年冬月十六。未换算成公历</td></tr>
+        <tr><td>钱主</td><td>葛万川</td></tr>
+        <tr><td>亡者</td><td>岑守山</td></tr>
+        <tr><td>四至</td><td>东至现住屋后墙，西至旧渠，南至槐根，北至岗脊</td></tr>
+        <tr><td>中保</td><td>申敬之</td></tr>
+      </tbody>
+    </table>
+    <p style="width:80%;margin:0 auto">转写只能证明柜里纸片如此。不能证明这就是唯一真券，也不能据此开穴核对骨殖。甲子或为套语，百科有一条，别在备注里改成某年某日。</p>
+    <p style="width:80%;margin:0 auto">亡者岑守山：南岭这一房与东溪县志那个同名不是自动等于一人。村和年要对过。</p>
+    <p style="width:80%;margin:12px auto">
+      <button type="button" class="dq-write" data-extract="time-restrict">写入时间</button>
+      <button type="button" class="dq-write" data-extract="money-restrict">写入钱主</button>
+      <button type="button" class="dq-write" data-extract="bound-restrict">写入四至</button>
+      <button type="button" class="dq-write" data-extract="guar-restrict">写入中保</button>
+      <button type="button" class="dq-write" data-extract="dead-restrict">写入亡者</button>
+    </p>
+    <p style="width:80%;margin:0 auto 24px"><a href="home.html">值班台</a>　<a href="../baike/cen.html">同名词条</a>　<a href="../baike/maidiquan.html">买地券要项</a></p>
+  </div>
+  <script src="../js/state.js"></script>
+  <script>
+    if (DQ.requireSess("restrict", "denied.html")) DQ.visit("restricted-047");
+  </script>
+</body>
+</html>

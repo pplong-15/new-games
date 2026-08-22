@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FZ-0714-08　巢晚晴</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>福泽网单　问询</strong>
+      <div>
+        <a class="ghost-btn" href="desk.html">回队列</a>
+        <form id="search-form" action="search-closed.html" method="get" style="display:inline">
+          <input id="search-input" name="q" placeholder="夜间已关">
+          <button type="submit">检索</button>
+        </form>
+      </div>
+    </header>
+    <div class="notice">
+      <img class="hero-pic" alt="" src="img/folders.jpg">
+      <h2>新弹入　FZ-0714-08</h2>
+<p>巢晚晴问七月十四能不能在店里订酒席、顺便请一桌祖龛。她不是往生代办，是把香铺当成宴席部。</p>
+<p>本店不办酒。七月嫁娶是街上传来的忌讳，不是登记处的法条，福泽也没有批婚的章。问询扣住，让她白天另找酒楼。</p>
+<p>夜读那篇七月札记若推过来，里面的句子当聊天看，别抄进化建议栏当成依据。</p>
+<p>巢晚晴留的是本地号。早上回她「本店不办酒」就够。别替登记处说话，也别替她家里的老人说话。</p>
+<p>她勾了祖龛一桌，像顺便问问。问询没有往生对象，桌次栏应落在不接，不要给她编一个亡父出来。</p>
+<form class="sortbox" id="sort-form" data-id="wed">
+  <fieldset>
+    <legend>问询怎么回</legend>
+    <p class="auth">没有酒席桌。也不能把俗信写成准或不准结婚。</p>
+    <label>这封留不留到早上
+      <select name="action">
+        <option value="pass">放行</option>
+        <option value="hold">暂扣</option>
+      </select>
+    </label>
+    <label>有没有桌可排
+      <select name="desk">
+        <option value="zheng">正祀</option>
+        <option value="gu">孤魂席</option>
+        <option value="deng">供灯</option>
+        <option value="none">不接桌</option>
+      </select>
+    </label>
+    <label>给巢晚晴的一句
+      <textarea name="note" rows="3"></textarea>
+    </label>
+    <button type="submit">写下问询建议</button>
+  </fieldset>
+</form>
+<script>
+document.getElementById("sort-form").onsubmit = function (e) {
+  e.preventDefault();
+  var id = this.getAttribute("data-id");
+  if (!FZ.canOpen(id)) { FZ.toast("这封还不该写。"); return; }
+  FZ.openTicket(id);
+    var ok = FZ.submitTicket(id, this.elements.namedItem("action").value, this.elements.namedItem("desk").value, this.elements.namedItem("note").value);
+  if (ok) location.href = "desk.html";
+};
+</script>
+
+    </div>
+  </div>
+  <p class="pageft">问询单不占桌　36/40</p>
+  <script src="js/state.js"></script>
+  <script>
+    FZ.visit('wed');
+    if (!FZ.guard('ticket-wed.html')) {}
+    FZ.openTicket('wed');
+  </script>
+</body>
+</html>

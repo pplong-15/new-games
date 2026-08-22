@@ -1,0 +1,438 @@
+/* android-kitkat-2014: Holo / early flat. Not a modern card HUD. */
+html.os-kk,
+html.os-kk body {
+  margin: 0;
+  padding: 0;
+  background: #2a2a28;
+  color: #222;
+  font: 14px/1.45 Roboto, "Droid Sans Fallback", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
+}
+html.os-kk a { color: inherit; text-decoration: none; }
+html.os-kk button,
+html.os-kk input {
+  font: inherit;
+  border-radius: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.bench {
+  min-height: 100vh;
+  padding: 16px 0 24px;
+  background:
+    linear-gradient(180deg, #1c1c16 0%, #2b2b22 40%, #1a1a14 100%);
+}
+.handset {
+  width: 360px;
+  margin: 0 auto;
+  background: #141414;
+  border: 3px solid #3a3a38;
+  box-shadow: 0 8px 0 #0a0a0a, 0 12px 24px rgba(0,0,0,.55);
+  padding: 10px 8px 6px;
+}
+.ear {
+  width: 56px;
+  height: 6px;
+  margin: 0 auto 8px;
+  background: #0a0a0a;
+  border: 1px solid #333;
+}
+.glass {
+  background: #000;
+  height: 568px;
+  overflow: hidden;
+  position: relative;
+}
+.sb {
+  height: 24px;
+  background: #000;
+  color: #eee;
+  font-size: 11px;
+  line-height: 24px;
+  padding: 0 6px;
+  display: flex;
+  justify-content: space-between;
+}
+.sb b { font-weight: 400; letter-spacing: 1px; }
+.app {
+  height: 508px;
+  overflow: auto;
+  background: #f2f2f2;
+}
+.sk {
+  height: 36px;
+  background: #1b1b1b;
+  display: flex;
+  border-top: 1px solid #333;
+}
+.sk a {
+  flex: 1;
+  color: #9ab;
+  font-size: 11px;
+  line-height: 36px;
+  text-align: center;
+}
+.caps {
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #666;
+  font-size: 10px;
+}
+.lock .app { background: #12353a; color: #e8e8e8; }
+.lock .clock {
+  text-align: center;
+  padding: 48px 0 8px;
+  font-size: 56px;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+.lock .date {
+  text-align: center;
+  color: #b7c9c8;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+.lock .who {
+  text-align: center;
+  font-size: 13px;
+  color: #d0e0df;
+  margin-bottom: 12px;
+}
+.lock .miss {
+  margin: 0 20px 16px;
+  background: rgba(0,0,0,.28);
+  border: 1px solid #2a5558;
+  padding: 8px 10px;
+  font-size: 12px;
+  color: #dce8e7;
+}
+.pad {
+  width: 210px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.pad button {
+  float: left;
+  width: 64px;
+  height: 36px;
+  margin: 3px;
+  background: #1c4a4f;
+  color: #eee;
+  border: 1px solid #3a6a6e;
+  cursor: pointer;
+}
+.pad button.ok { background: #00695c; }
+.pinrow {
+  text-align: center;
+  letter-spacing: 6px;
+  height: 22px;
+  color: #cde;
+  margin-bottom: 6px;
+}
+.err { text-align: center; color: #f6c; font-size: 12px; min-height: 18px; }
+.home .app {
+  background: linear-gradient(180deg, #0a2e32 0%, #145056 55%, #0c2426 100%);
+}
+.wid {
+  clear: both;
+  margin: 0 10px 14px;
+  padding: 8px 10px;
+  background: rgba(0,0,0,.28);
+  border: 1px solid #2a5558;
+  color: #dce8e7;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.grid {
+  padding: 18px 12px 8px;
+  overflow: hidden;
+}
+.ic {
+  float: left;
+  width: 25%;
+  text-align: center;
+  margin-bottom: 16px;
+  color: #f3f3f3;
+  font-size: 12px;
+}
+.ic i {
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 4px;
+  line-height: 48px;
+  font-style: normal;
+  font-size: 13px;
+  color: #fff;
+  border: 1px solid rgba(0,0,0,.25);
+}
+.ic .sms { background: #43a047; }
+.ic .gal { background: #5c6bc0; }
+.ic .mem { background: #f9a825; color: #3a2a00; }
+.ic .tel { background: #1b5e20; }
+.ic .set { background: #546e7a; }
+.dock {
+  position: absolute;
+  left: 0; right: 0; bottom: 36px;
+  height: 64px;
+  background: rgba(0,0,0,.35);
+  border-top: 1px solid #2a4a4c;
+  padding-top: 8px;
+}
+.bar {
+  height: 40px;
+  line-height: 40px;
+  background: #00695c;
+  color: #fff;
+  padding: 0 10px;
+  font-size: 15px;
+}
+.bar.dark { background: #263238; }
+.bar.yel { background: #ef6c00; color: #fff; }
+.bar a { float: right; color: #c8fff6; font-size: 12px; }
+.row {
+  display: block;
+  background: #fff;
+  border-bottom: 1px solid #d5d5d5;
+  padding: 10px 12px;
+  overflow: hidden;
+}
+.row .t { color: #111; }
+.row .s { color: #666; font-size: 12px; margin-top: 3px; }
+.row .tm { float: right; color: #999; font-size: 11px; }
+.bubble { padding: 10px 12px; overflow: hidden; }
+.bubble .in,
+.bubble .out {
+  max-width: 82%;
+  padding: 8px 10px;
+  font-size: 13px;
+  margin-bottom: 8px;
+  border: 1px solid #cfcfcf;
+}
+.bubble .in { background: #eee; float: left; clear: both; }
+.bubble .out { background: #c8e6c9; float: right; clear: both; border-color: #a5d6a7; }
+.bubble .tm {
+  clear: both;
+  color: #999;
+  font-size: 11px;
+  padding: 0 4px 6px;
+}
+.thumbs { padding: 8px; overflow: hidden; background: #1a1a1a; min-height: 468px; }
+.thumbs a {
+  float: left;
+  width: 48%;
+  margin: 1%;
+  color: #ddd;
+  font-size: 11px;
+}
+.shot {
+  height: 110px;
+  border: 1px solid #333;
+}
+.meta { background: #111; color: #bbb; padding: 8px 12px 16px; font-size: 12px; }
+.meta p { margin: 0 0 8px; }
+.idface {
+  height: 280px;
+  margin: 12px;
+  border: 1px solid #888;
+  position: relative;
+  overflow: hidden;
+}
+.idface .bg { position: absolute; inset: 0; background: #f4f4f4; }
+.idface .hair { position: absolute; left: 70px; top: 36px; width: 140px; height: 70px; background: #3a2a22; }
+.idface .head { position: absolute; left: 95px; top: 70px; width: 90px; height: 110px; background: #d8b39a; }
+.idface .col { position: absolute; left: 80px; bottom: 0; width: 120px; height: 70px; background: #2c4a3a; }
+.idface.later .hair { left: 78px; width: 124px; height: 54px; background: #2b2018; }
+.idface.later .col { background: #4a3a2a; }
+.aisle { height: 160px; margin: 8px 12px; background: linear-gradient(#2a3328, #1a2018); border: 1px solid #333; }
+.scale { height: 160px; margin: 8px 12px; background: linear-gradient(#3a3a32, #222); border: 1px solid #444; }
+.memolist .row { background: #fff8c6; border-bottom: 1px solid #e0d48a; }
+.memopage .app { background: #fff8c6; }
+.memopage .padtxt { padding: 12px 14px 24px; font-size: 13px; line-height: 1.7; color: #3a3208; }
+.memopage .padtxt p { margin: 0 0 10px; }
+.call .dot {
+  display: inline-block;
+  width: 8px; height: 8px;
+  margin-right: 6px;
+  background: #2e7d32;
+}
+.call .missed { background: #c62828; }
+html.skin-intro-manual .slip {
+  background: #fffef6;
+  border: 1px solid #d4d0c0;
+  box-shadow: 2px 2px 0 rgba(0,0,0,.06);
+  padding: 18px 20px 22px;
+  font: 16px/1.75 "Songti SC", SimSun, "NSimSun", serif;
+  color: #2a2a2a;
+}
+html.skin-intro-manual .slip p { margin: 0 0 12px; }
+html.skin-intro-manual .slip .sign { text-align: right; color: #444; }
+html.backroom body {
+  margin: 0;
+  background: #14140e;
+  color: #d8d2b0;
+  font: 16px/1.7 "Songti SC", SimSun, "Microsoft YaHei", serif;
+}
+html.backroom .wrap { max-width: 640px; margin: 0 auto; padding: 28px 20px 48px; }
+html.backroom a {
+  display: block;
+  color: #e8e0b8;
+  background: #242418;
+  border: 1px solid #4a4a30;
+  padding: 10px 12px;
+  margin: 0 0 10px;
+  text-decoration: none;
+}
+html.backroom h1 { font-size: 18px; font-weight: 400; color: #f0e8c0; }
+html.backroom .how { color: #b8b08a; font-size: 14px; }
+.ic .con { background: #0277bd; }
+.ic .cal { background: #c62828; }
+.ic .web { background: #1565c0; }
+.ic .alm { background: #6d4c41; }
+.bar.blue { background: #0277bd; }
+.bar.red { background: #c62828; }
+.bar.gray { background: #455a64; }
+.vcard .nm {
+  background: #0277bd;
+  color: #fff;
+  padding: 18px 12px 10px;
+  font-size: 20px;
+}
+.vcard .ph,
+.vcard .blk {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 12px;
+  font-size: 13px;
+}
+.vcard .lab { color: #0277bd; font-size: 11px; margin-bottom: 4px; }
+.calwrap { background: #fff; overflow: hidden; }
+.calnav {
+  text-align: center;
+  padding: 8px 0 4px;
+  font-size: 14px;
+  color: #333;
+}
+.caldow,
+.calday {
+  float: left;
+  width: 14.28%;
+  text-align: center;
+  font-size: 11px;
+}
+.caldow { color: #888; padding: 4px 0; }
+.calday { height: 30px; line-height: 30px; color: #222; }
+.calday.mark { background: #ffcdd2; }
+.calday.today { outline: 1px solid #c62828; }
+.calday.dim { color: #bbb; }
+.calclear { clear: both; height: 0; }
+.ev {
+  padding: 8px 12px;
+  border-top: 1px solid #eee;
+  font-size: 12px;
+  line-height: 1.55;
+  color: #333;
+}
+.ev .when { color: #c62828; font-size: 11px; }
+.setlist .row .tm { color: #888; }
+.webtop {
+  background: #ececec;
+  border-bottom: 1px solid #bbb;
+  padding: 6px 8px;
+  font-size: 11px;
+  color: #444;
+}
+.webtop .url {
+  background: #fff;
+  border: 1px solid #aaa;
+  padding: 4px 6px;
+  margin-top: 4px;
+}
+.blockbox {
+  margin: 16px 12px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 12px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.blockbox h2 { font-size: 15px; font-weight: 400; margin: 0 0 8px; }
+.hist { padding: 8px 12px 16px; font-size: 12px; color: #555; }
+.hist p { margin: 0 0 8px; }
+.almbox { background: #fff; padding: 20px 12px 8px; text-align: center; }
+.almbox .hh { font-size: 48px; font-weight: 300; letter-spacing: 2px; }
+.almbox .lb { color: #666; font-size: 13px; margin: 4px 0 12px; }
+.almdet { background: #fff; padding: 10px 12px 18px; font-size: 13px; line-height: 1.65; color: #333; }
+.almdet p { margin: 0 0 8px; }
+.locker {
+  height: 160px;
+  margin: 8px 12px;
+  border: 1px solid #333;
+  position: relative;
+  background:
+    linear-gradient(#2c2a22 0 16%, #5a5648 16% 20%, #2c2a22 20% 62%, #181610 62%);
+}
+.locker .plank {
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  top: 38%;
+  height: 10px;
+  background: #6a6248;
+}
+.locker .tag {
+  position: absolute;
+  left: 28%;
+  top: 52%;
+  width: 36px;
+  height: 22px;
+  background: #2c4a3a;
+  border: 1px solid #1a2a20;
+}
+.locker .wire {
+  position: absolute;
+  left: 36%;
+  top: 48%;
+  width: 48px;
+  height: 36px;
+  border: 3px solid #1a1a14;
+  border-radius: 0 20px 0 0;
+  border-left: none;
+  border-bottom: none;
+}
+.notice {
+  height: 160px;
+  margin: 8px 12px;
+  border: 1px solid #333;
+  position: relative;
+  background: #3a3a32;
+}
+.notice .sheet {
+  position: absolute;
+  left: 18%;
+  right: 18%;
+  top: 12%;
+  bottom: 14%;
+  background: #d2c06a;
+  border: 1px solid #8a7a38;
+}
+.notice .mag {
+  position: absolute;
+  left: 46%;
+  top: 8%;
+  width: 12px;
+  height: 12px;
+  background: #222;
+}
+.notice .ln {
+  position: absolute;
+  left: 26%;
+  right: 26%;
+  height: 3px;
+  background: #3a3010;
+}
+.notice .ln1 { top: 32%; }
+.notice .ln2 { top: 44%; width: auto; right: 34%; }
+.notice .ln3 { top: 56%; }
+.notice .ln4 { top: 68%; right: 40%; }

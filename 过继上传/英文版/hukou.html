@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-gov-redbar">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Puyang County hukou lookup</title>
+  <link rel="stylesheet" href="css/gov-redbar.css">
+  <link rel="stylesheet" href="css/pick.css">
+</head>
+<body>
+  <div class="red">
+    <h1>Puyang County hukou lookup</h1>
+    <p>Scans in custody  No on-site window booking  Fictional site</p>
+  </div>
+  <div class="links">
+    <a href="hukou.html">Roll query</a>
+    <a href="hukou-refuse.html">Compare refusal</a>
+    <a href="hukou-channel.html">Check reply</a>
+    <a href="hukou-death.html">Death close</a>
+    <a href="office.html">Window notice</a>
+    <a href="desk.html">Back to night desk</a>
+  </div>
+  <div class="wrap">
+    <table cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="box">
+          <h3>Lookup notice</h3>
+          <ol>
+            <li>This page shows scanned household sheets only<span class="date">2026-08</span></li>
+            <li>Changes still require the person at a window<span class="date">standing</span></li>
+            <li>Red paper, clan books, and oral deals do not replace inbound<span class="date">restated</span></li>
+            <li>Weekend: machine stays on, no one is on duty<span class="date">2024</span></li>
+          </ol>
+        </td>
+        <td class="box">
+          <h3>Latest machine remarks</h3>
+          <ol>
+            <li>No. 17 head changed to Suqiu<span class="date">05-22</span></li>
+            <li>Shouren death close finished<span class="date">05-22</span></li>
+            <li>Someone brought red paper for compare; no change<span class="date">05-20</span></li>
+            <li>9 Quyuan Road check reply is hung<span class="date">06-03</span></li>
+          </ol>
+        </td>
+      </tr>
+    </table>
+    <p class="note">Household Pu-Huai-Zao-17. Address written 17 Zaoshu Lane. Former head Geng Shouren, male, born 1951. Closed for death on 2026-05-22. Same day, head changed to spouse Geng Suqiu. Persons now on the roll: two — Suqiu, daughter Geng Wanhe. There is no third row labeled heir, and no person named Geng Xiaoman. <a href="hukou-death.html">Close-and-approve sheet</a></p>
+    <table class="sheet">
+      <tr><th>Relation</th><th>Name</th><th>Status</th><th>Note</th></tr>
+      <tr><td>Former head</td><td>Geng Shouren</td><td>Closed</td><td>Death. File HuXiao-0522.</td></tr>
+      <tr><td>Current head</td><td>Geng Suqiu</td><td>On roll</td><td>Head changed after death.</td></tr>
+      <tr><td>Daughter</td><td>Geng Wanhe</td><td>On roll</td><td>Born 2002. Unmarried box not moved.</td></tr>
+    </table>
+    <p class="note">Inbound column: no inbound from 2023-01 to now. On 2026-05-20 someone brought red paper to the window and asked to write Geng Xiaoman onto this household. Duty wrote six characters’ worth: no inbound papers. The person left. The book was not changed. <a href="hukou-refuse.html">Compare refusal, full text</a></p>
+    <p class="note">Check: under the Shouli household at 9 Quyuan Road there is a minor male, Geng Xiaoman, born 2014, not the same book as this household. The checker only confirmed the person is on that roll. Did not confirm where he sleeps. <a href="hukou-channel.html">Check reply</a></p>
+    <p class="note">Hand note from 2026-05-20, caught in the scan seam: visitor about thirty, red paper folded in four, wanted the window to “compare and then change.” Window answered “no inbound papers.” He slapped the paper on the glass. Left no phone. Note never entered a formal column. Machine room photographed it with the rest.</p>
+    <p class="note">
+      <button type="button" class="pick" data-block="heir-hukou">Extract: this hukou lists no heir</button>
+      <button type="button" class="pick" data-block="when-hukou">Extract: no inbound in three years</button>
+      <button type="button" class="pick" data-block="live-hukou">Extract: Xiaoman at 9 Quyuan Road</button>
+    </p>
+    <p class="ft">Puyang County hukou machine room  Scans for compare only  To change the book, bring the person  Machine HuYue-3</p>
+  </div>
+  <script src="js/state.js"></script>
+  <script>
+    HY.visit("hukou", 4);
+    HY.bindPicks();
+  </script>
+</body>
+</html>

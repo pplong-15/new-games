@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>牌位底账目录</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>福泽铁柜　底账</strong>
+      <div>
+        <a class="ghost-btn" href="desk.html">回队列</a> <a class="ghost-btn" href="ledger-ji.html">纪家宅条</a>
+        <form id="search-form" action="search-closed.html" method="get" style="display:inline">
+          <input id="search-input" name="q" placeholder="夜间已关">
+          <button type="submit">检索</button>
+        </form>
+      </div>
+    </header>
+    <div class="notice">
+      <img class="hero-pic" alt="" src="img/tablets.jpg">
+      <h2>第二格目录</h2>
+<p>本店给熟客留手写底账，不是谱局，也不是户籍。目录只开今夜用得着的几房。</p>
+<table>
+<tr><th>房</th><th>正祀</th><th>忌日</th><th>备注</th></tr>
+<tr><td>何宅</td><td>何立山</td><td>六月初三</td><td>熟客</td></tr>
+<tr><td>纪家宅</td><td>纪伯元</td><td>六月十九</td><td>另见细条</td></tr>
+<tr><td>童宅</td><td>（无）</td><td>—</td><td>只做过灯</td></tr>
+</table>
+<p>底账证明本店曾经按这个字摆过桌。它不能证明祠堂承认，也不能在夜班手里改一行。</p>
+<p>童宅没有正祀条，是因为他们只来续过灯。别把空行理解成可以随便填一个名字进去。纪家宅那一行有细条，点开才看得见「不入龛」三个字是写给谁的。</p>
+    </div>
+  </div>
+  <p class="pageft">铁柜目录　18/40</p>
+  <script src="js/state.js"></script>
+  <script>
+    FZ.visit('ledger');
+    if (!FZ.guard('ledger.html')) {}
+    
+  </script>
+</body>
+</html>

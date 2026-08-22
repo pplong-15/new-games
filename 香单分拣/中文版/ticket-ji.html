@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FZ-0714-22　纪晚秋</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>福泽网单　纪氏</strong>
+      <div>
+        <a class="ghost-btn" href="desk.html">回队列</a> <a class="ghost-btn" href="im-mi.html">米穗条</a>
+        <form id="search-form" action="search-closed.html" method="get" style="display:inline">
+          <input id="search-input" name="q" placeholder="夜间已关">
+          <button type="submit">检索</button>
+        </form>
+      </div>
+    </header>
+    <div class="notice">
+      <img class="hero-pic" alt="" src="img/tablets.jpg">
+      <h2>新弹入　FZ-0714-22</h2>
+<p>纪晚秋，东莞常住，湄湾旧籍。往生对象纪守成，关系栏选先考，桌次祖龛正祀，忌日七月十二。附件被系统成串推上来，不是你去搜的。</p>
+<p>她句子写得很完整：恳请按祖龛正祀安排，家族愿补香资。电话是东莞号。湄湾这边的联系人她空着。</p>
+<p>米穗说过别瞎过。底账、芳名、会里的名会跟这封走。先打开推送，再写栏。本班仍只是建议，龛里的字你改不了，你只能决定早上印哪一桌。</p>
+<p>东莞号夜间未必接通。你写给晨班的那几句，才是早上能用的东西。关系栏的「先考」要跟底账对，不要跟申请人口气对。</p>
+<form class="sortbox" id="sort-form" data-id="ji">
+  <fieldset>
+    <legend>纪晚秋这封怎么落</legend>
+    <p class="auth">申请人勾的桌不是底账。你只能建议扣还是走、改去哪一桌，不能批准入龛。</p>
+    <label>扣住还是放给打印
+      <select name="action">
+        <option value="pass">放行</option>
+        <option value="hold">暂扣</option>
+      </select>
+    </label>
+    <label>这名字进哪一桌
+      <select name="desk">
+        <option value="zheng">正祀</option>
+        <option value="gu">孤魂席</option>
+        <option value="deng">供灯</option>
+        <option value="none">不接桌</option>
+      </select>
+    </label>
+    <label>写给屈南和米穗
+      <textarea name="note" rows="3"></textarea>
+    </label>
+    <button type="submit">写下纪家建议</button>
+  </fieldset>
+</form>
+<script>
+document.getElementById("sort-form").onsubmit = function (e) {
+  e.preventDefault();
+  var id = this.getAttribute("data-id");
+  if (!FZ.canOpen(id)) { FZ.toast("这封还不该写。"); return; }
+  FZ.openTicket(id);
+    var ok = FZ.submitTicket(id, this.elements.namedItem("action").value, this.elements.namedItem("desk").value, this.elements.namedItem("note").value);
+  if (ok) location.href = "desk.html";
+};
+</script>
+
+    </div>
+  </div>
+  <p class="pageft">纪家这封压在后半夜　16/40</p>
+  <script src="js/state.js"></script>
+  <script>
+    FZ.visit('ji');
+    if (!FZ.guard('ticket-ji.html')) {}
+    FZ.openTicket('ji');
+  </script>
+</body>
+</html>

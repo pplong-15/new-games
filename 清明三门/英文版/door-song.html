@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Offerings delivery · cabinet door</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<div id="wrap">
+  <header><strong>Shed receipt</strong><div><a class="ghost-btn" href="desk.html">Back to desk</a></div></header>
+  <div class="notice">
+    <h2>Offerings delivery</h2>
+    <p id="mini" class="sm-mini"></p>
+    <p>Pi Houshan uses few words. The receipt has a grave number. No south steps. The route slip writes the north-slope side gate. This household is usually not among the first shift's three. Take a slot after handover.</p>
+    <p>Where the goods were put down, and who the code was issued to, are two sentences. Put them together and that is cross-plot.</p>
+    <p><button type="button" class="sm-btn" id="opbtn">Lift the receipt clip (counts as one household)</button></p>
+    <div id="fullbox" class="closed-box" style="display:none">
+      <p>Receipt clip will not lift tonight. Three households full. The goods' drop point is not on the board yet.</p>
+      <p><a href="desk.html">Hand over and free a slot</a></p>
+    </div>
+    <div id="openbox" style="display:none">
+      <p class="sm-ok">Clip open. Receipt, route slip, spoken-slip memo — here.</p>
+      <img src="img/offerings.jpg" alt="Offerings" class="doc-img">
+      <p>Box set down along the shallow ditch. Paper stack unlit. He delivered to the grave number and left. He did not ask whether the code belonged to this grave.</p>
+      <p><a href="song-hui.html">Receipt</a>　<a href="song-lu.html">Route slip</a>　<a href="song-kou.html">Spoken slip</a></p>
+    </div>
+    <p>Shed iron clip · oil stain</p>
+  </div>
+</div>
+
+<script src="js/sanmen.js"></script>
+<script>
+
+(function(){
+  var id="song";
+  function show(){
+    Sanmen.paintMini(document.getElementById("mini"));
+    var opened=Sanmen.isOpen(id);
+    document.getElementById("openbox").style.display=opened?"block":"none";
+    document.getElementById("fullbox").style.display="none";
+  }
+  document.getElementById("opbtn").addEventListener("click",function(){
+    var r=Sanmen.openDoor(id);
+    if(!r.ok){ document.getElementById("fullbox").style.display="block"; }
+    show();
+  });
+  show();
+})();
+
+</script>
+</body>
+</html>

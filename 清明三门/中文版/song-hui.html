@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-classified-yellow">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>供品回执</title>
+  <link rel="stylesheet" href="css/classified-yellow.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<div class="top"><div class="top-inner"><b>园内配送回执栏</b><span class="city">皮厚山</span></div></div>
+<div class="layout">
+<nav>
+  <h4>分类</h4>
+  <a class="on" href="song-hui.html">回执</a>
+  <a href="song-lu.html">路单</a>
+  <a href="javascript:void(0)">报价</a>
+  <a href="desk.html">回柜</a>
+</nav>
+<div class="list">
+<p id="mini" class="sm-mini"></p>
+
+<div id="shut" class="closed-box"><p>回执还在货棚铁夹，本班没揭。</p><p><a href="desk.html">回柜</a></p></div>
+<div id="live" style="display:none">
+<h4>收货一笔</h4>
+<img src="img/offerings.jpg" alt="箱" class="doc-img">
+<div class="hd-row"><span class="t">项</span><span>写</span><span>时</span></div>
+<div class="row"><span>穴</span><span>十二区三十七穴顾松年</span><span>夜</span></div>
+<div class="row"><span>物</span><span>果箱一、香一捆、纸一叠（未点燃）</span><span>夜</span></div>
+<div class="row"><span>南阶</span><span>未进</span><span>夜</span></div>
+<div class="row"><span>拍照</span><span>箱沿浅沟放下</span><span>夜</span></div>
+<p>条上穴号是三十七。我送到。闸机那边南阶我没去。</p>
+<p><button type="button" class="sm-btn" id="vbtn">采信：供品落到十二区三十七穴</button></p>
+<p id="vok" class="sm-ok" style="display:none">货的落点留下了。</p>
+<p id="vbad" class="sm-warn" style="display:none"></p>
+<p>回执能证明放到哪一穴，不能证明码该不该给这穴用。</p>
+<p><a href="door-song.html">回门</a></p>
+</div>
+
+</div>
+</div>
+<p class="ft">黄页壳只是配送栏　不是关站单</p>
+
+<section class="pad"><p>回执栏套了黄页壳，只因为配送组当年买过这套模板，不是让杭疏去关站。果箱、香、未点燃的纸，三样按穴放下。南阶未进写得很横。拍照那行「箱沿浅沟」和园工图说能对上。货的落点留下以后，流水那钮才可能亮。</p></section>
+<script src="js/sanmen.js"></script>
+<script>
+Sanmen.paintMini(document.getElementById('mini'));
+Sanmen.gate('song','shut','live');
+Sanmen.bindVerify(document.getElementById('vbtn'),'deliver-12',document.getElementById('vok'),document.getElementById('vbad'));
+
+</script>
+</body>
+</html>

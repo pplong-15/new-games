@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk" data-seen="drawer">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>抽屉便条</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/patches.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>值班抽屉</strong>
+      <div>
+        <a class="ghost-btn" href="hall.html">回册</a>
+        <a class="ghost-btn" href="handover.html">交接本</a>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>便条四张</h2>
+      <p>方永石临走塞的。一张看完再掀下一张。他写着：别让秋禾看见。</p>
+    </div>
+    <div class="rulebox">
+      <p><strong>第一张</strong></p>
+      <p>两个一样的名字，先别填厅号。把年和住址对完，人会自己分开。</p>
+    </div>
+    <div class="rulebox" id="n2" hidden>
+      <p><strong>第二张</strong></p>
+      <p>乡栏有名单，旧报有讣闻。各看各的，别在脑子里合成一条命。</p>
+    </div>
+    <div class="rulebox" id="n3" hidden>
+      <p><strong>第三张</strong></p>
+      <p>她嘴里那句母亲的名字，只印在其中一份安放抄件上。哪份有这名字，哪份才跟她有关。</p>
+    </div>
+    <div class="rulebox" id="n4" hidden>
+      <p><strong>第四张</strong></p>
+      <p>南厅对得上吴晚香。西厅那边，柏年把金罂转走了，册没销。建议可以写南厅，也可以把同名报上去。西厅那格今晚别认。</p>
+    </div>
+    <p class="tabs">
+      <a href="#" id="more">掀下一张</a>
+    </p>
+    <p class="foot-desk">便条纸发黄　钉书针锈了一脚</p>
+  </div>
+  <script>
+    (function () {
+      var ids = ["n2", "n3", "n4"];
+      var i = 0;
+      document.getElementById("more").addEventListener("click", function (e) {
+        e.preventDefault();
+        if (i < ids.length) {
+          document.getElementById(ids[i]).hidden = false;
+          i += 1;
+          if (i >= ids.length) e.currentTarget.textContent = "没有第五张";
+        }
+      });
+    })();
+  </script>
+  <script src="../js/seen.js"></script>
+</body>
+</html>

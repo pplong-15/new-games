@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-archive-simsun">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Remark accepted</title>
+  <link rel="stylesheet" href="css/archive-simsun.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<article class="record">
+  <h1>Tiao Wan took the remark</h1>
+  <div class="meta"><span>Night-404</span><span>Suggestion only</span></div>
+  <div id="why"></div>
+  <p>Neighbor-ash written as cross-plot checkout. Reservation code went to the martyrs' terrace collective sweep. Offerings delivered to a Plot 12 private grave. The lore field left blank.</p>
+  <p>Original number stays. Plot 12 is not waved through as south steps. Hang Shu's permission ends here.</p>
+  <p>Gu Wanhe will come ask about a car. Miao Shiqiao will come ask about sign-in. Show them the remark. Do not change their forms for them.</p>
+  <p><a href="introduction.html" id="again">Open another night</a></p>
+  <p><span class="stamp">Taken</span></p>
+</article>
+
+<section class="pad"><p>An accepted remark is copied twice. One copy goes in the complaint. One goes to the daytime window to hold people off. Gu Wanhe comes about a car — show the copy. Miao Shiqiao comes about sign-in — show it too. Hang Shu's night ends here. There is no sixth field. Code and grave, aligned across two shifts, are enough. If the Cold Food Day old ticket was opened, it is only a mark in the margin.</p></section>
+<script src="js/sanmen.js"></script>
+<script>
+
+var s=Sanmen.load();
+var bits=[];
+if(Sanmen.hasV("same-day")) bits.push("You also kept: two places wanted people the same day. Tiao Wan saw it. Still no number change.");
+if(Sanmen.hasV("old-ticket")) bits.push("You opened the Cold Food Day old ticket. He put a stroke in the margin. He did not let you write it into tonight.");
+if(!bits.length) bits.push("You used code and grave, aligned across two shifts, and finished the sentences. If the first shift only opened lore, you do not arrive here.");
+document.getElementById("why").innerHTML=bits.map(function(t){return "<p>"+t+"</p>";}).join("");
+document.getElementById("again").addEventListener("click",function(){ Sanmen.reset(); });
+
+</script>
+</body>
+</html>

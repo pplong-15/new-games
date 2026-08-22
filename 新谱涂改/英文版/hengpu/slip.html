@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Commission Desk · Correction Slip</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>Correction slip</strong>
+      <div>
+        <a class="ghost-btn" href="desk.html">Desk</a>
+        <a class="ghost-btn" href="compare.html">Comparison desk</a>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>Authority</h2>
+      <p>Nature of this slip: recommendation. Not an approval. Not a move of the original book. Not a split of hall-upkeep. Not an order to stop the carrying-in. File it, and the editor decides whether it hangs.</p>
+      <p id="gate">Difference slip is still blank. File it blank, you bounce back to the desk.</p>
+    </div>
+    <form class="login-box" id="slipform" action="#" method="post" style="width:420px">
+      <h1>Four boxes</h1>
+      <style>
+        #slipform select { width:100%; height:34px; margin:0 0 12px; border:1px solid #ced4da; }
+      </style>
+      <label for="dirt">How this line got dirty</label>
+      <select id="dirt" name="dirt">
+        <option value="smudge">Scanner smudge</option>
+        <option value="miss">Typesetting miss</option>
+        <option value="paint">Someone painted from the attachment</option>
+      </select>
+      <label for="line">Lineage should read</label>
+      <select id="line" name="line">
+        <option value="chusi">Adopted-out, not returned</option>
+        <option value="move">Moved away for work</option>
+        <option value="drop">Struck from the book</option>
+      </select>
+      <label for="proof">Which paper is main</label>
+      <select id="proof" name="proof">
+        <option value="scan2019">2019 supplement scan</option>
+        <option value="hukou">Move register</option>
+        <option value="oral">Oral story</option>
+      </select>
+      <label for="extra">Anything extra</label>
+      <select id="extra" name="extra">
+        <option value="share">Please restore dingkou hall-upkeep</option>
+        <option value="lineonly">Lineage only, no property</option>
+        <option value="stop">Please stop tonight's yuanpu</option>
+      </select>
+      <p class="hint" style="margin:12px 0">Struck-from-the-book needs identification of a body. A works letter is not enough. Oral story is not a main paper at this desk.</p>
+      <button type="submit">File recommendation</button>
+    </form>
+    <p style="text-align:center;padding:16px;color:#666;font-size:12px">
+      <a href="desk.html">Back to desk</a> ·
+      <a href="../introduction.html">Back to the note</a>
+    </p>
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    var gate = document.getElementById("gate");
+    if (XP.canSlip()) {
+      gate.textContent = "Difference slip has a difference. You can file. After filing you get a receipt. You cannot change property on this slip.";
+    }
+    document.getElementById("slipform").onsubmit = function (e) {
+      e.preventDefault();
+      if (!XP.canSlip()) {
+        gate.textContent = "Difference is not written yet. Comparison desk first. Bounced.";
+        return;
+      }
+      var form = {
+        dirt: document.getElementById("dirt").value,
+        line: document.getElementById("line").value,
+        proof: document.getElementById("proof").value,
+        extra: document.getElementById("extra").value
+      };
+      XP.setFlag("slip", form);
+      var end = XP.pickEnding(form);
+      if (end === "hung") location.href = "hung.html";
+      else if (end === "bounced") location.href = "bounced.html";
+      else location.href = "painted.html";
+    };
+  </script>
+</body>
+</html>

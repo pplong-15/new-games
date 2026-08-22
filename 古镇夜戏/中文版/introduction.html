@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-intro-manual">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>桐县文旅　短信回执</title>
+  <link rel="stylesheet" href="css/intro-manual.css">
+</head>
+<body>
+  <header class="intro-hero"><h1>桐县文旅</h1></header>
+  <main>
+    <section>
+      <h2>购票短信回执</h2>
+      <p>收件人：沈南</p>
+      <p>票号：YX-0821-19　今晚槐溪非遗夜戏。</p>
+      <p>退票通道已关闭。状态写成：已开锣。</p>
+      <p>吴窗只回了一句：对一下购票页和县剧团参观须知。两页不是同一出，别只盯退票键。</p>
+      <p>外网论坛镜像还能打开。票务查询要票号或手机号。</p>
+      <div class="boot-actions">
+        <a class="enter-link" href="index.html">打开购票页</a>
+        <button type="button" class="ghost" id="wipe">清本机记录</button>
+      </div>
+    </section>
+  </main>
+  <script>
+    document.getElementById("wipe").onclick=function(){
+      localStorage.removeItem("guxz-v1");
+      location.href="index.html";
+    };
+  </script>
+</body>
+</html>

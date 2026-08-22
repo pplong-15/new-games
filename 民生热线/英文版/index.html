@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-winxp-luna">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Station edit bay</title>
+  <link rel="stylesheet" href="css/winxp-luna.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div class="desk">
+    <div class="icon" data-open="win-note"><i class="note"></i>Min Ke's note</div>
+    <div class="icon" data-open="win-db"><i class="db"></i>Civic Hotline library</div>
+    <div class="icon" data-open="win-cut"><i class="cut"></i>Submit cut</div>
+    <div class="icon" data-open="win-help"><i class="help"></i>IT note</div>
+
+    <div id="win-db" class="window show">
+      <div class="title-bar"><span>DigiCut 2.0　Civic Hotline (ended)</span>
+        <div class="ctrls"><b data-close="win-db">_</b><b class="close" data-close="win-db">×</b></div>
+      </div>
+      <div class="menubar">Search　five hits a time</div>
+      <div class="body">
+        <div class="db-head">
+          <input id="q" maxlength="32" placeholder="keyword" autocomplete="off">
+          <button type="button" class="btn3d" id="go">Search</button>
+        </div>
+        <p class="db-meta" id="meta">Library mounted. Question track missing.</p>
+        <div id="results"></div>
+      </div>
+    </div>
+
+    <div id="win-view" class="window">
+      <div class="title-bar"><span>Monitor</span>
+        <div class="ctrls"><b class="close" data-close="win-view">×</b></div>
+      </div>
+      <div class="body">
+        <p class="osd" id="view-osd"></p>
+        <img id="view-img" alt="">
+        <div class="said" id="view-said"></div>
+      </div>
+    </div>
+
+    <div id="win-note" class="window">
+      <div class="title-bar"><span>Notepad　—　Min Ke</span>
+        <div class="ctrls"><b class="close" data-close="win-note">×</b></div>
+      </div>
+      <div class="body">
+        <p>Pei Wan:</p>
+        <p>You're on tonight. Cut is ninety seconds. Topic: night-terror remedies. Footage only from the dead Civic Hotline.</p>
+        <p>I'll give you one word: Answer.</p>
+        <p>Search lights five at a time. Don't fight IT. Machine is what it is.</p>
+        <p>Milk names get masked. Register names you still have to watch. Watch first, submit after. Once it's in, you can't change it.</p>
+        <p>Min Ke　2014-08-21 16:00</p>
+      </div>
+    </div>
+
+    <div id="win-help" class="window">
+      <div class="title-bar"><span>IT note</span>
+        <div class="ctrls"><b class="close" data-close="win-help">×</b></div>
+      </div>
+      <div class="body">
+        <p>Badge 09. I pulled the outside line. Don't call me for passwords.</p>
+        <p>DigiCut takes letters. Two or more. Five hits a time, rest stay dark, pick another word.</p>
+        <p>Library is the dead Civic Hotline, 2013 to 2014. Question track is gone. Don't ask me why.</p>
+        <p>If you're spinning your wheels, use the word Min Ke wrote: Answer.</p>
+      </div>
+    </div>
+
+    <div id="win-cut" class="window">
+      <div class="title-bar"><span>Submit cut　Editorial</span>
+        <div class="ctrls"><b class="close" data-close="win-cut">×</b></div>
+      </div>
+      <div class="body">
+        <p>Pick one. Once it's in, you can't change it tonight.</p>
+        <p>Keys stay grey until you've pulled the tapes they need.</p>
+        <button type="button" class="btn3d end-btn" id="end-milk" disabled>Submit: Zhaozhao Answer stretch (register name masked)</button>
+        <button type="button" class="btn3d end-btn" id="end-qitou" disabled>Submit: splice the two SeventhDay name-change stretches</button>
+        <button type="button" class="btn3d end-btn" id="end-paper" disabled>Submit: April debunking circular only</button>
+        <button type="button" class="btn3d end-btn" id="end-cui" disabled>Submit: use the DoNotUse tape and file a kill request</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="taskbar">
+    <div class="start">Start</div>
+    <div class="task" data-open="win-db">DigiCut 2.0</div>
+    <div class="tray">2014-08-21 21:40</div>
+  </div>
+
+  <div id="ending">
+    <h2 id="ending-title"></h2>
+    <p id="ending-body"></p>
+    <p><a href="introduction.html">Back to shift receipt</a></p>
+  </div>
+
+  <script src="js/tokens.js"></script>
+  <script src="js/clips.js"></script>
+  <script src="js/engine.js"></script>
+</body>
+</html>

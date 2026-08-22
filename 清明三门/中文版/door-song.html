@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>供品配送柜门</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<div id="wrap">
+  <header><strong>货棚回执</strong><div><a class="ghost-btn" href="desk.html">回柜</a></div></header>
+  <div class="notice">
+    <h2>供品配送</h2>
+    <p id="mini" class="sm-mini"></p>
+    <p>皮厚山字少。回执上有穴号，没有南阶。路单写北坡便门。第一班三扇里通常没有这户，交班后再占。</p>
+    <p>货送到哪，和码发给谁，是两句话。并到一块才叫串穴。</p>
+    <p><button type="button" class="sm-btn" id="opbtn">揭回执夹（算一户）</button></p>
+    <div id="fullbox" class="closed-box" style="display:none">
+      <p>回执夹今晚揭不动。三户满了。货的落点还没写上板。</p>
+      <p><a href="desk.html">交班腾位子</a></p>
+    </div>
+    <div id="openbox" style="display:none">
+      <p class="sm-ok">夹开了。回执、路单、口误备忘在。</p>
+      <img src="img/offerings.jpg" alt="供品" class="doc-img">
+      <p>箱沿浅沟放下。纸叠未点燃。他送到穴号就走，不问码该不该给这穴。</p>
+      <p><a href="song-hui.html">回执</a>　<a href="song-lu.html">路单</a>　<a href="song-kou.html">口误</a></p>
+    </div>
+    <p>货棚铁夹　油渍</p>
+  </div>
+</div>
+
+<script src="js/sanmen.js"></script>
+<script>
+
+(function(){
+  var id="song";
+  function show(){
+    Sanmen.paintMini(document.getElementById("mini"));
+    var opened=Sanmen.isOpen(id);
+    document.getElementById("openbox").style.display=opened?"block":"none";
+    document.getElementById("fullbox").style.display="none";
+  }
+  document.getElementById("opbtn").addEventListener("click",function(){
+    var r=Sanmen.openDoor(id);
+    if(!r.ok){ document.getElementById("fullbox").style.display="block"; }
+    show();
+  });
+  show();
+})();
+
+</script>
+</body>
+</html>

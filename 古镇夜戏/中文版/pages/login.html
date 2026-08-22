@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>票务查询</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/shots.css">
+  <script src="../js/tokens.js"></script>
+  <script src="../js/keyword-search.js"></script>
+  <script src="../js/keywords.js"></script>
+  <script src="../js/login.js"></script>
+  <script>document.addEventListener("DOMContentLoaded",function(){});</script>
+
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>文旅票务查询</strong>
+      <div>
+        <a class="ghost-btn" href="../pages/login.html">查询</a>
+        <form id="search-form" action="../search-results.html" method="get">
+        <input id="search-input" name="q" placeholder="关键词" autocomplete="off">
+        <button type="submit">检索</button>
+      </form>
+      </div>
+    </header>
+    <img class="shot" alt="工位" src="../assets/stills/s25.jpg">
+    <p>查询已售套票。输入票号或购票手机号。查到的是订单，不是退票。</p>
+<p>票号样例在购票页。别猜别人的。猜到了也打不开退票。</p>
+<p>后台预约那栏仍停。停的意思是禁客，不是系统坏了。</p><p>票号 / 手机号</p>
+    <p><input id="pw" autocomplete="off"> <button type="button" class="ghost-btn" id="login-go">查询</button></p>
+    <p class="err" id="err"></p>
+  </div>
+  <p style="text-align:center;font-size:12px;color:#666">票务后台</p>
+<div class="supp"><p>票务查询页内部说明。县信息中心〇九年给医院挂号做的表，一二年文旅拿来改套票查询。改的人把「门诊号」四个字换成「票号」，密码框没换，还是那个圆点。圆点里填的不是密码，是票号或手机号。别当密码使。</p>
+<p>查询已售套票。查到的是订单，不是退票。票号样例在购票页。别猜别人的。猜到了也打不开退票。后台预约那栏仍停。停的意思是禁客，不是系统坏了。那只按钮是套表自带的，显示还在，点了没接口。没接口别反复点，点多了日志里全是空提交，空提交吴窗要挨问。查询成功跳订单页。失败红字只有一句，一句是写死的，不要让信息中心改成更客气的，客气了有人以为能退。本页不验证身份证。不验证是当年图快。图快的后果是号对上就能看自己那张单。看单不等于能划。划不在这扇门。这扇门后面是订单，订单后面才是应工簿抄件，抄件有权限才能调。权限不是你自己点出来的。点不出来就回购票页。购票页键是灰的，灰的对。这页IE8还能用，IE6提交会空，空了红字不出来，别以为过了。没过。镇网吧那台戴尔黄边点不到，别在网吧查票。用别人的号查到了也不是你的单，别截图外发。失败红字写死了，信息中心不改。改一次要县里工单，工单没人签。圆点里填票号。填完点查询。跳不了就不是这扇门的事。</p></div>
+</body>
+</html>

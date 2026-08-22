@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-gov-redbar">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Death-close approve sheet</title>
+  <link rel="stylesheet" href="css/gov-redbar.css">
+  <link rel="stylesheet" href="css/pick.css">
+</head>
+<body>
+  <div class="red">
+    <h1>Puyang County hukou lookup</h1>
+    <p>Death-close approve scan  Fictional site</p>
+  </div>
+  <div class="links">
+    <a href="hukou.html">Household scan</a>
+    <a href="hukou-refuse.html">Paper refusal</a>
+    <a href="hukou-channel.html">No. 9 check</a>
+    <a href="hukou-death.html">This approve sheet</a>
+    <a href="office.html">Notice slip</a>
+    <a href="desk.html">Back to upload desk</a>
+  </div>
+  <div class="wrap">
+    <table cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="box">
+          <h3>Approve abstract</h3>
+          <ol>
+            <li>File HuXiao-0522<span class="date">05-22</span></li>
+            <li>Medical proof dated May 18<span class="date">hospital</span></li>
+            <li>Window filing May 22<span class="date">lag</span></li>
+            <li>Clerk note: red paper cannot stand in for a death proof<span class="date">internal</span></li>
+          </ol>
+        </td>
+        <td class="box">
+          <h3>Change of head</h3>
+          <ol>
+            <li>Former head Shouren closed<span class="date">05-22</span></li>
+            <li>Current head to spouse Suqiu<span class="date">same day</span></li>
+            <li>Daughter Wanhe on roll, untouched<span class="date">daughter row</span></li>
+            <li>Print items: no “step-son”<span class="date">layout</span></li>
+          </ol>
+        </td>
+      </tr>
+    </table>
+    <p class="note">County hospital death medical proof dated 2026-05-18. On 2026-05-22 Suqiu brought the proof to the window. The mourning-hall days sit in between. Clerk asked if inbound was being filed at the same time. She shook her head: close the dead man first. In the system, head change and death close are bound on the same approve sheet. After the head change, persons on this hukou: Suqiu and daughter Geng Wanhe only.</p>
+    <table class="sheet">
+      <tr><th>Field</th><th>Filled</th><th>System check</th></tr>
+      <tr><td>Deceased</td><td>Geng Shouren</td><td>Matches medical proof</td></tr>
+      <tr><td>New head</td><td>Geng Suqiu</td><td>Spouse relation already on file</td></tr>
+      <tr><td>Children moving with</td><td>None</td><td>Not filed</td></tr>
+      <tr><td>Others on roll</td><td>Daughter  Geng Wanhe</td><td>Unmarried box not moved</td></tr>
+    </table>
+    <p class="note">Print template has no “heir” row. Someone later phoned to ask if a cell could be written in by hand. Duty: handwriting does not count. On 2026-05-22 this household finished death close and change of head. Daughter on the roll is still Wanhe. Whether the 2026-05-19 red paper still counts, this sheet does not answer. Whether Xiaoman opened a file at another window, this sheet has no such row.</p>
+    <p class="note">
+      <button type="button" class="pick" data-block="heir-hukou">Extract: this hukou lists no heir</button>
+    </p>
+    <p class="ft">Death-close approve  Compare only  Hand-added rows do not count</p>
+  </div>
+  <script src="js/state.js"></script>
+  <script>
+    HY.visit("hukou-death", 2);
+    HY.bindPicks();
+  </script>
+</body>
+</html>

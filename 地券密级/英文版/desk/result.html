@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Viewing-note receipt</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/game-extra.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>Digitization receipt</strong>
+      <a class="ghost-btn" href="note.html">Back to note desk</a>
+    </header>
+    <div class="notice">
+      <h2 id="dq-rt">Receipt</h2>
+      <div id="dq-rb"></div>
+    </div>
+    <p style="width:80%;margin:16px auto 32px"><a href="../introduction.html">Back to the drawer paper</a>　<button type="button" class="dq-write" id="wipe">Clear draft</button></p>
+  </div>
+  <script src="../js/state.js"></script>
+  <script>
+    var s = DQ.load();
+    var t = document.getElementById("dq-rt");
+    var b = document.getElementById("dq-rb");
+    function p(s) { var e = document.createElement("p"); e.textContent = s; b.appendChild(e); }
+    var how = "";
+    if (s.picks.dead === "dead-unique") how = "In the wangzhe box you wrote a unique determination.";
+    else if (s.picks.dead === "dead-conflict") how = "For wangzhe you wrote two versions in conflict and asked the office to recheck.";
+    else if (s.picks.bound && /internal|restrict|conflict/.test(s.picks.bound)) how = "For sizhi you did not copy only the public-layer stone-steps sentence.";
+    else if (s.picks.money && /internal|restrict|conflict/.test(s.picks.money)) how = "For qianzhu you wrote a name outside the public layer.";
+    else how = "The five boxes mostly restate the public catalog.";
+    if (s.ending === "overclaim") {
+      t.textContent = "Returned · rewrite the wangzhe box";
+      p(how);
+      p("The system does not accept “on this basis, determine.” A viewing note can only record what each layer shows. It cannot issue a unique conclusion for the original. Go back to the note desk and change one box. You do not have to recopy all five.");
+      p("The West Stack door is still locked. Nobody opens a grave because of that sentence.");
+    } else if (s.ending === "three") {
+      t.textContent = "Received · three-layer cross-check entered the table";
+      p(how);
+      p("Zhongbao you wrote Shen Jingzhi. The restricted layer also entered the projector draft. Qu Wantang will see the split-cabinet line first in the morning. The office may ask the former director. It may also ask why night shift opened the restricted cabinet.");
+      p("Hou Qiming’s wall and the Nanling Cen Shoushan will both be named. You did not approve a relocation. You only made it impossible for the meeting to pretend not to see.");
+    } else if (s.ending === "internal") {
+      t.textContent = "Received · internal conflict entered the table";
+      p(how);
+      p("The office will hold the house-plot notice against the east bound. Hou Qiming may get a return visit. The restricted transcription is still not on the projector. The morning meeting does not have to ask who the deceased is yet.");
+      p("Zhai Pu’s line — “don’t only look at the public layer” — you did half of.");
+    } else if (s.ending === "public") {
+      t.textContent = "Received · restated from the public layer";
+      p(how);
+      p("Miao Qiubai can project. The east bound Hou Qiming wanted is still there. The exhibit wording got said again. The slip in the restricted cabinet stays in the night.");
+      p("You can put the badges back in the drawer. The probation night shift looks like it was worked through.");
+    } else {
+      t.textContent = "Not complete";
+      p("Five boxes are still empty. No receipt can go out.");
+    }
+    document.getElementById("wipe").onclick = function () {
+      DQ.reset();
+      location.href = "../introduction.html";
+    };
+  </script>
+</body>
+</html>

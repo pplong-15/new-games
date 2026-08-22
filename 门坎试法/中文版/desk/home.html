@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>值班台面</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/desk-extra.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>夜岗台面</strong>
+      <div>
+        <a class="ghost-btn" href="try.html">试记</a>
+        <a class="ghost-btn" href="record.html">记录</a>
+        <a class="ghost-btn" href="advise.html">建议</a>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>今夜差事</h2>
+      <p>柴渡。记过门。二十二点前交放行建议：贺连舟这队，进不进贺宅堂屋。本台只收建议，不发匙。</p>
+    </div>
+    <div class="mk-law">
+      <h3>值班板（阙禾留，已打开）</h3>
+      <p>今夜过门一律按丧记。丧事抬棺，杠不得擦门槛。自称喜队走错门，也按丧记。忌踏、忌坐。未核清仪礼，不得建议进堂。</p>
+      <p>过门允许试记。选踩踏或擦杠，本台打回，并留下「法被撞过」。刷新不清。改板不在夜岗权限。</p>
+    </div>
+    <div id="chips"></div>
+    <table>
+      <thead><tr><th>时刻</th><th>队伍</th><th>状态</th><th>动作</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>19:10</td>
+          <td>贺连舟队</td>
+          <td>待记</td>
+          <td><a href="try.html">试记过门</a></td>
+        </tr>
+        <tr>
+          <td>19:40</td>
+          <td>同队前排</td>
+          <td>见记录页</td>
+          <td><a href="record.html">打开格子</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="mk-side">
+      <a href="board.html">阙禾须知全文</a>
+      <a href="shift.html">交接两句</a>
+      <a href="memo.html">抽屉备忘</a>
+      <a href="hint.html">卡住时</a>
+    </div>
+    <div class="mk-side">
+      <a href="../index.html">对外</a>
+      <a href="../key/index.html">钥匙室</a>
+      <a href="../phone/inbox.html">夜岗机</a>
+      <a href="../team/index.html">黄页</a>
+      <a href="../forum/list.html">巷帖</a>
+      <a href="../mail/inbox.html">邮箱</a>
+      <a href="../folk/index.html">旧俗</a>
+    </div>
+    <p class="mk-side">01/44　渠西夜岗</p>
+
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    MK.mark("seen.law");
+    document.getElementById("chips").innerHTML = MK.chipsHtml();
+</script>
+<p class="mk-side">19:10待记＝可撞。19:40已撞过，见格子。两行正门。二门那柜——划掉，不管。书签在下。法没读完别交试记。读完再决定要不要故意记一条脏的。脏的才会留下黄条。</p>
+<p class="mk-side">九站书签：对字段。不是关站。差事三件——撞法／看格子／交建议。打开过的，黄条留下。刷新不清。别点完就当没看见。白班夹子认黄条，不认你说过「我看过」。</p>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admission recommendation</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/desk-extra.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>Admission recommendation</strong>
+      <div><a class="ghost-btn" href="home.html">Back to desk</a></div>
+    </header>
+    <div class="notice">
+      <h2>All four fields, or it is not taken</h2>
+      <p>This desk does not open a key for day shift. What you file is a recommendation. Missing verified, or a source that does not match, and it bounces, pointing at the field that is at odds.</p>
+    </div>
+    <div id="chips"></div>
+    <p class="mk-err" id="err" style="display:none"></p>
+    <form id="adv">
+      <fieldset>
+        <legend>Tonight's pass</legend>
+        <label>Rite nature
+          <select name="nature">
+            <option value="">(blank)</option>
+            <option value="wedding">Wedding</option>
+            <option value="funeral">Funeral</option>
+            <option value="rewrite">Rewrite the board; ignore wedding or funeral</option>
+          </select>
+        </label>
+        <label>Crossing field
+          <select name="record">
+            <option value="">(blank)</option>
+            <option value="clean">Clean; may enter</option>
+            <option value="stepped">Already stepped</option>
+          </select>
+        </label>
+        <label>Action
+          <select name="act">
+            <option value="">(blank)</option>
+            <option value="letin">Recommend: let them enter the hall</option>
+            <option value="hold">Recommend: hold; do not let them enter the hall</option>
+            <option value="rewrite">Rewrite the rule on the duty board</option>
+          </select>
+        </label>
+        <label>Authority
+          <select name="auth">
+            <option value="">(blank)</option>
+            <option value="recommend">Recommend</option>
+            <option value="approve">Approve a key-open</option>
+          </select>
+        </label>
+        <button type="submit">File recommendation</button>
+      </fieldset>
+    </form>
+    <p class="mk-side">07/44 · Tick approve or rewrite the board, and the road goes elsewhere.</p>
+
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    document.getElementById("chips").innerHTML = MK.chipsHtml();
+    document.getElementById("adv").onsubmit = function (e) {
+      e.preventDefault();
+      var f = e.target;
+      var form = { nature: f.nature.value, record: f.record.value, act: f.act.value, auth: f.auth.value };
+      var end = MK.pickEnding(form);
+      if (end === "hold-funeral") location.href = "result-hold.html";
+      else if (end === "let-in") location.href = "result-letin.html";
+      else if (end === "rewrite") location.href = "result-rewrite.html";
+      else {
+        var box = document.getElementById("err");
+        box.style.display = "block";
+        box.textContent = MK.bounceText(end);
+      }
+    };
+</script>
+<p class="mk-side">Four fields. The form Que He is afraid of: red or white, dirty or clean, in or not, did you overreach. File blank, bounces. Half-right, bounces. Bounce, desk still here. Verified still here. Don't treat a bounce as a destroyed file.</p>
+<p class="mk-side">Authority field has "Approve a key-open" — don't tick. Tick it, return slip takes another road. Drawn so you can see what overreach looks like. Not so night duty actually approves. This desk takes recommendations only. The word Recommend is in the fourth cell.</p>
+</body>
+</html>

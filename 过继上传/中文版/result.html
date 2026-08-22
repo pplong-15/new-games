@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>今日回执</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/pick.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>槐荫综治　班底回执</strong>
+      <div>
+        <a class="ghost-btn" href="introduction.html">班前纸</a>
+        <a class="ghost-btn" href="desk.html">值班台</a>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>回执按上传原文打印</h2>
+      <p id="why"></p>
+    </div>
+    <div class="notice" data-ending="paper">
+      <h3>车去了渠沿路</h3>
+      <p>提纲按纸面走。司机按地址去守礼家，开口就问小满哪天搬进十七号，户口本带了没有。伯川在院里点头，说这才像落实。素秋听见「迁入」两个字，把厨房门关上。晚禾被写成非同住亲属，她没下楼。</p>
+      <p>小满坐在凳子边上，铅笔还是拿反。司机只顾催大人签字。尤广后来在走廊里说栏齐了就行，工单跟着变绿。</p>
+      <p>后院那间，谱上有了名字，份额跟着名字走。你上传的是红纸和补录，车就按红纸和补录问。</p>
+    </div>
+    <div class="notice" data-ending="hukou" hidden>
+      <h3>窗口把过继先挂起</h3>
+      <p>你传的是册上没有嗣子、迁入栏空、人在渠沿路。回访先核户口。伯川当场翻脸，说网格偏袒。份额冻结，写「待调解」。守礼把学费的话吞回去，说既然不迁，钱他也不提了。</p>
+      <p>素秋松一口气，又怕房头明天继续量墙。工单标二次上门。尤广在回执上批：先把人核住，别替祠堂办事。</p>
+    </div>
+    <div class="notice" data-ending="care" hidden>
+      <h3>夜里先敲十七号</h3>
+      <p>提纲改问谁在侍奉、谁来开门。晚禾开了灯。素秋把药罐子往旁边挪，说你们问她就行。伯川的红纸被注了一句：与居住不符，仅作族内文书。谱上「待核」还在，没人当场划掉。</p>
+      <p>小满没被叫来。司机回所里写：本案不像迁户。你把同住写进了系统，车就去找同住的人。</p>
+    </div>
+    <div class="notice" data-ending="share" hidden>
+      <h3>调解员约的是份额</h3>
+      <p>标题从过继抚养改成后院余屋。孩子从问句里拿掉。小满照常去上学。伯川把你工号记在烟盒上，说网格不会办事。素秋要到一个调解日，卷尺暂时停。</p>
+      <p>尤广说：你传的是份额，我就派份额的人。孩子的名字别写进明天的车单。</p>
+    </div>
+    <div class="notice" data-ending="clash" hidden>
+      <h3>问句自己顶牛</h3>
+      <p>同一张提纲既问小满哪天搬过来，又写十七号夜里晚禾开门，还写迁入栏是空的。守礼家接了前半句，素秋家接了后半句。两拨人都说街道在耍他们。</p>
+      <p>尤广早上把回执甩到你桌上：字段对不上，科里下午说。工单没绿也没退，卡在「口径打架」。你传上去的两版，系统都认，人接不住。</p>
+    </div>
+    <div class="notice" data-ending="timeout" hidden>
+      <h3>二十二点空单退回</h3>
+      <p>栏没齐。系统整点把枣-117打回。积分记缺。伯川的电话明早还会来。素秋的信还在信箱里，没人摘。</p>
+      <p>尤广不骂人，只写四个字：明天补齐。你今晚什么也没替他们选定。</p>
+    </div>
+    <p class="notice"><button type="button" id="again">清草稿，从班前纸再来</button></p>
+  </div>
+  <script src="js/state.js"></script>
+  <script>
+    HY.renderResult();
+    document.getElementById("again").onclick = function () {
+      HY.reset();
+      location.href = "introduction.html";
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>试记过门</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/desk-extra.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>试记过门</strong>
+      <div><a class="ghost-btn" href="home.html">回台</a></div>
+    </header>
+    <div class="notice">
+      <h2>故意记一条</h2>
+      <p>这不是终局。这是让你撞法。踩踏或擦杠会被打回，并留下已证实。正常跨只当演练。</p>
+    </div>
+    <div id="chips"></div>
+    <form id="tryf">
+      <fieldset>
+        <legend>贺连舟队 · 正门坎 · 试记</legend>
+        <label><input type="radio" name="kind" value="step"> 踩踏</label>
+        <label><input type="radio" name="kind" value="pole"> 擦杠</label>
+        <label><input type="radio" name="kind" value="clean"> 正常跨</label>
+        <button type="submit">交试记</button>
+      </fieldset>
+    </form>
+    <p class="mk-side" id="err"></p>
+    <p class="mk-side">板上的法已经在台面打开过。你不必外搜。04/44</p>
+
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    document.getElementById("chips").innerHTML = MK.chipsHtml();
+    document.getElementById("tryf").onsubmit = function (e) {
+      e.preventDefault();
+      var el = document.querySelector("input[name=kind]:checked");
+      if (!el) { document.getElementById("err").textContent = "先选一种动作。"; return; }
+      MK.set("last-try", el.value);
+      if (el.value === "step" || el.value === "pole") {
+        MK.mark("verified.broke");
+        location.href = "try-reject.html";
+      } else {
+        location.href = "try-ok.html";
+      }
+    };
+</script>
+<p class="mk-side">踩踏对应板上忌踏。擦杠对应杠不得蹭木头。两格打回的是同一条已证实，反馈句子不一样。你要听哪一句，自己选。选完还能再选，留下的那条不会叠成两条。</p>
+<p class="mk-side">三选一次交。交完：打回留证，或演练空手。空手也能去记录页。记录页不靠你试——它自己已经脏了。十九点四十那格在。</p>
+</body>
+</html>

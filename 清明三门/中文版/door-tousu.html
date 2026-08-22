@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>邻穴投诉柜门</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<div id="wrap">
+  <header><strong>最左那户</strong><div><a class="ghost-btn" href="desk.html">回柜</a></div></header>
+  <div class="notice">
+    <h2>邻穴投诉</h2>
+    <p id="mini" class="sm-mini"></p>
+    <p>条皖用指甲敲这扇：先开它。申柏站过柜外，灰线的话说了两遍。门后是登记原纸，不是论坛那层鬼帖。</p>
+    <p>杭疏若图省事，开完这户就去写鬼。写了会退。这户只让你采信邻界有灰。</p>
+    <p><button type="button" class="sm-btn" id="opbtn">揭投诉封条（算一户）</button></p>
+    <div id="fullbox" class="closed-box" style="display:none">
+      <p>三户名额用尽。投诉这沓还封着。先把已开的交回去，板上的句子不会跟着没。</p>
+      <p><a href="desk.html">去交班</a></p>
+    </div>
+    <div id="openbox" style="display:none">
+      <p class="sm-ok">封条揭了。投诉单和后来那封可以翻。</p>
+      <img src="img/ash-soil.jpg" alt="土上的灰" class="doc-img">
+      <p>灰在沟上。申柏不要把灰记在申老山头上。传说他听过，他不拿传说当自己要的那句。</p>
+      <p><a href="tousu-dan.html">登记原纸</a>　<a href="tousu-buji.html">戌时后那封</a></p>
+    </div>
+    <p>最左柜门　夜字四〇四</p>
+  </div>
+</div>
+
+<script src="js/sanmen.js"></script>
+<script>
+
+(function(){
+  var id="tousu";
+  function show(){
+    Sanmen.paintMini(document.getElementById("mini"));
+    var opened=Sanmen.isOpen(id);
+    document.getElementById("openbox").style.display=opened?"block":"none";
+    document.getElementById("fullbox").style.display="none";
+  }
+  document.getElementById("opbtn").addEventListener("click",function(){
+    var r=Sanmen.openDoor(id);
+    if(!r.ok){ document.getElementById("fullbox").style.display="block"; }
+    show();
+  });
+  show();
+})();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-intro-manual">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sheng Mai · Tonight's Slip</title>
+  <link rel="stylesheet" href="css/intro-manual.css">
+</head>
+<body>
+  <header class="intro-hero">
+    <div class="image-area"><img alt="" src="img/cover-yard.jpg"></div>
+    <h1>The slip is under the keyboard edge</h1>
+  </header>
+  <main>
+    <section>
+      <h2>◯ Tonight</h2>
+      <p>I'm Sheng Mai. Night helper at Mai's Paper Works. Not family. Mai Lao was short a hand. He pulled me from the lane mouth to reconcile. I don't know how to make paper figures. He doesn't expect me to. The phone slips are stacked: on the eve of fifth-seven, file one incident line. Don't write it as an approval. Don't write the method in.</p>
+      <p>The piece on the desk is first logged as Shao Ting's <a class="pick" data-w="PaperAttendant" href="#">PaperAttendant</a>. Jing Qiubai's voice was already gone this afternoon. She only wants that one piece on the stack. I haven't gone to the back yard. Lou Shi dumped a blurry photo from the burn site. Said he shot the wrong pile. Told me to look myself.</p>
+      <p>Words have to be clicked into the bag. The empty card below is tonight's line. Six blanks make a line. Empty, he won't take it. Filling one blank also doesn't count. I'll click the word on the slip first. Once it's in the bag, I walk.</p>
+      <div class="bagbox" id="wordbag"></div>
+      <p id="bagflash"></p>
+      <p>Empty card: (  )'s (  ) was (  ) (  ), tonight (  ). (  ). Every blank comes from the bag. Fill them all, then file the whole line.</p>
+    </section>
+    <section>
+      <h2>◯ Places I can still get into</h2>
+      <p>The night desk is open. The yard stack is at the door. Puye, that stationery shop front, can be clicked too. Lou Shi dumped his album over. Jing Qiubai forwarded a few long posts, thick with chasing. The county split-furnace notice hangs in the extracts. The neighborhood board is turning old accounts. You can write without looking.</p>
+      <p class="boot-actions">
+        <a class="enter-link" href="maiji/desk.html">Enter the night desk</a>
+        <a class="ghost" href="maiji/yard.html">Go to the yard stack</a>
+        <a class="ghost" href="pu/index.html">See the Puye front</a>
+      </p>
+    </section>
+    <section>
+      <h2>◯ Don't write it as an approval</h2>
+      <p>Wind at the lane mouth. I fold the slip into my coat, open it again, scared I read the cutoff as tomorrow. Fifth-seven is their day. Mine only runs to window-close. After window-close, Mai Lao looks at one line, Jing Qiubai looks at one line, and if Shao Pu sees it written wrong he'll come ask too. Three sides watch the same card. I was only hired till dawn.</p>
+      <p>Mai Lao doesn't take explanations. The permission sheet is one page: recommend is fine, approve-burn is not. The sentence card is at the desk. Words in the bag, then fill. Tongxi shop numbers and names are how the town talks. Don't take them outside to compare.</p>
+      <p><a href="#" id="tear">Tear this slip and start over</a></p>
+    </section>
+  </main>
+  <script src="js/engine.js"></script>
+  <script>
+    ZJ.bootPage(null);
+    document.getElementById("tear").onclick = function (e) {
+      e.preventDefault();
+      ZJ.reset();
+      location.reload();
+    };
+  </script>
+</body>
+</html>

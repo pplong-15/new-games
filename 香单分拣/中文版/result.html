@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>当班回执</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>福泽代办　当班回执</strong>
+      <div><a class="ghost-btn" href="desk.html">队列</a></div>
+    </header>
+    <div class="notice">
+      <img class="hero-pic" alt="" src="img/folders.jpg">
+      <h2>晨班按下列字摆桌</h2>
+      <p class="auth">建议汇总。牌位夜班没动过。</p>
+      <div id="body"></div>
+      <p><a href="introduction.html" id="again">清草稿，从班前纸再来</a></p>
+    </div>
+  </div>
+  <p class="pageft">回执打印给晨班　40/40</p>
+  <script src="js/state.js"></script>
+  <script>
+    if (!FZ.guard("result.html")) {}
+    var s = FZ.closeShift();
+    var ed = s.ending;
+    var ji = s.sorted.ji;
+    var deskName = {zheng:"正祀",gu:"孤魂席",deng:"供灯",none:"不接桌"};
+    var how = "";
+    if (ed === "late") {
+      how = "天亮了。纪晚秋那封还空着。米穗早上先看到空栏。何家那些已经写下的字她后看。";
+    } else if (ed === "pass") {
+      how = "纪晚秋那封你放行了。桌次仍是正祀。打印单会把守成写成祖龛。开平下午那通电话还在摘记里。";
+    } else if (ed === "reroute") {
+      if (FZ.noteHas(s, ["伯元","六月十九","不入龛","开平"])) {
+        how = "纪晚秋那封你扣住。桌改去孤魂席。建议里写到了伯元那一格。晨班按字回东莞号也行，回开平也行。";
+      } else {
+        how = "纪晚秋那封你扣住。桌改去孤魂席。建议栏比较空。米穗大概还要再问一句忌日到底听谁的。";
+      }
+    } else if (ed === "soft") {
+      how = "你把守成改到孤魂席并且放行了。桌对了。单头可能还留着正祀的字。晨班要改打印。";
+    } else {
+      how = "纪晚秋那封你扣住了。桌次还停在正祀。早上没人知道该往哪一桌摆。只会先打电话。";
+    }
+    var extra = [];
+    if (s.sorted.burn && s.sorted.burn.action === "pass") extra.push("巷口烧衣你放了。通告还在，罚单若来，会回到店招。");
+    if (s.sorted.lamp && s.sorted.lamp.action === "pass") extra.push("河堤东段那封放灯你放了。值守不在东段。");
+    if (s.sorted.wed && s.sorted.wed.action === "pass") extra.push("酒席问询你接了。屈南早上看见会骂一句越界。");
+    if (s.sorted.he && s.sorted.he.action === "hold") extra.push("何家齐单被你扣了。米穗大概会问是不是眼花。");
+    var p = document.getElementById("body");
+    function add(t) { var e = document.createElement("p"); e.textContent = t; p.appendChild(e); }
+    add(how);
+    extra.forEach(add);
+    if (ji) add("纪单栏：处置已记，桌次写作" + (deskName[ji.desk] || "未选") + "。");
+    add("三桌还是那三桌。字给晨班。夜班到这儿。");
+    document.getElementById("again").onclick = function () { FZ.reset(); };
+  </script>
+</body>
+</html>

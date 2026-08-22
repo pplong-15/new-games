@@ -1,0 +1,42 @@
+{
+  "project_id": "zhenshanqi-v3.4.1-archive-conservation",
+  "task_grade": "S2",
+  "status": "INTERNAL_CONTRACT_PASS / HOLD_BUILD",
+  "owner": "/root",
+  "single_outcome": "Produce a v3.4.1 archive, conservation, authority, custody and A/B branch revision candidate without changing the frozen folk-supernatural core.",
+  "current_stage": "EXTERNAL_ARCHIVE_CONSERVATION_REREVIEW",
+  "single_next_action": "Send the v3.4 core freeze and v3.4.1 archive-conservation revision to the same external archive/conservation reviewer; request a narrow rereview of the revised professional process only.",
+  "acceptance_test": [
+    "The external reviewer returns explicit PASS, REWORK or HOLD judgments for custody_chain, approval_matrix, A_branch, B_branch and RQ-01.",
+    "The reviewer confirms whether RQ-01 can professionally justify A; if not, A is redesigned or removed rather than forcing the branch.",
+    "No institution, authority, transport, opening, sealing, return or repository step remains professionally implausible at P0/P1 severity.",
+    "The reviewer confirms B is a complete professional outcome and A does not rely on overnight custody or a conservation pretext for three nights.",
+    "The player remains read-only and the frozen entity-and-action folk-supernatural mechanism is not revised by this rereview."
+  ],
+  "stop_condition": "Stop after the external archive/conservation reviewer returns PASS or REWORK with precise evidence; do not merge a full execution master or start web implementation.",
+  "maximum_context": "Read project_state, v3.4.1 revision, v3.4 core freeze, then only the cited sections of the external audit.",
+  "evidence_paths": [
+    "/Users/Zhuanz/Downloads/镇山/镇山契_第九位到访者_v3.4.1_档案文保合规修订稿.md",
+    "/Users/Zhuanz/Downloads/镇山/镇山契_第九位到访者_v3.4_创作者真相与仪式合同冻结稿.md",
+    "/Users/Zhuanz/Downloads/镇山/镇山契_v3.4_档案文保权限只读审核报告.md",
+    "/Users/Zhuanz/Downloads/镇山/镇山契_v3.4.1_内部合同验收记录.md",
+    "/Users/Zhuanz/Downloads/镇山契_v3.4.1_档案文保外部复审送审说明.md"
+  ],
+  "candidate_sha256": "31d54990ab9943ff6ee133ae7e89b37a23f8e0f8ab1ba33383ae58996263f36b",
+  "blocker": null,
+  "redline_check": "No web build, no real institution impersonation, no player access to originals, no forced three-night conservation rule, no weakening B to force A, no leakage of creator-only supernatural truth.",
+  "did_not_prove": [
+    "Professional archive and conservation rereview",
+    "Real-world legal sufficiency",
+    "RQ-01 professional necessity",
+    "A-site and transport plausibility",
+    "Fictional institution role fidelity",
+    "Folk-language authenticity",
+    "Child-ethics acceptance",
+    "Child-death creator-truth appendix",
+    "Human blind-play fear and comprehension",
+    "Full v3.4 execution master"
+  ],
+  "next_gate": "EXTERNAL_ARCHIVE_CONSERVATION_REREVIEW",
+  "updated_at": "2026-08-13"
+}

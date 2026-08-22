@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-intro-manual">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>班前纸　福泽夜班</title>
+  <link rel="stylesheet" href="css/intro-manual.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+  <header class="intro-hero">
+    <div class="image-area"><img alt="" src="img/night-stall.jpg"></div>
+    <h1>天亮前把弹进来的单写完</h1>
+  </header>
+  <main>
+    <section>
+      <h2>今晚的班</h2>
+      <p>你是裘石。湄湾南门福泽香铺的网单夜班，入职第四个月。白天见客的是米穗，你不见人。中元前夜，往生代办单一封封自己弹进后台。</p>
+      <p>屈南回家前把钥匙拍在抽屉上。正祀、孤魂、供灯，三桌分开。街上禁烧的扣住。你改不了牌位，也改不了寺庙名录。能做的是放行、暂扣、改桌，再给晨班留几句。</p>
+      <p>米穗走的时候探进后头，说纪家那封别瞎过。她没解释。屈南白板还留着去年的字，霍麦值过同样的夜。</p>
+    </section>
+    <section>
+      <h2>台上有什么</h2>
+      <p>左边是队列，右边是推送栏。打开某一封，附件会跟过来，用不着去全文里捞。上一封没写入建议，下一封不会弹。</p>
+      <p>系统钟走到十五那天早上五点半，纪家那封如果还空着，回执会按空单走。人名地名都是编的，别拿去对现实香铺。</p>
+      <p class="boot-actions">
+        <a class="enter-link" href="desk.html">打开福泽网单后台</a>
+        <button type="button" class="ghost" id="wipe">清掉本机上次没写完的草稿</button>
+      </p>
+    </section>
+    <section>
+      <h2>卡住的时候</h2>
+      <p>屈南便笺压在队列底下，一次只多翻一张。前几张只指方向，不替你勾栏。</p>
+      <p>你若把上一封空着去改地址，下一封不会开门。附件也是跟单走，不会提前摊在桌上。</p>
+      <p>人名是编的。湄湾、福泽、广慈寺都对不上现实门口。别拿底账去问真寺庙。</p>
+    </section>
+  </main>
+  <p class="pageft">班前纸不进站　1/40</p>
+  <script src="js/state.js"></script>
+  <script>
+    document.getElementById("wipe").onclick = function () {
+      FZ.reset();
+      this.textContent = "草稿清了，从后台重新进";
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-qzone-modules">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>晚禾　相册</title>
+  <link rel="stylesheet" href="css/qzone-modules.css">
+  <link rel="stylesheet" href="css/pick.css">
+</head>
+<body>
+  <div id="gate">
+    <div class="topbar"><div class="topbar-inner"><span class="logo">个人空间</span></div></div>
+    <div class="banner">主人设置了访问问答</div>
+    <div class="cols">
+      <div></div>
+      <div>
+        <div class="mod">
+          <h3>打不开</h3>
+          <div class="bd">
+            <p>相册不对外。附件地址在素秋信尾。你若是从别处撞进来的，先回去找信。</p>
+            <p><a href="letter.html">打开信箱正文</a>　<a href="desk.html">离开空间</a></p>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </div>
+  </div>
+  <div id="space" hidden>
+    <div class="topbar">
+      <div class="topbar-inner">
+        <span class="logo">个人空间</span>
+        <a href="wanhe.html">主页</a>
+        <a href="wanhe-msg.html">留言</a>
+        <a href="wanhe-photo.html">相册</a>
+        <a href="wanhe-mood.html">说说</a>
+        <span class="extra"><a href="desk.html">离开</a></span>
+      </div>
+    </div>
+    <div class="banner yard">相册　院</div>
+    <div class="cols">
+      <div></div>
+      <div>
+        <div class="mod">
+          <h3>七月二十九日　空镜头</h3>
+          <div class="bd">
+            <div class="thumbs">
+              <i>灶沿</i><i>空院</i><i>墙根</i>
+            </div>
+            <p>三张都没有五官。第一张对着灶沿，锅盖反光，人已经退出画。第二张对着空院，地上一条浅印，像尺钩，又像扫帚。第三张墙根，半截红纸边，字糊掉了。</p>
+            <p>说明是她后来补的：谱局来的人让我站旁边，说镜头里不要女的。我退到厨房门口，手机还举着，就拍了这些。伯川在画外喊靠边。小满弟在桌那边，我没拍他的脸，也不想拍。</p>
+            <p>相册权限写成「仅来过旧址的人」。没有门牌。没有台标。没有谁的正面。空院不能拿去写成孩子已经搬来。这三张只说明拍照那天有人被赶出画面。</p>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </div>
+    <p class="site-foot">相册停更　无脸</p>
+  </div>
+  <script src="js/state.js"></script>
+  <script>
+    var s = HY.visit("wanhe-photo", 1);
+    if (!s.wanhe) {
+      document.getElementById("gate").hidden = false;
+    } else {
+      document.getElementById("space").hidden = false;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Duty whiteboard</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<div id="wrap">
+  <header><strong>Whiteboard</strong><div><a class="ghost-btn" href="desk.html">Back to desk</a></div></header>
+  <div class="notice">
+    <h2>Seen and verified are written apart</h2>
+    <p id="mini" class="sm-mini"></p>
+    <img src="img/board-empty.jpg" alt="Whiteboard" class="doc-img">
+    <p>Households seen</p>
+    <div id="seenbox"></div>
+    <p>Verified sentences</p>
+    <div id="verbox"></div>
+    <p>The remark only accepts the sentences below. The household names above are not enough.</p>
+    <p><a href="xian-zhi.html">The write-limit pinned on the cabinet side</a></p>
+  </div>
+</div>
+
+<section class="pad"><p>The two columns on the board do not mix. Seen is only a household name. Like Qiu Maiqiu — opened a door, never verified — the paper is taken at first light. If Hang Shu copies a household name into the remark, the system does not accept it. Tiao Wan looks at the full sentences below. An empty board is not “no work.” It means no sentence that can stay has been pressed on yet. After handover you look again: names still in Seen, sentences still in Verified, opened cells back at zero.</p></section>
+<script src="js/sanmen.js"></script>
+<script>
+Sanmen.paintMini(document.getElementById('mini'));
+Sanmen.paintBoard(document.getElementById('seenbox'), document.getElementById('verbox'));
+</script>
+</body>
+</html>

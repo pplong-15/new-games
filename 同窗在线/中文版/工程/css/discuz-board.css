@@ -1,0 +1,200 @@
+/* discuz-board
+ * 记忆 2008–2012 蓝头论坛：版块表 + 左右楼层。不要论坛套件标志。
+ * 960 / 12px Tahoma,SimSun / 斜边搜索钮。禁止 CSS Grid、flex、雅黑主字体。
+ */
+html.skin-discuz-board {
+  --head: #2b7ac2;
+  --nv: #1f5d96;
+  --border: #c2d5e3;
+  --th: #e5edf2;
+  --link: #369;
+  --bevel-hi: #7eb6e8;
+  --bevel-lo: #164a7a;
+}
+html.skin-discuz-board, html.skin-discuz-board body, html.skin-discuz-board div,
+html.skin-discuz-board span, html.skin-discuz-board p, html.skin-discuz-board a,
+html.skin-discuz-board table, html.skin-discuz-board th, html.skin-discuz-board td,
+html.skin-discuz-board form, html.skin-discuz-board input, html.skin-discuz-board button {
+  margin: 0;
+  padding: 0;
+}
+html.skin-discuz-board body {
+  background: #fff;
+  color: #444;
+  font: 12px/1.6 Tahoma, SimSun, sans-serif;
+}
+html.skin-discuz-board a { color: var(--link); text-decoration: none; }
+html.skin-discuz-board a:hover { text-decoration: underline; }
+html.skin-discuz-board input, html.skin-discuz-board button {
+  font: 12px Tahoma, SimSun, sans-serif;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+html.skin-discuz-board .wp { width: 960px; margin: 0 auto; }
+
+/* 顶栏：蓝底白字，float，不是 flex */
+html.skin-discuz-board .hd {
+  background: var(--head);
+  color: #fff;
+  height: 48px;
+  overflow: hidden;
+}
+html.skin-discuz-board .hd > span:first-child,
+html.skin-discuz-board .hd .logo,
+html.skin-discuz-board .hd strong {
+  float: left;
+  height: 48px;
+  padding: 0 12px;
+  font: 700 16px/48px Tahoma, SimSun, sans-serif;
+  color: #fff;
+  letter-spacing: 1px;
+  text-decoration: none;
+  margin-left: 0;
+}
+html.skin-discuz-board .hd .logo:hover { color: #fff; text-decoration: none; }
+html.skin-discuz-board .hd > span:last-child,
+html.skin-discuz-board .hd .y {
+  float: right;
+  height: 48px;
+  line-height: 48px;
+  padding-right: 8px;
+}
+html.skin-discuz-board .hd a { color: #fff; text-decoration: none; margin-left: 12px; }
+html.skin-discuz-board .hd a:hover { color: #fff; text-decoration: underline; }
+html.skin-discuz-board .hd .logo { margin-left: 0; }
+html.skin-discuz-board .hd form { float: right; height: 48px; padding: 13px 8px 0 0; }
+html.skin-discuz-board .hd input {
+  float: left;
+  width: 148px;
+  height: 16px;
+  line-height: 16px;
+  border: 1px solid #1a5a96;
+  padding: 2px 4px;
+  background: #fff;
+  color: #333;
+}
+html.skin-discuz-board .hd button {
+  float: left;
+  height: 22px;
+  margin-left: 4px;
+  padding: 0 10px;
+  color: #fff;
+  background: var(--head);
+  border: 1px solid;
+  border-color: var(--bevel-hi) var(--bevel-lo) var(--bevel-lo) var(--bevel-hi);
+  cursor: pointer;
+}
+
+/* 导航 28px 更深蓝，白链 */
+html.skin-discuz-board .nv {
+  background: var(--nv);
+  height: 28px;
+  line-height: 28px;
+  overflow: hidden;
+  padding: 0 4px;
+}
+html.skin-discuz-board .nv a {
+  float: left;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 12px;
+  height: 28px;
+  line-height: 28px;
+}
+html.skin-discuz-board .nv a:hover { background: var(--head); text-decoration: none; color: #fff; }
+
+html.skin-discuz-board table.forum {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-collapse: collapse;
+  margin-top: 8px;
+  table-layout: fixed;
+}
+html.skin-discuz-board table.forum th,
+html.skin-discuz-board table.forum td {
+  border: 1px solid var(--border);
+  padding: 8px;
+  vertical-align: middle;
+}
+html.skin-discuz-board table.forum th {
+  background: var(--th);
+  text-align: left;
+  padding: 6px 8px;
+  font-weight: 700;
+}
+html.skin-discuz-board table.forum td { background: #fff; }
+html.skin-discuz-board table.forum th:first-child,
+html.skin-discuz-board table.forum td:first-child {
+  width: 48px;
+  text-align: center;
+  padding: 8px 0;
+}
+html.skin-discuz-board table.forum td:first-child:before {
+  content: "";
+  display: inline-block;
+  width: 31px;
+  height: 31px;
+  background: #c8c8c8;
+  border: 1px solid #9aabbb;
+  vertical-align: middle;
+}
+html.skin-discuz-board table.forum td p { color: #999; margin-top: 2px; }
+html.skin-discuz-board table.forum .num { width: 120px; color: #666; }
+html.skin-discuz-board table.forum .last { width: 160px; color: #666; }
+
+/* 楼层：左 160px float，右正文，底虚线签名 */
+html.skin-discuz-board .floor {
+  border: 1px solid var(--border);
+  margin: 10px 0 0;
+  overflow: hidden;
+  background: #fff;
+}
+html.skin-discuz-board .u {
+  float: left;
+  width: 160px;
+  background: var(--th);
+  padding: 10px 0 16px;
+  text-align: center;
+  overflow: hidden;
+}
+html.skin-discuz-board .u .av {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 8px;
+  border: 1px solid #9aabbb;
+  background: #c8c8c8;
+  background-image:
+    radial-gradient(circle at 50% 38%, #eee 0 12px, transparent 13px),
+    radial-gradient(ellipse at 50% 78%, #eee 0 22px, transparent 23px);
+}
+html.skin-discuz-board .u b { display: block; color: var(--link); }
+html.skin-discuz-board .u p { color: #666; margin-top: 4px; }
+html.skin-discuz-board .t {
+  margin-left: 160px;
+  padding: 10px 12px 8px;
+  min-height: 140px;
+  border-left: 1px solid var(--border);
+}
+html.skin-discuz-board .t .ti { color: #999; border-bottom: 1px dashed var(--border); padding-bottom: 4px; margin-bottom: 8px; }
+html.skin-discuz-board .sig { border-top: 1px dashed #ccc; color: #888; margin-top: 24px; padding-top: 8px; }
+html.skin-discuz-board .pages { margin: 8px 0 20px; overflow: hidden; color: #999; }
+html.skin-discuz-board .pages a,
+html.skin-discuz-board .pages strong,
+html.skin-discuz-board .pages em {
+  float: left;
+  margin-right: 4px;
+  height: 24px;
+  line-height: 24px;
+}
+html.skin-discuz-board .pages a,
+html.skin-discuz-board .pages strong {
+  padding: 0 8px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--link);
+  text-decoration: none;
+}
+html.skin-discuz-board .pages strong { background: var(--th); color: #444; font-weight: 700; }
+html.skin-discuz-board .pages em { font-style: normal; }
+html.skin-discuz-board .ft { clear: both; text-align: center; color: #999; padding: 12px 0 24px; border-top: 1px solid var(--border); }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>夜岗登录</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/desk-extra.css">
+</head>
+<body class="login-page">
+  <div id="wrap">
+    <header>
+      <strong>桐石巷夜岗</strong>
+      <div><a class="ghost-btn" href="../introduction.html">门框字</a></div>
+    </header>
+    <form class="login-box" id="lg">
+      <h1>夜岗登录</h1>
+      <label for="user">工号</label>
+      <input id="user" name="user" type="text" autocomplete="off">
+      <button type="submit">进台</button>
+      <p class="hint" id="err">工号写在值班室门框内侧，别在这页猜。</p>
+      <p><a href="#" id="fill">用门框上那个</a></p>
+    </form>
+
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    document.getElementById("fill").onclick = function (e) {
+      e.preventDefault();
+      document.getElementById("user").value = "柴-0821";
+    };
+    document.getElementById("lg").onsubmit = function (e) {
+      e.preventDefault();
+      var v = document.getElementById("user").value.replace(/\s/g, "");
+      if (v === "柴-0821") { MK.mark("token-in"); location.href = "home.html"; }
+      else { document.getElementById("err").textContent = "工号在门框内侧。"; }
+    };
+</script>
+<p class="hint">阙禾走得急，口令没另设。门框内侧那一行被手油摸亮了，柴字后面是杠和四个数字。填错就停在这张白卡片上，台面的法你还看不见。看见法的人，才谈得上试记。</p>
+<p class="hint">进台先看板。别先写建议。建议随时能开，开早了退。退了再去试记——已证实清不掉。黄条比你的记忆可靠。</p>
+</body>
+</html>

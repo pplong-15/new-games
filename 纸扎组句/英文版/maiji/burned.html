@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mai · Logged as Already Burned</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>Return · burned</strong>
+      <div>
+        <a class="ghost-btn" href="desk.html">Desk</a>
+        <a class="ghost-btn" href="sentence.html">Card</a>
+        <form id="search-form" action="#" method="get" style="display:inline">
+          <input id="search-input" name="q" placeholder="Look up a slip…">
+          <button type="submit">Find</button>
+        </form>
+      </div>
+    </header>
+    
+    <div class="notice">
+      <h2>It went in on your line</h2>
+      <p>Already-burned on paper and cold at the brick mouth are two things. If Jing Qiubai takes this line into the shed, the elders will trust the paper. If Shao Pu takes this line to the shop, the shop number can only point at your six blanks.</p>
+      <p id="why"></p>
+      <p>The system does not change the site. The site furnace mouth is still shut. On paper it is written as an already-burned paper attendant, or a person still asking for goods is written dead. Jing Qiubai will make a scene from this line. Shao Pu's storefront will sit empty, and he will also bring this line to the shop number.</p>
+      <p>Lou Shi's schedule is still unscheduled. The group timestamps are still there. The line you wrote does not compare with those two places. Tomorrow morning Mai Lao will only see it on the books. He will not see whether you compared.</p>
+      <p>To change it, you can only tear and refill. The original stack is still at the waiting-burn edge. It did not enter the furnace.</p>
+      <p>The printer did not jam on this return. As if it knows this kind of sentence better. Familiar is not correct. Ash at the brick mouth is still the previous household's color.</p>
+      <p><a href="sentence.html">Back to the card</a> · <a href="#" id="tear3">Tear it and start over</a></p>
+    </div>
+    <script>
+      document.getElementById("tear3").onclick = function (e) {
+        e.preventDefault();
+        ZJ.reset();
+        location.href = "../introduction.html";
+      };
+    </script>
+
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    ZJ.bootPage("end-burned");
+    var f = ZJ.endingWhy();
+    var el = document.getElementById("why");
+    if (el) el.textContent = "You filed: " + (f.who||"") + " / " + (f.what||"") + " / " + (f.act||"") + " / " + (f.night||"") + " / " + (f.life||"") + ".";
+</script>
+</body>
+</html>

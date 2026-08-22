@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-classified-yellow">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Huaiyin Alley Board</title>
+  <link rel="stylesheet" href="css/classified-yellow.css">
+  <link rel="stylesheet" href="css/pick.css">
+</head>
+<body>
+  <div class="top">
+    <div class="top-inner">
+      <b>Huaiyin Alley Board</b>
+      <form class="search" action="#" method="get" onsubmit="return false;">
+        <input name="q" type="text" placeholder="titles only">
+        <button type="button">This column not opened</button>
+      </form>
+      <span class="city">Huaiyin station</span>
+    </div>
+  </div>
+  <div class="layout">
+    <nav>
+      <h4>Sections</h4>
+      <a class="on" href="neighbor.html">Lane talk</a>
+      <a href="neighbor-tape.html">Tape follow-up</a>
+      <a href="neighbor-cat.html">Lost & found</a>
+      <a href="neighbor-water.html">Water / power cuts</a>
+      <a href="neighbor-cover.html">Manholes</a>
+      <a href="desk.html">Leave</a>
+    </nav>
+    <div class="list">
+      <h4>Lane talk  Admin does not verify</h4>
+      <div class="hd-row"><span class="t">Title</span><span>Lane</span><span>Date</span></div>
+      <div class="row"><a href="#tan">Who opens No. 17 at night (Tan)</a><span>Zaoshu</span><span>Aug 17</span></div>
+      <div class="row"><a href="neighbor-tape.html">Tape again. Measuring that back-yard room</a><span>Zaoshu</span><span>Aug 19</span></div>
+      <div class="row"><a href="neighbor-cover.html">No. 3 manhole late, like a foot grinding</a><span>Zaoshu</span><span>Aug 16</span></div>
+      <div class="row"><a href="neighbor-cat.html">9 Quyuan Road, half-grown yellow cat</a><span>Quyuan</span><span>Aug 14</span></div>
+      <div class="row"><a href="neighbor-water.html">Nanbu temp water cut, bring your own buckets</a><span>Nanbu</span><span>Aug 12</span></div>
+      <div class="postbody" id="tan">
+        <p>Tan Xiuzhi, next door to No. 17. Someone told me to write it for the street, so I write. I did not go into the mourning hall. Do not take my words as a statement.</p>
+        <p>After Shouren went, at night No. 17 is still Wanhe who opens. Kitchen light first. That Xiaoman boy came for the funeral, came again the photo day, stood at the table writing, pencil backward. Never saw him haul bedding in.</p>
+        <p>Bochuan comes every day to measure that back-yard room. Tape snaps. He swears at the grit. He talks to Shouli. I hear it through the wall. Share. Not which bed the child moves to. The day Suqiu stamped, I watched through the door crack. Her hand shook. Bochuan grabbed her finger and pressed it down. She did not nod. Don’t ask me what the red paper said. I can’t read all the characters.</p>
+        <p>If you come to the door, come in daylight. A car stops, dogs in the lane go, and I have to come out and explain.</p>
+        <p>
+          <button type="button" class="pick" data-block="heir-live">Extract: neighbors name Wanhe as living there</button>
+          <button type="button" class="pick" data-block="consent-neighbor">Extract: Bochuan pressed; she did not nod</button>
+          <button type="button" class="pick" data-block="live-neighbor">Extract: at night still Wanhe who opens</button>
+        </p>
+      </div>
+    </div>
+  </div>
+  <p class="ft">Huaiyin Alley Board  Users post themselves  Fight in person, walk away  Admin picks no side</p>
+  <script src="js/state.js"></script>
+  <script>
+    HY.visit("neighbor", 4);
+    HY.bindPicks();
+  </script>
+</body>
+</html>

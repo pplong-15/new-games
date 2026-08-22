@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="backroom">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>口信留下了</title>
+  <link rel="stylesheet" href="css/phone.css">
+</head>
+<body>
+  <div class="wrap">
+    <h1>你把机子塞回隔板</h1>
+    <p id="p1"></p>
+    <p>匡把烟踩灭，在排班本上田穗名字旁边划了一勾，当人还在城里。他没问两张白底的日子。检查组来之前，他多半会自己去巷口再要一张能过关的电子版——按最近的拍。</p>
+    <p>你去拆牛奶。工牌还缠着线。后仓的灯管一直嗡。人回不回来是以后的事，这句话今晚已经替她站过一次岗。</p>
+    <p>消防砂里还有半截烟头。排班本用的是铅笔。勾是淡的，明天白班能擦。牛奶在第二列，要先把油壶那圈拖干再拆箱。机子充电线还是那根松的，你掰正插上了，没把工牌解下来。</p>
+    <p><a href="introduction.html">纸条还在原处</a></p>
+  </div>
+  <script src="js/phone.js"></script>
+  <script>
+    var a = gys.seen("seen0314"), b = gys.seen("seen0812");
+    document.getElementById("p1").textContent = a && b
+      ? "你看见过两张日子对不上的白底，还是选择只报人在。柜门反光那件事你没讲。"
+      : a || b
+        ? "你只认真看过其中一张白底，报的时候把另一张当成没打开过。"
+        : "短信你翻得不多。工牌还在，你就按落机子处理。";
+  </script>
+</body>
+</html>

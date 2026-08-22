@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-mail-web-2010">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>县政务邮箱　登入</title>
+  <link rel="stylesheet" href="../css/mail-web-2010.css">
+  <link rel="stylesheet" href="../css/game-extra.css">
+</head>
+<body>
+  <div class="top">
+    <b>安浦政务邮箱</b>
+    <span class="unread-n">夜班值班箱</span>
+  </div>
+  <div class="panes">
+    <div class="folders">
+      <a class="write" href="login.html">写信（停）</a>
+      <a class="on" href="login.html">先登入</a>
+    </div>
+    <div class="mails">
+      <h4>未登入</h4>
+      <div class="m"><b>信在门后</b><span>工号口令不在本栏</span></div>
+    </div>
+    <div class="read">
+      <h3>值班箱登入</h3>
+      <form id="dq-login" action="inbox.html" method="post">
+        <p><label for="user">账号</label><br><input id="user" name="user" autocomplete="off"></p>
+        <p><label for="pass">口令</label><br><input id="pass" name="pass" type="password" autocomplete="off"></p>
+        <p><button type="submit">打开收件箱</button></p>
+        <p class="dq-err" id="dq-err"></p>
+      </form>
+      <p class="meta">账号口令写在交接本第二页。本页不教第一词，也不设栏目检索。</p>
+      <p><a href="../desk/shift.html">回交接本</a></p>
+    </div>
+  </div>
+  <p class="ft">政务邮箱登入页　容量有限　附件只收扫描</p>
+  <script src="../js/state.js"></script>
+  <script>DQ.bindLogin("mail", "inbox.html");</script>
+</body>
+</html>

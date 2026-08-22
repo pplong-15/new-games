@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hengpu Hall · Still the Attachment</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>Hengpu Hall receipt</strong>
+      <div>
+        <a class="ghost-btn" href="desk.html">Desk</a>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>Library unchanged</h2>
+      <p>Work number GT-Ye. The recommendation you filed points the same way as the last attachment in. Or you took a smudge, a missed line, as the cause. I upload the original electronic page.</p>
+      <p>Row 14 is still inked. Side note still there. East-port supplement scan still sits on the attachment column. West-2 eldest will not appear in the book they carry into the hall tomorrow.</p>
+      <p>Money already settled. Refund is not a night-shift power. You explain to the west branch, you explain. Do not write my work number into your branch gossip.</p>
+      <p id="why"></p>
+      <p>Window shuts like this. I am off.</p>
+    </div>
+    <p style="text-align:center;padding:24px">
+      <a href="../introduction.html">Crumple the note</a>
+    </p>
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    var s = XP.read().slip || {};
+    var t = document.getElementById("why");
+    if (s.line === "chusi") t.textContent = "You accepted adopted-out. Accept it, and you follow the attachment.";
+    else if (s.dirt === "smudge") t.textContent = "You called it a smudge. A smudge does not write four words by itself.";
+    else if (s.dirt === "miss") t.textContent = "A missed line is a hole. A hole and a wipe are not one thing.";
+    else t.textContent = "You did not pick the register as main paper. You picked the supplement scan. Scan still speaks.";
+  </script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+/* blog-personal-2008
+ * 记忆 2006–2010 个人博客双栏（纸黄底 / 橙头 / 宋体），不是圆角卡片日志。
+ * 780：主栏 520 float left，侧栏 240 float right。
+ * 禁止：CSS Grid、品牌 Logo、雅黑当正文、圆角按钮。
+ */
+html.skin-blog-personal-2008 {
+  --paper: #e9e0c8;
+  --head: #d35400;
+  --nav: #a04000;
+  --side: #f3e6c4;
+  --box: #fffdf6;
+  --line: #d9cba3;
+  --link: #a04000;
+  --mute: #996;
+}
+html.skin-blog-personal-2008,
+html.skin-blog-personal-2008 body,
+html.skin-blog-personal-2008 div,
+html.skin-blog-personal-2008 h1,
+html.skin-blog-personal-2008 h2,
+html.skin-blog-personal-2008 h3,
+html.skin-blog-personal-2008 p,
+html.skin-blog-personal-2008 a,
+html.skin-blog-personal-2008 ul,
+html.skin-blog-personal-2008 li,
+html.skin-blog-personal-2008 form,
+html.skin-blog-personal-2008 input,
+html.skin-blog-personal-2008 button {
+  margin: 0;
+  padding: 0;
+}
+html.skin-blog-personal-2008 body {
+  background: var(--paper);
+  color: #333;
+  font: 14px/1.8 SimSun, "Songti SC", "NSimSun", serif;
+}
+html.skin-blog-personal-2008 a {
+  color: var(--link);
+  text-decoration: underline;
+}
+html.skin-blog-personal-2008 a:hover { color: #7a2800; }
+html.skin-blog-personal-2008 ul { list-style: disc; }
+html.skin-blog-personal-2008 input,
+html.skin-blog-personal-2008 button {
+  font: 12px SimSun, "Songti SC", serif;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+
+/* 橙头 36px */
+html.skin-blog-personal-2008 .top {
+  height: 36px;
+  background: var(--head);
+  color: #fff;
+  overflow: hidden;
+}
+html.skin-blog-personal-2008 .top h1 {
+  float: left;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 14px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+html.skin-blog-personal-2008 .top p {
+  float: right;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 14px;
+  font-size: 12px;
+  color: #ffe4cc;
+}
+html.skin-blog-personal-2008 .nav {
+  height: 28px;
+  background: var(--nav);
+  line-height: 28px;
+  padding: 0 14px;
+  overflow: hidden;
+}
+html.skin-blog-personal-2008 .nav a {
+  color: #fff;
+  margin-right: 16px;
+  text-decoration: none;
+  font-size: 13px;
+}
+html.skin-blog-personal-2008 .nav a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+/* 780 双栏 */
+html.skin-blog-personal-2008 .wrap {
+  width: 780px;
+  margin: 12px auto 0;
+  zoom: 1;
+}
+html.skin-blog-personal-2008 .wrap:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+html.skin-blog-personal-2008 .main {
+  float: left;
+  width: 520px;
+}
+html.skin-blog-personal-2008 .post,
+html.skin-blog-personal-2008 article {
+  background: var(--box);
+  border: 1px solid var(--line);
+  padding: 12px 14px 14px;
+  margin: 0 0 12px;
+  width: 520px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html.skin-blog-personal-2008 .post h2,
+html.skin-blog-personal-2008 article h2 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0 0 6px;
+  border-bottom: 1px dashed var(--line);
+  padding: 0 0 6px;
+}
+html.skin-blog-personal-2008 .post h2 a,
+html.skin-blog-personal-2008 article h2 a {
+  color: #333;
+  text-decoration: none;
+}
+html.skin-blog-personal-2008 .post h2 a:hover,
+html.skin-blog-personal-2008 article h2 a:hover {
+  color: var(--link);
+  text-decoration: underline;
+}
+html.skin-blog-personal-2008 .meta {
+  color: var(--mute);
+  font-size: 12px;
+  margin: 0 0 10px;
+}
+html.skin-blog-personal-2008 .post p,
+html.skin-blog-personal-2008 article p {
+  margin: 0 0 8px;
+  text-indent: 2em;
+}
+html.skin-blog-personal-2008 .post p.meta,
+html.skin-blog-personal-2008 article p.meta {
+  text-indent: 0;
+}
+html.skin-blog-personal-2008 .post .more {
+  text-indent: 0;
+  text-align: right;
+  font-size: 12px;
+  margin: 8px 0 0;
+}
+
+/* 侧栏 240 #f3e6c4 */
+html.skin-blog-personal-2008 .side,
+html.skin-blog-personal-2008 aside {
+  float: right;
+  width: 240px;
+  background: var(--side);
+  border: 1px solid var(--line);
+  padding: 0 0 8px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html.skin-blog-personal-2008 .side h3,
+html.skin-blog-personal-2008 aside h3 {
+  font-size: 13px;
+  font-weight: 700;
+  background: #e8d09a;
+  border-bottom: 1px solid #d4b56a;
+  margin: 0 0 6px;
+  padding: 5px 8px;
+  color: #5a3a10;
+}
+html.skin-blog-personal-2008 .side ul,
+html.skin-blog-personal-2008 aside ul {
+  margin: 0 10px 10px 26px;
+  font-size: 13px;
+  line-height: 1.9;
+}
+html.skin-blog-personal-2008 .side li,
+html.skin-blog-personal-2008 aside li {
+  margin: 0;
+}
+html.skin-blog-personal-2008 .side form,
+html.skin-blog-personal-2008 aside form {
+  margin: 0 8px 10px;
+}
+html.skin-blog-personal-2008 .side input {
+  width: 148px;
+  height: 18px;
+  border: 1px solid #c4b48a;
+  padding: 2px 4px;
+  background: #fff;
+  float: left;
+}
+html.skin-blog-personal-2008 .side button {
+  float: left;
+  height: 24px;
+  margin-left: 4px;
+  padding: 0 8px;
+  color: #fff;
+  background: var(--head);
+  border: 1px solid;
+  border-color: #f0a060 #a04000 #a04000 #f0a060;
+  cursor: pointer;
+}
+html.skin-blog-personal-2008 .ft {
+  width: 780px;
+  margin: 8px auto 16px;
+  text-align: center;
+  color: #88785a;
+  font-size: 12px;
+  border-top: 1px solid var(--line);
+  padding: 8px 0;
+}

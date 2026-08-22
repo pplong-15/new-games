@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Huaiyin Subdistrict stability night desk</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/pick.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>Huaiyin Subdistrict — dispute upload</strong>
+      <div>
+        <span id="clock" class="desk-clock">System time --:--  Upload cutoff 22:00</span>
+        <a class="ghost-btn" href="introduction.html">Before-shift slip</a>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>Stability [2026] Zao-117</h2>
+      <p class="auth">This post: upload a summary; suggest a huifang script. Confirming, closing a hukou, changing a genealogy, stamping an original — none of that is yours.</p>
+    </div>
+    <table class="desk-split">
+      <tr>
+        <td>
+          <h3>Ticket</h3>
+          <p>Source: branch-head Geng Bochuan by phone, system-routed. Subject: Geng household, 17 Zaoshu Lane. Matter written as “guoji and raising dispute.” Upload before 22:00 tonight. Empty ticket is scored as a miss.</p>
+          <p>Shouren died of illness in May. Bochuan says they have already established an heir, Geng Xiaoman; hukou still has not moved; he wants the street to settle it. On the phone Suqiu only repeats: stop coming to measure the yard. Shouli’s side pushes the grandson forward.</p>
+          <p>Open the hukou lookup first. Check who is on this roll. Red paper, genealogy extract, alley posts, mailbox — they are in the list. Tick the version that looks right to you. Huifang asks what you uploaded.</p>
+          <p>The ticket title is also a version. If you want it as the dispute class, extract it yourself.</p>
+          <p>
+            <button type="button" class="pick" data-block="kind-order">Write the dispatch title into dispute class</button>
+          </p>
+          <h3>Collect list</h3>
+          <p><b>Hukou attachments</b></p>
+          <ul>
+            <li><a href="hukou.html">Puyang County hukou lookup — 17 Zaoshu Lane scan</a></li>
+            <li><a href="hukou-refuse.html">2026-05-20 compare-refusal, full text</a></li>
+            <li><a href="hukou-channel.html">Check on Shouli household, 9 Quyuan Road</a></li>
+            <li><a href="hukou-death.html">Shouren death close and change of head</a></li>
+            <li><a href="office.html">Window number and notice stub</a></li>
+          </ul>
+          <p><b>Papers and genealogy</b></p>
+          <ul>
+            <li><a href="sishu.html">Geng papers custody — lisi copy</a></li>
+            <li><a href="sishu-zhongren.html">Witness column: who wrote, who stood there</a></li>
+            <li><a href="sishu-ink.html">Custodian note: ink on the finger</a></li>
+            <li><a href="zupu.html">Jiangzuo Genealogy — Huaiyin-branch extract</a></li>
+            <li><a href="zupu-catalog.html">Huaiyin-branch catalog and pending row</a></li>
+            <li><a href="zupu-nvkou.html">Rule: daughters not entered</a></li>
+            <li><a href="zupu-pending.html">Kuang Shan note, 2026-07-28</a></li>
+          </ul>
+          <p><b>Alley and mailbox</b></p>
+          <ul>
+            <li><a href="neighbor.html">Huaiyin Alley Board — lane talk</a></li>
+            <li><a href="neighbor-tape.html">Auntie Tan follow-up: tape every day</a></li>
+            <li><a href="neighbor-cat.html">Quyuan lost cat (idle)</a></li>
+            <li><a href="neighbor-water.html">Nanbu water cut (idle)</a></li>
+            <li><a href="neighbor-cover.html">No. 3 manhole (idle)</a></li>
+            <li><a href="letter-list.html">Grid mailbox — inbox list</a></li>
+            <li><a href="letter.html">Suqiu letter, body</a></li>
+            <li id="wanhe-slot" style="display:none"><a href="wanhe.html">Old-space address from the letter attachment</a>  <a href="wanhe-msg.html">Guestbook</a>  <a href="wanhe-photo.html">Empty album</a>  <a href="wanhe-mood.html">Posts</a></li>
+          </ul>
+          <p><b>Notices and old tickets</b></p>
+          <ul>
+            <li><a href="policy.html">Guoji-dispute intake notice</a></li>
+            <li><a href="help-fields.html">Upload-desk field notes</a></li>
+            <li><a href="log.html">Bian Liang door log, August</a></li>
+            <li><a href="phone-bochuan.html">Bochuan call transcript</a></li>
+            <li><a href="subsidy.html">Care-subsidy refusal abstract</a></li>
+            <li><a href="history.html">Next-lane old ticket (do not cross households)</a></li>
+            <li><a href="jiedao-share.html">Back-yard share: this desk does not award property</a></li>
+          </ul>
+        </td>
+        <td>
+          <h3>Upload desk</h3>
+          <p id="upcount">Empty tickets bounce at the hour. Issue needs at least three fields.</p>
+          <div id="trays"></div>
+          <p>
+            <button type="button" id="issue">Suggest huifang script and issue</button>
+          </p>
+          <h3>Huifang draft</h3>
+          <ol id="draft"></ol>
+        </td>
+      </tr>
+    </table>
+    <div class="memo">
+      <p><b>You Guang slip</b>  One extra card at a time. He writes lazy. You make do.</p>
+      <p><button type="button" id="hint-btn">Turn one</button></p>
+      <p id="hint-1" hidden>Do not rush the dispatch title up. Put the hukou next to the red paper first.</p>
+      <p id="hint-2" hidden>One field keeps one version. A person missing from the hukou book can still be written on the red paper.</p>
+      <p id="hint-3" hidden>Suqiu is not on the public board. She stuffed the words into the grid mailbox. The daughter’s page only opens if the letter points at it.</p>
+      <p id="hint-4" hidden>Three fields before you can issue. Write Xiaoman as heir and also write never inbound, and the script will fight itself.</p>
+    </div>
+  </div>
+  <script src="js/state.js"></script>
+  <script>
+    HY.visit("desk", 0);
+    HY.bindPicks();
+    HY.renderDesk();
+    HY.showHints();
+    document.getElementById("hint-btn").onclick = function () { HY.nextHint(); };
+    document.addEventListener("hy-extract", function () { HY.renderDesk(); });
+  </script>
+</body>
+</html>

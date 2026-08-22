@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catalog return · as printed</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>Return　as printed</strong>
+      <div>
+        <a class="ghost-btn" href="card.html">Change card</a>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>Day-shift preview: follow the window original</h2>
+      <p id="why"></p>
+      <p>The recommendation window took it. What it took is “keep what was printed.” Tomorrow East Zhao may still stand as late father Zhai Gong Hesheng. If someone from the grain depot comes to claim him, the fight is with service and the clan. A temp’s name does not print on this return — that is how Huo Mian ducks.</p>
+      <p>Wanxiang’s ballpoint is still in the drawer. She will yell on the board again. Yelling does not reach the return. The return already accepted the print or the shengwei fax.</p>
+    </div>
+    <p style="padding:12px 16px;font-size:13px"><a href="card.html">Reselect the six fields</a>　<a href="../forum/wanxiang.html">How she talks downstairs</a></p>
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    var f = PW.get("card") || {};
+    var how = f.proof === "fax"
+      ? "Governing source: you ticked the clan reserve fax. A reserve can enter the association’s shengwei window. It cannot set the funeral-row deceased field. You still made it governing."
+      : f.hui === "hesheng"
+        ? "Tablet name still follows the print: Zhai Hesheng. The deceased on the commission summary did not land in this field."
+        : "One of the six fields treated a window original as the basis. Day shift previews “keep what was printed.”";
+    document.getElementById("why").textContent = how;
+  </script>
+</body>
+</html>

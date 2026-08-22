@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk" data-seen="claim">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>认领建议单</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/patches.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>金罂堂夜班机</strong>
+      <div>
+        <a class="ghost-btn" href="hall.html">回册</a>
+        <form id="search-form" action="../search-results.html" method="get">
+          <input id="search-input" name="q" placeholder="再对一个字段">
+          <button type="submit">查档</button>
+        </form>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>认领建议</h2>
+      <p>权限：建议。裘晚秋收的是这张单，不是批准章。安放人栏已由到场家属报成林阿盛，夜班不能改这个姓名，只能选怎么处置两行冲突。</p>
+    </div>
+    <div class="oral claim-grid" id="formbox">
+      <p>到场人　林秋禾　工号　褚慈　日期　八月二十一日夜</p>
+      <p>请选一条提交。提交后值班机锁单，不能改口。</p>
+      <button type="button" data-end="west">建议认西厅〇七</button>
+      <button type="button" data-end="south">建议认南厅二二</button>
+      <button type="button" data-end="wait">今夜暂缓，不出厅号</button>
+      <button type="button" data-end="report">上报同名冲突，今夜不认</button>
+    </div>
+    <div class="endbox" id="endbox" hidden></div>
+    <p class="foot-desk">建议单存值班机本地　不传外网</p>
+  </div>
+  <script src="../js/seen.js"></script>
+  <script src="../js/keyword-search.js"></script>
+  <script>
+    (function () {
+      function seen() {
+        try { return JSON.parse(localStorage.getItem("jy_seen") || "{}"); }
+        catch (e) { return {}; }
+      }
+      function reason(key, s) {
+        if (key === "west") {
+          if (s.mv2018 || s.certW) return "你听秋禾先报了柿树坪，又看见西厅还挂着名，就把厅号写死了。迁出那一栏你要么没当回事，要么当它还算在租。";
+          return "秋禾一说九六年搬走，你就按西厅那行交了。吴晚香三个字还在她嘴里，你没拿去对承租人栏。";
+        }
+        if (key === "south") {
+          if (s.obit16 || s.certS) return "你把吴晚香对上了南厅承租人，生年一九五一，住址东巷。西厅那边即便还挂名，也不该写给今夜这个女儿。";
+          return "你选了南厅。册上那行是火化直入、在租，比西厅的挂名更像一份还能续的合同。";
+        }
+        if (key === "wait") {
+          if (s.obit16 && s.mv2018) return "字段你其实对得差不多了，可你不敢落厅号。预审点一过，南厅会进待清理，裘晚秋会记你迟交。";
+          return "两行都叫林阿盛，你选择今夜不写。秋禾在椅子上等不到字，预审会按弃权走。";
+        }
+        if (s.errata) return "你看见谱上曾经把两房合成一条，不敢替白天做主，把冲突推给裘晚秋。她会不痛快，可事故单不会先落到你工号。";
+        return "你承认这两行无法只按姓名闭合，请求白天接手。秋禾今夜拿不到厅号，须补母亲证件再来。";
+      }
+      function after(key) {
+        if (key === "west") return "天亮柏年那头会问西厅谁同意又认出去。合同按违约走，押金和事故单写褚慈。秋禾就算今晚高兴，也认错了房。金罂还在不在那格，抄件本来就说不清楚。";
+        if (key === "south") return "秋禾能拿这张建议去办吴晚香的续租授权。西厅那行仍挂着，等回执补齐再销。堂里柜子你没碰，这也是夜班权限的边。";
+        if (key === "wait") return "格号没写错，租期险了。待清理启动之后，再想认回要走白天的加急。方永石本子里写过：不敢写也是一种写。";
+        return "同名冲突进了主任匣。白班会对出生年和迁出，再约秋禾。你这班可以下班，椅子上的人要在县里再住一晚。";
+      }
+      function render(key) {
+        var s = seen();
+        var titles = { west: "建议已交　西厅〇七", south: "建议已交　南厅二二", wait: "建议已交　暂缓", report: "建议已交　上报同名" };
+        var box = document.getElementById("endbox");
+        box.hidden = false;
+        box.innerHTML = "<h3>" + titles[key] + "</h3><p>" + reason(key, s) + "</p><p>" + after(key) + "</p><p><a href=\"hall.html\">回格位册</a>　<a href=\"#\" id=\"again\">作废重开（仅本机）</a></p>";
+        document.getElementById("formbox").style.opacity = "0.45";
+        var a = document.getElementById("again");
+        if (a) a.onclick = function (e) {
+          e.preventDefault();
+          localStorage.removeItem("jy_end");
+          location.reload();
+        };
+      }
+      var saved = localStorage.getItem("jy_end");
+      if (saved) render(saved);
+      var buttons = document.querySelectorAll("#formbox button");
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener("click", function () {
+          if (localStorage.getItem("jy_end")) return;
+          var key = this.getAttribute("data-end");
+          localStorage.setItem("jy_end", key);
+          render(key);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

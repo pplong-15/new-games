@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-qzone-modules">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wanhe — guestbook</title>
+  <link rel="stylesheet" href="css/qzone-modules.css">
+  <link rel="stylesheet" href="css/pick.css">
+</head>
+<body>
+  <div id="gate">
+    <div class="topbar"><div class="topbar-inner"><span class="logo">Personal space</span></div></div>
+    <div class="banner">Owner set a visit question</div>
+    <div class="cols">
+      <div></div>
+      <div>
+        <div class="mod">
+          <h3>Won’t open</h3>
+          <div class="bd">
+            <p>Guestbook is locked. She only wrote the old address in her mother’s grid letter. Haven’t read the letter, don’t come on this wall.</p>
+            <p><a href="letter.html">Go read that letter</a>  <a href="desk.html">Back to desk</a></p>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </div>
+  </div>
+  <div id="space" hidden>
+    <div class="topbar">
+      <div class="topbar-inner">
+        <span class="logo">Personal space</span>
+        <a href="wanhe.html">Home</a>
+        <a href="wanhe-msg.html">Guestbook</a>
+        <a href="wanhe-photo.html">Album</a>
+        <a href="wanhe-mood.html">Posts</a>
+        <span class="extra"><a href="desk.html">Leave</a></span>
+      </div>
+    </div>
+    <div class="banner yard">Guestbook  stuck in August</div>
+    <div class="cols">
+      <div></div>
+      <div>
+        <div class="mod">
+          <h3>Guestbook</h3>
+          <div class="bd">
+            <div class="gb-li">
+              <div class="mini"></div>
+              <div class="txt"><span class="name">Xing (same class)</span> Still live over here. Saw the photo car turn in at the lane mouth.<div class="time">Aug 2 19:20</div></div>
+            </div>
+            <div class="gb-li">
+              <div class="mini"></div>
+              <div class="txt"><span class="name">Wanhe</span> Here. Don’t forward.<div class="time">Aug 2 19:31</div></div>
+            </div>
+            <div class="gb-li">
+              <div class="mini"></div>
+              <div class="txt"><span class="name">Xiao Lü (pharmacy)</span> Can you cover me tomorrow morning. If you moved just say so.<div class="time">Aug 4 21:05</div></div>
+            </div>
+            <div class="gb-li">
+              <div class="mini"></div>
+              <div class="txt"><span class="name">Wanhe</span> Didn’t move. Can’t cover. I have day shift too. Don’t put the address in the group.<div class="time">Aug 4 21:12</div></div>
+            </div>
+            <div class="gb-li">
+              <div class="mini"></div>
+              <div class="txt"><span class="name">Xing (same class)</span> Ok. I’ll pretend I didn’t see the car.<div class="time">Aug 4 21:18</div></div>
+            </div>
+            <p>Wall stops here. She did not write “here” as hukou language. Classmates’ words are not authorized to the street. Early August someone still asked if she lives there. She answered in two words. Whether the subsidy later passed, this wall has no such line.</p>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </div>
+    <p class="site-foot">Guestbook stopped  Visitors close it themselves</p>
+  </div>
+  <script src="js/state.js"></script>
+  <script>
+    var s = HY.visit("wanhe-msg", 1);
+    if (!s.wanhe) {
+      document.getElementById("gate").hidden = false;
+    } else {
+      document.getElementById("space").hidden = false;
+    }
+  </script>
+</body>
+</html>

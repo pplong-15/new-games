@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>寒食旧单柜门</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<div id="wrap">
+  <header><strong>去年那张</strong><div><a class="ghost-btn" href="desk.html">回柜</a></div></header>
+  <div class="notice">
+    <h2>寒食旧单</h2>
+    <p id="mini" class="sm-mini"></p>
+    <p>纪南楼只写现场有灰。码头像集体号，他不写是谁的手。这户是暗处，不挡今夜备注。不开也能交正确的四栏。</p>
+    <p>旧俗禁火和墙上禁烧令能对照。拿旧诏写鬼，档室不收。</p>
+    <p><button type="button" class="sm-btn" id="opbtn">揭去年封皮（算一户）</button></p>
+    <div id="fullbox" class="closed-box" style="display:none">
+      <p>去年封皮揭不下来。名额没了。暗处那句今晚写不上板。</p>
+      <p><a href="desk.html">先把本班交掉</a></p>
+    </div>
+    <div id="openbox" style="display:none">
+      <p class="sm-ok">封皮揭了。旧单、对照稿、县志摘在。</p>
+      <img src="img/old-ticket.jpg" alt="旧纸" class="doc-img">
+      <p>灰旁有纸箱角。像配送留下的。他仍只写现场有灰。</p>
+      <p><a href="han-fa.html">旧单</a>　<a href="han-li.html">对照</a>　<a href="han-zhi.html">摘抄</a></p>
+    </div>
+    <p>旧档铁盒　锈味</p>
+  </div>
+</div>
+
+<script src="js/sanmen.js"></script>
+<script>
+
+(function(){
+  var id="han";
+  function show(){
+    Sanmen.paintMini(document.getElementById("mini"));
+    var opened=Sanmen.isOpen(id);
+    document.getElementById("openbox").style.display=opened?"block":"none";
+    document.getElementById("fullbox").style.display="none";
+  }
+  document.getElementById("opbtn").addEventListener("click",function(){
+    var r=Sanmen.openDoor(id);
+    if(!r.ok){ document.getElementById("fullbox").style.display="block"; }
+    show();
+  });
+  show();
+})();
+
+</script>
+</body>
+</html>

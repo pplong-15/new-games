@@ -1,0 +1,4 @@
+.DS_Store
+**/chrome-profile-*/
+**/playtest_run/
+__pycache__/

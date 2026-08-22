@@ -1,0 +1,116 @@
+/* 本局补丁：不改皮肤骨架。补滚动、时间轴条、标注格、窄屏。 */
+html.skin-win7-aero body {
+  overflow: auto;
+}
+html.skin-win7-aero .desk {
+  position: relative;
+  min-height: calc(100vh - 40px);
+  padding-bottom: 48px;
+}
+html.skin-win7-aero .window {
+  width: min(860px, 94%);
+  margin: 12px auto 48px;
+}
+html.skin-win7-aero .body {
+  overflow: auto;
+}
+html.skin-win7-aero .taskbar {
+  position: fixed;
+}
+html.skin-win7-aero a.icon {
+  text-decoration: none;
+  color: #fff;
+}
+html.skin-win7-aero .tiny {
+  font-size: 12px;
+  margin: 0 0 8px;
+}
+html.skin-win7-aero .tiny a {
+  margin-right: 8px;
+}
+html.skin-win7-aero .tl {
+  margin: 8px 0 12px;
+  overflow: hidden;
+}
+html.skin-win7-aero .tl a {
+  float: left;
+  margin: 0 3px 3px 0;
+  padding: 10px 6px;
+  background: #5a8;
+  color: #fff;
+  text-decoration: none;
+  font-size: 11px;
+  border: 1px solid #3a6;
+}
+html.skin-win7-aero .tl a.dim {
+  background: #8a8;
+}
+html.skin-win7-aero .tx {
+  background: #111;
+  color: #cfc;
+  font: 13px/1.7 Consolas, "Microsoft YaHei", monospace;
+  padding: 10px 12px;
+  border: 1px solid #333;
+  margin: 8px 0;
+}
+html.skin-win7-aero .tx b {
+  color: #eea;
+  font-weight: 400;
+}
+html.skin-win7-aero .mood {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  display: block;
+  margin: 0 0 10px;
+}
+html.skin-win7-aero label {
+  display: block;
+  margin: 8px 0 4px;
+}
+html.skin-win7-aero select,
+html.skin-win7-aero button {
+  margin: 4px 8px 8px 0;
+  padding: 4px 8px;
+}
+html.skin-win7-aero .endbox {
+  border: 1px solid #bbb;
+  background: #fafafa;
+  padding: 10px 12px;
+  margin-top: 12px;
+}
+html.skin-archive-simsun img.mood,
+html.skin-gov-redbar img.mood,
+html.skin-news-portal-163 img.mood,
+html.skin-corp-table-2005 img.mood,
+html.skin-classified-yellow img.mood,
+html.skin-shop-local-2010s img.mood,
+html.skin-blog-personal-2008 img.mood,
+html.skin-mail-web-2010 img.mood {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  display: block;
+  margin: 8px 0;
+}
+html.skin-forbidden .back {
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+  color: #fcc;
+}
+
+@media (max-width: 720px) {
+  html.skin-win7-aero .window { width: 96%; }
+  html.skin-gov-redbar .wrap,
+  html.skin-news-portal-163 .wrap,
+  html.skin-news-portal-163 .top-inner,
+  html.skin-news-portal-163 .nav-inner,
+  html.skin-news-portal-163 .site-foot,
+  html.skin-corp-table-2005 table.site { width: auto; max-width: 100%; }
+  html.skin-news-portal-163 .main,
+  html.skin-news-portal-163 .side { float: none; width: auto; }
+  html.skin-classified-yellow .layout nav,
+  html.skin-classified-yellow .layout .list { display: block; width: auto; }
+  html.skin-mail-web-2010 .panes { display: block; }
+}

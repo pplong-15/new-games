@@ -1,0 +1,42 @@
+/* mail-web-2010：网页邮箱三栏。失物电脑用。 */
+html.skin-mail-web-2010 body {
+  margin: 0;
+  background: #eef2f5;
+  color: #333;
+  font: 12px/1.5 Tahoma, "Microsoft YaHei", sans-serif;
+}
+html.skin-mail-web-2010 .top {
+  background: #2b6cb0;
+  color: #fff;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 12px;
+}
+html.skin-mail-web-2010 .top a { color: #fff; float: right; }
+html.skin-mail-web-2010 .panes {
+  display: grid;
+  grid-template-columns: 160px 240px 1fr;
+  height: calc(100vh - 36px);
+}
+html.skin-mail-web-2010 .folders {
+  background: #f7f9fb;
+  border-right: 1px solid #c5d0da;
+  padding: 8px 0;
+}
+html.skin-mail-web-2010 .folders a {
+  display: block;
+  padding: 6px 12px;
+  color: #06c;
+  text-decoration: none;
+}
+html.skin-mail-web-2010 .folders a.on { background: #dce8f5; font-weight: 700; }
+html.skin-mail-web-2010 .mails { background: #fff; border-right: 1px solid #c5d0da; }
+html.skin-mail-web-2010 .m {
+  padding: 8px 10px;
+  border-bottom: 1px solid #eee;
+  cursor: default;
+}
+html.skin-mail-web-2010 .unread { font-weight: 700; background: #f3f8ff; }
+html.skin-mail-web-2010 .read { background: #fff; padding: 16px; }
+html.skin-mail-web-2010 .read h3 { margin: 0 0 8px; font-size: 16px; }
+html.skin-mail-web-2010 .meta { color: #888; margin-bottom: 16px; }

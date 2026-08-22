@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-corp-table-2005">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grain-depot union sign-in blank</title>
+  <link rel="stylesheet" href="css/corp-table-2005.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<table class="site" cellspacing="0" cellpadding="0">
+  <tr><td colspan="2" class="banner">Grain-depot union sign-in blank</td></tr>
+  <tr><td colspan="2" class="nav"><a href="desk.html">Back to desk</a></td></tr>
+  <tr>
+    <td class="left"><h4>Qingming</h4><p>South steps</p><p>Blanks</p></td>
+    <td class="main"><p id="mini" class="sm-mini"></p>
+<div id="shut" class="closed-box"><p>Blank sheet is in the attendance folder. This shift has not pulled it.</p><p><a href="desk.html">Back to desk</a></p></div>
+<div id="live" style="display:none">
+<p class="scroll">Headcount not complete. Miao Shiqiao has chased twice.</p>
+<p>Qingming day, south steps want twelve signed in. Seven written as present. Empty boxes he marks as absence.</p>
+<p>Header prints martyrs' terrace collective sweep. No Plot 12 grave number in the sheet. If someone goes to the north slope that day, this sheet stays empty.</p>
+<p><button type="button" class="sm-btn" id="vbtn">Verify: Qingming day needs people in two places</button></p>
+<p id="vok" class="sm-ok" style="display:none">Second layer stayed. Still no number change.</p>
+<p id="vbad" class="sm-warn" style="display:none">Leave a sentence about the private grave or the collective code first. Then this box reads.</p>
+<p><a href="kao-tong.html">Chase letter</a>　<a href="door-kao.html">Back to the door</a></p>
+</div>
+</td>
+  </tr>
+  <tr><td colspan="2" class="ft">Union desk, old sheet · dummy stamp</td></tr>
+</table>
+
+<section class="pad"><p>The blank is an oilprint grid. Seven ticks in pencil. Five empties in red circles. Header collective sweep is printed dead. The words Plot 12 do not appear on this paper. Someone goes to the north slope on Qingming and this sheet stays empty. Miao Shiqiao marks absence. Before you verify the second layer you have to know south steps and a private grave are not one plot. Marked boxes are not a wave-through.</p></section>
+<script src="js/sanmen.js"></script>
+<script>
+Sanmen.paintMini(document.getElementById('mini'));
+Sanmen.gate('kao','shut','live');
+Sanmen.bindVerify(document.getElementById('vbtn'),'same-day',document.getElementById('vok'),document.getElementById('vbad'));
+
+</script>
+</body>
+</html>

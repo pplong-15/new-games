@@ -1,0 +1,84 @@
+/* service-cyan-desk：浅青咨询台。登山福安饭层的对标。不要再出现橙色餐馆导航。 */
+html.skin-service-cyan-desk {
+  --page: #e0f7fa;
+  --card: #fff;
+  --title: #26c5e9;
+  --link: #337ab7;
+  --btn: #007bff;
+}
+html.skin-service-cyan-desk body {
+  margin: 0;
+  background: var(--page);
+  color: #333;
+  font: 14px/1.6 "Microsoft YaHei", sans-serif;
+}
+html.skin-service-cyan-desk #wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  background: var(--card);
+  min-height: 100vh;
+}
+html.skin-service-cyan-desk header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  border-bottom: 1px solid #e0eaf1;
+}
+html.skin-service-cyan-desk #search-form { display: inline-flex; margin-left: 12px; }
+html.skin-service-cyan-desk #search-input {
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+}
+html.skin-service-cyan-desk #search-form button {
+  border: 0;
+  background: #d15c20;
+  color: #fff;
+  padding: 6px 12px;
+}
+html.skin-service-cyan-desk .ghost-btn {
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 13px;
+}
+html.skin-service-cyan-desk .notice {
+  width: 80%;
+  margin: 20px auto;
+  background: #f0f8ff;
+  border: 1px solid #e0eaf1;
+  padding: 16px;
+}
+html.skin-service-cyan-desk .notice h2 { color: var(--title); text-align: center; margin: 0 0 8px; }
+html.skin-service-cyan-desk .tabs { display: flex; justify-content: center; gap: 10px; margin: 12px 0; }
+html.skin-service-cyan-desk .tabs a {
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 24px;
+  border-radius: 4px;
+}
+html.skin-service-cyan-desk table { width: 80%; margin: 20px auto; border-collapse: collapse; }
+html.skin-service-cyan-desk td, html.skin-service-cyan-desk th {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 10px 0;
+  text-align: left;
+}
+html.skin-service-cyan-desk a { color: var(--link); }
+html.skin-service-cyan-desk .login-box {
+  width: 360px;
+  margin: 40px auto;
+  border: 1px solid #ccc;
+  padding: 24px;
+  background: #fff;
+}
+html.skin-service-cyan-desk button[type="submit"] {
+  background: var(--btn);
+  color: #fff;
+  border: 0;
+  padding: 10px 18px;
+}
+html.skin-service-cyan-desk .post { border-bottom: 1px solid #eee; padding: 10px 0; }
+html.skin-service-cyan-desk .post-info span { color: var(--btn); font-weight: 700; }

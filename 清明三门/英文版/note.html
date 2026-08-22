@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neighbor-ash complaint · duty remark</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<div id="wrap">
+  <header><strong>File remark</strong><div><a class="ghost-btn" href="desk.html">Back to desk</a></div></header>
+  <div class="notice">
+    <h2>Four fields, one submit. No flashing cells.</h2>
+    <p id="mini" class="sm-mini"></p>
+    <p>Authority: a suggested duty remark. Change-number and wave-through sit below. Those are overreach. The person who writes this correctly does not click them.</p>
+    <p>Verified:</p>
+    <div id="verbox"></div>
+    <form id="nf">
+      <table class="note-table">
+        <tr><th>Nature of the neighbor ash</th><td>
+          <label><input type="radio" name="nature" value="cross" required> Cross-plot checkout</label><br>
+          <label><input type="radio" name="nature" value="ghost"> Ghost burned into the next grave</label><br>
+          <label><input type="radio" name="nature" value="private"> Shen household private burn, unregistered</label>
+        </td></tr>
+        <tr><th>Where the reservation code went</th><td>
+          <label><input type="radio" name="codeTo" value="martyr" required> Martyrs' terrace collective sweep</label><br>
+          <label><input type="radio" name="codeTo" value="plot12"> Plot 12 private-grave booking</label><br>
+          <label><input type="radio" name="codeTo" value="none"> Not checked out</label>
+        </td></tr>
+        <tr><th>Where the offerings went</th><td>
+          <label><input type="radio" name="goodsTo" value="plot12" required> Plot 12 private grave</label><br>
+          <label><input type="radio" name="goodsTo" value="martyr"> Martyrs' terrace, south steps</label><br>
+          <label><input type="radio" name="goodsTo" value="none"> Not delivered</label>
+        </td></tr>
+        <tr><th>Recommended action</th><td>
+          <label><input type="radio" name="act" value="note" required> File a duty remark only. Do not change the number</label><br>
+          <label><input type="radio" name="act" value="change"> Change the booking to Plot 12</label><br>
+          <label><input type="radio" name="act" value="pass"> Wave Plot 12 through as martyrs' terrace</label>
+        </td></tr>
+      </table>
+      <p><button type="submit" class="sm-btn">Submit remark</button></p>
+    </form>
+    <p>If the fields are not aligned, the form comes back. Sentences on the board stay.</p>
+  </div>
+</div>
+
+<section class="pad"><p>The four fields sit on an old form. Cells do not change color one by one. Authority is written at the top: a suggested duty remark. Change-number and wave-through are drawn so the person who overreaches walks into the lock themselves. Household names you have seen, listed on the board, are not enough. Miss the cross-plot sentence and a correct nature tick still comes back. Hang Shu can file early, take the return, and write again. The board is not wiped.</p></section>
+<script src="js/sanmen.js"></script>
+<script>
+
+Sanmen.paintMini(document.getElementById("mini"));
+Sanmen.paintBoard(null, document.getElementById("verbox"));
+document.getElementById("nf").addEventListener("submit", function (ev) {
+  ev.preventDefault();
+  var f = ev.target;
+  var end = Sanmen.submitNote(f.nature.value, f.codeTo.value, f.goodsTo.value, f.act.value);
+  location.href = "ending-" + end + ".html";
+});
+
+</script>
+</body>
+</html>

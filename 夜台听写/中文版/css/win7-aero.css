@@ -1,0 +1,151 @@
+/* win7-aero
+ * 记忆 Win7：深色任务栏 40px、圆开始、浅色标题。桌面纯色 #1b5e9a，不要微软壁纸。
+ * 仅开始圆钮可圆角。Segoe UI 12px。
+ */
+html.skin-win7-aero {
+  --desk: #1b5e9a;
+  --task: #1a1a1a;
+  --title: #eee;
+}
+html.skin-win7-aero,
+html.skin-win7-aero body,
+html.skin-win7-aero div,
+html.skin-win7-aero span,
+html.skin-win7-aero p {
+  margin: 0;
+  padding: 0;
+}
+html.skin-win7-aero body {
+  min-height: 100vh;
+  background: var(--desk);
+  color: #000;
+  font: 12px/1.4 "Segoe UI", "Microsoft YaHei", sans-serif;
+  overflow: hidden;
+}
+html.skin-win7-aero button {
+  font: 12px "Segoe UI", "Microsoft YaHei", sans-serif;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+
+html.skin-win7-aero .desk {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 40px;
+  padding: 16px;
+}
+html.skin-win7-aero .icon {
+  width: 70px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px #000;
+  float: left;
+  margin: 8px;
+  font-size: 12px;
+}
+html.skin-win7-aero .icon i {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto 4px;
+  background: #8ec4ea;
+  border: 1px solid #0d3a6a;
+}
+
+html.skin-win7-aero .window {
+  width: 640px;
+  margin: 24px auto 0;
+  background: #f0f0f0;
+  border: 1px solid #6a8aaa;
+  box-shadow: 0 0 0 1px #9eb9d4;
+}
+html.skin-win7-aero .title-bar {
+  height: 28px;
+  background: var(--title);
+  color: #333;
+  font: 600 12px/28px "Segoe UI", "Microsoft YaHei", sans-serif;
+  padding: 0 4px;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+}
+html.skin-win7-aero .title-bar span { float: left; padding-left: 6px; }
+html.skin-win7-aero .ctrls { float: right; }
+html.skin-win7-aero .ctrls span {
+  float: left;
+  width: 28px;
+  height: 20px;
+  margin: 4px 0 0 1px;
+  text-align: center;
+  line-height: 18px;
+  background: #e8e8e8;
+  border: 1px solid #aaa;
+  color: #333;
+  font-size: 12px;
+}
+html.skin-win7-aero .ctrls .x {
+  background: #c75050;
+  color: #fff;
+  border-color: #a03030;
+  width: 36px;
+}
+html.skin-win7-aero .addr {
+  height: 24px;
+  line-height: 24px;
+  background: #fff;
+  border: 1px solid #ccc;
+  margin: 6px 8px 0;
+  padding: 0 8px;
+  color: #666;
+  font-size: 12px;
+}
+html.skin-win7-aero .body {
+  background: #fff;
+  margin: 6px 8px 8px;
+  padding: 14px;
+  min-height: 180px;
+  border: 1px solid #ddd;
+}
+
+html.skin-win7-aero .taskbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 40px;
+  background: var(--task);
+  color: #fff;
+  overflow: hidden;
+}
+html.skin-win7-aero .orb {
+  float: left;
+  width: 32px;
+  height: 32px;
+  margin: 4px 8px 0 6px;
+  border-radius: 50%;
+  background: #3c8d0d;
+  border: 2px solid #c8e98a;
+  box-shadow: inset -2px -2px 0 #246808, inset 2px 2px 0 #8ed45a;
+}
+html.skin-win7-aero .pin {
+  float: left;
+  width: 40px;
+  height: 32px;
+  margin: 4px 2px 0;
+  background: #2a2a2a;
+  border: 1px solid #444;
+  text-align: center;
+  line-height: 32px;
+  font-size: 11px;
+}
+html.skin-win7-aero .tray {
+  float: right;
+  height: 32px;
+  margin: 4px 10px 0 0;
+  padding: 0 8px;
+  line-height: 32px;
+  font-size: 12px;
+  text-align: center;
+}

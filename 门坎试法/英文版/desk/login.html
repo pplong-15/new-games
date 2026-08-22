@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Night-duty login</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/desk-extra.css">
+</head>
+<body class="login-page">
+  <div id="wrap">
+    <header>
+      <strong>Tongshi Alley night duty</strong>
+      <div><a class="ghost-btn" href="../introduction.html">Doorframe words</a></div>
+    </header>
+    <form class="login-box" id="lg">
+      <h1>Night-duty login</h1>
+      <label for="user">Staff id</label>
+      <input id="user" name="user" type="text" autocomplete="off">
+      <button type="submit">Enter desk</button>
+      <p class="hint" id="err">The staff id is on the inner doorframe of the duty room. Do not guess it on this page.</p>
+      <p><a href="#" id="fill">Use the one on the doorframe</a></p>
+    </form>
+
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    document.getElementById("fill").onclick = function (e) {
+      e.preventDefault();
+      document.getElementById("user").value = "Chai-0821";
+    };
+    document.getElementById("lg").onsubmit = function (e) {
+      e.preventDefault();
+      var v = document.getElementById("user").value.replace(/\s/g, "");
+      if (v === "Chai-0821") { MK.mark("token-in"); location.href = "home.html"; }
+      else { document.getElementById("err").textContent = "The staff id is on the inner doorframe."; }
+    };
+</script>
+<p class="hint">Que He left in a hurry. No extra password. Inner doorframe line rubbed shiny with oil. After Chai, a dash and four digits. Wrong and you stay on this white card. Desk rule still invisible. Seen the rule first. Then talk trial entry.</p>
+<p class="hint">On the desk, board first. Don't write the recommendation first. Form opens anytime. Open early, it bounces. Bounce, then go trial — verified does not clear. Yellow strip beats your memory.</p>
+</body>
+</html>

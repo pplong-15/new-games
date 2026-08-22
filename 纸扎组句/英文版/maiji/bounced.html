@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mai · Overreach Returned</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>Return · bounced</strong>
+      <div>
+        <a class="ghost-btn" href="desk.html">Desk</a>
+        <a class="ghost-btn" href="shift.html">Auth</a>
+        <form id="search-form" action="#" method="get" style="display:inline">
+          <input id="search-input" name="q" placeholder="Look up a slip…">
+          <button type="submit">Find</button>
+        </form>
+      </div>
+    </header>
+    
+    <div class="notice">
+      <h2>This line is not taken</h2>
+      <p>The bounce slip has no kindness on it. Mai Lao wrote method-teaching and approve-burn as the same overreach, so a night helper would not think the two could be talked apart. Talked apart, still not taken.</p>
+      <p id="why"></p>
+      <p>Approving tonight's burn, or attaching paper-craft steps, is not in the entrusted scope. A night helper has no burn right, and no right to teach. Mai Lao nailed those two columns shut. Check them and it bounces.</p>
+      <p>The original stack still sits at the waiting-burn edge. The furnace mouth does not open because you checked a box. Jing Qiubai does not receive an approve-burn. Shao Pu does not receive a method. Window-close. One line not on the books.</p>
+      <p>To file, you can only go back to the recommend column. An incident can be written. An approval slip cannot.</p>
+      <p>The bounce will sit under the counter light all night. If Mai Lao sees approve-burn checked tomorrow morning, he will dock pay on last year's painted-over notice. Docking pay does not change the site. The site is still cold.</p>
+      <p><a href="shift.html">Read permission again</a> · <a href="sentence.html">Change authority and file again</a></p>
+    </div>
+
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    ZJ.bootPage("end-bounced");
+    var f = ZJ.endingWhy();
+    var el = document.getElementById("why");
+    if (el) el.textContent = f.auth === "teach" ? "You checked Attach paper-craft steps." : "You checked Approve tonight's burn.";
+</script>
+</body>
+</html>

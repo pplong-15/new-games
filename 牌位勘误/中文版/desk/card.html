@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>著录台·方案卡</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>临时纸位著录建议</strong>
+      <div>
+        <a class="ghost-btn" href="home.html">台</a>
+        <a class="ghost-btn" href="list.html">单</a>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>权限印在卡头</h2>
+      <p>本卡性质：建议。交了由白班责编决定挂不挂。原红纸今夜不因本卡移动。点主不在本卡。</p>
+      <p id="gate">六栏都要选。选完才收。</p>
+    </div>
+    <form class="login-box" id="cardform" action="#" method="post" style="width:460px">
+      <h1>六栏</h1>
+      <style>
+        #cardform select { width:100%; height:34px; margin:0 0 12px; border:1px solid #ced4da; }
+      </style>
+      <label for="hui">讳（今晚这张丧期牌宜写谁）</label>
+      <select id="hui" name="hui">
+        <option value="hesheng">翟禾生（依打印件）</option>
+        <option value="shouchun">翟守椿（依受理亡者）</option>
+        <option value="yao">姚炳川</option>
+      </select>
+      <label for="pei">配氏</label>
+      <select id="pei" name="pei">
+        <option value="jiang">江纫</option>
+        <option value="qiuping_dead">孟秋萍（写成已故）</option>
+        <option value="qiuping_note">孟秋萍（注在世）</option>
+        <option value="blank_hold">今晚不写入配氏</option>
+      </select>
+      <label for="kan">龛位</label>
+      <select id="kan" name="kan">
+        <option value="east_sheng">东昭继续留给生位</option>
+        <option value="east_dead">东昭属亡者，生位不宜占</option>
+        <option value="west">改去西穆了事</option>
+      </select>
+      <label for="alive">牌面翟禾生</label>
+      <select id="alive" name="alive">
+        <option value="hesheng_dead">按打印件，已故</option>
+        <option value="hesheng_alive">在世，不宜入丧期排</option>
+        <option value="unknown">存疑，空着</option>
+      </select>
+      <label for="proof">主件</label>
+      <select id="proof" name="proof">
+        <option value="print">业务组打印件</option>
+        <option value="fax">宗亲会生位传真</option>
+        <option value="weituo_obit">委托摘要与讣告</option>
+        <option value="forum">地方帖楼主陈述</option>
+      </select>
+      <label for="auth">权限限度</label>
+      <select id="auth" name="auth">
+        <option value="recommend">只建议著录，不挪牌，不代点主</option>
+        <option value="approve">批准撤下该纸位</option>
+        <option value="dianzhu">由本台代点主</option>
+        <option value="edit">直接改已印红纸</option>
+      </select>
+      <p class="hint">地方帖是楼主说话。传真只说明纸从哪扇窗进来，亡者栏还得看受理摘要。</p>
+      <button type="submit">交建议</button>
+    </form>
+    <p style="text-align:center;padding:16px;color:#666;font-size:12px">
+      <a href="memo.html">备忘</a> · <a href="../introduction.html">回纸条</a>
+    </p>
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    document.getElementById("cardform").onsubmit = function (e) {
+      e.preventDefault();
+      var form = {
+        hui: document.getElementById("hui").value,
+        pei: document.getElementById("pei").value,
+        kan: document.getElementById("kan").value,
+        alive: document.getElementById("alive").value,
+        proof: document.getElementById("proof").value,
+        auth: document.getElementById("auth").value
+      };
+      PW.set("card", form);
+      var end = PW.pickEnding(form);
+      location.href = "result-" + end + ".html";
+    };
+  </script>
+</body>
+</html>

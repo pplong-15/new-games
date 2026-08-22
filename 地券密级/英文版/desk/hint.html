@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Qu Wantang slips</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/game-extra.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>Slip clip</strong>
+      <a class="ghost-btn" href="home.html">Back to desk</a>
+    </header>
+    <div class="notice">
+      <h2>One slip at a time</h2>
+      <p id="dq-hint-body">No slip turned yet. One more each time.</p>
+      <p><button type="button" class="dq-go" id="dq-hint-btn">Turn the next slip</button></p>
+      <p>The slips point. They do not tick boxes for you, and they do not copy passwords here. Passwords are in the book and in mail. If four slips still do not get you filling, go back and line up qianzhu and sizhi on the public and internal layers, then decide whether to open the restricted cabinet.</p>
+    </div>
+  </div>
+  <script src="../js/state.js"></script>
+  <script>
+    document.getElementById("dq-hint-body").textContent = DQ.hintText();
+    document.getElementById("dq-hint-btn").onclick = function () {
+      document.getElementById("dq-hint-body").textContent = DQ.hintNext();
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-archive-simsun">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Remark returned</title>
+  <link rel="stylesheet" href="css/archive-simsun.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<article class="record">
+  <h1>Tiao Wan threw the form back</h1>
+  <div class="meta"><span>Returned</span><span>Lore field</span></div>
+  <p id="why"></p>
+  <p>Nature written as ghost burned into the next grave. Garden affairs already posted: lore does not close a case. He did not bother with the second field.</p>
+  <p>If Shen Bai sees this sheet, he will say this garden only tells ghost stories. The ash is still on the ditch.</p>
+  <p><a href="note.html">Pull it back. Fill again</a>　<a href="introduction.html" id="again">Open another night</a></p>
+  <p><span class="stamp">Returned</span></p>
+</article>
+
+<section class="pad"><p>The returned form gets a garden-affairs copy clipped to it. Lore does not close a case — that line circled in red. If Hang Shu verified the idle-chat thread, the circle is heavier. Shen Bai does not want a ghost. He does not want a Shen private burn either. Ash still on the ditch. The remark is as good as unwritten. Pull back and refill does not wipe the board. Open another night does.</p></section>
+<script src="js/sanmen.js"></script>
+<script>
+
+var t="You ticked ghost in the nature field.";
+if(Sanmen.hasV("lore-ghost")) t+=" You verified the lore thread. That sentence cannot close the case.";
+else t+=" Even if you never opened the lore page, ticking ghost returns the same way.";
+document.getElementById("why").textContent=t;
+document.getElementById("again").addEventListener("click",function(){ Sanmen.reset(); });
+
+</script>
+</body>
+</html>

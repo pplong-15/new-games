@@ -1,0 +1,45 @@
+Classmates Online — play notes (web-archive investigation, multi-page campus SNS shell)
+
+[Entry]
+工程/index.html
+
+Start a local http server in the 工程 folder. Do not use file://.
+macOS / Linux example (run inside 工程):
+
+  python3 -m http.server 8000
+
+Then open: http://127.0.0.1:8000/
+
+On Windows use the same command, or `py -m http.server 8000`.
+
+Under file://, cross-page search and localStorage saves drop or collide. This is not optional.
+
+You can also open 上线版/index.html (still serve 工程 over http, then follow the relative jump, or just use port 8000 above).
+
+[Main loop]
+Read a page → pull one token → top-bar search → a hidden source opens.
+First word: PaperHorse (on the notes page and in the home feed).
+App Center is a fake door. It is paused. It is not a stage. You must serve 工程 with `python3 -m http.server`. Do not use file://.
+
+One token per search. No spaces. CamelCase as printed counts as one token.
+
+[Playtest]
+UNTESTED. This English edition passed source self-checks. It has not had a full browser blind playthrough.
+
+[Local server]
+Required. Multi-page HTML plus on-machine saves need http.
+
+[If stuck, search]
+Stuck at the start: PaperHorse.
+Stuck later: go back to a log, workshop page, or class rules you already opened and pull a proper name. One token per search.
+Empty login strings are not a master key. The permission page is not an answer. Go home and search again.
+Retired support in Help has four notes. The fourth still makes you search yourself.
+
+[Refresh]
+Saves live in this machine's localStorage under a key separate from the Chinese edition. With http, refresh should return to unlocked progress. The notes page can Continue or Clear save.
+
+[Window]
+Around 390px the top search should still be tappable. Desktop is more comfortable. Not claimed Mobile Friendly.
+
+[Fiction]
+Tongxi County, ButouReservoir, ShenjiPaper, Tongxi Voc-2, and every person here are fiction. Do not match them to real institutions, real missing persons, or living people. The through-line does not need outside search, F12, or real personal data. No license keys. No fake payments.

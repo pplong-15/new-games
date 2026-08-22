@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-archive-simsun">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cold Food Day old ticket</title>
+  <link rel="stylesheet" href="css/archive-simsun.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<article class="record">
+  <p id="mini" class="sm-mini"></p>
+  
+<div id="shut" class="closed-box">
+  <p>Old ticket still in the tin. Cover not lifted.</p>
+  <p><a href="desk.html">Back to desk. Open the door</a></p>
+</div>
+<div id="live" style="display:none">
+
+  <h1>On-site burn-ban register · last Cold Food Day</h1>
+  <div class="meta"><span>Handler: Ji Nanlou</span><span>Plot 12</span></div>
+  <img src="img/old-ticket.jpg" alt="Old ticket" class="doc-img">
+  <p>Ash on site. Someone reported the stamp looked like a collective number. I only write ash on site. Whose hand, the ticket does not write. A carton corner beside the ash, looks like delivery left it.</p>
+  <p>The wall already had a burn-ban notice then. Cold Food Day old custom, no fire — that is another set of words. I did not copy it onto the ticket.</p>
+  <p><button type="button" class="sm-btn" id="vbtn">Verify: last Cold Food Day, Plot 12 had a burn-ban ticket</button></p>
+  <p id="vok" class="sm-ok" style="display:none">The side line has one more sentence. It cannot enter tonight's correct fields.</p>
+  <p id="vbad" class="sm-warn" style="display:none"></p>
+  <p>The old ticket can prove the burn-ban notice was already there. It cannot name tonight.</p>
+  <p><a href="han-li.html">Two sets of words compared</a>　<a href="door-han.html">Back to the door</a></p>
+  <p><span class="stamp">Old</span></p>
+  
+</div>
+
+  <p>Fire-patrol copy · last year</p>
+</article>
+
+<section class="pad"><p>Ji Nanlou's writing looks ruled. Ash on site. Stamp looks like a collective number. Whose hand, not written. Carton corner, looks like delivery. Wall burn-ban, already there. Cold Food Day old custom, not copied onto the ticket. The old ticket can enter the side line. It cannot enter tonight's nature field. Hang Shu verifies it and Tiao Wan still only puts a stroke in the margin.</p></section>
+<script src="js/sanmen.js"></script>
+<script>
+Sanmen.paintMini(document.getElementById('mini'));
+Sanmen.gate('han','shut','live');
+Sanmen.bindVerify(document.getElementById('vbtn'),'old-ticket',document.getElementById('vok'),document.getElementById('vbad'));
+
+</script>
+</body>
+</html>

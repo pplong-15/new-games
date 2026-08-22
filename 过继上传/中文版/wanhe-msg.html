@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-qzone-modules">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>晚禾　留言墙</title>
+  <link rel="stylesheet" href="css/qzone-modules.css">
+  <link rel="stylesheet" href="css/pick.css">
+</head>
+<body>
+  <div id="gate">
+    <div class="topbar"><div class="topbar-inner"><span class="logo">个人空间</span></div></div>
+    <div class="banner">主人设置了访问问答</div>
+    <div class="cols">
+      <div></div>
+      <div>
+        <div class="mod">
+          <h3>打不开</h3>
+          <div class="bd">
+            <p>留言墙锁着。她只把旧址写在母亲那封网格信里。没读过信，别进这墙。</p>
+            <p><a href="letter.html">去读那封信</a>　<a href="desk.html">回台</a></p>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </div>
+  </div>
+  <div id="space" hidden>
+    <div class="topbar">
+      <div class="topbar-inner">
+        <span class="logo">个人空间</span>
+        <a href="wanhe.html">主页</a>
+        <a href="wanhe-msg.html">留言</a>
+        <a href="wanhe-photo.html">相册</a>
+        <a href="wanhe-mood.html">说说</a>
+        <span class="extra"><a href="desk.html">离开</a></span>
+      </div>
+    </div>
+    <div class="banner yard">留言墙　停在八月</div>
+    <div class="cols">
+      <div></div>
+      <div>
+        <div class="mod">
+          <h3>留言板</h3>
+          <div class="bd">
+            <div class="gb-li">
+              <div class="mini"></div>
+              <div class="txt"><span class="name">同班杏</span> 还住这边吗。看见拍照的车从巷口拐进去。<div class="time">8月2日 19:20</div></div>
+            </div>
+            <div class="gb-li">
+              <div class="mini"></div>
+              <div class="txt"><span class="name">晚禾</span> 在。别转发。<div class="time">8月2日 19:31</div></div>
+            </div>
+            <div class="gb-li">
+              <div class="mini"></div>
+              <div class="txt"><span class="name">药店小吕</span> 明早能不能顶我一班。你要是搬了就直说。<div class="time">8月4日 21:05</div></div>
+            </div>
+            <div class="gb-li">
+              <div class="mini"></div>
+              <div class="txt"><span class="name">晚禾</span> 没搬。顶不了，我自己也上白班。地址别发群。<div class="time">8月4日 21:12</div></div>
+            </div>
+            <div class="gb-li">
+              <div class="mini"></div>
+              <div class="txt"><span class="name">同班杏</span> 行。我当没看见车。<div class="time">8月4日 21:18</div></div>
+            </div>
+            <p>墙停在这里。她没把「在」写成户籍用语。同学的话也没授权给街道。八月初还有人问她住不住，她回了两个字。补贴后来批没批，留言墙没有那一条。</p>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </div>
+    <p class="site-foot">留言停更　访客请自己关</p>
+  </div>
+  <script src="js/state.js"></script>
+  <script>
+    var s = HY.visit("wanhe-msg", 1);
+    if (!s.wanhe) {
+      document.getElementById("gate").hidden = false;
+    } else {
+      document.getElementById("space").hidden = false;
+    }
+  </script>
+</body>
+</html>

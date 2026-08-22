@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-intro-manual">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>夜班抽屉纸　安浦档案</title>
+  <link rel="stylesheet" href="css/intro-manual.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+  <header class="intro-hero">
+    <div class="image-area"><img alt="" src="img/drawer.jpg"></div>
+    <h1>明早例会前把那张券的备注写完</h1>
+  </header>
+  <main>
+    <section>
+      <h2>你今晚是谁</h2>
+      <p>岑禾。安浦县档案馆数字化室夜班助理，入职第三个月。白班的人五点就走了。曲晚棠临走敲抽屉：公开层你自己点，内部用翟浦留下的那张，限制层她不建议夜班进。</p>
+      <p>文保所缪秋白下午把查阅申请丢到桌上。档号安档-地券-1983-047。所里明早要投五栏：时间、钱主、四至、中保、亡者。你没有核定权。原件不开柜。能交的只有查阅备注。</p>
+      <p>抽屉里有一张「见习-夜」，套里还夹着翟浦的内部牌。交接本摊在灯下，口令用透明胶贴着，别撕。本子边角她自己写过一句：祖父岑守山，南岭，一九八三年冬月下的葬。跟今晚的单子有没有关系，先别猜。东溪县志另有同名，村和年都不一样，别并成一个。</p>
+    </section>
+    <section>
+      <h2>先打开哪里</h2>
+      <p>信息公开网今晚不用登。目录里能直接点 047。内部要工号，限制要另一张密级牌。工号和口令都写在纸上、写在信里，检索框夜班是死的，别把字输进去碰运气。</p>
+      <p>值班邮箱也能开。账号在交接本第二页。曲晚棠若有话，会丢在收件箱，不会写在馆讯栏目。</p>
+      <p class="boot-actions">
+        <a class="enter-link" href="public/index.html">打开信息公开网</a>
+        <button type="button" class="ghost" id="wipe">清掉本机上次没交完的草稿</button>
+      </p>
+    </section>
+    <section>
+      <h2>卡住了</h2>
+      <p>数字化室有曲晚棠便笺，一次只多揭一张。前几张只指路，不替你勾。</p>
+      <p>县名、人名、券文都是编的。别拿去对真实墓地，也别学着写阴契。</p>
+    </section>
+  </main>
+  <script src="js/state.js"></script>
+  <script>
+    DQ.visit("intro");
+    document.getElementById("wipe").onclick = function () {
+      DQ.reset();
+      this.textContent = "草稿清了，从信息公开网重新进";
+    };
+  </script>
+</body>
+</html>

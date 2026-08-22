@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-intro-manual">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>盛麦·今夜字条</title>
+  <link rel="stylesheet" href="css/intro-manual.css">
+</head>
+<body>
+  <header class="intro-hero">
+    <div class="image-area"><img alt="" src="img/cover-yard.jpg"></div>
+    <h1>字条压在键盘边上</h1>
+  </header>
+  <main>
+    <section>
+      <h2>◯ 今夜</h2>
+      <p>我是盛麦。麦记扎作的夜班临工。不是麦家的人。麦老缺手，从巷口把我叫来对账。扎我不会，他也不指望我会扎。电话条挤在一起：五七前夜必须交一句事件著录。别写成批条。也别把做法写进去。</p>
+      <p>台面上那件先按邵庭的<a class="pick" data-w="童女" href="#">童女</a>记。井秋白下午嗓子就哑了，开口只要这一件到堆上。我还没去后院。娄石从焚化点丢来一张糊照片，说拍错了，让我自己看。</p>
+      <p>词要点进袋。下面那张空卡是今晚要交的一句。六格齐了才算一句，空着他不收。只填一格也不算。我先点条上那个词，袋里有了再走。</p>
+      <div class="bagbox" id="wordbag"></div>
+      <p id="bagflash"></p>
+      <p>空卡：（　）的（　）被（　）（　），今夜（　）。（　）。格子都要从袋里填，填齐了整句交。</p>
+    </section>
+    <section>
+      <h2>◯ 我还进得去的地方</h2>
+      <p>夜班台开着。后院堆就在门口。浦页那间文具店的门脸也能点。娄石把自己的相册丢过来了。井秋白转了几篇长文，催得密。县里那张分炉通知挂在文献摘。街坊楼有人翻旧账，不看也能写。</p>
+      <p class="boot-actions">
+        <a class="enter-link" href="maiji/desk.html">进夜班台</a>
+        <a class="ghost" href="maiji/yard.html">去后院堆</a>
+        <a class="ghost" href="pu/index.html">看浦页门脸</a>
+      </p>
+    </section>
+    <section>
+      <h2>◯ 别写成批条</h2>
+      <p>巷口风大。我把字条折进外套里，又展开，怕自己把截止看成明天。五七是他们的日子，我的日子只到窗关。窗关之后，麦老看一句，井秋白看一句，邵浦若看见写错，也会来问。三头都盯着同一张卡，我却只被雇到天亮。</p>
+      <p>麦老不接解释。权限表就一张：建议可以，准烧不行。句卡在台里。袋里有词再去填。桐溪的铺号、人名都是镇上叫法，别拿去外面对。</p>
+      <p><a href="#" id="tear">把这张字条撕了重来</a></p>
+    </section>
+  </main>
+  <script src="js/engine.js"></script>
+  <script>
+    ZJ.bootPage(null);
+    document.getElementById("tear").onclick = function (e) {
+      e.preventDefault();
+      ZJ.reset();
+      location.reload();
+    };
+  </script>
+</body>
+</html>

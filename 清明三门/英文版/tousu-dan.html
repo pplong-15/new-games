@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-archive-simsun">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neighbor-ash complaint</title>
+  <link rel="stylesheet" href="css/archive-simsun.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<article class="record">
+  <p id="mini" class="sm-mini"></p>
+  
+<div id="shut" class="closed-box">
+  <p>The complaint original is not on this shift's desk. The seal is still on the leftmost household.</p>
+  <p><a href="desk.html">Back to desk. Open the door</a></p>
+</div>
+<div id="live" style="display:none">
+
+  <h1>Complaint register · East Ridge Garden Night-404</h1>
+  <div class="meta"><span>Caller: Shen Bai</span><span>2026-04-04 20:00</span></div>
+  <img src="img/ash-soil.jpg" alt="Ash on the neighbor line" class="doc-img">
+  <p>Plot 12, grave 38 is my father Shen Laoshan. The stone was clean this afternoon. Someone called at night. Said the ash line had leaned toward grave 37. I came over. The ash is new. Paper edges still damp.</p>
+  <p>Shen household did not book a paper burn this year. Not our burn. This garden likes to say a ghost burned money into the next grave. I have heard it. I do not want the ash written onto my father.</p>
+  <p>Grave 37 is Gu. I do not know them. I only want the remark not to write a Shen private burn.</p>
+  <p>Clerk recorded: new ash on the neighbor line. Ash leaned toward the Gu grave. Complainant refuses to close the case with lore, and also said "if it's a ghost then it's a ghost." That second sentence is not a nature finding.</p>
+  <p><button type="button" class="sm-btn" id="vbtn">Verify: new ash on the neighbor line</button></p>
+  <p id="vok" class="sm-ok" style="display:none">The board has one more sentence. After handover this sentence stays.</p>
+  <p id="vbad" class="sm-warn" style="display:none"></p>
+  <p>This sheet can prove ash on the neighbor line tonight. Whose hand is not established by these sources. Something coming out of a grave is not established by these sources.</p>
+  <p><a href="tousu-buji.html">He wrote another letter later</a>　<a href="door-tousu.html">Back to this household door</a></p>
+  <p><span class="stamp">Night reg.</span></p>
+  
+</div>
+
+  <p>Records copy · complaint original not lent out</p>
+</article>
+
+<section class="pad"><p>Night-404 is Hang Shu's own number. Daytime window uses another set. Shen Bai reached the counter at 20:00. Paper edges still damp — the clerk wrote that slowly, afraid it would read as an eyewitness lighting. Complainant refuses to close the case with lore, and also said "if it's a ghost then it's a ghost." Two sentences side by side. The second is not a nature finding. Verify takes only new ash on the neighbor line. Whose hand this paper will not write.</p></section>
+<script src="js/sanmen.js"></script>
+<script>
+Sanmen.paintMini(document.getElementById('mini'));
+Sanmen.gate('tousu','shut','live');
+Sanmen.bindVerify(document.getElementById('vbtn'),'ash-neighbor',document.getElementById('vok'),document.getElementById('vbad'));
+
+</script>
+</body>
+</html>

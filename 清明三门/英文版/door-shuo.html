@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lore page · cabinet door</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<div id="wrap">
+  <header><strong>Idle chat, frozen</strong><div><a class="ghost-btn" href="desk.html">Back to desk</a></div></header>
+  <div class="notice">
+    <h2>Lore page</h2>
+    <p id="mini" class="sm-mini"></p>
+    <p>Someone at the alley mouth keeps bumping an old thread: a ghost burned paper money into the next grave. Garden affairs already wrote: does not close a case. Verify this sentence and it will interfere with the nature field. Tick ghost, form comes back.</p>
+    <p>The kiosk floor says they saw a delivery box. Floor mouths stacked together still cannot stand in for checkout.</p>
+    <p><button type="button" class="sm-btn" id="opbtn">Open the frozen thread (counts as one household)</button></p>
+    <div id="fullbox" class="closed-box" style="display:none">
+      <p>Thread will not open tonight. Three households used. Lore can talk. It still waits for handover.</p>
+      <p><a href="desk.html">Back to the counter</a></p>
+    </div>
+    <div id="openbox" style="display:none">
+      <p class="sm-ok">Thread open. Index and that floor are here. The garden-affairs item is linked too.</p>
+      <p>If the first shift spends a slot here, code and goods are still in the cabinet. Handover can still make up the rest. Write it into the nature field as ghost, and you cannot make that back.</p>
+      <p><a href="forum-index.html">Index</a>　<a href="shuo-gui.html">That floor</a>　<a href="gov-wen.html">Garden-affairs item</a></p>
+    </div>
+    <p>Idle-chat mirror · volunteer mod, frozen</p>
+  </div>
+</div>
+
+<script src="js/sanmen.js"></script>
+<script>
+
+(function(){
+  var id="shuo";
+  function show(){
+    Sanmen.paintMini(document.getElementById("mini"));
+    var opened=Sanmen.isOpen(id);
+    document.getElementById("openbox").style.display=opened?"block":"none";
+    document.getElementById("fullbox").style.display="none";
+  }
+  document.getElementById("opbtn").addEventListener("click",function(){
+    var r=Sanmen.openDoor(id);
+    if(!r.ok){ document.getElementById("fullbox").style.display="block"; }
+    show();
+  });
+  show();
+})();
+
+</script>
+</body>
+</html>

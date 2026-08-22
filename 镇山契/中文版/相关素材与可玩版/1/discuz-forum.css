@@ -1,0 +1,175 @@
+/* ==========================================================================
+   Discuz! 默认风格 · 论坛站覆盖层（追加在气质层 v5 之后，覆盖水木风）
+   配色来源：DiscuzX install_data.sql styleid=1 的 stylevars 真实默认值
+   ========================================================================== */
+
+/* 页面底：Discuz 默认白底（水木灰 #f2f2f2 → 白） */
+.forum-page{
+  background:#fff !important;
+  font-family:Tahoma,Helvetica,"SimSun","Songti SC",sans-serif !important;
+  color:#333 !important;
+}
+
+/* 顶部 logo 区：白底，标题黑字 */
+.forum-masthead{
+  background:#fff !important;
+  border-bottom:none !important;
+}
+.forum-title-row h1,.forum-logo{
+  color:#1a1a1a !important;
+  font-family:"SimSun","Songti SC",serif !important;
+  font-weight:700 !important;
+}
+.forum-title-row p{color:#666 !important}
+.forum-utility{
+  background:#fff !important;
+  color:#999 !important;
+  border-bottom:1px solid #eee !important;
+}
+.forum-utility a{color:#333 !important}
+
+/* 深蓝导航条 —— Discuz 最标志性元素：全宽 #2B7ACD + 白字 */
+.forum-primary-nav{
+  background:#2B7ACD !important;
+  border-bottom:2px solid #005AB4 !important;
+}
+.forum-primary-nav a,.forum-primary-nav span{
+  color:#fff !important;
+  font-size:14px !important;
+  border-right:1px solid #4a8dd2 !important;
+}
+.forum-primary-nav a:hover,.forum-primary-nav a[aria-current],
+.forum-primary-nav span[aria-current]{
+  background:#005AB4 !important;
+}
+
+/* 主体框架：白底 + 中性灰外框（Discuz wrapbordercolor #CCC） */
+.forum-frame{
+  background:#fff !important;
+  border:1px solid #ccc !important;
+}
+
+/* 面包屑：灰字深灰链接 */
+.forum-breadcrumb{
+  background:#fff !important;
+  color:#999 !important;
+  border-bottom:1px solid #eee !important;
+}
+.forum-breadcrumb a{color:#333 !important}
+
+/* 工具条 / 搜索行：浅灰 #F2F2F2 + #CDCDCD 边 */
+.forum-board-toolbar,.forum-search-row{
+  background:#f2f2f2 !important;
+  border-color:#cdcdcd !important;
+  color:#555 !important;
+}
+.forum-search-row input{
+  border:1px solid #e0e0e0 !important;
+  background:#fff !important;
+}
+.forum-search-row button{
+  background:#f2f2f2 !important;
+  border:1px solid #cdcdcd !important;
+  color:#333 !important;
+}
+
+/* 统计条：灰底，数字橙红 #F26C4F */
+.forum-board-stats{
+  background:#f2f2f2 !important;
+  border-color:#cdcdcd !important;
+  color:#666 !important;
+}
+.forum-board-stats dd{color:#F26C4F !important;font-weight:400 !important}
+.forum-result-line{color:#666 !important}
+
+/* 版块列表外框 */
+.forum-board{border:1px solid #cdcdcd !important;margin:6px !important}
+
+/* 列表表头：浅蓝 #E5EDF2 + 分隔线 #C2D5E3 + 左侧深蓝竖线 */
+.forum-board-head{
+  background:#E5EDF2 !important;
+  color:#333 !important;
+  border-bottom:1px solid #C2D5E3 !important;
+  border-left:3px solid #2B7ACD !important;
+  font-weight:700 !important;
+}
+
+/* 主题行：白底 + 浅灰行线，标题深灰加粗（Discuz 正文链接是深灰不是蓝） */
+.forum-topic-row{
+  background:#fff !important;
+  border-bottom:1px solid #e5e5e5 !important;
+}
+.forum-topic-row:nth-child(odd){background:#f7f7f7 !important}
+.forum-topic-row b{color:#333 !important;font-weight:700 !important}
+.forum-topic-row small{color:#999 !important}
+.forum-topic-row .forum-topic-author b,
+.forum-topic-row .forum-topic-activity b{color:#F26C4F !important;font-weight:400 !important}
+
+/* 侧栏：登录框 / 分类树 —— 白底灰边，标题浅蓝 #E5EDF2 */
+.forum-login-box,.forum-section-tree,.forum-era-warning{
+  background:#fff !important;
+  border:1px solid #cdcdcd !important;
+}
+.forum-login-box h2,.forum-section-tree h2{
+  background:#E5EDF2 !important;
+  color:#333 !important;
+  font-weight:700 !important;
+  border-bottom:1px solid #C2D5E3 !important;
+}
+.forum-login-box label{color:#555 !important}
+.forum-login-box input{border:1px solid #e0e0e0 !important;background:#fff !important}
+.forum-login-box button{background:#f2f2f2 !important;border:1px solid #cdcdcd !important;color:#333 !important}
+.forum-section-tree>*{color:#333 !important;border-bottom:1px solid #f2f2f2 !important}
+.forum-era-warning{background:#fffff0 !important;border-color:#e5e5c0 !important;color:#666 !important}
+
+/* 底栏 */
+.forum-footer{background:#f2f2f2 !important;border-top:1px solid #cdcdcd !important;color:#999 !important}
+.forum-footer span,.forum-footer a{color:#999 !important}
+
+/* ===== 帖子页 ===== */
+.forum-thread{border:1px solid #cdcdcd !important}
+.forum-floor{background:#fff !important;border-bottom:1px solid #cdcdcd !important}
+
+/* 楼层头：浅灰 #F2F2F2 */
+.forum-floor-header,.forum-post-head{
+  background:#f2f2f2 !important;
+  border-bottom:1px solid #cdcdcd !important;
+}
+.forum-floor-header h1,.forum-post-head h1,.forum-post-head h2{
+  color:#333 !important;
+  font-weight:700 !important;
+  font-family:"SimSun","Songti SC",serif !important;
+}
+.forum-floor-header time,.forum-floor-no{color:#999 !important}
+
+/* 作者侧栏：浅灰底 */
+.forum-author{
+  background:#f7f7f7 !important;
+  border-right:1px solid #cdcdcd !important;
+  color:#666 !important;
+}
+.forum-author b{color:#333 !important}
+.forum-avatar{background:#fff !important;border:1px solid #cdcdcd !important;color:#2B7ACD !important}
+
+/* 正文 */
+.forum-post-body{color:#333 !important}
+.forum-post-body p{color:#333 !important}
+.forum-edit-state,.forum-signature{border-top:1px dashed #cdcdcd !important;color:#999 !important}
+.forum-post-tools{color:#888 !important}
+.forum-post-tools span{color:#333 !important}
+
+/* 镜像元数据 */
+.forum-thread-status{border-color:#cdcdcd !important}
+.forum-thread-status>div{border-color:#cdcdcd !important}
+.forum-thread-status dt{background:#f2f2f2 !important;color:#666 !important}
+.forum-thread-footer{background:#f2f2f2 !important;border-top:1px solid #cdcdcd !important;color:#999 !important}
+.forum-thread-footer a{color:#333 !important}
+.forum-thread-footer span{color:#999 !important}
+
+/* ===== Discuz 链接规则：正文深灰 #333，hover 变蓝 #369 =====
+   覆盖 v5 的蓝色 #0066cc 链接。导航条白字除外。 */
+.forum-page a{color:#333 !important}
+.forum-page a:hover{color:#369 !important;text-decoration:underline !important}
+.forum-page .forum-primary-nav a,
+.forum-page .forum-primary-nav a:hover,
+.forum-page .forum-primary-nav span{color:#fff !important}

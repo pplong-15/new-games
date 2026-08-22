@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-intro-manual">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Intern shift receipt　County Radio and TV Editorial</title>
+  <link rel="stylesheet" href="css/intro-manual.css">
+</head>
+<body>
+  <header class="intro-hero">
+    <h1>County Radio and TV Editorial</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Intern shift receipt</h2>
+      <p>Duty: Pei Wan (intern editor)</p>
+      <p>Shift: 2014-08-21　night</p>
+      <p>Deliverable: ninety-second “night-terror remedy” debunking package, on the rundown before 06:00.</p>
+      <p>Usable footage: expired program Civic Hotline library only. Outside line cut. Question track is missing in DigiCut 2.0. Library only has the people on camera. Search lists five hits at a time.</p>
+      <p>Min Ke’s note is one word: Answer.</p>
+      <p>Unmasked milk names stay off screen. After submit, no change that night.</p>
+      <div class="boot-actions">
+        <a class="enter-link" href="index.html">Open station machine</a>
+        <button type="button" class="ghost" id="wipe">Wipe this machine</button>
+      </div>
+    </section>
+  </main>
+  <script>
+    document.getElementById("wipe").onclick = function () {
+      localStorage.removeItem("minsheng-v1-en");
+      location.href = "index.html";
+    };
+  </script>
+</body>
+</html>

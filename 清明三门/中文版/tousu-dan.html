@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-archive-simsun">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>邻穴烧纸投诉</title>
+  <link rel="stylesheet" href="css/archive-simsun.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<article class="record">
+  <p id="mini" class="sm-mini"></p>
+  
+<div id="shut" class="closed-box">
+  <p>投诉原纸不在本班桌上，封条还在最左那户。</p>
+  <p><a href="desk.html">回柜开门</a></p>
+</div>
+<div id="live" style="display:none">
+
+  <h1>投诉登记　东岗园夜字四〇四</h1>
+  <div class="meta"><span>来人：申柏</span><span>四月四日戌正</span></div>
+  <img src="img/ash-soil.jpg" alt="邻界灰" class="doc-img">
+  <p>十二区三十八穴是我爹申老山。碑前今天下午还是干净的。夜里有人打电话，说灰线偏到三十七穴那边。我赶过来，灰是新的，纸边还潮。</p>
+  <p>申家今年没约烧纸。不是我家烧的。你们园里爱讲鬼把钱烧到隔壁，我听过。我不要把灰记在我爹头上。</p>
+  <p>三十七穴姓顾。我跟他们不熟。我只要备注里别写申家私烧。</p>
+  <p>值班的记下：邻界有新灰。灰偏到顾穴一侧。投诉人拒绝用传说结案，但也说「要是鬼也就鬼吧」。此句不作定性。</p>
+  <p><button type="button" class="sm-btn" id="vbtn">采信：邻界有新灰</button></p>
+  <p id="vok" class="sm-ok" style="display:none">白板多了一句。交班以后这句还在。</p>
+  <p id="vbad" class="sm-warn" style="display:none"></p>
+  <p>本单只能证明邻界今夜有灰，不能证明灰是谁的手，也不能证明坟里出来过什么。</p>
+  <p><a href="tousu-buji.html">他后来又写了一封</a>　<a href="door-tousu.html">回这户门</a></p>
+  <p><span class="stamp">夜登</span></p>
+  
+</div>
+
+  <p>档室抄件　投诉原纸不外借</p>
+</article>
+
+<section class="pad"><p>夜字四〇四是杭疏自己用的号，白天窗口另有一套。申柏戌正到柜，灰边还潮，这句话登记员写得慢，怕写成目击点火。投诉人拒绝用传说结案，又说「要是鬼也就鬼吧」，两句并排，后一句不作定性。采信只取邻界有新灰。手是谁的，这张纸不肯写。</p></section>
+<script src="js/sanmen.js"></script>
+<script>
+Sanmen.paintMini(document.getElementById('mini'));
+Sanmen.gate('tousu','shut','live');
+Sanmen.bindVerify(document.getElementById('vbtn'),'ash-neighbor',document.getElementById('vok'),document.getElementById('vbad'));
+
+</script>
+</body>
+</html>

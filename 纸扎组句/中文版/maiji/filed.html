@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>麦记·著录收下</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>回单·收下</strong>
+      <div>
+        <a class="ghost-btn" href="desk.html">台</a>
+        <a class="ghost-btn" href="../introduction.html">字条</a>
+        <form id="search-form" action="#" method="get" style="display:inline">
+          <input id="search-input" name="q" placeholder="查单号…">
+          <button type="submit">查找</button>
+        </form>
+      </div>
+    </header>
+    
+    <div class="notice">
+      <h2>一句入账</h2>
+      <p>回单打印机卡了一下，第二张才出来。工号章是蓝的，不像丧单上那种淡指印。麦老不在，系统仍按他定的栏收。</p>
+      <p id="why"></p>
+      <p>麦老工号回：混堆另码。今夜未焚。邵浦在世。井秋白那边只回「童女仍在待焚区，五七再谈」。准烧没勾，做法没附，这条过。</p>
+      <p>后院红金从白纸里抽出来，退回浦页的送货口。丧单那一栏还在，炉口仍按档期关着。临工没有点火，也没有教人怎么扎。</p>
+      <p>铺号纸面干净。去年那档事不写进这一句。你交的是事件，不是传说。</p>
+      <p>临工可以走了。胶味还在袖口。井秋白若再打电话，让她看回单第二张，别看第一张卡纸。</p>
+      <p><a href="../introduction.html">回字条</a> · <a href="#" id="tear2">撕了重来</a></p>
+    </div>
+    <script>
+      document.getElementById("tear2").onclick = function (e) {
+        e.preventDefault();
+        ZJ.reset();
+        location.href = "../introduction.html";
+      };
+    </script>
+
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    ZJ.bootPage("end-filed");
+    var f = ZJ.endingWhy();
+    var el = document.getElementById("why");
+    if (el) el.textContent = "你交的是：" + (f.who||"") + "的" + (f.what||"") + "被" + (f.act||"") + (f.where||"") + "，今夜" + (f.night||"") + "。" + (f.life||"") + "。权限建议。";
+</script>
+</body>
+</html>

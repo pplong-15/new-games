@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plot 12 Gu household · cabinet door</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<div id="wrap">
+  <header><strong>North-slope household</strong><div><a class="ghost-btn" href="desk.html">Back to desk</a></div></header>
+  <div class="notice">
+    <h2>Plot 12 Gu household</h2>
+    <p id="mini" class="sm-mini"></p>
+    <p>Gu Songnian's name is written on the north slope. It is not written on the south-steps roster. Gu Wanhe put up a beige mini-site of her own. The words keep correcting themselves. Open the door to see the household card and the neighbor-line sketch.</p>
+    <p>Someone will want this household written as a collective booking. The card still says private grave. Write it the other way and it will not match.</p>
+    <p><button type="button" class="sm-btn" id="opbtn">Pull the Gu folder (counts as one household)</button></p>
+    <div id="fullbox" class="closed-box" style="display:none">
+      <p>Slots full. The Gu folder will not come out tonight. Take a seat after handover.</p>
+      <p><a href="desk.html">Back to the pale-cyan counter</a></p>
+    </div>
+    <div id="openbox" style="display:none">
+      <p class="sm-ok">Folder out. Household card, extract, sketch, family memo — all here.</p>
+      <p>East of grave 37 is Shen Laoshan. A shallow ditch. If delivery sets a box along the ditch, ash touches this side first.</p>
+      <p><a href="qu12-hu.html">Household card</a>　<a href="qu12-yu.html">Extract</a>　<a href="qu12-lin.html">Sketch</a>　<a href="qu12-jia.html">Memo</a></p>
+    </div>
+    <p>North-slope cabinet, second shelf · folder edge worn white</p>
+  </div>
+</div>
+
+<script src="js/sanmen.js"></script>
+<script>
+
+(function(){
+  var id="qu12";
+  function show(){
+    Sanmen.paintMini(document.getElementById("mini"));
+    var opened=Sanmen.isOpen(id);
+    document.getElementById("openbox").style.display=opened?"block":"none";
+    document.getElementById("fullbox").style.display="none";
+  }
+  document.getElementById("opbtn").addEventListener("click",function(){
+    var r=Sanmen.openDoor(id);
+    if(!r.ok){ document.getElementById("fullbox").style.display="block"; }
+    show();
+  });
+  show();
+})();
+
+</script>
+</body>
+</html>

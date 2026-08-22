@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-intro-manual">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Night-shift drawer paper · Anpu Archives</title>
+  <link rel="stylesheet" href="css/intro-manual.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+  <header class="intro-hero">
+    <div class="image-area"><img alt="" src="img/drawer.jpg"></div>
+    <h1>Finish the viewing note on that deed before the morning meeting</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Who you are tonight</h2>
+      <p>Cen He. Night-shift assistant, digitization desk, Anpu County Archives. Third month on the job. Day shift left at five. Qu Wantang knocked the drawer on her way out: public layer you can click yourself; internal, use the one Zhai Pu left; restricted, she does not recommend night shift go in.</p>
+      <p>Miao Qiubai from the Heritage Office dropped a viewing request on the desk this afternoon. File id Anpu-Deed-1983-047. Tomorrow morning they need five boxes on the projector: time, qianzhu (payer), sizhi (four boundaries), zhongbao (guarantor), wangzhe (the deceased). You have no clearance to certify. The original stays locked. What you can file is a viewing note. Recommend only.</p>
+      <p>In the drawer: one Intern-Night badge. Zhai Pu's internal badge is tucked in the sleeve. The handover book is under the lamp. Passwords are taped down. Do not peel the tape. In the margin, in her own hand: grandfather Cen Shoushan, Nanling, buried 1983 winter month (dongyue). Whether that has anything to do with tonight's slip, do not guess yet. The Dongxi gazetteer has another man of that name. Village and year are not the same. Do not merge them.</p>
+    </section>
+    <section>
+      <h2>What to open first</h2>
+      <p>The public-information site does not need a login tonight. In the catalog you can click 047. Internal needs a badge id. Restricted needs another clearance badge. Ids and passwords are written on paper and in mail. The search box is dead on night shift. Do not type words into it and hope.</p>
+      <p>The duty mailbox opens too. The account is on page two of the handover book. If Qu Wantang has something to say, it will be in the inbox. It will not be in a news-column gray line.</p>
+      <p class="boot-actions">
+        <a class="enter-link" href="public/index.html">Open the public-information site</a>
+        <button type="button" class="ghost" id="wipe">Clear the unfinished draft on this machine</button>
+      </p>
+    </section>
+    <section>
+      <h2>If you stall</h2>
+      <p>The digitization desk has Qu Wantang's slips. One more each time. The first few only point. They do not tick boxes for you.</p>
+      <p>County name, personal names, and deed text are invented. Do not match them to a real grave. Do not learn to write a yin contract from this shift.</p>
+    </section>
+  </main>
+  <script src="js/state.js"></script>
+  <script>
+    DQ.visit("intro");
+    document.getElementById("wipe").onclick = function () {
+      DQ.reset();
+      this.textContent = "Draft cleared. Go in again from the public site";
+    };
+  </script>
+</body>
+</html>

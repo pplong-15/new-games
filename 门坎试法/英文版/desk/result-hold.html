@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Return slip · hold</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/desk-extra.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>Day-shift preview return</strong>
+      <div><a class="ghost-btn" href="home.html">Back to desk</a></div>
+    </header>
+    <div class="notice">
+      <h2>Recommendation taken: do not let them enter the hall</h2>
+      <p id="how"></p>
+      <p>This crew is recorded as funeral, not wedding. The crossing cells or a trial entry already prove the threshold was stepped on. A funeral crew that is already dirty, then entering the hall — this desk cannot recommend admission. The key is still with Gu Jiong. Night duty cannot open the door. Day shift will read this return in the morning and decide whether to open the side door for filing.</p>
+      <p>Oral talk is not written into the return. The window's "this week likes to take red" is not written into the return. The return only writes cells that match.</p>
+    </div>
+    <div id="chips"></div>
+    <p class="mk-side"><a href="../introduction.html">Peel the doorframe writing</a> · <a href="advise.html">Change the four fields</a></p>
+    <p class="mk-side">08/44</p>
+
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    var s = MK.get();
+    var how = [];
+    if (s["verified.broke"]) how.push("You tried stepping on the threshold or pole scraping. The bounce left verified.");
+    if (s["seen.record"]) how.push("You opened the record page. The 19:40 cell writes stepping on the threshold.");
+    if (s["seen.sms"]) how.push("On the duty phone, Mu Sandao said the pole scraped.");
+    if (s["seen.key"]) how.push("The key log purpose writes funeral crew.");
+    if (s["seen.borrow"]) how.push("On the alley board, He Wanyang said go in first, then change to white.");
+    document.getElementById("how").textContent = how.join(" ") || "The four fields line up, and the sources are complete.";
+    document.getElementById("chips").innerHTML = MK.chipsHtml();
+</script>
+<p class="mk-side">A return taken as hold does not make the people at the door scatter at once. Scatter or not belongs to the family. If the family still wants a lift, they lift to the side door. The side door is thick with dust. That is the mess the daytime window left. Night duty wrote the cells clear. That is as far as this shift can go.</p>
+</body>
+</html>

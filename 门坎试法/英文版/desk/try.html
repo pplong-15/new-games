@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Try a crossing</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/desk-extra.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>Try a crossing</strong>
+      <div><a class="ghost-btn" href="home.html">Back to desk</a></div>
+    </header>
+    <div class="notice">
+      <h2>Deliberately record one</h2>
+      <p>This is not a finish. This is so you hit the rule. Stepping on the threshold or pole scraping will bounce, and leave verified. Stepping over cleanly is drill only.</p>
+    </div>
+    <div id="chips"></div>
+    <form id="tryf">
+      <fieldset>
+        <legend>He Lianzou crew · front threshold · trial entry</legend>
+        <label><input type="radio" name="kind" value="step"> Stepping on the threshold</label>
+        <label><input type="radio" name="kind" value="pole"> Pole scraping</label>
+        <label><input type="radio" name="kind" value="clean"> Stepping over cleanly</label>
+        <button type="submit">File trial entry</button>
+      </fieldset>
+    </form>
+    <p class="mk-side" id="err"></p>
+    <p class="mk-side">The rule on the board is already open on the desk. You do not need to search outside. 04/44</p>
+
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    document.getElementById("chips").innerHTML = MK.chipsHtml();
+    document.getElementById("tryf").onsubmit = function (e) {
+      e.preventDefault();
+      var el = document.querySelector("input[name=kind]:checked");
+      if (!el) { document.getElementById("err").textContent = "Pick an action first."; return; }
+      MK.set("last-try", el.value);
+      if (el.value === "step" || el.value === "pole") {
+        MK.mark("verified.broke");
+        location.href = "try-reject.html";
+      } else {
+        location.href = "try-ok.html";
+      }
+    };
+</script>
+<p class="mk-side">Stepping = board's do-not-step. Pole scrape = pole must not rub wood. Both bounce to the same verified mark. Feedback sentences differ. Which sentence you want, you pick. Pick again after. Leftover mark does not stack into two.</p>
+<p class="mk-side">Three picks, file once. After: bounce and keep proof, or drill empty-handed. Empty-handed can still go to the record page. Record page does not depend on your trial — already dirty on its own. The 19:40 cell is there.</p>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" class="backroom">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The word is left</title>
+  <link rel="stylesheet" href="css/phone.css">
+</head>
+<body>
+  <div class="wrap">
+    <h1>You shove the phone back on the shelf</h1>
+    <p id="p1"></p>
+    <p>Kuang kills the cigarette. On the roster next to Tiansui he makes a tick, like she's still in town. He doesn't ask about the two white-bg dates. Before the inspectors come he'll probably go to the alley himself for a digital that can pass—whatever was shot last.</p>
+    <p>You go crack milk. Badge still wrapped on the cord. Back-room tube keeps humming. Whether she walks back in is later. Tonight that sentence already stood a shift for her.</p>
+    <p>Half a butt still in the fire-sand. Roster is pencil. Tick is faint. Days can erase it tomorrow. Milk is second column. Have to mop that oil ring dry before you open a crate. Charger is still the loose one. You twist it straight and plug it. You don't unwrap the badge.</p>
+    <p><a href="introduction.html">The slip is still where it was</a></p>
+  </div>
+  <script src="js/phone.js"></script>
+  <script>
+    var a = gys.seen("seen0314"), b = gys.seen("seen0812");
+    document.getElementById("p1").textContent = a && b
+      ? "You saw two white-bgs whose dates don't match. You still only report she's here. The locker-door glare you don't mention."
+      : a || b
+        ? "You only really looked at one white-bg. When you reported, you treated the other as unopened."
+        : "You didn't read much SMS. Badge is still there, so you treat it as a dropped phone.";
+  </script>
+</body>
+</html>

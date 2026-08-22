@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-mail-web-2010">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>网格网页信箱</title>
+  <link rel="stylesheet" href="css/mail-web-2010.css">
+  <link rel="stylesheet" href="css/pick.css">
+</head>
+<body>
+  <div class="top">
+    <b>槐荫网格信箱</b>
+    <span class="unread-n">未读 <b>1</b></span>
+    <a href="desk.html">回值班台</a>
+    <a href="#">设置</a>
+  </div>
+  <div class="panes">
+    <div class="folders">
+      <a class="write" href="#">写信</a>
+      <a class="on" href="letter-list.html">收件箱 (<span class="n">4</span>)</a>
+      <a href="#">已发送</a>
+      <a href="letter-spam.html">垃圾</a>
+    </div>
+    <div class="mails">
+      <h4>收件箱</h4>
+      <div class="m unread on">
+        <b>卞同志你看完再删</b>
+        <span>素秋　8月19日</span>
+      </div>
+      <div class="m">
+        <b><a href="letter-list.html">其余三封见列表</a></b>
+        <span>信箱　今晚</span>
+      </div>
+    </div>
+    <div class="read">
+      <div class="toolbar">
+        <button type="button">回复</button>
+        <button type="button">删除</button>
+      </div>
+      <h3>卞同志你看完再删</h3>
+      <p class="meta">
+        发件人：素秋（居民自助）<br>
+        收件人：网格-卞梁<br>
+        时间：2026-08-19 21:46
+      </p>
+      <p>卞同志，我跟你说那张红纸——不对，先说后院。守仁走了，伯川天天来量后院那间。他说小满过继了，那间就是孩子的。卷尺在墙上划白印。</p>
+      <p>我按过一个印。灵堂乱，有人把我手指按下去。我当是买烧纸的回单。字我没读完。你别写成我同意把孩子过来。孩子没在我这儿住过。住我这儿的是晚禾，药罐子还在灶上。</p>
+      <p>我不要你们把谁写成儿子。我要你们别在我还住着的时候把屋子清空。份额的事，让他们去桌子上吵，别冲着一个写字都拿反的小孩。</p>
+      <p>晚禾前年整过一个绿色的主页，里头还有谱局来拍照那天的牢骚。附件里我让她把旧址贴上了，你要是打得开就自己看。我看不懂那些格子。</p>
+      <p>电费户名还是守仁。我去换过一次，窗口让带死亡证明，队伍长，我没排完。你要写谁住着，写晚禾。别写小孩已经搬来，他没有搬来。</p>
+      <p>看完删。别念给巷里听。</p>
+      <p>
+        <button type="button" class="pick" data-block="consent-letter">摘：她当收据按的印</button>
+        <button type="button" class="pick" data-block="kind-share">摘：后院那间份额</button>
+        <a href="wanhe.html">打开信里的旧址</a>
+      </p>
+    </div>
+  </div>
+  <p class="ft">网格信箱容量很小　附件只保留三十天　勿转发到居民群</p>
+  <script src="js/state.js"></script>
+  <script>
+    HY.visit("letter", 4);
+    HY.bindPicks();
+  </script>
+</body>
+</html>

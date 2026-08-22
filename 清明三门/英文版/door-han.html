@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cold Food Day old ticket · cabinet door</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<div id="wrap">
+  <header><strong>Last year's sheet</strong><div><a class="ghost-btn" href="desk.html">Back to desk</a></div></header>
+  <div class="notice">
+    <h2>Cold Food Day old ticket</h2>
+    <p id="mini" class="sm-mini"></p>
+    <p>Ji Nanlou only writes ash on site. The stamp looks like a collective number. He does not write whose hand. This household is a side line. It does not block tonight's remark. You can file the correct four fields without opening it.</p>
+    <p>Old custom, no fire; wall notice, burn-ban. They can sit beside each other. Take an old edict and write a ghost — records will not take it.</p>
+    <p><button type="button" class="sm-btn" id="opbtn">Lift last year's cover (counts as one household)</button></p>
+    <div id="fullbox" class="closed-box" style="display:none">
+      <p>Last year's cover will not lift. No slots left. The side-line sentence will not go on the board tonight.</p>
+      <p><a href="desk.html">Hand this shift over first</a></p>
+    </div>
+    <div id="openbox" style="display:none">
+      <p class="sm-ok">Cover off. Old ticket, comparison draft, gazette extract — here.</p>
+      <img src="img/old-ticket.jpg" alt="Old paper" class="doc-img">
+      <p>A carton corner beside the ash. Looks like delivery left it. He still only writes ash on site.</p>
+      <p><a href="han-fa.html">Old ticket</a>　<a href="han-li.html">Comparison</a>　<a href="han-zhi.html">Extract</a></p>
+    </div>
+    <p>Old-file tin · rust smell</p>
+  </div>
+</div>
+
+<script src="js/sanmen.js"></script>
+<script>
+
+(function(){
+  var id="han";
+  function show(){
+    Sanmen.paintMini(document.getElementById("mini"));
+    var opened=Sanmen.isOpen(id);
+    document.getElementById("openbox").style.display=opened?"block":"none";
+    document.getElementById("fullbox").style.display="none";
+  }
+  document.getElementById("opbtn").addEventListener("click",function(){
+    var r=Sanmen.openDoor(id);
+    if(!r.ok){ document.getElementById("fullbox").style.display="block"; }
+    show();
+  });
+  show();
+})();
+
+</script>
+</body>
+</html>

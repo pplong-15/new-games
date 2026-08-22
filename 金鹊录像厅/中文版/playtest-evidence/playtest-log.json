@@ -1,0 +1,439 @@
+{
+  "errors": [
+    "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "log": [
+    {
+      "id": "intro-who",
+      "ok": true,
+      "detail": "我是谁：正文有方南星/陆小棠",
+      "t": "2026-08-21T12:39:18.522Z"
+    },
+    {
+      "id": "intro-what",
+      "ok": true,
+      "detail": "现在要干嘛：取票 + 搜词 + 明示第一词",
+      "t": "2026-08-21T12:39:18.523Z"
+    },
+    {
+      "id": "intro-why",
+      "ok": true,
+      "detail": "做了有啥用：三件待核的事",
+      "t": "2026-08-21T12:39:18.523Z"
+    },
+    {
+      "id": "intro-enter-btn",
+      "ok": true,
+      "detail": "进入录像厅按钮存在",
+      "t": "2026-08-21T12:39:18.532Z"
+    },
+    {
+      "id": "intro-wipe-btn",
+      "ok": true,
+      "detail": "清除存档按钮存在",
+      "t": "2026-08-21T12:39:18.534Z"
+    },
+    {
+      "id": "intro-box-claim",
+      "ok": true,
+      "detail": "引言声称点包厢会告诉你暂停",
+      "t": "2026-08-21T12:39:18.534Z"
+    },
+    {
+      "id": "intro-a11y-opts",
+      "ok": true,
+      "detail": "大字+减少动画 class=skin-intro-manual large reduce",
+      "t": "2026-08-21T12:39:18.563Z"
+    },
+    {
+      "id": "enter-home",
+      "ok": true,
+      "detail": "url=http://127.0.0.1:8765/index.html",
+      "t": "2026-08-21T12:39:19.344Z"
+    },
+    {
+      "id": "home-first-word",
+      "ok": true,
+      "detail": "首页正文含加映场",
+      "t": "2026-08-21T12:39:19.345Z"
+    },
+    {
+      "id": "home-yellow-notice",
+      "ok": true,
+      "detail": "黄色公告 dl.notice 存在",
+      "t": "2026-08-21T12:39:19.352Z"
+    },
+    {
+      "id": "home-tianmai-public",
+      "ok": true,
+      "detail": "首页公告已写放映员田麦",
+      "t": "2026-08-21T12:39:19.352Z"
+    },
+    {
+      "id": "home-points-public",
+      "ok": true,
+      "detail": "首页已写积分",
+      "t": "2026-08-21T12:39:19.352Z"
+    },
+    {
+      "id": "home-footer",
+      "ok": true,
+      "detail": "页脚编号+虚构声明",
+      "t": "2026-08-21T12:39:19.352Z"
+    },
+    {
+      "id": "nav-box-dead",
+      "ok": true,
+      "detail": "点包厢后 url=http://127.0.0.1:8765/index.html 页面无暂停说明句=true",
+      "t": "2026-08-21T12:39:20.030Z"
+    },
+    {
+      "id": "slash-focus",
+      "ok": false,
+      "detail": "按 / 后焦点=",
+      "t": "2026-08-21T12:39:20.033Z"
+    },
+    {
+      "id": "search-jiaoying",
+      "ok": true,
+      "detail": "加映场结果: 搜索结果 共有 2 项符合条件的结果： 小棠的备份日志 - 加映场 小棠的备份日志 - 机房那晚 加映不是多放一部片子。 机房门从里面反锁。这是附带草稿。",
+      "t": "2026-08-21T12:39:21.773Z"
+    },
+    {
+      "id": "open-blog-jiaoying",
+      "ok": true,
+      "detail": "url=http://127.0.0.1:8765/pages/blog-jiaoying.html",
+      "t": "2026-08-21T12:39:23.854Z"
+    },
+    {
+      "id": "blog-skin",
+      "ok": true,
+      "detail": "日志页可见",
+      "t": "2026-08-21T12:39:23.855Z"
+    },
+    {
+      "id": "blog-kongzuo-early",
+      "ok": true,
+      "detail": "加映场日志已出现「空座」二字",
+      "t": "2026-08-21T12:39:23.855Z"
+    },
+    {
+      "id": "blog-lai-fang",
+      "ok": true,
+      "detail": "来访出处在第一隐藏页",
+      "t": "2026-08-21T12:39:23.855Z"
+    },
+    {
+      "id": "blog-laohou",
+      "ok": true,
+      "detail": "老侯出处在第一隐藏页",
+      "t": "2026-08-21T12:39:23.855Z"
+    },
+    {
+      "id": "blog-jifen",
+      "ok": true,
+      "detail": "积分出处",
+      "t": "2026-08-21T12:39:23.855Z"
+    },
+    {
+      "id": "gate-handbook-nologin",
+      "ok": true,
+      "detail": "未登录直开 handbook → http://127.0.0.1:8765/pages/forbidden.html",
+      "t": "2026-08-21T12:39:24.513Z"
+    },
+    {
+      "id": "gate-forum-locked",
+      "ok": true,
+      "detail": "未解锁 forum → http://127.0.0.1:8765/pages/forbidden.html",
+      "t": "2026-08-21T12:39:25.599Z"
+    },
+    {
+      "id": "search-empty",
+      "ok": true,
+      "detail": "空串: 搜索结果 抱歉，没有找到相关结果。每次只搜索 1 个汉字词。",
+      "t": "2026-08-21T12:39:27.400Z"
+    },
+    {
+      "id": "search-two-words",
+      "ok": true,
+      "detail": "空格两词: 搜索结果 抱歉，没有找到相关结果。每次只搜索 1 个汉字词。",
+      "t": "2026-08-21T12:39:29.473Z"
+    },
+    {
+      "id": "search-english",
+      "ok": true,
+      "detail": "英文: 搜索结果 抱歉，没有找到相关结果。每次只搜索 1 个汉字词。",
+      "t": "2026-08-21T12:39:30.148Z"
+    },
+    {
+      "id": "search-forbidden-src",
+      "ok": true,
+      "detail": "搜源码 class=skin-forbidden large reduce text=金鹊录像厅 站内搜索 搜索 此文件已被禁止访问 主线不在源码里。回到已经打开的页面抽一个汉字词。 05/36 · 已打开编号页 4/36 · 本站为虚构调查游戏",
+      "t": "2026-08-21T12:39:31.845Z"
+    },
+    {
+      "id": "search-tianmai",
+      "ok": true,
+      "detail": "田麦结果: 搜索结果 共有 3 项符合条件的结果： 田麦的空间 会员赠片记录 大厅合影 放映员不在线。去把场灯续上。 有人给场记寄过空白片头。 后排多一个没五官的人。",
+      "t": "2026-08-21T12:39:34.564Z"
+    },
+    {
+      "id": "open-space",
+      "ok": true,
+      "detail": "url=http://127.0.0.1:8765/pages/space-tianmai.html",
+      "t": "2026-08-21T12:39:35.164Z"
+    },
+    {
+      "id": "cred-visible",
+      "ok": true,
+      "detail": "空间可见账号真名+口令+场记台",
+      "t": "2026-08-21T12:39:35.166Z"
+    },
+    {
+      "id": "search-desk",
+      "ok": true,
+      "detail": "场记台结果含须知+登录",
+      "t": "2026-08-21T12:39:36.649Z"
+    },
+    {
+      "id": "open-login",
+      "ok": true,
+      "detail": "url=http://127.0.0.1:8765/pages/login.html",
+      "t": "2026-08-21T12:39:37.449Z"
+    },
+    {
+      "id": "login-near-lu",
+      "ok": true,
+      "detail": "陆小棠近义: 这是发链接的人，不是场记台管理员。",
+      "t": "2026-08-21T12:39:37.829Z"
+    },
+    {
+      "id": "login-near-pass",
+      "ok": true,
+      "detail": "口令留座近义: 接近。他说过字幕没完不要起身，要怎样才算完。",
+      "t": "2026-08-21T12:39:38.176Z"
+    },
+    {
+      "id": "login-success",
+      "ok": true,
+      "detail": "登录成功 → http://127.0.0.1:8765/pages/handbook.html",
+      "t": "2026-08-21T12:39:39.525Z"
+    },
+    {
+      "id": "handbook-content",
+      "ok": true,
+      "detail": "手册含空座/文娱志/日志",
+      "t": "2026-08-21T12:39:39.527Z"
+    },
+    {
+      "id": "save-logged",
+      "ok": true,
+      "detail": "logged=true facts=[\"lead_home\",\"fact_show\",\"fact_tian\",\"access_desk\",\"fact_book\"]",
+      "t": "2026-08-21T12:39:39.643Z"
+    },
+    {
+      "id": "refresh-handbook",
+      "ok": true,
+      "detail": "刷新后仍在手册",
+      "t": "2026-08-21T12:39:40.250Z"
+    },
+    {
+      "id": "gate-log-after-login",
+      "ok": true,
+      "detail": "登录后直开 log → http://127.0.0.1:8765/pages/log.html",
+      "t": "2026-08-21T12:39:42.275Z"
+    },
+    {
+      "id": "shortcut-zimu",
+      "ok": true,
+      "detail": "公开页「字幕」命中人员表",
+      "t": "2026-08-21T12:39:44.851Z"
+    },
+    {
+      "id": "credits-leaks",
+      "ok": true,
+      "detail": "人员表泄露终局五词",
+      "t": "2026-08-21T12:39:47.281Z"
+    },
+    {
+      "id": "shortcut-empty-no-login",
+      "ok": true,
+      "detail": "未登录搜空座打开规程 → http://127.0.0.1:8765/pages/empty-seat.html",
+      "t": "2026-08-21T12:39:51.490Z"
+    },
+    {
+      "id": "shortcut-fact-empty",
+      "ok": true,
+      "detail": "facts=[\"lead_home\",\"fact_show\",\"fact_tian\",\"access_desk\",\"fact_book\",\"fact_log\",\"fact_credits\",\"fact_empty\"]",
+      "t": "2026-08-21T12:39:51.492Z"
+    },
+    {
+      "id": "search-ticket",
+      "ok": true,
+      "detail": "票根 → 搜索结果 共有 1 项符合条件的结果： 未取票根 特邀场记：方南星。",
+      "t": "2026-08-21T12:39:53.538Z"
+    },
+    {
+      "id": "open-ticket",
+      "ok": true,
+      "detail": "url=http://127.0.0.1:8765/pages/ticket.html",
+      "t": "2026-08-21T12:39:55.274Z"
+    },
+    {
+      "id": "search-obit-hou",
+      "ok": true,
+      "detail": "老侯 → 搜索结果 共有 2 项符合条件的结果： 金鹊镇地方号 - 侯长河 老放映员口述 机房起火那年，老板没有出来。 口述不是证词。",
+      "t": "2026-08-21T12:39:58.203Z"
+    },
+    {
+      "id": "open-obit-hou",
+      "ok": true,
+      "detail": "url=http://127.0.0.1:8765/pages/obit-hou.html",
+      "t": "2026-08-21T12:39:59.240Z"
+    },
+    {
+      "id": "search-post-lu",
+      "ok": true,
+      "detail": "陆小棠 → 搜索结果 共有 2 项符合条件的结果： 梨河影迷楼 - 谁还在看字幕 场记邮箱 我把链接发给南南。 未读一封：替我坐到完。",
+      "t": "2026-08-21T12:40:01.522Z"
+    },
+    {
+      "id": "open-post-lu",
+      "ok": true,
+      "detail": "url=http://127.0.0.1:8765/pages/post-lu.html",
+      "t": "2026-08-21T12:40:02.368Z"
+    },
+    {
+      "id": "search-empty-seat",
+      "ok": true,
+      "detail": "空座 → 搜索结果 共有 1 项符合条件的结果： 空座规程 字幕未完，座位上必须有人。",
+      "t": "2026-08-21T12:40:04.273Z"
+    },
+    {
+      "id": "open-empty-seat",
+      "ok": true,
+      "detail": "url=http://127.0.0.1:8765/pages/empty-seat.html",
+      "t": "2026-08-21T12:40:05.399Z"
+    },
+    {
+      "id": "facts-five",
+      "ok": true,
+      "detail": "facts=[\"lead_home\",\"fact_show\",\"fact_tian\",\"access_desk\",\"fact_book\",\"fact_log\",\"fact_credits\",\"fact_empty\",\"fact_stub\",\"fact_hou\",\"fact_lu\"]",
+      "t": "2026-08-21T12:40:06.191Z"
+    },
+    {
+      "id": "choice-reject-incomplete",
+      "ok": false,
+      "detail": "缺 fact 拒绝: ",
+      "t": "2026-08-21T12:40:10.694Z"
+    },
+    {
+      "id": "choice-stay",
+      "ok": false,
+      "detail": "拒绝后仍在选择页 http://127.0.0.1:8765/pages/ending-a.html",
+      "t": "2026-08-21T12:40:10.694Z"
+    },
+    {
+      "id": "open-choice",
+      "ok": true,
+      "detail": "url=http://127.0.0.1:8765/pages/choice.html",
+      "t": "2026-08-21T12:40:13.674Z"
+    },
+    {
+      "id": "ending-a",
+      "ok": true,
+      "detail": "url=http://127.0.0.1:8765/pages/ending-a.html",
+      "t": "2026-08-21T12:40:15.483Z"
+    },
+    {
+      "id": "ending-a-copy",
+      "ok": true,
+      "detail": "退票结局正文可见",
+      "t": "2026-08-21T12:40:15.484Z"
+    },
+    {
+      "id": "ending-b",
+      "ok": true,
+      "detail": "url=http://127.0.0.1:8765/pages/ending-b.html",
+      "t": "2026-08-21T12:40:17.391Z"
+    },
+    {
+      "id": "ending-b-copy",
+      "ok": true,
+      "detail": "坐到完结局正文可见",
+      "t": "2026-08-21T12:40:17.393Z"
+    },
+    {
+      "id": "cold-来访",
+      "ok": true,
+      "detail": "来访 → 搜索结果 共有 1 项符合条件的结果： 最近来访（灰影） 死人的头像也会亮。",
+      "t": "2026-08-21T12:40:19.481Z"
+    },
+    {
+      "id": "cold-关站",
+      "ok": true,
+      "detail": "关站 → 搜索结果 共有 1 项符合条件的结果： 金鹊镇地方号 - 录像厅停业说明 网站还在，大厅已锁。",
+      "t": "2026-08-21T12:40:21.569Z"
+    },
+    {
+      "id": "cold-寻场记",
+      "ok": true,
+      "detail": "寻场记 → 搜索结果 共有 1 项符合条件的结果： 梨河分类信息 - 寻场记 找替班，不找警察。",
+      "t": "2026-08-21T12:40:23.638Z"
+    },
+    {
+      "id": "cold-还灯债",
+      "ok": true,
+      "detail": "还灯债 → 搜索结果 共有 1 项符合条件的结果： 梨河影迷楼 - 还灯债 灯灭之前要有人坐着。",
+      "t": "2026-08-21T12:40:25.554Z"
+    },
+    {
+      "id": "cold-青石场记别名",
+      "ok": true,
+      "detail": "青石场记 → 搜索结果 共有 2 项符合条件的结果： 青石场记台 · 须知 场记台登录 注册已关闭。管理员用真名进。 口令不写在导航里。",
+      "t": "2026-08-21T12:40:26.879Z"
+    },
+    {
+      "id": "hints-lv4",
+      "ok": true,
+      "detail": "第四档: 第4档：推理：加映场要留座；老侯死在机房；陆小棠把你写成替班；空座是禁忌；田麦是放映员。五条分别是票根、老侯、陆小棠、空座、田麦，读齐后在选择页决定退票还是坐到",
+      "t": "2026-08-21T12:40:27.925Z"
+    },
+    {
+      "id": "wipe-save",
+      "ok": true,
+      "detail": "wipe 后 save={\"v\":1,\"unlocked\":[],\"visited\":[\"intro\"],\"facts\":[],\"query\":\"\",\"logged\":false,\"hint\":0,\"large\":false,\"reduce\":false}",
+      "t": "2026-08-21T12:40:44.019Z"
+    },
+    {
+      "id": "wipe-gate",
+      "ok": true,
+      "detail": "wipe 后 handbook → http://127.0.0.1:8765/pages/forbidden.html",
+      "t": "2026-08-21T12:40:45.036Z"
+    },
+    {
+      "id": "mobile-intro-btn",
+      "ok": true,
+      "detail": "{\"w\":94.65625,\"h\":37,\"y\":2123.09375,\"visible\":true}",
+      "t": "2026-08-21T12:40:45.761Z"
+    },
+    {
+      "id": "mobile-search",
+      "ok": true,
+      "detail": "{\"w\":220,\"h\":39,\"visible\":true}",
+      "t": "2026-08-21T12:40:46.545Z"
+    },
+    {
+      "id": "keyboard-tab",
+      "ok": true,
+      "detail": "Tab 后焦点=A包厢",
+      "t": "2026-08-21T12:40:48.098Z"
+    },
+    {
+      "id": "pageerrors",
+      "ok": false,
+      "detail": "console:Failed to load resource: the server responded with a status of 404 (File not found)",
+      "t": "2026-08-21T12:40:48.098Z"
+    }
+  ]
+}

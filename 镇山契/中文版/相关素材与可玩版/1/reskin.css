@@ -1,0 +1,1957 @@
+/* ==========================================================================
+   真实网页素材审核版 视觉覆盖层（仅样式，不改结构/内容/脚本）
+   锚点：水木分区+DOS楼层 / 2004民俗学网 / 浙江+北京档案 / 人民日报电子报
+         / 全国地质资料馆 / EDMAKER归档汇交系统
+   ========================================================================== */
+
+/* ---------- 全局：去圆角、去阴影、降字号、紧行距 ---------- */
+body{background:#eef1f5;background-image:none}
+button,select,input[type="search"]{min-height:30px}
+button{border-radius:2px;padding:4px 12px;font-size:12px}
+a{text-decoration:none}
+.fictional-site{box-shadow:none;border-radius:0}
+.institution-page,.workbench-tool,.workbench-result,.related-chain,
+.workbench-source,.ending-page,.not-found{box-shadow:none;border-radius:0}
+
+/* ---------- 会话条（公开站顶部细条）：水木式浅蓝 ---------- */
+.external-session-strip{background:#eef3fa;border-bottom:1px solid #b9c6d8;
+  font:12px/1.4 Tahoma,"SimSun",sans-serif;box-shadow:none}
+.external-session-strip a,.external-session-strip button,
+.external-session-strip .excerpt-status{background:#f7fafd;border:1px solid #b9c6d8;
+  color:#1a5cb0;border-radius:2px;min-height:24px;padding:2px 8px;font-size:12px}
+.external-session-id{color:#5a6b80;border-right-color:#b9c6d8}
+
+/* ---------- 内部系统顶栏：EDMAKER 棕色 ---------- */
+.institution-topbar{background:linear-gradient(#8a6a48,#6e5236);border-bottom:3px solid #4e3a26}
+.institution-wordmark{color:#fff;font-size:15px;letter-spacing:.05em}
+.institution-system-name{color:#e6d7bf;font-size:12px}
+.institution-topbar-actions a{border-color:#a58a63;color:#fff;background:#7d5f40}
+.institution-topbar .session-record-actions button,
+.institution-topbar .session-record-actions a,
+.institution-topbar .session-record-actions .excerpt-status{background:#7d5f40;border-color:#a58a63;color:#fff}
+.institution-session{color:#e6d7bf}
+
+/* ---------- 开场交接单：机构白 + 棕色动作条 ---------- */
+.handover-header{background:#f4efe6;border-bottom-color:#c9b795}
+.handover-inworld-layer{background:#5d4732;border-color:#4e3a26}
+.handover-inworld-layer .creator-contract>div{background:#6e5236;border-color:#8a6a48}
+.handover-actions{background:#efe6d4;border-top-color:#c9b795}
+
+/* ==========================================================================
+   论坛：水木分区骨架 + DOS 联盟楼层
+   ========================================================================== */
+.forum-page{background:#f2f5f9;font:12px/1.7 Tahoma,"SimSun",sans-serif;color:#333}
+.forum-frame{background:#fff;border:1px solid #b9c6d8;box-shadow:none}
+.forum-masthead{background:#fff;background-image:none;border-bottom:1px solid #b9c6d8}
+.forum-utility{background:#fff;color:#666;border-bottom:1px dashed #dbe4f0}
+.forum-utility a{color:#1a5cb0}
+.forum-title-row h1,.forum-logo{color:#17457e;font:700 22px/1.3 "SimSun",serif;
+  letter-spacing:.05em;text-shadow:none}
+.forum-title-row p,.forum-tagline{color:#667;font-size:12px}
+.forum-primary-nav{background:#e8eef7;border-bottom:1px solid #b9c6d8}
+.forum-primary-nav a,.forum-primary-nav span{color:#1a5cb0;font-size:12px;
+  padding:5px 12px;border-right:1px solid #cdd9ea;min-height:26px}
+.forum-breadcrumb{background:#eef3fa;color:#567;border-bottom:1px solid #c6d4e6}
+.forum-breadcrumb a{color:#1a5cb0}
+.forum-board-toolbar,.forum-search-row{background:#eef3fa;border-color:#c6d4e6;color:#456}
+.forum-search-row input{border:1px solid #8aa5c8;background:#fff;min-height:26px;font-size:12px}
+.forum-search-row button{background:#4a81c9;border-color:#3568ab;color:#fff}
+.forum-board-stats{background:#eef3fa;border-color:#c6d4e6;color:#567}
+.forum-board-stats dd{color:#993399;font-weight:700}
+.forum-result-line{color:#678}
+/* 版面列表：水木蓝条 + 米色表头 + 密行 */
+.forum-board{border:1px solid #b9c6d8}
+.forum-board-head{background:#f7f0dc;color:#6a5a2a;border-bottom:1px solid #e2d5ae;font-size:12px}
+.forum-topic-row{background:#fff;border-bottom:1px solid #e2e9f4;min-height:44px}
+.forum-topic-row:nth-child(odd){background:#f4f8fc}
+.forum-topic-row b{color:#1a5cb0;font-size:12px;font-weight:700}
+.forum-topic-row small{color:#789}
+/* 侧栏 */
+.forum-login-box,.forum-section-tree,.forum-era-warning{background:#fff;border:1px solid #c6d4e6}
+.forum-login-box h2,.forum-section-tree h2{background:#dce8f7;color:#17457e;font-size:12px}
+.forum-login-box label{font-size:12px;color:#456}
+.forum-login-box input{min-height:24px;border:1px solid #8aa5c8}
+.forum-login-box button{background:#e8eef7;border:1px solid #8aa5c8;color:#17457e}
+.forum-section-tree>*{font-size:12px;color:#333;border-bottom:1px solid #eef3fa}
+.forum-section-tree a{color:#1a5cb0}
+.forum-era-warning{background:#fffbe9;border-color:#d8c9a0;color:#6a5a2a}
+.forum-footer{background:#e8eef7;border-top:1px solid #b9c6d8;color:#678}
+/* 主题页楼层：DOS 联盟语法 */
+.forum-thread{border:1px solid #b9c6d8}
+.forum-floor{background:#fff;border-bottom:1px solid #dbe4f0}
+.forum-floor-header,.forum-post-head{background:linear-gradient(#eef4fc,#d9e5f5);
+  border-bottom:1px solid #c6d4e6;padding:4px 10px}
+.forum-floor-header h1,.forum-post-head h1,.forum-post-head h2{font-size:14px;color:#17457e}
+.forum-floor-header time,.forum-floor-no{color:#789;font-size:11px}
+.forum-author{background:#f4f8fc;border-right:1px solid #dbe4f0;font-size:12px;color:#567}
+.forum-author b{color:#17457e;font-size:13px}
+.forum-avatar{background:#fff;border:1px solid #b9c6d8;color:#4a81c9}
+.forum-post-body{font-size:13px;line-height:1.8;color:#333}
+.forum-edit-state,.forum-signature{border-top:1px dashed #b9c6d8;color:#89a;font-size:11px}
+.forum-post-tools{color:#789;font-size:11px}
+.forum-thread-status{border-color:#c6d4e6}
+.forum-thread-status dt{background:#eef3fa;color:#567}
+.forum-thread-footer{background:#e8eef7;border-top:1px solid #b9c6d8;color:#678}
+
+/* ==========================================================================
+   民俗资料站：2004 中国民俗学网式淡绿三栏
+   ========================================================================== */
+.site-folk{background:#f7faf7;font-family:"SimSun","Songti SC",serif;color:#333}
+.folk-site-frame{background:#fbfdf9;border:1px solid #cfdcc9;box-shadow:3px 3px 0 rgba(90,110,80,.12)}
+.folk-masthead{background:#e3efe0;border-bottom:1px solid #cfdcc9}
+.folk-masthead h1,.folk-site-name{color:#2a4a2a;font:700 20px/1.4 "SimSun",serif;letter-spacing:.12em}
+.folk-masthead p{color:#5a7a5a;font-size:12px}
+.folk-text-nav{background:#f2f8ef;border-bottom:1px solid #cfdcc9;font-size:13px}
+.folk-text-nav a,.folk-text-nav span{color:#1a5cb0;padding:4px 8px;min-height:26px}
+.folk-layout{align-items:stretch}
+.folk-directory{background:#fff;border-right:1px solid #dbe6d5}
+.folk-directory h2,.folk-directory h3{background:#e3efe0;color:#2a5a2a;font-size:13px;text-align:left;padding:4px 8px}
+.folk-directory ul li,.folk-directory>a,.folk-directory>span{font-size:13px;color:#333;border-bottom:1px dotted #cfdcc9}
+.folk-directory a{color:#1a5cb0}
+.folk-counter{border:1px solid #cfdcc9;background:#f2f8ef;color:#5a7a5a}
+.folk-content{font-size:14px;line-height:1.9;color:#333}
+.folk-search-block{background:#f2f8ef;border:1px solid #cfdcc9}
+.folk-search-block input{border:1px inset #9ab894;background:#fff;font-family:"SimSun",serif}
+.folk-search-block button{border:1px outset #b9d2b3;background:#e3efe0;font-family:"SimSun",serif}
+.folk-result-line,.site-folk .result-count{color:#5a7a5a}
+.folk-index li{border-bottom:1px dotted #cfdcc9}
+.folk-index a{color:#1a5cb0}
+.folk-index a>span{color:#5a7a5a}
+.folk-index p{color:#678}
+.folk-service-rail{background:#f7fbf4;border-left:1px solid #dbe6d5}
+.folk-service-rail h2{background:#e3efe0;color:#2a5a2a;font-size:13px}
+.folk-service-rail a,.folk-service-rail span{color:#336633;font-size:12px;border-bottom:1px dotted #cfdcc9}
+.folk-side-note{border-color:#cfdcc9;background:#fff}
+.folk-site-footer{background:#e3efe0;border-top:2px solid #9ab894;color:#5a7a5a}
+.folk-site-footer a{color:#1a5cb0}
+/* 民俗文章页 */
+.paper-article h1,.folk-article h1{color:#2a4a2a}
+.ink-rule{border-top:1px solid #9ab894;border-bottom:2px solid #9ab894}
+
+/* ==========================================================================
+   档案目录：浙江蓝侧栏 + 北京结果字段密度
+   ========================================================================== */
+.archive-page{background:#f5f7fa;font-family:"PingFang SC","Microsoft YaHei",sans-serif;color:#333}
+.archive-masthead{background:#fff;border-bottom:2px solid #1c66b0}
+.archive-identity h1,.archive-identity>div>a,.archive-title{color:#1c66b0;font-size:20px;font-weight:700;letter-spacing:.02em}
+.archive-identity p,.archive-era{color:#678;font-size:12px}
+.archive-seal{background:#1c66b0;font-size:15px}
+.archive-primary-nav{background:#1c66b0}
+.archive-primary-nav a,.archive-primary-nav span{color:#fff;font-size:13px;border-right:1px solid #3d7fc4;padding:8px 16px;min-height:34px}
+.archive-sidebar{background:#fff;border:1px solid #c9d6e8}
+.archive-sidebar h2,.archive-sidebar h3{background:#1c66b0;color:#fff;font-size:13px;padding:7px 10px}
+.archive-sidebar nav>*{font-size:13px;color:#333;border-bottom:1px solid #e8eef7;padding:7px 10px;min-height:30px}
+.archive-sidebar nav a{color:#333}
+.archive-sidebar nav a[aria-current]{color:#1c66b0;font-weight:700}
+.archive-sidebar nav>*::before{content:"▸ ";color:#1c66b0}
+.archive-facets{background:#f0f4fa;font-size:12px;color:#567}
+.archive-facets dd{color:#1c66b0}
+.filter-details{background:#f0f4fa;border-color:#c9d6e8;color:#567}
+.archive-search-panel{background:#e8f0fa;border-bottom-color:#c9d6e8}
+.archive-search-panel input{border:1px solid #8aa5c8;background:#fff}
+.archive-search-panel button{background:#1c66b0;border-color:#15508a;color:#fff}
+.archive-result-toolbar,.archive-result-summary,.archive-page .result-count{background:#f0f4fa;color:#567;border-color:#c9d6e8;font-size:12px}
+.directory-head{background:#eef2f8;color:#44566a;border-bottom:2px solid #1c66b0;font-size:12px}
+.directory-row{border-bottom:1px solid #e3e9f2;min-height:48px}
+.directory-row:nth-child(even){background:#f7fafc}
+.directory-row b{color:#333;font-size:13px}
+.directory-row code{color:#1c66b0}
+.directory-row small{color:#789}
+.archive-catalog-identity .catalog-id{color:#1c66b0}
+.archive-page .catalog-record>section{background:#f0f4fa;border-left:4px solid #1c66b0}
+.archive-page .record-metadata dt{background:#e8f0fa;color:#44566a}
+.archive-site-footer{background:#e8eef7;border-top:1px solid #c9d6e8;color:#678}
+.archive-site-footer a{color:#1a5cb0}
+
+/* ==========================================================================
+   旧报扫描库：人民日报电子报式红白
+   ========================================================================== */
+.news-page{background:#fff;font-family:Georgia,"Songti SC",SimSun,serif;color:#333}
+.news-masthead{background:#fff;border-bottom:3px solid #c00000}
+.news-wordmark,.news-title,.news-masthead h1{color:#c00000;font:700 26px/1.3 "Songti SC",SimSun,serif;letter-spacing:.06em}
+.news-masthead p,.news-masthead small,.news-era{color:#778;font:12px/1.5 -apple-system,sans-serif}
+.news-library-bar{background:#f7f7f7;border-bottom:1px solid #ddd}
+.news-library-bar a,.news-library-bar span{color:#a00000;font:13px/1 -apple-system,sans-serif;border-right:1px solid #e3e3e3;padding:9px 14px;min-height:34px}
+.news-layout,.news-record-layout{gap:16px}
+.news-search-tools{background:#fff;border:1px solid #ddd;font-family:-apple-system,sans-serif}
+.news-search-tools h2{color:#a00000;font-size:14px}
+.news-search-tools input{border:1px solid #bbb}
+.news-search-tools button{background:#c00000;border-color:#900000;color:#fff}
+.news-calendar{border-color:#ddd}
+.news-calendar header{border-bottom-color:#ddd}
+.news-calendar header strong{color:#a00000}
+.news-calendar>div>b{background:#c00000}
+.news-edition-picker{border-color:#ddd}
+.news-edition-picker>b{background:#c00000}
+.news-date-strip{background:#fbeeee;border-color:#e3c1c1;color:#633}
+.news-result-summary,.news-page .result-count{color:#778;background:#fafafa;border-color:#e3e3e3;font-family:-apple-system,sans-serif}
+.news-index article{border-bottom:1px dashed #ccc}
+.news-index h2 a{color:#a00000;font:700 15px/1.5 "Songti SC",SimSun,serif}
+.news-index article>p:first-child{color:#c00000}
+.news-index small{color:#778}
+.news-site-footer{background:#333;border-top:2px solid #c00000;color:#bbb}
+.news-site-footer a{color:#fff}
+/* 报纸记录页 */
+.news-record-furniture{background:#f7ecec;border-color:#e3c1c1;color:#633}
+.news-edition-running-head{color:#a00000;border-bottom-color:#e3c1c1}
+.news-issue-scan h1,.news-page .scan-sheet h1,.news-page .scan-sheet h2{color:#222}
+.news-page .ocr-panel{border-top:4px solid #c00000;background:#fafafa;font-family:-apple-system,sans-serif}
+.news-correction-header{border-bottom-color:#c00000}
+.news-film-strip{background:#1a1a1a !important;border-color:#000 !important}
+
+/* ==========================================================================
+   地质资料库：全国地质资料馆式深蓝
+   ========================================================================== */
+.geo-page{background:#f2f5f9;font-family:Arial,"Microsoft YaHei",sans-serif;color:#333}
+.geo-masthead{background:#0d3b66}
+.geo-agency h1,.geo-agency>div>a,.geo-title{color:#fff;font-size:22px;font-weight:700}
+.geo-agency p,.geo-agency>span:last-child,.geo-masthead small{color:#bcd6ee;font-size:12px}
+.geo-agency-code{background:#0a2f52;border:1px solid #3a6ea5;color:#fff}
+.geo-primary-nav{background:#14507e;border-bottom:3px solid #0d3b66}
+.geo-primary-nav a,.geo-primary-nav span{color:#fff;font-size:13px;border-right:1px solid #2a6296;padding:8px 16px;min-height:34px}
+.geo-shell{gap:14px}
+.geo-data-tree{background:#fff;border:1px solid #c9d6e8}
+.geo-data-tree h2,.geo-data-tree h3{background:#14507e;color:#fff;font-size:13px;padding:7px 10px}
+.geo-data-tree nav>*{font-size:13px;color:#333;border-bottom:1px solid #e8eef7}
+.geo-data-tree li{color:#567}
+.geo-map-tools{background:#f0f4fa;border-color:#c9d6e8}
+.geo-search-tools{background:#e8eef7;border-bottom-color:#c9d6e8}
+.geo-search-tools input{border:1px solid #8aa5c8;background:#fff}
+.geo-search-tools button{background:#14507e;border-color:#0d3b66;color:#fff}
+.geo-result-toolbar,.geo-result-summary,.geo-page .result-count{background:#f0f4fa;color:#567;border-color:#c9d6e8;font-size:12px}
+.geo-facet-strip{background:#fff;border-color:#c9d6e8}
+.geo-facet-strip>div{border-bottom-color:#e8eef7}
+.geo-facet-strip strong{background:#f0f2f5;color:#44566a}
+.geo-facet-strip span{background:none;border:none;color:#333;padding:2px 6px;font-size:12px}
+.geo-dataset-list>a{border-bottom:1px solid #e3e9f2;min-height:52px}
+.geo-dataset-list>a:nth-child(even){background:#f7fafc}
+.geo-dataset-list code{color:#1a5cb0}
+.geo-dataset-list b{color:#1a5cb0;font-size:13px}
+.geo-dataset-list small{color:#789}
+.geo-report-header{background:#e8eef7;border-bottom:3px solid #14507e}
+.geo-report-header code{background:#14507e}
+.geo-source-register{border-color:#c9d6e8}
+.geo-source-register dt{background:#e8f0fa;color:#44566a}
+.geo-site-footer{background:#0d3b66;border-top:2px solid #0a2f52;color:#bcd6ee}
+.geo-site-footer a{color:#fff}
+
+/* ==========================================================================
+   工作台 / 复核面板：EDMAKER 归档汇交式米色业务系统
+   ========================================================================== */
+.workbench-page,.workbench-tool,.workbench-result,.related-chain,
+.workbench-source,.ending-page,.not-found{background:#f6f1e7}
+.workbench-app-header,.tool-heading.workbench-app-header,
+.receipt-header.workbench-app-header,.controlled-source-header.workbench-app-header{
+  background:#efe6d4;border-bottom:2px solid #b39a6f}
+.workbench-app-header h1,.tool-heading h1{color:#4a3a24;font-size:20px;letter-spacing:.02em}
+.workbench-app-header .eyebrow,.workbench-header-fields dt{color:#8a7452}
+.workbench-header-fields dd{color:#4a3a24}
+.workbench-toolbar{background:#7a5c3e;border-bottom:2px solid #4e3a26}
+.workbench-toolbar a{color:#fff}
+.workbench-toolbar .reset-trigger,
+.workbench-toolbar button[data-action="request-reset"]{background:#8a6a48;border-color:#a58a63;color:#fff;opacity:1}
+/* 业务步骤树：米色 + 金色当前步 */
+.workbench-business-shell,.workbench-operation-shell{background:#f6f1e7;
+  border-color:#d8c9a8}
+.workbench-process-tree,.tool-task-rail{background:#efe6d4;border-right:1px solid #d8c9a8;color:#5a4a30}
+.workbench-process-tree>h2,.tool-task-rail>h2,
+.workbench-operation-shell>.tool-task-rail>h2{color:#4a3a24}
+.workbench-process-tree li.is-complete>span{background:#b8d4a8;border-color:#8aa87a;color:#2a4a22}
+.workbench-process-tree li.is-current>span,.panel-procedure li.is-current span{
+  background:#e0c98f;border-color:#b39a6f;color:#4a3a24}
+.workbench-process-tree small{color:#8a7452}
+.workbench-task-rail{border-top-color:#c9b795}
+.workbench-task-rail h3{color:#4a3a24}
+.workbench-job-row{background:#fff;border-color:#e2d7c0;color:#4a3a24}
+.workbench-task-rail .workbench-job-row,
+.task-rail-current.workbench-job-row,
+.workbench-task-rail .task-rail-current.workbench-job-row{background:#f3e5c3;border-color:#b39a6f;box-shadow:inset 4px 0 #8a6a48}
+.task-rail-paused,.workbench-task-rail .task-rail-paused.workbench-job-row{background:#efe0c8;border-color:#b39a6f}
+/* 案件区 */
+.case-area-heading{background:#fff;border-bottom:1px solid #d8c9a8}
+.case-area-heading>div>span{color:#8a7452}
+.workbench-primary-pane{background:#f6f1e7}
+.current-assignment,.receipt-ready{background:#fff;border:1px solid #d8c9a8;border-left:5px solid #8a6a48}
+.assignment-label,.reaction-label,.eyebrow{color:#8a7452}
+.project-reaction{background:#f3e5c3;border-color:#b39a6f;color:#4a3a24}
+.project-reaction blockquote{background:#fff;border-left:3px solid #8a6a48}
+.workbench-support-register>section{background:#fff;border:1px solid #d8c9a8}
+.opened-sources li,.ordinary-jobs li,.human-receipts li,.related-records li{border-bottom:1px solid #e8dfc9}
+.workbench-bottom-actions{background:#7a5c3e}
+.workbench-bottom-actions a{background:#e8dfc9;color:#4a3a24}
+/* 操作单：白面板 + 绿色小节头 + 灰椭圆按钮 */
+.operation-sheet{background:#fff;border:1px solid #d8c9a8;border-top:3px solid #8a6a48}
+.operation-sheet-heading{background:#f3ecdd;border-bottom-color:#d8c9a8}
+.operation-sheet-heading h2{color:#1a7a1a}
+.operation-sheet-heading h2::before{content:"● ";color:#2a9a2a}
+.question-block>span,.question-block legend{color:#333;font-size:13px}
+.choice-option{background:#fff;border-bottom:1px solid #e8dfc9;min-height:34px;font-size:13px}
+.choice-option:has(input:checked){background:#eef6ea;border-color:#8aa87a}
+.order-grid label{border-bottom:1px solid #e8dfc9}
+.form-actions{background:#f3ecdd;border-top:1px solid #d8c9a8}
+.form-actions .primary-action,.form-actions .primary-link,
+.primary-action,.primary-link{background:linear-gradient(#fdfdfd,#d9d9d9);
+  color:#222;border:1px solid #8f8f8f;border-radius:14px;font-weight:400;font-size:13px}
+.primary-action:hover,.primary-link:hover{filter:brightness(.96)}
+.secondary-action,.secondary-link,.previous-panel-link{background:linear-gradient(#fdfdfd,#e2e2e2);
+  color:#333;border:1px solid #9a9a9a;border-radius:14px}
+.danger-action,.reset-trigger{background:linear-gradient(#f8e8e4,#dcb8b0);color:#6a2a22;border:1px solid #a06a60;border-radius:14px}
+.saved-panel{background:#eef6ea;border-left:5px solid #2a9a2a;color:#2a4a22}
+.form-error{background:#fbeeee;border-color:#c98a80;border-left:5px solid #a03030;color:#6a2a22}
+.hint-drawer{background:#f7f2e6;border-color:#d8c9a8}
+.hint-drawer li{border-bottom:1px solid #e8dfc9}
+.direct-hint-confirm{background:#f3e5c3;border-color:#b39a6f}
+.next-question{background:#e8f0e4;border:1px solid #b9d2b3;color:#2a4a22}
+.next-question h2,.next-question p{color:#2a4a22}
+/* 来源链接区：棕色头 */
+.source-links{background:#fff;border:1px solid #d8c9a8}
+.source-links-heading{background:#7a5c3e}
+.source-links-heading>span{color:#e0c98f}
+.source-links li{border-color:#e8dfc9}
+.source-links li a{color:#1a5cb0}
+.source-links li>b{color:#8a7452}
+/* 面板导航 */
+.panel-nav{border:1px solid #d8c9a8}
+.panel-nav>*{background:#f3ecdd;border-right:1px solid #d8c9a8;color:#4a3a24}
+.panel-nav>a[aria-current="step"]{background:#f3e5c3;box-shadow:inset 0 -3px #8a6a48}
+.locked-panel{color:#a09070}
+.artifact-cue{background:#f3ecdd;border-color:#d8c9a8}
+.tool-task-rail .artifact-cue,.workbench-operation-shell>.tool-task-rail .artifact-cue{
+  background:transparent;border-top:1px solid #c9b795}
+.artifact-cue>div,.tool-task-rail .artifact-cue>div,
+.workbench-operation-shell>.tool-task-rail .artifact-cue>div{
+  background:#efe6d4;border-color:#c9b795;color:#5a4a30}
+.tool-task-rail .artifact-cue h3,.workbench-operation-shell>.tool-task-rail .artifact-cue h3{color:#4a3a24}
+.panel-procedure li{color:#6a5a40}
+.workbench-operation-shell>.tool-task-rail .panel-procedure li{color:#6a5a40}
+.panel-procedure li.is-current span{background:#e0c98f;border-color:#b39a6f;color:#4a3a24}
+/* 受控附件页 */
+.controlled-source-header{background:#efe6d4;border-bottom:2px solid #b39a6f}
+.controlled-source-header h1{color:#4a3a24}
+.controlled-source-nav{background:#7a5c3e}
+.controlled-document{border:1px solid #d8c9a8;background:#fff}
+.document-stamp{background:#f3ecdd;border-right:1px solid #d8c9a8}
+.document-stamp span{border:2px solid #8a6a48;color:#6a5236}
+.custody-boundary{background:#f7f2e6;border-left:4px solid #8a6a48}
+/* 回单 / 终点 */
+.derived-receipt,.branch-status,.chain-premise,.next-source,.chain-closure,
+.execution-summary,.shared-ending-boundary{background:#fff;border:1px solid #d8c9a8}
+.receipt-context-rail,.related-chain-context,.tool-context-rail,.workbench-context-rail{background:#f3ecdd;border-left:1px solid #d8c9a8}
+.endpoint-header{background:#efe6d4;border-bottom:3px solid #8a6a48}
+.endpoint-status-grid,.endpoint-ledger{border-color:#d8c9a8}
+.endpoint-status-grid>div,.endpoint-ledger>div{border-color:#d8c9a8;background:#fff}
+.endpoint-status-grid dt,.endpoint-ledger dt{color:#8a7452}
+.unresolved-list{border-color:#d8c9a8;background:#fff}
+/* 相关记录链 */
+.related-chain{border:1px solid #d8c9a8}
+/* 证据影像框：中性灰，去装饰 */
+.evidence-visual{background:#e8e8e8;border:1px solid #bbb}
+.evidence-visual figcaption{background:#f5f5f5;border-top:1px solid #ccc;color:#555}
+
+/* ---------- 打印/动效保持原样 ---------- */
+
+
+/* ==========================================================================
+   密度层 v2：强制真实网页的物理密度
+   12px 正文 / 1px 硬边框 / 零阴影 / 紧凑行距 / 无大标题 / 固定窄宽
+   ========================================================================== */
+
+/* ---------- 全局重置：去所有现代装饰 ---------- */
+body{font-size:12px !important;line-height:1.6 !important}
+.fictional-site,.institution-page,.workbench-tool,.workbench-result,
+.related-chain,.workbench-source,.ending-page,.not-found{
+  box-shadow:none !important;border-radius:0 !important}
+*{-webkit-box-shadow:none !important}
+
+/* ---------- 字号压缩 ---------- */
+h1{font-size:16px !important;letter-spacing:.02em !important}
+h2{font-size:14px !important}
+h3{font-size:13px !important}
+p,li,dd,dt,span,small,label,legend{font-size:12px !important}
+button,input,select,textarea{font-size:12px !important}
+a{font-size:12px !important}
+
+/* ---------- 会话条压缩 ---------- */
+.external-session-strip{min-height:24px !important}
+.external-session-inner{min-height:24px !important}
+.external-session-strip a,.external-session-strip button,
+.external-session-strip .excerpt-status{min-height:20px !important;padding:2px 6px !important;font-size:11px !important}
+
+/* ---------- 内部系统顶栏压缩 ---------- */
+.institution-topbar-inner{min-height:36px !important}
+.institution-wordmark{font-size:13px !important}
+.institution-system-name{font-size:11px !important}
+.institution-topbar-actions{font-size:11px !important}
+.institution-topbar-actions a{min-height:24px !important;padding:3px 8px !important;font-size:11px !important}
+.institution-topbar .session-record-actions button,
+.institution-topbar .session-record-actions a,
+.institution-topbar .session-record-actions .excerpt-status{min-height:24px !important;font-size:11px !important}
+
+/* ---------- 开场页压缩 ---------- */
+.handover-header{padding:16px 24px !important}
+.handover-header h1{font-size:16px !important}
+.subtitle{font-size:12px !important}
+.handover-register{gap:0 !important}
+.handover-register>div{padding:4px 8px !important}
+.handover-register dt{font-size:11px !important}
+.handover-register dd{font-size:12px !important}
+.opening-boundary-layer{margin-top:12px !important}
+.boundary-layer-heading{padding:10px 16px !important}
+.boundary-layer-heading>span{font-size:11px !important}
+.boundary-layer-heading h2{font-size:13px !important;margin:0 !important}
+.boundary-layer-body>*{padding:14px 16px !important}
+.handover-inworld-layer{margin-top:12px !important}
+.handover-inworld-layer>header{padding:10px 16px !important}
+.handover-inworld-layer>header h2{font-size:13px !important;margin:0 !important}
+.handover-inworld-layer>header p{font-size:12px !important}
+.handover-inworld-layer .creator-contract{padding:14px 16px !important}
+.handover-inworld-layer .creator-contract>div{padding:6px 8px !important}
+.handover-inworld-layer .creator-contract dt{font-size:11px !important}
+.handover-inworld-layer .creator-contract dd{font-size:12px !important}
+.handover-three-steps{padding:14px 16px !important}
+.handover-three-steps li{padding:6px 0 !important;min-height:auto !important}
+.handover-three-steps li>span{width:22px !important;height:22px !important;font-size:11px !important}
+.handover-three-steps p{font-size:11px !important}
+.handover-actions{padding:10px 16px !important}
+.primary-action,.primary-link{min-height:28px !important;padding:4px 14px !important;font-size:12px !important}
+
+/* ==========================================================================
+   论坛密度：12px Tahoma，紧凑表格，无大标题
+   ========================================================================== */
+.forum-page{font-size:12px !important}
+.forum-masthead{padding:0 !important;min-height:auto !important}
+.forum-title-row{min-height:auto !important;padding:8px 12px !important}
+.forum-title-row h1,.forum-logo{font-size:16px !important;margin:0 !important}
+.forum-title-row p{font-size:11px !important;max-width:40em}
+.forum-utility{min-height:auto !important;padding:3px 12px !important}
+.forum-primary-nav{min-height:auto !important}
+.forum-primary-nav a,.forum-primary-nav span{min-height:22px !important;padding:3px 10px !important;font-size:12px !important}
+.forum-breadcrumb{padding:4px 12px !important;font-size:12px !important}
+.forum-frame{min-height:auto !important}
+.forum-operations-shell{grid-template-columns:180px minmax(0,1fr) !important;gap:4px !important;padding:4px !important}
+.forum-login-box,.forum-section-tree,.forum-era-warning{padding:6px !important}
+.forum-login-box h2,.forum-section-tree h2{margin:-6px -6px 6px !important;padding:3px 6px !important;font-size:12px !important}
+.forum-login-box label{min-height:auto !important;font-size:12px !important;gap:4px}
+.forum-login-box input{min-height:20px !important;font-size:12px !important}
+.forum-login-box button{min-height:22px !important;font-size:12px !important}
+.forum-section-tree>*{font-size:12px !important;min-height:auto !important;padding:2px 0 !important}
+.forum-era-warning{font-size:11px !important}
+.forum-board-toolbar,.forum-search-row{padding:4px 8px !important;font-size:12px !important}
+.forum-search-row input{min-height:20px !important;font-size:12px !important}
+.forum-search-row button{min-height:22px !important;font-size:12px !important}
+.forum-board-stats{padding:3px 8px !important;font-size:12px !important}
+.forum-result-line{margin:4px 8px 0 !important;font-size:12px !important}
+/* 版面表格 */
+.forum-board{margin:4px !important}
+.forum-board-head{min-height:auto !important;padding:3px 8px !important;font-size:12px !important}
+.forum-topic-row{min-height:auto !important;padding:3px 8px !important;font-size:12px !important}
+.forum-topic-row b{font-size:12px !important}
+.forum-topic-row small{font-size:11px !important}
+.forum-topic-main{gap:2px}
+.forum-topic-author,.forum-topic-activity{font-size:11px !important}
+.forum-topic-author b,.forum-topic-activity b{font-size:12px !important}
+/* 楼层页 */
+.forum-thread{margin:4px !important}
+.forum-floor{min-height:auto !important}
+.forum-floor-header,.forum-post-head{padding:3px 8px !important}
+.forum-floor-header h1,.forum-post-head h1,.forum-post-head h2{font-size:13px !important;margin:0 !important}
+.forum-floor-header time,.forum-floor-no{font-size:11px !important}
+.forum-author{padding:8px 6px !important;font-size:12px !important;width:120px !important}
+.forum-author b{font-size:12px !important}
+.forum-avatar{width:36px !important;height:36px !important;font-size:16px !important}
+.forum-post-body{padding:8px 12px !important;font-size:13px !important;line-height:1.7 !important}
+.forum-post-body p{font-size:13px !important}
+.forum-edit-state,.forum-signature{font-size:11px !important;padding-top:6px !important;margin-top:10px !important}
+.forum-post-tools{font-size:11px !important;margin-top:6px !important}
+.forum-thread-status{margin:6px 0 8px !important}
+.forum-thread-status dt,.forum-thread-status dd{padding:3px 6px !important;font-size:12px !important}
+.forum-thread-footer{padding:4px 8px !important;font-size:11px !important;min-height:auto !important}
+
+/* ==========================================================================
+   民俗站密度：12px 宋体，三栏 160/400/300，紧凑链接
+   ========================================================================== */
+.site-folk{font-size:12px !important}
+.folk-site-frame{min-height:auto !important}
+.folk-masthead{padding:10px 14px !important}
+.folk-masthead h1,.folk-site-name{font-size:16px !important;margin:0 0 4px !important}
+.folk-masthead p{font-size:11px !important}
+.folk-text-nav{padding:3px 8px !important;font-size:12px !important}
+.folk-text-nav a,.folk-text-nav span{min-height:auto !important;padding:2px 6px !important;font-size:12px !important}
+.folk-layout{grid-template-columns:160px minmax(0,1fr) 220px !important;gap:0 !important;align-items:start !important}
+.folk-directory{padding:8px 6px !important;min-height:auto !important;font-size:12px !important}
+.folk-directory h2,.folk-directory h3{font-size:12px !important;padding:3px 6px !important;margin:0 0 6px !important}
+.folk-directory ul li{padding:2px 0 !important;font-size:12px !important}
+.folk-directory>a,.folk-directory>span{min-height:auto !important;padding:2px 4px !important;font-size:12px !important}
+.folk-directory hr{margin:6px 0}
+.folk-directory p{font-size:11px !important;margin:4px 0 !important}
+.folk-counter{margin-top:8px !important;padding:4px !important;font-size:11px !important}
+.folk-content{padding:10px 14px !important;font-size:13px !important}
+.folk-search-block{padding:6px !important;font-size:12px !important;margin-bottom:10px !important}
+.folk-search-block input{min-height:20px !important;font-size:12px !important}
+.folk-search-block button{min-height:22px !important;font-size:12px !important}
+.folk-result-line,.site-folk .result-count{font-size:12px !important;margin:4px 0 6px !important}
+.folk-index{padding:0 0 12px 20px !important;font-size:12px !important}
+.folk-index li{padding:4px 2px !important}
+.folk-index a{font-size:12px !important;min-height:auto !important}
+.folk-index a>span{font-size:11px !important;margin-right:6px !important}
+.folk-index p{font-size:12px !important;margin:2px 0 0 !important}
+.folk-service-rail{padding:8px 6px !important;font-size:12px !important}
+.folk-service-rail h2{font-size:12px !important;padding:3px 6px !important;margin:0 0 6px !important}
+.folk-service-rail a,.folk-service-rail span{min-height:auto !important;padding:2px 0 !important;font-size:12px !important}
+.folk-side-note{padding:8px !important;font-size:12px !important}
+.folk-side-note h2{font-size:12px !important;margin:0 0 4px !important}
+.folk-site-footer{padding:6px 10px !important;font-size:11px !important}
+.folk-site-footer a{min-height:auto !important;font-size:12px !important}
+/* 文章页 */
+.folk-nav{padding:4px 8px !important;font-size:12px !important;min-height:auto !important}
+.paper-article{padding:10px 14px !important}
+.paper-article .paper-date{font-size:11px !important}
+.paper-article h1{font-size:15px !important;margin:4px 0 !important}
+.paper-deck{font-size:12px !important}
+.ink-rule{margin:10px 0 !important;height:3px !important}
+.paper-article>p:not(.paper-date):not(.paper-deck){font-size:13px !important;line-height:1.8 !important;max-width:42em}
+
+/* ==========================================================================
+   档案密度：12px，蓝侧栏，紧凑结果行
+   ========================================================================== */
+.archive-page{font-size:12px !important}
+.archive-masthead{padding:0 !important}
+.archive-identity{min-height:auto !important;padding:10px 16px !important}
+.archive-identity h1,.archive-identity>div>a,.archive-title{font-size:15px !important;margin:0 0 2px !important}
+.archive-identity p,.archive-era{font-size:11px !important}
+.archive-seal{width:36px !important;height:36px !important;font-size:13px !important}
+.archive-primary-nav{min-height:auto !important}
+.archive-primary-nav a,.archive-primary-nav span{min-height:24px !important;padding:4px 12px !important;font-size:12px !important}
+.archive-shell,.archive-record-shell{grid-template-columns:180px minmax(0,1fr) !important;gap:12px !important;margin:12px auto 24px !important}
+.archive-sidebar{font-size:12px !important}
+.archive-sidebar h2,.archive-sidebar h3{padding:5px 8px !important;font-size:12px !important}
+.archive-sidebar nav>*{min-height:auto !important;padding:4px 8px !important;font-size:12px !important}
+.archive-facets{padding:6px 8px !important;font-size:12px !important}
+.archive-facets dl>div{padding:2px 4px !important}
+.archive-facets dt{font-size:11px !important}
+.archive-facets dd{font-size:12px !important}
+.filter-details{padding:6px 8px !important;font-size:12px !important}
+.filter-details summary{font-size:12px !important}
+.archive-search-panel{padding:10px 12px !important}
+.archive-search-panel legend{font-size:12px !important;padding:0 0 4px !important}
+.archive-search-panel label{font-size:12px !important}
+.archive-search-panel input{min-height:22px !important;font-size:12px !important}
+.archive-search-panel button{min-height:24px !important;font-size:12px !important}
+.archive-result-toolbar,.archive-result-summary,.archive-page .result-count{padding:4px 10px !important;font-size:12px !important}
+.archive-result-summary{display:flex;gap:12px}
+.directory-table{margin:0 !important}
+.directory-head{min-height:auto !important;padding:3px 8px !important;font-size:12px !important}
+.directory-row{min-height:auto !important;padding:4px 8px !important;font-size:12px !important}
+.directory-row b{font-size:12px !important}
+.directory-row code{font-size:11px !important}
+.directory-row small{font-size:11px !important}
+/* 记录详情页 */
+.institution-breadcrumb{padding:4px 8px !important;font-size:12px !important}
+.catalog-record{padding:12px 0 24px !important}
+.archive-catalog-identity{padding:12px 16px !important}
+.archive-catalog-identity .catalog-id{font-size:11px !important;margin:0 0 4px !important}
+.archive-catalog-identity h1{font-size:14px !important;margin:0 0 4px !important}
+.catalog-summary{font-size:12px !important}
+.archive-record-fields{padding:12px 16px 0 !important}
+.archive-record-fields h2{font-size:13px !important;margin:0 0 8px !important}
+.archive-page .catalog-record>section:not(.archive-record-fields){margin:12px 16px 0 !important;padding:10px 12px !important}
+.archive-page .catalog-record>section:not(.archive-record-fields) h2{font-size:13px !important;margin:0 0 6px !important}
+.archive-page .record-metadata{font-size:12px !important}
+.archive-page .record-metadata dt,.archive-page .record-metadata dd{padding:4px 6px !important;font-size:12px !important}
+.archive-finding-aid{padding:8px 12px !important;font-size:12px !important}
+.archive-finding-aid p{font-size:11px !important;padding:0 8px !important}
+.archive-site-footer{padding:8px 12px !important;font-size:11px !important;min-height:auto !important}
+.archive-site-footer a{min-height:auto !important;font-size:12px !important}
+
+/* ==========================================================================
+   旧报密度：12px，红白，紧凑日历与版次
+   ========================================================================== */
+.news-page{font-size:12px !important}
+.news-masthead{padding:12px 16px !important}
+.news-masthead h1,.news-wordmark,.news-title{font-size:16px !important;margin:0 !important}
+.news-masthead p,.news-masthead small,.news-era{font-size:11px !important}
+.news-library-mark>span{font-size:11px !important}
+.news-library-bar{min-height:auto !important}
+.news-library-bar a,.news-library-bar span{min-height:24px !important;padding:5px 10px !important;font-size:12px !important}
+.news-layout,.news-record-layout{gap:12px !important;margin:12px auto 24px !important}
+.news-search-tools{padding:8px 10px !important;font-size:12px !important}
+.news-search-tools h2{font-size:13px !important;margin:0 0 6px !important}
+.news-search-tools form,.news-search-tools label{gap:4px !important}
+.news-search-tools input{min-height:22px !important;font-size:12px !important}
+.news-search-tools button{min-height:24px !important;font-size:12px !important}
+.news-calendar{margin-top:8px !important}
+.news-calendar header{min-height:auto !important}
+.news-calendar header button{min-height:20px !important;padding:2px 6px !important}
+.news-calendar header strong{font-size:12px !important}
+.news-calendar>div{padding:3px !important;font-size:11px !important}
+.news-calendar>div>*{min-height:20px !important;font-size:11px !important}
+.news-edition-picker{margin-top:8px !important}
+.news-edition-picker h3{font-size:12px !important;margin:0 0 4px !important}
+.news-edition-picker>*{min-height:auto !important;padding:3px 6px !important;font-size:12px !important}
+.news-date-strip{padding:6px 10px !important;font-size:12px !important;grid-template-columns:auto minmax(160px,1fr) !important}
+.news-date-strip p{font-size:11px !important}
+.news-result-summary,.news-page .result-count{padding:4px 10px !important;font-size:12px !important}
+.news-index{margin:0 !important}
+.news-index article{padding:6px 10px !important}
+.news-index h2{font-size:13px !important;margin:0 0 3px !important}
+.news-index h2 a{font-size:13px !important;min-height:auto !important;padding:0 !important}
+.news-index article>p:first-child{font-size:11px !important}
+.news-index small{font-size:11px !important}
+.news-site-footer{padding:8px 12px !important;font-size:11px !important;min-height:auto !important}
+.news-site-footer a{min-height:auto !important;font-size:12px !important}
+/* 记录页 */
+.news-breadcrumb{padding:4px 8px !important;font-size:12px !important;min-height:auto !important}
+.news-record-furniture{padding:4px 10px !important;font-size:12px !important;min-height:auto !important}
+.news-edition-running-head{font-size:11px !important;padding-bottom:6px !important}
+.news-issue-scan h1,.news-page .scan-sheet h1,.news-page .scan-sheet h2{font-size:14px !important;padding:8px 0 !important}
+.news-record-layout{grid-template-columns:minmax(0,1.45fr) minmax(240px,.65fr) !important}
+.scan-record{gap:14px !important;padding:12px !important}
+.scan-sheet{padding:12px !important}
+.ocr-panel{padding:10px !important;font-size:12px !important}
+.ocr-panel h2{font-size:13px !important;margin:0 0 6px !important}
+.ocr-panel p{font-size:12px !important}
+.news-page .record-metadata>div{padding:4px 0 !important;font-size:12px !important}
+.news-page .record-metadata dt,.news-page .record-metadata dd{font-size:12px !important}
+.news-film-strip{padding:12px !important}
+.news-film-identity{padding:6px 0 10px !important}
+.news-film-identity h1{font-size:14px !important}
+.news-film-identity p{font-size:11px !important}
+.news-film-frame-rail{margin:-12px -12px 10px !important;padding:4px 12px !important;gap:12px !important}
+.news-film-frame-rail span{width:16px !important;height:6px !important}
+.news-correction-header{padding:0 0 8px !important}
+.news-correction-header>p:first-child{font-size:11px !important;margin-bottom:2px !important}
+.news-correction-header h1{font-size:14px !important;margin-bottom:4px !important}
+.news-correction-comparison{min-height:auto !important}
+.news-correction-before,.news-correction-after{min-height:auto !important;padding:10px !important}
+.news-correction-before h2,.news-correction-after h2{font-size:12px !important;padding:0 0 4px !important}
+.news-correction-note{padding:8px 10px !important;font-size:12px !important}
+.news-correction-log{padding:10px !important}
+.news-correction-log>dl>div{padding:4px 0 !important}
+.news-correction-log>dl dt,.news-correction-log>dl dd{padding:3px 4px !important;font-size:12px !important}
+
+/* ==========================================================================
+   地质密度：12px，深蓝，紧凑分面与结果
+   ========================================================================== */
+.geo-page{font-size:12px !important}
+.geo-masthead{padding:0 !important}
+.geo-agency{min-height:auto !important;padding:10px 14px !important}
+.geo-agency h1,.geo-agency>div>a,.geo-title{font-size:15px !important;margin:0 0 2px !important}
+.geo-agency p,.geo-agency>span:last-child{font-size:11px !important}
+.geo-agency-code{width:44px !important;height:36px !important;font-size:11px !important}
+.geo-primary-nav{min-height:auto !important}
+.geo-primary-nav a,.geo-primary-nav span{min-height:24px !important;padding:4px 12px !important;font-size:12px !important}
+.geo-shell{gap:12px !important;margin:12px auto 24px !important}
+.geo-data-tree{font-size:12px !important}
+.geo-data-tree h2,.geo-data-tree h3{padding:5px 8px !important;font-size:12px !important}
+.geo-data-tree nav>*{min-height:auto !important;padding:4px 8px !important;font-size:12px !important}
+.geo-data-tree li{padding:2px 0 !important;font-size:12px !important}
+.geo-map-tools{padding:6px 8px !important;font-size:12px !important;margin-top:8px !important}
+.geo-map-tools h3,.geo-record-tools h3{font-size:12px !important;margin:0 0 4px !important;flex-basis:auto !important}
+.geo-map-tools p,.geo-record-tools p{font-size:11px !important;flex-basis:auto !important}
+.geo-map-tools>div{gap:4px !important}
+.geo-map-tools button,.geo-record-tools button{min-height:22px !important;padding:2px 8px !important;font-size:12px !important}
+.filter-details{padding:6px 8px !important;font-size:12px !important}
+.filter-details summary{font-size:12px !important}
+.geo-search-tools{padding:10px 12px !important}
+.geo-search-tools form,.geo-search-tools>div{gap:4px !important}
+.geo-search-tools label{font-size:12px !important}
+.geo-search-tools input{min-height:22px !important;font-size:12px !important}
+.geo-search-tools button{min-height:24px !important;font-size:12px !important}
+.geo-facet-strip{margin:8px 0 !important}
+.geo-facet-strip>div{min-height:auto !important;padding:3px 8px !important}
+.geo-facet-strip strong{width:70px !important;font-size:12px !important}
+.geo-facet-strip span{padding:1px 6px !important;font-size:12px !important}
+.geo-result-toolbar,.geo-result-summary,.geo-page .result-count{padding:4px 10px !important;font-size:12px !important}
+.geo-dataset-list{margin:0 !important}
+.geo-dataset-list>a{min-height:auto !important;padding:4px 8px !important;grid-template-columns:120px minmax(0,1fr) 90px !important;gap:8px !important}
+.geo-dataset-list code{font-size:11px !important}
+.geo-dataset-list b{font-size:12px !important}
+.geo-dataset-list small{font-size:11px !important}
+.geo-site-footer{padding:8px 12px !important;font-size:11px !important;min-height:auto !important}
+.geo-site-footer a{min-height:auto !important;font-size:12px !important}
+/* 记录详情页 */
+.geo-breadcrumb{padding:4px 8px !important;font-size:12px !important}
+.technical-report{padding:0 !important}
+.geo-report-header{padding:10px 14px !important}
+.geo-report-header code{font-size:11px !important;padding:2px 6px !important;margin-bottom:4px !important}
+.geo-report-header h1{font-size:14px !important;margin:0 0 4px !important}
+.geo-report-header p{font-size:12px !important}
+.geo-report-workspace{grid-template-columns:minmax(0,1.5fr) minmax(200px,.55fr) !important;gap:10px !important;margin:10px 0 !important}
+.geo-attachment-register{padding:8px 10px !important;font-size:12px !important}
+.geo-attachment-register h2{font-size:13px !important;margin:0 0 6px !important}
+.geo-attachment-register dl>div{padding:4px 0 !important;font-size:12px !important}
+.geo-attachment-register dt,.geo-attachment-register dd{font-size:12px !important}
+.geo-technical-fields{padding:10px 14px !important}
+.geo-technical-fields h2{font-size:13px !important;margin:0 0 8px !important}
+.geo-source-register{margin:6px 14px !important}
+.geo-source-register>div{padding:4px 6px !important;font-size:12px !important}
+.geo-source-register dt,.geo-source-register dd{font-size:12px !important}
+.technical-body{padding:10px 14px !important}
+.technical-body h2{font-size:13px !important;margin:0 0 8px !important}
+.technical-body p{font-size:12px !important}
+.technical-report>footer{margin-top:10px !important;padding:8px 14px !important;font-size:11px !important}
+
+/* ==========================================================================
+   工作台密度：12px，米色，紧凑步骤树与表单
+   ========================================================================== */
+.workbench-page,.workbench-tool,.workbench-result,.related-chain,
+.workbench-source,.ending-page,.not-found{padding:0 !important}
+.workbench-app-header,.tool-heading.workbench-app-header,
+.receipt-header.workbench-app-header,.controlled-source-header.workbench-app-header{padding:12px 16px !important}
+.workbench-app-header h1,.tool-heading h1{font-size:14px !important;margin:0 0 4px !important}
+.workbench-app-header .eyebrow{font-size:11px !important;margin-bottom:3px !important}
+.workbench-header-fields{width:min(400px,60%) !important}
+.workbench-header-fields>div{padding:4px 8px !important}
+.workbench-header-fields dt{font-size:11px !important}
+.workbench-header-fields dd{font-size:12px !important}
+.workbench-toolbar{min-height:auto !important;padding:6px 12px !important;gap:14px !important;font-size:12px !important}
+.workbench-toolbar a{min-height:24px !important;padding:3px 8px !important;font-size:12px !important}
+.workbench-toolbar .reset-trigger,
+.workbench-toolbar button[data-action="request-reset"]{min-height:24px !important;padding:3px 10px !important;font-size:12px !important}
+/* 步骤树 */
+.workbench-business-shell,.workbench-operation-shell{grid-template-columns:200px minmax(0,1fr) !important}
+.workbench-process-tree,.tool-task-rail{padding:10px 8px !important}
+.workbench-process-tree>h2,.tool-task-rail>h2{font-size:12px !important;margin:0 0 8px !important}
+.workbench-process-tree>ol>li{padding:5px 0 !important;grid-template-columns:26px 1fr !important;gap:6px !important}
+.workbench-process-tree>ol>li>span,.panel-procedure span{width:24px !important;height:24px !important;font-size:11px !important}
+.workbench-process-tree small{font-size:11px !important}
+.workbench-task-rail{padding-top:8px !important}
+.workbench-task-rail h3{font-size:12px !important;margin:0 0 6px !important}
+.workbench-job-row{min-height:auto !important;padding:4px 6px !important;font-size:12px !important;grid-template-columns:50px minmax(0,1fr) 60px !important;gap:6px !important}
+.workbench-job-row .job-code{font-size:10px !important}
+.workbench-job-row .job-title{font-size:12px !important}
+.workbench-job-row .job-status{font-size:11px !important}
+/* 案件区 */
+.case-area-heading{padding:10px 16px !important}
+.case-area-heading h2{font-size:13px !important;margin:0 !important}
+.case-area-heading>div>span{font-size:11px !important}
+.case-area-heading dl{font-size:12px !important;gap:12px !important}
+.case-area-heading dl>div{gap:4px !important}
+.workbench-primary-pane{padding:14px 16px !important}
+.current-assignment,.receipt-ready{margin:0 0 12px !important;padding:10px 12px !important}
+.current-assignment h2,.receipt-ready h2{font-size:13px !important;margin:0 0 4px !important}
+.current-assignment p,.receipt-ready p{font-size:12px !important;margin-bottom:2px !important}
+.assignment-label,.reaction-label,.eyebrow{font-size:11px !important;margin-bottom:3px !important}
+.project-reaction{margin:0 0 12px !important;padding:10px 12px !important}
+.project-reaction h2{font-size:13px !important;margin:0 0 6px !important}
+.project-reaction blockquote{font-size:12px !important;margin:8px 0 !important;padding:6px 10px !important}
+.project-reaction p{font-size:12px !important}
+.reaction-actions,.result-actions{gap:8px !important;padding-top:8px !important}
+.reaction-actions>*,.result-actions>*{min-height:24px !important;padding:3px 10px !important;font-size:12px !important}
+.workbench-receipts{margin-top:12px !important}
+.workbench-receipts h2{font-size:13px !important;margin:0 0 8px !important}
+.human-receipts li{padding:4px 6px !important;min-height:auto !important}
+.human-receipts li strong{font-size:12px !important}
+.human-receipts li span{font-size:11px !important}
+.workbench-support-register{margin:0 16px 12px !important}
+.workbench-support-register>section{padding:10px 12px !important}
+.workbench-support-register h2{font-size:13px !important;margin:0 0 8px !important}
+.opened-sources li,.ordinary-jobs li,.related-records li{padding:4px 6px !important;min-height:auto !important}
+.opened-sources a,.related-records a{font-size:12px !important}
+.opened-sources span,.ordinary-jobs span:last-child,.related-records span{font-size:11px !important}
+.workbench-bottom-actions{padding:8px 16px !important;min-height:auto !important}
+.workbench-bottom-actions span{font-size:12px !important}
+.workbench-bottom-actions a{min-height:24px !important;padding:3px 10px !important;font-size:12px !important}
+/* 操作单 */
+.operation-sheet{margin:0 !important}
+.operation-sheet-heading{padding:10px 14px !important}
+.operation-sheet-heading h2{font-size:13px !important;margin:0 !important}
+.operation-sheet-heading p{font-size:12px !important;margin:0 !important}
+.operation-sheet-heading>div>span{font-size:11px !important}
+.operation-sheet form,.operation-sheet>.saved-panel,.operation-sheet>.form-error{margin:12px 14px !important}
+.question-block{padding:10px 0 !important}
+.question-block>span,.question-block legend{font-size:12px !important;margin-bottom:4px !important}
+.choice-option{min-height:auto !important;padding:4px 8px !important;font-size:12px !important}
+.choice-option input{width:14px !important;height:14px !important}
+.order-grid label{min-height:auto !important;padding:3px 0 !important;grid-template-columns:50px minmax(0,1fr) !important;gap:6px !important}
+.order-grid select{min-height:22px !important;font-size:12px !important}
+.question-block select{min-height:22px !important;font-size:12px !important}
+.form-actions{margin:16px -14px -12px !important;padding:10px 14px !important;gap:8px !important}
+.form-actions>div{gap:8px !important}
+.form-actions>div>span{font-size:11px !important}
+.form-actions .primary-action,.form-actions .primary-link{min-height:24px !important;padding:3px 12px !important;font-size:12px !important}
+.secondary-action,.secondary-link,.previous-panel-link{min-height:24px !important;padding:3px 12px !important;font-size:12px !important}
+.saved-panel,.form-error{margin:8px 0 !important;padding:8px 10px !important;font-size:12px !important}
+.saved-panel strong{font-size:12px !important}
+.hint-drawer{margin:8px 0 !important;padding:6px 10px !important}
+.hint-drawer summary{font-size:12px !important}
+.hint-drawer ol{padding-left:18px !important}
+.hint-drawer li{padding:6px 0 !important;font-size:12px !important}
+.direct-hint-confirm{padding:8px !important;font-size:12px !important}
+.direct-hint-confirm button{min-height:22px !important;font-size:12px !important}
+.next-question{margin:8px 0 !important;padding:8px 10px !important}
+.next-question h2{font-size:12px !important;margin:0 0 4px !important}
+.next-question p{font-size:12px !important;margin:0 !important}
+.tool-support-row{grid-template-columns:minmax(0,1fr) minmax(220px,.6fr) !important;gap:10px !important;margin-top:10px !important}
+/* 来源链接 */
+.source-links{margin:0 0 10px !important}
+.source-links-heading{padding:8px 12px !important;grid-template-columns:60px minmax(100px,.45fr) minmax(200px,1fr) !important;gap:8px !important}
+.source-links-heading>span{font-size:11px !important}
+.source-links-heading h3{font-size:13px !important;margin:0 !important}
+.source-links-heading p{font-size:11px !important;margin:0 !important}
+.source-links ul{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+.source-links li{min-height:auto !important;padding:4px 8px !important}
+.source-links li a{font-size:12px !important;min-height:auto !important;padding:2px 0 !important}
+.source-links li a small{font-size:11px !important}
+.source-links li>b{font-size:11px !important}
+/* 面板导航 */
+.panel-nav{margin:0 0 10px !important}
+.panel-nav>*{min-height:auto !important;padding:4px 8px !important;font-size:12px !important}
+.panel-nav small{font-size:11px !important}
+.panel-nav>span:first-child{font-size:12px !important}
+.artifact-cue{margin:8px 0 !important}
+.artifact-cue>div{padding:8px 10px !important}
+.artifact-cue h3{font-size:12px !important;margin:0 0 4px !important}
+.artifact-cue p{font-size:12px !important;margin:0 !important}
+.panel-procedure li{min-height:auto !important;padding:3px 0 !important;font-size:12px !important}
+.panel-procedure span{width:22px !important;height:22px !important;font-size:11px !important}
+/* 受控附件 */
+.controlled-source-header{padding:12px 16px !important}
+.controlled-source-header p{font-size:11px !important}
+.controlled-source-header h1{font-size:14px !important;margin:0 0 4px !important}
+.controlled-source-nav{padding:6px 16px !important;min-height:auto !important;font-size:12px !important;gap:12px !important}
+.controlled-source-nav a{min-height:24px !important;font-size:12px !important}
+.controlled-source-nav span{font-size:12px !important}
+.controlled-source-shell{gap:14px !important}
+.controlled-document{grid-template-columns:110px minmax(0,1fr) !important;gap:14px !important}
+.document-stamp{padding:10px 8px !important}
+.document-stamp>span{padding:2px 8px !important;font-size:12px !important;margin-bottom:6px !important}
+.document-stamp strong{font-size:12px !important}
+.document-stamp small{font-size:11px !important}
+.document-body{padding:12px 16px !important}
+.source-view-heading{margin-bottom:10px !important;padding-bottom:6px !important}
+.source-view-heading>span{font-size:10px !important;margin-bottom:2px !important}
+.source-view-heading h2{font-size:14px !important;margin:0 !important}
+.source-table-notes,.source-media-transcript{padding:8px 10px !important;font-size:12px !important}
+.source-table-notes summary,.source-media-transcript summary{font-size:12px !important}
+.source-field-table .record-metadata,.source-plan-fields .record-metadata,
+.source-timeline-fields .record-metadata,.source-media-fields .record-metadata,
+.source-trace-fields .record-metadata,.source-workflow-fields .record-metadata{margin:10px 0 0 !important;font-size:12px !important}
+.source-field-table .record-metadata>div,.source-plan-fields .record-metadata>div,
+.source-timeline-fields .record-metadata>div,.source-media-fields .record-metadata>div,
+.source-trace-fields .record-metadata>div,.source-workflow-fields .record-metadata>div{padding:4px 6px !important}
+.source-field-table dt,.source-field-table dd{font-size:12px !important;padding:4px 6px !important}
+.custody-boundary{padding:10px 14px !important;margin-top:10px !important;font-size:12px !important}
+.custody-boundary h2{font-size:13px !important;margin:0 0 6px !important}
+.custody-boundary p{font-size:12px !important;margin:0 !important}
+/* 证据影像 */
+.evidence-visual{margin:0 0 10px !important}
+.evidence-visual img{max-height:60vh !important}
+.evidence-visual figcaption{padding:6px 8px !important;font-size:11px !important}
+.evidence-placeholder-sheet{min-height:auto !important;padding:12px !important}
+.evidence-placeholder-sheet>span{font-size:12px !important}
+.evidence-placeholder-sheet p{font-size:11px !important;margin:4px 0 0 !important}
+/* 回单 / 终点 */
+.receipt-system-layout,.related-chain-shell{grid-template-columns:minmax(0,1.45fr) minmax(200px,.65fr) !important}
+.receipt-primary-pane,.related-chain-primary{padding:12px 16px !important}
+.receipt-context-rail,.related-chain-context,.tool-context-rail{padding:10px 12px !important;font-size:12px !important}
+.receipt-context-rail h2,.related-chain-context h2,.tool-context-rail h2{font-size:13px !important;margin:0 0 8px !important}
+.receipt-context-rail a{min-height:auto !important;padding:4px 0 !important;font-size:12px !important}
+.derived-receipt,.branch-status,.chain-premise,.next-source,.chain-closure,
+.execution-summary,.shared-ending-boundary{margin:0 0 12px !important;padding:10px 12px !important}
+.derived-receipt h2,.branch-status h2,.chain-premise h2,.next-source h2,
+.chain-closure h2,.execution-summary h2,.shared-ending-boundary h2{font-size:13px !important;margin:0 0 6px !important}
+.derived-receipt p,.branch-status p,.chain-premise p,.next-source p,
+.chain-closure p,.execution-summary p,.shared-ending-boundary p{font-size:12px !important;margin:0 0 6px !important}
+.prediction-receipt{margin:0 0 12px !important;padding:10px 12px !important}
+.prediction-receipt h2{font-size:13px !important;margin:0 0 6px !important}
+.prediction-receipt p{font-size:12px !important;margin:0 !important}
+/* 终点页 */
+.endpoint-header{padding:12px 16px !important}
+.endpoint-header h1{font-size:14px !important;margin:0 0 4px !important}
+.endpoint-status-grid,.endpoint-ledger{margin:12px 0 !important}
+.endpoint-status-grid>div,.endpoint-ledger>div{padding:6px 10px !important}
+.endpoint-status-grid dt,.endpoint-ledger dt{font-size:11px !important}
+.endpoint-status-grid dd,.endpoint-ledger dd{font-size:12px !important}
+.endpoint-body-grid{grid-template-columns:minmax(0,1.45fr) minmax(200px,.7fr) !important;gap:14px !important}
+.endpoint-primary-pane{padding:12px 16px !important}
+.endpoint-context-rail{padding:10px 12px !important}
+.unresolved-list{margin:0 !important;padding:8px 10px !important}
+.unresolved-list summary{font-size:12px !important}
+.unresolved-list ul{padding-left:18px !important;margin-top:6px !important}
+.unresolved-list li{font-size:12px !important;padding:2px 0 !important}
+.ending-actions{padding:12px 16px !important;gap:8px !important}
+.ending-actions>*{min-height:24px !important;padding:3px 12px !important;font-size:12px !important}
+/* 相关记录链 */
+.chain-premise h2,.next-source h2{font-size:13px !important}
+.next-source a{min-height:24px !important;padding:3px 12px !important;font-size:12px !important}
+.false-conclusion fieldset{padding:10px !important}
+.false-conclusion legend{font-size:12px !important;margin-bottom:4px !important}
+.false-conclusion .choice-option{min-height:auto !important;padding:4px 8px !important;font-size:12px !important}
+.false-conclusion button{min-height:24px !important;padding:3px 12px !important;font-size:12px !important}
+/* 系统消息 / 错误页 */
+.system-message{margin:12px 16px !important;padding:10px 12px !important;font-size:12px !important}
+.system-error-header{padding:12px 16px !important}
+.error-code{font-size:11px !important}
+.not-found h1{font-size:14px !important}
+.boot-state{min-height:50vh !important}
+.boot-state p{font-size:12px !important}
+/* 存储提示 */
+.storage-notice{padding:6px 16px !important;font-size:12px !important}
+/* 模态框 */
+.modal-backdrop{padding:12px !important}
+.reset-dialog{padding:14px !important}
+.reset-dialog h2{font-size:14px !important;margin:0 0 8px !important}
+.reset-dialog p{font-size:12px !important;margin:0 0 10px !important}
+.dialog-actions{gap:8px !important;padding-top:8px !important}
+.dialog-actions>*{min-height:24px !important;padding:3px 12px !important;font-size:12px !important}
+/* 跳转链接 */
+.skip-link{min-height:auto !important;padding:6px 10px !important;font-size:12px !important}
+/* 响应式断点保持原样但字号压缩 */
+@media(max-width:900px){
+  .workbench-business-shell,.workbench-operation-shell,.receipt-system-layout,
+  .related-chain-shell,.controlled-source-shell,.endpoint-body-grid{grid-template-columns:1fr !important}
+  .forum-operations-shell{grid-template-columns:1fr !important}
+  .folk-layout{grid-template-columns:1fr !important}
+}
+@media(max-width:620px){
+  body{font-size:12px !important}
+  .session-bar{min-height:auto !important}
+  .institution-topbar-inner{min-height:auto !important}
+}
+
+
+/* ==========================================================================
+   密度层 v3 微调：压标题、紧间距、控宽度
+   ========================================================================== */
+
+/* ---------- 全局标题再压缩 ---------- */
+h1{font-size:14px !important}
+h2{font-size:13px !important}
+h3{font-size:12px !important}
+
+/* ---------- 论坛：压头部、控宽度 ---------- */
+.forum-masthead{padding:0 !important}
+.forum-title-row{padding:4px 10px !important;min-height:auto !important}
+.forum-title-row h1,.forum-logo{font-size:14px !important}
+.forum-title-row p{font-size:10px !important;max-width:36em}
+.forum-utility{padding:2px 10px !important}
+.forum-primary-nav a,.forum-primary-nav span{padding:2px 8px !important}
+.forum-breadcrumb{padding:3px 10px !important}
+.forum-frame{max-width:980px !important;margin-left:auto !important;margin-right:auto !important}
+.forum-operations-shell{grid-template-columns:170px minmax(0,1fr) !important;padding:3px !important;gap:3px !important}
+.forum-topic-row{padding:2px 6px !important}
+.forum-floor-header,.forum-post-head{padding:2px 6px !important}
+.forum-post-body{padding:6px 10px !important}
+.forum-author{padding:6px 4px !important;width:110px !important}
+
+/* ---------- 民俗站：压标题、紧间距 ---------- */
+.folk-site-frame{max-width:960px !important;margin-left:auto !important;margin-right:auto !important}
+.folk-masthead{padding:6px 12px !important}
+.folk-masthead h1,.folk-site-name{font-size:14px !important;margin:0 0 2px !important}
+.folk-masthead p{font-size:10px !important}
+.folk-text-nav{padding:2px 6px !important}
+.folk-text-nav a,.folk-text-nav span{padding:1px 5px !important}
+.folk-layout{gap:0 !important}
+.folk-directory{padding:6px 4px !important}
+.folk-directory h2,.folk-directory h3{font-size:12px !important;padding:2px 4px !important;margin:0 0 4px !important}
+.folk-directory ul li{padding:1px 0 !important}
+.folk-directory>a,.folk-directory>span{padding:1px 3px !important}
+.folk-directory hr{margin:4px 0}
+.folk-directory p{font-size:10px !important;margin:2px 0 !important}
+.folk-counter{margin-top:6px !important;padding:3px !important}
+.folk-content{padding:8px 10px !important}
+.folk-search-block{padding:4px 6px !important;margin-bottom:8px !important}
+.folk-search-block input{min-height:18px !important}
+.folk-search-block button{min-height:20px !important}
+.folk-index{padding:0 0 10px 18px !important}
+.folk-index li{padding:3px 1px !important}
+.folk-index p{margin:1px 0 0 !important}
+.folk-service-rail{padding:6px 4px !important}
+.folk-service-rail h2{font-size:12px !important;padding:2px 4px !important;margin:0 0 4px !important}
+.folk-service-rail a,.folk-service-rail span{padding:1px 0 !important}
+.folk-side-note{padding:6px !important}
+.folk-site-footer{padding:4px 8px !important}
+.folk-nav{padding:3px 6px !important}
+.paper-article{padding:8px 10px !important}
+.paper-article h1{font-size:13px !important;margin:3px 0 !important}
+.ink-rule{margin:8px 0 !important;height:2px !important}
+
+/* ---------- 档案：紧间距 ---------- */
+.archive-identity{padding:8px 14px !important}
+.archive-identity h1,.archive-identity>div>a,.archive-title{font-size:14px !important;margin:0 0 1px !important}
+.archive-primary-nav a,.archive-primary-nav span{padding:3px 10px !important}
+.archive-shell,.archive-record-shell{margin:10px auto 20px !important;gap:10px !important}
+.archive-sidebar nav>*{padding:3px 6px !important}
+.archive-facets dl>div{padding:1px 3px !important}
+.archive-search-panel{padding:8px 10px !important}
+.directory-row{padding:3px 6px !important}
+.institution-breadcrumb{padding:3px 6px !important}
+.catalog-record{padding:10px 0 20px !important}
+.archive-catalog-identity{padding:10px 14px !important}
+.archive-catalog-identity h1{font-size:13px !important;margin:0 0 3px !important}
+.archive-record-fields{padding:10px 14px 0 !important}
+.archive-page .catalog-record>section:not(.archive-record-fields){margin:10px 14px 0 !important;padding:8px 10px !important}
+.archive-page .record-metadata dt,.archive-page .record-metadata dd{padding:3px 5px !important}
+.archive-finding-aid{padding:6px 10px !important}
+.archive-site-footer{padding:6px 10px !important}
+
+/* ---------- 旧报：紧间距 ---------- */
+.news-masthead{padding:10px 14px !important}
+.news-masthead h1,.news-wordmark,.news-title{font-size:14px !important}
+.news-library-bar a,.news-library-bar span{padding:4px 8px !important}
+.news-layout,.news-record-layout{margin:10px auto 20px !important;gap:10px !important}
+.news-search-tools{padding:6px 8px !important}
+.news-search-tools h2{font-size:12px !important;margin:0 0 4px !important}
+.news-calendar>div{padding:2px !important}
+.news-edition-picker>*{padding:2px 5px !important}
+.news-date-strip{padding:5px 8px !important}
+.news-index article{padding:5px 8px !important}
+.news-site-footer{padding:6px 10px !important}
+.news-breadcrumb{padding:3px 6px !important}
+.news-record-furniture{padding:3px 8px !important}
+.scan-record{gap:12px !important;padding:10px !important}
+.scan-sheet{padding:10px !important}
+.ocr-panel{padding:8px !important}
+.news-page .record-metadata>div{padding:3px 0 !important}
+.news-film-strip{padding:10px !important}
+.news-film-identity{padding:5px 0 8px !important}
+.news-film-identity h1{font-size:13px !important}
+.news-film-frame-rail{margin:-10px -10px 8px !important;padding:3px 10px !important;gap:10px !important}
+.news-correction-header{padding:0 0 6px !important}
+.news-correction-header h1{font-size:13px !important;margin-bottom:3px !important}
+.news-correction-before,.news-correction-after{padding:8px !important}
+.news-correction-note{padding:6px 8px !important}
+.news-correction-log{padding:8px !important}
+
+/* ---------- 地质：紧间距 ---------- */
+.geo-agency{padding:8px 12px !important}
+.geo-agency h1,.geo-agency>div>a,.geo-title{font-size:14px !important;margin:0 0 1px !important}
+.geo-primary-nav a,.geo-primary-nav span{padding:3px 10px !important}
+.geo-shell{margin:10px auto 20px !important;gap:10px !important}
+.geo-data-tree nav>*{padding:3px 6px !important}
+.geo-data-tree li{padding:1px 0 !important}
+.geo-map-tools{padding:5px 6px !important;margin-top:6px !important}
+.filter-details{padding:5px 6px !important}
+.geo-search-tools{padding:8px 10px !important}
+.geo-facet-strip{margin:6px 0 !important}
+.geo-facet-strip>div{padding:2px 6px !important}
+.geo-dataset-list>a{padding:3px 6px !important;gap:6px !important}
+.geo-site-footer{padding:6px 10px !important}
+.geo-breadcrumb{padding:3px 6px !important}
+.geo-report-header{padding:8px 12px !important}
+.geo-report-header h1{font-size:13px !important;margin:0 0 3px !important}
+.geo-report-workspace{gap:8px !important;margin:8px 0 !important}
+.geo-attachment-register{padding:6px 8px !important}
+.geo-attachment-register h2{font-size:12px !important;margin:0 0 4px !important}
+.geo-technical-fields{padding:8px 12px !important}
+.geo-source-register{margin:4px 12px !important}
+.geo-source-register>div{padding:3px 5px !important}
+.technical-body{padding:8px 12px !important}
+.technical-report>footer{margin-top:8px !important;padding:6px 12px !important}
+
+/* ---------- 工作台：紧间距 ---------- */
+.workbench-app-header,.tool-heading.workbench-app-header,
+.receipt-header.workbench-app-header,.controlled-source-header.workbench-app-header{padding:10px 14px !important}
+.workbench-app-header h1,.tool-heading h1{font-size:13px !important;margin:0 0 3px !important}
+.workbench-header-fields>div{padding:3px 6px !important}
+.workbench-toolbar{padding:5px 10px !important;gap:12px !important}
+.workbench-process-tree,.tool-task-rail{padding:8px 6px !important}
+.workbench-process-tree>h2,.tool-task-rail>h2{font-size:12px !important;margin:0 0 6px !important}
+.workbench-process-tree>ol>li{padding:4px 0 !important;gap:5px !important}
+.workbench-task-rail{padding-top:6px !important}
+.workbench-task-rail h3{font-size:12px !important;margin:0 0 4px !important}
+.workbench-job-row{padding:3px 5px !important;gap:5px !important}
+.case-area-heading{padding:8px 14px !important}
+.workbench-primary-pane{padding:12px 14px !important}
+.current-assignment,.receipt-ready{margin:0 0 10px !important;padding:8px 10px !important}
+.project-reaction{margin:0 0 10px !important;padding:8px 10px !important}
+.workbench-receipts{margin-top:10px !important}
+.human-receipts li{padding:3px 5px !important}
+.workbench-support-register{margin:0 14px 10px !important}
+.workbench-support-register>section{padding:8px 10px !important}
+.opened-sources li,.ordinary-jobs li,.related-records li{padding:3px 5px !important}
+.workbench-bottom-actions{padding:6px 14px !important}
+.operation-sheet-heading{padding:8px 12px !important}
+.operation-sheet form,.operation-sheet>.saved-panel,.operation-sheet>.form-error{margin:10px 12px !important}
+.question-block{padding:8px 0 !important}
+.choice-option{padding:3px 6px !important}
+.order-grid label{padding:2px 0 !important;gap:5px !important}
+.form-actions{margin:14px -12px -10px !important;padding:8px 12px !important;gap:6px !important}
+.saved-panel,.form-error{margin:6px 0 !important;padding:6px 8px !important}
+.hint-drawer{margin:6px 0 !important;padding:5px 8px !important}
+.hint-drawer li{padding:5px 0 !important}
+.next-question{margin:6px 0 !important;padding:6px 8px !important}
+.tool-support-row{gap:8px !important;margin-top:8px !important}
+.source-links{margin:0 0 8px !important}
+.source-links-heading{padding:6px 10px !important;gap:6px !important}
+.source-links li{padding:3px 6px !important}
+.panel-nav{margin:0 0 8px !important}
+.panel-nav>*{padding:3px 6px !important}
+.artifact-cue{margin:6px 0 !important}
+.artifact-cue>div{padding:6px 8px !important}
+.panel-procedure li{padding:2px 0 !important}
+.controlled-source-header{padding:10px 14px !important}
+.controlled-source-header h1{font-size:13px !important;margin:0 0 3px !important}
+.controlled-source-nav{padding:5px 14px !important;gap:10px !important}
+.controlled-source-shell{gap:12px !important}
+.controlled-document{gap:12px !important}
+.document-stamp{padding:8px 6px !important}
+.document-stamp>span{padding:1px 6px !important;margin-bottom:5px !important}
+.document-body{padding:10px 14px !important}
+.source-view-heading{margin-bottom:8px !important;padding-bottom:5px !important}
+.source-view-heading h2{font-size:13px !important}
+.source-table-notes,.source-media-transcript{padding:6px 8px !important}
+.custody-boundary{padding:8px 12px !important;margin-top:8px !important}
+.evidence-visual{margin:0 0 8px !important}
+.evidence-visual figcaption{padding:5px 6px !important}
+.evidence-placeholder-sheet{padding:10px !important}
+.receipt-primary-pane,.related-chain-primary{padding:10px 14px !important}
+.receipt-context-rail,.related-chain-context,.tool-context-rail{padding:8px 10px !important}
+.derived-receipt,.branch-status,.chain-premise,.next-source,.chain-closure,
+.execution-summary,.shared-ending-boundary{margin:0 0 10px !important;padding:8px 10px !important}
+.prediction-receipt{margin:0 0 10px !important;padding:8px 10px !important}
+.endpoint-header{padding:10px 14px !important}
+.endpoint-header h1{font-size:13px !important;margin:0 0 3px !important}
+.endpoint-status-grid,.endpoint-ledger{margin:10px 0 !important}
+.endpoint-status-grid>div,.endpoint-ledger>div{padding:5px 8px !important}
+.endpoint-body-grid{gap:12px !important}
+.endpoint-primary-pane{padding:10px 14px !important}
+.endpoint-context-rail{padding:8px 10px !important}
+.unresolved-list{padding:6px 8px !important}
+.unresolved-list li{padding:1px 0 !important}
+.ending-actions{padding:10px 14px !important;gap:6px !important}
+.false-conclusion fieldset{padding:8px !important}
+.system-message{margin:10px 14px !important;padding:8px 10px !important}
+.system-error-header{padding:10px 14px !important}
+.reset-dialog{padding:12px !important}
+.reset-dialog h2{font-size:13px !important;margin:0 0 6px !important}
+.reset-dialog p{margin:0 0 8px !important}
+.dialog-actions{gap:6px !important;padding-top:6px !important}
+.storage-notice{padding:5px 14px !important}
+/* 内部系统宽度控制 */
+.institution-page,.workbench-tool,.workbench-result,.related-chain,
+.workbench-source,.ending-page,.not-found{max-width:1100px !important;margin-left:auto !important;margin-right:auto !important}
+.workbench-business-shell,.workbench-operation-shell{grid-template-columns:190px minmax(0,1fr) !important}
+.receipt-system-layout,.related-chain-shell{grid-template-columns:minmax(0,1.45fr) minmax(190px,.65fr) !important}
+.endpoint-body-grid{grid-template-columns:minmax(0,1.45fr) minmax(190px,.7fr) !important}
+
+
+/* ==========================================================================
+   密度层 v4：实测后精修——压行高、压多行结构、压行内垂直空间
+   实测数据：字号已达标(12-14px)，但行高19.2px(1.6倍)、帖子行81px(应28-32px)
+   ========================================================================== */
+
+/* ---------- 全局行高压缩 ---------- */
+body{line-height:1.5 !important}
+p,li,dd,dt,span,small,label,legend{line-height:1.5 !important}
+
+/* ---------- 论坛：帖子行从81px压到~32px ---------- */
+.forum-topic-row{min-height:auto !important;padding:2px 6px !important;grid-template-columns:minmax(0,1fr) 140px 70px !important}
+.forum-topic-row .forum-topic-main{display:block !important}
+.forum-topic-row .forum-topic-main b{display:inline !important;font-size:12px !important}
+.forum-topic-row .forum-topic-main small{display:inline !important;font-size:11px !important;color:#678}
+.forum-topic-row .forum-topic-main small.forum-topic-board{display:inline !important;margin-left:6px}
+.forum-topic-row .forum-topic-author,.forum-topic-row .forum-topic-activity{font-size:11px !important;line-height:1.4 !important}
+.forum-topic-row .forum-topic-author b,.forum-topic-row .forum-topic-activity b{font-size:11px !important;display:inline !important}
+.forum-topic-row .forum-topic-author small,.forum-topic-row .forum-topic-activity small{font-size:10px !important}
+/* 楼层页压缩 */
+.forum-post-body{padding:6px 10px !important;font-size:12px !important;line-height:1.6 !important}
+.forum-post-body p{font-size:12px !important;line-height:1.6 !important}
+.forum-author{padding:6px 4px !important;width:100px !important;font-size:11px !important}
+.forum-author b{font-size:11px !important}
+.forum-avatar{width:32px !important;height:32px !important;font-size:14px !important}
+.forum-thread-status{margin:4px 0 6px !important}
+.forum-thread-status dt,.forum-thread-status dd{padding:2px 5px !important;font-size:11px !important}
+.forum-edit-state,.forum-signature{font-size:10px !important;padding-top:4px !important;margin-top:8px !important}
+.forum-post-tools{font-size:10px !important;margin-top:4px !important}
+.forum-thread-footer{padding:3px 8px !important;font-size:10px !important}
+.forum-board-head{padding:2px 6px !important;min-height:auto !important}
+.forum-board-stats{padding:2px 8px !important;font-size:11px !important}
+.forum-result-line{font-size:11px !important;margin:3px 8px 0 !important}
+.forum-login-box label{gap:2px !important;grid-template-columns:1fr auto !important}
+.forum-login-box input{min-height:18px !important;padding:2px 4px !important}
+.forum-login-box button{min-height:20px !important;padding:2px 8px !important}
+.forum-section-tree>*{padding:1px 0 !important}
+.forum-era-warning{font-size:10px !important;padding:4px 6px !important}
+.forum-era-warning p{font-size:10px !important;margin:2px 0 0 !important}
+.forum-footer{padding:3px 8px !important;font-size:10px !important}
+/* 侧栏整体压缩 */
+.forum-login-box,.forum-section-tree,.forum-era-warning{padding:5px !important}
+.forum-login-box h2,.forum-section-tree h2{margin:-5px -5px 4px !important;padding:2px 5px !important;font-size:11px !important}
+
+/* ---------- 民俗站：条目从66px压到~20px ---------- */
+.folk-index li{padding:2px 1px !important}
+.folk-index a{display:block !important;grid-template-columns:none !important;padding:1px 2px !important;min-height:auto !important;font-size:12px !important}
+.folk-index a>span{font-size:11px !important;margin-right:6px !important;display:inline !important}
+.folk-index a b{font-size:12px !important}
+.folk-index p{grid-column:auto !important;font-size:11px !important;margin:0 0 0 18px !important;color:#678}
+.folk-directory ul li{padding:1px 0 !important;font-size:12px !important}
+.folk-directory>a,.folk-directory>span{min-height:auto !important;padding:1px 3px !important}
+.folk-directory h2,.folk-directory h3{font-size:11px !important;padding:2px 4px !important;margin:0 0 3px !important}
+.folk-directory p{font-size:10px !important;margin:1px 0 !important}
+.folk-counter{margin-top:5px !important;padding:2px !important;font-size:10px !important}
+.folk-content{padding:6px 10px !important;font-size:12px !important}
+.folk-search-block{padding:3px 6px !important;margin-bottom:6px !important;font-size:12px !important}
+.folk-search-block input{min-height:18px !important;padding:2px 4px !important}
+.folk-search-block button{min-height:20px !important;padding:2px 8px !important}
+.folk-result-line,.site-folk .result-count{font-size:11px !important;margin:2px 0 4px !important}
+.folk-service-rail{padding:5px 4px !important}
+.folk-service-rail h2{font-size:11px !important;padding:2px 4px !important;margin:0 0 3px !important}
+.folk-service-rail a,.folk-service-rail span{min-height:auto !important;padding:1px 0 !important;font-size:11px !important}
+.folk-service-rail .site-register{font-size:10px !important}
+.folk-service-rail .site-register>div{grid-template-columns:60px 1fr !important;padding:2px 0 !important}
+.folk-side-note{padding:5px !important;font-size:11px !important}
+.folk-side-note h2{font-size:11px !important;margin:0 0 3px !important}
+.folk-side-note p{font-size:11px !important;margin:2px 0 !important}
+.folk-site-footer{padding:3px 8px !important;font-size:10px !important;gap:4px 10px !important}
+.folk-site-footer a{min-height:auto !important;font-size:11px !important;padding:1px 0 !important}
+.folk-text-nav a,.folk-text-nav span{min-height:auto !important;padding:1px 5px !important;font-size:12px !important}
+.folk-nav{padding:2px 6px !important;font-size:11px !important}
+/* 民俗文章页 */
+.paper-article{padding:6px 10px !important}
+.paper-article .paper-date{font-size:10px !important;margin:0 !important}
+.paper-article h1{font-size:13px !important;margin:2px 0 !important;max-width:none}
+.paper-deck{font-size:11px !important;margin:2px 0 !important}
+.ink-rule{margin:6px 0 !important;height:2px !important}
+.paper-article>p:not(.paper-date):not(.paper-deck){font-size:12px !important;line-height:1.7 !important;max-width:42em}
+.paper-article footer{margin-top:8px !important;padding:4px 0 !important;font-size:10px !important}
+.evidence-visual-group{margin-bottom:6px !important}
+.evidence-text-equivalent{margin:6px 0 !important}
+.evidence-text-equivalent>summary{padding:4px 8px !important;font-size:11px !important;min-height:auto !important}
+.evidence-text-body{padding:6px 8px !important;font-size:12px !important}
+
+/* ---------- 档案：结果行压缩 ---------- */
+.directory-row{min-height:auto !important;padding:3px 6px !important;grid-template-columns:minmax(0,1fr) 100px 160px !important}
+.directory-row b{font-size:12px !important}
+.directory-row small{font-size:10px !important;display:block !important;line-height:1.4 !important}
+.directory-row code{font-size:10px !important}
+.directory-row span[role="cell"]{font-size:11px !important}
+.directory-head{padding:2px 6px !important;font-size:11px !important}
+.archive-identity{padding:6px 12px !important;min-height:auto !important}
+.archive-identity h1,.archive-identity>div>a,.archive-title{font-size:13px !important;margin:0 !important}
+.archive-identity p,.archive-era{font-size:10px !important;margin:1px 0 0 !important}
+.archive-seal{width:32px !important;height:32px !important;font-size:12px !important}
+.archive-primary-nav a,.archive-primary-nav span{min-height:auto !important;padding:3px 10px !important;font-size:12px !important}
+.archive-shell,.archive-record-shell{margin:8px auto 16px !important;gap:8px !important}
+.archive-sidebar h2,.archive-sidebar h3{padding:4px 8px !important;font-size:11px !important}
+.archive-sidebar nav>*{min-height:auto !important;padding:3px 6px !important;font-size:12px !important}
+.archive-facets{padding-bottom:6px !important}
+.archive-facets dl>div{padding:1px 3px !important;font-size:11px !important}
+.archive-facets dt{font-size:10px !important}
+.archive-facets dd{font-size:11px !important}
+.filter-details{padding:4px 6px !important;font-size:11px !important}
+.filter-details summary{font-size:11px !important;min-height:auto !important;padding:2px 0 !important}
+.archive-search-panel{padding:6px 10px !important}
+.archive-search-panel legend{font-size:11px !important;padding:0 0 3px !important}
+.archive-search-panel label{font-size:11px !important;gap:3px !important}
+.archive-search-panel input{min-height:20px !important;padding:2px 6px !important;font-size:12px !important}
+.archive-search-panel button{min-height:22px !important;padding:2px 10px !important;font-size:12px !important}
+.archive-result-toolbar,.archive-result-summary,.archive-page .result-count{padding:3px 10px !important;font-size:11px !important}
+.archive-catalog-identity{padding:8px 12px !important}
+.archive-catalog-identity .catalog-id{font-size:10px !important;margin:0 0 2px !important}
+.archive-catalog-identity h1{font-size:13px !important;margin:0 0 2px !important}
+.catalog-summary{font-size:11px !important;margin:0 !important}
+.archive-record-fields{padding:8px 12px 0 !important}
+.archive-record-fields h2{font-size:12px !important;margin:0 0 6px !important}
+.archive-page .catalog-record>section:not(.archive-record-fields){margin:8px 12px 0 !important;padding:6px 10px !important}
+.archive-page .catalog-record>section:not(.archive-record-fields) h2{font-size:12px !important;margin:0 0 4px !important}
+.archive-page .record-metadata{font-size:11px !important}
+.archive-page .record-metadata dt,.archive-page .record-metadata dd{padding:3px 5px !important;font-size:11px !important}
+.archive-finding-aid{padding:5px 10px !important;font-size:11px !important}
+.archive-finding-aid p{font-size:10px !important;padding:0 6px !important}
+.archive-site-footer{padding:5px 10px !important;font-size:10px !important;min-height:auto !important}
+.archive-site-footer a{min-height:auto !important;font-size:11px !important;padding:1px 0 !important}
+.institution-breadcrumb{padding:3px 6px !important;font-size:11px !important}
+.catalog-record{padding:8px 0 16px !important}
+.print-note{font-size:10px !important;margin-top:6px !important}
+
+/* ---------- 旧报：结果行压缩 ---------- */
+.news-masthead{padding:8px 12px !important}
+.news-masthead h1,.news-wordmark,.news-title{font-size:13px !important;margin:0 !important}
+.news-masthead p,.news-masthead small,.news-era{font-size:10px !important;margin:0 !important}
+.news-library-mark>span{font-size:10px !important}
+.news-library-bar a,.news-library-bar span{min-height:auto !important;padding:4px 8px !important;font-size:12px !important}
+.news-layout,.news-record-layout{margin:8px auto 16px !important;gap:8px !important}
+.news-search-tools{padding:6px 8px !important;font-size:11px !important}
+.news-search-tools h2{font-size:12px !important;margin:0 0 4px !important}
+.news-search-tools form,.news-search-tools label{gap:3px !important}
+.news-search-tools input{min-height:20px !important;padding:2px 6px !important;font-size:12px !important}
+.news-search-tools button{min-height:22px !important;padding:2px 10px !important;font-size:12px !important}
+.news-calendar{margin-top:6px !important}
+.news-calendar header{min-height:auto !important}
+.news-calendar header button{min-height:18px !important;padding:1px 6px !important;font-size:11px !important}
+.news-calendar header strong{font-size:11px !important}
+.news-calendar>div{padding:2px !important;font-size:10px !important}
+.news-calendar>div>*{min-height:18px !important;font-size:10px !important}
+.news-edition-picker{margin-top:6px !important}
+.news-edition-picker h3{font-size:11px !important;margin:0 0 3px !important}
+.news-edition-picker>*{min-height:auto !important;padding:2px 5px !important;font-size:11px !important}
+.news-edition-picker p{font-size:10px !important;margin:3px 0 0 !important}
+.news-date-strip{padding:4px 8px !important;font-size:11px !important;grid-template-columns:auto minmax(150px,1fr) !important;gap:2px 10px !important}
+.news-date-strip p{font-size:10px !important;margin:0 !important}
+.news-result-summary,.news-page .result-count{padding:3px 10px !important;font-size:11px !important}
+.news-index{margin:0 !important}
+.news-index article{padding:4px 8px !important;grid-template-columns:90px minmax(0,1fr) 120px !important;column-gap:8px !important}
+.news-index h2{font-size:12px !important;margin:0 0 2px !important}
+.news-index h2 a{font-size:12px !important;min-height:auto !important;padding:0 !important}
+.news-index article>p:first-child{font-size:10px !important;margin:0 !important}
+.news-index article p{font-size:11px !important;margin:1px 0 !important}
+.news-index small{font-size:10px !important}
+.news-site-footer{padding:5px 10px !important;font-size:10px !important;min-height:auto !important}
+.news-site-footer a{min-height:auto !important;font-size:11px !important;padding:1px 0 !important}
+.news-breadcrumb{padding:3px 6px !important;font-size:11px !important;min-height:auto !important}
+.news-record-furniture{padding:3px 8px !important;font-size:11px !important;min-height:auto !important}
+.news-record-furniture strong{font-size:11px !important}
+.news-edition-running-head{font-size:10px !important;padding-bottom:4px !important}
+.news-issue-scan h1,.news-page .scan-sheet h1,.news-page .scan-sheet h2{font-size:13px !important;padding:6px 0 !important;margin:0 !important}
+.scan-record{gap:10px !important;padding:8px !important}
+.scan-sheet{padding:8px !important}
+.scan-lines{font-size:12px !important}
+.ocr-panel{padding:8px !important;font-size:11px !important}
+.ocr-panel h2{font-size:12px !important;margin:0 0 4px !important}
+.ocr-panel p{font-size:11px !important;margin:2px 0 !important}
+.news-page .record-metadata>div{padding:2px 0 !important;font-size:11px !important}
+.news-page .record-metadata dt,.news-page .record-metadata dd{font-size:11px !important}
+.news-film-strip{padding:8px !important}
+.news-film-identity{padding:4px 0 6px !important}
+.news-film-identity h1{font-size:12px !important;margin:0 !important}
+.news-film-identity p{font-size:10px !important;margin:0 !important}
+.news-film-frame-rail{margin:-8px -8px 6px !important;padding:2px 8px !important;gap:8px !important}
+.news-film-frame-rail span{width:14px !important;height:5px !important}
+.news-film-transcript{font-size:12px !important;margin-top:6px !important}
+.news-correction-header{padding:0 0 5px !important}
+.news-correction-header>p:first-child{font-size:10px !important;margin-bottom:1px !important}
+.news-correction-header h1{font-size:13px !important;margin-bottom:2px !important}
+.news-correction-before,.news-correction-after{padding:6px !important;min-height:auto !important}
+.news-correction-before h2,.news-correction-after h2{font-size:11px !important;padding:0 0 3px !important}
+.news-correction-before p,.news-correction-after p{font-size:11px !important;margin:1px 0 !important}
+.news-correction-note{padding:5px 8px !important;font-size:11px !important}
+.news-correction-note p{font-size:11px !important;margin:1px 0 !important}
+.news-correction-log{padding:8px !important}
+.news-correction-log>dl>div{padding:3px 0 !important}
+.news-correction-log>dl dt,.news-correction-log>dl dd{padding:2px 4px !important;font-size:11px !important}
+
+/* ---------- 地质：结果行压缩 ---------- */
+.geo-agency{padding:6px 12px !important;min-height:auto !important}
+.geo-agency h1,.geo-agency>div>a,.geo-title{font-size:13px !important;margin:0 !important}
+.geo-agency p,.geo-agency>span:last-child{font-size:10px !important;margin:1px 0 0 !important}
+.geo-agency-code{width:40px !important;height:32px !important;font-size:10px !important}
+.geo-primary-nav a,.geo-primary-nav span{min-height:auto !important;padding:3px 10px !important;font-size:12px !important}
+.geo-shell{margin:8px auto 16px !important;gap:8px !important}
+.geo-data-tree h2,.geo-data-tree h3{padding:4px 8px !important;font-size:11px !important}
+.geo-data-tree nav>*{min-height:auto !important;padding:3px 6px !important;font-size:12px !important}
+.geo-data-tree ul{padding:4px 8px 8px 20px !important}
+.geo-data-tree li{padding:1px 0 !important;font-size:11px !important}
+.geo-map-tools{padding:4px 6px !important;margin-top:5px !important;font-size:11px !important}
+.geo-map-tools h3,.geo-record-tools h3{font-size:11px !important;margin:0 0 3px !important}
+.geo-map-tools p,.geo-record-tools p{font-size:10px !important;margin:2px 0 0 !important}
+.geo-map-tools button,.geo-record-tools button{min-height:20px !important;padding:1px 8px !important;font-size:11px !important}
+.filter-details{padding:4px 6px !important;font-size:11px !important}
+.filter-details summary{font-size:11px !important;min-height:auto !important;padding:2px 0 !important}
+.geo-search-tools{padding:6px 10px !important}
+.geo-search-tools form,.geo-search-tools>div{gap:3px !important}
+.geo-search-tools label{font-size:11px !important;gap:2px !important}
+.geo-search-tools input{min-height:20px !important;padding:2px 6px !important;font-size:12px !important}
+.geo-search-tools button{min-height:22px !important;padding:2px 10px !important;font-size:12px !important}
+.geo-facet-strip{margin:5px 0 !important}
+.geo-facet-strip>div{padding:2px 6px !important;min-height:auto !important}
+.geo-facet-strip strong{width:65px !important;font-size:11px !important}
+.geo-facet-strip span{padding:1px 5px !important;font-size:11px !important}
+.geo-result-toolbar,.geo-result-summary,.geo-page .result-count{padding:3px 10px !important;font-size:11px !important}
+.geo-dataset-list>a{min-height:auto !important;padding:3px 6px !important;grid-template-columns:110px minmax(0,1fr) 85px !important;gap:6px !important}
+.geo-dataset-list code{font-size:10px !important}
+.geo-dataset-list b{font-size:12px !important}
+.geo-dataset-list small{font-size:10px !important;line-height:1.4 !important}
+.geo-dataset-list>a>span:last-child{font-size:10px !important}
+.geo-site-footer{padding:5px 10px !important;font-size:10px !important;min-height:auto !important}
+.geo-site-footer a{min-height:auto !important;font-size:11px !important;padding:1px 0 !important}
+.geo-breadcrumb{padding:3px 6px !important;font-size:11px !important}
+.technical-report{padding:0 !important}
+.geo-report-header{padding:6px 12px !important}
+.geo-report-header code{font-size:10px !important;padding:1px 5px !important;margin-bottom:3px !important}
+.geo-report-header h1{font-size:13px !important;margin:0 0 2px !important}
+.geo-report-header p{font-size:11px !important;margin:0 !important}
+.geo-report-workspace{grid-template-columns:minmax(0,1.5fr) minmax(180px,.55fr) !important;gap:8px !important;margin:6px 0 !important}
+.geo-attachment-register{padding:6px 8px !important;font-size:11px !important}
+.geo-attachment-register h2{font-size:12px !important;margin:0 0 4px !important}
+.geo-attachment-register dl>div{padding:3px 0 !important;font-size:11px !important}
+.geo-attachment-register dt,.geo-attachment-register dd{font-size:11px !important}
+.geo-technical-fields{padding:6px 12px !important}
+.geo-technical-fields h2{font-size:12px !important;margin:0 0 6px !important}
+.geo-source-register{margin:4px 12px !important}
+.geo-source-register>div{padding:3px 5px !important;font-size:11px !important}
+.geo-source-register dt,.geo-source-register dd{font-size:11px !important}
+.technical-body{padding:6px 12px !important}
+.technical-body h2{font-size:12px !important;margin:0 0 6px !important}
+.technical-body p{font-size:11px !important;margin:2px 0 !important}
+.technical-report>footer{margin-top:6px !important;padding:5px 12px !important;font-size:10px !important}
+
+/* ---------- 工作台：全面压缩 ---------- */
+.workbench-app-header,.tool-heading.workbench-app-header,
+.receipt-header.workbench-app-header,.controlled-source-header.workbench-app-header{padding:8px 12px !important}
+.workbench-app-header h1,.tool-heading h1{font-size:13px !important;margin:0 0 2px !important}
+.workbench-app-header .eyebrow{font-size:10px !important;margin-bottom:2px !important}
+.workbench-app-header p{font-size:11px !important;margin:1px 0 0 !important}
+.workbench-header-fields{width:min(380px,60%) !important}
+.workbench-header-fields>div{padding:3px 6px !important}
+.workbench-header-fields dt{font-size:10px !important}
+.workbench-header-fields dd{font-size:11px !important}
+.workbench-toolbar{min-height:auto !important;padding:4px 10px !important;gap:12px !important;font-size:11px !important}
+.workbench-toolbar a{min-height:auto !important;padding:2px 8px !important;font-size:11px !important}
+.workbench-toolbar .reset-trigger,
+.workbench-toolbar button[data-action="request-reset"]{min-height:auto !important;padding:2px 8px !important;font-size:11px !important;margin:0 0 0 auto !important}
+/* 步骤树 */
+.workbench-business-shell,.workbench-operation-shell{grid-template-columns:180px minmax(0,1fr) !important}
+.workbench-process-tree,.tool-task-rail{padding:8px 6px !important}
+.workbench-process-tree>h2,.tool-task-rail>h2{font-size:11px !important;margin:0 0 5px !important}
+.workbench-process-tree>ol{margin:0 0 10px !important}
+.workbench-process-tree>ol>li{padding:3px 0 !important;grid-template-columns:24px 1fr !important;gap:5px !important}
+.workbench-process-tree>ol>li>span,.panel-procedure span{width:22px !important;height:22px !important;font-size:10px !important}
+.workbench-process-tree>ol>li strong{font-size:11px !important}
+.workbench-process-tree small{font-size:10px !important}
+.workbench-task-rail{padding-top:5px !important}
+.workbench-task-rail h3{font-size:11px !important;margin:0 0 4px !important}
+.workbench-job-row{min-height:auto !important;padding:3px 5px !important;font-size:11px !important;grid-template-columns:48px minmax(0,1fr) 56px !important;gap:5px !important}
+.workbench-job-row .job-code{font-size:9px !important}
+.workbench-job-row .job-title{font-size:11px !important;line-height:1.4 !important}
+.workbench-job-row .job-status{font-size:10px !important}
+.task-rail-related{margin-top:8px !important}
+/* 案件区 */
+.case-area-heading{padding:6px 12px !important}
+.case-area-heading h2{font-size:12px !important;margin:0 !important}
+.case-area-heading>div>span{font-size:10px !important}
+.case-area-heading dl{font-size:11px !important;gap:10px !important}
+.case-area-heading dl>div{gap:3px !important}
+.workbench-primary-pane{padding:10px 12px !important}
+.current-assignment,.receipt-ready{margin:0 0 8px !important;padding:8px 10px !important;gap:12px !important}
+.current-assignment h2,.receipt-ready h2{font-size:12px !important;margin:0 0 3px !important}
+.current-assignment p,.receipt-ready p{font-size:11px !important;margin:0 0 2px !important}
+.assignment-label,.reaction-label,.eyebrow{font-size:10px !important;margin-bottom:2px !important}
+.project-reaction{margin:0 0 8px !important;padding:8px 10px !important}
+.project-reaction h2{font-size:12px !important;margin:0 0 4px !important}
+.project-reaction blockquote{font-size:11px !important;margin:6px 0 !important;padding:5px 8px !important;line-height:1.6 !important}
+.project-reaction p{font-size:11px !important;margin:2px 0 !important}
+.reaction-actions,.result-actions{gap:6px !important;padding-top:6px !important}
+.reaction-actions>*,.result-actions>*{min-height:auto !important;padding:2px 8px !important;font-size:11px !important}
+.reaction-segments>section{padding:6px 8px !important}
+.reaction-segments h3{font-size:11px !important}
+.reaction-channel{font-size:9px !important}
+.workbench-receipts{margin-top:8px !important}
+.workbench-receipts h2{font-size:12px !important;margin:0 0 6px !important}
+.human-receipts li{padding:3px 5px !important;min-height:auto !important;gap:3px !important}
+.human-receipts li strong{font-size:11px !important}
+.human-receipts li span{font-size:10px !important}
+.workbench-support-register{margin:0 12px 8px !important}
+.workbench-support-register>section{padding:8px 10px !important}
+.workbench-support-register h2{font-size:12px !important;margin:0 0 6px !important}
+.opened-sources li,.ordinary-jobs li,.related-records li{padding:3px 5px !important;min-height:auto !important;gap:3px !important}
+.opened-sources a,.related-records a{font-size:11px !important;min-height:auto !important;padding:1px 0 !important}
+.opened-sources span,.ordinary-jobs span:last-child,.related-records span{font-size:10px !important}
+.workbench-bottom-actions{padding:5px 12px !important;min-height:auto !important}
+.workbench-bottom-actions span{font-size:11px !important}
+.workbench-bottom-actions a{min-height:auto !important;padding:2px 8px !important;font-size:11px !important}
+/* 操作单 */
+.operation-sheet{margin:0 !important}
+.operation-sheet-heading{padding:6px 12px !important}
+.operation-sheet-heading h2{font-size:12px !important;margin:0 !important}
+.operation-sheet-heading p{font-size:11px !important;margin:0 !important}
+.operation-sheet-heading>div>span{font-size:10px !important}
+.operation-sheet form,.operation-sheet>.saved-panel,.operation-sheet>.form-error{margin:8px 12px !important}
+.question-block{padding:6px 0 !important;margin:0 !important}
+.question-block>span,.question-block legend{font-size:11px !important;margin-bottom:3px !important}
+.choice-option{min-height:auto !important;padding:3px 6px !important;font-size:11px !important}
+.choice-option input{width:13px !important;height:13px !important}
+.order-grid label{min-height:auto !important;padding:2px 0 !important;grid-template-columns:46px minmax(0,1fr) !important;gap:5px !important}
+.order-grid select,.question-block select{min-height:20px !important;padding:2px 6px !important;font-size:11px !important}
+.form-actions{margin:12px -12px -8px !important;padding:6px 12px !important;gap:6px !important}
+.form-actions>div{gap:6px !important}
+.form-actions>div>span{font-size:10px !important}
+.form-actions .primary-action,.form-actions .primary-link,
+.primary-action,.primary-link{min-height:auto !important;padding:2px 12px !important;font-size:11px !important}
+.secondary-action,.secondary-link,.previous-panel-link{min-height:auto !important;padding:2px 12px !important;font-size:11px !important}
+.danger-action{min-height:auto !important;padding:2px 12px !important;font-size:11px !important}
+.saved-panel,.form-error{margin:5px 0 !important;padding:5px 8px !important;font-size:11px !important}
+.saved-panel strong{font-size:11px !important}
+.saved-panel p{font-size:11px !important;margin:1px 0 0 !important}
+.hint-drawer{margin:5px 0 !important;padding:4px 8px !important}
+.hint-drawer summary{font-size:11px !important;min-height:auto !important;padding:2px 0 !important}
+.hint-drawer ol{padding-left:16px !important;margin:4px 0 0 !important}
+.hint-drawer li{padding:4px 0 !important;font-size:11px !important}
+.hint-drawer li strong{font-size:11px !important}
+.hint-drawer li p{font-size:11px !important;margin:1px 0 0 !important}
+.hint-complete{font-size:11px !important;margin:3px 0 !important}
+.direct-hint-confirm{padding:6px !important;font-size:11px !important;margin-top:4px !important}
+.direct-hint-confirm p{font-size:11px !important;margin:0 0 4px !important}
+.direct-hint-confirm button{min-height:auto !important;padding:2px 8px !important;font-size:11px !important}
+.next-question{margin:5px 0 !important;padding:6px 8px !important}
+.next-question h2{font-size:11px !important;margin:0 0 3px !important}
+.next-question p{font-size:11px !important;margin:0 !important}
+.tool-support-row{grid-template-columns:minmax(0,1fr) minmax(200px,.6fr) !important;gap:8px !important;margin-top:8px !important}
+/* 来源链接 */
+.source-links{margin:0 0 6px !important}
+.source-links-heading{padding:5px 10px !important;grid-template-columns:50px minmax(90px,.45fr) minmax(180px,1fr) !important;gap:6px !important}
+.source-links-heading>span{font-size:10px !important}
+.source-links-heading h3{font-size:12px !important;margin:0 !important}
+.source-links-heading p{font-size:10px !important;margin:0 !important}
+.source-links ul{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+.source-links li{min-height:auto !important;padding:3px 6px !important;gap:5px !important}
+.source-links li a{font-size:11px !important;min-height:auto !important;padding:1px 0 !important}
+.source-links li a small{font-size:10px !important}
+.source-links li>b{font-size:10px !important}
+/* 面板导航 */
+.panel-nav{margin:0 0 6px !important}
+.panel-nav>*{min-height:auto !important;padding:3px 6px !important;font-size:11px !important}
+.panel-nav small{font-size:10px !important}
+.panel-nav>span:first-child{font-size:11px !important}
+.locked-panel{font-size:11px !important}
+.artifact-cue{margin:5px 0 !important}
+.artifact-cue>div{padding:5px 8px !important}
+.artifact-cue h3{font-size:11px !important;margin:0 0 3px !important}
+.artifact-cue p{font-size:11px !important;margin:0 !important}
+.panel-procedure{margin:0 0 8px !important}
+.panel-procedure li{min-height:auto !important;padding:2px 0 !important;font-size:11px !important}
+.panel-procedure span{width:20px !important;height:20px !important;font-size:10px !important}
+/* 受控附件 */
+.controlled-source-header{padding:8px 12px !important}
+.controlled-source-header>p:first-child{font-size:10px !important;margin:0 0 2px !important}
+.controlled-source-header h1{font-size:13px !important;margin:0 0 2px !important}
+.controlled-source-header p{font-size:11px !important;margin:0 !important}
+.controlled-source-nav{padding:4px 12px !important;min-height:auto !important;font-size:11px !important;gap:10px !important;margin-bottom:8px !important}
+.controlled-source-nav a{min-height:auto !important;font-size:11px !important;padding:2px 0 !important}
+.controlled-source-nav span{font-size:11px !important}
+.controlled-source-shell{gap:10px !important}
+.controlled-document{grid-template-columns:100px minmax(0,1fr) !important;gap:10px !important}
+.document-stamp{padding:6px 5px !important}
+.document-stamp>span{padding:1px 5px !important;font-size:11px !important;margin-bottom:4px !important;letter-spacing:.1em !important}
+.document-stamp strong{font-size:11px !important}
+.document-stamp small{font-size:10px !important}
+.document-body{padding:8px 12px !important}
+.source-view-heading{margin-bottom:6px !important;padding-bottom:4px !important}
+.source-view-heading>span{font-size:9px !important;margin-bottom:1px !important}
+.source-view-heading h2{font-size:12px !important;margin:0 !important}
+.source-table-notes,.source-media-transcript{padding:5px 8px !important;font-size:11px !important}
+.source-table-notes summary,.source-media-transcript summary{font-size:11px !important;min-height:auto !important;padding:2px 0 !important}
+.source-field-table .record-metadata,.source-plan-fields .record-metadata,
+.source-timeline-fields .record-metadata,.source-media-fields .record-metadata,
+.source-trace-fields .record-metadata,.source-workflow-fields .record-metadata{margin:8px 0 0 !important;font-size:11px !important}
+.source-field-table .record-metadata>div,.source-plan-fields .record-metadata>div,
+.source-timeline-fields .record-metadata>div,.source-media-fields .record-metadata>div,
+.source-trace-fields .record-metadata>div,.source-workflow-fields .record-metadata>div{padding:3px 5px !important;grid-template-columns:100px minmax(0,1fr) !important}
+.source-field-table dt,.source-field-table dd{font-size:11px !important;padding:3px 5px !important}
+.custody-boundary{padding:6px 10px !important;margin-top:8px !important;font-size:11px !important}
+.custody-boundary h2{font-size:12px !important;margin:0 0 4px !important}
+.custody-boundary p{font-size:11px !important;margin:0 !important}
+.custody-boundary p strong{font-size:11px !important}
+/* 证据影像 */
+.evidence-visual{margin:0 0 6px !important}
+.evidence-visual img{max-height:55vh !important}
+.evidence-visual figcaption{padding:4px 6px !important;font-size:10px !important;gap:2px !important}
+.evidence-placeholder-sheet{min-height:auto !important;padding:10px !important}
+.evidence-placeholder-sheet>span{font-size:11px !important}
+.evidence-placeholder-sheet p{font-size:10px !important;margin:2px 0 0 !important}
+.evidence-text-equivalent{margin:5px 0 !important}
+.evidence-text-equivalent>summary{padding:3px 8px !important;font-size:11px !important;min-height:auto !important}
+.evidence-text-body{padding:5px 8px !important;font-size:11px !important}
+/* 回单 / 终点 */
+.receipt-system-layout,.related-chain-shell{grid-template-columns:minmax(0,1.45fr) minmax(180px,.65fr) !important}
+.receipt-primary-pane,.related-chain-primary{padding:8px 12px !important}
+.receipt-context-rail,.related-chain-context,.tool-context-rail{padding:8px 10px !important;font-size:11px !important}
+.receipt-context-rail h2,.related-chain-context h2,.tool-context-rail h2{font-size:12px !important;margin:0 0 6px !important}
+.receipt-context-rail a{min-height:auto !important;padding:3px 0 !important;font-size:11px !important}
+.derived-receipt,.branch-status,.chain-premise,.next-source,.chain-closure,
+.execution-summary,.shared-ending-boundary{margin:0 0 8px !important;padding:6px 10px !important}
+.derived-receipt h2,.branch-status h2,.chain-premise h2,.next-source h2,
+.chain-closure h2,.execution-summary h2,.shared-ending-boundary h2{font-size:12px !important;margin:0 0 4px !important}
+.derived-receipt p,.branch-status p,.chain-premise p,.next-source p,
+.chain-closure p,.execution-summary p,.shared-ending-boundary p{font-size:11px !important;margin:0 0 4px !important}
+.derived-receipt p strong,.execution-summary p strong{font-size:11px !important}
+.prediction-receipt{margin:0 0 8px !important;padding:6px 10px !important}
+.prediction-receipt h2{font-size:12px !important;margin:0 0 4px !important}
+.prediction-receipt p{font-size:11px !important;margin:0 !important}
+.result-line-register dl{margin:0 0 8px !important}
+.result-line-register dl>div{grid-template-columns:80px 1fr !important;gap:8px !important;padding:4px 8px !important}
+.result-line-register dt,.result-line-register dd{font-size:11px !important}
+/* 终点页 */
+.endpoint-header{padding:8px 12px !important}
+.endpoint-header h1{font-size:13px !important;margin:0 0 2px !important}
+.endpoint-header p{font-size:11px !important;margin:0 !important}
+.endpoint-status-grid,.endpoint-ledger{margin:8px 0 !important}
+.endpoint-status-grid>div,.endpoint-ledger>div{padding:4px 8px !important}
+.endpoint-status-grid dt,.endpoint-ledger dt{font-size:10px !important}
+.endpoint-status-grid dd,.endpoint-ledger dd{font-size:11px !important;margin:2px 0 0 !important}
+.endpoint-body-grid{grid-template-columns:minmax(0,1.45fr) minmax(180px,.7fr) !important;gap:10px !important}
+.endpoint-primary-pane{padding:8px 12px !important}
+.endpoint-context-rail{padding:8px 10px !important}
+.unresolved-list{margin:0 !important;padding:5px 8px !important}
+.unresolved-list summary{font-size:11px !important;min-height:auto !important;padding:2px 0 !important}
+.unresolved-list ul{padding-left:16px !important;margin-top:4px !important}
+.unresolved-list li{font-size:11px !important;padding:1px 0 !important}
+.ending-page section h2{font-size:12px !important}
+.ending-actions{padding:8px 12px !important;gap:6px !important}
+.ending-actions>*{min-height:auto !important;padding:2px 12px !important;font-size:11px !important}
+/* 相关记录链 */
+.chain-premise p,.next-source p{font-size:11px !important}
+.next-source a{min-height:auto !important;padding:2px 12px !important;font-size:11px !important;display:inline-flex !important}
+.false-conclusion fieldset{padding:6px !important;margin:0 !important}
+.false-conclusion legend{font-size:11px !important;margin-bottom:3px !important}
+.false-conclusion .choice-option{min-height:auto !important;padding:3px 6px !important;font-size:11px !important}
+.false-conclusion button{min-height:auto !important;padding:2px 12px !important;font-size:11px !important;margin-top:6px !important}
+/* 系统消息 / 错误页 */
+.system-message{margin:8px 12px !important;padding:6px 10px !important;font-size:11px !important}
+.system-message p{font-size:11px !important;margin:0 0 4px !important}
+.system-error-header{padding:8px 12px !important}
+.error-code{font-size:10px !important}
+.not-found h1{font-size:13px !important;margin:0 0 4px !important}
+.boot-state{min-height:40vh !important}
+.boot-state p{font-size:11px !important}
+.storage-notice{padding:4px 12px !important;font-size:11px !important}
+/* 模态框 */
+.modal-backdrop{padding:10px !important}
+.reset-dialog{padding:10px !important;width:min(420px,100%) !important}
+.reset-dialog h2{font-size:13px !important;margin:0 0 6px !important}
+.reset-dialog p{font-size:11px !important;margin:0 0 8px !important}
+.dialog-actions{gap:6px !important;padding-top:6px !important}
+.dialog-actions>*{min-height:auto !important;padding:2px 12px !important;font-size:11px !important}
+.skip-link{min-height:auto !important;padding:5px 10px !important;font-size:11px !important}
+/* 会话条压缩 */
+.external-session-strip{min-height:auto !important}
+.external-session-inner{min-height:auto !important;padding:2px 10px !important}
+.external-session-strip a,.external-session-strip button,
+.external-session-strip .excerpt-status{min-height:auto !important;padding:1px 6px !important;font-size:10px !important}
+.external-session-id{font-size:10px !important}
+.external-session-source{font-size:10px !important}
+.session-record-actions{gap:3px !important}
+/* 内部顶栏压缩 */
+.institution-topbar-inner{min-height:auto !important;padding:0 10px !important;gap:10px !important}
+.institution-wordmark{font-size:12px !important;min-height:auto !important;padding:4px 0 !important}
+.institution-system-name{font-size:10px !important}
+.institution-topbar-actions{font-size:10px !important;gap:8px !important}
+.institution-topbar-actions a{min-height:auto !important;padding:2px 8px !important;font-size:10px !important}
+.institution-topbar .session-record-actions button,
+.institution-topbar .session-record-actions a,
+.institution-topbar .session-record-actions .excerpt-status{min-height:auto !important;font-size:10px !important;padding:2px 8px !important}
+.institution-session{font-size:10px !important}
+/* 开场页压缩 */
+.handover-header{padding:10px 16px !important}
+.handover-header h1{font-size:14px !important;margin:0 0 3px !important}
+.handover-header .subtitle{font-size:11px !important;margin:0 !important;padding-bottom:8px !important}
+.handover-header .eyebrow{font-size:10px !important;margin-bottom:2px !important}
+.handover-register{margin:8px 0 0 !important}
+.handover-register>div{padding:3px 8px !important}
+.handover-register dt{font-size:10px !important}
+.handover-register dd{font-size:11px !important;margin:1px 0 0 !important}
+.opening-boundary-layer{margin-top:8px !important}
+.boundary-layer-heading{padding:6px 12px !important;grid-template-columns:120px 1fr !important;gap:10px !important}
+.boundary-layer-heading>span{font-size:10px !important}
+.boundary-layer-heading h2{font-size:12px !important;margin:0 !important}
+.boundary-layer-body>*{padding:10px 12px !important;font-size:11px !important}
+.boundary-layer-body p{font-size:11px !important;margin:0 0 4px !important}
+.boundary-layer-body details summary{font-size:11px !important;min-height:auto !important}
+.boundary-layer-body ul{padding-left:16px !important;margin:4px 0 0 !important}
+.boundary-layer-body li{font-size:11px !important;padding:1px 0 !important}
+.boundary-layer-body aside p{font-size:10px !important}
+.offline-note{font-size:10px !important;margin:4px 0 0 !important}
+.prototype-notice{margin:0 0 6px !important;padding:6px 10px !important}
+.prototype-notice summary{font-size:11px !important;min-height:auto !important}
+.prototype-notice p{font-size:11px !important;margin:3px 0 0 !important}
+.handover-inworld-layer{margin-top:8px !important}
+.handover-inworld-layer>header{padding:6px 12px !important;grid-template-columns:120px minmax(0,1fr) minmax(180px,.55fr) !important;gap:10px !important}
+.handover-inworld-layer>header>span{font-size:10px !important}
+.handover-inworld-layer>header h2{font-size:12px !important;margin:0 !important}
+.handover-inworld-layer>header p{font-size:11px !important;margin:0 !important}
+.handover-inworld-layer .handover-grid{grid-template-columns:minmax(0,1fr) minmax(300px,.9fr) !important}
+.handover-inworld-layer .creator-contract{padding:10px 12px !important}
+.handover-inworld-layer .creator-contract>div{padding:5px 8px !important;grid-template-columns:80px minmax(0,1fr) !important;gap:8px !important}
+.handover-inworld-layer .creator-contract dt{font-size:10px !important}
+.handover-inworld-layer .creator-contract dd{font-size:11px !important}
+.handover-three-steps{padding:10px 12px !important}
+.handover-three-steps li{padding:5px 0 !important;min-height:auto !important;grid-template-columns:30px 1fr !important;gap:8px !important}
+.handover-three-steps li>span{width:20px !important;height:20px !important;font-size:10px !important}
+.handover-three-steps li strong{font-size:11px !important}
+.handover-three-steps p{font-size:10px !important;margin:1px 0 0 !important}
+.handover-actions{padding:8px 12px !important}
+.handover-actions .primary-action{min-height:auto !important;padding:4px 16px !important;font-size:12px !important}
+/* 宽度控制 */
+.institution-page,.workbench-tool,.workbench-result,.related-chain,
+.workbench-source,.ending-page,.not-found{max-width:1080px !important}
+.workbench-business-shell,.workbench-operation-shell{grid-template-columns:180px minmax(0,1fr) !important}
+.receipt-system-layout,.related-chain-shell{grid-template-columns:minmax(0,1.45fr) minmax(180px,.65fr) !important}
+.endpoint-body-grid{grid-template-columns:minmax(0,1.45fr) minmax(180px,.7fr) !important}
+/* 响应式保持 */
+@media(max-width:900px){
+  .workbench-business-shell,.workbench-operation-shell,.receipt-system-layout,
+  .related-chain-shell,.controlled-source-shell,.endpoint-body-grid{grid-template-columns:1fr !important}
+  .forum-operations-shell{grid-template-columns:1fr !important}
+  .folk-layout{grid-template-columns:1fr !important}
+  .handover-inworld-layer .handover-grid{grid-template-columns:1fr !important}
+  .boundary-layer-body{grid-template-columns:1fr !important}
+}
+
+
+/* ==========================================================================
+   密度层 v5：气质修正——宋体、去饱和、灰扑扑、table质感
+   依据真实素材实测:宋体/#f2f2f2背景/#dcdcdc边框/#cce6ff色块/#0066cc链接
+   ========================================================================== */
+
+/* ---------- 论坛:改宋体+去饱和 ---------- */
+.forum-page{font-family:SimSun,"Songti SC",STSong,serif !important;background:#f2f2f2 !important;color:#333 !important}
+.forum-frame{background:#fff !important;border:1px solid #dcdcdc !important}
+.forum-masthead{background:#fff !important;border-bottom:1px solid #dcdcdc !important}
+.forum-title-row h1,.forum-logo{color:#0066cc !important;font-family:SimSun,"Songti SC",serif !important;font-weight:700 !important}
+.forum-title-row p{color:#666 !important}
+.forum-utility{background:#fff !important;color:#666 !important;border-bottom:1px dashed #dcdcdc !important}
+.forum-utility a{color:#0066cc !important}
+.forum-primary-nav{background:#cce6ff !important;border-bottom:1px solid #a8c8e8 !important}
+.forum-primary-nav a,.forum-primary-nav span{color:#0066cc !important;border-right:1px solid #a8c8e8 !important}
+.forum-breadcrumb{background:#f2f2f2 !important;color:#666 !important;border-bottom:1px solid #dcdcdc !important}
+.forum-breadcrumb a{color:#0066cc !important}
+.forum-board-toolbar,.forum-search-row{background:#f2f2f2 !important;border-color:#dcdcdc !important;color:#555 !important}
+.forum-search-row input{border:1px solid #999 !important;background:#fff !important;font-family:SimSun,serif !important}
+.forum-search-row button{background:#e8e8e8 !important;border:1px solid #999 !important;color:#333 !important}
+.forum-board-stats{background:#f2f2f2 !important;border-color:#dcdcdc !important;color:#666 !important}
+.forum-board-stats dd{color:#cc0066 !important;font-weight:400 !important}
+.forum-result-line{color:#666 !important}
+.forum-board{border:1px solid #dcdcdc !important;margin:4px !important}
+.forum-board-head{background:#cce6ff !important;color:#336699 !important;border-bottom:1px solid #a8c8e8 !important;font-weight:400 !important}
+.forum-topic-row{background:#fff !important;border-bottom:1px solid #ececec !important}
+.forum-topic-row:nth-child(odd){background:#f8f8f8 !important}
+.forum-topic-row b{color:#0066cc !important;font-weight:400 !important}
+.forum-topic-row small{color:#888 !important}
+.forum-topic-row .forum-topic-author b,.forum-topic-row .forum-topic-activity b{color:#cc0066 !important;font-weight:400 !important}
+.forum-login-box,.forum-section-tree,.forum-era-warning{background:#fff !important;border:1px solid #dcdcdc !important}
+.forum-login-box h2,.forum-section-tree h2{background:#cce6ff !important;color:#336699 !important;font-weight:400 !important}
+.forum-login-box label{color:#555 !important}
+.forum-login-box input{border:1px solid #999 !important;background:#fff !important;font-family:SimSun,serif !important}
+.forum-login-box button{background:#e8e8e8 !important;border:1px solid #999 !important;color:#333 !important}
+.forum-section-tree>*{color:#333 !important;border-bottom:1px solid #f2f2f2 !important}
+.forum-section-tree a{color:#0066cc !important}
+.forum-era-warning{background:#fffff0 !important;border-color:#dcdcaa !important;color:#666633 !important}
+.forum-footer{background:#f2f2f2 !important;border-top:1px solid #dcdcdc !important;color:#888 !important}
+.forum-footer span,.forum-footer a{color:#888 !important}
+/* 论坛楼层页 */
+.forum-thread{border:1px solid #dcdcdc !important}
+.forum-floor{background:#fff !important;border-bottom:1px solid #dcdcdc !important}
+.forum-floor-header,.forum-post-head{background:#f2f2f2 !important;border-bottom:1px solid #dcdcdc !important}
+.forum-floor-header h1,.forum-post-head h1,.forum-post-head h2{color:#0066cc !important;font-weight:400 !important;font-family:SimSun,serif !important}
+.forum-floor-header time,.forum-floor-no{color:#888 !important}
+.forum-author{background:#f8f8f8 !important;border-right:1px solid #dcdcdc !important;color:#666 !important}
+.forum-author b{color:#0066cc !important}
+.forum-avatar{background:#fff !important;border:1px solid #dcdcdc !important;color:#0066cc !important}
+.forum-post-body{color:#333 !important}
+.forum-post-body p{color:#333 !important}
+.forum-edit-state,.forum-signature{border-top:1px dashed #dcdcdc !important;color:#999 !important}
+.forum-post-tools{color:#888 !important}
+.forum-post-tools span{color:#0066cc !important}
+.forum-thread-status{border-color:#dcdcdc !important}
+.forum-thread-status>div{border-color:#dcdcdc !important}
+.forum-thread-status dt{background:#f2f2f2 !important;color:#666 !important}
+.forum-thread-footer{background:#f2f2f2 !important;border-top:1px solid #dcdcdc !important;color:#888 !important}
+.forum-thread-footer a{color:#0066cc !important}
+.forum-thread-footer span{color:#888 !important}
+
+/* ---------- 民俗站:改宋体+更素 ---------- */
+.site-folk{background:#f5f5f0 !important;font-family:SimSun,"Songti SC",STSong,serif !important}
+.folk-site-frame{background:#fff !important;border:1px solid #ccccbb !important;box-shadow:none !important}
+.folk-masthead{background:#eef2e6 !important;border-bottom:1px solid #b8c4a8 !important}
+.folk-masthead h1,.folk-site-name{color:#335533 !important;font-family:SimSun,"Songti SC",serif !important}
+.folk-masthead p{color:#667766 !important}
+.folk-text-nav{background:#eef2e6 !important;border-bottom:1px solid #b8c4a8 !important}
+.folk-text-nav a,.folk-text-nav span{color:#0066cc !important}
+.folk-directory{background:#f8f8f4 !important;border-right:1px solid #ddd8cc !important}
+.folk-directory h2,.folk-directory h3{background:#eef2e6 !important;color:#446644 !important;font-weight:400 !important}
+.folk-directory ul li,.folk-directory>a,.folk-directory>span{color:#333 !important;border-bottom:1px dotted #ccccbb !important}
+.folk-directory a{color:#0066cc !important}
+.folk-counter{border:1px solid #ccccbb !important;background:#f8f8f4 !important;color:#889988 !important}
+.folk-content{color:#333 !important}
+.folk-search-block{background:#f4f4ee !important;border:1px solid #ccccbb !important;color:#555 !important}
+.folk-search-block input{border:1px inset #99aa88 !important;background:#fff !important;font-family:SimSun,serif !important}
+.folk-search-block button{border:1px outset #aabb99 !important;background:#eef2e6 !important;color:#333 !important;font-family:SimSun,serif !important}
+.folk-result-line,.site-folk .result-count{color:#889988 !important}
+.folk-index li{border-bottom:1px dotted #ccccbb !important}
+.folk-index a{color:#0066cc !important}
+.folk-index a>span{color:#889988 !important}
+.folk-index p{color:#777 !important}
+.folk-service-rail{background:#f8f8f4 !important;border-left:1px solid #ddd8cc !important}
+.folk-service-rail h2{background:#eef2e6 !important;color:#446644 !important;font-weight:400 !important}
+.folk-service-rail a,.folk-service-rail span{color:#335533 !important;border-bottom:1px dotted #ccccbb !important}
+.folk-service-rail a{color:#0066cc !important}
+.folk-side-note{border-color:#ccccbb !important;background:#fff !important;color:#555 !important}
+.folk-site-footer{background:#eef2e6 !important;border-top:2px solid #99aa88 !important;color:#889988 !important}
+.folk-site-footer a{color:#0066cc !important}
+/* 民俗文章页 */
+.paper-article h1,.folk-article h1{color:#335533 !important}
+.ink-rule{border-top:1px solid #99aa88 !important;border-bottom:2px solid #99aa88 !important}
+.paper-article>p:not(.paper-date):not(.paper-deck){color:#333 !important}
+.paper-date{color:#889988 !important}
+.paper-deck{color:#667766 !important}
+.folk-article .paper-date,.folk-article .paper-deck{color:#889988 !important;text-align:center !important}
+
+/* ---------- 档案:改宋体+去饱和蓝 ---------- */
+.archive-page{background:#f4f4f4 !important;color:#333 !important}
+.archive-masthead{background:#fff !important;border-bottom:2px solid #336699 !important}
+.archive-identity h1,.archive-identity>div>a,.archive-title{color:#336699 !important;font-family:SimSun,"Songti SC",serif !important}
+.archive-identity p,.archive-era{color:#888 !important}
+.archive-seal{background:#336699 !important;font-family:SimSun,serif !important}
+.archive-primary-nav{background:#336699 !important}
+.archive-primary-nav a,.archive-primary-nav span{color:#fff !important;border-right:1px solid #4477aa !important;font-weight:400 !important}
+.archive-sidebar{background:#fff !important;border:1px solid #cccccc !important}
+.archive-sidebar h2,.archive-sidebar h3{background:#336699 !important;color:#fff !important;font-weight:400 !important}
+.archive-sidebar nav>*{color:#333 !important;border-bottom:1px solid #eeeeee !important}
+.archive-sidebar nav>*::before{color:#336699 !important}
+.archive-sidebar nav a{color:#333 !important}
+.archive-sidebar nav a[aria-current]{color:#336699 !important}
+.archive-facets{background:#f4f6f8 !important;color:#666 !important}
+.archive-facets dd{color:#336699 !important}
+.filter-details{background:#f4f6f8 !important;border-color:#cccccc !important;color:#666 !important}
+.archive-search-panel{background:#eef2f6 !important;border-bottom-color:#cccccc !important}
+.archive-search-panel legend{color:#336699 !important}
+.archive-search-panel input{border:1px solid #999 !important;background:#fff !important}
+.archive-search-panel button{background:#336699 !important;border-color:#224466 !important;color:#fff !important;font-weight:400 !important}
+.archive-result-toolbar,.archive-result-summary,.archive-page .result-count{background:#f4f4f4 !important;color:#666 !important;border-color:#cccccc !important}
+.directory-head{background:#eef2f6 !important;color:#445566 !important;border-bottom:2px solid #336699 !important;font-weight:400 !important}
+.directory-row{border-bottom:1px solid #e8e8e8 !important;background:#fff !important}
+.directory-row:nth-child(even){background:#fafafa !important}
+.directory-row b{color:#333 !important}
+.directory-row code{color:#336699 !important}
+.directory-row small{color:#888 !important}
+.archive-catalog-identity .catalog-id{color:#336699 !important}
+.archive-catalog-identity h1{color:#333 !important;font-family:SimSun,serif !important}
+.archive-page .catalog-record>section:not(.archive-record-fields){background:#f4f6f8 !important;border-left:4px solid #336699 !important}
+.archive-page .record-metadata dt{background:#eef2f6 !important;color:#445566 !important}
+.archive-finding-aid p{color:#888 !important}
+.archive-site-footer{background:#eef2f6 !important;border-top:1px solid #cccccc !important;color:#888 !important}
+.archive-site-footer a{color:#0066cc !important}
+
+/* ---------- 旧报:改宋体+红白更朴素 ---------- */
+.news-page{background:#fff !important;font-family:Georgia,SimSun,"Songti SC",serif !important}
+.news-masthead{background:#fff !important;border-bottom:3px solid #aa0000 !important}
+.news-wordmark,.news-title,.news-masthead h1{color:#aa0000 !important;font-family:SimSun,"Songti SC",STSong,serif !important}
+.news-masthead p,.news-masthead small,.news-era{color:#888 !important}
+.news-library-mark>span{color:#888 !important}
+.news-library-bar{background:#f5f5f5 !important;border-bottom:1px solid #ddd !important}
+.news-library-bar a,.news-library-bar span{color:#880000 !important;border-right:1px solid #e3e3e3 !important;font-family:-apple-system,sans-serif !important}
+.news-search-tools{background:#fff !important;border:1px solid #ddd !important;font-family:-apple-system,sans-serif !important}
+.news-search-tools h2{color:#880000 !important}
+.news-search-tools input{border:1px solid #bbb !important}
+.news-search-tools button{background:#aa0000 !important;border-color:#880000 !important;color:#fff !important;font-weight:400 !important}
+.news-calendar header strong{color:#880000 !important}
+.news-calendar>div>b{background:#aa0000 !important}
+.news-edition-picker{border-color:#ddd !important}
+.news-edition-picker>b{background:#aa0000 !important}
+.news-date-strip{background:#f9eeee !important;border-color:#e3c1c1 !important;color:#663333 !important}
+.news-result-summary,.news-page .result-count{color:#888 !important;background:#fafafa !important;border-color:#e3e3e3 !important}
+.news-index article{border-bottom:1px dashed #ccc !important}
+.news-index h2 a{color:#880000 !important;font-family:SimSun,"Songti SC",serif !important}
+.news-index article>p:first-child{color:#aa0000 !important}
+.news-index small{color:#888 !important}
+.news-site-footer{background:#333 !important;border-top:2px solid #aa0000 !important;color:#bbb !important}
+.news-record-furniture{background:#f7ecec !important;border-color:#e3c1c1 !important;color:#663333 !important}
+.news-edition-running-head{color:#880000 !important;border-bottom-color:#e3c1c1 !important}
+.news-issue-scan h1,.news-page .scan-sheet h1,.news-page .scan-sheet h2{color:#222 !important}
+.news-page .ocr-panel{border-top:4px solid #aa0000 !important;background:#fafafa !important;font-family:-apple-system,sans-serif !important}
+.news-correction-header{border-bottom-color:#aa0000 !important}
+.news-film-strip{background:#1a1a1a !important;border-color:#000 !important}
+.news-film-identity h1{color:#f3ecdd !important;font-family:SimSun,"Songti SC",serif !important}
+
+/* ---------- 地质:改宋体+深蓝更稳 ---------- */
+.geo-page{background:#f2f4f6 !important;font-family:Arial,SimSun,"Microsoft YaHei",sans-serif !important}
+.geo-masthead{background:#0d3b66 !important}
+.geo-agency h1,.geo-agency>div>a,.geo-title{color:#fff !important;font-weight:700 !important}
+.geo-agency p,.geo-agency>span:last-child{color:#bcd6ee !important}
+.geo-agency-code{background:#0a2f52 !important;border:1px solid #3a6ea5 !important;color:#fff !important}
+.geo-primary-nav{background:#14507e !important;border-bottom:3px solid #0d3b66 !important}
+.geo-primary-nav a,.geo-primary-nav span{color:#fff !important;border-right:1px solid #2a6296 !important;font-weight:400 !important}
+.geo-data-tree{background:#fff !important;border:1px solid #cccccc !important}
+.geo-data-tree h2,.geo-data-tree h3{background:#14507e !important;color:#fff !important;font-weight:400 !important}
+.geo-data-tree nav>*{color:#333 !important;border-bottom:1px solid #eeeeee !important}
+.geo-data-tree li{color:#666 !important}
+.geo-map-tools{background:#f0f4f8 !important;border-color:#cccccc !important}
+.geo-search-tools{background:#eef2f6 !important;border-bottom-color:#cccccc !important}
+.geo-search-tools input{border:1px solid #999 !important;background:#fff !important}
+.geo-search-tools button{background:#14507e !important;border-color:#0d3b66 !important;color:#fff !important;font-weight:400 !important}
+.geo-facet-strip{background:#fff !important;border-color:#cccccc !important}
+.geo-facet-strip>div{border-bottom-color:#eeeeee !important}
+.geo-facet-strip strong{background:#f0f2f5 !important;color:#445566 !important}
+.geo-facet-strip span{color:#333 !important}
+.geo-result-toolbar,.geo-result-summary,.geo-page .result-count{background:#f0f4f8 !important;color:#666 !important;border-color:#cccccc !important}
+.geo-dataset-list>a{border-bottom:1px solid #e8e8e8 !important;background:#fff !important}
+.geo-dataset-list>a:nth-child(even){background:#fafafa !important}
+.geo-dataset-list code{color:#0066cc !important}
+.geo-dataset-list b{color:#0066cc !important;font-weight:400 !important}
+.geo-dataset-list small{color:#888 !important}
+.geo-report-header{background:#eef2f6 !important;border-bottom:3px solid #14507e !important}
+.geo-report-header code{background:#14507e !important}
+.geo-source-register{border-color:#cccccc !important}
+.geo-source-register dt{background:#eef2f6 !important;color:#445566 !important}
+.geo-site-footer{background:#0d3b66 !important;border-top:2px solid #0a2f52 !important;color:#bcd6ee !important}
+
+/* ---------- 工作台:宋体标题+去饱和棕 ---------- */
+.workbench-page,.workbench-tool,.workbench-result,.related-chain,
+.workbench-source,.ending-page,.not-found{background:#f6f1e7 !important}
+.institution-topbar{background:#6e5236 !important;border-bottom:3px solid #4e3a26 !important}
+.institution-wordmark{color:#fff !important;font-family:SimSun,"Songti SC",serif !important}
+.workbench-app-header h1,.tool-heading h1{font-family:SimSun,"Songti SC",serif !important;color:#4a3a24 !important}
+.workbench-toolbar{background:#7a5c3e !important;border-bottom:2px solid #4e3a26 !important}
+.workbench-process-tree,.tool-task-rail{background:#efe6d4 !important;border-right:1px solid #d8c9a8 !important}
+.workbench-process-tree>h2,.tool-task-rail>h2{color:#4a3a24 !important}
+.workbench-process-tree li.is-complete>span{background:#b8d4a8 !important;border-color:#8aa87a !important;color:#2a4a22 !important}
+.workbench-process-tree li.is-current>span,.panel-procedure li.is-current span{background:#e0c98f !important;border-color:#b39a6f !important;color:#4a3a24 !important}
+.workbench-job-row{background:#fff !important;border-color:#e2d7c0 !important}
+.workbench-task-rail .workbench-job-row,
+.task-rail-current.workbench-job-row{background:#f3e5c3 !important;border-color:#b39a6f !important;box-shadow:inset 4px 0 #8a6a48 !important}
+.current-assignment,.receipt-ready{background:#fff !important;border:1px solid #d8c9a8 !important;border-left:5px solid #8a6a48 !important}
+.project-reaction{background:#f3e5c3 !important;border-color:#b39a6f !important;color:#4a3a24 !important}
+.project-reaction blockquote{background:#fff !important;border-left:3px solid #8a6a48 !important}
+.operation-sheet{background:#fff !important;border:1px solid #d8c9a8 !important;border-top:3px solid #8a6a48 !important}
+.operation-sheet-heading{background:#f3ecdd !important;border-bottom-color:#d8c9a8 !important}
+.operation-sheet-heading h2{color:#1a7a1a !important}
+.operation-sheet-heading h2::before{content:"● " !important;color:#2a9a2a !important}
+.choice-option{background:#fff !important;border-bottom:1px solid #e8dfc9 !important}
+.choice-option:has(input:checked){background:#eef6ea !important;border-color:#8aa87a !important}
+.form-actions{background:#f3ecdd !important;border-top:1px solid #d8c9a8 !important}
+.saved-panel{background:#eef6ea !important;border-left:5px solid #2a9a2a !important;color:#2a4a22 !important}
+.form-error{background:#fbeeee !important;border-color:#c98a80 !important;border-left:5px solid #a03030 !important;color:#6a2a22 !important}
+.hint-drawer{background:#f7f2e6 !important;border-color:#d8c9a8 !important}
+.direct-hint-confirm{background:#f3e5c3 !important;border-color:#b39a6f !important}
+.next-question{background:#e8f0e4 !important;border:1px solid #b9d2b3 !important;color:#2a4a22 !important}
+.next-question h2,.next-question p{color:#2a4a22 !important}
+.source-links{background:#fff !important;border:1px solid #d8c9a8 !important}
+.source-links-heading{background:#7a5c3e !important}
+.source-links-heading>span{color:#e0c98f !important}
+.source-links li{border-color:#e8dfc9 !important}
+.source-links li a{color:#0066cc !important}
+.panel-nav{border:1px solid #d8c9a8 !important}
+.panel-nav>*{background:#f3ecdd !important;border-right:1px solid #d8c9a8 !important;color:#4a3a24 !important}
+.panel-nav>a[aria-current="step"]{background:#f3e5c3 !important;box-shadow:inset 0 -3px #8a6a48 !important}
+.locked-panel{color:#a09070 !important}
+.artifact-cue>div,.tool-task-rail .artifact-cue>div,
+.workbench-operation-shell>.tool-task-rail .artifact-cue>div{background:#efe6d4 !important;border-color:#c9b795 !important;color:#5a4a30 !important}
+.controlled-source-header{background:#efe6d4 !important;border-bottom:2px solid #b39a6f !important}
+.controlled-source-nav{background:#7a5c3e !important}
+.controlled-document{border:1px solid #d8c9a8 !important;background:#fff !important}
+.document-stamp{background:#f3ecdd !important;border-right:1px solid #d8c9a8 !important}
+.document-stamp span{border:2px solid #8a6a48 !important;color:#6a5236 !important}
+.custody-boundary{background:#f7f2e6 !important;border-left:4px solid #8a6a48 !important}
+.derived-receipt,.branch-status,.chain-premise,.next-source,.chain-closure,
+.execution-summary,.shared-ending-boundary{background:#fff !important;border:1px solid #d8c9a8 !important}
+.receipt-context-rail,.related-chain-context,.tool-context-rail{background:#f3ecdd !important;border-left:1px solid #d8c9a8 !important}
+.endpoint-header{background:#efe6d4 !important;border-bottom:3px solid #8a6a48 !important}
+.endpoint-status-grid,.endpoint-ledger{border-color:#d8c9a8 !important}
+.endpoint-status-grid>div,.endpoint-ledger>div{border-color:#d8c9a8 !important;background:#fff !important}
+.endpoint-status-grid dt,.endpoint-ledger dt{color:#8a7452 !important}
+.unresolved-list{border-color:#d8c9a8 !important;background:#fff !important}
+.workbench-bottom-actions{background:#7a5c3e !important}
+.workbench-bottom-actions a{background:#e8dfc9 !important;color:#4a3a24 !important}
+.workbench-support-register>section{background:#fff !important;border:1px solid #d8c9a8 !important}
+.opened-sources li,.ordinary-jobs li,.human-receipts li,.related-records li{border-bottom:1px solid #e8dfc9 !important}
+.case-area-heading{background:#fff !important;border-bottom:1px solid #d8c9a8 !important}
+.handover-inworld-layer{background:#5d4732 !important;border-color:#4e3a26 !important}
+.handover-inworld-layer .creator-contract>div{background:#6e5236 !important;border-color:#8a6a48 !important}
+.handover-actions{background:#efe6d4 !important;border-top-color:#c9b795 !important}
+/* 会话条:灰扑扑 */
+.external-session-strip{background:#f2f2f2 !important;border-bottom:1px solid #dcdcdc !important;font-family:SimSun,serif !important}
+.external-session-strip a,.external-session-strip button,
+.external-session-strip .excerpt-status{background:#fff !important;border:1px solid #999 !important;color:#0066cc !important}
+.external-session-id{color:#888 !important;border-right-color:#dcdcdc !important}
+/* 按钮统一:Win经典灰 */
+button{font-family:inherit !important}
+.primary-action,.primary-link{background:linear-gradient(#fdfdfd,#d9d9d9) !important;color:#222 !important;border:1px solid #8f8f8f !important;border-radius:14px !important;font-weight:400 !important}
+.secondary-action,.secondary-link,.previous-panel-link{background:linear-gradient(#fdfdfd,#e2e2e2) !important;color:#333 !important;border:1px solid #9a9a9a !important;border-radius:14px !important}
+.danger-action{background:linear-gradient(#f8e8e4,#dcb8b0) !important;color:#6a2a22 !important;border:1px solid #a06a60 !important;border-radius:14px !important}
+/* 证据影像:灰框 */
+.evidence-visual{background:#e8e8e8 !important;border:1px solid #bbb !important}
+.evidence-visual figcaption{background:#f5f5f5 !important;border-top:1px solid #ccc !important;color:#555 !important}
+/* 全局:去圆角残留 */
+.fictional-site,.institution-page,.workbench-tool,.workbench-result,
+.related-chain,.workbench-source,.ending-page,.not-found{border-radius:0 !important;box-shadow:none !important}

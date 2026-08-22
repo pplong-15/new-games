@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>槐荫街道综治值班台</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/pick.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>槐荫街道　矛盾纠纷上传</strong>
+      <div>
+        <span id="clock" class="desk-clock">系统时间 --:--　上传截止 22:00</span>
+        <a class="ghost-btn" href="introduction.html">班前纸</a>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>综治〔2026〕枣-117</h2>
+      <p class="auth">本岗权限：上传摘要　建议回访口径。核定、销户、改谱、给原件盖章，都不在你这儿。</p>
+    </div>
+    <table class="desk-split">
+      <tr>
+        <td>
+          <h3>工单</h3>
+          <p>来源：房头耿伯川电话，系统转派。对象：枣树巷十七号耿户。事项写成「过继抚养纠纷」。今晚二十二点前须上传，空单记缺。</p>
+          <p>守仁五月病故。伯川称已立嗣子耿小满，户口拖着没迁，要街道落实。素秋在电话里只重复别再上门量院子。守礼那边把孙子往前推。</p>
+          <p>先打开户政查阅，核本户在册人口。红纸、谱摘、巷里帖、信箱，目录里都有。你觉得哪版像，就勾哪版。回访按上传的问。</p>
+          <p>工单标题本身也是一说。要当争议归类传上去，自己摘。</p>
+          <p>
+            <button type="button" class="pick" data-block="kind-order">把派单标题写入争议归类</button>
+          </p>
+          <h3>采集目录</h3>
+          <p><b>户政附件</b></p>
+          <ul>
+            <li><a href="hukou.html">浦阳县户政查阅　枣树巷十七号扫描</a></li>
+            <li><a href="hukou-refuse.html">五月二十日对照拒件全文</a></li>
+            <li><a href="hukou-channel.html">渠沿路九号守礼户协查</a></li>
+            <li><a href="hukou-death.html">守仁死亡注销与改主</a></li>
+            <li><a href="office.html">窗口叫号与告知存根</a></li>
+          </ul>
+          <p><b>文书与谱</b></p>
+          <ul>
+            <li><a href="sishu.html">耿氏文书托管　立嗣抄件</a></li>
+            <li><a href="sishu-zhongren.html">中人栏：谁执笔、谁在场</a></li>
+            <li><a href="sishu-ink.html">托管员旁注指上有墨</a></li>
+            <li><a href="zupu.html">江左谱牒　槐荫支摘页</a></li>
+            <li><a href="zupu-catalog.html">槐荫支目录与待核条</a></li>
+            <li><a href="zupu-nvkou.html">女口不录凡例</a></li>
+            <li><a href="zupu-pending.html">匡缮七月二十八手记</a></li>
+          </ul>
+          <p><b>巷与信箱</b></p>
+          <ul>
+            <li><a href="neighbor.html">槐荫民情通　巷里反映</a></li>
+            <li><a href="neighbor-tape.html">谭婶续帖：卷尺天天响</a></li>
+            <li><a href="neighbor-cat.html">渠沿找猫（闲帖）</a></li>
+            <li><a href="neighbor-water.html">南埠停水（闲帖）</a></li>
+            <li><a href="neighbor-cover.html">三号井盖（闲帖）</a></li>
+            <li><a href="letter-list.html">网格信箱　收件列表</a></li>
+            <li><a href="letter.html">素秋来信正文</a></li>
+            <li id="wanhe-slot" style="display:none"><a href="wanhe.html">信箱附件里的旧空间地址</a>　<a href="wanhe-msg.html">留言墙</a>　<a href="wanhe-photo.html">相册空镜</a>　<a href="wanhe-mood.html">说说</a></li>
+          </ul>
+          <p><b>须知与旧单</b></p>
+          <ul>
+            <li><a href="policy.html">过继纠纷受理须知</a></li>
+            <li><a href="help-fields.html">上传台栏位说明</a></li>
+            <li><a href="log.html">卞梁八月上门日志</a></li>
+            <li><a href="phone-bochuan.html">伯川来电转写</a></li>
+            <li><a href="subsidy.html">照料补贴驳回摘要</a></li>
+            <li><a href="history.html">邻巷旧工单（勿串户）</a></li>
+            <li><a href="jiedao-share.html">后院份额：本台不批产</a></li>
+          </ul>
+        </td>
+        <td>
+          <h3>上传台</h3>
+          <p id="upcount">空单整点退。至少传满三栏才收签发。</p>
+          <div id="trays"></div>
+          <p>
+            <button type="button" id="issue">建议回访口径并签发</button>
+          </p>
+          <h3>回访草稿</h3>
+          <ol id="draft"></ol>
+        </td>
+      </tr>
+    </table>
+    <div class="memo">
+      <p><b>尤广便笺</b>　一次多翻一张。他写得懒，你将就看。</p>
+      <p><button type="button" id="hint-btn">翻一张</button></p>
+      <p id="hint-1" hidden>别急着把派单标题直接传上去。户政跟红纸先对着看。</p>
+      <p id="hint-2" hidden>一栏只能留一版。户口册上没有的人，红纸上可能写着。</p>
+      <p id="hint-3" hidden>素秋不在公开栏。她把话塞进网格信箱。女儿那页要信里点到才打得开。</p>
+      <p id="hint-4" hidden>三栏齐才能签发。嗣子填了小满，又写从未迁入，提纲会自己顶牛。</p>
+    </div>
+  </div>
+  <script src="js/state.js"></script>
+  <script>
+    HY.visit("desk", 0);
+    HY.bindPicks();
+    HY.renderDesk();
+    HY.showHints();
+    document.getElementById("hint-btn").onclick = function () { HY.nextHint(); };
+    document.addEventListener("hy-extract", function () { HY.renderDesk(); });
+  </script>
+</body>
+</html>

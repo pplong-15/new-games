@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-archive-simsun">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>顾松年户档</title>
+  <link rel="stylesheet" href="css/archive-simsun.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<article class="record">
+  <p id="mini" class="sm-mini"></p>
+  
+<div id="shut" class="closed-box">
+  <p>户档夹还在北坡柜，本班没抽。</p>
+  <p><a href="desk.html">回柜开门</a></p>
+</div>
+<div id="live" style="display:none">
+
+  <h1>十二区户档　三七穴</h1>
+  <div class="meta"><span>穴号：12-37</span><span>立户：顾松年</span></div>
+  <table>
+    <tr><th>项</th><th>登记</th></tr>
+    <tr><td>地块</td><td>北坡十二区。私坟。不在南阶烈士园名录。</td></tr>
+    <tr><td>在世联系</td><td>顾晚禾（孙女，县里住）</td></tr>
+    <tr><td>清明预约</td><td>本户未办集体码。旧年自己来过，步行。</td></tr>
+    <tr><td>邻穴</td><td>东侧三十八穴申老山</td></tr>
+  </table>
+  <p>档员批注：勿把十二区私坟写入南阶批次。姓名是编的，不是真实墓主。</p>
+  <p><button type="button" class="sm-btn" id="vbtn">采信：顾松年是十二区私坟</button></p>
+  <p id="vok" class="sm-ok" style="display:none">这句留下了。码在不在这户，这页没写。</p>
+  <p id="vbad" class="sm-warn" style="display:none"></p>
+  <p>户档能证明地块，不能证明顾晚禾借没借过别人的码。</p>
+  <p><a href="qu12-yu.html">预约摘抄</a>　<a href="door-qu12.html">回门</a></p>
+  <p><span class="stamp">户档</span></p>
+  
+</div>
+
+  <p>北坡档柜　三七穴抄件</p>
+</article>
+
+<section class="pad"><p>户档室的表比预约摘抄更老。地块、在世联系、清明预约、邻穴，四行能把私坟钉死。顾晚禾住县里，旧年步行，说明她不是年年有车。勿把十二区写入南阶批次，是档员用红印盖的。采信只到「顾松年是十二区私坟」，借码的事这页不承认也不否认。</p></section>
+<script src="js/sanmen.js"></script>
+<script>
+Sanmen.paintMini(document.getElementById('mini'));
+Sanmen.gate('qu12','shut','live');
+Sanmen.bindVerify(document.getElementById('vbtn'),'gu-private',document.getElementById('vok'),document.getElementById('vbad'));
+
+</script>
+</body>
+</html>

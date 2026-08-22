@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk" data-seen="register">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Xiwa accident roster — pending</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/patches.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>Roster panel — ten fates</strong>
+      <div>
+        <a class="ghost-btn" href="index.html">Back to desk</a>
+        <form id="search-form" action="../search-results.html" method="get">
+          <input id="search-input" name="q" placeholder="Token from a row" maxlength="32">
+          <button type="submit">Match file</button>
+        </form>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>Mark each person</h2>
+      <p>The web draft wrote HuoChengshan, WengErhai, ShangXiaoman, NingGuangfu, QuPeiyi, XingGuilin, LanShoutian, YinFulai, GeWancai as in-shaft. Only TanQiusheng was put back on surface. The draft is not a finding. What you mark goes on the recommendation.</p>
+      <p>In-shaft means they went down that day. On surface means they were on the mine and did not go down. Already Relocated means household left Shiling before the accident. Wrongly entered means the name should not be on this accident book. One box only. Huo Chengshan’s three characters line up on the in-shaft list, the Bereavement base, and the unreturned lamp. Ning Guangfu’s line up on the Leave slip, the blank household, and a later incense gift. If a box does not line up, do not copy the draft. This machine stutters when you type. When it stutters, look at a file, then mark.</p>
+    </div>
+    <table class="book">
+      <thead>
+        <tr><th>Name</th><th>Web draft</th><th>Advised fate</th></tr>
+      </thead>
+      <tbody id="reg-body"></tbody>
+    </table>
+    <p class="sms">When the rows are full, go <a href="submit.html">send for review</a>. Mou Yanqiu will not take empty rows. Slips are in the <a href="memo.html">drawer</a>.</p>
+    <p class="foot-desk">Roster lives on this machine. Refresh does not drop marks. 2/39</p>
+  </div>
+  <script src="../js/seen.js"></script>
+  <script src="../js/register.js"></script>
+  <script src="../js/keyword-search.js"></script>
+</body>
+</html>

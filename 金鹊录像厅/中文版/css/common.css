@@ -1,0 +1,190 @@
+/* 金鹊录像厅：页脚、搜索嵌入、窄屏。不要做成游戏 HUD。 */
+:root { --ft-muted: #888; }
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+img { max-width: 100%; height: auto; }
+:focus-visible { outline: 2px solid #d15c20; outline-offset: 2px; }
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); border: 0;
+}
+.game-ft {
+  clear: both;
+  text-align: center;
+  font-size: 12px;
+  color: var(--ft-muted);
+  padding: 16px 8px 28px;
+  line-height: 1.7;
+}
+.game-ft a { color: inherit; }
+.ph {
+  background: repeating-linear-gradient(135deg, #ddd 0 8px, #ececec 8px 16px);
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 12px;
+  min-height: 72px;
+  border: 1px solid #ccc;
+}
+.ph.wide { min-height: 140px; }
+.ph.sq { width: 120px; height: 120px; min-height: 0; }
+/* 游戏配图：旧照片质感统一收口 */
+img.game-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #c9bda8;
+  margin: 10px 0;
+  background: #fff;
+}
+img.game-photo.portrait {
+  width: auto;
+  max-width: 440px;
+  margin: 10px auto;
+}
+img.avatar-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  display: block;
+  background: #eee;
+}
+.muted { color: #888; }
+.flash {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  margin: 8px 0;
+  background: #fffbe6;
+}
+.flash-bad { background: #fdecea; border-color: #f5c2c0; }
+.flash-ok { background: #eaf7ea; border-color: #b7dfb9; }
+html.reduce *, html.reduce *::before, html.reduce *::after {
+  animation: none !important;
+  transition: none !important;
+}
+html.large body { font-size: 18px !important; line-height: 1.7; }
+
+html.skin-shop-local-2010s nav a[aria-current="page"] { background: #d15c20; }
+html.skin-shop-local-2010s main { padding: 0 24px 24px; max-width: 960px; margin: 0 auto; }
+html.skin-shop-local-2010s .hero-photo { margin: 0 0 16px; }
+html.skin-shop-local-2010s .dead { color: #aaa; cursor: default; }
+
+html.skin-qzone-modules .topbar {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+html.skin-qzone-modules .topbar-inner {
+  width: 900px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 36px;
+  padding: 0 12px;
+}
+html.skin-qzone-modules .topbar form { margin-left: auto; display: flex; gap: 4px; }
+html.skin-blog-personal-2008 .nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+html.skin-blog-personal-2008 .nav form { margin-left: auto; display: flex; gap: 4px; }
+html.skin-discuz-board .hd form,
+html.skin-gov-redbar .links form,
+html.skin-corp-table-2005 .nav form,
+html.skin-classified-yellow .top form,
+html.skin-mail-web-2010 .top form,
+html.skin-wechat-mp-article .meta form,
+html.skin-archive-simsun .meta form,
+html.skin-service-cyan-desk header form {
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+}
+html.skin-blog-personal-2008 .nav input,
+html.skin-qzone-modules .topbar input,
+html.skin-discuz-board .hd input,
+html.skin-gov-redbar .links input,
+html.skin-corp-table-2005 .nav input,
+html.skin-classified-yellow .top input,
+html.skin-mail-web-2010 .top input,
+html.skin-archive-simsun .meta input,
+html.skin-service-cyan-desk header input {
+  height: 22px;
+  width: min(200px, 48vw);
+}
+html.skin-wechat-mp-article .meta input { height: 28px; }
+html.skin-search-results .hit-ex { color: #666; font-size: 13px; margin: 4px 0 12px; }
+html.skin-search-results .mini {
+  background: #d15c20;
+  color: #fff;
+  height: 36px;
+  display: flex;
+  align-items: center;
+}
+html.skin-search-results .mini-inner {
+  width: 720px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 8px;
+}
+html.skin-search-results .mini a { color: #fff; text-decoration: none; display: inline; margin: 0; }
+html.skin-search-results .mini form { margin-left: auto; display: flex; }
+html.skin-search-results .mini input { height: 22px; border: 0; width: 180px; }
+html.skin-search-results .mini button {
+  height: 22px;
+  border: 0;
+  background: #555;
+  color: #fff;
+  padding: 0 10px;
+}
+html.skin-search-results .box { margin-top: 16px; }
+html.skin-intro-manual .boot-actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+html.skin-intro-manual .boot-actions button {
+  background: #333;
+  color: #fff;
+  border: 0;
+  padding: 8px 14px;
+}
+html.skin-intro-manual .boot-actions .ghost { background: #fff; color: #333; border: 1px solid #333; }
+html.skin-archive-simsun .choice-row { text-align: center; margin-top: 24px; text-indent: 0; }
+html.skin-archive-simsun .choice-row button {
+  margin: 6px;
+  padding: 8px 16px;
+  background: #333;
+  color: #fff;
+  border: 0;
+}
+html.skin-archive-simsun table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+html.skin-archive-simsun td, html.skin-archive-simsun th {
+  border: 1px solid #ccc;
+  padding: 6px 8px;
+  text-indent: 0;
+}
+html.skin-service-cyan-desk .login-box label { display: block; margin: 8px 0 4px; }
+html.skin-service-cyan-desk .login-box input { width: 100%; height: 32px; }
+html.skin-forbidden .box a { color: #f88; }
+
+@media (max-width: 800px) {
+  html.skin-shop-local-2010s nav ul { flex-wrap: wrap; margin: 0 8px; }
+  html.skin-shop-local-2010s header { flex-wrap: wrap; gap: 8px; }
+  html.skin-blog-personal-2008 .wrap,
+  html.skin-qzone-modules .cols,
+  html.skin-gov-redbar .wrap,
+  html.skin-discuz-board .wp,
+  html.skin-classified-yellow .layout { width: auto; display: block; margin: 8px; }
+  html.skin-corp-table-2005 table.site { width: 100%; }
+  html.skin-mail-web-2010 .panes { grid-template-columns: 1fr; height: auto; }
+  html.skin-discuz-board .floor { grid-template-columns: 1fr; }
+  html.skin-service-cyan-desk .login-box,
+  html.skin-service-cyan-desk table,
+  html.skin-service-cyan-desk .notice { width: auto; margin: 12px; }
+}

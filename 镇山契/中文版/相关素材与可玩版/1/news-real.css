@@ -1,0 +1,59 @@
+/* ==========================================================================
+   旧报站真皮覆盖层（重写：扫描库/微缩胶片档案系统，非新闻门户）
+   取自 NewspaperSG（新加坡报纸微缩胶片系统）+ Trove（澳图 OCR）+ 国图报纸指南
+   核心：白顶栏 + 深蓝灰导航 #3a4f62 / 蓝按钮 #0771d4 / 深炭灰警示条 /
+        米白报纸扫描区 / 黑字标题（不是红色报头）
+   ========================================================================== */
+
+/* 页面：白底 */
+.news-page{background:#fff !important;font-family:Georgia,"SimSun","宋体",serif !important}
+
+/* 站头：白底 + 黑字机构标题（图书馆档案系统，不是红报头） */
+.news-masthead{background:#fff !important;border-bottom:1px solid #d5d5d5 !important}
+.news-wordmark,.news-title,.news-masthead h1{color:#1a1a1a !important;font-family:"SimSun","宋体",STSong,serif !important;font-weight:700 !important}
+.news-masthead p,.news-masthead small,.news-era{color:#888 !important}
+.news-library-mark>span{color:#888 !important}
+
+/* 馆藏导航条：深蓝灰（NewspaperSG 标签色 #3a4f62） */
+.news-library-bar{background:#3a4f62 !important;border-bottom:1px solid #2d3e4e !important}
+.news-library-bar a,.news-library-bar span{color:#fff !important;border-right:1px solid #4d6173 !important;font-family:-apple-system,sans-serif !important}
+
+/* 搜索工具：白卡片 + 蓝按钮（Trove Next 蓝 #0771d4） */
+.news-search-tools{background:#f8f9fa !important;border:1px solid #ddd !important;font-family:-apple-system,sans-serif !important}
+.news-search-tools h2{color:#333 !important}
+.news-search-tools input{border:1px solid #bbb !important}
+.news-search-tools button{background:#0771d4 !important;border-color:#0560b3 !important;color:#fff !important;font-weight:400 !important}
+
+/* 日历 + 版次选择器：蓝按钮 */
+.news-calendar header strong{color:#333 !important}
+.news-calendar>div>b{background:#0771d4 !important}
+.news-edition-picker{border-color:#ddd !important}
+.news-edition-picker>b{background:#0771d4 !important}
+
+/* 日期条：深炭灰警示（NewspaperSG alert banner） */
+.news-date-strip{background:#2d2d2d !important;border-color:#1a1a1a !important;color:#fff !important}
+
+/* 结果摘要 */
+.news-result-summary,.news-page .result-count{color:#888 !important;background:#fafafa !important;border-color:#e3e3e3 !important}
+
+/* 索引列表：黑标题（档案系统，不是红报题） */
+.news-index article{border-bottom:1px dashed #ccc !important}
+.news-index h2 a{color:#333 !important;font-family:"SimSun","宋体",serif !important}
+.news-index article>p:first-child{color:#888 !important}
+.news-index small{color:#888 !important}
+
+/* 页脚：深炭灰 */
+.news-site-footer{background:#2d2d2d !important;border-top:2px solid #3a4f62 !important;color:#bbb !important}
+
+/* 记录页元素 */
+.news-record-furniture{background:#f4f4f4 !important;border-color:#ddd !important;color:#555 !important}
+.news-edition-running-head{color:#333 !important;border-bottom-color:#ddd !important}
+.news-issue-scan h1,.news-page .scan-sheet h1,.news-page .scan-sheet h2{color:#1a1a1a !important}
+.news-page .ocr-panel{border-top:4px solid #3a4f62 !important;background:#fafafa !important;font-family:-apple-system,sans-serif !important}
+.news-correction-header{border-bottom-color:#3a4f62 !important}
+
+/* 微缩胶片条：深黑（保持胶片本体质感） */
+.news-film-strip{background:#252622 !important;border-color:#171814 !important;color:#e8e2d4 !important;box-shadow:none !important}
+.news-film-identity h1{color:#f3ecdd !important;font-family:"SimSun","宋体",serif !important}
+.news-film-identity p,.news-film-strip small{color:#bcb5a5 !important}
+.news-film-frame-rail{background:#12130f !important}

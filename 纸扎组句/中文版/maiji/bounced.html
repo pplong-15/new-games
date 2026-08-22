@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>麦记·越权退回</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>回单·退</strong>
+      <div>
+        <a class="ghost-btn" href="desk.html">台</a>
+        <a class="ghost-btn" href="shift.html">权</a>
+        <form id="search-form" action="#" method="get" style="display:inline">
+          <input id="search-input" name="q" placeholder="查单号…">
+          <button type="submit">查找</button>
+        </form>
+      </div>
+    </header>
+    
+    <div class="notice">
+      <h2>这条不收</h2>
+      <p>退单上没有人情。麦老把教法和准烧写成同一类越权，省得临工觉得两件事能分开谈。分开谈也不收。</p>
+      <p id="why"></p>
+      <p>批准今夜焚化，或附录扎作步骤，都不在受托范围。临工没有焚化权，也没有教人的权。麦老把这两栏钉死了。勾了就退。</p>
+      <p>原堆仍停在待焚区边上。炉口不因你这一勾而开。井秋白收不到准烧，邵浦也收不到做法。窗关，一句不入账。</p>
+      <p>要交，只能回到建议那一栏。事件可以写，批条不行。</p>
+      <p>退单会在柜台灯下亮一夜。明早麦老若看见准烧被勾，会按去年那张涂名告示扣工。扣工不改现场，现场仍冷。</p>
+      <p><a href="shift.html">再看权限</a> · <a href="sentence.html">改权限再交</a></p>
+    </div>
+
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    ZJ.bootPage("end-bounced");
+    var f = ZJ.endingWhy();
+    var el = document.getElementById("why");
+    if (el) el.textContent = f.auth === "teach" ? "你勾了附录扎作步骤。" : "你勾了准予今夜焚化。";
+</script>
+</body>
+</html>

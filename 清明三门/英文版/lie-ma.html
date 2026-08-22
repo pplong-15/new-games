@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-corp-table-2005">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reservation-code backing page</title>
+  <link rel="stylesheet" href="css/corp-table-2005.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<table class="site" cellspacing="0" cellpadding="0">
+  <tr><td colspan="2" class="banner">Reservation-code backing page</td></tr>
+  <tr><td colspan="2" class="nav"><a href="desk.html">Back to desk</a>|<a href="javascript:void(0)">Void</a></td></tr>
+  <tr>
+    <td class="left"><h4>Code</h4><p>Lieji prefix</p><p>South steps</p></td>
+    <td class="main"><p id="mini" class="sm-mini"></p>
+<div id="shut" class="closed-box"><p>Code page sits in the collective household. The slot has not reached it.</p><p><a href="desk.html">Back to desk</a></p></div>
+<div id="live" style="display:none">
+<p class="scroll">Lieji-0405-Erliang · valid on Qingming day.</p>
+<p>Issued to Lian County Second Grain Depot union. Handler Miao Shiqiao. Use: martyrs' terrace south-steps collective sweep sign-in. One code, many people. Does not map to a personal grave.</p>
+<p>Hold the code, enter the south-steps gate. Holding the code does not automatically grant Plot 12 delivery.</p>
+<p>If someone copies this string away as a delivery password, the backing page does not manage that. The backing page only manages who it was issued to.</p>
+<p><button type="button" class="sm-btn" id="vbtn">Verify: code went to the martyrs' terrace collective</button></p>
+<p id="vok" class="sm-ok" style="display:none">The board has where the code went.</p>
+<p id="vbad" class="sm-warn" style="display:none"></p>
+<p><a href="lie-pi.html">Batch</a>　<a href="door-lie.html">Back to the door</a></p>
+</div>
+</td>
+  </tr>
+  <tr><td colspan="2" class="ft">Code vault, old table · 12px serif</td></tr>
+</table>
+
+<section class="pad"><p>Backing page is needle-print. 0405 is Qingming day. Erliang is the union short name, not a grave number. One code, many people. The gate only reads the Lieji prefix. A Plot 12 delivery password was never this string. Someone copies it away, and the backing page adds a line: backing page does not manage that. Verify where the code went, only as far as the south-steps collective.</p></section>
+<script src="js/sanmen.js"></script>
+<script>
+Sanmen.paintMini(document.getElementById('mini'));
+Sanmen.gate('lie','shut','live');
+Sanmen.bindVerify(document.getElementById('vbtn'),'code-martyr',document.getElementById('vok'),document.getElementById('vbad'));
+
+</script>
+</body>
+</html>

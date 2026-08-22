@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catalog return · bounced</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>Return　bounced</strong>
+      <div>
+        <a class="ghost-btn" href="card.html">Change card</a>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>System bounce: past the recommendation window</h2>
+      <p id="why"></p>
+      <p>A temp can enter the desk. She cannot enter the hall. Red paper sits on the service rack. A lisheng is not dispatched from records. You wrote the authority as pull, dianzhu, or edit. The window closed it as overreach. After 22:00 the original row still goes as printed.</p>
+      <p>Huo Mian’s “put your own name” was not permission to approve. A name only covers a recommendation. The boxes past recommendation — he would not tick those either, back then.</p>
+    </div>
+    <p style="padding:12px 16px;font-size:13px"><a href="card.html">Back to the six fields. Set authority to recommendation</a></p>
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    var f = PW.get("card") || {};
+    var how = f.auth === "dianzhu"
+      ? "You ticked perform dianzhu. There is no cinnabar in this room, and a temp is not the dianzhu officer."
+      : f.auth === "edit"
+        ? "You ticked directly edit the printed red paper. This desk has no reprint authority."
+        : "You ticked approve pulling the tablet. Approval is not on a temp’s card.";
+    document.getElementById("why").textContent = how;
+  </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-archive-simsun">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>备注已收下</title>
+  <link rel="stylesheet" href="css/archive-simsun.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<article class="record">
+  <h1>条皖收下备注</h1>
+  <div class="meta"><span>夜字四〇四</span><span>只建议</span></div>
+  <div id="why"></div>
+  <p>邻穴烧纸按串穴核销写。预约码走烈士园集体扫墓，供品送到十二区私坟。传说那一栏空着。</p>
+  <p>原号不动。十二区不按南阶放行。杭疏的权到此为止。</p>
+  <p>顾晚禾会来问车。缪石桥会来问签到。你把备注给他们看，别替他们改表。</p>
+  <p><a href="introduction.html" id="again">另开一夜</a></p>
+  <p><span class="stamp">收</span></p>
+</article>
+
+<section class="pad"><p>收下的备注会复印两份，一份夹投诉，一份给白天窗口挡人。顾晚禾来问车，把复印件给她看。缪石桥来问签到，也给。杭疏的夜班到此断了，没有第六栏可填。两班对上的码和穴够用。寒食旧单翻过也只是边上的杠。</p></section>
+<script src="js/sanmen.js"></script>
+<script>
+
+var s=Sanmen.load();
+var bits=[];
+if(Sanmen.hasV("same-day")) bits.push("你还留下了同一天两处要人。条皖看了，仍不让改号。");
+if(Sanmen.hasV("old-ticket")) bits.push("寒食旧单你翻过。他只在边上画了一杠，没让你写进今夜。");
+if(!bits.length) bits.push("你用两班对上的码和穴把句子写完。第一班若只开传说，写不到这里。");
+document.getElementById("why").innerHTML=bits.map(function(t){return "<p>"+t+"</p>";}).join("");
+document.getElementById("again").addEventListener("click",function(){ Sanmen.reset(); });
+
+</script>
+</body>
+</html>

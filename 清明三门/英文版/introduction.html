@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-intro-manual">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>East Ridge Garden reservation desk · night handover</title>
+  <link rel="stylesheet" href="css/intro-manual.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+  <header class="intro-hero">
+    <div class="image-area"><img alt="Night path in the garden" src="img/path-night.jpg"></div>
+    <h1>Lian County East Ridge Garden reservation desk · night handover</h1>
+  </header>
+  <main>
+    <section>
+      <h2>You are Hang Shu</h2>
+      <p>Qingming is not here yet. Cold Food Day just passed. Tiao Wan pressed an oilprint on the counter: the neighbor-ash complaint must get a duty remark tonight. This desk does not approve original offerings. It does not change numbers. You only write a suggestion.</p>
+      <p>The system lets this shift open three households. Handover pulls unread paper off the desk. Verified sentences stay on the whiteboard. Paper you only saw is taken at first light.</p>
+      <p id="mini" class="sm-mini"></p>
+      <p class="boot-actions">
+        <a class="enter-link" id="fresh" href="door-tousu.html">Start a fresh night. Open the leftmost door first</a>
+        <a class="ghost" id="cont" href="desk.html" style="display:none">Continue from last shift's board</a>
+        <a class="ghost" href="desk.html">Go to the desk and look at the cabinet</a>
+      </p>
+    </section>
+    <section>
+      <h2>Three doors already on the desk</h2>
+      <p>Tiao Wan said open the neighbor-ash complaint first. The other two are on the table too. More households sit in the cabinet. Those wait until you hand over and take a new slot.</p>
+      <div class="sm-doors">
+        <div class="door hot">
+          <img src="img/cabinets-three.jpg" alt="File cabinets" class="doc-img">
+          <p>Neighbor-ash complaint</p>
+          <p>Shen Bai reported ash on the Plot 12 neighbor line. Almost no guesswork.</p>
+          <p><a href="door-tousu.html">Open this household</a></p>
+        </div>
+        <div class="door">
+          <p>Plot 12 Gu household</p>
+          <p>Gu Songnian's grave. Private grave or something else — you write it clean only after the door opens.</p>
+          <p><a href="door-qu12.html">Open this household</a></p>
+        </div>
+        <div class="door">
+          <p>Martyrs' terrace collective</p>
+          <p>The grain-depot union batch. Whether the code sits in this household.</p>
+          <p><a href="door-lie.html">Open this household</a></p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="sm-grid">
+        <div class="c">
+          <h2>Clock</h2>
+          <div class="sm-clock">
+            <img src="img/wall-clock.jpg" alt="Clock on the wall">
+            <p>Handover at 05:00. You can hand over even if the remark is unfinished. What stayed on the board can still be used.</p>
+            <p><a href="clock.html">Read the handover note</a></p>
+          </div>
+        </div>
+        <div class="c">
+          <h2>Whiteboard</h2>
+          <div class="sm-board">
+            <img src="img/board-empty.jpg" alt="Empty board">
+            <p>Seen</p>
+            <div id="seenbox">Empty</div>
+            <p>Verified</p>
+            <div id="verbox">Empty</div>
+            <p><a href="board.html">See the whole board</a>　<a href="yuan-tiao.html">Director's three-door slip</a>　<a href="qian-ban.html">Qiu Maiqiu's note</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <p>One oilprint only. County name and garden name are invented. Do not match them to a real garden.</p>
+  </main>
+
+<section class="pad"><p>The oilprint ink is still wet. It comes off on Hang Shu's hand when he takes the shift. Tiao Wan set the three doors on the table. The other five households you find yourself on the reservation-desk machine. Clock and board are under the oilprint. He is afraid you will finish the words and still not know which door to open first. Start a fresh night and old sentences on the board are wiped. Continue from last shift is for someone who already handed over and came back. County name, garden name, and grave names are invented. Do not match them to a real garden.</p></section>
+<script src="js/sanmen.js"></script>
+<script>
+
+Sanmen.paintMini(document.getElementById("mini"));
+Sanmen.paintBoard(document.getElementById("seenbox"), document.getElementById("verbox"));
+if (localStorage.getItem(Sanmen.KEY)) document.getElementById("cont").style.display = "inline-block";
+document.getElementById("fresh").addEventListener("click", function () { Sanmen.bootFresh(); });
+
+</script>
+</body>
+</html>

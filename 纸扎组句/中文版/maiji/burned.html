@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>麦记·按已烧入账</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>回单·已烧</strong>
+      <div>
+        <a class="ghost-btn" href="desk.html">台</a>
+        <a class="ghost-btn" href="sentence.html">卡</a>
+        <form id="search-form" action="#" method="get" style="display:inline">
+          <input id="search-input" name="q" placeholder="查单号…">
+          <button type="submit">查找</button>
+        </form>
+      </div>
+    </header>
+    
+    <div class="notice">
+      <h2>按你那句入了</h2>
+      <p>纸面上的已烧和砖口的冷是两回事。井秋白若拿这句进棚，老人会信纸面。邵浦若拿这句问铺，铺号只能指着你的六格。</p>
+      <p id="why"></p>
+      <p>系统不改现场。现场炉口仍关着。纸面上却写成已焚童女，或把还在问货的人写成已故。井秋白会按这句去闹。邵浦门面空着，也会拿这句来问铺号。</p>
+      <p>娄石档期还是未开。店群时间戳还在。你写的那句和这两处对不上。麦老明早只看见入账，不看见你对过没有。</p>
+      <p>要改，只能撕了重填。原堆还在待焚区边上，没有进炉。</p>
+      <p>打印机出这张回单时没卡。像它更熟这类句子。熟不代表对。砖口的灰仍是上一户的颜色。</p>
+      <p><a href="sentence.html">回句卡</a> · <a href="#" id="tear3">撕了重来</a></p>
+    </div>
+    <script>
+      document.getElementById("tear3").onclick = function (e) {
+        e.preventDefault();
+        ZJ.reset();
+        location.href = "../introduction.html";
+      };
+    </script>
+
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    ZJ.bootPage("end-burned");
+    var f = ZJ.endingWhy();
+    var el = document.getElementById("why");
+    if (el) el.textContent = "你交的是：" + (f.who||"") + " / " + (f.what||"") + " / " + (f.act||"") + " / " + (f.night||"") + " / " + (f.life||"") + "。";
+</script>
+</body>
+</html>

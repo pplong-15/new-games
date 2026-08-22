@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk" data-seen="result">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Review receipt</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/patches.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>Receipt — advice now carries the staff id</strong>
+      <div>
+        <a class="ghost-btn" href="register.html">See book</a>
+      </div>
+    </header>
+    <div class="endbox" id="endbox">
+      <p>No receipt yet. If you walked into this page, go back to the roster, fill all ten rows, then send.</p>
+    </div>
+    <p class="foot-desk">Receipt for the temp hire only. 8/39</p>
+  </div>
+  <script src="../js/seen.js"></script>
+  <script src="../js/register.js"></script>
+  <script>
+    (function () {
+      var box = document.getElementById("endbox");
+      var key = localStorage.getItem("kc_end-en");
+      var s = window.kcSeen ? window.kcSeen() : {};
+      function reason(k) {
+        if (k === "adopt") {
+          if (s.leave || s.mailLeave) return "Ning Guangfu came off in-shaft. The Leave slip was seen. He was at county Maternity that day. Not in the cage. Huo Chengshan’s shift stayed in-shaft. The true in-shaft men were not erased to feed a temple headcount.";
+          if (s.fuxu) return "The Bereavement base has three households. Three were used. Extra names on the stele were not treated as a Quota that had to be pushed in-shaft.";
+          return "The ten rows match on-shift location and relocation. The evening-paper Quota line was not written into the advice as a conclusion. Legend cannot close the case.";
+        }
+        if (k === "legend") {
+          if (s.legend || s.stele) return "Evening paper and stele sounded first. Ning Guangfu or Ge Wancai stayed in-shaft. Quota was treated as a headcount. Huo, Weng, Shang were not moved. The copy can print. A folk eighth man will enter a note. That is not a closed finding.";
+          return "Someone who should not be on the accident book is still written in-shaft. Mou Yanqiu can take this table to the temple. The Huo family will see the extra name in the note.";
+        }
+        if (k === "erase") {
+          if (s.shift || s.fuxu) return "The in-shaft list or the Bereavement base was in fact opened. Among Huo Chengshan, Weng Erhai, and Shang Xiaoman, someone is still not left in-shaft. The men who went down got thinner in this chapter.";
+          return "At least one of the three men who went down was marked on surface, already relocated, or wrongly entered. Tomorrow the three union households will not match the chapter.";
+        }
+        if (s.move || s.roster) return "You opened the move file or the old Roster, but on surface and already relocated are still mixed. The form can be handed in. The office will send it back for another check.";
+        return "All ten rows have marks. They do not match on-shift location. The machine took it. Tomorrow morning Mou Yanqiu will throw the table back.";
+      }
+      function after(k) {
+        if (k === "adopt") return "The office will put the Fan and the three in-shaft men in the body. The eight stele names stay an oral note. Zhu Changhe will not like it. Qian Buqi’s page can finally match the chapter. This job counts as sent. The temp id will not eat the accident first.";
+        if (k === "legend") return "The print copy will say “folk sources also record an eighth.” If Gui Xiuying comes to the union again, they will hold the chapter up. If labor inspection later finds the Leave slip, they will ask why this advice wrote a living man in-shaft.";
+        if (k === "erase") return "The Huo family will ask: the man went down, so why did the chapter get thinner. Bereavement pay is still there. The roster is not. Mou Yanqiu will note: the temp hire dropped a fatality household.";
+        return "Sent back for another check. Past deadline still counts as submitted. This chapter still cannot print. Dai Houshan left with this kind of receipt too.";
+      }
+      var titles = {
+        adopt: "Advice received — reviewed by on-shift location",
+        legend: "Advice received — Quota wording remains",
+        erase: "Advice received — fatality households written thin",
+        chaos: "Advice received — whole sheet sent back"
+      };
+      if (!key || !titles[key]) return;
+      box.innerHTML =
+        "<h3>" + titles[key] + "</h3><p>" + reason(key) + "</p><p>" + after(key) +
+        "</p><p><a href=\"register.html\">Back to roster</a>　<a href=\"#\" id=\"again\">Void and reopen (this machine only)</a></p>";
+      var a = document.getElementById("again");
+      if (a) a.onclick = function (e) {
+        e.preventDefault();
+        localStorage.removeItem("kc_end-en");
+        localStorage.removeItem("kc_marks-en");
+        location.href = "register.html";
+      };
+    })();
+  </script>
+</body>
+</html>

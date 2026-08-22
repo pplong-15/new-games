@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mai · Sentence Card</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>Incident line card</strong>
+      <div>
+        <a class="ghost-btn" href="desk.html">Desk</a>
+        <a class="ghost-btn" href="yard.html">Stack</a>
+        <a class="ghost-btn" href="order.html">Order</a>
+        <form id="search-form" action="#" method="get" style="display:inline">
+          <input id="search-input" name="q" placeholder="Look up a slip…">
+          <button type="submit">Find</button>
+        </form>
+      </div>
+    </header>
+    
+    <div class="notice">
+      <h2>Taken only as a whole line</h2>
+      <p>Mai Lao pinned this card behind the permission sheet. The blanks are fixed. You cannot write a long explanation. If you want to explain how the mixed stack happened, he will not listen tomorrow morning. He only hears six blanks plus authority. Words not in the bag leave the dropdown empty. Do not go outside the counter hunting synonyms to force a fill.</p>
+      <p>Jing Qiubai can chase as thick as she likes. An unpicked blank still will not take it. Lou Shi's photo can be as blurry as it likes. It still cannot check approve-burn for you. Before you file, compare the schedule and the shop group yourself.</p>
+      <p>The blanks are not all filled. This line cannot be filed yet. Filling one blank also does not judge. Words must come from pages already opened, and they must have gone into the bag. This card is a recommend, not an approval slip.</p>
+      <div class="bagbox" id="wordbag"></div>
+      <p id="bagflash"></p>
+      <form id="sent">
+        <p class="sent-row">
+          <select id="slot-who"></select>'s
+          <select id="slot-what"></select> was
+          <select id="slot-act"></select>
+          <select id="slot-where"></select>, tonight
+          <select id="slot-night"></select>.
+          <select id="slot-life"></select>.
+        </p>
+        <p>
+          <label><input type="radio" name="auth" value="recommend" checked> Incident-line recommend only</label><br>
+          <label><input type="radio" name="auth" value="approve"> Approve tonight's burn</label><br>
+          <label><input type="radio" name="auth" value="teach"> Attach paper-craft steps</label>
+        </p>
+        <p><button type="submit">File the line</button></p>
+        <p id="sent-msg"></p>
+      </form>
+      <p>When the schedule, the shop group, and the invoice do not compare, the whole line bounces. It will not mark which blank is right. Getting one blank right is not taken alone. If a single blank were taken, a night helper would only change that blank and clock out.</p>
+      <p>The three authority choices sit at the bottom. Default is recommend. The other two are drawn so a night helper does not think they are missing. They are not an invitation to check them.</p>
+      <p><a href="shift.html">How permission is written</a> · <a href="../lou/schedule.html">Whether the furnace mouth is open</a></p>
+    </div>
+
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>ZJ.bootSentence();</script>
+</body>
+</html>

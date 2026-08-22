@@ -1,0 +1,62 @@
+/* ==========================================================================
+   地质站真皮覆盖层（重写 v2：Element UI 真色，全国地质资料馆实时站实测）
+   取自 www.ngac.cn 首页内联样式的 Element UI 配色
+   核心：主蓝 #409eff / 亮蓝 hover #66b1ff / 深蓝 active #3a8ee6 /
+        浅蓝选中 #c6e2ff / 边框灰 #dcdfe6 / 背景灰 #ebeef5
+   ========================================================================== */
+
+/* 页面：Element 背景灰 */
+.geo-page{background:#f5f7fa !important;font-family:Arial,"SimSun","宋体","Microsoft YaHei",sans-serif !important}
+
+/* 站头：Element 主蓝 #409eff */
+.geo-masthead{background:#409eff !important}
+.geo-agency h1,.geo-agency>div>a,.geo-title{color:#fff !important;font-weight:700 !important}
+.geo-agency p,.geo-agency>span:last-child{color:#e8f2fd !important}
+.geo-agency-code{background:#337ecc !important;border:1px solid #66b1ff !important;color:#fff !important}
+
+/* 主导航：深一点的蓝（active #3a8ee6） */
+.geo-primary-nav{background:#3a8ee6 !important;border-bottom:3px solid #409eff !important}
+.geo-primary-nav a,.geo-primary-nav span{color:#fff !important;border-right:1px solid #66b1ff !important;font-weight:400 !important}
+.geo-primary-nav a:hover{background:#66b1ff !important}
+
+/* 数据树侧栏：白底 + Element 蓝标题 */
+.geo-data-tree{background:#fff !important;border:1px solid #dcdfe6 !important}
+.geo-data-tree h2,.geo-data-tree h3{background:#3a8ee6 !important;color:#fff !important;font-weight:400 !important}
+.geo-data-tree nav>*{color:#303133 !important;border-bottom:1px solid #ebeef5 !important}
+.geo-data-tree nav>*:hover{color:#409eff !important}
+.geo-data-tree li{color:#909399 !important}
+
+/* 地图工具：Element 浅蓝选中色 #c6e2ff（替代米色，更贴 Element UI） */
+.geo-map-tools{background:#ecf5ff !important;border:1px solid #b3d8ff !important}
+
+/* 搜索工具 */
+.geo-search-tools{background:#ecf5ff !important;border-bottom-color:#dcdfe6 !important}
+.geo-search-tools input{border:1px solid #dcdfe6 !important;background:#fff !important}
+.geo-search-tools button{background:#409eff !important;border-color:#409eff !important;color:#fff !important;font-weight:400 !important}
+.geo-search-tools button:hover{background:#66b1ff !important}
+
+/* 分面条件表：Element 边框 + 浅蓝 */
+.geo-facet-strip{background:#fff !important;border-color:#dcdfe6 !important}
+.geo-facet-strip>div{border-bottom-color:#ebeef5 !important}
+.geo-facet-strip strong{background:#f5f7fa !important;color:#606266 !important}
+.geo-facet-strip span{color:#303133 !important}
+
+/* 结果工具栏 */
+.geo-result-toolbar,.geo-result-summary,.geo-page .result-count{background:#f5f7fa !important;color:#909399 !important;border-color:#dcdfe6 !important}
+
+/* 数据集列表：白底 + 浅蓝 hover/选中 */
+.geo-dataset-list>a{border-bottom:1px solid #ebeef5 !important;background:#fff !important}
+.geo-dataset-list>a:nth-child(even){background:#fafafa !important}
+.geo-dataset-list>a:hover{background:#ecf5ff !important}
+.geo-dataset-list code{color:#409eff !important}
+.geo-dataset-list b{color:#409eff !important;font-weight:400 !important}
+.geo-dataset-list small{color:#909399 !important}
+
+/* 报告头 + 来源 */
+.geo-report-header{background:#ecf5ff !important;border-bottom:3px solid #3a8ee6 !important}
+.geo-report-header code{background:#3a8ee6 !important}
+.geo-source-register{border-color:#dcdfe6 !important}
+.geo-source-register dt{background:#f5f7fa !important;color:#606266 !important}
+
+/* 页脚 */
+.geo-site-footer{background:#3a8ee6 !important;border-top:2px solid #409eff !important;color:#e8f2fd !important}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>福泽网单　当班队列</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>福泽代办　网单夜班</strong>
+      <div>
+        <span class="desk-clock" id="clock"></span>
+        <form id="search-form" action="search-closed.html" method="get" style="display:inline">
+          <input id="search-input" name="q" placeholder="夜间已关">
+          <button type="submit">检索</button>
+        </form>
+      </div>
+    </header>
+    <div class="notice">
+      <img class="hero-pic" alt="" src="img/folders.jpg">
+      <h2>值班台</h2>
+      <p>裘石。工号 FZ-夜-09。本班只写分拣建议。不批入龛。不见客。新申请自己弹。附件跟单走。</p>
+      <p>钟走到十五那天五点半，纪家若还空着，回执按空栏走。饿了吃抽屉面包。盘香别拆。</p>
+      <p>推送栏空着就先开队列里那封何家。右边附件是跟单来的。不是检索搜出来的。</p>
+      <p>常驻：<a href="shift-note.html">屈南留的白板</a>　<a href="desk-help.html">栏位怎么填</a>　<a href="im-mi.html">米穗下班条</a>　<a href="night-log.html">当班流水</a></p>
+    </div>
+    <table class="desk-split">
+      <tr>
+        <td>
+          <fieldset class="tray">
+            <legend>待写队列</legend>
+            <table id="qtb">
+              <thead><tr><th>单号</th><th>摘要</th><th>状态</th></tr></thead>
+              <tbody></tbody>
+            </table>
+          </fieldset>
+        </td>
+        <td>
+          <fieldset class="tray">
+            <legend>本班推送到的附件</legend>
+            <ul id="pushul"></ul>
+          </fieldset>
+        </td>
+      </tr>
+    </table>
+    <div class="memo" id="memo">
+      <p>屈南便笺，一次一张。</p>
+      <p id="hintp">还没翻。</p>
+      <p><button type="button" id="hintbtn">再翻一张</button>
+      <a id="closea" href="result.html" style="display:none;margin-left:12px">交当班回执</a></p>
+    </div>
+  </div>
+  <p class="pageft">南门后柜　灯还亮　2/40</p>
+  <script src="js/state.js"></script>
+  <script>
+    FZ.visit("desk");
+    var s = FZ.load();
+    var clk = document.getElementById("clock");
+    clk.textContent = FZ.clock();
+    if (FZ.isLate()) clk.className += " late";
+    var vis = FZ.visibleIds();
+    var tb = document.querySelector("#qtb tbody");
+    vis.forEach(function (id) {
+      var t = FZ.TICKETS[id];
+      var done = s.sorted[id];
+      var tr = document.createElement("tr");
+      var st = done ? ("已写　" + (done.action === "hold" ? "暂扣" : "放行")) : (s.opened[id] ? "已打开" : "新弹入");
+      tr.innerHTML = "<td>" + t.no + "</td><td>" + (done ? t.title : ("<a href=\"" + t.href + "\">" + t.title + "</a>")) + "</td><td>" + st + "</td>";
+      tb.appendChild(tr);
+    });
+    if (!vis.length) tb.innerHTML = "<tr><td colspan=3>队列空着</td></tr>";
+    var ul = document.getElementById("pushul");
+    var items = FZ.pushedList();
+    if (!items.length) {
+      var li = document.createElement("li");
+      li.textContent = "还没有跟单附件。打开第一封以后会来。";
+      ul.appendChild(li);
+    } else {
+      items.forEach(function (it) {
+        var li = document.createElement("li");
+        li.innerHTML = "<a href=\"" + it.href + "\">" + it.label + "</a>";
+        ul.appendChild(li);
+      });
+    }
+    var hp = document.getElementById("hintp");
+    if (s.hint > 0) hp.textContent = FZ.HINTS[s.hint - 1];
+    document.getElementById("hintbtn").onclick = function () {
+      var n = FZ.hintNext();
+      hp.textContent = FZ.HINTS[n - 1] || FZ.HINTS[FZ.HINTS.length - 1];
+      if (n >= FZ.HINTS.length) this.disabled = true;
+    };
+    if (FZ.canClose()) document.getElementById("closea").style.display = "inline";
+  </script>
+</body>
+</html>

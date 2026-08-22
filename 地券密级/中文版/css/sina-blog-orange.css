@@ -1,0 +1,235 @@
+/* sina-blog-orange
+ * 记忆 2007–2011 门户橙头长博客。顶条亮橙 #ff9a00 高 40px，不是商标。
+ * 960：主栏 640 / 侧栏 280。标题雅黑，正文宋体。
+ * 禁止：门户 Logo、CSS Grid、2020 卡片博客。
+ */
+html.skin-sina-blog-orange {
+  --bar: #ff9a00;
+  --head: #ffae34;
+  --link: #004276;
+  --page: #f5f5f5;
+  --line: #e6e6e6;
+  --mod: #fff4e0;
+}
+html.skin-sina-blog-orange,
+html.skin-sina-blog-orange body,
+html.skin-sina-blog-orange div,
+html.skin-sina-blog-orange h1,
+html.skin-sina-blog-orange h2,
+html.skin-sina-blog-orange h3,
+html.skin-sina-blog-orange p,
+html.skin-sina-blog-orange a,
+html.skin-sina-blog-orange ul,
+html.skin-sina-blog-orange li,
+html.skin-sina-blog-orange form,
+html.skin-sina-blog-orange input,
+html.skin-sina-blog-orange button {
+  margin: 0;
+  padding: 0;
+}
+html.skin-sina-blog-orange body {
+  background: var(--page);
+  color: #000;
+  font: 14px/1.8 SimSun, "Songti SC", "Microsoft YaHei", sans-serif;
+}
+html.skin-sina-blog-orange a {
+  color: var(--link);
+  text-decoration: none;
+}
+html.skin-sina-blog-orange a:hover { text-decoration: underline; }
+html.skin-sina-blog-orange ul { list-style: none; }
+html.skin-sina-blog-orange input,
+html.skin-sina-blog-orange button {
+  font: 12px SimSun, "Microsoft YaHei", sans-serif;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+
+/* 亮橙条 40px，站名「个人博客」，不要门户商标 */
+html.skin-sina-blog-orange .bar {
+  height: 40px;
+  background: var(--bar);
+  color: #fff;
+  font: 12px/40px "Microsoft YaHei", SimSun, sans-serif;
+  overflow: hidden;
+}
+html.skin-sina-blog-orange .bar b {
+  float: left;
+  padding: 0 16px 0 20px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+html.skin-sina-blog-orange .bar a {
+  float: left;
+  color: #fff;
+  padding: 0 12px;
+  text-decoration: none;
+}
+html.skin-sina-blog-orange .bar a:hover {
+  background: #ff8500;
+  text-decoration: none;
+  color: #fff;
+}
+html.skin-sina-blog-orange .bar .extra {
+  float: right;
+  padding-right: 16px;
+  color: #fff8e8;
+}
+html.skin-sina-blog-orange .head {
+  background: var(--head);
+  color: #fff;
+  padding: 16px 20px 12px;
+  border-bottom: 1px solid #e88900;
+}
+html.skin-sina-blog-orange .head h1 {
+  font: 26px/1.3 "Microsoft YaHei", SimSun, sans-serif;
+  font-weight: 700;
+  text-shadow: 1px 1px 0 #e88900;
+}
+html.skin-sina-blog-orange .head p {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: #fff8e8;
+}
+html.skin-sina-blog-orange .nav {
+  background: #fff;
+  border-bottom: 3px solid var(--bar);
+  height: 32px;
+  line-height: 32px;
+  padding: 0 16px;
+  font: 13px/32px "Microsoft YaHei", SimSun, sans-serif;
+}
+html.skin-sina-blog-orange .nav a {
+  color: #333;
+  margin-right: 18px;
+  text-decoration: none;
+}
+html.skin-sina-blog-orange .nav a.on {
+  color: var(--bar);
+  font-weight: 700;
+}
+html.skin-sina-blog-orange .nav a:hover { color: var(--bar); }
+
+/* 960：640 / 280 */
+html.skin-sina-blog-orange .wrap {
+  width: 960px;
+  margin: 12px auto 0;
+  zoom: 1;
+}
+html.skin-sina-blog-orange .wrap:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+html.skin-sina-blog-orange article {
+  float: left;
+  width: 640px;
+  background: #fff;
+  border: 1px solid var(--line);
+  padding: 16px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html.skin-sina-blog-orange article h2 {
+  font: 20px/1.4 "Microsoft YaHei", SimSun, sans-serif;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 8px;
+  padding: 0 0 8px;
+  border-bottom: 1px solid #f0f0f0;
+}
+html.skin-sina-blog-orange .meta {
+  color: #999;
+  font-size: 12px;
+  margin: 0 0 14px;
+}
+html.skin-sina-blog-orange article p {
+  margin: 0 0 12px;
+  text-indent: 2em;
+  color: #222;
+}
+html.skin-sina-blog-orange article p.meta,
+html.skin-sina-blog-orange article p.tag {
+  text-indent: 0;
+}
+html.skin-sina-blog-orange article p.tag {
+  color: #999;
+  font-size: 12px;
+  margin: 16px 0 0;
+  padding-top: 10px;
+  border-top: 1px dashed #eee;
+}
+html.skin-sina-blog-orange .turn {
+  display: inline-block;
+  background: #fff4e0;
+  color: #c60;
+  border: 1px solid #f5c78e;
+  font-size: 12px;
+  padding: 0 6px;
+  margin-right: 8px;
+  line-height: 18px;
+  vertical-align: middle;
+}
+html.skin-sina-blog-orange aside {
+  float: right;
+  width: 280px;
+}
+html.skin-sina-blog-orange .mod {
+  background: #fff;
+  border: 1px solid var(--line);
+  padding: 0 0 10px;
+  margin: 0 0 10px;
+}
+html.skin-sina-blog-orange .mod h3 {
+  font: 13px/24px "Microsoft YaHei", SimSun, sans-serif;
+  font-weight: 700;
+  background: var(--mod);
+  padding: 0 8px;
+  margin: 0 0 8px;
+  border-left: 3px solid var(--bar);
+  color: #333;
+}
+html.skin-sina-blog-orange .mod p,
+html.skin-sina-blog-orange .mod ul {
+  margin: 0 10px;
+  font-size: 12px;
+  line-height: 1.8;
+}
+html.skin-sina-blog-orange .mod p.meta {
+  color: #999;
+  margin-top: 6px;
+  text-indent: 0;
+}
+html.skin-sina-blog-orange .mod li {
+  border-bottom: 1px dashed #eee;
+  padding: 2px 0;
+}
+html.skin-sina-blog-orange .stat b {
+  color: var(--bar);
+  font-size: 14px;
+  padding: 0 2px;
+}
+html.skin-sina-blog-orange .face {
+  width: 90px;
+  height: 90px;
+  background: #f2f2f2;
+  border: 1px solid #ddd;
+  margin: 0 10px 8px;
+  text-align: center;
+  line-height: 90px;
+  color: #aaa;
+  font-size: 12px;
+}
+html.skin-sina-blog-orange .ft {
+  width: 960px;
+  margin: 12px auto 20px;
+  text-align: center;
+  color: #999;
+  font-size: 12px;
+  padding-top: 8px;
+  border-top: 1px solid #e6e6e6;
+}

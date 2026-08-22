@@ -1,0 +1,57 @@
+/* discuz-board：蓝头论坛表格。不要复制 Discuz 标志。 */
+html.skin-discuz-board {
+  --head: #2b7ac2;
+  --border: #c2d5e3;
+  --th: #e5edf2;
+  --link: #369;
+}
+html.skin-discuz-board body {
+  margin: 0;
+  background: #fff;
+  color: #444;
+  font: 12px/1.6 "Microsoft YaHei", SimSun, sans-serif;
+}
+html.skin-discuz-board .wp { width: 960px; margin: 0 auto; }
+html.skin-discuz-board .hd {
+  background: var(--head);
+  color: #fff;
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+html.skin-discuz-board .hd a { color: #fff; text-decoration: none; margin-left: 12px; }
+html.skin-discuz-board .nv {
+  background: #1f5d96;
+  color: #fff;
+  padding: 6px 12px;
+}
+html.skin-discuz-board .nv a { color: #fff; margin-right: 16px; text-decoration: none; }
+html.skin-discuz-board table.forum {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+html.skin-discuz-board table.forum th {
+  background: var(--th);
+  border: 1px solid var(--border);
+  text-align: left;
+  padding: 6px 8px;
+}
+html.skin-discuz-board table.forum td {
+  border: 1px solid var(--border);
+  padding: 8px;
+  background: #fff;
+}
+html.skin-discuz-board a { color: var(--link); }
+html.skin-discuz-board .pages { margin: 8px 0; color: #999; }
+html.skin-discuz-board .floor {
+  border: 1px solid var(--border);
+  margin: 8px 0;
+  display: grid;
+  grid-template-columns: 160px 1fr;
+}
+html.skin-discuz-board .u { background: #e5edf2; padding: 10px; text-align: center; }
+html.skin-discuz-board .t { padding: 10px; }
+html.skin-discuz-board .sig { border-top: 1px dashed #ccc; color: #888; margin-top: 24px; padding-top: 8px; }

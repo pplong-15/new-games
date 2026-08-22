@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-winxp-luna">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>未办结</title>
+  <link rel="stylesheet" href="css/winxp-luna.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body class="xp-scroll">
+  <div class="desk">
+    <div class="window center-doc">
+      <div class="title-bar">
+        <span>未办结通知</span>
+        <span class="ctrls"><b>_</b><b>□</b><b class="close">×</b></span>
+      </div>
+      <div class="body">
+        <p id="reason"></p>
+        <p>路桂芬不盖章。她说少一家，年终那一格仍空着。方正平不放人，让你坐到白天班来接。椅子是坏的，靠背会咬衬衫。</p>
+        <p>漏掉的那家页还挂着。马秀兰可能继续按娘家日子卖纸马，崔伯的红码还在柜上，齐小满的垃圾袋句子还在黄页置顶。居民再投诉，值班室会把星辉的名字写在前面。</p>
+        <p>你不是没看见，是少点了两下。饭票还在下层，他不让你动。</p>
+        <p><button class="btn3d" type="button" onclick="location.href='introduction.html'">夜班还没卸</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="taskbar">
+    <span class="start">开始</span>
+    <span class="task">未办结</span>
+    <span class="tray">6:05</span>
+  </div>
+  <script src="js/patrol.js"></script>
+  <script>Patrol.fillReason("miss", document.getElementById("reason"));</script>
+</body>
+</html>

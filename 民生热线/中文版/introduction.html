@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-intro-manual">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>实习值班回执　县广播电视台总编室</title>
+  <link rel="stylesheet" href="css/intro-manual.css">
+</head>
+<body>
+  <header class="intro-hero">
+    <h1>县广播电视台总编室</h1>
+  </header>
+  <main>
+    <section>
+      <h2>实习值班回执</h2>
+      <p>值班人：裴晚（实习编辑）</p>
+      <p>班次：二〇一四年八月二十一日　夜班</p>
+      <p>交片：九十秒「夜惊偏方」辟谣成片，明早六点前挂上播出单。</p>
+      <p>可用素材：只准调用已过期栏目《民生热线》片库。外网断开。问话轨在 DigiCut 2.0 里丢了，库里只剩出镜人回答。检索一次最多列出五条。</p>
+      <p>闵科留下的字条只有两个字：应声。</p>
+      <p>未打码的乳名不许上屏。交片后当晚不能改条。</p>
+      <div class="boot-actions">
+        <a class="enter-link" href="index.html">打开台内机</a>
+        <button type="button" class="ghost" id="wipe">清本机记录</button>
+      </div>
+    </section>
+  </main>
+  <script>
+    document.getElementById("wipe").onclick = function () {
+      localStorage.removeItem("minsheng-v1");
+      location.href = "index.html";
+    };
+  </script>
+</body>
+</html>

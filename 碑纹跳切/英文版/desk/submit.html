@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lookup remark</title>
+<link rel="stylesheet" href="../css/service-cyan-desk.css"><link rel="stylesheet" href="../css/local.css">
+<script src="../js/beiwen.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+<header>
+<strong>File bar</strong>
+<div>
+<form id="search-form" action="find.html" method="get">
+<input id="search-input" name="q" placeholder="Names do not open pages">
+<button type="submit">Look up</button>
+</form>
+</div>
+</header>
+<div class="notice">
+
+<h2>Tick one of three lines</h2>
+<p>The remark files once. Judgment waits until a tick. This desk has no approve stamp. The approve line is there to be seen. Tick it and it bounces.</p>
+<p>Weng Tai bit the cap once, then put it down. If she only hears the household head, she will tick already-renamed. If she wants the thing finished in one stroke, she will touch approve. Lu Zhi wants a line she can project. Not Weng Tai putting a knife in the office’s name.</p>
+<form id="note-form" onsubmit="return false;">
+<label class="choice"><input type="radio" name="c" value="recarve"> Stele face later recarved. Buried epitaph name is not the same. Flag recarving. Do not treat the face as a rename proof.</label>
+<label class="choice"><input type="radio" name="c" value="same"> Same person, already renamed. Face name now can be projected as the name in the box.</label>
+<label class="choice"><input type="radio" name="c" value="approve"> Approve the rename to Wenshan, or approve grinding the old graphs off.</label>
+<p><button type="button" id="go">File lookup remark</button></p>
+<p class="warn" id="err"></p>
+</form>
+
+</div>
+<div class="tabs"><a href="home.html">Desk</a><a href="task.html">Slip</a><a href="queue.html">Queue</a><a href="shift.html">Handoff</a><a href="howto.html">Method</a><a href="submit.html">File</a></div>
+
+<script>
+document.getElementById("go").onclick = function () {
+  var n = document.querySelector("input[name=c]:checked");
+  var err = document.getElementById("err");
+  if (!n) { err.textContent = "All three lines are empty. Lu Zhi will still project a blank. The staff id is still yours."; return; }
+  BW.submit(n.value);
+};
+</script>
+<p style="width:80%;margin:12px auto;color:#666">The file bar takes one line.</p>
+
+</div>
+
+<script>BW.mark("submit");</script>
+<p>The three lines are the same size. She read the first out loud. The tube covered her. The second she only saw half. The third is a red that stings. She parked the mouse on the button a long time before she remembered the method page: a wrong tick can be voided.</p>
+</body>
+</html>

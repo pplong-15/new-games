@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-classified-yellow">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>槐荫民情通</title>
+  <link rel="stylesheet" href="css/classified-yellow.css">
+  <link rel="stylesheet" href="css/pick.css">
+</head>
+<body>
+  <div class="top">
+    <div class="top-inner">
+      <b>槐荫民情通</b>
+      <form class="search" action="#" method="get" onsubmit="return false;">
+        <input name="q" type="text" placeholder="只扫标题">
+        <button type="button">本栏未开通</button>
+      </form>
+      <span class="city">槐荫站</span>
+    </div>
+  </div>
+  <div class="layout">
+    <nav>
+      <h4>分类</h4>
+      <a class="on" href="neighbor.html">邻里闲话</a>
+      <a href="neighbor-tape.html">卷尺续帖</a>
+      <a href="neighbor-cat.html">寻物</a>
+      <a href="neighbor-water.html">停水停电</a>
+      <a href="neighbor-cover.html">井盖</a>
+      <a href="desk.html">离开</a>
+    </nav>
+    <div class="list">
+      <h4>邻里闲话　管理员不核实</h4>
+      <div class="hd-row"><span class="t">标题</span><span>巷</span><span>日期</span></div>
+      <div class="row"><a href="#tan">十七号夜里谁开门啊（谭）</a><span>枣树</span><span>8月17日</span></div>
+      <div class="row"><a href="neighbor-tape.html">卷尺又响，量的是后院那间</a><span>枣树</span><span>8月19日</span></div>
+      <div class="row"><a href="neighbor-cover.html">三号井盖晚响，像有人用脚碾</a><span>枣树</span><span>8月16日</span></div>
+      <div class="row"><a href="neighbor-cat.html">渠沿路九号找一只半大黄猫</a><span>渠沿</span><span>8月14日</span></div>
+      <div class="row"><a href="neighbor-water.html">南埠临时停水，桶要自己备</a><span>南埠</span><span>8月12日</span></div>
+      <div class="postbody" id="tan">
+        <p>我是十七号隔壁谭秀枝。有人让我写给街道看，我就写。我又没进灵堂，别拿我的字当笔录。</p>
+        <p>守仁走了以后，十七号夜里还是晚禾开门。电灯先亮厨房。小满那孩子来过丧事，后来拍照那天又来，站桌边写字，铅笔拿反了。没见他扛铺盖进来。</p>
+        <p>伯川天天来量后院那一间。卷尺啪一下，骂泥沙。他跟守礼说话，我隔墙听，说的是份额，不是孩子搬哪张床。素秋那天按印，我隔着门缝看，她手抖，伯川抓着她手指往下按。她没点头。别问我红纸上写啥，字我认不全。</p>
+        <p>你们要上门就白天来。车一停，巷里狗叫，我还得出来解释。</p>
+        <p>
+          <button type="button" class="pick" data-block="heir-live">摘：邻里指同住为晚禾</button>
+          <button type="button" class="pick" data-block="consent-neighbor">摘：伯川代按她没点头</button>
+          <button type="button" class="pick" data-block="live-neighbor">摘：夜里仍是晚禾开门</button>
+        </p>
+      </div>
+    </div>
+  </div>
+  <p class="ft">槐荫民情通　用户自己发　当面吵请走开　站长不站队</p>
+  <script src="js/state.js"></script>
+  <script>
+    HY.visit("neighbor", 4);
+    HY.bindPicks();
+  </script>
+</body>
+</html>

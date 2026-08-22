@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk" data-seen="result">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>复核回执</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/patches.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>回执　建议已落工号</strong>
+      <div>
+        <a class="ghost-btn" href="register.html">看册</a>
+      </div>
+    </header>
+    <div class="endbox" id="endbox">
+      <p>回执还没生成。你要是直接撞进这一页，先回名册把十行勾齐再送。</p>
+    </div>
+    <p class="foot-desk">回执只给临聘看　8/39</p>
+  </div>
+  <script src="../js/seen.js"></script>
+  <script src="../js/register.js"></script>
+  <script>
+    (function () {
+      var box = document.getElementById("endbox");
+      var key = localStorage.getItem("kc_end");
+      var s = window.kcSeen ? window.kcSeen() : {};
+      function reason(k) {
+        if (k === "adopt") {
+          if (s.leave || s.mailLeave) return "宁广福从井下拿下来了。假条见过。人当天在县城妇幼。不在罐笼里。霍成山那一班仍勾在井下。没有为了庙里的人数把真入井的人抹掉。";
+          if (s.fuxu) return "抚恤底只有三户。按三户来。碑上多出来的名字，没有当成必须补进井下的名额。";
+          return "十行对上了当班位置和迁出。晚报那句名额没有写进建议当结论。";
+        }
+        if (k === "legend") {
+          if (s.legend || s.stele) return "晚报和碑文先响。宁广福或者葛万才留在井下。名额这件事被当成了人数。霍翁尚没动。稿子能付印。民间第八人会进注释。";
+          return "有一行不该进事故册的人，仍写成井下。牟砚秋能用这张表去跟庙里对齐。霍家会在注释里看见多出来的名字。";
+        }
+        if (k === "erase") {
+          if (s.shift || s.fuxu) return "入井名单或抚恤底其实翻过。霍成山、翁二海、尚小满里仍有人没留在井下。真下去的人在这一章里变薄了。";
+          return "三个入井的人里至少有一个被勾成地面、已迁或误入册。工会那三户明天会对不上志稿。";
+        }
+        if (s.move || s.roster) return "迁出卷或旧花名你看过，可地面和已迁仍搅在一起。稿能交，科室会退回重核。";
+        return "十行都有勾，对不上当班位置。机子收了，明早牟砚秋会把表甩回来。";
+      }
+      function after(k) {
+        if (k === "adopt") return "科室会在正文写风机和入井三人。庙碑八名另作口述注。祝长河会不高兴。钱不器那页终于能跟志稿对上。这单算交了。临聘工号不会先吃事故。";
+        if (k === "legend") return "付印稿会写「民间亦记第八人」。桂绣英若再来工会，人家会拿志稿顶她。劳动监察以后若翻到请假条，问的是这张建议为什么把活人写进井下。";
+        if (k === "erase") return "霍家会问：人明明入了井，章回为什么变少。抚恤还在。名册却薄了。牟砚秋会记一笔：临聘把遇难户勾丢。";
+        return "退回重核。截稿点过了也算交过。这一章仍不能付印。戴厚山走的时候也是这种回执。";
+      }
+      var titles = {
+        adopt: "建议已收　按当班位置复核",
+        legend: "建议已收　名额写法仍在",
+        erase: "建议已收　遇难户被写薄",
+        chaos: "建议已收　整张退回重核"
+      };
+      if (!key || !titles[key]) return;
+      box.innerHTML =
+        "<h3>" + titles[key] + "</h3><p>" + reason(key) + "</p><p>" + after(key) +
+        "</p><p><a href=\"register.html\">回名册</a>　<a href=\"#\" id=\"again\">作废重开（仅本机）</a></p>";
+      var a = document.getElementById("again");
+      if (a) a.onclick = function (e) {
+        e.preventDefault();
+        localStorage.removeItem("kc_end");
+        localStorage.removeItem("kc_marks");
+        location.href = "register.html";
+      };
+    })();
+  </script>
+</body>
+</html>

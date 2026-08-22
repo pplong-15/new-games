@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>上传台栏位说明</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/pick.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>槐荫综治　系统帮助</strong>
+      <div>
+        <span id="clock" class="desk-clock">系统时间 --:--　上传截止 22:00</span>
+        <a class="ghost-btn" href="desk.html">值班台</a>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>字段说明　上传台 v3.2</h2>
+      <p>本科内网帮助。对应当前工单五个摘要栏。每栏只留一条已摘句子。上传成功后该栏加锁，后台没有撤销菜单，重开须作废整单。回访提纲按锁定句子的栏序拼接，值班员不能在提纲里改字。</p>
+    </div>
+    <div class="notice">
+      <p><b>嗣子登记</b>　可摘文书抄件上的姓名、户政扫描上的在册情况、邻里陈述里指认的同住人。谱牒公司后补之名可另作一版，与红纸不并栏。两份来源揉进一句的，提纲会问乱。</p>
+      <p><b>过继时点</b>　命继落款、迁入栏空白、谱上补录，三个日子不是一回事。本栏只收其中一个。叠进去的，本科不拆。</p>
+      <p><b>本生房意思</b>　画押、代按、当收据，三选一写入。中人栏有字，系统不视同本人已阅全文。别替她补「已知悉」。</p>
+      <p><b>争议归类</b>　派单标题、后院份额、侍奉未入册、卷尺实测那间，均可进待传。派单标题由接听按前半句生成，不视同已查实。</p>
+      <p><b>现居住</b>　应入嗣房、渠沿路在册、夜间开门人、本人自述仍住本址，四句不自动归并。回访路线按本栏已锁定句派出。</p>
+      <p>签发仍须至少三栏锁定。本页不能代为勾选，原物不进本科柜子。二十二时以后新摘录系统拒收。不是商量。</p>
+      <p><a href="desk.html">回值班台</a>　<a href="policy.html">受理须知</a></p>
+    </div>
+  </div>
+  <script src="js/state.js"></script>
+  <script>
+    HY.visit("help-fields", 1);
+    HY.paintClock(document.getElementById("clock"));
+  </script>
+</body>
+</html>

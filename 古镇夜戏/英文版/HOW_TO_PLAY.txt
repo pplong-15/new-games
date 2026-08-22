@@ -1,0 +1,10 @@
+Start at introduction.html. Open the ticket page first, then the county troupe visit notice. Search is a helper, not the first move.
+
+Local: python3 -m http.server 8768
+Open http://127.0.0.1:8768/introduction.html
+
+Ticket lookup accepts ticket number YX-0821-19 or phone 13972810834.
+
+Search one token at a time, no spaces. Tokens are CamelCase words printed on the pages (NightPlay, DutyBook, Extra, and others). Chinese spellings still work as hidden aliases. English-only input is enough.
+
+This edition uses save key guxz-v1-en. It does not share a save with the Chinese edition.

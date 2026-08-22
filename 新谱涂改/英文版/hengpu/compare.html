@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Commission Desk · Compare</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <style>
+    html.skin-service-cyan-desk .pair { width: 90%; margin: 12px auto; }
+    html.skin-service-cyan-desk .pair select { padding: 4px; }
+    html.skin-service-cyan-desk #grid { width: 90%; margin: 12px auto; }
+    html.skin-service-cyan-desk #grid th, html.skin-service-cyan-desk #grid td { font-size: 13px; }
+    html.skin-service-cyan-desk #msg { width: 80%; margin: 12px auto; color: #333; }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>Comparison desk</strong>
+      <div>
+        <a class="ghost-btn" href="desk.html">Desk</a>
+        <a class="ghost-btn" href="slip.html">Slip mouth</a>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>Spread left and right</h2>
+      <p>Pick two sources you have already opened. Unopened ones stay ghosted. Tick them, nothing writes. Fields are short words. Do not paste a whole page.</p>
+    </div>
+    <p class="pair">
+      Left
+      <select id="left">
+        <option value="old">1998 copy</option>
+        <option value="neu">Electronic page</option>
+        <option value="hk">Move register</option>
+        <option value="bbs">Branch-head thread</option>
+        <option value="east">East-branch scan</option>
+        <option value="fac">Works letter</option>
+        <option value="bor">Borrow slip</option>
+      </select>
+      Right
+      <select id="right">
+        <option value="neu" selected>Electronic page</option>
+        <option value="old">1998 copy</option>
+        <option value="hk">Move register</option>
+        <option value="bbs">Branch-head thread</option>
+        <option value="east">East-branch scan</option>
+        <option value="fac">Works letter</option>
+        <option value="bor">Borrow slip</option>
+      </select>
+      <button type="button" id="spread">Spread</button>
+    </p>
+    <table id="grid"></table>
+    <p id="msg"></p>
+    <p style="text-align:center;padding:8px">
+      <button type="button" id="write">Write the difference slip</button>
+    </p>
+    <p style="text-align:center;padding:16px;color:#666;font-size:12px">
+      <a href="newpage.html">Electronic page</a> ·
+      <a href="../library/scan1998.html">Copy</a> ·
+      <a href="../hukou/move1987.html">Register</a> ·
+      <a href="../forum/fang.html">Old thread</a> ·
+      <a href="../library/scan-east.html">East copy</a> ·
+      <a href="../hukou/factory.html">Works letter</a> ·
+      <a href="../library/borrow.html">Borrow slip</a>
+    </p>
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    var SRC = {
+      old: { need: "v-old", title: "1998 copy", f: { row: "west-2 eldest still there", note: "no adopted-out words in the line", move: "book does not record a leave", year: "continuation dated 1998", seal: "holdings copy stamp" } },
+      neu: { need: "v-new", title: "Electronic page", f: { row: "row 14 inked out", note: "side note says adopted-out", move: "page has no move word", year: "attachment dated 19", seal: "supplement scan, blue ink" } },
+      hk: { need: "v-hk", title: "Move register", f: { row: "householder name not cancelled", note: "reason filled: work", move: "left the register in July", year: "register dated 1987", seal: "steel chop" } },
+      bbs: { need: "v-bbs", title: "Branch-head thread", f: { row: "OP asks if still on the book", note: "east branch claims a paper", move: "someone mentions the works", year: "supplement paper dated spring 2019", seal: "replies say the ink looks faint" } },
+      east: { need: "v-east", title: "East-branch scan", f: { row: "a side line is adopted-out by name", note: "writes adopted-out to Lin", move: "person left that line", year: "same-year continuation copy", seal: "hall-checked copy, cinnabar" } },
+      fac: { need: "v-factory", title: "Works letter", f: { row: "worker name not cancelled", note: "asks for a death close-out", move: "wants the bunk back", year: "letter dated 1996", seal: "works chop, blurred" } },
+      bor: { need: "v-borrow", title: "Borrow slip", f: { row: "continuation was lent out", note: "borrower signed Huaichuan", move: "returned undamaged", year: "returned 2019-03", seal: "clerk staple holes" } }
+    };
+    var LABELS = { row: "this line", note: "status note", move: "leave or stay", year: "dated year", seal: "ink color" };
+    var KEYS = ["row", "note", "move", "year", "seal"];
+    var NEED = {
+      "neu|old": { fields: ["row", "note"], token: "cmp-erase" },
+      "hk|neu": { fields: ["note", "move"], token: "cmp-reason" },
+      "bbs|neu": { fields: ["year"], token: "cmp-year" },
+      "hk|old": { fields: ["move"], token: "cmp-move" }
+    };
+    var leftEl = document.getElementById("left");
+    var rightEl = document.getElementById("right");
+    var grid = document.getElementById("grid");
+    var msg = document.getElementById("msg");
+
+    function pairKey() {
+      return [leftEl.value, rightEl.value].sort().join("|");
+    }
+
+    function spread() {
+      var L = SRC[leftEl.value], R = SRC[rightEl.value];
+      if (leftEl.value === rightEl.value) {
+        grid.innerHTML = "";
+        msg.textContent = "Same source on both sides. Spreading that is a blank sheet.";
+        return;
+      }
+      var html = "<thead><tr><th>Field</th><th>" + L.title + "</th><th>" + R.title + "</th><th>Don't match</th></tr></thead><tbody>";
+      KEYS.forEach(function (k) {
+        html += "<tr><td>" + LABELS[k] + "</td><td>" + L.f[k] + "</td><td>" + R.f[k] + "</td><td><input type=checkbox data-k='" + k + "'></td></tr>";
+      });
+      html += "</tbody>";
+      grid.innerHTML = html;
+      msg.textContent = "";
+    }
+
+    document.getElementById("spread").onclick = spread;
+    document.getElementById("write").onclick = function () {
+      var L = SRC[leftEl.value], R = SRC[rightEl.value];
+      if (leftEl.value === rightEl.value) {
+        msg.textContent = "Same source on both sides. Nothing writes to the slip.";
+        return;
+      }
+      if (!XP.has(L.need) || !XP.has(R.need)) {
+        msg.textContent = "One of these you have not opened. A ghost column is not a difference.";
+        return;
+      }
+      var rule = NEED[pairKey()];
+      if (!rule) {
+        msg.textContent = "These two, spread out, do not show a difference this desk will use tonight. Pick another pair.";
+        return;
+      }
+      var ticked = {};
+      [].forEach.call(grid.querySelectorAll("input[type=checkbox]"), function (box) {
+        if (box.checked) ticked[box.getAttribute("data-k")] = true;
+      });
+      var miss = rule.fields.filter(function (k) { return !ticked[k]; });
+      if (miss.length) {
+        msg.textContent = "A column is still unticked. Difference incomplete. Slip not written.";
+        return;
+      }
+      XP.add(rule.token);
+      msg.textContent = "Difference written. Go back to the desk for the note, or to the slip mouth.";
+    };
+    spread();
+  </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>回单·不放行</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/desk-extra.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>白班预览回单</strong>
+      <div><a class="ghost-btn" href="home.html">回台</a></div>
+    </header>
+    <div class="notice">
+      <h2>建议已收下：不放行进堂</h2>
+      <p id="how"></p>
+      <p>这队按丧记，不按喜。过门格子或试记已经证明坎被踩过。丧班脏了还进堂，本台不能建议放行。钥匙仍在顾扃那里，夜岗开不了门。白班早上会看这张回单，决定开不开侧门备案。</p>
+      <p>口头传说不写进回单。窗口「本周爱收红的」也不写进回单。回单只写对得上的格子。</p>
+    </div>
+    <div id="chips"></div>
+    <p class="mk-side"><a href="../introduction.html">把门框字揭了</a>　<a href="advise.html">改四栏</a></p>
+    <p class="mk-side">08/44</p>
+
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    var s = MK.get();
+    var how = [];
+    if (s["verified.broke"]) how.push("你试记过踩踏或擦杠，打回留下了已证实。");
+    if (s["seen.record"]) how.push("你打开过记录页，十九点四十那格写着踩踏。");
+    if (s["seen.sms"]) how.push("夜岗机上穆三刀说杠擦了。");
+    if (s["seen.key"]) how.push("钥匙簿用途写的是丧班。");
+    if (s["seen.borrow"]) how.push("巷口帖里贺晚秧说过先进去再换白。");
+    document.getElementById("how").textContent = how.join("") || "四栏对上了，来源也齐。";
+    document.getElementById("chips").innerHTML = MK.chipsHtml();
+</script>
+<p class="mk-side">回单收下不放行，门口的人不会立刻散。散不散归家里。家里若还要抬，抬去侧门，侧门灰大，那是白天窗口留下的烂摊子。夜岗把格子写明白，已经是这班能做的尽头。</p>
+</body>
+</html>

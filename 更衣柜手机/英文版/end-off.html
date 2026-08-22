@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" class="backroom">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The phone goes dark</title>
+  <link rel="stylesheet" href="css/phone.css">
+</head>
+<body>
+  <div class="wrap">
+    <h1>You hold power until the screen dies</h1>
+    <p id="p1"></p>
+    <p>Kuang asks is she still here. You say you don't sign for her. He looks at you two seconds. Leaves that roster slot blank. Doesn't ask for a photo again. You shove the phone back in the locker. Badge cord still wrapped. Somebody will probably charge it in daylight. That's later.</p>
+    <p>Milk still has to be cracked. Smoke at the back-room door thins slow. One less face you handed over. One less person you named for the store.</p>
+    <p>Power-off is a long press. Logo buzzes once then black. Cord still wrapped. You don't unwrap it. Blank slot on the roster, he scores it with a nail, doesn't write personal leave. Front cooler trips again. You go check milk dates. The nearest crate isn't due yet.</p>
+    <p><a href="introduction.html">The slip is still where it was</a></p>
+  </div>
+  <script src="js/phone.js"></script>
+  <script>
+    var n = (gys.seen("seen0314")?1:0) + (gys.seen("seen0812")?1:0);
+    document.getElementById("p1").textContent = n === 2
+      ? "You matched dates on both white-bgs and still give neither. Her draft said don't pick for her."
+      : n === 1
+        ? "You only got one of them clear. Before it died you didn't say the other date out loud."
+        : "You barely opened the gallery. Shutting it off is more like not taking the job.";
+  </script>
+</body>
+</html>

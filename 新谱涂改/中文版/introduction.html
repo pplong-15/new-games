@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-intro-manual">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>芮秋·今夜字条</title>
+  <link rel="stylesheet" href="css/intro-manual.css">
+</head>
+<body>
+  <header class="intro-hero">
+    <div class="image-area"><img alt="" src="img/cover-paper.png"></div>
+    <h1>字条压在键盘边上</h1>
+  </header>
+  <main>
+    <section>
+      <h2>◯ 今夜</h2>
+      <p>我是芮秋。西房出钱那一房的头。不是我爱当这个头，是冬至会上他们盯着我：钱不齐，明儿抬谱进祠，西房那一格就空着。我凑了。衡谱堂的人来家里量过纸，茶也喝了两壶。合同我还留着，电子页今晚要传上去。</p>
+      <p>下午他们把页甩到委托台。我点开——祖父那一行黑了。黑得整齐，像有人拿尺子抹的。旁边还有小字。我先骂排版，骂完又觉得不像漏。漏会空，空跟抹不是一回事。</p>
+      <p>我又不是谱师。祠里的岁修、厅堂那本账，轮不到我批。委托台给了个挂条的口，说只能建议，准不准是他们的事。窗一关就传。传了就进祠。我要是对着干，西房的人明天会问我：钱呢？行呢？</p>
+      <p>所以今晚就干这一件：把旧的、新的、迁出去的、楼上那些旧话，摊开对。对完了再写。对不上就别硬写，写了也是退。</p>
+    </section>
+    <section>
+      <h2>◯ 我还进得去的地方</h2>
+      <p>三个门还开着。委托台里头有对照台，左右两栏能摊。县图特藏今晚加班，旧谱只给看扫描，原纸不外借。湾口镇事那楼还挂着，我爹当年问过一句，我后来把楼顶起来过。</p>
+      <p>户政那破站想起来再走，链子在委托台侧边，别在这儿找。短信里委托号是西房那个八号，进去就是我的名，不用再猜口令。合同和去年那张旧退单，我塞委托台侧栏了。字条上没有，别翻来翻去。</p>
+      <p class="boot-actions">
+        <a class="enter-link" href="hengpu/desk.html">进委托台</a>
+        <a class="ghost" href="library/rules.html">进特藏室</a>
+        <a class="ghost" href="forum/list.html">进镇事楼</a>
+      </p>
+    </section>
+    <section>
+      <h2>◯ 对不上就别硬写</h2>
+      <p>葛汀值班。这人说话少。抽屉里有他撕的纸，卡了再翻，别指望他打电话来教。产业那一项他不收，写了就退。我知道。我还是怕自己手痒。</p>
+      <p>湾口的地名、人名都是镇上的叫法，别拿去外面查。查了也是别人的事。</p>
+      <p><a href="#" id="tear">把这张字条撕了重来</a></p>
+    </section>
+  </main>
+  <script src="js/engine.js"></script>
+  <script>
+    document.getElementById("tear").onclick = function (e) {
+      e.preventDefault();
+      XP.reset();
+      location.reload();
+    };
+  </script>
+</body>
+</html>

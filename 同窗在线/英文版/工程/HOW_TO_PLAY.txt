@@ -1,0 +1,33 @@
+Classmates Online
+English edition — how to play
+
+You were born in the 1980s. A classmate you had not seen in years sends a campus real-name site URL. The blue bar is still there. The site name is Classmates Online. Read pages, pull one token, search the top bar, and settle three generations of accounts. Then decide whether to answer.
+
+Serve this 工程 folder over local http (python3 -m http.server). Do not open file://.
+
+Loop
+  Read → copy one token as printed → top-bar search → a new source opens.
+  One token. No spaces. CamelCase is one token.
+
+First word
+  PaperHorse
+  It is on the notes page and in the home feed.
+
+Login (class public page)
+  Name: ShenYizhou
+  Passphrase: IncenseFirst
+  Near-misses (ChenXiaobei, JiangWanqing, PaperHorse, Incense, …) explain themselves. Empty strings do not open it.
+
+Endings (after Spare, IncenseList, ChenXiaobei's death, the first generation, and the adopted child)
+  Don't answer — log out the spare line.
+  Take the incense — you keep the watch as fourth-generation admin.
+
+Stuck
+  Help → retired support, four notes. Note four writes the reasoning. You still search yourself.
+  App Center is paused on purpose.
+
+Save key (this English edition only)
+  tongchuang-online-v1-en
+
+Fiction
+  Tongxi County and every name here are invented. Do not match them to living people or real offices.

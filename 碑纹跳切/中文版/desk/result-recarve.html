@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>备注已收　改刻</title>
+<link rel="stylesheet" href="../css/service-cyan-desk.css"><link rel="stylesheet" href="../css/local.css">
+<script src="../js/beiwen.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+<header>
+<strong>回单改刻</strong>
+<div>
+<form id="search-form" action="find.html" method="get">
+<input id="search-input" name="q" placeholder="姓名抽不了页">
+<button type="submit">查找</button>
+</form>
+</div>
+</header>
+<div class="notice">
+<h2>路值能加批注</h2><p>系统把这行收成建议。不发文，不动刀。会议室投影若采用，底下要加「碑面与埋文不一致」。路值嫌烦，可她更怕把匣里那一行说成墙上那两个字。</p><p>纪柏舟看到改刻两个字会再打电话。电话仍由白班回。翁苔的夜班到点可以关灯。</p>
+</div>
+<div class="tabs"><a href="home.html">台面</a><a href="task.html">查阅单</a><a href="queue.html">队列</a><a href="shift.html">交接</a><a href="howto.html">作法</a><a href="submit.html">交单</a></div>
+
+<p id="why" class="noin"></p>
+<p><a href="submit.html">作废重开</a>　<a href="home.html">回台面</a></p>
+<script>
+
+var s = (BW.all().seen || {});
+var el = document.getElementById("why");
+if (s.zhi && s.smear1986) el.textContent = "你点过旧拓那道浅磨，也打开过匣里那一行。备注按改刻挂。";
+else if (s.smear1986) el.textContent = "旧拓上的字还停在渡生。匣你要是还没开，白班会自己补看著录。这张已经按改刻收了。";
+else el.textContent = "你按改刻交了。台面把这句留给路值加批注。";
+
+</script>
+<p style="width:80%;margin:12px auto;color:#666">回单已落工号。</p>
+
+</div>
+
+<script>BW.mark("end-recarve");</script>
+<p>打印机没响。回单只在屏上。翁苔把屏幕亮度拧低一档，怕路值早上进来先看见大字。她把茶倒进水槽，水槽里有白天剩下的方便面袋，她没捡。</p>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-qzone-modules">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wanhe's space</title>
+  <link rel="stylesheet" href="css/qzone-modules.css">
+  <link rel="stylesheet" href="css/pick.css">
+</head>
+<body>
+  <div id="gate">
+    <div class="topbar"><div class="topbar-inner"><span class="logo">Personal space</span></div></div>
+    <div class="banner">Owner set a visit question</div>
+    <div class="cols">
+      <div></div>
+      <div>
+        <div class="mod">
+          <h3>Won’t open</h3>
+          <div class="bd">
+            <p>She asks: which letter did you dig this old address out of? Can’t answer, don’t come in.</p>
+            <p><a href="letter.html">Go to the grid mailbox</a>  <a href="desk.html">Back to night desk</a></p>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </div>
+  </div>
+  <div id="space" hidden>
+    <div class="topbar">
+      <div class="topbar-inner">
+        <span class="logo">Personal space</span>
+        <a href="wanhe.html">Home</a>
+        <a href="wanhe-msg.html">Guestbook</a>
+        <a href="wanhe-photo.html">Album</a>
+        <a href="wanhe-mood.html">Posts</a>
+        <span class="extra"><a href="desk.html">Leave</a></span>
+      </div>
+    </div>
+    <div class="banner yard">Wanhe  sometimes comes up</div>
+    <div class="cols">
+      <div>
+        <div class="mod">
+          <h3>Owner info</h3>
+          <div class="bd">
+            <div class="avatar ph face"></div>
+            <div class="info-row"><b>Wanhe</b></div>
+            <div class="info-row">Puyang / pharmacy day shift</div>
+          </div>
+        </div>
+        <div class="music">
+          <div class="now">Paused mid-song</div>
+          <div class="bar"><i></i></div>
+          <div class="ctrl"><span class="muted">No autoplay from outside links</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="mod talk">
+          <h3>Posts</h3>
+          <div class="bd">
+            <div class="feed-li">
+              <div class="mini"></div>
+              <div class="txt"><span class="name">Wanhe</span> Genealogy office came to photograph. Told me stand aside, stay out of frame. Bochuan said girls don’t count. Little Xiaoman got pressed to the table to write his name. Pencil backward even.<div class="time">Jul 29 22:11</div></div>
+            </div>
+            <div class="feed-li">
+              <div class="mini"></div>
+              <div class="txt"><span class="name">Wanhe</span> Washed the medicine pot. I paid the electric. Don’t ask me if I’m being a son. I’m not. I’m here.<div class="time">Jul 30 00:04</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="mod">
+          <h3>Guestbook</h3>
+          <div class="bd">
+            <div class="gb-li">
+              <div class="mini"></div>
+              <div class="txt"><span class="name">Xing (same class)</span> You still live over there?<div class="time">Aug 2</div></div>
+            </div>
+            <div class="gb-li">
+              <div class="mini"></div>
+              <div class="txt"><span class="name">Wanhe</span> Here. Don’t forward.<div class="time">Aug 2</div></div>
+            </div>
+            <div class="gb-li">
+              <div class="mini"></div>
+              <div class="txt"><span class="name">Wanhe</span> Last year’s care subsidy. Window said coresidence not clearly written. Sent back. I don’t want to fill in “daughter” again. Anyone writes me as heir, I didn’t see it.<div class="time">Aug 3</div></div>
+            </div>
+            <p>
+              <button type="button" class="pick" data-block="kind-care">Extract: care not on any roll</button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="mod">
+          <h3>Album</h3>
+          <div class="bd">
+            <div class="thumbs">
+              <i>stove</i><i>yard</i><i>stopped</i>
+            </div>
+            <p class="muted">Three blurry. No faces.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="site-foot">Space stuck on the year-before-last skin  Visitors turn the music off themselves</p>
+  </div>
+  <script src="js/state.js"></script>
+  <script>
+    var s = HY.visit("wanhe", 3);
+    if (!s.wanhe) {
+      document.getElementById("gate").hidden = false;
+    } else {
+      document.getElementById("space").hidden = false;
+      HY.bindPicks();
+    }
+  </script>
+</body>
+</html>

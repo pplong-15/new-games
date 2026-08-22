@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-mail-web-2010">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>综治自动回执</title>
+  <link rel="stylesheet" href="css/mail-web-2010.css">
+  <link rel="stylesheet" href="css/pick.css">
+</head>
+<body>
+  <div class="top">
+    <b>综治自动信</b>
+    <span class="unread-n">机器 <b>1</b></span>
+    <a href="desk.html">回台</a>
+    <a href="letter-list.html">四封列表</a>
+  </div>
+  <div class="panes">
+    <div class="folders">
+      <a class="write" href="#">不写</a>
+      <a href="letter-list.html">回收件</a>
+      <a href="#">已发空</a>
+      <a href="letter-spam.html">广告</a>
+    </div>
+    <div class="mails">
+      <h4>本封</h4>
+      <div class="m on"><b>空单将记缺（自动）</b><span>值班程序　早八</span></div>
+    </div>
+    <div class="read">
+      <div class="toolbar">
+        <button type="button">回复</button>
+        <button type="button">删除</button>
+      </div>
+      <h3>系统：本周空单将记缺</h3>
+      <p class="meta">
+        发件人：综治值班（自动）<br>
+        收件人：网格-卞梁<br>
+        时间：2026-08-21 08:02
+      </p>
+      <p>此信由值班程序生成，勿回复。工单枣-117已进入队列。二十二点前未传满三栏的，整点退回，积分记缺。本回执只确认单子到了本工号。不确认争议归类。不生成上门问句。</p>
+      <p>栏位未锁定前，出车队列为空。只读本信、未打开居民来信的，系统仍记本户材料未齐。科长备注权限不在本信发放。</p>
+      <p>每日八点补发一次，直到签发或退回。当前为八月二十一日这封。前一日已被覆盖。已删除箱不保留口径。</p>
+      <p>本信无摘录入口。程序无立场。只计栏数。</p>
+    </div>
+  </div>
+  <p class="ft">自动回执　不作居民陈述　勿当口径</p>
+  <script src="js/state.js"></script>
+  <script>
+    HY.visit("letter-receipt", 1);
+  </script>
+</body>
+</html>

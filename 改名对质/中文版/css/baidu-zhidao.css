@@ -1,0 +1,155 @@
+/* baidu-zhidao
+ * 记忆 2010 前后问答页：蓝头、搜索、问题标题、最佳答案绿条。不要搜索引擎商标图形。
+ * 顶栏 36px #2932e1；内容 960；12px。
+ */
+html.skin-baidu-zhidao {
+  --bar: #2932e1;
+  --link: #00c;
+  --best: #390;
+  --best-bg: #eaf6e0;
+}
+html.skin-baidu-zhidao,
+html.skin-baidu-zhidao body,
+html.skin-baidu-zhidao div,
+html.skin-baidu-zhidao span,
+html.skin-baidu-zhidao p,
+html.skin-baidu-zhidao a,
+html.skin-baidu-zhidao h1,
+html.skin-baidu-zhidao form,
+html.skin-baidu-zhidao input,
+html.skin-baidu-zhidao button {
+  margin: 0;
+  padding: 0;
+}
+html.skin-baidu-zhidao body {
+  background: #fff;
+  color: #333;
+  font: 12px/1.7 SimSun, "Microsoft YaHei", sans-serif;
+}
+html.skin-baidu-zhidao a { color: var(--link); text-decoration: underline; }
+html.skin-baidu-zhidao a:hover { color: #c00; }
+html.skin-baidu-zhidao input,
+html.skin-baidu-zhidao button {
+  font: 12px SimSun, sans-serif;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+html.skin-baidu-zhidao .clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+html.skin-baidu-zhidao .top {
+  background: var(--bar);
+  color: #fff;
+  height: 36px;
+}
+html.skin-baidu-zhidao .top-inner {
+  width: 960px;
+  height: 36px;
+  margin: 0 auto;
+}
+html.skin-baidu-zhidao .logo,
+html.skin-baidu-zhidao .site {
+  float: left;
+  height: 36px;
+  line-height: 36px;
+  color: #fff;
+  font: 700 16px/36px SimSun, sans-serif;
+  padding-right: 16px;
+  letter-spacing: 1px;
+}
+html.skin-baidu-zhidao .top a {
+  float: left;
+  color: #fff;
+  height: 36px;
+  line-height: 36px;
+  margin-right: 12px;
+  text-decoration: none;
+}
+html.skin-baidu-zhidao .top a:hover { text-decoration: underline; color: #fff; }
+html.skin-baidu-zhidao .top form {
+  float: right;
+  padding: 5px 0 0;
+}
+html.skin-baidu-zhidao .top input {
+  float: left;
+  width: 280px;
+  height: 16px;
+  line-height: 16px;
+  border: 1px solid #1a22b0;
+  padding: 3px 4px;
+  background: #fff;
+  color: #333;
+}
+html.skin-baidu-zhidao .top button {
+  float: left;
+  height: 24px;
+  margin-left: 4px;
+  padding: 0 12px;
+  color: #fff;
+  background: #1a22b0;
+  border: 1px solid #0d1480;
+  cursor: pointer;
+}
+
+html.skin-baidu-zhidao .q,
+html.skin-baidu-zhidao .wrap {
+  width: 960px;
+  margin: 16px auto 0;
+}
+html.skin-baidu-zhidao h1 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 0 0 8px;
+  border-bottom: 1px solid #e5e5e5;
+}
+html.skin-baidu-zhidao .meta {
+  color: #999;
+  padding: 6px 0 10px;
+}
+html.skin-baidu-zhidao .ask {
+  background: #f5f7fa;
+  border: 1px solid #e5e5e5;
+  padding: 10px 12px;
+  margin-bottom: 14px;
+  line-height: 20px;
+}
+
+html.skin-baidu-zhidao .ans {
+  border: 1px solid #e5e5e5;
+  margin: 0 0 12px;
+}
+html.skin-baidu-zhidao .ans .bd { padding: 10px 12px; }
+html.skin-baidu-zhidao .best {
+  border: 1px solid #b7d4a8;
+}
+html.skin-baidu-zhidao .best-bar,
+html.skin-baidu-zhidao .best .hd {
+  height: 26px;
+  line-height: 26px;
+  padding: 0 10px;
+  background: var(--best);
+  color: #fff;
+  font-weight: 700;
+}
+html.skin-baidu-zhidao .best .bd { background: var(--best-bg); }
+html.skin-baidu-zhidao .ans .who {
+  color: #666;
+  padding: 6px 12px;
+  border-top: 1px dashed #ddd;
+  background: #fafafa;
+}
+html.skin-baidu-zhidao .site-foot {
+  width: 960px;
+  margin: 24px auto;
+  text-align: center;
+  color: #999;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 8px;
+}

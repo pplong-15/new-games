@@ -1,0 +1,150 @@
+/* corp-table-2005
+ * 记忆 2003–2008 表格居中企业站。协会、旅行社、工厂。禁止现代栅格、flex、圆角卡。
+ * 778px table.site，宋体 12px，链 #00e 下划线，横幅黑体 24px。
+ */
+html.skin-corp-table-2005 {
+  --banner: #1e4b87;
+  --nav: #2f6ead;
+  --link: #00e;
+  --bevel-hi: #6a93c8;
+  --bevel-lo: #0f2d55;
+}
+html.skin-corp-table-2005,
+html.skin-corp-table-2005 body,
+html.skin-corp-table-2005 div,
+html.skin-corp-table-2005 span,
+html.skin-corp-table-2005 p,
+html.skin-corp-table-2005 a,
+html.skin-corp-table-2005 h4,
+html.skin-corp-table-2005 form,
+html.skin-corp-table-2005 input,
+html.skin-corp-table-2005 button {
+  margin: 0;
+  padding: 0;
+}
+html.skin-corp-table-2005 body {
+  margin: 0;
+  background: #d9d9d9;
+  color: #000;
+  font: 12px/1.7 SimSun, "Songti SC", serif;
+}
+html.skin-corp-table-2005 a {
+  color: var(--link);
+  text-decoration: underline;
+}
+html.skin-corp-table-2005 input,
+html.skin-corp-table-2005 button {
+  font: 12px SimSun, "Songti SC", serif;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+html.skin-corp-table-2005 table.site {
+  width: 778px;
+  margin: 8px auto;
+  border: 1px solid #999;
+  border-collapse: collapse;
+  background: #fff;
+}
+html.skin-corp-table-2005 table.site td { padding: 0; }
+html.skin-corp-table-2005 table.site td.left { padding: 8px; }
+html.skin-corp-table-2005 table.site td.main { padding: 12px; }
+html.skin-corp-table-2005 table.site td.ft { padding: 8px; }
+
+html.skin-corp-table-2005 .banner {
+  height: 90px;
+  background: var(--banner);
+  color: #fff;
+  font: 24px/90px SimHei, "Heiti SC", sans-serif;
+  padding: 0 16px;
+  overflow: hidden;
+}
+html.skin-corp-table-2005 .banner form {
+  float: right;
+  height: 90px;
+  padding: 34px 0 0;
+  font: 12px SimSun, "Songti SC", serif;
+}
+html.skin-corp-table-2005 .banner input {
+  float: left;
+  width: 128px;
+  height: 16px;
+  line-height: 16px;
+  border: 1px solid #0f2d55;
+  padding: 2px 4px;
+  background: #fff;
+  color: #000;
+}
+html.skin-corp-table-2005 .banner button {
+  float: left;
+  height: 22px;
+  margin-left: 4px;
+  padding: 0 8px;
+  color: #fff;
+  background: var(--banner);
+  border: 1px solid;
+  border-color: var(--bevel-hi) var(--bevel-lo) var(--bevel-lo) var(--bevel-hi);
+  cursor: pointer;
+}
+
+html.skin-corp-table-2005 .nav {
+  background: var(--nav);
+  color: #fff;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 2px;
+  overflow: hidden;
+}
+html.skin-corp-table-2005 .nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+html.skin-corp-table-2005 .nav a:hover { text-decoration: underline; color: #fff; }
+
+html.skin-corp-table-2005 .left {
+  width: 180px;
+  background: #eef3f9;
+  border-right: 1px solid #99b;
+  padding: 8px;
+  vertical-align: top;
+}
+html.skin-corp-table-2005 .left h4 {
+  background: var(--nav);
+  color: #fff;
+  margin: 0 0 8px;
+  padding: 4px 6px;
+  font-size: 12px;
+  font-weight: 700;
+}
+html.skin-corp-table-2005 .left p {
+  margin: 0 0 4px;
+  line-height: 22px;
+  border-bottom: 1px dashed #c5d0e0;
+  padding: 0 0 4px 4px;
+}
+html.skin-corp-table-2005 .main {
+  padding: 12px;
+  vertical-align: top;
+  font: 12px/1.8 SimSun, "Songti SC", serif;
+}
+html.skin-corp-table-2005 .main p { margin: 0 0 10px; }
+html.skin-corp-table-2005 marquee,
+html.skin-corp-table-2005 .scroll {
+  background: #ffffcc;
+  border: 1px solid #ccc;
+  padding: 2px 6px;
+  margin: 0 0 10px;
+  height: 22px;
+  line-height: 22px;
+  overflow: hidden;
+}
+html.skin-corp-table-2005 .ft {
+  text-align: center;
+  color: #666;
+  padding: 8px;
+  background: #eee;
+  font-size: 12px;
+  border-top: 1px solid #ccc;
+}

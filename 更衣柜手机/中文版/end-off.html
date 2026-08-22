@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="backroom">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>机子黑了</title>
+  <link rel="stylesheet" href="css/phone.css">
+</head>
+<body>
+  <div class="wrap">
+    <h1>你按住电源直到屏幕灭</h1>
+    <p id="p1"></p>
+    <p>匡问人还在不在。你说你不替她签字。他盯着你看了两秒，把排班那一格空着，没再要照片。机子你塞回柜里，工牌线还绕着。电量大概会在白天被谁充上，那是后话。</p>
+    <p>牛奶还是得拆。后仓门口烟味散得很慢。你少交一张脸，也少替店里认一个人。</p>
+    <p>关机是长按。商标那一下震过一回才黑。工牌线还绕着。你没解。排班那一格空着，他用指甲划了一道，没写成事假。前厅冷柜又跳了一闸。你去看牛奶日期，最近的那箱还没到。</p>
+    <p><a href="introduction.html">纸条还在原处</a></p>
+  </div>
+  <script src="js/phone.js"></script>
+  <script>
+    var n = (gys.seen("seen0314")?1:0) + (gys.seen("seen0812")?1:0);
+    document.getElementById("p1").textContent = n === 2
+      ? "两张白底你都对过日子，还是选择谁也不给。她草稿里写过别替她选。"
+      : n === 1
+        ? "你只看清其中一张，关掉之前没把另一张日子说出口。"
+        : "你几乎没进图库。关机更像是不想揽这件事。";
+  </script>
+</body>
+</html>

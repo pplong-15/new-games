@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neighbor-ash complaint · cabinet door</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<div id="wrap">
+  <header><strong>Leftmost household</strong><div><a class="ghost-btn" href="desk.html">Back to desk</a></div></header>
+  <div class="notice">
+    <h2>Neighbor-ash complaint</h2>
+    <p id="mini" class="sm-mini"></p>
+    <p>Tiao Wan tapped this door with a nail. Open it first. Shen Bai stood outside the counter. He said the ash line twice. Behind the door is the register original, not the forum ghost thread.</p>
+    <p>If Hang Shu wants it cheap, he opens this household and writes ghost. That comes back. This household only lets you verify ash on the neighbor line.</p>
+    <p><button type="button" class="sm-btn" id="opbtn">Lift the complaint seal (counts as one household)</button></p>
+    <div id="fullbox" class="closed-box" style="display:none">
+      <p>Three slots used. This complaint stack is still sealed. Hand over what you already opened. Sentences on the board will not go with it.</p>
+      <p><a href="desk.html">Go hand over</a></p>
+    </div>
+    <div id="openbox" style="display:none">
+      <p class="sm-ok">Seal lifted. Complaint form and the later letter can be turned.</p>
+      <img src="img/ash-soil.jpg" alt="Ash on soil" class="doc-img">
+      <p>Ash on the ditch. Shen Bai does not want the ash written onto Shen Laoshan. He has heard the lore. He will not take lore as the sentence he wants.</p>
+      <p><a href="tousu-dan.html">Register original</a>　<a href="tousu-buji.html">The letter after 20:00</a></p>
+    </div>
+    <p>Leftmost cabinet door · Night-404</p>
+  </div>
+</div>
+
+<script src="js/sanmen.js"></script>
+<script>
+
+(function(){
+  var id="tousu";
+  function show(){
+    Sanmen.paintMini(document.getElementById("mini"));
+    var opened=Sanmen.isOpen(id);
+    document.getElementById("openbox").style.display=opened?"block":"none";
+    document.getElementById("fullbox").style.display="none";
+  }
+  document.getElementById("opbtn").addEventListener("click",function(){
+    var r=Sanmen.openDoor(id);
+    if(!r.ok){ document.getElementById("fullbox").style.display="block"; }
+    show();
+  });
+  show();
+})();
+
+</script>
+</body>
+</html>

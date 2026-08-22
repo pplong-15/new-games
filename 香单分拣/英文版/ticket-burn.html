@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FZ-0714-11  Yan Qiuhe</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>Fuzhe web-orders  clothing-burn</strong>
+      <div>
+        <a class="ghost-btn" href="desk.html">Back to queue</a> <a class="ghost-btn" href="desk-help.html">Fields</a>
+        <form id="search-form" action="search-closed.html" method="get" style="display:inline">
+          <input id="search-input" name="q" placeholder="Night search closed">
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </header>
+    <div class="notice">
+      <img class="hero-pic" alt="" src="img/wet-street.jpg">
+      <h2>Just pushed  FZ-0714-11</h2>
+<p>Yan Qiuhe wants this shop to proxy a clothing-burn at the Nanmen Alley mouth. Time: around midnight tonight. Only attachment is a phone photo of the empty patch. No designated-site rail in the frame.</p>
+<p>Her remark: close to home, the old one cannot walk far. No deceased name. No table. Looks like she wants a pile of paper dumped in the alley.</p>
+<p>Qu Nan said hold the burn-bans. If the notice has already pushed into the tray, check the stretch, then write. This shop does not proxy a sidewalk pile, and it cannot issue a lighting slip.</p>
+<p>Yan Qiuhe did not write a deceased name. A nameless clothing-burn is even less something to dump at the alley mouth. The designated site is the old grain depot. If she wants to go, let her queue there in daylight.</p>
+<form class="sortbox" id="sort-form" data-id="burn">
+  <fieldset>
+    <legend>How the alley ticket is handled</legend>
+    <p class="auth">This shop has no authority to approve a fire. Check the notice, then write. Do not sign for city management.</p>
+    <label>Release first or hold first
+      <select name="action">
+        <option value="pass">Release</option>
+        <option value="hold">Hold</option>
+      </select>
+    </label>
+    <label>Does she still get a table
+      <select name="desk">
+        <option value="zheng">Ancestral seat</option>
+        <option value="gu">Solitary-soul table</option>
+        <option value="deng">Lamp offering</option>
+        <option value="none">No table</option>
+      </select>
+    </label>
+    <label>How morning answers her
+      <textarea name="note" rows="3"></textarea>
+    </label>
+    <button type="submit">Write the clothing-burn note</button>
+  </fieldset>
+</form>
+<script>
+document.getElementById("sort-form").onsubmit = function (e) {
+  e.preventDefault();
+  var id = this.getAttribute("data-id");
+  if (!FZ.canOpen(id)) { FZ.toast("This ticket is not due yet."); return; }
+  FZ.openTicket(id);
+    var ok = FZ.submitTicket(id, this.elements.namedItem("action").value, this.elements.namedItem("desk").value, this.elements.namedItem("note").value);
+  if (ok) location.href = "desk.html";
+};
+</script>
+
+    </div>
+  </div>
+  <p class="pageft">Clothing-burn follows He  9/40</p>
+  <script src="js/state.js"></script>
+  <script>
+    FZ.visit('burn');
+    if (!FZ.guard('ticket-burn.html')) {}
+    FZ.openTicket('burn');
+  </script>
+</body>
+</html>

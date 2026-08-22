@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>西房卷二·电子页</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>衡谱堂页库</strong>
+      <div>
+        <a class="ghost-btn" href="desk.html">台面</a>
+        <a class="ghost-btn" href="compare.html">去摊开</a>
+        <form id="search-form" action="#" method="get" style="display:inline">
+          <input id="search-input" name="q" placeholder="页内定位…">
+          <button type="submit">查找</button>
+        </form>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>西房卷二 · 第十四行</h2>
+      <p>库内时间：今晚十七点十二分最后保存。责编工号 GT-夜。保存人不在西房端口。</p>
+      <p>本页只能说明此刻库里有什么字。不能说明六二年有没有过一张真纸。</p>
+    </div>
+    <table>
+      <thead><tr><th>行</th><th>世系</th><th>注</th></tr></thead>
+      <tbody>
+        <tr><td>12</td><td>芮怀柏　西房二房次</td><td>在乡</td></tr>
+        <tr><td>13</td><td>芮怀石　西房二房三</td><td>在乡</td></tr>
+        <tr style="background:#111;color:#eee"><td>14</td><td>████████</td><td>出嗣未归，不入新谱</td></tr>
+        <tr><td>15</td><td>芮延木　怀山长子</td><td>已故，仍占格</td></tr>
+        <tr><td>16</td><td>芮秋　延木长子</td><td>本房委托人</td></tr>
+      </tbody>
+    </table>
+    <div class="notice">
+      <h2>附件栏</h2>
+      <p>HP-补-19-07。文件名写着「六二年出嗣字据扫描」。上传口标记：东房。进库日期在二〇一九年三月后补挂，不是今晚才生成。</p>
+      <p>旁注四个字是责编打的。墨污是图层，不是扫描仪脏道。要跟旧行比，回台面摊开。</p>
+    </div>
+    <p style="text-align:center;padding:16px;color:#666;font-size:12px">
+      <a href="desk.html">回台</a> ·
+      <a href="../library/rules.html">去馆</a> ·
+      <a href="../forum/thread.html">去楼</a>
+    </p>
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    XP.add("v-new");
+    document.getElementById("search-form").onsubmit = function (e) {
+      e.preventDefault();
+      var q = document.getElementById("search-input").value;
+      if (/十四|涂|墨|出嗣/.test(q)) location.hash = "";
+      else if (/对照|摊/.test(q)) location.href = "compare.html";
+      else alert("本页没有这个定位。");
+    };
+  </script>
+</body>
+</html>

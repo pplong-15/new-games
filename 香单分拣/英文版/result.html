@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shift receipt</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>Fuzhe Agency  shift receipt</strong>
+      <div><a class="ghost-btn" href="desk.html">Queue</a></div>
+    </header>
+    <div class="notice">
+      <img class="hero-pic" alt="" src="img/folders.jpg">
+      <h2>Morning shift sets tables by the words below</h2>
+      <p class="auth">Note summary. Night shift did not move a tablet.</p>
+      <div id="body"></div>
+      <p><a href="introduction.html" id="again">Clear the draft, start again from the pre-shift sheet</a></p>
+    </div>
+  </div>
+  <p class="pageft">Receipt printed for morning shift  40/40</p>
+  <script src="js/state.js"></script>
+  <script>
+    if (!FZ.guard("result.html")) {}
+    var s = FZ.closeShift();
+    var ed = s.ending;
+    var ji = s.sorted.ji;
+    var deskName = {zheng:"ancestral seat",gu:"solitary-soul table",deng:"lamp offering",none:"no table"};
+    var how = "";
+    if (ed === "late") {
+      how = "It is morning. Ji Wanqiu's ticket is still empty. Mi Sui sees the empty field first. The He lines already written she looks at later.";
+    } else if (ed === "pass") {
+      how = "You released Ji Wanqiu's ticket. Table is still ancestral seat. The print sheet will write Shoucheng as an ancestral niche. Kaiping's afternoon call is still in the extract.";
+    } else if (ed === "reroute") {
+      if (FZ.noteHas(s, ["Boyuan", "June 19", "not entered", "Kaiping"])) {
+        how = "You held Ji Wanqiu's ticket. Table changed to solitary-soul table. The note reached Boyuan's slot. Morning shift can call the Dongguan number or call Kaiping from those words.";
+      } else {
+        how = "You held Ji Wanqiu's ticket. Table changed to solitary-soul table. The note field is thin. Mi Sui will probably ask again whose death anniversary to follow.";
+      }
+    } else if (ed === "soft") {
+      how = "You moved Shoucheng to the solitary-soul table and released it. Table is right. The ticket head may still say ancestral seat. Morning shift has to change the print.";
+    } else {
+      how = "You held Ji Wanqiu's ticket. Table is still sitting on ancestral seat. In the morning nobody knows which table to set. They will call first.";
+    }
+    var extra = [];
+    if (s.sorted.burn && s.sorted.burn.action === "pass") extra.push("You released the alley clothing-burn. The notice is still there. If a fine comes, it returns to the shop sign.");
+    if (s.sorted.lamp && s.sorted.lamp.action === "pass") extra.push("You released the east-embankment lamps. Staff are not on the east stretch.");
+    if (s.sorted.wed && s.sorted.wed.action === "pass") extra.push("You took the banquet inquiry. Qu Nan will see it in the morning and call it out of bounds.");
+    if (s.sorted.he && s.sorted.he.action === "hold") extra.push("You held the complete He ticket. Mi Sui will probably ask if your eyes blurred.");
+    var p = document.getElementById("body");
+    function add(t) { var e = document.createElement("p"); e.textContent = t; p.appendChild(e); }
+    add(how);
+    extra.forEach(add);
+    if (ji) add("Ji field: disposition recorded, table written as " + (deskName[ji.desk] || "not chosen") + ".");
+    add("Three tables are still those three tables. Words go to morning shift. Night shift ends here.");
+    document.getElementById("again").onclick = function () { FZ.reset(); };
+  </script>
+</body>
+</html>

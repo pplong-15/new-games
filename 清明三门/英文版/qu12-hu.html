@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-archive-simsun">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gu Songnian household card</title>
+  <link rel="stylesheet" href="css/archive-simsun.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<article class="record">
+  <p id="mini" class="sm-mini"></p>
+  
+<div id="shut" class="closed-box">
+  <p>The household folder is still in the north-slope cabinet. This shift has not pulled it.</p>
+  <p><a href="desk.html">Back to desk. Open the door</a></p>
+</div>
+<div id="live" style="display:none">
+
+  <h1>Plot 12 household card · grave 37</h1>
+  <div class="meta"><span>Grave no.: 12-37</span><span>Opened for: Gu Songnian</span></div>
+  <table>
+    <tr><th>Item</th><th>Register</th></tr>
+    <tr><td>Plot</td><td>North slope, Plot 12. Private grave. Not on the south-steps martyrs' terrace roster.</td></tr>
+    <tr><td>Living contact</td><td>Gu Wanhe (granddaughter, lives in the county seat)</td></tr>
+    <tr><td>Qingming booking</td><td>This household did not take a collective code. Other years they came on their own, on foot.</td></tr>
+    <tr><td>Neighbor grave</td><td>East side, grave 38, Shen Laoshan</td></tr>
+  </table>
+  <p>Clerk note: do not write a Plot 12 private grave into a south-steps batch. Names are invented. Not a real grave owner.</p>
+  <p><button type="button" class="sm-btn" id="vbtn">Verify: Gu Songnian is a Plot 12 private grave</button></p>
+  <p id="vok" class="sm-ok" style="display:none">This sentence stayed. Whether a code sits in this household, this page does not write.</p>
+  <p id="vbad" class="sm-warn" style="display:none"></p>
+  <p>The household card can prove the plot. Whether Gu Wanhe borrowed someone else's code is not established by these sources.</p>
+  <p><a href="qu12-yu.html">Booking extract</a>　<a href="door-qu12.html">Back to the door</a></p>
+  <p><span class="stamp">Card</span></p>
+  
+</div>
+
+  <p>North-slope records cabinet · grave 37 copy</p>
+</article>
+
+<section class="pad"><p>The records-room table is older than the booking extract. Plot, living contact, Qingming booking, neighbor grave — four rows can pin a private grave down. Gu Wanhe lives in the county seat. Other years on foot. That says she does not have a car every year. Do not write Plot 12 into a south-steps batch — clerk stamped that in red. Verify only goes as far as "Gu Songnian is a Plot 12 private grave." Borrowed-code, this page neither admits nor denies.</p></section>
+<script src="js/sanmen.js"></script>
+<script>
+Sanmen.paintMini(document.getElementById('mini'));
+Sanmen.gate('qu12','shut','live');
+Sanmen.bindVerify(document.getElementById('vbtn'),'gu-private',document.getElementById('vok'),document.getElementById('vbad'));
+
+</script>
+</body>
+</html>

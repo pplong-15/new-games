@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-winxp-luna">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>台内编辑机</title>
+  <link rel="stylesheet" href="css/winxp-luna.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div class="desk">
+    <div class="icon" data-open="win-note"><i class="note"></i>闵科字条</div>
+    <div class="icon" data-open="win-db"><i class="db"></i>民生热线片库</div>
+    <div class="icon" data-open="win-cut"><i class="cut"></i>成片提交</div>
+    <div class="icon" data-open="win-help"><i class="help"></i>网管留言</div>
+
+    <div id="win-db" class="window show">
+      <div class="title-bar"><span>DigiCut 2.0　民生热线（停更）</span>
+        <div class="ctrls"><b data-close="win-db">_</b><b class="close" data-close="win-db">×</b></div>
+      </div>
+      <div class="menubar">检索　一次列出五条</div>
+      <div class="body">
+        <div class="db-head">
+          <input id="q" maxlength="12" placeholder="关键词" autocomplete="off">
+          <button type="button" class="btn3d" id="go">检索</button>
+        </div>
+        <p class="db-meta" id="meta">库已挂载。问话轨缺失。</p>
+        <div id="results"></div>
+      </div>
+    </div>
+
+    <div id="win-view" class="window">
+      <div class="title-bar"><span>监视器</span>
+        <div class="ctrls"><b class="close" data-close="win-view">×</b></div>
+      </div>
+      <div class="body">
+        <p class="osd" id="view-osd"></p>
+        <img id="view-img" alt="">
+        <div class="said" id="view-said"></div>
+      </div>
+    </div>
+
+    <div id="win-note" class="window">
+      <div class="title-bar"><span>记事本　—　闵科</span>
+        <div class="ctrls"><b class="close" data-close="win-note">×</b></div>
+      </div>
+      <div class="body">
+        <p>裴晚：</p>
+        <p>今晚你值。成片九十秒。主题夜惊偏方。素材只许动停更的民生热线。</p>
+        <p>我先给你一个词：应声。</p>
+        <p>检索一次只亮五条，别跟网管吵，机器就这样。</p>
+        <p>乳名打码。谱名也要看。看完再交，交了不能改。</p>
+        <p>闵科　八月二十一日十六点</p>
+      </div>
+    </div>
+
+    <div id="win-help" class="window">
+      <div class="title-bar"><span>网管留言</span>
+        <div class="ctrls"><b class="close" data-close="win-help">×</b></div>
+      </div>
+      <div class="body">
+        <p>工号 09。外网我拔了。别打电话找我要密码。</p>
+        <p>DigiCut 只认汉字。一次两个字以上。一次列出五条，多的不给，换词。</p>
+        <p>片库是 2013 到 2014 的过期栏目。问话轨没有。别问我为什么。</p>
+        <p>实在空转，就按闵科写的那两个字：应声。</p>
+      </div>
+    </div>
+
+    <div id="win-cut" class="window">
+      <div class="title-bar"><span>成片提交　总编室</span>
+        <div class="ctrls"><b class="close" data-close="win-cut">×</b></div>
+      </div>
+      <div class="body">
+        <p>选一条交。交了当晚不能改。</p>
+        <p>没看过相应带子的键是灰的。</p>
+        <button type="button" class="btn3d end-btn" id="end-milk" disabled>交：应招招那段（谱名打码）</button>
+        <button type="button" class="btn3d end-btn" id="end-qitou" disabled>交：头七换名两段并切</button>
+        <button type="button" class="btn3d end-btn" id="end-paper" disabled>交：只用四月辟谣通稿</button>
+        <button type="button" class="btn3d end-btn" id="end-cui" disabled>交：采用勿用带并申请停播</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="taskbar">
+    <div class="start">开始</div>
+    <div class="task" data-open="win-db">DigiCut 2.0</div>
+    <div class="tray">2014-08-21 21:40</div>
+  </div>
+
+  <div id="ending">
+    <h2 id="ending-title"></h2>
+    <p id="ending-body"></p>
+    <p><a href="introduction.html">回值班回执</a></p>
+  </div>
+
+  <script src="js/tokens.js"></script>
+  <script src="js/clips.js"></script>
+  <script src="js/engine.js"></script>
+</body>
+</html>

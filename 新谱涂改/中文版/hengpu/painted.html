@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>衡谱堂·仍按附件</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>衡谱堂回单</strong>
+      <div>
+        <a class="ghost-btn" href="desk.html">台面</a>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>未改库</h2>
+      <p>工号 GT-夜。你交的建议，跟库里最后那份附件同向。或者你把脏道、漏行当成了原因。我按原电子页传。</p>
+      <p>第十四行仍是墨污。旁注仍在。东房端口那份补扫还压在附件栏。西房二房长不会出现在明天抬进祠的本子上。</p>
+      <p>钱已经结过。退款不在夜班权限。你要跟西房解释，自己解释。别把我的工号写进你们房里的闲话。</p>
+      <p id="why"></p>
+      <p>窗关了就这样。我下班。</p>
+    </div>
+    <p style="text-align:center;padding:24px">
+      <a href="../introduction.html">把字条揉了</a>
+    </p>
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    var s = XP.read().slip || {};
+    var t = document.getElementById("why");
+    if (s.line === "chusi") t.textContent = "你认了过嗣。认了就跟附件走。";
+    else if (s.dirt === "smudge") t.textContent = "你当它是脏道。脏道不会自己写出四个字。";
+    else if (s.dirt === "miss") t.textContent = "漏行是空。空跟抹不是一种东西。";
+    else t.textContent = "主件你没选底册。选了补扫，就还是补扫说了算。";
+  </script>
+</body>
+</html>

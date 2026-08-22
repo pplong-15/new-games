@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Threshold record</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/desk-extra.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>Crossing cells</strong>
+      <div>
+        <a class="ghost-btn" href="home.html">Back to desk</a>
+        <a class="ghost-btn" href="try.html">Trial entry</a>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>Crossings this desk has already written</h2>
+      <p>An empty recorder field is not the same as nothing happened. Empty only means nobody would sign at the time.</p>
+    </div>
+    <div id="chips"></div>
+    <table>
+      <thead><tr><th>Time</th><th>Door</th><th>Crew</th><th>Action</th><th>Note</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>19:10</td>
+          <td>Front threshold</td>
+          <td>He Lianzou crew</td>
+          <td>Pending entry</td>
+          <td>Says they will enter the hall; red cloth over them</td>
+        </tr>
+        <tr>
+          <td>19:40</td>
+          <td>Front threshold</td>
+          <td>He Lianzou crew, front rank</td>
+          <td>Stepping on the threshold</td>
+          <td>A foot on the wood; a camera still squatting</td>
+        </tr>
+        <tr>
+          <td>19:52</td>
+          <td>Second threshold</td>
+          <td>Works</td>
+          <td>Object parked on it</td>
+          <td>Jiang Mie's cabinet; not the same matter as this crew</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="mk-side">The 19:40 cell is already dirty. You may not have filed a single trial entry tonight. The cell is still there. Jiang Mie's row is the second door. Do not merge it into the front door. 03/44</p>
+    <p class="mk-side"><a href="../public/noise.html">Works complaint is on the public page</a> · <a href="../forum/step.html">Bu Xiang also wrote about a foot</a></p>
+
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    MK.mark("seen.record");
+    document.getElementById("chips").innerHTML = MK.chipsHtml();
+</script>
+<p class="mk-side">Recorder field empty. First look I took it as <del>nobody on duty</del> — wrong. Someone saw it. Would not sign. Empty ≠ clean. Clean would write "stepping over cleanly." Empty = that foot, nobody owns it. Don't copy an empty cell as may-enter-hall.</p>
+<p class="mk-side">"Same crew, front rank" — four words, vague. Vague is right. This desk does not take faces. Takes actions. Action writes stepping. Note writes camera still squatting.</p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-archive-simsun">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>权限已锁</title>
+  <link rel="stylesheet" href="css/archive-simsun.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<article class="record">
+  <h1>越权。终端锁备注以外的钮。</h1>
+  <div class="meta"><span>条皖</span><span>即刻</span></div>
+  <p id="why"></p>
+  <p>预约台夜班不改号，不把私坟当烈士园放行。限开条里写过。你勾了不该勾的处置。</p>
+  <p>码和穴就算对，也不许用对上的知识去改原物。</p>
+  <p><a href="note.html">只改处置栏再试</a>　<a href="introduction.html" id="again">另开一夜</a></p>
+  <p><span class="stamp">锁</span></p>
+</article>
+
+<section class="pad"><p>锁的是改号和放行，不是整台机器。条皖怕清明窗口被夜班改乱，限开条里写过。杭疏对上了码和穴，仍不能用对上的知识去动原物。顾晚禾不求改号，缪石桥更不许改批次。处置栏回到只交备注，单子才有可能被收下。</p></section>
+<script src="js/sanmen.js"></script>
+<script>
+
+var t=Sanmen.load().thin||{};
+document.getElementById("why").textContent=t.action==="pass"?"你勾了按烈士园放行十二区。":"你勾了把预约改到十二区。";
+document.getElementById("again").addEventListener("click",function(){ Sanmen.reset(); });
+
+</script>
+</body>
+</html>

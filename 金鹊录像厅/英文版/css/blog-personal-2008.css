@@ -1,0 +1,38 @@
+/* blog-personal-2008：个人博客双栏。日记、转载采访。 */
+html.skin-blog-personal-2008 body {
+  margin: 0;
+  background: #e9e0c8;
+  color: #333;
+  font: 14px/1.8 "Microsoft YaHei", SimSun, sans-serif;
+}
+html.skin-blog-personal-2008 .top {
+  background: #d35400;
+  color: #fff;
+  padding: 18px 20px 12px;
+}
+html.skin-blog-personal-2008 .top h1 { margin: 0; font-size: 22px; }
+html.skin-blog-personal-2008 .top p { margin: 4px 0 0; font-size: 12px; opacity: .9; }
+html.skin-blog-personal-2008 .nav { background: #a04000; padding: 6px 16px; }
+html.skin-blog-personal-2008 .nav a { color: #fff; margin-right: 14px; text-decoration: none; font-size: 13px; }
+html.skin-blog-personal-2008 .wrap {
+  width: 900px;
+  margin: 12px auto;
+  display: grid;
+  grid-template-columns: 1fr 240px;
+  gap: 12px;
+}
+html.skin-blog-personal-2008 article, html.skin-blog-personal-2008 aside {
+  background: #fffdf6;
+  border: 1px solid #d9cba3;
+  padding: 16px;
+}
+html.skin-blog-personal-2008 article h2 { margin-top: 0; font-size: 20px; }
+html.skin-blog-personal-2008 .meta { color: #996; font-size: 12px; }
+html.skin-blog-personal-2008 aside h3 {
+  font-size: 13px;
+  background: #f3e6c4;
+  margin: 0 0 8px;
+  padding: 4px 6px;
+}
+html.skin-blog-personal-2008 aside ul { padding-left: 16px; margin: 0; font-size: 13px; }
+html.skin-blog-personal-2008 a { color: #a04000; }

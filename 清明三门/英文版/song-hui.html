@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-classified-yellow">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Offerings receipt</title>
+  <link rel="stylesheet" href="css/classified-yellow.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<div class="top"><div class="top-inner"><b>In-garden delivery receipt column</b><span class="city">Pi Houshan</span></div></div>
+<div class="layout">
+<nav>
+  <h4>Class</h4>
+  <a class="on" href="song-hui.html">Receipt</a>
+  <a href="song-lu.html">Route slip</a>
+  <a href="javascript:void(0)">Quote</a>
+  <a href="desk.html">Back to desk</a>
+</nav>
+<div class="list">
+<p id="mini" class="sm-mini"></p>
+
+<div id="shut" class="closed-box"><p>Receipt still on the shed iron clip. This shift has not lifted it.</p><p><a href="desk.html">Back to desk</a></p></div>
+<div id="live" style="display:none">
+<h4>One receipt</h4>
+<img src="img/offerings.jpg" alt="Box" class="doc-img">
+<div class="hd-row"><span class="t">Item</span><span>Written</span><span>When</span></div>
+<div class="row"><span>Grave</span><span>Plot 12, grave 37, Gu Songnian</span><span>Night</span></div>
+<div class="row"><span>Goods</span><span>Fruit box one, incense one bundle, paper one stack (unlit)</span><span>Night</span></div>
+<div class="row"><span>South steps</span><span>Not entered</span><span>Night</span></div>
+<div class="row"><span>Photo</span><span>Box set down along the shallow ditch</span><span>Night</span></div>
+<p>Slip said grave 37. I delivered. Gate side, south steps, I did not go.</p>
+<p><button type="button" class="sm-btn" id="vbtn">Verify: offerings put down at Plot 12, grave 37</button></p>
+<p id="vok" class="sm-ok" style="display:none">The goods' drop point stayed.</p>
+<p id="vbad" class="sm-warn" style="display:none"></p>
+<p>The receipt can prove which grave was used. Whether the code should have been used for this grave is not established by these sources.</p>
+<p><a href="door-song.html">Back to the door</a></p>
+</div>
+
+</div>
+</div>
+<p class="ft">Yellow-page shell is only a delivery column · not a station-close form</p>
+
+<section class="pad"><p>The receipt column sits in a yellow-page shell because delivery bought that template years ago, not so Hang Shu can close a station. Fruit box, incense, unlit paper — three items set down by grave number. South steps not entered is written hard across. Photo line "box along the shallow ditch" can sit beside the garden-worker sketch. After the goods' drop point stays, the ledger button may light.</p></section>
+<script src="js/sanmen.js"></script>
+<script>
+Sanmen.paintMini(document.getElementById('mini'));
+Sanmen.gate('song','shut','live');
+Sanmen.bindVerify(document.getElementById('vbtn'),'deliver-12',document.getElementById('vok'),document.getElementById('vbad'));
+
+</script>
+</body>
+</html>

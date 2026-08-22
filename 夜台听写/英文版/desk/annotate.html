@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-win7-aero" data-seen="annotate">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Night-shift annotate form</title>
+  <link rel="stylesheet" href="../css/win7-aero.css">
+  <link rel="stylesheet" href="../css/patches.css">
+</head>
+<body>
+  <div class="desk">
+    <div class="window">
+      <div class="title-bar">
+        <span>Recommendation — Pu Sheng</span>
+        <span class="ctrls"><span>_</span><span>□</span><span class="x">×</span></span>
+      </div>
+      <div class="addr">C:\\Duty\\mark.htm</div>
+      <div class="body">
+        <p class="tiny"><a href="desktop.html">Desk</a><a href="timeline.html">Timeline</a></p>
+        <p>Authority stops at a recommendation. Zhai Taisheng takes it and decides whether the 06:00 slot changes its line. You are not approving who pays. Main stretch is 22:00 to 23:30. Late arrivals may enter the hall. You do not have to tick them on the main stretch.</p>
+        <p>All four paths file. Trust the transcript, match the papers, trust the mimeograph, or leave it open — the machine takes all of them. After it takes the form, the form locks. To change it you void and reopen.</p>
+        <p>If you write west room as a paying branch, the recommendation slides onto the mimeograph path. West wing is a room. A room. Do not write it as a household branch.</p>
+        <div id="formbox">
+          <p>Present on the main stretch (tick any)</p>
+          <label><input type="checkbox" name="p" value="bochuan"> Gu Bochuan</label>
+          <label><input type="checkbox" name="p" value="wanqiu"> Tang Wanqiu</label>
+          <label><input type="checkbox" name="p" value="zhonghuai"> Gu Zhonghuai</label>
+          <label><input type="checkbox" name="p" value="jiping"> Gu Jiping</label>
+          <label><input type="checkbox" name="p" value="houshui"> Gu Houshui</label>
+          <label><input type="checkbox" name="p" value="luan"> Luan Shouyi</label>
+          <label>22:14 speaker
+            <select id="s2214">
+              <option value="unsure">Unclear</option>
+              <option value="bochuan">Gu Bochuan</option>
+              <option value="zhonghuai">Gu Zhonghuai</option>
+              <option value="houshui">Gu Houshui</option>
+            </select>
+          </label>
+          <label>22:31 speaker
+            <select id="s2231">
+              <option value="unsure">Unclear</option>
+              <option value="jiping">Gu Jiping</option>
+              <option value="wanqiu">Tang Wanqiu</option>
+            </select>
+          </label>
+          <label>First-seven money, which branch
+            <select id="pay">
+              <option value="blank">Leave blank</option>
+              <option value="chang">Elder branch (incl. paid by proxy)</option>
+              <option value="er">Second branch</option>
+              <option value="san">Jiping’s line</option>
+              <option value="xi">West room</option>
+            </select>
+          </label>
+          <p><button type="button" id="go">File recommendation</button></p>
+        </div>
+        <div class="endbox" id="endbox" hidden></div>
+      </div>
+    </div>
+  </div>
+  <div class="taskbar">
+    <span class="orb"></span>
+    <span class="pin">Form</span>
+    <span class="tray">05:12</span>
+  </div>
+  <script src="../js/seen.js"></script>
+  <script>
+    (function () {
+      function present() {
+        var o = {};
+        var boxes = document.querySelectorAll("input[name=p]");
+        for (var i = 0; i < boxes.length; i++) if (boxes[i].checked) o[boxes[i].value] = 1;
+        return o;
+      }
+      function grade(p, a, b, pay) {
+        var need = p.zhonghuai && p.wanqiu && p.houshui && p.luan;
+        if (need && !p.bochuan && !p.jiping && a === "zhonghuai" && b === "wanqiu" && pay === "chang") return "true";
+        if (pay === "er" || pay === "xi") return "erfang";
+        if (p.bochuan || a === "bochuan") return "tape";
+        return "hold";
+      }
+      function reason(key, s, p, a, pay) {
+        if (key === "true") {
+          if (s.shift && s.chang) return "You matched the clock-in to the proxy mark. The hall self-name did not outrun the night board, and the proxy on the envelope was not carried off by the married-out daughter in the reading.";
+          return "You marked the three items: no Bochuan and no Jiping on the main stretch; the close-mic ending matches the shop; the money clip sits on paid by proxy; money to the elder branch.";
+        }
+        if (key === "tape") {
+          if (p.bochuan && s.shift) return "You opened the night board and still ticked Bochuan on the main stretch. The name in the transcript went in easier than the clock-in.";
+          if (a === "bochuan") return "You wrote 22:14 as Bochuan’s own mouth. Those last two words are on the shop page too.";
+          return "You filed the transcript’s self-name. The morning broadcast will lock presence and the claim onto the elder branch.";
+        }
+        if (key === "erfang") {
+          if (pay === "xi") return "You treated west room as a line on the genealogy. The iron box is in the west wing. The fire sheet is talking about a side room, not another paying branch that suddenly appeared.";
+          if (s.ban) return "You saw the mimeograph and wrote first-seven money to the second branch. Table incidentals and host of record are not the same entry.";
+          return "Money to the second branch. The person running the floor will keep being fetched. The elder-branch envelope paid by proxy will not count toward the name-share.";
+        }
+        if (s.s2340 && p.jiping) return "You heard Jiping get off the bus and still ticked her on the main stretch. Last coach lands at 23:40.";
+        return "You did not pin the three items. Zhai Taisheng can only change the line to follow the book. Both branches will still come to the station door in the morning.";
+      }
+      function after(key) {
+        if (key === "true") return "Recommendation: present on the main stretch — Zhonghuai, Wanqiu, Houshui, Luan Shouyi. The close-mic self-name is Zhonghuai borrowing a name. The money is Wanqiu. First-seven money: elder branch, paid by proxy. Mimeograph host of record and the gift register do not match. Broadcast only the name-share of the money. Do not reprint for the village. Bochuan will not be written as both skipping the seat and present.";
+        if (key === "tape") return "The 06:00 slot will air elder branch present and claiming the account. Bochuan is in a ward corridor. Wanqiu only wanted to set the envelope down. Zhonghuai sheds host of record. Later accounts will follow the broadcast to the elder branch. Staff ID: Pu Sheng.";
+        if (key === "erfang") return "Broadcast does not pull the mimeograph. Second branch stays host of record. Extra dishes and wire still fetch Zhonghuai. The elder-branch proxy payment will look as if it was never claimed.";
+        return "The station airs “funeral matters follow the gift register.” Without the three items, the people at the door will not leave. You can end the shift. The names on paper are still hanging.";
+      }
+      function titles() {
+        return { true: "Recommendation filed — against the papers", tape: "Recommendation filed — against the transcript’s self-name", erfang: "Recommendation filed — against the mimeograph branch", hold: "Recommendation filed — conflicts only" };
+      }
+      function render(key, p, a, pay) {
+        var s = window.ytSeen ? window.ytSeen() : {};
+        var box = document.getElementById("endbox");
+        box.hidden = false;
+        box.innerHTML = "<h3>" + titles()[key] + "</h3><p>" + reason(key, s, p, a, pay) + "</p><p>" + after(key) + "</p><p><a href=\"timeline.html\">Back to timeline</a>　<a href=\"#\" id=\"again\">Void and reopen (this machine only)</a></p>";
+        document.getElementById("formbox").style.opacity = "0.45";
+        var ag = document.getElementById("again");
+        if (ag) ag.onclick = function (e) {
+          e.preventDefault();
+          localStorage.removeItem("yt_en_end");
+          location.reload();
+        };
+      }
+      var saved = localStorage.getItem("yt_en_end");
+      if (saved) {
+        try { render(saved, {}, "unsure", "blank"); } catch (e) {}
+      }
+      document.getElementById("go").onclick = function () {
+        var p = present();
+        var a = document.getElementById("s2214").value;
+        var b = document.getElementById("s2231").value;
+        var pay = document.getElementById("pay").value;
+        var key = grade(p, a, b, pay);
+        localStorage.setItem("yt_en_end", key);
+        render(key, p, a, pay);
+      };
+    })();
+  </script>
+</body>
+</html>

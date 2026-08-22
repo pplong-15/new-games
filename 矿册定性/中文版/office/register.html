@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk" data-seen="register">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>西洼事故名册　待核</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/patches.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>名册面板　十行去向</strong>
+      <div>
+        <a class="ghost-btn" href="index.html">回台</a>
+        <form id="search-form" action="../search-results.html" method="get">
+          <input id="search-input" name="q" placeholder="按行里的字查">
+          <button type="submit">对档</button>
+        </form>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>逐人勾去向</h2>
+      <p>网页初稿把霍成山、翁二海、尚小满、宁广福、曲培义、邢贵林、蓝守田、尹福来、葛万才都写成井下。只有谭秋生被改回地面。初稿不是结论。勾的才进建议单。</p>
+      <p>井下是当天入了井。地面是人在矿上、没入井。已迁是事故前户口已经离开石岭。误入册是不该出现在这本事故册上。四档里只准留一档。霍成山三个字在入井名单、抚恤底、灯房未回里能对上。宁广福三个字在假条、空户、事后捐香里能对上。对不上的那一档，别抄初稿。这台机子敲字会顿一下。顿了就对一眼存档再勾。</p>
+    </div>
+    <table class="book">
+      <thead>
+        <tr><th>姓名</th><th>网页初稿</th><th>建议去向</th></tr>
+      </thead>
+      <tbody id="reg-body"></tbody>
+    </table>
+    <p class="sms">勾完去 <a href="submit.html">送复核</a>。空着的行牟砚秋那头不收。便条在 <a href="memo.html">抽屉</a>。</p>
+    <p class="foot-desk">名册只存在本机　刷新不会丢勾　2/39</p>
+  </div>
+  <script src="../js/seen.js"></script>
+  <script src="../js/register.js"></script>
+  <script src="../js/keyword-search.js"></script>
+</body>
+</html>

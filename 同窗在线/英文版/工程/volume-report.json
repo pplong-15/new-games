@@ -1,0 +1,254 @@
+{
+  "numbered": 36,
+  "keywords": 52,
+  "han": 999,
+  "over300": 0,
+  "short": 36,
+  "blocked": [],
+  "reachable": [
+    "p01",
+    "p02",
+    "p03",
+    "p04",
+    "p05",
+    "p06",
+    "p07",
+    "p08",
+    "p09",
+    "p10",
+    "p11",
+    "p12",
+    "p13",
+    "p14",
+    "p15",
+    "p16",
+    "p17",
+    "p18",
+    "p19a",
+    "p19b"
+  ],
+  "per": [
+    {
+      "key": "intro",
+      "no": "-",
+      "han": 0,
+      "skin": "skin-intro-manual"
+    },
+    {
+      "key": "home",
+      "no": "01",
+      "han": 0,
+      "skin": "skin-campus-sns-2010"
+    },
+    {
+      "key": "find",
+      "no": "02",
+      "han": 0,
+      "skin": "skin-campus-sns-2010"
+    },
+    {
+      "key": "school",
+      "no": "03",
+      "han": 0,
+      "skin": "skin-campus-sns-2010"
+    },
+    {
+      "key": "help",
+      "no": "04",
+      "han": 0,
+      "skin": "skin-campus-sns-2010"
+    },
+    {
+      "key": "apps",
+      "no": "05",
+      "han": 0,
+      "skin": "skin-campus-sns-2010"
+    },
+    {
+      "key": "search",
+      "no": "06",
+      "han": 0,
+      "skin": "skin-search-results"
+    },
+    {
+      "key": "blog-paperhorse",
+      "no": "07",
+      "han": 0,
+      "skin": "skin-blog-personal-2008"
+    },
+    {
+      "key": "blog-night",
+      "no": "16",
+      "han": 0,
+      "skin": "skin-blog-personal-2008"
+    },
+    {
+      "key": "shenji",
+      "no": "08",
+      "han": 0,
+      "skin": "skin-corp-table-2005"
+    },
+    {
+      "key": "space-syz",
+      "no": "09",
+      "han": 0,
+      "skin": "skin-qzone-modules"
+    },
+    {
+      "key": "gift",
+      "no": "34",
+      "han": 0,
+      "skin": "skin-campus-sns-2010"
+    },
+    {
+      "key": "visitors",
+      "no": "10",
+      "han": 0,
+      "skin": "skin-campus-sns-2010"
+    },
+    {
+      "key": "profile-cxb",
+      "no": "11",
+      "han": 0,
+      "skin": "skin-campus-sns-2010"
+    },
+    {
+      "key": "album-cxb",
+      "no": "12",
+      "han": 0,
+      "skin": "skin-campus-sns-2010"
+    },
+    {
+      "key": "class",
+      "no": "13",
+      "han": 0,
+      "skin": "skin-service-cyan-desk"
+    },
+    {
+      "key": "login",
+      "no": "14",
+      "han": 0,
+      "skin": "skin-service-cyan-desk"
+    },
+    {
+      "key": "class-rules",
+      "no": "15",
+      "han": 0,
+      "skin": "skin-service-cyan-desk"
+    },
+    {
+      "key": "class-feed",
+      "no": "28",
+      "han": 0,
+      "skin": "skin-service-cyan-desk"
+    },
+    {
+      "key": "gazetteer",
+      "no": "17",
+      "han": 0,
+      "skin": "skin-gov-redbar"
+    },
+    {
+      "key": "reservoir",
+      "no": "18",
+      "han": 0,
+      "skin": "skin-gov-redbar"
+    },
+    {
+      "key": "yince",
+      "no": "19",
+      "han": 0,
+      "skin": "skin-archive-simsun"
+    },
+    {
+      "key": "album-zt",
+      "no": "20",
+      "han": 0,
+      "skin": "skin-qzone-modules"
+    },
+    {
+      "key": "wall-zt",
+      "no": "21",
+      "han": 0,
+      "skin": "skin-qzone-modules"
+    },
+    {
+      "key": "forum",
+      "no": "22",
+      "han": 0,
+      "skin": "skin-discuz-board"
+    },
+    {
+      "key": "mp-sxl",
+      "no": "23",
+      "han": 0,
+      "skin": "skin-wechat-mp-article"
+    },
+    {
+      "key": "inbox",
+      "no": "24",
+      "han": 0,
+      "skin": "skin-campus-sns-2010"
+    },
+    {
+      "key": "profile-jwq",
+      "no": "25",
+      "han": 0,
+      "skin": "skin-campus-sns-2010"
+    },
+    {
+      "key": "forbidden",
+      "no": "26",
+      "han": 0,
+      "skin": "skin-forbidden"
+    },
+    {
+      "key": "paper-list",
+      "no": "27",
+      "han": 0,
+      "skin": "skin-archive-simsun"
+    },
+    {
+      "key": "oral-sls",
+      "no": "29",
+      "han": 0,
+      "skin": "skin-blog-personal-2008"
+    },
+    {
+      "key": "mp-local",
+      "no": "30",
+      "han": 0,
+      "skin": "skin-wechat-mp-article"
+    },
+    {
+      "key": "genealogy",
+      "no": "31",
+      "han": 0,
+      "skin": "skin-archive-simsun"
+    },
+    {
+      "key": "shrine",
+      "no": "32",
+      "han": 0,
+      "skin": "skin-corp-table-2005"
+    },
+    {
+      "key": "choice",
+      "no": "33",
+      "han": 0,
+      "skin": "skin-archive-simsun"
+    },
+    {
+      "key": "ending-a",
+      "no": "35",
+      "han": 0,
+      "skin": "skin-archive-simsun"
+    },
+    {
+      "key": "ending-b",
+      "no": "36",
+      "han": 0,
+      "skin": "skin-campus-sns-2010"
+    }
+  ]
+}

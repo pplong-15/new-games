@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" class="os-kk lock">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lock screen</title>
+  <link rel="stylesheet" href="css/phone.css">
+</head>
+<body>
+  <div class="bench">
+    <div class="handset">
+      <div class="ear"></div>
+      <div class="glass">
+        <div class="sb"><span>China Mobile</span><b>03:12</b><span>18%</span></div>
+        <div class="app">
+          <div class="clock">3:12</div>
+          <div class="date">Fri 2026-08-21</div>
+          <div class="who">Tiansui · locker 3</div>
+          <div class="miss">Missed 3 · Messages 6 · Timer already stopped on the shelf · Badge cord still wrapped · Eighteen percent</div>
+          <div class="pinrow" id="dots"></div>
+          <div class="err" id="err"></div>
+          <div class="pad" id="pad"></div>
+        </div>
+        <div class="sk"><a href="introduction.html">Slip</a><span></span><span></span></div>
+      </div>
+      <div class="caps"><span>○</span><span>□</span><span>△</span></div>
+    </div>
+  </div>
+  <script src="js/phone.js"></script>
+  <script>
+    var pin = "", err = document.getElementById("err"), dots = document.getElementById("dots");
+    function draw() { dots.textContent = pin.replace(/./g, "•"); }
+    var pad = document.getElementById("pad");
+    [1,2,3,4,5,6,7,8,9,"CLR",0,"OK"].forEach(function (n) {
+      var b = document.createElement("button");
+      b.textContent = n;
+      if (n === "OK") b.className = "ok";
+      b.onclick = function () {
+        if (n === "CLR") { pin = ""; err.textContent = ""; draw(); return; }
+        if (n === "OK") {
+          if (pin === "3716") { location.href = "home.html"; return; }
+          err.textContent = "Wrong PIN. Try again.";
+          pin = "";
+          draw();
+          return;
+        }
+        if (pin.length < 6) pin += String(n);
+        err.textContent = "";
+        draw();
+      };
+      pad.appendChild(b);
+    });
+  </script>
+</body>
+</html>

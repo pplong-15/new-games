@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-gov-redbar">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wankou Hukou Old File</title>
+  <link rel="stylesheet" href="../css/gov-redbar.css">
+</head>
+<body>
+  <div class="red">
+    <h1>Wankou hukou old file</h1>
+    <p>2011 mirror　not an official window　no state emblem</p>
+  </div>
+  <div class="links">
+    <a href="index.html">Look up a move</a>
+    <a href="#">Origins digest</a>
+    <a href="#">Road renames</a>
+    <a href="../hengpu/desk.html">Back to commission desk</a>
+  </div>
+  <div class="wrap">
+    <table cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="box">
+          <h3>Move-register search</h3>
+          <p style="padding:8px;text-indent:0">Of every household that left, this book takes a leaf. The book stops at collective households and split households. It does not hold hall property. Enter the householder's everyday name. A hit opens one register leaf. A blank page is not a concealment. This volume does not have it.</p>
+          <form id="qform" action="#" method="get" style="padding:8px">
+            <input id="q" name="q" value="" style="width:70%;border:1px solid #999;padding:4px" placeholder="householder name">
+            <button type="submit">Open the book</button>
+          </form>
+          <p id="miss" style="padding:8px;color:#900"></p>
+        </td>
+        <td class="box">
+          <h3>Site scraps</h3>
+          <ol>
+            <li><a href="tongbu.html">Collective-household note</a><span class="date">2011-06-02</span></li>
+            <li><a href="mirror-about.html">Mirror stop-update note</a><span class="date">2011-08-19</span></li>
+            <li><a href="factory.html">Works letter, copied</a><span class="date">1996-11</span></li>
+            <li><a href="move1987.html">One known leaf: 1987 move</a><span class="date">1987-07</span></li>
+            <li><a href="miss.html">Open-book miss, sample</a><span class="date">—</span></li>
+          </ol>
+        </td>
+      </tr>
+    </table>
+    <p class="ft">Old-site mirror　columns are dead　only open-the-book works　3/12</p>
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    document.getElementById("qform").onsubmit = function (e) {
+      e.preventDefault();
+      var q = document.getElementById("q").value.replace(/\s/g, "");
+      var miss = document.getElementById("miss");
+      if (/Huaishan|RuiHuaishan/i.test(q)) {
+        location.href = "move1987.html";
+        return;
+      }
+      if (/RuiQiu|^Qiu$/i.test(q)) {
+        miss.textContent = "Split household, 2001. Split page is not in the move register.";
+        return;
+      }
+      location.href = "miss.html";
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-mail-web-2010">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reservation-desk duty inbox</title>
+  <link rel="stylesheet" href="css/mail-web-2010.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<div class="top"><b>Reservation-desk duty inbox</b><span class="unread-n">Four subjects</span><a href="desk.html">Back to desk</a></div>
+<div class="panes">
+  <div class="folders">
+    <a class="write" href="javascript:void(0)">Compose</a>
+    <a class="on" href="mail-inbox.html">Inbox</a>
+    <a href="javascript:void(0)">Sent</a>
+    <a href="javascript:void(0)">Drafts</a>
+  </div>
+  <div class="mails">
+    <h4>Subject</h4>
+    <div class="m unread"><b><a href="tousu-buji.html">Shen Bai wrote one more line</a></b><span>2026-04-04</span></div>
+    <div class="m unread"><b><a href="kao-tong.html">South steps short on people</a></b><span>2026-04-04</span></div>
+    <div class="m unread"><b><a href="jing-you.html">Attendance boxes only</a></b><span>2026-04-03</span></div>
+    <div class="m"><b><a href="qian-ban.html">Qiu Maiqiu note scan</a></b><span>2026-04-04 handover</span></div>
+  </div>
+  <div class="read">
+    <h3>Duty-inbox note</h3>
+    <p class="meta">This box is for Hang Shu's night shift only</p>
+    <p id="mini" class="sm-mini"></p>
+    <p>Subjects are visible. Bodies travel with households: if that household is not open, clicking through is still paper already pulled back.</p>
+    <p>Compose is a dummy. Night shift does not send out.</p>
+  </div>
+</div>
+<p class="ft">2010-style webmail · capacity invented</p>
+
+<section class="pad"><p>Four subjects are pushed in front of Hang Shu. Bodies still travel with households. Complaint household not open: Shen Bai's letter is paper already pulled back. Attendance household not open: chase-to-arrive will not open. Collective household not open: attendance-boxes-only will not open either. Qiu Maiqiu's note scan is the exception. It is pinned to the handover desk. Compose is an empty button, so night shift does not blast the outside.</p></section>
+<script src="js/sanmen.js"></script>
+<script>
+Sanmen.paintMini(document.getElementById('mini'));
+</script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>衡谱堂·委托台</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>衡谱堂委托台</strong>
+      <div>
+        <a class="ghost-btn" href="newpage.html">待传页</a>
+        <a class="ghost-btn" href="compare.html">对照台</a>
+        <a class="ghost-btn" href="slip.html">挂条口</a>
+        <form id="search-form" action="#" method="get" style="display:inline">
+          <input id="search-input" name="q" placeholder="查页号…">
+          <button type="submit">查找</button>
+        </form>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>夜班台面</h2>
+      <p>委托号 RQ-西-08。委托人芮秋。责编葛汀。上传窗二十三点关。关了按库里最后一版传。</p>
+      <p>待传：西房卷二。附件栏有一份 HP-补-19-07。这份不是西房端口送进来的。</p>
+      <p>对照台开着。挂条口也在。差空着的时候交，系统会退。产业、仪程、停抬，本台不收。</p>
+    </div>
+    <div class="tabs">
+      <a href="newpage.html">电子页</a>
+      <a href="compare.html">摊开对照</a>
+      <a href="../hukou/index.html">户政旧链</a>
+    </div>
+    <table>
+      <thead><tr><th>台面</th><th>状态</th></tr></thead>
+      <tbody>
+        <tr><td><a href="newpage.html">西房卷二电子页</a></td><td id="st-new">未打开</td></tr>
+        <tr><td><a href="../library/scan1998.html">馆藏续修抄件（须先进须知）</a></td><td id="st-old">未打开</td></tr>
+        <tr><td><a href="../hukou/move1987.html">迁出底册（须先查户主）</a></td><td id="st-hk">未打开</td></tr>
+        <tr><td><a href="../forum/fang.html">镇事房头楼</a></td><td id="st-bbs">未打开</td></tr>
+        <tr><td>已写入的差</td><td id="st-cmp">还没有</td></tr>
+      </tbody>
+    </table>
+    <div class="notice">
+      <h2>侧栏卷宗</h2>
+      <p>合同摘、价目、东房回执、卷二目录在这儿。入库条、抽屉撕纸、旧退单也在。不是待传页本身。</p>
+      <p>
+        <a href="contract.html">西房八号摘</a> ·
+        <a href="pricelist.html">价目</a> ·
+        <a href="east-receipt.html">东房回执</a> ·
+        <a href="xifang-toc.html">卷二目录</a><br>
+        <a href="upload-rule.html">入库条</a> ·
+        <a href="ge-note.html">抽屉撕纸</a> ·
+        <a href="old-bounce.html">旧退单样例</a>
+      </p>
+    </div>
+    <div class="notice" id="ge-box">
+      <h2>葛汀留言</h2>
+      <p id="ge-1">两头钱都进过账。我按最后进库的附件做页。要改，用挂条。</p>
+      <p id="ge-2" hidden></p>
+      <p id="ge-3" hidden></p>
+    </div>
+    <div class="notice">
+      <h2>抽屉</h2>
+      <p>纸是他自己撕的。从上往下看。别把最底那张先翻出来。</p>
+      <details><summary>第一张</summary><p>先把馆里的旧行和台上的新行摊开。别先跟东房吵。</p></details>
+      <details><summary>第二张</summary><p>旁注那两个字，去迁出簿里对事由。年份也别放过。</p></details>
+      <details><summary>第三张</summary><p>对照台：左续修，右电子页。写完差，再换迁出或者房头楼。</p></details>
+      <details><summary>最底一张</summary><p>脏因选按附件涂。世系选外迁。主件选底册。末栏选只核世系。岁修那栏碰了就退。</p></details>
+    </div>
+    <p style="text-align:center;padding:16px;color:#666;font-size:12px">
+      <a href="../library/rules.html">特藏</a> ·
+      <a href="../forum/list.html">镇事</a> ·
+      <a href="../introduction.html">回字条</a>
+    </p>
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    var b = XP.openedBits();
+    document.getElementById("st-new").textContent = b.neu ? "已打开" : "未打开";
+    document.getElementById("st-old").textContent = b.old ? "已打开" : "未打开";
+    document.getElementById("st-hk").textContent = b.hk ? "已打开" : "未打开";
+    document.getElementById("st-bbs").textContent = b.bbs ? "已打开" : "未打开";
+    var bits = [];
+    if (b.erase) bits.push("旧与新");
+    if (b.reason) bits.push("新与迁");
+    if (b.year) bits.push("帖与新");
+    if (b.move) bits.push("旧与迁");
+    document.getElementById("st-cmp").textContent = bits.length ? bits.join("，") : "还没有";
+    if (b.erase) {
+      var g2 = document.getElementById("ge-2");
+      g2.hidden = false;
+      g2.textContent = "差写出来了。不是脏点。挂条可以写世系，别写钱。";
+    }
+    if (b.reason || b.year) {
+      var g3 = document.getElementById("ge-3");
+      g3.hidden = false;
+      g3.textContent = "附件落年，和迁出事由，对过再交。对不过也别编。";
+    }
+    document.getElementById("search-form").onsubmit = function (e) {
+      e.preventDefault();
+      var q = document.getElementById("search-input").value;
+      if (/对照|摊/.test(q)) location.href = "compare.html";
+      else if (/挂|勘/.test(q)) location.href = "slip.html";
+      else if (/合同|八号|承揽/.test(q)) location.href = "contract.html";
+      else if (/价目|票据|加收/.test(q)) location.href = "pricelist.html";
+      else if (/回执|怀川|补-19/.test(q)) location.href = "east-receipt.html";
+      else if (/目录|伯岑|整卷/.test(q)) location.href = "xifang-toc.html";
+      else if (/入库|覆盖|附件号/.test(q)) location.href = "upload-rule.html";
+      else if (/抽屉|撕|后进的做/.test(q)) location.href = "ge-note.html";
+      else if (/退单|样例|北房/.test(q)) location.href = "old-bounce.html";
+      else if (/西|涂|卷二|电子|十四/.test(q)) location.href = "newpage.html";
+      else alert("库内无此页号。");
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-classified-yellow">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>配送路单</title>
+  <link rel="stylesheet" href="css/classified-yellow.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<div class="top"><div class="top-inner"><b>北坡路单</b><span class="city">夜一趟</span></div></div>
+<div class="layout">
+<nav>
+  <h4>路</h4>
+  <a href="song-hui.html">回执</a>
+  <a class="on" href="song-lu.html">路单</a>
+  <a href="desk.html">回柜</a>
+</nav>
+<div class="list">
+<p id="mini" class="sm-mini"></p>
+
+<div id="shut" class="closed-box"><p>路单跟配送户，未开只留黄顶。</p><p><a href="desk.html">回柜</a></p></div>
+<div id="live" style="display:none">
+<h4>车不跑南阶</h4>
+<div class="row"><span>出库</span><span>东门货棚</span><span>酉</span></div>
+<div class="row"><span>入园</span><span>北坡十二区便门</span><span>戌</span></div>
+<div class="row"><span>停</span><span>三七穴浅沟外侧</span><span>戌</span></div>
+<div class="row"><span>回</span><span>原路。不绕南阶。</span><span>亥</span></div>
+<p>路单和回执对得上：货在北坡。南阶那天另有工会的车。</p>
+<p><a href="song-kou.html">口误那笔</a></p>
+</div>
+
+</div>
+</div>
+<p class="ft">路单手写描进黄栏</p>
+
+<section class="pad"><p>北坡便门比南阶闸矮一截，货车能进，工会大客车进不去。皮厚山认便门，不认南阶的岗亭。路单四行是他用复写纸压的，字往右斜。回库时他抄近道，仍不绕纪念碑。有人问他看见灰没有，他说箱放下就走，沟里的事不归配送。</p></section>
+<script src="js/sanmen.js"></script>
+<script>
+Sanmen.paintMini(document.getElementById('mini'));
+Sanmen.gate('song','shut','live');
+
+</script>
+</body>
+</html>

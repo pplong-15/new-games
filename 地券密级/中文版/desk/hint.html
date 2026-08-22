@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>曲晚棠便笺</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/game-extra.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>便笺夹</strong>
+      <a class="ghost-btn" href="home.html">回台</a>
+    </header>
+    <div class="notice">
+      <h2>一次只揭一张</h2>
+      <p id="dq-hint-body">便笺还没揭。一次只多看一张。</p>
+      <p><button type="button" class="dq-go" id="dq-hint-btn">揭下一张</button></p>
+      <p>便笺指路，不替你勾栏，也不把口令抄在这里。口令在本子和信里。揭完四张还不会填，就回去把公开层和内部层的钱主、四至对着看，再决定要不要进限制柜。</p>
+    </div>
+  </div>
+  <script src="../js/state.js"></script>
+  <script>
+    document.getElementById("dq-hint-body").textContent = DQ.hintText();
+    document.getElementById("dq-hint-btn").onclick = function () {
+      document.getElementById("dq-hint-body").textContent = DQ.hintNext();
+    };
+  </script>
+</body>
+</html>

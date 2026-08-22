@@ -1,0 +1,604 @@
+/* campus-sns-2010
+ * 记忆 2010 校园实名站登录后首页（新鲜事），不是短视频、不是 2015 卡片信息流。
+ * 像素来自 Wayback 2010-07 真站 CSS（s.xnimg.cn login-unbuffered.css 等），不是只换色。
+ * 禁止：人人/校内商标与 Logo 切图、CSS Grid 主栏、圆角大卡片、雅黑当主字体。
+ */
+html.skin-campus-sns-2010 {
+  --bar: #005eac;
+  --page: #d8dfea;
+  --link: #005eac;
+  --hover: #3777bc;
+  --bevel-hi: #d8dfea;
+  --bevel-lo: #0e1f5b;
+  --field: #bdc7db;
+  --field2: #bdc7d8;
+  --box: #b3b3b3;
+  --panel: #f0f5f8;
+  --panel-line: #b8d4e8;
+  --mute: #808080;
+}
+html.skin-campus-sns-2010,
+html.skin-campus-sns-2010 body,
+html.skin-campus-sns-2010 div,
+html.skin-campus-sns-2010 span,
+html.skin-campus-sns-2010 h1,
+html.skin-campus-sns-2010 h2,
+html.skin-campus-sns-2010 h3,
+html.skin-campus-sns-2010 p,
+html.skin-campus-sns-2010 a,
+html.skin-campus-sns-2010 img,
+html.skin-campus-sns-2010 ul,
+html.skin-campus-sns-2010 li,
+html.skin-campus-sns-2010 form,
+html.skin-campus-sns-2010 label,
+html.skin-campus-sns-2010 input,
+html.skin-campus-sns-2010 textarea,
+html.skin-campus-sns-2010 button {
+  margin: 0;
+  padding: 0;
+}
+html.skin-campus-sns-2010 body {
+  background: var(--page);
+  color: #333;
+  font: 12px Tahoma, Verdana, sans-serif, simsun;
+}
+html.skin-campus-sns-2010 a {
+  color: var(--link);
+  text-decoration: none;
+}
+html.skin-campus-sns-2010 a:link,
+html.skin-campus-sns-2010 a:visited {
+  color: var(--link);
+  text-decoration: none;
+}
+html.skin-campus-sns-2010 a:hover {
+  color: var(--link);
+  text-decoration: underline;
+}
+html.skin-campus-sns-2010 img { border: 0; vertical-align: top; }
+html.skin-campus-sns-2010 ul { list-style: none; }
+html.skin-campus-sns-2010 input,
+html.skin-campus-sns-2010 select,
+html.skin-campus-sns-2010 textarea,
+html.skin-campus-sns-2010 button {
+  font: 12px Tahoma, Verdana, sans-serif, simsun;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+html.skin-campus-sns-2010 .clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* —— 顶栏：满宽蓝条，内槽 960×35 —— */
+html.skin-campus-sns-2010 .top,
+html.skin-campus-sns-2010 .menu-bar,
+html.skin-campus-sns-2010 #navBar {
+  background: var(--bar);
+  height: 35px;
+  padding: 0;
+  color: #fff;
+}
+html.skin-campus-sns-2010 .top-inner,
+html.skin-campus-sns-2010 .navigation-wrapper {
+  width: 960px;
+  height: 35px;
+  margin: 0 auto;
+}
+html.skin-campus-sns-2010 .top .logo,
+html.skin-campus-sns-2010 #logo2 {
+  float: left;
+  width: 122px;
+  height: 35px;
+  line-height: 35px;
+  overflow: hidden;
+  color: #fff;
+  font: 700 16px/35px Tahoma, Verdana, sans-serif, simsun;
+  letter-spacing: 1px;
+  text-align: left;
+  padding: 0;
+  background: transparent;
+}
+html.skin-campus-sns-2010 .top .logo a {
+  color: #fff;
+  text-decoration: none;
+}
+html.skin-campus-sns-2010 .nav-links {
+  float: left;
+  height: 35px;
+  margin-left: 8px;
+}
+html.skin-campus-sns-2010 .top-inner > a,
+html.skin-campus-sns-2010 .top > a {
+  float: left;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 8px;
+  height: 35px;
+  line-height: 35px;
+  white-space: nowrap;
+  margin-right: 0;
+}
+html.skin-campus-sns-2010 .top .logo a {
+  float: none;
+  display: block;
+  padding: 0;
+  height: 35px;
+  line-height: 35px;
+  color: #fff;
+  text-decoration: none;
+}
+html.skin-campus-sns-2010 .top-inner > a:hover,
+html.skin-campus-sns-2010 .top > a:hover {
+  background: var(--hover);
+  text-decoration: none;
+  color: #fff;
+}
+html.skin-campus-sns-2010 .top form,
+html.skin-campus-sns-2010 .top .site-search {
+  float: right;
+  height: 35px;
+  margin: 0 4px 0 0;
+  padding: 6px 0 0;
+}
+html.skin-campus-sns-2010 .top input,
+html.skin-campus-sns-2010 .top .site-search input {
+  float: left;
+  width: 168px;
+  height: 14px;
+  line-height: 14px;
+  border: 1px solid var(--field);
+  padding: 3px 4px;
+  margin: 0;
+  color: #333;
+  background: #fff;
+}
+html.skin-campus-sns-2010 .top button,
+html.skin-campus-sns-2010 .top .site-search button {
+  float: left;
+  height: 22px;
+  margin-left: 4px;
+  padding: 0 8px;
+  color: #fff;
+  background: var(--bar);
+  border: 1px solid;
+  border-color: var(--bevel-hi) var(--bevel-lo) var(--bevel-lo) var(--bevel-hi);
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* —— 960 三栏：左 150 / 中 540 / 右 250，float，不是 grid —— */
+html.skin-campus-sns-2010 .layout {
+  width: 960px;
+  margin: 10px auto 0;
+}
+html.skin-campus-sns-2010 .layout:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+html.skin-campus-sns-2010 .side {
+  float: left;
+  width: 150px;
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+html.skin-campus-sns-2010 .feed {
+  float: left;
+  width: 538px;
+  margin: 0 10px;
+  background: #fff;
+  border: 1px solid var(--box);
+  padding: 0;
+}
+html.skin-campus-sns-2010 .rail {
+  float: left;
+  width: 250px;
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+
+/* 左栏：灰蓝底上的头像 + 链，选中白底 */
+html.skin-campus-sns-2010 .who {
+  padding: 0 0 8px;
+  overflow: hidden;
+}
+html.skin-campus-sns-2010 .who .ph,
+html.skin-campus-sns-2010 .who .avatar {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+}
+html.skin-campus-sns-2010 .who strong {
+  display: block;
+  padding-top: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--link);
+}
+html.skin-campus-sns-2010 .who .muted,
+html.skin-campus-sns-2010 .who span {
+  display: block;
+  color: var(--mute);
+  font-size: 12px;
+  font-weight: 400;
+}
+html.skin-campus-sns-2010 .side a,
+html.skin-campus-sns-2010 .side .nav-off {
+  display: block;
+  height: 24px;
+  line-height: 24px;
+  padding: 0 8px 0 28px;
+  color: var(--link);
+  text-decoration: none;
+  position: relative;
+  border: 0;
+}
+html.skin-campus-sns-2010 .side a:hover {
+  background: #fff;
+  text-decoration: none;
+}
+html.skin-campus-sns-2010 .side a.cur,
+html.skin-campus-sns-2010 .side a.on {
+  background: #fff;
+  font-weight: 700;
+}
+html.skin-campus-sns-2010 .side a:before,
+html.skin-campus-sns-2010 .side .nav-off:before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  background: #8aa4c8;
+  border: 1px solid #6b86ad;
+}
+html.skin-campus-sns-2010 .side a.cur:before { background: #005eac; border-color: #0e1f5b; }
+html.skin-campus-sns-2010 .nav-off {
+  color: #999;
+  cursor: default;
+}
+html.skin-campus-sns-2010 .side-apps {
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid #c3cddf;
+}
+html.skin-campus-sns-2010 .side-apps b {
+  display: block;
+  padding: 0 8px 4px;
+  color: #333;
+}
+
+/* 中栏：状态发布器 */
+html.skin-campus-sns-2010 .feed-head {
+  padding: 8px 10px;
+  font-size: 14px;
+  font-weight: 700;
+  border-bottom: 1px solid #e9e9e9;
+}
+html.skin-campus-sns-2010 .feed h2 {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 8px 10px;
+  border-bottom: 1px solid #e9e9e9;
+}
+html.skin-campus-sns-2010 .status-box,
+html.skin-campus-sns-2010 .publisher {
+  padding: 8px 10px 10px;
+  border-bottom: 1px solid #e9e9e9;
+  background: #fff;
+  overflow: hidden;
+}
+html.skin-campus-sns-2010 .pub-tabs {
+  height: 24px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid #e9e9e9;
+}
+html.skin-campus-sns-2010 .pub-tabs span {
+  float: left;
+  margin-right: 12px;
+  height: 23px;
+  line-height: 23px;
+  color: var(--link);
+  cursor: default;
+  padding: 0 2px;
+}
+html.skin-campus-sns-2010 .pub-tabs .on {
+  font-weight: 700;
+  color: #333;
+  border-bottom: 2px solid #005eac;
+}
+html.skin-campus-sns-2010 .status-box .lab {
+  color: var(--mute);
+  margin-bottom: 4px;
+}
+html.skin-campus-sns-2010 textarea {
+  display: block;
+  width: 508px;
+  height: 48px;
+  border: 1px solid var(--field2);
+  padding: 5px 4px;
+  color: #333;
+  background: #fff;
+  resize: none;
+  overflow: auto;
+}
+html.skin-campus-sns-2010 textarea:focus {
+  background: #fcfcfc;
+  outline: 0;
+}
+html.skin-campus-sns-2010 .pub-bar {
+  overflow: hidden;
+  margin-top: 6px;
+}
+html.skin-campus-sns-2010 .pub-tools {
+  float: left;
+  color: var(--mute);
+  line-height: 25px;
+}
+html.skin-campus-sns-2010 .pub-tools a {
+  margin-right: 10px;
+}
+html.skin-campus-sns-2010 .pub,
+html.skin-campus-sns-2010 .input-submit,
+html.skin-campus-sns-2010 .input-button {
+  float: right;
+  width: 92px;
+  height: 25px;
+  margin-top: 0;
+  background: var(--bar);
+  color: #fff;
+  border: 1px solid;
+  border-color: var(--bevel-hi) var(--bevel-lo) var(--bevel-lo) var(--bevel-hi);
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  padding: 0;
+}
+html.skin-campus-sns-2010 .pub[disabled],
+html.skin-campus-sns-2010 .input-submit[disabled] {
+  background: #bbb;
+  border-color: #ddd #888 #888 #ddd;
+  color: #fff;
+  cursor: not-allowed;
+}
+html.skin-campus-sns-2010 .disabled-note {
+  clear: both;
+  color: var(--mute);
+  padding-top: 6px;
+}
+
+/* 新鲜事条目：50×50 方头像、蓝粗名、11–12px 灰时间 */
+html.skin-campus-sns-2010 .item {
+  position: relative;
+  padding: 10px 10px 10px 68px;
+  border-top: 0;
+  border-bottom: 1px solid #e9e9e9;
+  min-height: 52px;
+  clear: both;
+  overflow: hidden;
+}
+html.skin-campus-sns-2010 .item .avatar,
+html.skin-campus-sns-2010 .item .ph.face {
+  position: absolute;
+  left: 8px;
+  top: 10px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+}
+html.skin-campus-sns-2010 .item:not(:has(.avatar)):not(:has(.ph)):before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 10px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  background: #c8c8c8;
+  background-image:
+    radial-gradient(circle at 50% 38%, #eee 0 8px, transparent 9px),
+    radial-gradient(ellipse at 50% 78%, #eee 0 14px, transparent 15px);
+}
+html.skin-campus-sns-2010 .name {
+  color: var(--link);
+  font-weight: 700;
+}
+html.skin-campus-sns-2010 .item p {
+  margin: 2px 0 4px;
+  line-height: 18px;
+  color: #333;
+}
+html.skin-campus-sns-2010 .time,
+html.skin-campus-sns-2010 .item .time {
+  color: var(--mute);
+  font-size: 12px;
+  font-weight: 400;
+}
+html.skin-campus-sns-2010 .acts {
+  color: var(--link);
+  font-size: 12px;
+}
+html.skin-campus-sns-2010 .acts span,
+html.skin-campus-sns-2010 .acts a {
+  margin-right: 8px;
+}
+html.skin-campus-sns-2010 .acts span:before,
+html.skin-campus-sns-2010 .pipe {
+  content: "";
+}
+html.skin-campus-sns-2010 .cmt {
+  margin-top: 6px;
+  background: var(--page);
+  border: 1px solid #d8dfea;
+  padding: 6px 8px;
+}
+html.skin-campus-sns-2010 .cmt .row {
+  overflow: hidden;
+  padding: 4px 0;
+  border-bottom: 1px solid #e5eaf1;
+}
+html.skin-campus-sns-2010 .cmt .row:last-child { border-bottom: 0; }
+html.skin-campus-sns-2010 .cmt .mini {
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin-right: 6px;
+  border: 1px solid #ccc;
+}
+html.skin-campus-sns-2010 .cmt .txt { margin-left: 38px; }
+html.skin-campus-sns-2010 .share-box {
+  margin: 4px 0;
+  border: 1px solid #e5e5e5;
+  background: #f7f7f7;
+  padding: 6px 8px;
+}
+html.skin-campus-sns-2010 .share-box b { color: var(--link); }
+html.skin-campus-sns-2010 .thumbs {
+  overflow: hidden;
+  margin: 4px 0;
+}
+html.skin-campus-sns-2010 .thumbs i {
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin: 0 4px 4px 0;
+  border: 1px solid #ccc;
+  background: #ddd;
+}
+
+/* 右栏白盒 */
+html.skin-campus-sns-2010 .mod,
+html.skin-campus-sns-2010 .rail > div,
+html.skin-campus-sns-2010 .rail {
+  font-size: 12px;
+}
+html.skin-campus-sns-2010 .mod,
+html.skin-campus-sns-2010 .rail-box {
+  width: 248px;
+  background: #fff;
+  border: 1px solid var(--box);
+  margin-bottom: 10px;
+}
+html.skin-campus-sns-2010 .layout > .rail:not(:has(.rail-box)) {
+  width: 248px;
+  background: #fff;
+  border: 1px solid var(--box);
+}
+html.skin-campus-sns-2010 .rail h3,
+html.skin-campus-sns-2010 .mod h3,
+html.skin-campus-sns-2010 .mod-header {
+  background: var(--panel);
+  border-bottom: 1px solid #e5e5e5;
+  padding: 6px 8px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #333;
+}
+html.skin-campus-sns-2010 .rail p,
+html.skin-campus-sns-2010 .mod .bd {
+  padding: 8px;
+  line-height: 18px;
+}
+html.skin-campus-sns-2010 .visit,
+html.skin-campus-sns-2010 .maybe {
+  overflow: hidden;
+  padding: 6px 8px;
+  border-bottom: 1px solid #eee;
+}
+html.skin-campus-sns-2010 .visit .ph,
+html.skin-campus-sns-2010 .maybe .ph,
+html.skin-campus-sns-2010 .rail .ph.face {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+}
+html.skin-campus-sns-2010 .maybe .add {
+  display: inline-block;
+  margin-top: 4px;
+  height: 20px;
+  line-height: 18px;
+  padding: 0 8px;
+  color: #fff;
+  background: var(--bar);
+  border: 1px solid;
+  border-color: var(--bevel-hi) var(--bevel-lo) var(--bevel-lo) var(--bevel-hi);
+  font-size: 12px;
+  text-decoration: none;
+}
+html.skin-campus-sns-2010 .maybe .add:hover { text-decoration: none; color: #fff; }
+html.skin-campus-sns-2010 .appad {
+  margin: 0 8px 8px;
+  height: 90px;
+  border: 1px solid #e9e9e9;
+  background: #faf9ef;
+  color: var(--mute);
+  text-align: center;
+  line-height: 90px;
+}
+html.skin-campus-sns-2010 .muted { color: var(--mute); }
+
+/* 占位头像：灰块 + 头部剪影，不要真人照片、不要商标 */
+html.skin-campus-sns-2010 .ph.face,
+html.skin-campus-sns-2010 .avatar.ph {
+  background: #c8c8c8;
+  background-image:
+    radial-gradient(circle at 50% 38%, #eee 0 10px, transparent 11px),
+    radial-gradient(ellipse at 50% 78%, #eee 0 18px, transparent 19px);
+  color: #555;
+  font-size: 11px;
+  text-align: center;
+  line-height: 50px;
+}
+html.skin-campus-sns-2010 .ph.sq { width: 50px; height: 50px; }
+
+html.skin-campus-sns-2010 .paused {
+  margin: 10px;
+  padding: 8px 10px;
+  background: #feffcf;
+  border: 1px solid #e2c822;
+}
+
+html.skin-campus-sns-2010 .site-foot,
+html.skin-campus-sns-2010 #footer {
+  width: 960px;
+  margin: 20px auto 30px;
+  clear: both;
+}
+html.skin-campus-sns-2010 .site-foot .copyright,
+html.skin-campus-sns-2010 #footer .copyright {
+  border-top: 1px solid var(--panel-line);
+  margin: 10px 0;
+  padding: 5px;
+  color: gray;
+  text-align: center;
+  line-height: 20px;
+}
+html.skin-campus-sns-2010 .pipe { padding: 0 6px; color: #b8d4e8; }
+
+/* 兼容旧骨架：没有 .top-inner 时，链接仍在蓝条里 */
+html.skin-campus-sns-2010 .top > a,
+html.skin-campus-sns-2010 .top > input,
+html.skin-campus-sns-2010 .top > form {
+  position: relative;
+}
+html.skin-campus-sns-2010 .sr-only {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

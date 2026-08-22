@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-intro-manual">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tongxian Tourism · SMS receipt</title>
+  <link rel="stylesheet" href="css/intro-manual.css">
+</head>
+<body>
+  <header class="intro-hero"><h1>Tongxian Tourism</h1></header>
+  <main>
+    <section>
+      <h2>Ticket SMS receipt</h2>
+      <p>To: ShenNan</p>
+      <p>Ticket YX-0821-19. NightPlay in Huaixi tonight. Intangible-heritage billing.</p>
+      <p>Refund channel closed. Status written: CurtainUp.</p>
+      <p>WuChuang only sent one line: check the ticket page against the county troupe visit notice. The two pages are not the same show. Do not stare at the refund button.</p>
+      <p>The off-site forum mirror still opens. Ticket lookup wants a ticket number or a phone number.</p>
+      <div class="boot-actions">
+        <a class="enter-link" href="index.html">Open ticket page</a>
+        <button type="button" class="ghost" id="wipe">Clear this machine's record</button>
+      </div>
+    </section>
+  </main>
+  <script>
+    document.getElementById("wipe").onclick=function(){
+      localStorage.removeItem("guxz-v1-en");
+      location.href="index.html";
+    };
+  </script>
+</body>
+</html>

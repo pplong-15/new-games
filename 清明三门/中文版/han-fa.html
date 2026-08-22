@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-archive-simsun">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>寒食旧罚单</title>
+  <link rel="stylesheet" href="css/archive-simsun.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<article class="record">
+  <p id="mini" class="sm-mini"></p>
+  
+<div id="shut" class="closed-box">
+  <p>旧单还在铁盒，封皮没揭。</p>
+  <p><a href="desk.html">回柜开门</a></p>
+</div>
+<div id="live" style="display:none">
+
+  <h1>现场禁烧登记　去年寒食</h1>
+  <div class="meta"><span>经办：纪南楼</span><span>十二区</span></div>
+  <img src="img/old-ticket.jpg" alt="旧单" class="doc-img">
+  <p>现场有灰。有人报码头像集体号。我只写现场有灰。谁的手，单上不写。灰旁有纸箱角，像配送留下的。</p>
+  <p>墙上当时已经贴着禁烧令。寒食旧俗禁火是另一套字，我没往单上抄。</p>
+  <p><button type="button" class="sm-btn" id="vbtn">采信：去年寒食十二区有禁烧单</button></p>
+  <p id="vok" class="sm-ok" style="display:none">暗处多了一句。写不进今夜的正确栏。</p>
+  <p id="vbad" class="sm-warn" style="display:none"></p>
+  <p>旧单能证明禁烧令早就在，不能给今夜定性。</p>
+  <p><a href="han-li.html">两套字对照</a>　<a href="door-han.html">回门</a></p>
+  <p><span class="stamp">旧</span></p>
+  
+</div>
+
+  <p>消防巡查抄件　去年</p>
+</article>
+
+<section class="pad"><p>纪南楼的字像用尺子比过。现场有灰。码头像集体号。谁的手，不写。纸箱角，像配送。墙上禁烧令，当时已在。寒食旧俗，不抄进单。旧单能进暗处，不能进今夜性质栏。杭疏采信了，条皖也只在边上画杠。</p></section>
+<script src="js/sanmen.js"></script>
+<script>
+Sanmen.paintMini(document.getElementById('mini'));
+Sanmen.gate('han','shut','live');
+Sanmen.bindVerify(document.getElementById('vbtn'),'old-ticket',document.getElementById('vok'),document.getElementById('vbad'));
+
+</script>
+</body>
+</html>

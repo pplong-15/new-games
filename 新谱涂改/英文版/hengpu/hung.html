@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hengpu Hall · Receipt</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>Hengpu Hall receipt</strong>
+      <div>
+        <a class="ghost-btn" href="desk.html">Desk</a>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>Hung</h2>
+      <p>Work number GT-Ye. Slip hung beside West Branch Vol. II, row 14. Nature: lineage pending check. Layer on that row pulled off. Note changed to moved away. What they carry into the hall tomorrow is the pending-check copy, not the painted copy.</p>
+      <p>Hall-upkeep is not on this slip. The council book I cannot touch. The money you paid bought back a line of words. Not a mouth of grain.</p>
+      <p>Attachment stays in the library, as a rejected piece. That 1962 paper: nobody handed in an original tonight.</p>
+      <p id="extra"></p>
+      <p>Window is still open. I upload on this slip. Go sleep. West branch asks, let them look at the hung slip. Do not come ask me whether I believe in ghosts.</p>
+    </div>
+    <p style="text-align:center;padding:24px">
+      <a href="../introduction.html">Put the note away</a>
+    </p>
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    var el = document.getElementById("extra");
+    if (XP.has("v-draft")) {
+      el.textContent = "I saw that sentence in the unissued draft. It does not go on the slip. An unpublished thing cannot outweigh a published continuation.";
+    } else {
+      el.textContent = "If the library still has an earlier unissued draft, you need not fetch it tonight. Pending check is enough to carry.";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+/* corp-table-2005：表格居中的古早企业站。协会、旅行社、工厂。 */
+html.skin-corp-table-2005 body {
+  margin: 0;
+  background: #d9d9d9;
+  color: #000;
+  font: 12px/1.7 SimSun, "Songti SC", serif;
+}
+html.skin-corp-table-2005 table.site {
+  width: 778px;
+  margin: 8px auto;
+  border: 1px solid #999;
+  border-collapse: collapse;
+  background: #fff;
+}
+html.skin-corp-table-2005 td { padding: 0; }
+html.skin-corp-table-2005 .banner {
+  height: 118px;
+  background: #1e4b87;
+  color: #fff;
+  font-size: 24px;
+  font-family: SimHei, "Heiti SC", sans-serif;
+  padding: 28px 16px 0;
+}
+html.skin-corp-table-2005 .nav {
+  background: #2f6ead;
+  color: #fff;
+  text-align: center;
+  padding: 6px 0;
+  letter-spacing: 2px;
+}
+html.skin-corp-table-2005 .nav a { color: #fff; text-decoration: none; margin: 0 10px; }
+html.skin-corp-table-2005 .main { padding: 12px; vertical-align: top; }
+html.skin-corp-table-2005 .left {
+  width: 180px;
+  background: #eef3f9;
+  border-right: 1px solid #99b;
+  padding: 8px;
+  vertical-align: top;
+}
+html.skin-corp-table-2005 .left h4 {
+  background: #2f6ead;
+  color: #fff;
+  margin: 0 0 8px;
+  padding: 4px 6px;
+  font-size: 12px;
+}
+html.skin-corp-table-2005 marquee, html.skin-corp-table-2005 .scroll {
+  background: #ffffcc;
+  border: 1px solid #ccc;
+  padding: 2px 6px;
+}
+html.skin-corp-table-2005 a { color: #00e; }
+html.skin-corp-table-2005 .ft {
+  text-align: center;
+  color: #666;
+  padding: 8px;
+  background: #eee;
+  font-size: 12px;
+}

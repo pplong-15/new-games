@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-mail-web-2010">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>只要考勤格</title>
+  <link rel="stylesheet" href="css/mail-web-2010.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<div class="top"><b>值箱</b><a href="mail-inbox.html">收件箱</a><a href="desk.html">回柜</a></div>
+<div class="panes">
+  <div class="folders"><a class="on" href="mail-inbox.html">收件箱</a></div>
+  <div class="mails"><div class="m unread on"><b>只要考勤格</b><span>缪石桥</span></div></div>
+  <div class="read">
+    <p id="mini" class="sm-mini"></p>
+    
+<div id="shut" class="closed-box"><p>经办来信跟集体户，未开则空。</p><p><a href="desk.html">回柜</a></p></div>
+<div id="live" style="display:none">
+    <h3>致预约台（请夜班勿改批次）</h3>
+    <p class="meta">发件：缪石桥</p>
+    <p>听说有配送把箱子送到十二区。南阶签到是签到，送货是送货。我只要考勤格。码仍是发给工会的那条。</p>
+    <p>请不要把批次改成私坟。改了，我的表更空。</p>
+    <p>人数请看空表。我不再解释。</p>
+    <p><a href="lie-pi.html">批次</a>　<a href="door-lie.html">回集体门</a></p>
+    </div>
+
+  </div>
+</div>
+<p class="ft">经办私人箱　仍是套话</p>
+
+<section class="pad"><p>缪石桥这封比催到场更冷。他听说箱子去了十二区，仍只要格子。批次改成私坟，他的表更空，所以他求预约台别动号。经办私人箱还是套话，末尾连人数都不肯再解释一遍。杭疏不能替他填签到，也不能替顾晚禾改车。</p></section>
+<script src="js/sanmen.js"></script>
+<script>
+Sanmen.paintMini(document.getElementById('mini'));
+Sanmen.gate('lie','shut','live');
+
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-intro-manual">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pre-shift sheet  Fuzhe night</title>
+  <link rel="stylesheet" href="css/intro-manual.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+  <header class="intro-hero">
+    <div class="image-area"><img alt="" src="img/night-stall.jpg"></div>
+    <h1>Write the tickets that push in before morning</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Tonight's shift</h2>
+      <p>You are Qiu Shi. Night web-orders at Fuzhe incense shop, South Gate, Meiwan. Fourth month on the job. Mi Sui sees walk-ins in daylight. You do not. Zhongyuan eve. Agency tickets for the dead push themselves into the back office, one after another.</p>
+      <p>Qu Nan slapped the key on the drawer before he went home. Ancestral seat, solitary-soul, lamp offering: three tables, split. Street burn-bans get held. You cannot change a tablet. You cannot change a temple roster. What you can do is release, hold, change table, then leave the morning shift a few lines.</p>
+      <p>On her way out Mi Sui leaned into the back and said not to walk the Ji ticket blind. She did not explain. Qu Nan's whiteboard still has last year's words. Huo Mai sat this same night.</p>
+    </section>
+    <section>
+      <h2>What is on the desk</h2>
+      <p>Queue on the left. Push tray on the right. Open a ticket and its attachments follow. You do not go fishing in a full-text box. If the last ticket has no note, the next one will not push.</p>
+      <p>When the system clock hits 05:30 on the 15th, an empty Ji ticket files as an empty field. Names and places are invented. Do not match them to a real incense shop.</p>
+      <p class="boot-actions">
+        <a class="enter-link" href="desk.html">Open the Fuzhe web-order desk</a>
+        <button type="button" class="ghost" id="wipe">Clear last unfinished draft on this machine</button>
+      </p>
+    </section>
+    <section>
+      <h2>If you get stuck</h2>
+      <p>Qu Nan's scraps sit under the queue. One extra card each time. The early ones point. They do not tick the fields for you.</p>
+      <p>If you leave the last ticket empty and go change an address, the next one will not open. Attachments follow the ticket. They will not be spread on the desk early.</p>
+      <p>The names are invented. Meiwan, Fuzhe, Guangci Temple do not match a real doorway. Do not take the ledger to a real temple.</p>
+    </section>
+  </main>
+  <p class="pageft">Pre-shift sheet, not a station  1/40</p>
+  <script src="js/state.js"></script>
+  <script>
+    document.getElementById("wipe").onclick = function () {
+      FZ.reset();
+      this.textContent = "Draft cleared. Come in from the desk again.";
+    };
+  </script>
+</body>
+</html>

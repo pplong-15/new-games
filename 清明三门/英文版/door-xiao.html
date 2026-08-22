@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout ledger · cabinet door</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<div id="wrap">
+  <header><strong>The reconcile stack</strong><div><a class="ghost-btn" href="desk.html">Back to desk</a></div></header>
+  <div class="notice">
+    <h2>Checkout ledger</h2>
+    <p id="mini" class="sm-mini"></p>
+    <p>Qiu Maiqiu's note said so: this stack only reads if you hold it against other pages. Without "code went to the collective" and "goods dropped on Plot 12," the verify button stays grey.</p>
+    <p>The ledger itself does not tell a ghost story. It does not approve a number change. It only spreads one code, two records, on the table.</p>
+    <p><button type="button" class="sm-btn" id="opbtn">Spread the ledger (counts as one household)</button></p>
+    <div id="fullbox" class="closed-box" style="display:none">
+      <p>Ledger will not spread. Slots full. Reconcile still needs this stack tomorrow. Hand over first.</p>
+      <p><a href="desk.html">Go free a slot</a></p>
+    </div>
+    <div id="openbox" style="display:none">
+      <p class="sm-ok">Spread. The top row is two plots, not one.</p>
+      <p>Record one is south-steps sign-in. Record two is receipt at grave 37. There is no paperwork in the middle that "changed them into the same plot."</p>
+      <p><a href="xiao-liu.html">Ledger table</a>　<a href="xiao-li.html">What cross-plot means</a></p>
+    </div>
+    <p>Reconcile cabinet · staple rusting</p>
+  </div>
+</div>
+
+<script src="js/sanmen.js"></script>
+<script>
+
+(function(){
+  var id="xiao";
+  function show(){
+    Sanmen.paintMini(document.getElementById("mini"));
+    var opened=Sanmen.isOpen(id);
+    document.getElementById("openbox").style.display=opened?"block":"none";
+    document.getElementById("fullbox").style.display="none";
+  }
+  document.getElementById("opbtn").addEventListener("click",function(){
+    var r=Sanmen.openDoor(id);
+    if(!r.ok){ document.getElementById("fullbox").style.display="block"; }
+    show();
+  });
+  show();
+})();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-mail-web-2010">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>网格信箱　收件列表</title>
+  <link rel="stylesheet" href="css/mail-web-2010.css">
+  <link rel="stylesheet" href="css/pick.css">
+</head>
+<body>
+  <div class="top">
+    <b>网格收件列表</b>
+    <span class="unread-n">未拆 <b>2</b></span>
+    <a href="desk.html">回上传台</a>
+    <a href="letter.html">先开素秋</a>
+  </div>
+  <div class="panes">
+    <div class="folders">
+      <a class="write" href="#">无回信权</a>
+      <a class="on" href="letter-list.html">本列表</a>
+      <a href="#">已发送空</a>
+      <a href="letter-spam.html">垃圾箱</a>
+    </div>
+    <div class="mails">
+      <h4>收件箱</h4>
+      <div class="m unread">
+        <b><a href="letter.html">卞同志你看完再删</a></b>
+        <span>素秋　8月19日</span>
+      </div>
+      <div class="m unread">
+        <b><a href="letter-youguang.html">栏齐就行，别写心情</a></b>
+        <span>尤广　8月21日</span>
+      </div>
+      <div class="m">
+        <b><a href="letter-receipt.html">系统：本周空单将记缺</a></b>
+        <span>综治值班　8月21日</span>
+      </div>
+      <div class="m">
+        <b><a href="letter-spam.html">优惠腰椎贴（垃圾）</a></b>
+        <span>不明　8月10日</span>
+      </div>
+    </div>
+    <div class="read">
+      <h3>（未选中邮件）</h3>
+      <p class="meta">左侧点开一封才有正文。本页不拼口径。</p>
+      <p>本工号绑定四封。素秋八月十九，本户自己送来的。综治值班早八那封，程序补发。尤广十六点四十，科内。康济堂腰椎贴，过滤器八月十日那阵松过，进了垃圾箱。</p>
+      <p>已发送今晚是空的。本帐号停了回复。邻巷旧单附件拖进本箱被规则挡过一回。容量别拿广告占。素秋那封点开过，附件里的旧址才会在值班台亮。</p>
+    </div>
+  </div>
+  <p class="ft">列表页不产生口径　点开正文再决定摘不摘</p>
+  <script src="js/state.js"></script>
+  <script>
+    HY.visit("letter-list", 1);
+  </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-corp-table-2005">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>粮库工会签到空表</title>
+  <link rel="stylesheet" href="css/corp-table-2005.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<table class="site" cellspacing="0" cellpadding="0">
+  <tr><td colspan="2" class="banner">粮库工会签到空表</td></tr>
+  <tr><td colspan="2" class="nav"><a href="desk.html">回柜</a></td></tr>
+  <tr>
+    <td class="left"><h4>清明</h4><p>南阶</p><p>空格</p></td>
+    <td class="main"><p id="mini" class="sm-mini"></p>
+<div id="shut" class="closed-box"><p>空表在考勤夹，本班没抽。</p><p><a href="desk.html">回柜</a></p></div>
+<div id="live" style="display:none">
+<p class="scroll">人数未齐。缪石桥催过两次。</p>
+<p>清明当天南阶要十二人签到。现写到场七。缺的格子他按缺勤画。</p>
+<p>表头印烈士园集体祭扫。表里没有十二区穴号。有人若当天去北坡，这张表仍空着。</p>
+<p><button type="button" class="sm-btn" id="vbtn">采信：清明当天两处要人</button></p>
+<p id="vok" class="sm-ok" style="display:none">第二层留下了。仍不许改号。</p>
+<p id="vbad" class="sm-warn" style="display:none">先留下私坟或集体码的一句，这格才读得懂。</p>
+<p><a href="kao-tong.html">催信</a>　<a href="door-kao.html">回门</a></p>
+</div>
+</td>
+  </tr>
+  <tr><td colspan="2" class="ft">工会办公桌旧表　虚印</td></tr>
+</table>
+
+<section class="pad"><p>空表是油印格子，七个勾是铅笔，五个空是红圈。表头集体祭扫印死了，十二区三个字在这张纸上不出现。有人清明去北坡，这表仍空，缪石桥按缺勤画。采信第二层以前，要先明白南阶和私坟不是一块地。画格不能当放行。</p></section>
+<script src="js/sanmen.js"></script>
+<script>
+Sanmen.paintMini(document.getElementById('mini'));
+Sanmen.gate('kao','shut','live');
+Sanmen.bindVerify(document.getElementById('vbtn'),'same-day',document.getElementById('vok'),document.getElementById('vbad'));
+
+</script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+/* classified-yellow
+ * 记忆 2005–2012 分类信息黄页。黄顶大搜索 + 左分类 180px + 信息列表。
+ * 页底 #fff8e1，12px 宋体，链 #00e。不要分类信息商标。
+ * 禁止：CSS Grid、圆角卡片、大号无衬线。
+ */
+html.skin-classified-yellow {
+  --bar: #f5c518;
+  --page: #fff8e1;
+  --link: #00e;
+  --btn: #c30;
+  --line: #e6d9a8;
+}
+html.skin-classified-yellow,
+html.skin-classified-yellow body,
+html.skin-classified-yellow div,
+html.skin-classified-yellow h4,
+html.skin-classified-yellow b,
+html.skin-classified-yellow p,
+html.skin-classified-yellow a,
+html.skin-classified-yellow span,
+html.skin-classified-yellow nav,
+html.skin-classified-yellow form,
+html.skin-classified-yellow input,
+html.skin-classified-yellow button {
+  margin: 0;
+  padding: 0;
+}
+html.skin-classified-yellow body {
+  background: var(--page);
+  color: #333;
+  font: 12px/1.7 SimSun, "Songti SC", "NSimSun", serif;
+}
+html.skin-classified-yellow a {
+  color: var(--link);
+  text-decoration: underline;
+}
+html.skin-classified-yellow a:hover { color: #c00; }
+html.skin-classified-yellow input,
+html.skin-classified-yellow button {
+  font: 12px SimSun, "Songti SC", serif;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+
+/* 黄顶大搜索 */
+html.skin-classified-yellow .top {
+  background: var(--bar);
+  border-bottom: 1px solid #e0b000;
+  padding: 10px 0;
+  zoom: 1;
+}
+html.skin-classified-yellow .top:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+html.skin-classified-yellow .top-inner {
+  width: 960px;
+  margin: 0 auto;
+  zoom: 1;
+}
+html.skin-classified-yellow .top b {
+  float: left;
+  height: 32px;
+  line-height: 32px;
+  font-size: 20px;
+  font-family: SimHei, "Heiti SC", SimSun, sans-serif;
+  color: #5a3d00;
+  margin-right: 16px;
+  letter-spacing: 1px;
+}
+html.skin-classified-yellow .top form,
+html.skin-classified-yellow .top .search {
+  float: left;
+  height: 32px;
+}
+html.skin-classified-yellow .top input {
+  float: left;
+  width: 420px;
+  height: 26px;
+  border: 1px solid #c90;
+  padding: 2px 8px;
+  background: #fff;
+  font-size: 14px;
+}
+html.skin-classified-yellow .top button {
+  float: left;
+  height: 32px;
+  margin-left: 6px;
+  padding: 0 18px;
+  color: #fff;
+  background: var(--btn);
+  border: 1px solid;
+  border-color: #e66 #900 #900 #e66;
+  font-size: 14px;
+  cursor: pointer;
+}
+html.skin-classified-yellow .top .city {
+  float: right;
+  height: 32px;
+  line-height: 32px;
+  color: #5a3d00;
+  padding-right: 4px;
+}
+
+/* 960：左分类 180 / 右列表 */
+html.skin-classified-yellow .layout {
+  width: 960px;
+  margin: 12px auto 0;
+  zoom: 1;
+}
+html.skin-classified-yellow .layout:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+html.skin-classified-yellow nav {
+  float: left;
+  width: 180px;
+  background: #fffdf2;
+  border: 1px solid var(--line);
+  padding: 8px 0 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html.skin-classified-yellow nav h4 {
+  margin: 0 8px 8px;
+  padding: 0 0 4px;
+  border-bottom: 1px solid var(--line);
+  font-size: 13px;
+  color: #5a3d00;
+}
+html.skin-classified-yellow nav a {
+  display: block;
+  padding: 4px 10px;
+  color: var(--link);
+  text-decoration: none;
+  line-height: 18px;
+}
+html.skin-classified-yellow nav a:hover {
+  background: #fff3c4;
+  text-decoration: underline;
+}
+html.skin-classified-yellow nav a.on {
+  background: #ffe082;
+  font-weight: 700;
+  color: #333;
+  text-decoration: none;
+}
+html.skin-classified-yellow .list {
+  float: right;
+  width: 768px;
+  background: #fff;
+  border: 1px solid var(--line);
+  padding: 0 0 8px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html.skin-classified-yellow .list h4 {
+  background: #fff3c4;
+  border-bottom: 1px solid var(--line);
+  padding: 6px 10px;
+  font-size: 12px;
+  color: #5a3d00;
+}
+html.skin-classified-yellow .hd-row,
+html.skin-classified-yellow .row {
+  zoom: 1;
+  border-bottom: 1px dashed #ddd;
+  padding: 7px 10px;
+  line-height: 18px;
+}
+html.skin-classified-yellow .hd-row:after,
+html.skin-classified-yellow .row:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+html.skin-classified-yellow .hd-row {
+  background: #faf6e6;
+  color: #888;
+  font-size: 12px;
+}
+html.skin-classified-yellow .row a {
+  float: left;
+  width: 560px;
+  color: var(--link);
+  overflow: hidden;
+  white-space: nowrap;
+}
+html.skin-classified-yellow .row span {
+  float: left;
+  width: 90px;
+  color: #888;
+  text-align: left;
+}
+html.skin-classified-yellow .hd-row span {
+  float: left;
+  width: 90px;
+}
+html.skin-classified-yellow .hd-row .t {
+  float: left;
+  width: 560px;
+}
+html.skin-classified-yellow .ft {
+  width: 960px;
+  margin: 10px auto 16px;
+  text-align: center;
+  color: #888;
+  font-size: 12px;
+}

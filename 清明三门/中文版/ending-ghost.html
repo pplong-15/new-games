@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-archive-simsun">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>备注退回</title>
+  <link rel="stylesheet" href="css/archive-simsun.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<article class="record">
+  <h1>条皖把单子甩回来</h1>
+  <div class="meta"><span>退</span><span>传说栏</span></div>
+  <p id="why"></p>
+  <p>性质写成鬼烧邻穴。园务那则写过：传说不作结案。他连第二栏都懒得看。</p>
+  <p>申柏若看见这张，会骂你们园里只会讲鬼。灰还在沟上。</p>
+  <p><a href="note.html">撤回，重填</a>　<a href="introduction.html" id="again">另开一夜</a></p>
+  <p><span class="stamp">退</span></p>
+</article>
+
+<section class="pad"><p>退回的单子会夹一张园务复印件，传说不作结案那句用红笔圈过。杭疏若是采信过闲聊帖，圈子会画得更重。申柏不要鬼，也不要申家私烧。灰还在沟上，备注等于没写。撤回重填不会清白板，另开一夜才会。</p></section>
+<script src="js/sanmen.js"></script>
+<script>
+
+var t="你在性质栏勾了鬼。";
+if(Sanmen.hasV("lore-ghost")) t+="传说帖你采信过，那句不能当结案。";
+else t+="即便没开传说页，勾鬼也一样退。";
+document.getElementById("why").textContent=t;
+document.getElementById("again").addEventListener("click",function(){ Sanmen.reset(); });
+
+</script>
+</body>
+</html>

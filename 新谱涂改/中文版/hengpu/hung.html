@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>衡谱堂·回单</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>衡谱堂回单</strong>
+      <div>
+        <a class="ghost-btn" href="desk.html">台面</a>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>已挂</h2>
+      <p>工号 GT-夜。条已挂在西房卷二第十四行边上。性质：世系待核。该行图层撤掉，改注外迁。明天抬进祠的是待核本，不是涂本。</p>
+      <p>岁修不在此条。理事会那本账我碰不到。你出的钱买回的是一行字，不是一口粮。</p>
+      <p>附件仍留在库里，当驳回件。六二年那张纸，今晚没人交得出原件。</p>
+      <p id="extra"></p>
+      <p>窗还没关。我按这条传。你回去睡。西房有人问，让他们来看挂条，别来问我信不信鬼。</p>
+    </div>
+    <p style="text-align:center;padding:24px">
+      <a href="../introduction.html">把字条收起来</a>
+    </p>
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    var el = document.getElementById("extra");
+    if (XP.has("v-draft")) {
+      el.textContent = "未定稿那句我看过。不写进条。未刊行的东西不能压正式续修。";
+    } else {
+      el.textContent = "馆里若还有更早的未定稿，今晚不必补。待核已经够抬。";
+    }
+  </script>
+</body>
+</html>

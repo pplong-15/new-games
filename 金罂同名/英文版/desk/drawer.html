@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk" data-seen="drawer">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Drawer slips</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/patches.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>Duty drawer</strong>
+      <div>
+        <a class="ghost-btn" href="hall.html">Back to book</a>
+        <a class="ghost-btn" href="handover.html">Handover book</a>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>Four slips</h2>
+      <p>FangYongshi stuffed them in as he left. Finish one before you lift the next. He wrote: do not let Qiuhe see.</p>
+    </div>
+    <div class="rulebox">
+      <p><strong>First slip</strong></p>
+      <p>Two identical names. Do not fill a hall number yet. Finish year and address. The people will come apart themselves.</p>
+    </div>
+    <div class="rulebox" id="n2" hidden>
+      <p><strong>Second slip</strong></p>
+      <p>Township board has a list. Old papers have death notices. Read each as each. Do not weld them into one life in your head.</p>
+    </div>
+    <div class="rulebox" id="n3" hidden>
+      <p><strong>Third slip</strong></p>
+      <p>That mother's name in her mouth is printed on only one of the placement copies. Whichever copy has the name is the one that belongs with her.</p>
+    </div>
+    <div class="rulebox" id="n4" hidden>
+      <p><strong>Fourth slip</strong></p>
+      <p>SouthHall matches WuWanxiang. On the WestHall side, Bonian already moved the jinying. Book not cleared. You can recommend SouthHall, or report the same name. Do not claim the WestHall niche tonight.</p>
+    </div>
+    <p class="tabs">
+      <a href="#" id="more">Lift the next slip</a>
+    </p>
+    <p class="foot-desk">Slip paper yellowed. Staple rusted on one leg.</p>
+  </div>
+  <script>
+    (function () {
+      var ids = ["n2", "n3", "n4"];
+      var i = 0;
+      document.getElementById("more").addEventListener("click", function (e) {
+        e.preventDefault();
+        if (i < ids.length) {
+          document.getElementById(ids[i]).hidden = false;
+          i += 1;
+          if (i >= ids.length) e.currentTarget.textContent = "There is no fifth slip";
+        }
+      });
+    })();
+  </script>
+  <script src="../js/seen.js"></script>
+</body>
+</html>

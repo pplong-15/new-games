@@ -1,0 +1,78 @@
+/* 本局补丁：不改皮肤骨架，只补名册表、静帧、窄屏。 */
+html.skin-service-cyan-desk .book {
+  width: 92%;
+  margin: 8px auto 18px;
+  border: 1px solid #b7d3dc;
+  border-collapse: collapse;
+  background: #fff;
+}
+html.skin-service-cyan-desk .book th,
+html.skin-service-cyan-desk .book td {
+  border: 1px solid #d7e6ea;
+  padding: 7px 8px;
+  font-size: 13px;
+  vertical-align: top;
+}
+html.skin-service-cyan-desk .book th { background: #e8f6f8; }
+html.skin-service-cyan-desk .goes label {
+  display: inline-block;
+  margin: 2px 8px 2px 0;
+  white-space: nowrap;
+}
+html.skin-service-cyan-desk .sms {
+  width: 80%;
+  margin: 0 auto 16px;
+  background: #f3fff4;
+  border: 1px solid #b7d7be;
+  padding: 10px 14px;
+  font-size: 13px;
+}
+html.skin-service-cyan-desk .slip {
+  width: 80%;
+  margin: 0 auto 16px;
+  background: #fff8e6;
+  border: 1px dashed #c4a15a;
+  padding: 12px 16px;
+  font-size: 13px;
+}
+html.skin-service-cyan-desk .foot-desk {
+  text-align: center;
+  color: #888;
+  font-size: 12px;
+  padding: 18px 8px 28px;
+}
+html.skin-service-cyan-desk .mood,
+html.skin-gov-redbar .mood,
+html.skin-news-portal-163 .mood,
+html.skin-corp-table-2005 .mood,
+html.skin-archive-simsun .mood,
+html.skin-discuz-board .mood,
+html.skin-baidu-baike .mood,
+html.skin-mail-web-2010 .mood {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  display: block;
+  margin: 0 0 10px;
+}
+html.skin-intro-manual .image-area img {
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+}
+html.skin-service-cyan-desk .endbox {
+  width: 80%;
+  margin: 16px auto;
+  background: #fff;
+  border: 1px solid #c5d8de;
+  padding: 14px 16px;
+}
+@media (max-width: 640px) {
+  html.skin-service-cyan-desk header { display: block; }
+  html.skin-service-cyan-desk #search-form { display: flex; margin: 8px 0 0; }
+  html.skin-service-cyan-desk .notice,
+  html.skin-service-cyan-desk .sms,
+  html.skin-service-cyan-desk .slip,
+  html.skin-service-cyan-desk .endbox { width: 92%; }
+  html.skin-service-cyan-desk .book { width: 96%; display: block; overflow-x: auto; }
+}

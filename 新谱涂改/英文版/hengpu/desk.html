@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hengpu Hall · Commission Desk</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>Hengpu Hall commission desk</strong>
+      <div>
+        <a class="ghost-btn" href="newpage.html">Page pending upload</a>
+        <a class="ghost-btn" href="compare.html">Comparison desk</a>
+        <a class="ghost-btn" href="slip.html">Slip mouth</a>
+        <form id="search-form" action="#" method="get" style="display:inline">
+          <input id="search-input" name="q" placeholder="page no.…">
+          <button type="submit">Find</button>
+        </form>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>Night desk</h2>
+      <p>Commission RQ-Xi-08. Client Rui Qiu. Editor Ge Ting. Upload window closes 23:00. After close, last version in the library goes.</p>
+      <p>Pending: West Branch Vol. II. Attachment column has HP-Bu-19-07. That file did not come in on the west port.</p>
+      <p>Comparison desk is open. Slip mouth is here. File with the difference blank, system bounces. Property, rite schedule, stop-the-carry: this desk does not take them.</p>
+    </div>
+    <div class="tabs">
+      <a href="newpage.html">Electronic page</a>
+      <a href="compare.html">Spread and compare</a>
+      <a href="../hukou/index.html">Old hukou link</a>
+    </div>
+    <table>
+      <thead><tr><th>Desk</th><th>State</th></tr></thead>
+      <tbody>
+        <tr><td><a href="newpage.html">West Branch Vol. II electronic page</a></td><td id="st-new">Not opened</td></tr>
+        <tr><td><a href="../library/scan1998.html">Holdings continuation copy (read the rules first)</a></td><td id="st-old">Not opened</td></tr>
+        <tr><td><a href="../hukou/move1987.html">Move register (look up the householder first)</a></td><td id="st-hk">Not opened</td></tr>
+        <tr><td><a href="../forum/fang.html">Town board, branch-head floor</a></td><td id="st-bbs">Not opened</td></tr>
+        <tr><td>Differences written</td><td id="st-cmp">None yet</td></tr>
+      </tbody>
+    </table>
+    <div class="notice">
+      <h2>Side shelf</h2>
+      <p>Contract extract, price list, east-branch receipt, Vol. II contents. Ingest slip, drawer scraps, old bounce sample. Not the pending page itself.</p>
+      <p>
+        <a href="contract.html">West eight extract</a> ·
+        <a href="pricelist.html">Price list</a> ·
+        <a href="east-receipt.html">East receipt</a> ·
+        <a href="xifang-toc.html">Vol. II contents</a><br>
+        <a href="upload-rule.html">Ingest slip</a> ·
+        <a href="ge-note.html">Drawer scraps</a> ·
+        <a href="old-bounce.html">Old bounce sample</a>
+      </p>
+    </div>
+    <div class="notice" id="ge-box">
+      <h2>Ge Ting note</h2>
+      <p id="ge-1">Both sides paid. I make the page from the last attachment in. Want a change, use the slip.</p>
+      <p id="ge-2" hidden></p>
+      <p id="ge-3" hidden></p>
+    </div>
+    <div class="notice">
+      <h2>Drawer</h2>
+      <p>He tore the paper himself. Read from the top. Do not pull the bottom scrap first.</p>
+      <details><summary>First scrap</summary><p>Spread the old line from the library and the new line on this desk. Do not start by shouting at the east branch.</p></details>
+      <details><summary>Second scrap</summary><p>Those two words in the side note — take them to the move register and match the reason. Do not skip the year.</p></details>
+      <details><summary>Third scrap</summary><p>Comparison desk: continuation on the left, electronic page on the right. Write the difference, then swap in the move register or the branch-head floor.</p></details>
+      <details><summary>Bottom scrap</summary><p>Dirt: painted from the attachment. Lineage: moved away. Main paper: the register. Last box: lineage only. Touch the hall-share box and it bounces.</p></details>
+    </div>
+    <p style="text-align:center;padding:16px;color:#666;font-size:12px">
+      <a href="../library/rules.html">Special collections</a> ·
+      <a href="../forum/list.html">Town board</a> ·
+      <a href="../introduction.html">Back to the note</a>
+    </p>
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    var b = XP.openedBits();
+    document.getElementById("st-new").textContent = b.neu ? "Opened" : "Not opened";
+    document.getElementById("st-old").textContent = b.old ? "Opened" : "Not opened";
+    document.getElementById("st-hk").textContent = b.hk ? "Opened" : "Not opened";
+    document.getElementById("st-bbs").textContent = b.bbs ? "Opened" : "Not opened";
+    var bits = [];
+    if (b.erase) bits.push("old vs new");
+    if (b.reason) bits.push("new vs move");
+    if (b.year) bits.push("thread vs new");
+    if (b.move) bits.push("old vs move");
+    document.getElementById("st-cmp").textContent = bits.length ? bits.join(", ") : "None yet";
+    if (b.erase) {
+      var g2 = document.getElementById("ge-2");
+      g2.hidden = false;
+      g2.textContent = "Difference is written. Not a smudge. Slip can take lineage. Not money.";
+    }
+    if (b.reason || b.year) {
+      var g3 = document.getElementById("ge-3");
+      g3.hidden = false;
+      g3.textContent = "Attachment year, and the move reason. Match them before you file. If they do not match, do not invent.";
+    }
+    document.getElementById("search-form").onsubmit = function (e) {
+      e.preventDefault();
+      var q = document.getElementById("search-input").value;
+      if (/compare|spread|pair|desk/i.test(q)) location.href = "compare.html";
+      else if (/slip|correction|hang|recommend/i.test(q)) location.href = "slip.html";
+      else if (/contract|eight|rq|commission|xi-08/i.test(q)) location.href = "contract.html";
+      else if (/price|fee|surcharge|ticket/i.test(q)) location.href = "pricelist.html";
+      else if (/receipt|huaichuan|hp-bu|19-07|bu-19/i.test(q)) location.href = "east-receipt.html";
+      else if (/toc|contents|bocen|volume|directory|catalog/i.test(q)) location.href = "xifang-toc.html";
+      else if (/ingest|upload|overwrite|attachment|rule/i.test(q)) location.href = "upload-rule.html";
+      else if (/drawer|tear|scrap|last.in/i.test(q)) location.href = "ge-note.html";
+      else if (/bounce|sample|north/i.test(q)) location.href = "old-bounce.html";
+      else if (/west|paint|vol|electronic|fourteen|14/i.test(q)) location.href = "newpage.html";
+      else alert("No such page number in the library.");
+    };
+  </script>
+</body>
+</html>

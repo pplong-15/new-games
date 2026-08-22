@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Today’s receipt</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/pick.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>Huaiyin stability  shift-bottom receipt</strong>
+      <div>
+        <a class="ghost-btn" href="introduction.html">Before-shift slip</a>
+        <a class="ghost-btn" href="desk.html">Night desk</a>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>Receipt prints from the upload text</h2>
+      <p id="why"></p>
+    </div>
+    <div class="notice" data-ending="paper">
+      <h3>Car went to Quyuan Road</h3>
+      <p>Script went by the paper. Driver took the address to Shouli’s, opened with which day Xiaoman moved into No. 17, whether the hukou book was brought. Bochuan nodded in the yard. Said this finally looks like settling it. Suqiu heard the word “inbound” and shut the kitchen door. Wanhe was written as a non-coresident relative. She did not come downstairs.</p>
+      <p>Xiaoman sat on the edge of a stool. Pencil still backward. Driver only hurried the adults to sign. You Guang later in the corridor: fields were full, good enough. Ticket went green after that.</p>
+      <p>That back-yard room: a name on the genealogy, share follows the name. You uploaded red paper and a backfill. The car asked from red paper and a backfill.</p>
+    </div>
+    <div class="notice" data-ending="hukou" hidden>
+      <h3>Window hung the guoji first</h3>
+      <p>You uploaded: no heir on the book, inbound column empty, person at Quyuan Road. Huifang checks hukou first. Bochuan flipped on the spot. Said the grid takes sides. Share frozen, written “pending mediation.” Shouli swallowed the school-fee talk. Said if they are not moving, he won’t mention money either.</p>
+      <p>Suqiu let a breath out, then feared the branch head would measure the wall again tomorrow. Ticket marked a second door. You Guang wrote on the receipt: pin the person first. Don’t do hall business for them.</p>
+    </div>
+    <div class="notice" data-ending="care" hidden>
+      <h3>Night, knock No. 17 first</h3>
+      <p>Script switched to who did the care, who comes to open. Wanhe turned on a light. Suqiu moved the medicine pot aside. Said ask her. Bochuan’s red paper got a line: does not match residence; clan paper only. “Pending check” on the genealogy stayed. Nobody crossed it out on the spot.</p>
+      <p>Xiaoman was not called. Driver wrote back at the station: this case does not look like a hukou move. You wrote coresidence into the system. The car went looking for the person who lives there.</p>
+    </div>
+    <div class="notice" data-ending="share" hidden>
+      <h3>Mediator booked for the share</h3>
+      <p>Title changed from guoji-and-raising to leftover back-yard room. Child taken out of the questions. Xiaoman went to school as usual. Bochuan wrote your job number on a cigarette box. Said the grid cannot handle business. Suqiu got a mediation day. Tape stopped for now.</p>
+      <p>You Guang said: you uploaded share, I send a share person. Don’t write the child’s name onto tomorrow’s car sheet.</p>
+    </div>
+    <div class="notice" data-ending="clash" hidden>
+      <h3>Questions fight themselves</h3>
+      <p>Same script asks which day Xiaoman moved over, and writes that at night Wanhe opens No. 17, and writes the inbound column empty. Shouli’s house got the first half. Suqiu’s house got the second. Both sides said the street is playing them.</p>
+      <p>Morning You Guang tossed the receipt on your desk: fields don’t match, section talks this afternoon. Ticket neither green nor bounced. Stuck on “script fight.” Both versions you uploaded, the system took. People cannot take them.</p>
+    </div>
+    <div class="notice" data-ending="timeout" hidden>
+      <h3>22:00 empty ticket bounced</h3>
+      <p>Fields not full. At the hour the system sent Zao-117 back. Score a miss. Bochuan’s phone will come again tomorrow morning. Suqiu’s letter is still in the box. Nobody extracted it.</p>
+      <p>You Guang does not swear. He wrote four characters’ worth: fill it tomorrow. Tonight you chose nothing for them.</p>
+    </div>
+    <p class="notice"><button type="button" id="again">Clear draft, start again from the before-shift slip</button></p>
+  </div>
+  <script src="js/state.js"></script>
+  <script>
+    HY.renderResult();
+    document.getElementById("again").onclick = function () {
+      HY.reset();
+      location.href = "introduction.html";
+    };
+  </script>
+</body>
+</html>

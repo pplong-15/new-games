@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>东岗园预约台值班</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<div id="wrap">
+  <header>
+    <strong>东岗园预约台</strong>
+    <div>
+      <a class="ghost-btn" href="clock.html">钟</a>
+      <a class="ghost-btn" href="board.html">白板</a>
+      <a class="ghost-btn" href="note.html">交备注</a>
+    </div>
+  </header>
+  <div class="notice">
+    <h2>当班柜面</h2>
+    <p id="mini" class="sm-mini"></p>
+    <p>本班只开三户。点门才占名额。交班清空已开，不清白板上的采信。</p>
+    <p><button type="button" class="sm-btn" id="hand">交班，收回纸页</button>
+       <a class="sm-btn" href="yuan-tiao.html">限开条</a>
+       <a class="sm-btn" href="qian-ban.html">上个班便条</a>
+       <a class="sm-btn" href="mail-inbox.html">值箱</a></p>
+  </div>
+  <div class="tabs">
+    <a href="desk.html">柜门</a>
+    <a href="gov-index.html">园务页</a>
+    <a href="min-su.html">清明须知</a>
+  </div>
+  <div class="door-list" id="doors"></div>
+  <p>浅青终端归预约台。假栏目点了也不进别的系统。</p>
+</div>
+
+<section class="pad"><p>预约台这台机器八扇门都在，本班只能揭三扇。名录和改号那些钮是摆设，点了人还在这页。园务页和清明须知钉在墙上，不占名额。交班一按，已开的格子清空，见过的户名还在板上，采信的句子还在。核销那沓多半要第二班才抽得出来。</p></section>
+<script src="js/sanmen.js"></script>
+<script>
+
+Sanmen.paintMini(document.getElementById("mini"));
+var order=["tousu","qu12","lie","song","xiao","kao","han","shuo"];
+var box=document.getElementById("doors");
+var s=Sanmen.load();
+order.forEach(function(id){
+  var a=document.createElement("a");
+  a.href="door-"+id+".html";
+  a.textContent=Sanmen.doorName(id)+(Sanmen.isOpen(id)?"　本班已开":(Sanmen.hasSeenDoor(id)?"　曾经见过":"　未开"));
+  if(Sanmen.isOpen(id)) a.className="used";
+  else if(s.opened.length>=3 && !Sanmen.isOpen(id)) a.className="locked";
+  box.appendChild(a);
+});
+document.getElementById("hand").addEventListener("click",function(){
+  Sanmen.handover();
+  location.href="desk.html";
+});
+
+</script>
+</body>
+</html>

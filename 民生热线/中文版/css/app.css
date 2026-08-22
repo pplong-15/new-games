@@ -1,0 +1,112 @@
+html.skin-winxp-luna { overflow-x: auto; }
+html.skin-winxp-luna #win-db {
+  left: 90px;
+  top: 18px;
+  width: 760px;
+  z-index: 4;
+}
+html.skin-winxp-luna #win-db .body {
+  background: #1b1d16;
+  color: #d8dcc0;
+  min-height: 420px;
+  max-height: 520px;
+  font: 12px/1.55 "SimSun", "Songti SC", monospace;
+  box-shadow: inset 1px 1px #000, inset -1px -1px #444;
+}
+html.skin-winxp-luna .db-head {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+  align-items: center;
+}
+html.skin-winxp-luna .db-head input {
+  flex: 1;
+  height: 22px;
+  background: #0c0d09;
+  color: #e6ecc8;
+  border: 1px solid #5a5e40;
+  font: 12px "SimSun", monospace;
+  padding: 0 6px;
+}
+html.skin-winxp-luna .db-meta {
+  color: #9aa07a;
+  margin: 0 0 8px;
+  font-size: 12px;
+}
+html.skin-winxp-luna .clip-row {
+  display: flex;
+  gap: 10px;
+  padding: 6px;
+  border: 1px solid #3a3e28;
+  margin-bottom: 6px;
+  cursor: pointer;
+  background: #14160f;
+}
+html.skin-winxp-luna .clip-row:hover { border-color: #8a8; }
+html.skin-winxp-luna .clip-row img {
+  width: 96px;
+  height: 72px;
+  object-fit: cover;
+  background: #000;
+  flex-shrink: 0;
+}
+html.skin-winxp-luna .clip-row b { color: #e8eeb8; font-weight: 700; }
+html.skin-winxp-luna .clip-row .who { color: #c2c89a; }
+html.skin-winxp-luna #win-view {
+  left: 140px;
+  top: 40px;
+  width: 680px;
+  z-index: 6;
+}
+html.skin-winxp-luna #win-view .body {
+  background: #111;
+  color: #ddd;
+  max-height: 500px;
+}
+html.skin-winxp-luna #win-view img {
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 10px;
+}
+html.skin-winxp-luna #win-view .osd {
+  color: #8a8;
+  margin: 0 0 8px;
+  font: 12px "SimSun", monospace;
+}
+html.skin-winxp-luna #win-view .said {
+  white-space: pre-wrap;
+  font: 14px/1.7 "SimSun", "Songti SC", serif;
+  color: #eee;
+}
+html.skin-winxp-luna #win-note,
+html.skin-winxp-luna #win-help,
+html.skin-winxp-luna #win-cut {
+  left: 220px;
+  top: 70px;
+  width: 480px;
+  z-index: 5;
+}
+html.skin-winxp-luna #win-cut textarea,
+html.skin-winxp-luna #win-cut .end-btn {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+html.skin-winxp-luna .end-btn[disabled] { color: #888; cursor: not-allowed; }
+html.skin-winxp-luna #ending {
+  display: none;
+  position: absolute;
+  inset: 0;
+  background: #000;
+  color: #ccc;
+  z-index: 20;
+  padding: 48px 64px;
+  font: 16px/1.8 "SimSun", "Songti SC", serif;
+  overflow: auto;
+}
+html.skin-winxp-luna #ending.show { display: block; }
+html.skin-winxp-luna #ending h2 { color: #fff; font-size: 20px; }
+html.skin-winxp-luna #ending a { color: #9c9; }

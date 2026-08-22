@@ -1,0 +1,180 @@
+/* portal-2006
+ * 记忆 2004–2009 网址导航 / 链铺（hao123 一类），不是现代导航卡片。
+ * 白底、960、红绿分类条、12px 下划线蓝链、顶栏搜索 + 天气占位。
+ * 禁止：CSS Grid、圆角大卡、品牌 Logo。
+ */
+html.skin-portal-2006 {
+  --link: #00e;
+  --line: #cde;
+  --red: #c30;
+  --green: #390;
+  --blue: #36c;
+}
+html.skin-portal-2006,
+html.skin-portal-2006 body,
+html.skin-portal-2006 div,
+html.skin-portal-2006 h1,
+html.skin-portal-2006 b,
+html.skin-portal-2006 p,
+html.skin-portal-2006 a,
+html.skin-portal-2006 form,
+html.skin-portal-2006 input,
+html.skin-portal-2006 button,
+html.skin-portal-2006 table,
+html.skin-portal-2006 td,
+html.skin-portal-2006 th {
+  margin: 0;
+  padding: 0;
+}
+html.skin-portal-2006 body {
+  background: #fff;
+  color: #000;
+  font: 12px/1.7 SimSun, "Songti SC", "NSimSun", serif;
+}
+html.skin-portal-2006 a {
+  color: var(--link);
+  text-decoration: underline;
+}
+html.skin-portal-2006 a:visited { color: #00e; }
+html.skin-portal-2006 a:hover { color: #c00; }
+html.skin-portal-2006 input,
+html.skin-portal-2006 button {
+  font: 12px SimSun, "Songti SC", serif;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+
+/* 顶栏：站名 + 搜索 + 天气 */
+html.skin-portal-2006 .top {
+  width: 960px;
+  margin: 0 auto;
+  padding: 8px 0 6px;
+  border-bottom: 2px solid #39c;
+  background: #e8f4ff;
+  zoom: 1;
+}
+html.skin-portal-2006 .top:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+html.skin-portal-2006 .top b {
+  float: left;
+  height: 24px;
+  line-height: 24px;
+  padding: 0 10px 0 8px;
+  font-size: 16px;
+  color: #c30;
+  font-family: SimHei, "Heiti SC", SimSun, sans-serif;
+}
+html.skin-portal-2006 .search {
+  float: left;
+  height: 24px;
+  padding-top: 1px;
+}
+html.skin-portal-2006 .search input {
+  float: left;
+  width: 220px;
+  height: 18px;
+  border: 1px solid #7aa;
+  padding: 2px 4px;
+  background: #fff;
+}
+html.skin-portal-2006 .search button {
+  float: left;
+  height: 24px;
+  margin-left: 4px;
+  padding: 0 12px;
+  color: #fff;
+  background: #39c;
+  border: 1px solid;
+  border-color: #6cf #036 #036 #6cf;
+  cursor: pointer;
+}
+html.skin-portal-2006 .weather {
+  float: right;
+  height: 24px;
+  line-height: 24px;
+  padding-right: 8px;
+  color: #333;
+  font-size: 12px;
+}
+
+/* 分类链铺 960，.blk 一行一块，不是卡片 */
+html.skin-portal-2006 .cats {
+  width: 960px;
+  margin: 8px auto 0;
+}
+html.skin-portal-2006 .blk {
+  border: 1px solid var(--line);
+  margin: 0 0 6px;
+  zoom: 1;
+  background: #fff;
+}
+html.skin-portal-2006 .blk:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+html.skin-portal-2006 .blk .hd,
+html.skin-portal-2006 table.cats th {
+  float: left;
+  width: 72px;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  padding: 8px 0;
+  line-height: 18px;
+}
+html.skin-portal-2006 .blk .bd,
+html.skin-portal-2006 table.cats td {
+  margin-left: 72px;
+  padding: 6px 10px 4px;
+  line-height: 22px;
+  font-size: 12px;
+}
+html.skin-portal-2006 .blk .bd a,
+html.skin-portal-2006 table.cats a {
+  margin-right: 10px;
+  white-space: nowrap;
+}
+html.skin-portal-2006 .c1 { background: #c30; }
+html.skin-portal-2006 .c2 { background: #390; }
+html.skin-portal-2006 .c3 { background: #36c; }
+html.skin-portal-2006 .c4 { background: #c60; }
+html.skin-portal-2006 .c5 { background: #066; }
+html.skin-portal-2006 .c6 { background: #909; }
+
+html.skin-portal-2006 table.cats {
+  width: 960px;
+  margin: 8px auto;
+  border-collapse: collapse;
+}
+html.skin-portal-2006 table.cats th,
+html.skin-portal-2006 table.cats td {
+  border: 1px solid var(--line);
+  float: none;
+  margin: 0;
+}
+html.skin-portal-2006 table.cats th {
+  width: 72px;
+  padding: 8px 0;
+}
+html.skin-portal-2006 table.cats td {
+  padding: 6px 10px;
+}
+
+html.skin-portal-2006 .ft {
+  width: 960px;
+  margin: 10px auto 16px;
+  text-align: center;
+  color: #888;
+  font-size: 12px;
+  border-top: 1px solid #ddd;
+  padding-top: 8px;
+}

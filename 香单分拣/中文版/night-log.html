@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>当班流水</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>福泽网单　流水</strong>
+      <div>
+        <a class="ghost-btn" href="desk.html">回队列</a>
+        <form id="search-form" action="search-closed.html" method="get" style="display:inline">
+          <input id="search-input" name="q" placeholder="夜间已关">
+          <button type="submit">检索</button>
+        </form>
+      </div>
+    </header>
+    <div class="notice">
+      
+      <h2>本机流水</h2>
+<p>打开过的页、写过的建议，记在下面。刷新不丢。交了回执就不能改栏。</p>
+<p>流水不是给客户看的。严秋禾、童霜、巢晚晴若早上打电话，米穗按你写下的那一行回。不按你心里觉得谁可怜。</p>
+<p>纪家那封若只写「再看」，晨班会当成没写。日期、桌次、谁不同意，写上。心情可以留在肚子里。</p>
+<p>何家、烧衣、续灯若已写，也会列在下面。别回头改。提交即锁。交回执之前也锁。</p>
+<ul id="logul"></ul>
+    </div>
+  </div>
+  <p class="pageft">流水只给当班看　38/40</p>
+  <script src="js/state.js"></script>
+  <script>
+    FZ.visit('night-log');
+    if (!FZ.guard('night-log.html')) {}
+    
+    var s = FZ.load();
+    var ul = document.getElementById("logul");
+    FZ.ORDER.forEach(function (id) {
+      var t = FZ.TICKETS[id];
+      var li = document.createElement("li");
+      if (s.sorted[id]) {
+        var d = s.sorted[id];
+        li.textContent = t.no + "　" + (d.action === "hold" ? "暂扣" : "放行") + "　" + ({zheng:"正祀",gu:"孤魂席",deng:"供灯",none:"不接桌"}[d.desk]||"") + "　" + (d.note||"（空）");
+      } else if (s.opened[id]) {
+        li.textContent = t.no + "　已打开，未写";
+      } else {
+        li.textContent = t.no + "　尚未弹入或未开";
+      }
+      ul.appendChild(li);
+    });
+    
+  </script>
+</body>
+</html>

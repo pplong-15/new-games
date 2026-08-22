@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Webmaster space log in</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/shots.css">
+  <script src="../js/tokens.js"></script>
+  <script src="../js/keyword-search.js"></script>
+  <script>document.addEventListener("DOMContentLoaded",function(){QTG.grant("t_loginpage");});</script>
+</head>
+<body class="login-page">
+  <div id="wrap">
+    <header>
+      <strong>QiaotouPort · Webmaster space</strong>
+      <form id="search-form" action="../search-results.html" method="get">
+        <input id="search-input" name="q" type="text" placeholder="Keyword" maxlength="32">
+        <button type="submit">Search local</button>
+      </form>
+    </header>
+    <form class="login-box" id="login-box" action="#" method="post">
+      <h1>Log in</h1>
+      <label for="user">Account</label>
+      <input id="user" name="user" type="text" autocomplete="off">
+      <label for="pass">Password</label>
+      <input id="pass" name="pass" type="password" autocomplete="off">
+      <button type="submit">Log in</button>
+      <p class="hint" id="login-hint">Account is the webmaster's registered name. Don't try a phone number.</p>
+    </form>
+  </div>
+  <p style="text-align:center;font:12px SimSun,serif;color:#666">Qiaotou Desk　counter unattended</p>
+  <script>
+  function compactLogin(s) {
+    return String(s == null ? "" : s).trim().replace(/[\s'\-]/g, "").toLowerCase();
+  }
+  document.getElementById("login-box").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var u = compactLogin(document.getElementById("user").value);
+    var p = compactLogin(document.getElementById("pass").value);
+    var h = document.getElementById("login-hint");
+    var webmaster = u === "liushiqiao" || u === "刘石桥";
+    var passOk = p === "dontask" || p === "勿问";
+    if (webmaster && passOk) {
+      QTG.grant("t_login");
+      location.href = "space.html";
+      return;
+    }
+    if (webmaster && !passOk) {
+      h.textContent = "Account matches. That isn't a phone number, and it isn't a water pipe.";
+      return;
+    }
+    if (u === "电工刘石桥" || u === "electricianliushiqiao" || u === "shunzi" || u === "顺子" || u === "wuqiu" || u === "吴秋") {
+      h.textContent = "That person cannot enter the webmaster space.";
+      return;
+    }
+    h.textContent = "Account or passphrase doesn't match.";
+  });
+  </script>
+</body>
+</html>

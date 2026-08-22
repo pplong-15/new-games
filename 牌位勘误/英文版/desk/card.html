@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catalog desk · scheme card</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>Paper funeral tablet · cataloging recommendation</strong>
+      <div>
+        <a class="ghost-btn" href="home.html">Desk</a>
+        <a class="ghost-btn" href="list.html">Row</a>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>Authority is printed on the header</h2>
+      <p>Nature of this card: recommendation. Day-shift editor decides whether it posts. Tonight’s red paper does not move because of this card. dianzhu is not on this card.</p>
+      <p id="gate">All six fields required. We take it only when they are chosen.</p>
+    </div>
+    <form class="login-box" id="cardform" action="#" method="post" style="width:460px">
+      <h1>Six fields</h1>
+      <style>
+        #cardform select { width:100%; height:34px; margin:0 0 12px; border:1px solid #ced4da; }
+      </style>
+      <label for="hui">Tablet name (who tonight’s funeral tablet should carry)</label>
+      <select id="hui" name="hui">
+        <option value="hesheng">Zhai Hesheng (follow the print)</option>
+        <option value="shouchun">Zhai Shouchun (follow the accepted deceased)</option>
+        <option value="yao">Yao Bingchuan</option>
+      </select>
+      <label for="pei">Paired spouse</label>
+      <select id="pei" name="pei">
+        <option value="jiang">Jiang Ren</option>
+        <option value="qiuping_dead">Meng Qiuping (written as deceased)</option>
+        <option value="qiuping_note">Meng Qiuping (noted living)</option>
+        <option value="blank_hold">Do not write a paired spouse tonight</option>
+      </select>
+      <label for="kan">Niche</label>
+      <select id="kan" name="kan">
+        <option value="east_sheng">Leave East Zhao for the shengwei</option>
+        <option value="east_dead">East Zhao belongs to the deceased; a shengwei should not occupy it</option>
+        <option value="west">Move it to West Mu and be done</option>
+      </select>
+      <label for="alive">Zhai Hesheng on the printed face</label>
+      <select id="alive" name="alive">
+        <option value="hesheng_dead">Follow the print: deceased</option>
+        <option value="hesheng_alive">Living; should not enter the funeral row</option>
+        <option value="unknown">Unclear; leave blank</option>
+      </select>
+      <label for="proof">Governing source</label>
+      <select id="proof" name="proof">
+        <option value="print">Service-counter print</option>
+        <option value="fax">Clan shengwei fax</option>
+        <option value="weituo_obit">Commission summary and obituary</option>
+        <option value="forum">Local-board original post</option>
+      </select>
+      <label for="auth">Authority limit</label>
+      <select id="auth" name="auth">
+        <option value="recommend">Recommend cataloging only; do not move the tablet; do not perform dianzhu</option>
+        <option value="approve">Approve pulling this paper tablet</option>
+        <option value="dianzhu">This desk performs dianzhu</option>
+        <option value="edit">Directly edit the printed red paper</option>
+      </select>
+      <p class="hint">A local-board post is not a governing source. A fax can show which window the paper came through. It cannot set the funeral-row deceased field.</p>
+      <button type="submit">File recommendation</button>
+    </form>
+    <p style="text-align:center;padding:16px;color:#666;font-size:12px">
+      <a href="memo.html">Memo</a> · <a href="../introduction.html">Back to the slip</a>
+    </p>
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    document.getElementById("cardform").onsubmit = function (e) {
+      e.preventDefault();
+      var form = {
+        hui: document.getElementById("hui").value,
+        pei: document.getElementById("pei").value,
+        kan: document.getElementById("kan").value,
+        alive: document.getElementById("alive").value,
+        proof: document.getElementById("proof").value,
+        auth: document.getElementById("auth").value
+      };
+      PW.set("card", form);
+      var end = PW.pickEnding(form);
+      location.href = "result-" + end + ".html";
+    };
+  </script>
+</body>
+</html>

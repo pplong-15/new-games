@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" class="skin-service-cyan-desk" data-seen="claim">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claim recommendation form</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/patches.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>Jinying Hall night machine</strong>
+      <div>
+        <a class="ghost-btn" href="hall.html">Back to book</a>
+        <form id="search-form" action="../search-results.html" method="get">
+          <input id="search-input" name="q" placeholder="match one more field">
+          <button type="submit">Lookup</button>
+        </form>
+      </div>
+    </header>
+    <div class="notice">
+      <h2>Claim recommendation</h2>
+      <p>Authority: recommend. QiuWanqiu collects this sheet, not an approval stamp. The interred line is already reported by the person present as LinAsheng. Night shift cannot change that name. You only choose how to handle the two-row clash.</p>
+    </div>
+    <div class="oral claim-grid" id="formbox">
+      <p>Present: LinQiuhe. Badge: Chu Ci. Date: 2026-08-21 night</p>
+      <p>Pick one line and submit. After submit the machine locks the form. No take-backs.</p>
+      <button type="button" data-end="west">Recommend WestHall 07</button>
+      <button type="button" data-end="south">Recommend SouthHall 22</button>
+      <button type="button" data-end="wait">Hold tonight. No hall number.</button>
+      <button type="button" data-end="report">Report the same-name clash. No claim tonight.</button>
+    </div>
+    <div class="endbox" id="endbox" hidden></div>
+    <p class="foot-desk">Recommendation stays on this machine. Not sent off-site.</p>
+  </div>
+  <script src="../js/seen.js"></script>
+  <script src="../js/keyword-search.js"></script>
+  <script>
+    (function () {
+      function seen() {
+        try { return JSON.parse(localStorage.getItem("jy_seen-en") || "{}"); }
+        catch (e) { return {}; }
+      }
+      function reason(key, s) {
+        if (key === "west") {
+          if (s.mv2018 || s.certW) return "You heard Qiuhe name PersimmonFlat first, saw WestHall still posted, and locked the hall number. The MoveOut line you either waved off or treated as still under lease.";
+          return "Qiuhe said they moved in 1996, and you filed the WestHall row. WuWanxiang was still in her mouth. You did not take those three syllables to the lessee column.";
+        }
+        if (key === "south") {
+          if (s.obit16 || s.certS) return "You matched WuWanxiang to the SouthHall lessee, birth year 1951, address EastLane. Even if WestHall is still posted, it should not be written for tonight's daughter.";
+          return "You picked SouthHall. That row is cremation-direct and under lease. It looks more like a contract that can still renew than a posted name on WestHall.";
+        }
+        if (key === "wait") {
+          if (s.obit16 && s.mv2018) return "You had matched the fields, more or less, and still would not land a hall number. Once the precheck hour passes, SouthHall goes pending clearance. QiuWanqiu will mark you late.";
+          return "Both rows say LinAsheng. You chose not to write tonight. Qiuhe will sit in that chair with no paper. Precheck will treat it as a waiver.";
+        }
+        if (s.errata) return "You saw the register once merge two houses into one line. You would not decide for day shift. You pushed the clash to QiuWanqiu. She will not like it. The accident sheet will not hit your badge first.";
+        return "You admitted these two rows cannot close on a name alone, and asked day shift to take it. Qiuhe gets no hall number tonight. She has to come back with her mother's papers.";
+      }
+      function after(key) {
+        if (key === "west") return "At first light Bonian's side will ask who agreed to claim WestHall out again. The contract runs as a breach. Deposit and accident sheet read Chu Ci. Even if Qiuhe is glad tonight, she claimed the wrong house. Whether a jinying is still in that niche is not established by these copies.";
+        if (key === "south") return "Qiuhe can take this recommendation and file WuWanxiang's renewal authorization. The WestHall row stays posted until the receipt is complete and the book is cleared. You did not touch a cabinet. That is also the edge of night-shift authority.";
+        if (key === "wait") return "You did not write the wrong hall number. The lease is now at risk. After pending clearance starts, claiming it back means a day-shift rush job. FangYongshi's book already said: not writing is also a kind of writing.";
+        return "The same-name clash went into the director's box. Day shift will match birth year and MoveOut, then call Qiuhe again. You can leave this shift. The person in the chair has to spend another night in the county.";
+      }
+      function render(key) {
+        var s = seen();
+        var titles = { west: "Recommendation filed — WestHall 07", south: "Recommendation filed — SouthHall 22", wait: "Recommendation filed — hold", report: "Recommendation filed — same-name report" };
+        var box = document.getElementById("endbox");
+        box.hidden = false;
+        box.innerHTML = "<h3>" + titles[key] + "</h3><p>" + reason(key, s) + "</p><p>" + after(key) + "</p><p><a href=\"hall.html\">Back to the niche book</a>　<a href=\"#\" id=\"again\">Void and reopen (this machine only)</a></p>";
+        document.getElementById("formbox").style.opacity = "0.45";
+        var a = document.getElementById("again");
+        if (a) a.onclick = function (e) {
+          e.preventDefault();
+          localStorage.removeItem("jy_end-en");
+          location.reload();
+        };
+      }
+      var saved = localStorage.getItem("jy_end-en");
+      if (saved) render(saved);
+      var buttons = document.querySelectorAll("#formbox button");
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener("click", function () {
+          if (localStorage.getItem("jy_end-en")) return;
+          var key = this.getAttribute("data-end");
+          localStorage.setItem("jy_end-en", key);
+          render(key);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

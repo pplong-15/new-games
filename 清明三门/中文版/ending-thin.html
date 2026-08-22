@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>备注退回再写</title>
+  <link rel="stylesheet" href="css/service-cyan-desk.css">
+  <link rel="stylesheet" href="css/game-extra.css">
+</head>
+<body>
+
+<div id="wrap">
+  <header><strong>退回</strong><div><a class="ghost-btn" href="note.html">重填</a></div></header>
+  <div class="notice">
+    <h2>这几栏还对不上</h2>
+    <p id="mini" class="sm-mini"></p>
+    <p id="hint" class="sm-warn"></p>
+    <p>不公布该勾哪一格。已采信的句子还在板上。你可以交班再开户，或者回去改栏。</p>
+    <p><a class="sm-btn" href="note.html">重填</a> <a class="sm-btn" href="desk.html">回柜</a> <a class="sm-btn" href="board.html">看板</a></p>
+  </div>
+</div>
+
+<section class="pad"><p>退回不是把夜班作废。杭疏还可以回柜再占三户，或者只改栏。条皖不代填。性质写成申家私烧，申柏会再堵门。码写成十二区自家约的，户档对不上。货写成南阶，回执对不上。处置只要还留在备注里，就还有机会改。</p></section>
+<script src="js/sanmen.js"></script>
+<script>
+
+Sanmen.paintMini(document.getElementById("mini"));
+document.getElementById("hint").textContent = Sanmen.thinHint();
+
+</script>
+</body>
+</html>

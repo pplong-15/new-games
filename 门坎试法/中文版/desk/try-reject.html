@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>试记被打回</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/desk-extra.css">
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <strong>打回</strong>
+      <div><a class="ghost-btn" href="home.html">回台</a></div>
+    </header>
+    <div class="mk-err" id="why">按值班法，这条过门不能收作有效。</div>
+    <div class="notice">
+      <h2>留下了</h2>
+      <p>临时填写清掉。已证实还在：法被撞过一次。你按刷新，这条不会没。交班预览也清不掉。</p>
+      <p>打回只证明法会咬人，不定门口那队口头是红是白。红白要另看来源。</p>
+    </div>
+    <div id="chips"></div>
+    <p class="mk-side">
+      <a href="try.html">再试一条</a>
+      <a href="record.html">去看格子</a>
+      <a href="advise.html">去写建议</a>
+      <a href="#" id="ref">刷新本页</a>
+    </p>
+    <p class="mk-side">05/44</p>
+
+  </div>
+  <script src="../js/engine.js"></script>
+  <script>
+    var k = MK.get("last-try");
+    var box = document.getElementById("why");
+    if (k === "step") box.textContent = "按值班法，踩踏不得记为有效过门。本台已记下：法被撞过一次。";
+    if (k === "pole") box.textContent = "丧事抬棺，杠不得擦门槛。本台已记下：法被撞过一次。";
+    document.getElementById("chips").innerHTML = MK.chipsHtml();
+    document.getElementById("ref").onclick = function (e) { e.preventDefault(); location.reload(); };
+</script>
+<p class="mk-side">打回不是罚你。罚的话会毁档。本台偏要把撞过的留下，让你交差时有东西可指。指完仍只是建议。匙在东厢，顾扃早上才肯看回单。</p>
+<p class="mk-side">刷新按钮就在旁边。按了，黄条子还在。还在你才肯信本台不是吓唬人。</p>
+</body>
+</html>
