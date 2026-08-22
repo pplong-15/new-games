@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qingshi Town Post Office · Registry Dispatch System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="boot" class="screen">
+  <div class="boot-log" id="boot-log"></div>
+</div>
+<div id="login" class="screen hidden">
+  <div class="login-box">
+    <div class="login-title">Qingshi Town Post Office · Registry Dispatch System v2.31</div>
+    <div class="login-body">
+      <h1>Night-shift terminal login</h1>
+      <div class="sub">Local LAN · operator privilege</div>
+      <div class="row"><label>Staff ID</label><input id="login-id" value="0918" readonly></div>
+      <div class="row"><label>Name</label><input value="Lin Yuan" readonly></div>
+      <div class="row"><label>Password</label><input type="password" value="******" readonly></div>
+      <div class="login-actions">
+        <button class="btn btn-pri" type="button" data-act="login">Log in</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="desk" class="screen hidden">
+  <div class="win">
+    <div class="titlebar">
+      <span class="brand">Qingshi Town Post Office · Registry Dispatch System</span>
+      <span class="ver">v2.40-full</span>
+      <span class="spacer"></span>
+      <span class="chip" id="night-chip">Night 1</span>
+      <span class="chip" id="clock-chip"><span id="clock-date">08-20</span> <b id="clock-time">20:00</b></span>
+      <div class="speedbar" title="Game-clock speed">
+        <button type="button" data-act="speed" data-v="1" class="on">×1</button>
+        <button type="button" data-act="speed" data-v="2">×2</button>
+        <button type="button" data-act="speed" data-v="5">×5</button>
+        <button type="button" data-act="speed" data-v="10">×10</button>
+        <button type="button" data-act="pause" id="btn-pause">Pause</button>
+      </div>
+      <span class="chip" id="pending-chip">Pending <span id="pending-n">0</span></span>
+      <span class="chip">Lin Yuan 0918</span>
+    </div>
+    <div class="menubar">
+      <button type="button" data-act="menu-sys">System</button>
+      <button type="button" data-act="menu-help">Duty notes</button>
+      <button type="button" data-act="restart">Restart shift</button>
+    </div>
+    <div class="tabs" id="tabs"></div>
+    <div class="work" id="work">
+      <section class="station on" id="st1"></section>
+      <section class="station" id="st2"></section>
+      <section class="station" id="st3"></section>
+      <section class="station" id="st4"></section>
+      <section class="station" id="st5"></section>
+      <section class="station" id="st6"></section>
+    </div>
+    <div class="statusbar">
+      <span>Link: <b>Local</b></span>
+      <span>Queue: <b id="sb-q">0</b></span>
+      <span>Done: <b id="sb-done">0</b></span>
+      <span id="sb-msg">Night scan desk ready</span>
+      <span class="spacer"></span>
+      <span>When the queue is idle, speed up the clock</span>
+    </div>
+  </div>
+  <div class="zhao hidden" id="zhao">
+    <div class="zt"><span>Internal IM · Zhao Deming</span><button type="button" class="iconbtn" data-act="zhao-hide">Close</button></div>
+    <div class="zb" id="zhao-body"></div>
+  </div>
+</div>
+<div id="ending" class="screen hidden">
+  <div class="ending-wrap" style="display:flex;align-items:center;flex-wrap:wrap;justify-content:center;">
+    <div class="polaroid">
+      <div class="pic"><div class="p1"></div><div class="p2"></div></div>
+      <div class="cap">Village gate · 1998  (phone album)</div>
+    </div>
+    <div class="ending-copy" id="ending-copy"></div>
+  </div>
+</div>
+<div id="modal"></div>
+<div class="toast" id="toast"></div>
+
+
+  <script src="world-content.js"></script>
+</body>
+</html>

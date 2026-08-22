@@ -1763,7 +1763,7 @@ function showEnding(id) {
   state.screen = "ending";
   var html = "";
   if (id === "A") {
-    html = "<h2>Ending A　Clean records</h2>" +
+    html = "<h2>Clean records</h2>" +
       "<p>Night three ended. The system went quiet. The returns bin was empty. No more return letters. No more anomalous signatures. Lin Yuan worked a 'normal' night shift for the first time — nothing happened. Scan, sort, file.</p>" +
       "<p>Next morning Zhao Deming came for handover. He glanced at the anomaly log — blank. He said, 'You pick it up fast. We'll make you permanent this week.'</p>" +
       "<p>Lin Yuan asked, 'What about the Qingshi Village records?'</p>" +
@@ -1772,7 +1772,7 @@ function showEnding(id) {
       "<p>He became a good operator. Every night shift after that went the same way — no anomalies. No problems.</p>" +
       "<p>Three years later Zhao Deming retired. Lin Yuan took over as postmaster. He did a lot in the job — digitized postal operations, got parcels into the villages. He was named an advanced worker. Nobody knew that on his first night shift, there had been a person in the system named Shen Xiulan.</p>";
   } else if (id === "B") {
-    html = "<h2>Ending B　Blurred boundary</h2>" +
+    html = "<h2>Blurred boundary</h2>" +
       "<p>Lin Yuan spent three night shifts handling records one by one. He looked at each file — name, age, last active date. He chose by his own judgment: some records he marked 'Active' (visible again), some he confirmed cancelled (admitting death).</p>" +
       "<p>He did not process his own record. He did not unbind from Liu Xiaomei and Chen Siyuan.</p>" +
       "<p>A week later the system popped: operator Lin Yuan record has a status anomaly (shared bind not released). Marked [Pending review].</p>" +
@@ -1783,7 +1783,7 @@ function showEnding(id) {
       "<p>Unlike the others, his data was not fully purged. His record is bound to two other people. The system cannot cancel him alone without affecting Liu Xiaomei and Chen Siyuan. He became a hard block in the system — cannot be cleaned, cannot run normally, stuck forever at 'Cancelled (link not released)'.</p>" +
       "<p>That is his ending: he became someone the system cannot digest. Same as Wu Guifang's data.</p>";
   } else if (id === "C") {
-    html = "<h2>Ending C　Successor</h2>" +
+    html = "<h2>Successor</h2>" +
       "<p>After all operations completed, the system was quiet for thirty seconds. Then Lin Yuan got a system message:</p>" +
       "<p>'Detected operator [Lin Yuan] has completed archive processing of all anomalous records at this office.<br>Detected historical operation anomaly on former postmaster [Zhao Deming] staff ID.<br>System judgment: Zhao Deming is no longer fit to continue as postmaster.<br>Operator Lin Yuan qualifies for postmaster privilege.</p>" +
       "<p>Accept postmaster privilege transfer? [Accept] [Refuse]'</p>" +
@@ -1803,7 +1803,7 @@ function showEnding(id) {
       "<p><button class='btn btn-danger' type='button' data-act='del-photo'>Delete photo</button> " +
       "<button class='btn' type='button' data-act='keep-photo'>Keep it</button></p>";
   } else if (id === "D") {
-    html = "<h2>Ending D　The third child</h2>" +
+    html = "<h2>The third child</h2>" +
       "<p>Operation confirmed. Shared-code bind redirected to reserved address [FF-ARCHIVE].<br>Records affected: 3.<br>Current status: sealed.<br>Note: sealed records cannot be retrieved, cannot be modified, cannot be cancelled.<br>These records will persist until the system stops running.</p>" +
       "<p>Then a second message:</p>" +
       "<p>Bind redirect complete. Operator [Lin Yuan] and linked records [Chen Siyuan], [Liu Xiaomei] moved to reserved partition [FF-ARCHIVE].<br>Record attribute: permanently sealed (not retrievable, not overwritable, not cancellable).</p>" +
