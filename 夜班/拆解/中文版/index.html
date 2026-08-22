@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+  <title>夜班 · 恒灯便利</title>
+  <meta name="description" content="半夜看店。来的客人，越看越不像活人。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect fill='%230b0f0d' width='64' height='64' rx='12'/%3E%3Ccircle cx='32' cy='32' r='16' fill='none' stroke='%2338e07a' stroke-width='3'/%3E%3Ctext x='32' y='38' text-anchor='middle' font-size='14' fill='%2338e07a' font-family='sans-serif'%3E24%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <div class="desk" id="desk">
+    <div class="phone" id="phone">
+      <div class="screen" id="screen">
+        <div class="view" id="view">
+          <img class="scene" id="scene" alt="" />
+          <div class="rain" id="rain"></div>
+          <div class="grain"></div>
+          <div class="vignette"></div>
+          <div class="flicker" id="flicker"></div>
+          <div class="portrait-wrap" id="portraitWrap">
+            <img class="portrait" id="portrait" alt="" />
+          </div>
+          <img class="counter-fx" id="counterFx" src="assets/image-01.png" alt="" />
+        </div>
+
+        <button class="mute in-screen" id="muteBtn" type="button" aria-label="静音">音</button>
+        <header class="hud" id="hud" hidden>
+          <div class="hud-left">
+            <div class="hud-time" id="hudTime">22:00</div>
+            <div class="hud-night" id="hudNight">第1晚</div>
+          </div>
+          <div class="hud-mid">
+            <div class="bar-label">神智</div>
+            <div class="bar"><i id="sanityBar"></i></div>
+          </div>
+          <div class="hud-right">
+            <button class="icon-btn" id="stockBtn" type="button" title="库存">货</button>
+            <button class="icon-btn" id="rulesBtn" type="button" title="店规">规</button>
+            <button class="icon-btn" id="clueBtn" type="button" title="线索">线</button>
+            <button class="icon-btn" id="retryNightBtn" type="button" title="回到当晚起点">回</button>
+            <div class="cash" id="hudCash">¥80</div>
+          </div>
+        </header>
+
+        <button class="cat-btn" id="catBtn" type="button" hidden title="店猫">
+          <img src="assets/image-02.png" alt="店猫" />
+        </button>
+
+        <aside class="cat-eye" id="catEye" hidden>
+          <b>猫的观察</b>
+          <p id="catEyeText"></p>
+        </aside>
+
+        <section class="dock" id="dock" hidden>
+          <div class="nameplate" id="nameplate">
+            <b id="who">—</b>
+            <em id="tag"></em>
+          </div>
+          <p class="line" id="line"></p>
+          <div class="choices" id="choices"></div>
+          <div class="tap-hint" id="tapHint">点击继续</div>
+        </section>
+
+        <section class="overlay title" id="title">
+          <div class="title-top">
+            <span class="neon">24H</span>
+            <span class="shop">恒灯便利</span>
+          </div>
+          <h1>夜班</h1>
+          <p class="subtitle">半夜看店。来的客人，<br />越看越不像活人。</p>
+          <div class="title-actions">
+            <button class="primary" id="newGame" type="button">去上夜班</button>
+            <button class="ghost" id="continueGame" type="button" hidden>继续值班</button>
+          </div>
+          <div class="title-nights" id="titleNights" hidden></div>
+          <div class="title-endings" id="titleEndings" hidden></div>
+          <div class="title-roles" id="titleRoles"></div>
+          <div class="title-catview" id="titleCatView">
+            <button class="ghost lock" id="catViewToggle" type="button">猫视角</button>
+            <p class="lede" id="catViewHint">通关任意结局后解锁</p>
+            <button class="ghost" id="catMemBtn" type="button" hidden>猫的记忆</button>
+            <button class="ghost" id="clueBoardBtn" type="button" hidden>线索板</button>
+          </div>
+          <p class="fine">一共七晚 · 14个结局 · 点击跳过打字 · 空格3倍速 · 回=当晚起点</p>
+        </section>
+
+        <section class="overlay panel" id="prep" hidden></section>
+        <section class="overlay panel" id="settle" hidden></section>
+        <section class="overlay panel" id="ending" hidden></section>
+        <section class="overlay sheet" id="stockSheet" hidden></section>
+        <section class="overlay sheet" id="rulesSheet" hidden></section>
+        <section class="overlay sheet" id="phoneSheet" hidden></section>
+        <section class="overlay sheet" id="catMemSheet" hidden></section>
+        <section class="overlay sheet" id="clueSheet" hidden></section>
+        <section class="overlay toast" id="toast" hidden></section>
+        <div class="slip" id="slip" hidden></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="debug" id="debug" hidden>
+    <button type="button" data-skip="night">跳过本晚</button>
+    <button type="button" data-skip="dawn">直接天亮</button>
+  </div>
+
+  
+  
+  
+  <script src="sfx.js"></script>
+  <script src="app.js"></script>
+  <script src="app-2.js"></script>
+</body>
+</html>

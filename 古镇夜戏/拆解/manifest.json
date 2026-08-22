@@ -1,0 +1,32 @@
+{
+  "game": {
+    "id": "古镇夜戏",
+    "title": "古镇夜戏"
+  },
+  "type": "multi-page",
+  "structure": {
+    "modifiable": true,
+    "note": "多页面网页游戏，已模块化（每页独立 HTML + 共享 CSS/JS）。修改文本/剧情/样式安全。",
+    "engine": "页面内的交互 JS 脚本（少量，跨页共享）"
+  },
+  "versions": {
+    "中文版": {
+      "entry": "index.html",
+      "page_count": 44,
+      "js_count": 5,
+      "css_count": 12
+    },
+    "英文版": {
+      "entry": "index.html",
+      "page_count": 44,
+      "js_count": 5,
+      "css_count": 12
+    }
+  },
+  "protected": {
+    "puzzleSolutions": true
+  },
+  "review": {
+    "required": true
+  }
+}

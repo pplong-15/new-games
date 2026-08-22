@@ -1,0 +1,50 @@
+{
+  "game": {
+    "id": "镇山契",
+    "title": "镇山契",
+    "language": "zh"
+  },
+  "entry": "index.html",
+  "structure": {
+    "engine": {
+      "readonly": true,
+      "files": [
+        "world-content.js"
+      ]
+    },
+    "content": {
+      "modifiable": true,
+      "files": [
+        "world-content-2.js",
+        "world-content-3.js"
+      ]
+    },
+    "theme": {
+      "modifiable": true,
+      "files": [
+        "style.css"
+      ]
+    },
+    "assets": {
+      "readonly": true,
+      "dirs": [
+        "assets/"
+      ]
+    }
+  },
+  "protected": {
+    "answerCodes": true,
+    "puzzleSolutions": true,
+    "imageAssets": true
+  },
+  "review": {
+    "required": true,
+    "checks": [
+      "syntax",
+      "startup",
+      "core-path",
+      "content-scan",
+      "asset-integrity"
+    ]
+  }
+}
