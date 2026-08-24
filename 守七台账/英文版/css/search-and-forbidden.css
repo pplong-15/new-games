@@ -1,0 +1,94 @@
+/* search-and-forbidden：2010 灰检索页 / 黑红禁止页。禁止再用值班台的青底。 */
+
+html.skin-search-results body {
+  margin: 0;
+  background: #f2f2f2;
+  font: 13px/1.6 Arial, SimSun, "Microsoft YaHei", sans-serif;
+  color: #333;
+}
+html.skin-search-results .box {
+  max-width: 560px;
+  margin: 24px 40px 40px;
+  background: #fff;
+  border: 1px solid #d0d0d0;
+  border-radius: 0;
+  padding: 20px 20px 28px;
+}
+html.skin-search-results .box::before {
+  content: "";
+  display: block;
+  height: 6px;
+  background: #3b6ea5;
+  margin: -20px -20px 16px;
+}
+html.skin-search-results h2 {
+  text-align: left;
+  font: 16px/1.4 Arial, SimSun, sans-serif;
+  color: #222;
+  margin: 0 0 12px;
+  font-weight: 700;
+}
+html.skin-search-results a {
+  display: block;
+  margin-top: 10px;
+  color: #00c;
+  text-decoration: underline;
+  font-size: 16px;
+  min-height: 44px;
+  line-height: 1.4;
+}
+html.skin-search-results .hit { margin-top: 14px; }
+html.skin-search-results .hit a { font-size: 16px; margin-top: 0; }
+html.skin-search-results .hit p { color: #666; font-size: 13px; margin: 4px 0 0; }
+html.skin-search-results .miss {
+  color: #555;
+  font-size: 14px;
+  border-left: 3px solid #999;
+  padding: 8px 12px;
+  background: #fafafa;
+}
+
+html.skin-forbidden body {
+  margin: 0;
+  min-height: 100vh;
+  background: #111;
+  color: #e00;
+  font: 14px/1.6 "Microsoft YaHei", SimSun, sans-serif;
+}
+html.skin-forbidden .box,
+html.skin-forbidden .forbid-panel {
+  max-width: 720px;
+  margin: 48px auto;
+  background: #1a0000;
+  border: 2px solid #c00;
+  border-radius: 0;
+  padding: 28px 24px 36px;
+  text-align: center;
+}
+html.skin-forbidden h2 {
+  color: #e00;
+  font-size: 28px;
+  letter-spacing: 0.12em;
+  margin: 0 0 16px;
+}
+html.skin-forbidden a {
+  color: #f88;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+html.skin-forbidden .hidden-ink {
+  background: #000;
+  color: #000;
+  padding: 2px 6px;
+}
+html.skin-forbidden .hidden-ink::selection { color: #f00; background: #333; }
+
+@media (max-width: 800px) {
+  html.skin-search-results .box { margin: 16px; max-width: none; }
+}
+@media (max-width: 320px) {
+  html.skin-forbidden .box,
+  html.skin-forbidden .forbid-panel { margin: 12px; padding: 16px; }
+  html.skin-forbidden h2 { font-size: 22px; }
+}

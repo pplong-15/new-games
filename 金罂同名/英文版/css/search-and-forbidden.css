@@ -1,43 +1,242 @@
-/* search-and-forbidden：搜索命中盒与禁止访问页。 */
+/* search-and-forbidden: duty-machine lookup slip (dot-matrix paper) and closed file.
+ * Leaves the cyan desk #e0f7fa. Chrome changes: ground, column width, title color, nav, font stack.
+ * No rounded cards, no modal. */
+html.skin-search-results {
+  --slip-shell: #5c5848;
+  --slip-paper: #f3e6c0;
+  --slip-ink: #4a3414;
+  --slip-line: #8a7048;
+  --slip-nav: #2f2c24;
+}
 html.skin-search-results body {
   margin: 0;
-  background: #e0f7fa;
-  font: 14px/1.6 "Microsoft YaHei", sans-serif;
-  color: #333;
+  min-height: 100vh;
+  background: var(--slip-shell);
+  color: #2a2418;
+  font: 14px/1.65 SimSun, "Songti SC", "NSimSun", "Courier New", monospace;
+}
+html.skin-search-results body::before {
+  content: "DUTY-MACHINE CATALOG    INDEX · DOT-MATRIX SLIP · NOT IN HANDOVER";
+  display: block;
+  background: var(--slip-nav);
+  color: #d9c89a;
+  font: 13px/44px "Courier New", SimSun, "Songti SC", monospace;
+  letter-spacing: 0.08em;
+  text-align: center;
+  border-bottom: 3px double #8a7a4a;
+  padding: 0 8px;
+  box-sizing: border-box;
 }
 html.skin-search-results .box {
-  max-width: 720px;
-  margin: 40px auto;
-  background: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
+  counter-reset: slip;
+  width: min(540px, calc(100% - 24px));
+  max-width: 540px;
+  margin: 20px auto 12px;
+  background-color: var(--slip-paper);
+  background-image:
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 27px,
+      rgba(138, 112, 72, 0.22) 27px,
+      rgba(138, 112, 72, 0.22) 28px
+    ),
+    repeating-radial-gradient(circle at 9px 14px, #c9b48a 0 3px, transparent 4px 28px);
+  background-size: 100% 28px, 18px 28px;
+  background-repeat: repeat, repeat-y;
+  background-position: 0 0, 0 0;
+  border: 1px solid var(--slip-line);
+  border-radius: 0;
+  padding: 16px 18px 18px 32px;
+  box-shadow: 4px 4px 0 #3a372c;
+  box-sizing: border-box;
 }
-html.skin-search-results h2 { text-align: center; }
-html.skin-search-results a { display: block; margin-top: 10px; color: #337ab7; }
-html.skin-search-results .hit { margin-top: 14px; }
-html.skin-search-results .hit a { font-size: 16px; margin-top: 0; }
-html.skin-search-results .hit p { color: #666; font-size: 13px; margin: 4px 0 0; }
-html.skin-search-results .miss { color: #666; }
+html.skin-search-results h2 {
+  text-align: left;
+  color: var(--slip-ink);
+  font: 700 20px/1.3 SimSun, "Songti SC", FangSong, serif;
+  letter-spacing: 0.12em;
+  border-bottom: 1px dashed var(--slip-line);
+  padding: 0 0 8px;
+  margin: 0 0 12px;
+}
+html.skin-search-results a {
+  color: #1a3a6b;
+}
+html.skin-search-results .hit {
+  counter-increment: slip;
+  margin: 0;
+  padding: 8px 0 10px;
+  border-bottom: 1px dotted var(--slip-line);
+}
+html.skin-search-results .hit a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  margin: 0;
+  font-size: 15px;
+  text-decoration: underline;
+  color: #1a3a6b;
+}
+html.skin-search-results .hit a::before {
+  content: counter(slip, decimal-leading-zero);
+  flex: 0 0 2.2em;
+  color: var(--slip-ink);
+  font: 13px/1 "Courier New", monospace;
+  text-decoration: none;
+}
+html.skin-search-results .hit p {
+  color: #5a4a32;
+  font-size: 13px;
+  margin: 0 0 0 2.2em;
+}
+html.skin-search-results .miss {
+  color: #2a2418;
+  background: #efe0b8;
+  border: 2px dashed var(--slip-ink);
+  padding: 12px;
+}
+html.skin-search-results .miss::before {
+  content: "[ NO MATCH ]";
+  display: block;
+  text-align: center;
+  letter-spacing: 0.28em;
+  font-weight: 700;
+  color: var(--slip-ink);
+  border: 1px solid var(--slip-ink);
+  margin: 0 auto 10px;
+  padding: 8px 8px;
+  max-width: 14em;
+}
+html.skin-search-results .back {
+  display: block;
+  width: min(540px, calc(100% - 24px));
+  margin: 8px auto 6px;
+  text-align: left;
+  color: #2f2c24;
+  background: #d9c89a;
+  border: 1px solid var(--slip-line);
+  min-height: 44px;
+  line-height: 44px;
+  padding: 0 12px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font: 14px SimSun, "Songti SC", serif;
+}
+html.skin-search-results .back::before {
+  content: "← ";
+}
+html.skin-search-results body > p {
+  width: min(540px, calc(100% - 24px));
+  margin: 0 auto 24px;
+  color: #d9c89a;
+  font-size: 12px;
+  text-align: left;
+}
 
+html.skin-forbidden {
+  --deny: #ff4a3a;
+}
 html.skin-forbidden body {
   margin: 0;
-  background: #1b1c1d;
-  color: #f00;
-  font: 14px/1.6 "Microsoft YaHei", sans-serif;
+  min-height: 100vh;
+  background: #050505;
+  color: var(--deny);
+  font: 15px/1.55 "Courier New", "NSimSun", SimSun, monospace;
+}
+html.skin-forbidden body::before {
+  content: "██ FILE CLOSED TO NIGHT SHIFT ██";
+  display: block;
+  background: #7a0000;
+  color: #ffd8d0;
+  text-align: center;
+  font: 14px/44px "Courier New", SimSun, monospace;
+  letter-spacing: 0.12em;
+  border-bottom: 4px solid var(--deny);
+  padding: 0 8px;
 }
 html.skin-forbidden .box {
-  max-width: 720px;
-  margin: 40px auto;
-  background: #2a0a0a;
-  border: 1px solid #f00;
-  padding: 24px;
-  text-align: center;
+  width: min(440px, calc(100% - 24px));
+  max-width: 440px;
+  margin: 28px auto 12px;
+  background: #140000;
+  border: 4px double var(--deny);
+  border-radius: 0;
+  padding: 20px 18px;
+  text-align: left;
+  box-shadow: 0 0 0 1px #000, 0 0 24px #4a0000;
+  box-sizing: border-box;
 }
-html.skin-forbidden h2 { color: #f00; }
+html.skin-forbidden h2 {
+  color: var(--deny);
+  font: 700 18px/1.3 "Courier New", SimSun, monospace;
+  letter-spacing: 0.08em;
+  border-bottom: 1px solid var(--deny);
+  padding: 0 0 8px;
+  margin: 0 0 12px;
+  text-align: left;
+}
+html.skin-forbidden h2::before {
+  content: "× ";
+}
 html.skin-forbidden .hidden-ink {
   background: #000;
   color: #000;
   padding: 2px 6px;
 }
-html.skin-forbidden .hidden-ink::selection { color: #f00; background: #333; }
+html.skin-forbidden .hidden-ink::selection {
+  color: var(--deny);
+  background: #333;
+}
+html.skin-forbidden .back {
+  display: block;
+  width: min(440px, calc(100% - 24px));
+  margin: 8px auto 6px;
+  min-height: 44px;
+  line-height: 44px;
+  text-align: left;
+  color: #ffcc66;
+  border: 1px solid #ffcc66;
+  padding: 0 12px;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: #1a1000;
+}
+html.skin-forbidden .back::before {
+  content: "← ";
+}
+html.skin-forbidden body > p {
+  width: min(440px, calc(100% - 24px));
+  margin: 0 auto 24px;
+  color: #8a7070;
+  font-size: 12px;
+  text-align: left;
+}
+
+html.skin-search-results :focus-visible,
+html.skin-forbidden :focus-visible {
+  outline: 3px solid #ffcc66;
+  outline-offset: 2px;
+}
+html.skin-search-results :focus-visible {
+  outline-color: #4a3414;
+}
+
+@media (max-width: 390px) {
+  html.skin-search-results body::before,
+  html.skin-forbidden body::before {
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    line-height: 1.35;
+    padding: 10px 8px;
+    min-height: 44px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.skin-search-results *,
+  html.skin-forbidden * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

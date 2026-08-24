@@ -1,0 +1,297 @@
+{
+  "smoke": [
+    {
+      "step": "size-320-390",
+      "page": "zh-shop-320",
+      "boxes": [
+        {
+          "tag": "INPUT",
+          "id": "search-input",
+          "text": "关键词",
+          "w": 213,
+          "h": 44
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "检索",
+          "w": 59,
+          "h": 44
+        }
+      ],
+      "undersize": []
+    },
+    {
+      "step": "size-320-390",
+      "page": "zh-shop-390",
+      "boxes": [
+        {
+          "tag": "INPUT",
+          "id": "search-input",
+          "text": "关键词",
+          "w": 220,
+          "h": 44
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "检索",
+          "w": 60,
+          "h": 44
+        }
+      ],
+      "undersize": []
+    },
+    {
+      "step": "size-320-390",
+      "page": "zh-troupe-320",
+      "boxes": [
+        {
+          "tag": "INPUT",
+          "id": "search-input",
+          "text": "关键词",
+          "w": 224,
+          "h": 44
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "检索",
+          "w": 54,
+          "h": 44
+        }
+      ],
+      "undersize": []
+    },
+    {
+      "step": "size-320-390",
+      "page": "zh-forum-390",
+      "boxes": [
+        {
+          "tag": "INPUT",
+          "id": "search-input",
+          "text": "关键词",
+          "w": 273,
+          "h": 44
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "检索",
+          "w": 54,
+          "h": 44
+        }
+      ],
+      "undersize": []
+    },
+    {
+      "step": "size-320-390",
+      "page": "zh-login-390",
+      "boxes": [
+        {
+          "tag": "INPUT",
+          "id": "search-input",
+          "text": "关键词",
+          "w": 273,
+          "h": 44
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "检索",
+          "w": 52,
+          "h": 44
+        },
+        {
+          "tag": "INPUT",
+          "id": "pw",
+          "text": "",
+          "w": 190,
+          "h": 44
+        },
+        {
+          "tag": "BUTTON",
+          "id": "login-go",
+          "text": "查询",
+          "w": 52,
+          "h": 46
+        }
+      ],
+      "undersize": []
+    },
+    {
+      "step": "size-320-390",
+      "page": "zh-ending-390",
+      "boxes": [
+        {
+          "tag": "BUTTON",
+          "id": "end-appeal",
+          "text": "按订单申诉退票",
+          "w": 359,
+          "h": 44
+        },
+        {
+          "tag": "BUTTON",
+          "id": "end-strike",
+          "text": "三本账对上，划掉外地号",
+          "w": 359,
+          "h": 44
+        },
+        {
+          "tag": "BUTTON",
+          "id": "end-enter",
+          "text": "按票入场，去东七排",
+          "w": 359,
+          "h": 44
+        },
+        {
+          "tag": "BUTTON",
+          "id": "end-day",
+          "text": "申请改挂白戏",
+          "w": 359,
+          "h": 44
+        }
+      ],
+      "undersize": []
+    },
+    {
+      "step": "size-320-390",
+      "page": "zh-intro-320",
+      "boxes": [
+        {
+          "tag": "A",
+          "id": "",
+          "text": "打开购票页",
+          "w": 256,
+          "h": 44
+        },
+        {
+          "tag": "BUTTON",
+          "id": "wipe",
+          "text": "清本机记录",
+          "w": 256,
+          "h": 44
+        }
+      ],
+      "undersize": []
+    },
+    {
+      "step": "size-320-390",
+      "page": "en-shop-320",
+      "boxes": [
+        {
+          "tag": "INPUT",
+          "id": "search-input",
+          "text": "keyword",
+          "w": 200,
+          "h": 44
+        },
+        {
+          "tag": "BUTTON",
+          "id": "",
+          "text": "Search",
+          "w": 72,
+          "h": 44
+        }
+      ],
+      "undersize": []
+    },
+    {
+      "step": "keyboard-focus",
+      "outline": {
+        "outline": "rgb(0, 0, 0) none 3px",
+        "outlineWidth": "3px",
+        "outlineStyle": "none"
+      }
+    },
+    {
+      "step": "touch-search-390",
+      "href": "http://127.0.0.1:8970/search-results.html?q=%E9%BE%99%E5%A5%97",
+      "text": "搜索结果\n\n共有 2 项符合条件的结果：\n\n槐溪茶馆 - 我被写成龙套\n槐溪茶馆 - 马句：外地号\n检索"
+    },
+    {
+      "step": "muted",
+      "result": "N/A no audio"
+    },
+    {
+      "step": "reduced-motion-miss",
+      "miss": "抱歉，没有找到与\"西瓜\"相关的结果。"
+    },
+    {
+      "step": "non-color-forbidden",
+      "skin": "skin-forbidden",
+      "stamp": "\"禁止\"",
+      "border": "4px double rgb(255, 0, 0)"
+    },
+    {
+      "step": "login-err",
+      "text": "票号或手机号对不上。",
+      "border": "2px dashed rgb(122, 31, 26)"
+    },
+    {
+      "step": "void-tab",
+      "void": {
+        "text": "退票办理",
+        "deco": "line-through",
+        "border": "dashed"
+      }
+    },
+    {
+      "step": "no-strobe",
+      "result": "no looping animation / no >3Hz flash"
+    }
+  ],
+  "fail": [],
+  "zh-appeal": {
+    "href": "http://127.0.0.1:8970/pages/end-appeal.html",
+    "title": "钱退了",
+    "save": {
+      "t_home": 1,
+      "t_ticket": 1,
+      "t_visit": 1,
+      "t_login": 1,
+      "t_order": 1,
+      "t_endpage": 1,
+      "lock": "appeal"
+    },
+    "order_had_ending": true
+  },
+  "en-appeal": {
+    "href": "http://127.0.0.1:8971/pages/end-appeal.html",
+    "title": "Money refunded",
+    "save": {
+      "t_home": 1,
+      "t_ticket": 1,
+      "t_visit": 1,
+      "t_login": 1,
+      "t_order": 1,
+      "t_endpage": 1,
+      "lock": "appeal"
+    },
+    "order_had_ending": true
+  },
+  "old-save": {
+    "read": {
+      "t_ticket": 1,
+      "t_visit": 1,
+      "t_order": 1,
+      "t_home": 1
+    },
+    "still_has_order_token": true,
+    "href": "http://127.0.0.1:8970/pages/order.html"
+  },
+  "volume": {
+    "zh": {
+      "files": 118,
+      "bytes": 2195695,
+      "media_bytes": 1881365
+    },
+    "en": {
+      "files": 117,
+      "bytes": 2167495,
+      "media_bytes": 1881365
+    },
+    "note": "player language dirs only; excludes visual/ _视觉美化/ and ref/"
+  },
+  "ok": true
+}

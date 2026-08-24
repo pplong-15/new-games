@@ -109,6 +109,7 @@
       function render(key, p, a, pay) {
         var s = window.ytSeen ? window.ytSeen() : {};
         var box = document.getElementById("endbox");
+        box.className = "endbox end-" + key;
         box.hidden = false;
         box.innerHTML = "<h3>" + titles()[key] + "</h3><p>" + reason(key, s, p, a, pay) + "</p><p>" + after(key) + "</p><p><a href=\"timeline.html\">回轴</a>　<a href=\"#\" id=\"again\">作废重开（仅本机）</a></p>";
         document.getElementById("formbox").style.opacity = "0.45";

@@ -49,3 +49,26 @@ html.skin-archive-simsun .stamp {
   padding: 2px 8px;
   transform: rotate(-8deg);
 }
+html.skin-archive-simsun a {
+  display: inline-block;
+  min-height: 44px;
+  line-height: 44px;
+}
+html.skin-archive-simsun :focus-visible {
+  outline: 3px dotted #333;
+  outline-offset: 2px;
+}
+@media (prefers-reduced-motion: reduce) {
+  html.skin-archive-simsun .stamp { transform: none; }
+}
+@media (max-width: 800px) {
+  html.skin-archive-simsun .record {
+    width: auto;
+    margin: 12px 8px;
+    padding: 16px 12px;
+  }
+  html.skin-archive-simsun body > p {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}

@@ -21,9 +21,24 @@ html.skin-gov-redbar .links {
   background: #9f0a12;
   color: #fff;
   text-align: center;
-  padding: 6px;
+  padding: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 52px;
 }
 html.skin-gov-redbar .links a { color: #fff; margin: 0 8px; text-decoration: none; }
+html.skin-gov-redbar .links form { display: inline-flex; gap: 4px; flex-wrap: wrap; }
+html.skin-gov-redbar .links input,
+html.skin-gov-redbar .links button {
+  height: 44px;
+  min-height: 44px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+html.skin-gov-redbar .links button { min-width: 44px; }
 html.skin-gov-redbar .wrap { width: 1000px; margin: 8px auto; background: #fff; border: 1px solid #ddd; }
 html.skin-gov-redbar .grid {
   display: grid;

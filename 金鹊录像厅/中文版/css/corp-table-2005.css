@@ -25,10 +25,21 @@ html.skin-corp-table-2005 .nav {
   background: #2f6ead;
   color: #fff;
   text-align: center;
-  padding: 6px 0;
+  padding: 8px 0;
   letter-spacing: 2px;
+  min-height: 52px;
 }
 html.skin-corp-table-2005 .nav a { color: #fff; text-decoration: none; margin: 0 10px; }
+html.skin-corp-table-2005 .nav form { display: inline-flex; gap: 4px; flex-wrap: wrap; vertical-align: middle; }
+html.skin-corp-table-2005 .nav input,
+html.skin-corp-table-2005 .nav button {
+  height: 44px;
+  min-height: 44px;
+  font-size: 16px;
+  box-sizing: border-box;
+  letter-spacing: 0;
+}
+html.skin-corp-table-2005 .nav button { min-width: 44px; }
 html.skin-corp-table-2005 .main { padding: 12px; vertical-align: top; }
 html.skin-corp-table-2005 .left {
   width: 180px;

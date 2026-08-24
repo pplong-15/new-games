@@ -1,0 +1,93 @@
+{
+  "ok": true,
+  "log": [
+    {
+      "step": "zh-intro",
+      "url": "http://127.0.0.1:8812/introduction.html",
+      "seen": {
+        "seen": {
+          "intro": 1
+        },
+        "last": "http://127.0.0.1:8812/introduction.html"
+      }
+    },
+    {
+      "step": "zh-click-first-smear",
+      "clicked": true,
+      "url": "http://127.0.0.1:8812/rub/y1986.html"
+    },
+    {
+      "step": "zh-click-1986-smear",
+      "clicked": true,
+      "url": "http://127.0.0.1:8812/rub/smear.html"
+    },
+    {
+      "step": "zh-box-to-zhi",
+      "url": "http://127.0.0.1:8812/zhi/scan.html"
+    },
+    {
+      "step": "zh-zhi-scan",
+      "url": "http://127.0.0.1:8812/zhi/record.html",
+      "seen": {
+        "seen": {
+          "intro": 1,
+          "smear1986": 1,
+          "smear3": 1,
+          "box": 1,
+          "zhi": 1,
+          "zhi-rec": 1
+        },
+        "last": "http://127.0.0.1:8812/zhi/record.html"
+      }
+    },
+    {
+      "step": "zh-submit-recarve",
+      "url": "http://127.0.0.1:8812/desk/result-recarve.html",
+      "choice": "recarve"
+    },
+    {
+      "step": "zh-submit-same-nearfail",
+      "url": "http://127.0.0.1:8812/desk/result-same.html",
+      "choice": "same"
+    },
+    {
+      "step": "zh-same-recovery-link",
+      "present": true
+    },
+    {
+      "step": "zh-old-save",
+      "restored": {
+        "seen": {
+          "intro": 1,
+          "smear1986": 1,
+          "zhi": 1,
+          "desk": 1
+        },
+        "last": "http://127.0.0.1:8812/desk/home.html"
+      }
+    },
+    {
+      "step": "zh-find-empty",
+      "has_sentence": true,
+      "url": "http://127.0.0.1:8812/desk/find.html?q=%E7%BA%AA%E9%97%BB%E5%B1%B1"
+    },
+    {
+      "step": "en-first-jump",
+      "url": "http://127.0.0.1:8813/rub/y1986.html"
+    },
+    {
+      "step": "en-submit-recarve",
+      "url": "http://127.0.0.1:8813/desk/result-recarve.html",
+      "choice": "recarve",
+      "en_key": "beiwen-tiaqie-v1-en"
+    },
+    {
+      "step": "radio-values",
+      "values": [
+        "recarve",
+        "same",
+        "approve"
+      ]
+    }
+  ]
+}

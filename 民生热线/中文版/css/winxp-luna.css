@@ -1,10 +1,13 @@
-/* winxp-luna：纯色桌面，蓝窗框。假系统壳，不写任务 HUD。 */
+/* winxp-luna: solid Luna desk, blue chrome, green Start. Fake OS shell, no quest HUD. */
 html.skin-winxp-luna {
   --desk: #3a6ea5;
   --task: #245edc;
   --start: #3c8d0d;
+  --title-top: #0058e6;
   --title: #0a246a;
   --face: #ece9d8;
+  --ink: #000;
+  --focus: #f4e542;
 }
 html.skin-winxp-luna,
 html.skin-winxp-luna body {
@@ -14,9 +17,9 @@ html.skin-winxp-luna body {
 html.skin-winxp-luna body {
   min-height: 100vh;
   background: var(--desk);
-  color: #000;
+  color: var(--ink);
   font: 11px/1.4 Tahoma, "MS Sans Serif", "SimSun", "Songti SC", sans-serif;
-  overflow: hidden;
+  overflow: auto;
 }
 html.skin-winxp-luna button {
   font: 11px Tahoma, "SimSun", sans-serif;
@@ -31,15 +34,22 @@ html.skin-winxp-luna .desk {
   top: 0;
   bottom: 30px;
   padding: 8px;
+  min-height: 520px;
 }
 html.skin-winxp-luna .icon {
-  width: 78px;
+  width: 84px;
+  min-height: 44px;
   text-align: center;
   color: #fff;
   text-shadow: 1px 1px #000;
   float: left;
   margin: 6px 8px;
   cursor: pointer;
+  padding: 4px 0;
+}
+html.skin-winxp-luna .icon:focus-visible {
+  outline: 3px dotted #fff;
+  outline-offset: 2px;
 }
 html.skin-winxp-luna .icon i {
   display: block;
@@ -48,11 +58,12 @@ html.skin-winxp-luna .icon i {
   margin: 0 auto 4px;
   background: #c3d9f0;
   border: 1px solid #1a3a6a;
+  box-shadow: inset 1px 1px #fff;
 }
 html.skin-winxp-luna .icon i.db {
   background: #1a1a1a;
   border-color: #666;
-  box-shadow: inset 0 0 0 3px #333, inset 0 0 0 6px #0a0;
+  box-shadow: inset 0 0 0 3px #333, inset 0 0 0 6px #3c8;
 }
 html.skin-winxp-luna .icon i.note {
   background: #fff8c4;
@@ -61,6 +72,7 @@ html.skin-winxp-luna .icon i.note {
 html.skin-winxp-luna .icon i.cut {
   background: #c44;
   border-color: #622;
+  box-shadow: inset 2px 0 #822, inset -2px 0 #822;
 }
 html.skin-winxp-luna .icon i.help {
   background: #2a6;
@@ -69,21 +81,22 @@ html.skin-winxp-luna .icon i.help {
 html.skin-winxp-luna .window {
   position: absolute;
   background: var(--face);
-  border: 3px solid #0058e6;
-  box-shadow: 2px 2px 0 rgba(0,0,0,.35);
+  border: 3px solid var(--title-top);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.35), inset 1px 1px #9db9eb;
   display: none;
 }
 html.skin-winxp-luna .window.show { display: block; }
 html.skin-winxp-luna .title-bar {
-  height: 26px;
-  background: var(--title);
+  height: 28px;
+  background: linear-gradient(180deg, #1c86ee 0%, var(--title) 58%, #08245c 100%);
   color: #fff;
-  font: 700 11px/26px Tahoma, "SimSun", sans-serif;
+  font: 700 11px/28px Tahoma, "SimSun", sans-serif;
   padding: 0 4px;
   cursor: default;
+  text-shadow: 1px 1px #003;
 }
 html.skin-winxp-luna .title-bar span { float: left; padding-left: 4px; }
-html.skin-winxp-luna .ctrls { float: right; padding-top: 2px; }
+html.skin-winxp-luna .ctrls { float: right; padding-top: 3px; }
 html.skin-winxp-luna .ctrls b {
   float: left;
   width: 21px;
@@ -92,20 +105,26 @@ html.skin-winxp-luna .ctrls b {
   text-align: center;
   line-height: 19px;
   border: 1px solid #003c74;
-  background: #1e8ae8;
+  background: linear-gradient(180deg, #6eb3f7, #1e8ae8);
   color: #fff;
   font: 11px/19px Tahoma, sans-serif;
   cursor: pointer;
+  box-shadow: inset 1px 1px #cfe8ff;
 }
 html.skin-winxp-luna .ctrls b.close {
-  background: #d44;
+  background: linear-gradient(180deg, #f88, #d44);
+  box-shadow: inset 1px 1px #fcc;
+}
+html.skin-winxp-luna .ctrls b:focus-visible {
+  outline: 2px dotted var(--focus);
 }
 html.skin-winxp-luna .menubar {
-  height: 20px;
-  line-height: 20px;
+  height: 22px;
+  line-height: 22px;
   background: var(--face);
-  padding: 0 6px;
+  padding: 0 8px;
   border-bottom: 1px solid #aca899;
+  color: #222;
 }
 html.skin-winxp-luna .body {
   background: #fff;
@@ -117,14 +136,22 @@ html.skin-winxp-luna .body {
   overflow: auto;
 }
 html.skin-winxp-luna .btn3d {
-  height: 23px;
-  padding: 0 12px;
+  min-height: 44px;
+  padding: 0 14px;
   background: var(--face);
-  border: 1px solid;
+  border: 2px solid;
   border-color: #fff #808080 #808080 #fff;
   box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf;
-  font: 11px Tahoma, "SimSun", sans-serif;
+  font: 12px Tahoma, "SimSun", sans-serif;
   cursor: pointer;
+}
+html.skin-winxp-luna .btn3d:focus,
+html.skin-winxp-luna .btn3d:focus-visible {
+  outline: 3px dotted #003;
+  outline-offset: 1px;
+}
+html.skin-winxp-luna .btn3d:active {
+  border-color: #808080 #fff #fff #808080;
 }
 html.skin-winxp-luna .taskbar {
   position: absolute;
@@ -132,8 +159,9 @@ html.skin-winxp-luna .taskbar {
   right: 0;
   bottom: 0;
   height: 30px;
-  background: var(--task);
+  background: linear-gradient(180deg, #3d7aef, var(--task) 40%);
   color: #fff;
+  z-index: 25;
 }
 html.skin-winxp-luna .start {
   float: left;
@@ -141,23 +169,27 @@ html.skin-winxp-luna .start {
   margin: 2px 4px 0 2px;
   padding: 0 16px 0 10px;
   line-height: 26px;
-  background: var(--start);
+  background: linear-gradient(180deg, #6c3, var(--start));
   color: #fff;
   font: 700 11px/26px Tahoma, sans-serif;
   border: 1px solid #2b6a09;
   border-radius: 0 11px 11px 0;
+  box-shadow: inset 1px 1px #b6e08a;
 }
 html.skin-winxp-luna .task {
   float: left;
-  height: 22px;
+  min-height: 22px;
+  min-width: 120px;
   margin: 4px 2px 0;
   padding: 0 10px;
   line-height: 22px;
   background: #3d72e5;
   border: 1px solid;
   border-color: #7ba7f0 #163a9c #163a9c #7ba7f0;
-  min-width: 120px;
   cursor: pointer;
+}
+html.skin-winxp-luna .task:focus-visible {
+  outline: 2px dotted var(--focus);
 }
 html.skin-winxp-luna .tray {
   float: right;
@@ -168,4 +200,10 @@ html.skin-winxp-luna .tray {
   background: #0f48b8;
   border: 1px solid;
   border-color: #163a9c #7ba7f0 #7ba7f0 #163a9c;
+}
+@media (prefers-reduced-motion: reduce) {
+  html.skin-winxp-luna * {
+    transition: none !important;
+    animation: none !important;
+  }
 }

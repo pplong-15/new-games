@@ -1,6 +1,6 @@
 /* discuz-board
- * Memory 2008–2012 blue-header board: board table + left/right floors. No forum-suite badge.
- * 960 / 12px Tahoma,SimSun / beveled search button. No CSS Grid, flex, or YaHei as body font.
+ * 记忆 2008–2012 蓝头论坛：版块表 + 左右楼层。不要论坛套件标志。
+ * 960 / 12px Tahoma,SimSun / 斜边搜索钮。禁止 CSS Grid、flex、雅黑主字体。
  */
 html.skin-discuz-board {
   --head: #2b7ac2;
@@ -33,7 +33,7 @@ html.skin-discuz-board input, html.skin-discuz-board button {
 }
 html.skin-discuz-board .wp { width: 960px; margin: 0 auto; }
 
-/* header: blue bar, white type, float, not flex */
+/* 顶栏：蓝底白字，float，不是 flex */
 html.skin-discuz-board .hd {
   background: var(--head);
   color: #fff;
@@ -85,7 +85,7 @@ html.skin-discuz-board .hd button {
   cursor: pointer;
 }
 
-/* nav 28px deeper blue, white links */
+/* 导航 28px 更深蓝，白链 */
 html.skin-discuz-board .nv {
   background: var(--nv);
   height: 28px;
@@ -142,7 +142,7 @@ html.skin-discuz-board table.forum td p { color: #999; margin-top: 2px; }
 html.skin-discuz-board table.forum .num { width: 120px; color: #666; }
 html.skin-discuz-board table.forum .last { width: 160px; color: #666; }
 
-/* floor: left 160px float, right body, dashed signature at foot */
+/* 楼层：左 160px float，右正文，底虚线签名 */
 html.skin-discuz-board .floor {
   border: 1px solid var(--border);
   margin: 10px 0 0;
@@ -197,3 +197,81 @@ html.skin-discuz-board .pages strong {
 html.skin-discuz-board .pages strong { background: var(--th); color: #444; font-weight: 700; }
 html.skin-discuz-board .pages em { font-style: normal; }
 html.skin-discuz-board .ft { clear: both; text-align: center; color: #999; padding: 12px 0 24px; border-top: 1px solid var(--border); }
+html.skin-discuz-board a:focus-visible,
+html.skin-discuz-board button:focus-visible,
+html.skin-discuz-board input:focus-visible {
+  outline: 3px solid #c9a227;
+  outline-offset: 2px;
+}
+
+@media (max-width: 800px) {
+  html.skin-discuz-board .wp { width: auto; margin: 0 4px; }
+  html.skin-discuz-board .hd {
+    height: auto;
+    overflow: visible;
+  }
+  html.skin-discuz-board .hd > span:first-child,
+  html.skin-discuz-board .hd .logo,
+  html.skin-discuz-board .hd > span:last-child,
+  html.skin-discuz-board .hd .y,
+  html.skin-discuz-board .hd form {
+    float: none;
+    display: block;
+    height: auto;
+    line-height: 1.4;
+    padding: 8px;
+  }
+  html.skin-discuz-board .hd .logo {
+    font: 700 16px/44px Tahoma, SimSun, sans-serif;
+    min-height: 44px;
+  }
+  html.skin-discuz-board .hd input {
+    float: none;
+    width: 70%;
+    min-height: 44px;
+    height: 44px;
+    box-sizing: border-box;
+  }
+  html.skin-discuz-board .hd button {
+    float: none;
+    min-height: 44px;
+    height: 44px;
+  }
+  html.skin-discuz-board .nv {
+    height: auto;
+    overflow: visible;
+  }
+  html.skin-discuz-board .nv a {
+    float: none;
+    display: block;
+    min-height: 44px;
+    height: auto;
+    line-height: 44px;
+  }
+  html.skin-discuz-board table.forum { table-layout: auto; }
+  html.skin-discuz-board table.forum td,
+  html.skin-discuz-board table.forum th {
+    word-break: break-word;
+  }
+  html.skin-discuz-board table.forum a {
+    display: inline-block;
+    min-height: 44px;
+    line-height: 44px;
+  }
+  html.skin-discuz-board .u {
+    float: none;
+    width: auto;
+  }
+  html.skin-discuz-board .t {
+    margin-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--border);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.skin-discuz-board * {
+    animation: none;
+    transition: none;
+  }
+}

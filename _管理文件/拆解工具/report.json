@@ -1,0 +1,57 @@
+[
+  {
+    "game": "乡村邮政登记调度员",
+    "zh_entry": "index.html",
+    "en_entry": "index.html",
+    "zh": {
+      "mode": "single",
+      "assets": 10,
+      "leftover": 0,
+      "js": [
+        "world-content.js",
+        "app.js"
+      ],
+      "src": "index.html"
+    },
+    "en": {
+      "mode": "single",
+      "assets": 10,
+      "leftover": 0,
+      "js": [
+        "world-content.js",
+        "app.js"
+      ],
+      "src": "index.html"
+    }
+  },
+  {
+    "game": "新谱涂改",
+    "zh_entry": "introduction.html",
+    "en_entry": "introduction.html",
+    "zh": {
+      "mode": "multi",
+      "entry": "introduction.html",
+      "extracted": 0
+    },
+    "en": {
+      "mode": "multi",
+      "entry": "introduction.html",
+      "extracted": 0
+    }
+  },
+  {
+    "game": "香单分拣",
+    "zh_entry": "introduction.html",
+    "en_entry": "introduction.html",
+    "zh": {
+      "mode": "multi",
+      "entry": "introduction.html",
+      "extracted": 0
+    },
+    "en": {
+      "mode": "multi",
+      "entry": "introduction.html",
+      "extracted": 0
+    }
+  }
+]

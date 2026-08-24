@@ -1,0 +1,891 @@
+[
+  {
+    "step": "zh-intro",
+    "href": "http://127.0.0.1:8928/introduction.html",
+    "has_search": false
+  },
+  {
+    "step": "zh-enter-hall",
+    "href": "http://127.0.0.1:8928/index.html",
+    "title": "金鹊录像厅"
+  },
+  {
+    "step": "zh-search-hit",
+    "href": "http://127.0.0.1:8928/search-results.html?q=%E5%8A%A0%E6%98%A0%E5%9C%BA",
+    "box": "搜索结果\n\n共有 2 项符合条件的结果：\n\n小棠的备份日志 - 加映场\n小棠的备份日志 - 机房那晚\n\n加映不是多放一部片子。\n\n机房门从里面反锁。这是附带草稿。"
+  },
+  {
+    "step": "zh-open-blog",
+    "href": "http://127.0.0.1:8928/pages/blog-jiaoying.html",
+    "skin": "skin-blog-personal-2008"
+  },
+  {
+    "step": "zh-ticket",
+    "href": "http://127.0.0.1:8928/pages/ticket.html",
+    "facts": [
+      "lead_home",
+      "fact_show",
+      "fact_stub"
+    ]
+  },
+  {
+    "step": "zh-near-fail",
+    "miss": "还没核对完。票根、老侯、陆小棠、空座、田麦这五条都要先读到。",
+    "facts": [
+      "lead_home",
+      "fact_show",
+      "fact_stub"
+    ]
+  },
+  {
+    "step": "zh-visit",
+    "word": "田麦",
+    "href": "http://127.0.0.1:8928/pages/space-tianmai.html",
+    "facts": [
+      "lead_home",
+      "fact_show",
+      "fact_stub",
+      "fact_tian"
+    ]
+  },
+  {
+    "step": "zh-visit",
+    "word": "陆小棠",
+    "href": "http://127.0.0.1:8928/pages/post-lu.html",
+    "facts": [
+      "lead_home",
+      "fact_show",
+      "fact_stub",
+      "fact_tian",
+      "fact_lu"
+    ]
+  },
+  {
+    "step": "zh-visit",
+    "word": "空座",
+    "href": "http://127.0.0.1:8928/pages/empty-seat.html",
+    "facts": [
+      "lead_home",
+      "fact_show",
+      "fact_stub",
+      "fact_tian",
+      "fact_lu",
+      "fact_empty"
+    ]
+  },
+  {
+    "step": "zh-visit",
+    "word": "老侯",
+    "href": "http://127.0.0.1:8928/pages/obit-hou.html",
+    "facts": [
+      "lead_home",
+      "fact_show",
+      "fact_stub",
+      "fact_tian",
+      "fact_lu",
+      "fact_empty",
+      "fact_hou"
+    ]
+  },
+  {
+    "step": "zh-choice-ready",
+    "facts": [
+      "lead_home",
+      "fact_show",
+      "fact_stub",
+      "fact_tian",
+      "fact_lu",
+      "fact_empty",
+      "fact_hou"
+    ],
+    "href": "http://127.0.0.1:8928/pages/choice.html"
+  },
+  {
+    "step": "zh-ending-a",
+    "href": "http://127.0.0.1:8928/pages/ending-a.html",
+    "title": "退票"
+  },
+  {
+    "step": "zh-search-miss",
+    "text": "抱歉，没有找到与\"西瓜\"相关的结果。"
+  },
+  {
+    "step": "zh-old-save-blog",
+    "ok": true,
+    "href": "http://127.0.0.1:8928/pages/blog-jiaoying.html",
+    "skin": "skin-blog-personal-2008"
+  },
+  {
+    "step": "zh-old-save-locked-ticket",
+    "redirected_forbidden": true,
+    "href": "http://127.0.0.1:8928/pages/forbidden.html"
+  },
+  {
+    "step": "en-intro",
+    "href": "http://127.0.0.1:8929/introduction.html",
+    "has_search": false
+  },
+  {
+    "step": "en-enter-hall",
+    "href": "http://127.0.0.1:8929/index.html",
+    "title": "Jinque Video Hall"
+  },
+  {
+    "step": "en-search-hit",
+    "href": "http://127.0.0.1:8929/search-results.html?q=ExtraShow",
+    "box": "Search results\n\n2 matching results:\n\nXiaotang's backup log - ExtraShow\nXiaotang's backup log - that night in the booth\n\nExtraShow is not one more film.\n\nThe booth door was locked f"
+  },
+  {
+    "step": "en-open-blog",
+    "href": "http://127.0.0.1:8929/pages/blog-jiaoying.html",
+    "skin": "skin-blog-personal-2008"
+  },
+  {
+    "step": "en-ticket",
+    "href": "http://127.0.0.1:8929/pages/ticket.html",
+    "facts": [
+      "lead_home",
+      "fact_show",
+      "fact_stub"
+    ]
+  },
+  {
+    "step": "en-near-fail",
+    "miss": "Not checked off yet. Stub, OldHou, LuXiaotang, EmptySeat, and Tianmai — read all five first.",
+    "facts": [
+      "lead_home",
+      "fact_show",
+      "fact_stub"
+    ]
+  },
+  {
+    "step": "en-visit",
+    "word": "Tianmai",
+    "href": "http://127.0.0.1:8929/pages/space-tianmai.html",
+    "facts": [
+      "lead_home",
+      "fact_show",
+      "fact_stub",
+      "fact_tian"
+    ]
+  },
+  {
+    "step": "en-visit",
+    "word": "LuXiaotang",
+    "href": "http://127.0.0.1:8929/pages/post-lu.html",
+    "facts": [
+      "lead_home",
+      "fact_show",
+      "fact_stub",
+      "fact_tian",
+      "fact_lu"
+    ]
+  },
+  {
+    "step": "en-visit",
+    "word": "EmptySeat",
+    "href": "http://127.0.0.1:8929/pages/empty-seat.html",
+    "facts": [
+      "lead_home",
+      "fact_show",
+      "fact_stub",
+      "fact_tian",
+      "fact_lu",
+      "fact_empty"
+    ]
+  },
+  {
+    "step": "en-visit",
+    "word": "OldHou",
+    "href": "http://127.0.0.1:8929/pages/obit-hou.html",
+    "facts": [
+      "lead_home",
+      "fact_show",
+      "fact_stub",
+      "fact_tian",
+      "fact_lu",
+      "fact_empty",
+      "fact_hou"
+    ]
+  },
+  {
+    "step": "en-choice-ready",
+    "facts": [
+      "lead_home",
+      "fact_show",
+      "fact_stub",
+      "fact_tian",
+      "fact_lu",
+      "fact_empty",
+      "fact_hou"
+    ],
+    "href": "http://127.0.0.1:8929/pages/choice.html"
+  },
+  {
+    "step": "en-ending-a",
+    "href": "http://127.0.0.1:8929/pages/ending-a.html",
+    "title": "Refund"
+  },
+  {
+    "step": "en-search-miss",
+    "text": "Sorry, no results for \"NoSuchWord\"."
+  },
+  {
+    "step": "en-old-save-blog",
+    "ok": true,
+    "href": "http://127.0.0.1:8929/pages/blog-jiaoying.html",
+    "skin": "skin-blog-personal-2008"
+  },
+  {
+    "step": "en-old-save-locked-ticket",
+    "redirected_forbidden": true,
+    "href": "http://127.0.0.1:8929/pages/forbidden.html"
+  },
+  {
+    "step": "smoke-size-320-shop",
+    "url": "http://127.0.0.1:8928/index.html",
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "title": "搜索内容...",
+        "w": 208,
+        "h": 44
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "title": "搜索",
+        "w": 60,
+        "h": 44
+      }
+    ],
+    "undersize": []
+  },
+  {
+    "step": "smoke-size-320-forum",
+    "url": "http://127.0.0.1:8928/pages/forum.html",
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "title": "搜索内容...",
+        "w": 220,
+        "h": 44
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "title": "搜索",
+        "w": 56,
+        "h": 44
+      }
+    ],
+    "undersize": []
+  },
+  {
+    "step": "smoke-size-320-intro",
+    "url": "http://127.0.0.1:8928/introduction.html",
+    "boxes": [
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "title": "进入录像厅",
+        "w": 99,
+        "h": 44
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "title": "清除存档",
+        "w": 87,
+        "h": 44
+      }
+    ],
+    "undersize": []
+  },
+  {
+    "step": "smoke-size-320-login",
+    "url": "http://127.0.0.1:8928/pages/login.html",
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "title": "搜索内容...",
+        "w": 212,
+        "h": 44
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "title": "搜索",
+        "w": 52,
+        "h": 44
+      },
+      {
+        "tag": "INPUT",
+        "id": "",
+        "title": "",
+        "w": 240,
+        "h": 44
+      },
+      {
+        "tag": "INPUT",
+        "id": "",
+        "title": "",
+        "w": 240,
+        "h": 44
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "title": "登录",
+        "w": 63,
+        "h": 44
+      }
+    ],
+    "undersize": []
+  },
+  {
+    "step": "smoke-size-320-choice",
+    "url": "http://127.0.0.1:8928/pages/choice.html",
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "title": "搜索内容...",
+        "w": 208,
+        "h": 44
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "title": "搜索",
+        "w": 56,
+        "h": 44
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "title": "退票",
+        "w": 88,
+        "h": 44
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "title": "坐到完",
+        "w": 88,
+        "h": 44
+      }
+    ],
+    "undersize": []
+  },
+  {
+    "step": "smoke-size-320-classified",
+    "url": "http://127.0.0.1:8928/pages/classified.html",
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "title": "搜索内容...",
+        "w": 232,
+        "h": 44
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "title": "搜索",
+        "w": 52,
+        "h": 44
+      }
+    ],
+    "undersize": []
+  },
+  {
+    "step": "smoke-size-320-gazetteer",
+    "url": "http://127.0.0.1:8928/pages/gazetteer.html",
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "title": "搜索内容...",
+        "w": 244,
+        "h": 44
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "title": "搜索",
+        "w": 56,
+        "h": 44
+      }
+    ],
+    "undersize": []
+  },
+  {
+    "step": "smoke-size-320-blog",
+    "url": "http://127.0.0.1:8928/pages/blog-jiaoying.html",
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "title": "搜索内容...",
+        "w": 228,
+        "h": 44
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "title": "搜索",
+        "w": 56,
+        "h": 44
+      }
+    ],
+    "undersize": []
+  },
+  {
+    "step": "smoke-size-320-mp",
+    "url": "http://127.0.0.1:8928/pages/obit-hou.html",
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "title": "搜索内容...",
+        "w": 228,
+        "h": 44
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "title": "搜索",
+        "w": 56,
+        "h": 44
+      }
+    ],
+    "undersize": []
+  },
+  {
+    "step": "smoke-size-320-mail",
+    "url": "http://127.0.0.1:8928/pages/mail-lu.html",
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "title": "搜索内容...",
+        "w": 236,
+        "h": 44
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "title": "搜索",
+        "w": 56,
+        "h": 44
+      }
+    ],
+    "undersize": []
+  },
+  {
+    "step": "smoke-size-320-desk",
+    "url": "http://127.0.0.1:8928/pages/desk.html",
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "title": "搜索内容...",
+        "w": 224,
+        "h": 44
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "title": "搜索",
+        "w": 52,
+        "h": 44
+      }
+    ],
+    "undersize": []
+  },
+  {
+    "step": "smoke-size-320-points",
+    "url": "http://127.0.0.1:8928/pages/points.html",
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "title": "搜索内容...",
+        "w": 258,
+        "h": 44
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "title": "搜索",
+        "w": 56,
+        "h": 44
+      }
+    ],
+    "undersize": []
+  },
+  {
+    "step": "smoke-size-320-qzone",
+    "url": "http://127.0.0.1:8928/pages/space-tianmai.html",
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "title": "搜索内容...",
+        "w": 236,
+        "h": 44
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "title": "搜索",
+        "w": 56,
+        "h": 44
+      }
+    ],
+    "undersize": []
+  },
+  {
+    "step": "smoke-size-390-shop",
+    "url": "http://127.0.0.1:8928/index.html",
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "title": "搜索内容...",
+        "w": 278,
+        "h": 44
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "title": "搜索",
+        "w": 60,
+        "h": 44
+      }
+    ],
+    "undersize": []
+  },
+  {
+    "step": "smoke-size-390-forum",
+    "url": "http://127.0.0.1:8928/pages/forum.html",
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "title": "搜索内容...",
+        "w": 226,
+        "h": 44
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "title": "搜索",
+        "w": 56,
+        "h": 44
+      }
+    ],
+    "undersize": []
+  },
+  {
+    "step": "smoke-size-390-intro",
+    "url": "http://127.0.0.1:8928/introduction.html",
+    "boxes": [
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "title": "进入录像厅",
+        "w": 99,
+        "h": 44
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "title": "清除存档",
+        "w": 87,
+        "h": 44
+      }
+    ],
+    "undersize": []
+  },
+  {
+    "step": "smoke-size-390-login",
+    "url": "http://127.0.0.1:8928/pages/login.html",
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "title": "搜索内容...",
+        "w": 282,
+        "h": 44
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "title": "搜索",
+        "w": 52,
+        "h": 44
+      },
+      {
+        "tag": "INPUT",
+        "id": "",
+        "title": "",
+        "w": 310,
+        "h": 44
+      },
+      {
+        "tag": "INPUT",
+        "id": "",
+        "title": "",
+        "w": 310,
+        "h": 44
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "title": "登录",
+        "w": 63,
+        "h": 44
+      }
+    ],
+    "undersize": []
+  },
+  {
+    "step": "smoke-size-390-choice",
+    "url": "http://127.0.0.1:8928/pages/choice.html",
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "title": "搜索内容...",
+        "w": 273,
+        "h": 44
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "title": "搜索",
+        "w": 56,
+        "h": 44
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "title": "退票",
+        "w": 88,
+        "h": 44
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "title": "坐到完",
+        "w": 88,
+        "h": 44
+      }
+    ],
+    "undersize": []
+  },
+  {
+    "step": "smoke-size-390-classified",
+    "url": "http://127.0.0.1:8928/pages/classified.html",
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "title": "搜索内容...",
+        "w": 302,
+        "h": 44
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "title": "搜索",
+        "w": 52,
+        "h": 44
+      }
+    ],
+    "undersize": []
+  },
+  {
+    "step": "smoke-size-390-gazetteer",
+    "url": "http://127.0.0.1:8928/pages/gazetteer.html",
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "title": "搜索内容...",
+        "w": 314,
+        "h": 44
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "title": "搜索",
+        "w": 56,
+        "h": 44
+      }
+    ],
+    "undersize": []
+  },
+  {
+    "step": "smoke-size-390-blog",
+    "url": "http://127.0.0.1:8928/pages/blog-jiaoying.html",
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "title": "搜索内容...",
+        "w": 298,
+        "h": 44
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "title": "搜索",
+        "w": 56,
+        "h": 44
+      }
+    ],
+    "undersize": []
+  },
+  {
+    "step": "smoke-size-390-mp",
+    "url": "http://127.0.0.1:8928/pages/obit-hou.html",
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "title": "搜索内容...",
+        "w": 298,
+        "h": 44
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "title": "搜索",
+        "w": 56,
+        "h": 44
+      }
+    ],
+    "undersize": []
+  },
+  {
+    "step": "smoke-size-390-mail",
+    "url": "http://127.0.0.1:8928/pages/mail-lu.html",
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "title": "搜索内容...",
+        "w": 306,
+        "h": 44
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "title": "搜索",
+        "w": 56,
+        "h": 44
+      }
+    ],
+    "undersize": []
+  },
+  {
+    "step": "smoke-size-390-desk",
+    "url": "http://127.0.0.1:8928/pages/desk.html",
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "title": "搜索内容...",
+        "w": 294,
+        "h": 44
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "title": "搜索",
+        "w": 52,
+        "h": 44
+      }
+    ],
+    "undersize": []
+  },
+  {
+    "step": "smoke-size-390-points",
+    "url": "http://127.0.0.1:8928/pages/points.html",
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "title": "搜索内容...",
+        "w": 328,
+        "h": 44
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "title": "搜索",
+        "w": 56,
+        "h": 44
+      }
+    ],
+    "undersize": []
+  },
+  {
+    "step": "smoke-size-390-qzone",
+    "url": "http://127.0.0.1:8928/pages/space-tianmai.html",
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "title": "搜索内容...",
+        "w": 306,
+        "h": 44
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "title": "搜索",
+        "w": 56,
+        "h": 44
+      }
+    ],
+    "undersize": []
+  },
+  {
+    "step": "smoke-keyboard-intro-new",
+    "focused": "new",
+    "outline": "rgb(255, 255, 255) none 3px"
+  },
+  {
+    "step": "smoke-keyboard-search",
+    "focused": "search-input",
+    "outline": "rgb(0, 0, 0) none 3px rgb(0, 0, 0)"
+  },
+  {
+    "step": "smoke-touch-search",
+    "href": "http://127.0.0.1:8928/search-results.html?q=%E5%8A%A0%E6%98%A0%E5%9C%BA"
+  },
+  {
+    "step": "smoke-mute",
+    "note": "N/A no audio track"
+  },
+  {
+    "step": "smoke-reduced-motion-miss",
+    "miss_border": "dashed"
+  },
+  {
+    "step": "smoke-forbidden-shape",
+    "root": "skin-forbidden reduce",
+    "before": "\"禁止\""
+  },
+  {
+    "step": "smoke-no-flash",
+    "note": "no looping animation; html.reduce kills transition"
+  }
+]

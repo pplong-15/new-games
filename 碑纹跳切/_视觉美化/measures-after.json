@@ -1,0 +1,762 @@
+{
+  "zh-01-boot-first-screen": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-zh/01-boot-first-screen.png",
+    "bytes": 451186,
+    "url": "http://127.0.0.1:8812/introduction.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-02-core-verb": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-zh/02-core-verb.png",
+    "bytes": 490832,
+    "url": "http://127.0.0.1:8812/rub/now.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-03-success-feedback": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-zh/03-success-feedback.png",
+    "bytes": 62367,
+    "url": "http://127.0.0.1:8812/desk/result-recarve.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-04-near-fail": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-zh/04-near-fail.png",
+    "bytes": 69728,
+    "url": "http://127.0.0.1:8812/desk/submit.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-05-recovery": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-zh/05-recovery.png",
+    "bytes": 55726,
+    "url": "http://127.0.0.1:8812/desk/result-same.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-06-narrow-320": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-zh/06-narrow-320.png",
+    "bytes": 105887,
+    "url": "http://127.0.0.1:8812/introduction.html",
+    "w": 320,
+    "h": 720
+  },
+  "zh-07-keyboard-focus": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-zh/07-keyboard-focus.png",
+    "bytes": 450859,
+    "url": "http://127.0.0.1:8812/introduction.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-08-touch-targets": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-zh/08-touch-targets.png",
+    "bytes": 150271,
+    "url": "http://127.0.0.1:8812/rub/now.html",
+    "w": 390,
+    "h": 844,
+    "boxes": [
+      {
+        "tag": "A",
+        "cls": "hot quiet",
+        "title": "浅磨",
+        "w": 120,
+        "h": 44,
+        "x": 132,
+        "y": 296
+      },
+      {
+        "tag": "A",
+        "cls": "hot quiet",
+        "title": "描红",
+        "w": 60,
+        "h": 44,
+        "x": 162,
+        "y": 305
+      },
+      {
+        "tag": "A",
+        "cls": "hot quiet",
+        "title": "螭首",
+        "w": 93,
+        "h": 44,
+        "x": 149,
+        "y": 215
+      },
+      {
+        "tag": "A",
+        "cls": "hot quiet",
+        "title": "匣沿",
+        "w": 53,
+        "h": 44,
+        "x": 56,
+        "y": 373
+      }
+    ]
+  },
+  "zh-09-muted-or-reduced-motion": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-zh/09-muted-or-reduced-motion.png",
+    "bytes": 451186,
+    "url": "http://127.0.0.1:8812/introduction.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-10-non-color-state": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-zh/10-non-color-state.png",
+    "bytes": 69879,
+    "url": "http://127.0.0.1:8812/desk/submit.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-11-empty-or-loading": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-zh/11-empty-or-loading.png",
+    "bytes": 76395,
+    "url": "http://127.0.0.1:8812/desk/find.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-12-error-or-pause": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-zh/12-error-or-pause.png",
+    "bytes": 75071,
+    "url": "http://127.0.0.1:8812/desk/submit.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-13-intro-no-search": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-zh/13-intro-no-search.png",
+    "bytes": 671493,
+    "url": "http://127.0.0.1:8812/introduction.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-14-public-nav-search": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-zh/14-public-nav-search.png",
+    "bytes": 436483,
+    "url": "http://127.0.0.1:8812/desk/home.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-15-embedded-other-skin": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-zh/15-embedded-other-skin.png",
+    "bytes": 88287,
+    "url": "http://127.0.0.1:8812/family/index.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-17-search-miss": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-zh/17-search-miss.png",
+    "bytes": 76395,
+    "url": "http://127.0.0.1:8812/desk/find.html?q=纪闻山",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-18-archive-dossier": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-zh/18-archive-dossier.png",
+    "bytes": 475055,
+    "url": "http://127.0.0.1:8812/rub/now.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-19-two-source-gov": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-zh/19-two-source-gov.png",
+    "bytes": 73411,
+    "url": "http://127.0.0.1:8812/gov/index.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-20-two-source-shop": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-zh/20-two-source-shop.png",
+    "bytes": 64487,
+    "url": "http://127.0.0.1:8812/shop/index.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-21-hidden-page-blog": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-zh/21-hidden-page-blog.png",
+    "bytes": 93195,
+    "url": "http://127.0.0.1:8812/he/index.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-22-quiet-hotspots-no-hover": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-zh/22-quiet-hotspots-no-hover.png",
+    "bytes": 490832,
+    "url": "http://127.0.0.1:8812/rub/now.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-23-jump-after-contour": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-zh/23-jump-after-contour.png",
+    "bytes": 663219,
+    "url": "http://127.0.0.1:8812/rub/y1986.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-24-submit-group": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-zh/24-submit-group.png",
+    "bytes": 69349,
+    "url": "http://127.0.0.1:8812/desk/submit.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-25-five-skin-yellow": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-zh/25-five-skin-yellow.png",
+    "bytes": 69239,
+    "url": "http://127.0.0.1:8812/yellow/index.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-26-narrow-320-now": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-zh/26-narrow-320-now.png",
+    "bytes": 111370,
+    "url": "http://127.0.0.1:8812/rub/now.html",
+    "w": 320,
+    "h": 720,
+    "boxes": [
+      {
+        "tag": "A",
+        "cls": "hot quiet",
+        "title": "浅磨",
+        "w": 94,
+        "h": 44,
+        "x": 110,
+        "y": 326
+      },
+      {
+        "tag": "A",
+        "cls": "hot quiet",
+        "title": "描红",
+        "w": 47,
+        "h": 44,
+        "x": 134,
+        "y": 333
+      },
+      {
+        "tag": "A",
+        "cls": "hot quiet",
+        "title": "螭首",
+        "w": 73,
+        "h": 44,
+        "x": 123,
+        "y": 261
+      },
+      {
+        "tag": "A",
+        "cls": "hot quiet",
+        "title": "匣沿",
+        "w": 44,
+        "h": 44,
+        "x": 50,
+        "y": 386
+      }
+    ]
+  },
+  "zh-27-old-save-restore": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-zh/27-old-save-restore.png",
+    "bytes": 436483,
+    "url": "http://127.0.0.1:8812/desk/home.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-28-result-approve": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-zh/28-result-approve.png",
+    "bytes": 54069,
+    "url": "http://127.0.0.1:8812/desk/result-approve.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-29-touch-390-submit": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-zh/29-touch-390-submit.png",
+    "bytes": 56505,
+    "url": "http://127.0.0.1:8812/desk/submit.html",
+    "w": 390,
+    "h": 844,
+    "boxes": [
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "查找",
+        "w": 51,
+        "h": 44,
+        "x": 318,
+        "y": 12
+      },
+      {
+        "tag": "LABEL",
+        "cls": "choice",
+        "title": "碑阳后人改刻。志石本名不同。建议挂改刻，不作更名依据。",
+        "w": 310,
+        "h": 67,
+        "x": 40,
+        "y": 299
+      },
+      {
+        "tag": "LABEL",
+        "cls": "choice",
+        "title": "同一人已更名。碑阳现名可当匣里的名来投。",
+        "w": 310,
+        "h": 67,
+        "x": 40,
+        "y": 376
+      },
+      {
+        "tag": "LABEL",
+        "cls": "choice",
+        "title": "批准按闻山改名，或批准把旧字磨掉。",
+        "w": 310,
+        "h": 44,
+        "x": 40,
+        "y": 453
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "交查阅备注",
+        "w": 83,
+        "h": 44,
+        "x": 40,
+        "y": 511
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "台面",
+        "w": 76,
+        "h": 44,
+        "x": 21,
+        "y": 606
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "查阅单",
+        "w": 90,
+        "h": 44,
+        "x": 107,
+        "y": 606
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "队列",
+        "w": 76,
+        "h": 44,
+        "x": 207,
+        "y": 606
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "交接",
+        "w": 76,
+        "h": 44,
+        "x": 293,
+        "y": 606
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "作法",
+        "w": 76,
+        "h": 44,
+        "x": 114,
+        "y": 660
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "交单",
+        "w": 76,
+        "h": 44,
+        "x": 200,
+        "y": 660
+      }
+    ]
+  },
+  "zh-30-core-verb-y1986": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-zh/30-core-verb-y1986.png",
+    "bytes": 663219,
+    "url": "http://127.0.0.1:8812/rub/y1986.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-01-boot-first-screen": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-en/01-boot-first-screen.png",
+    "bytes": 457792,
+    "url": "http://127.0.0.1:8813/introduction.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-02-core-verb": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-en/02-core-verb.png",
+    "bytes": 480419,
+    "url": "http://127.0.0.1:8813/rub/now.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-03-success-feedback": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-en/03-success-feedback.png",
+    "bytes": 72403,
+    "url": "http://127.0.0.1:8813/desk/result-recarve.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-04-near-fail": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-en/04-near-fail.png",
+    "bytes": 83390,
+    "url": "http://127.0.0.1:8813/desk/submit.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-05-recovery": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-en/05-recovery.png",
+    "bytes": 67508,
+    "url": "http://127.0.0.1:8813/desk/result-same.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-06-narrow-320": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-en/06-narrow-320.png",
+    "bytes": 96194,
+    "url": "http://127.0.0.1:8813/introduction.html",
+    "w": 320,
+    "h": 720
+  },
+  "en-07-keyboard-focus": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-en/07-keyboard-focus.png",
+    "bytes": 457163,
+    "url": "http://127.0.0.1:8813/introduction.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-08-touch-targets": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-en/08-touch-targets.png",
+    "bytes": 148970,
+    "url": "http://127.0.0.1:8813/rub/now.html",
+    "w": 390,
+    "h": 844,
+    "boxes": [
+      {
+        "tag": "A",
+        "cls": "hot quiet",
+        "title": "smear",
+        "w": 120,
+        "h": 44,
+        "x": 132,
+        "y": 296
+      },
+      {
+        "tag": "A",
+        "cls": "hot quiet",
+        "title": "red-tracing",
+        "w": 60,
+        "h": 44,
+        "x": 162,
+        "y": 305
+      },
+      {
+        "tag": "A",
+        "cls": "hot quiet",
+        "title": "chi-head",
+        "w": 93,
+        "h": 44,
+        "x": 149,
+        "y": 215
+      },
+      {
+        "tag": "A",
+        "cls": "hot quiet",
+        "title": "box lip",
+        "w": 53,
+        "h": 44,
+        "x": 56,
+        "y": 373
+      }
+    ]
+  },
+  "en-09-muted-or-reduced-motion": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-en/09-muted-or-reduced-motion.png",
+    "bytes": 457792,
+    "url": "http://127.0.0.1:8813/introduction.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-10-non-color-state": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-en/10-non-color-state.png",
+    "bytes": 83096,
+    "url": "http://127.0.0.1:8813/desk/submit.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-11-empty-or-loading": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-en/11-empty-or-loading.png",
+    "bytes": 89588,
+    "url": "http://127.0.0.1:8813/desk/find.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-12-error-or-pause": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-en/12-error-or-pause.png",
+    "bytes": 88705,
+    "url": "http://127.0.0.1:8813/desk/submit.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-13-intro-no-search": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-en/13-intro-no-search.png",
+    "bytes": 640402,
+    "url": "http://127.0.0.1:8813/introduction.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-14-public-nav-search": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-en/14-public-nav-search.png",
+    "bytes": 434716,
+    "url": "http://127.0.0.1:8813/desk/home.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-15-embedded-other-skin": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-en/15-embedded-other-skin.png",
+    "bytes": 92465,
+    "url": "http://127.0.0.1:8813/family/index.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-17-search-miss": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-en/17-search-miss.png",
+    "bytes": 89588,
+    "url": "http://127.0.0.1:8813/desk/find.html?q=Wenshan",
+    "w": 1280,
+    "h": 800
+  },
+  "en-18-archive-dossier": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-en/18-archive-dossier.png",
+    "bytes": 469702,
+    "url": "http://127.0.0.1:8813/rub/now.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-19-two-source-gov": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-en/19-two-source-gov.png",
+    "bytes": 66155,
+    "url": "http://127.0.0.1:8813/gov/index.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-20-two-source-shop": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-en/20-two-source-shop.png",
+    "bytes": 67702,
+    "url": "http://127.0.0.1:8813/shop/index.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-21-hidden-page-blog": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-en/21-hidden-page-blog.png",
+    "bytes": 101705,
+    "url": "http://127.0.0.1:8813/he/index.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-22-quiet-hotspots-no-hover": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-en/22-quiet-hotspots-no-hover.png",
+    "bytes": 480419,
+    "url": "http://127.0.0.1:8813/rub/now.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-23-jump-after-contour": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-en/23-jump-after-contour.png",
+    "bytes": 655702,
+    "url": "http://127.0.0.1:8813/rub/y1986.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-24-submit-group": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-en/24-submit-group.png",
+    "bytes": 82523,
+    "url": "http://127.0.0.1:8813/desk/submit.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-25-five-skin-yellow": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-en/25-five-skin-yellow.png",
+    "bytes": 68596,
+    "url": "http://127.0.0.1:8813/yellow/index.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-26-narrow-320-now": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-en/26-narrow-320-now.png",
+    "bytes": 98130,
+    "url": "http://127.0.0.1:8813/rub/now.html",
+    "w": 320,
+    "h": 720,
+    "boxes": [
+      {
+        "tag": "A",
+        "cls": "hot quiet",
+        "title": "smear",
+        "w": 94,
+        "h": 44,
+        "x": 110,
+        "y": 349
+      },
+      {
+        "tag": "A",
+        "cls": "hot quiet",
+        "title": "red-tracing",
+        "w": 47,
+        "h": 44,
+        "x": 134,
+        "y": 357
+      },
+      {
+        "tag": "A",
+        "cls": "hot quiet",
+        "title": "chi-head",
+        "w": 73,
+        "h": 44,
+        "x": 123,
+        "y": 285
+      },
+      {
+        "tag": "A",
+        "cls": "hot quiet",
+        "title": "box lip",
+        "w": 44,
+        "h": 44,
+        "x": 50,
+        "y": 410
+      }
+    ]
+  },
+  "en-27-old-save-restore": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-en/27-old-save-restore.png",
+    "bytes": 434716,
+    "url": "http://127.0.0.1:8813/desk/home.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-28-result-approve": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-en/28-result-approve.png",
+    "bytes": 64521,
+    "url": "http://127.0.0.1:8813/desk/result-approve.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-29-touch-390-submit": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-en/29-touch-390-submit.png",
+    "bytes": 65740,
+    "url": "http://127.0.0.1:8813/desk/submit.html",
+    "w": 390,
+    "h": 844,
+    "boxes": [
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "Look up",
+        "w": 71,
+        "h": 44,
+        "x": 298,
+        "y": 12
+      },
+      {
+        "tag": "LABEL",
+        "cls": "choice",
+        "title": "Stele face later recarved. Buried epitap",
+        "w": 310,
+        "h": 112,
+        "x": 40,
+        "y": 411
+      },
+      {
+        "tag": "LABEL",
+        "cls": "choice",
+        "title": "Same person, already renamed. Face name ",
+        "w": 310,
+        "h": 89,
+        "x": 40,
+        "y": 533
+      },
+      {
+        "tag": "LABEL",
+        "cls": "choice",
+        "title": "Approve the rename to Wenshan, or approv",
+        "w": 310,
+        "h": 67,
+        "x": 40,
+        "y": 632
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "File lookup remark",
+        "w": 126,
+        "h": 44,
+        "x": 40,
+        "y": 713
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "Desk",
+        "w": 80,
+        "h": 44,
+        "x": 9,
+        "y": 808
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "Slip",
+        "w": 72,
+        "h": 44,
+        "x": 99,
+        "y": 808
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "Queue",
+        "w": 90,
+        "h": 44,
+        "x": 181,
+        "y": 808
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "Handoff",
+        "w": 100,
+        "h": 44,
+        "x": 281,
+        "y": 808
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "Method",
+        "w": 97,
+        "h": 44,
+        "x": 106,
+        "y": 862
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "File",
+        "w": 71,
+        "h": 44,
+        "x": 213,
+        "y": 862
+      }
+    ]
+  },
+  "en-30-core-verb-y1986": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/碑纹跳切/visual/物件跳切网页档案/polish-20260823-en/30-core-verb-y1986.png",
+    "bytes": 655702,
+    "url": "http://127.0.0.1:8813/rub/y1986.html",
+    "w": 1280,
+    "h": 900
+  }
+}

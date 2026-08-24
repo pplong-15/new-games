@@ -57,6 +57,7 @@
         chaos: "建议已收　整张退回重核"
       };
       if (!key || !titles[key]) return;
+      box.className = "endbox end-" + key;
       box.innerHTML =
         "<h3>" + titles[key] + "</h3><p>" + reason(key) + "</p><p>" + after(key) +
         "</p><p><a href=\"register.html\">回名册</a>　<a href=\"#\" id=\"again\">作废重开（仅本机）</a></p>";

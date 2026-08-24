@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>过门路单</title>
+  <link rel="icon" href="favicon.ico" sizes="16x16">
+  <link rel="stylesheet" href="css/guomen.css">
+</head>
+<body>
+  <div id="title-layer" class="cab-boot">
+    <img src="jpeg/00-open.jpg" alt="驾驶座开局">
+    <p class="lock-line">没有一份全对。路单身份决定听哪一份。</p>
+    <p>江晚路。男。二十九。双河口镇夜班代班司机两周。子时前交路单和钥匙。工钱按有效单。今晚标完再压。</p>
+    <p class="fiction">双河口镇、金桂苑、江晚路、杜衡、老申都是写出来的。</p>
+    <button type="button" id="btn-enter">进站</button>
+  </div>
+
+  <div id="desk" class="cab-desk">
+    <div class="mirror mirror-housing">后视镜 · 堂屋门槛沿 <button type="button" id="btn-mirror">多看一眼</button></div>
+    <div class="band">
+      <div id="radio">短波报桥。</div>
+      <div id="clock">12:00</div>
+    </div>
+    <img id="still" src="jpeg/00-open.jpg" alt="驾驶座">
+    <div class="row">
+      <div id="who">江晚路 · 代班司机 · 二十九 · 双河口镇</div>
+      <div id="night-mark">第1晚</div>
+      <div>工钱 <span id="wage">¥0</span></div>
+    </div>
+    <div class="dims">
+      <span>油钱 <b id="dim-oil">4</b></span>
+      <span>神智 <b id="dim-mind">4</b></span>
+      <span>车誉 <b id="dim-rep">4</b></span>
+      <span>镜 <b id="dim-mirror">4</b></span>
+    </div>
+    <p class="lock-line" id="lock-line">没有一份全对。路单身份决定听哪一份。</p>
+
+    <div class="split">
+      <div class="paper seat-bin">
+        <h3 class="seat-label">副驾摊开</h3>
+        <section class="doc doc-fleet" id="paper-fleet">
+          <img src="jpeg/01-rule.jpg" alt="车队守则">
+          <p class="src-fleet">双河口夜班印发。客人点名的门，车头对过去。不问喜丧。代班按有效单结。</p>
+          <button type="button" class="clause" id="fleet-listen">客人要去的门就过 · 听客人</button>
+        </section>
+        <p class="slot-empty" id="slot-empty">这一格还没纸。流程单晚些才亮。别急着压。</p>
+        <div id="paper-pencil" class="doc doc-pencil" style="display:none">
+          <img src="jpeg/06-pencil.jpg" alt="上一班铅笔">
+          <p class="src-pencil">人早走了，铅笔还夹在遮阳板缝里。字是老申的。</p>
+          <button type="button" class="clause" id="pencil-zishi">子时必须走这道门</button>
+        </div>
+        <div id="paper-slip" class="doc doc-slip" style="display:none">
+          <img src="jpeg/07-slip.jpg" alt="客人折叠流程单">
+          <p class="src-xi">周启明。喜。堂屋门槛可过。门字描过一回。</p>
+          <p class="src-sang">周启平。丧。丧不得出喜门槛。停门外。</p>
+          <button type="button" id="btn-ink">对照门字墨色</button>
+          <button type="button" class="clause" id="slip-xi">可过堂屋门槛 · 周启明喜条</button>
+          <button type="button" class="clause" id="slip-sang">丧不得出喜门槛 · 周启平丧条</button>
+        </div>
+        <div id="paper-sms" class="doc doc-sms" style="display:none">
+          <img src="jpeg/05-sms.jpg" alt="金桂苑门禁短信">
+          <p class="src-sms">金桂苑物业：夜间施工。子时前后禁出棺。本短信不改原文。</p>
+          <button type="button" class="clause" id="sms-night">夜间禁出棺</button>
+        </div>
+        <div id="paper-foot" class="doc doc-foot" style="display:none">
+          <p class="src-foot">印发顺序：车队夜班守则，再流程单，再门禁短信。页脚一行小字，杜衡对讲里骂过：先印的别当圣旨。招鬼、坡道天谴也是嘴里的。</p>
+          <button type="button" id="btn-order">摊开页脚</button>
+        </div>
+        <p id="pair-ink">点两条成对才判。墨留下。</p>
+        <button type="button" id="btn-waste">没有喜门槛所以那页废纸</button>
+      </div>
+      <div class="waybill doc-waybill">
+        <h3>路单</h3>
+        <img src="jpeg/03-waybill.jpg" alt="路单">
+        <p>目的地 <strong id="dest">堂屋门</strong></p>
+        <p>客人 <span id="guest">周启明</span></p>
+        <p>身份 <span id="role">喜车</span></p>
+        <div class="roles">
+          <button type="button" id="role-xi">喜车周启明</button>
+          <button type="button" id="role-sang">丧车周启平</button>
+          <button type="button" id="role-blank">身份空</button>
+        </div>
+        <p>袋 <span id="pocket">袋空</span></p>
+        <p class="chips-label">压哪一份</p>
+        <p class="chips">
+          <button type="button" data-press="fleet">车队</button>
+          <button type="button" data-press="pencil">铅笔</button>
+          <button type="button" data-press="xi_slip">喜条</button>
+          <button type="button" data-press="sang_slip">丧条</button>
+          <button type="button" data-press="gate_sms">门禁</button>
+        </p>
+        <button type="button" id="btn-hold">今晚标完再压 · 本单听这一份</button>
+        <img src="jpeg/10-keys.jpg" alt="点火孔钥匙">
+        <button type="button" id="btn-key">交钥匙</button>
+        <div class="ghost">
+          <button type="button" id="refuse-sms">改金桂苑门禁短信原文</button>
+          <button type="button" id="refuse-xi">替周启明按手印</button>
+          <button type="button" id="refuse-sang">替周启平按手印</button>
+          <button type="button" id="refuse-ghost">把招鬼写进路单</button>
+        </div>
+      </div>
+    </div>
+    <p>杜衡对讲在。工钱按有效单。标完一对再压，交钥匙才进下一晚。</p>
+    <p id="msg">杜衡：今晚标完再压。交钥匙。工钱按有效单。</p>
+    <div id="ending-layer" class="ending"></div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

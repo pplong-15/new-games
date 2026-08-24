@@ -34,7 +34,9 @@
         PW.set("in", 1);
         location.href = "home.html";
       } else {
-        document.getElementById("hint").textContent = "That number does not match. Inside the locker: Wei-0821.";
+        var hint = document.getElementById("hint");
+        hint.textContent = "That number does not match. Inside the locker: Wei-0821.";
+        hint.classList.add("is-err");
       }
     };
   </script>

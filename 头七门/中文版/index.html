@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>头七门</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/touqi.css">
+</head>
+<body>
+  <div id="title-layer">
+    <aside class="wait-strip" aria-hidden="true">请您稍候马上回来</aside>
+    <div class="title-board">
+      <div class="title-still">
+        <img src="jpeg/00-open.jpg" alt="门岗开局">
+      </div>
+      <div class="title-doc-rack" aria-hidden="true">
+        <article class="doc doc-flow title-doc">
+          <span class="issuer">馆方油印</span>
+          <span class="seal">值班柯班</span>
+          <h4>告别厅流程</h4>
+          <p>只接本期做七。</p>
+          <p>不接外人。</p>
+        </article>
+        <article class="doc doc-fang title-doc">
+          <span class="issuer">族里房份</span>
+          <span class="chop">吴</span>
+          <h4>房份单</h4>
+          <p>一七孝男必须进。</p>
+          <p>六七出嫁女必须进。</p>
+        </article>
+        <article class="doc doc-ledger title-doc">
+          <span class="issuer">账房礼簿</span>
+          <h4>礼簿</h4>
+          <p>吴成山 有名</p>
+          <p>黄叔 无名</p>
+        </article>
+      </div>
+    </div>
+    <div class="title-entry">
+      <p class="lock-line">今晚征兆只能管今晚。放错了人会回来。</p>
+      <p>沈晚闸，女，二十六。柳埠殡仪馆告别厅，夜班门岗临聘，干到第三周了。钥匙天亮前交。名单齐了才算有效班，工钱也按这个算。没交钥匙就刷新，夹子还在。交过再刷，从头进站。</p>
+      <p class="title-verb">三家纸摊开对照。标打架的一对。成组再裁。</p>
+      <button type="button" id="btn-enter">进站</button>
+    </div>
+  </div>
+
+  <div id="desk">
+    <aside class="wait-strip" aria-hidden="true">请您稍候马上回来</aside>
+    <div class="band">
+      <div class="pa-slot">
+        <span class="pa-label" aria-hidden="true">馆内广播</span>
+        <div id="radio">广播位空。本层未轮到征兆。</div>
+      </div>
+      <div>能源 <span id="energy">4</span></div>
+    </div>
+    <div class="work-board">
+      <div class="work-docs">
+        <div class="paper">
+          <h3 class="drawer-label">公文抽屉</h3>
+          <div class="doc-rack">
+            <article class="doc doc-flow" data-owner="hall-print">
+              <span class="issuer">馆方油印</span>
+              <span class="seal" aria-hidden="true">值班柯班</span>
+              <img src="jpeg/01-flow.jpg" alt="馆方流程">
+              <button type="button" class="clause" id="btn-benqi">只接本期做七的人</button>
+              <button type="button" class="clause" id="btn-doc-flow">对照流程页</button>
+              <button type="button" class="clause" id="btn-omen">读今晚征兆</button>
+              <p>不接外人。柯班签的。本期两个字他改过一笔，墨还新，我不敢问他到底改宽了还是改窄了。</p>
+            </article>
+            <article id="paper-pencil" class="doc doc-pencil" data-owner="shift-pencil" style="display:none">
+              <span class="issuer">上一班铅笔</span>
+              <p>老阙人不在。铅笔还在。他写过：这一夜来的都按全夜特例放。一次写成夜夜——他口语急。印发还写着不接外人。这两张我对过。</p>
+              <button type="button" class="clause" id="btn-doc-pencil">对照铅笔</button>
+            </article>
+            <article id="paper-fang" class="doc doc-fang" data-owner="clan-fang" style="display:none">
+              <span class="issuer">族里房份</span>
+              <span class="chop" aria-hidden="true">吴</span>
+              <img src="jpeg/07-fang.jpg" alt="房份单">
+              <p>一七孝男必须进。六七出嫁女必须进。吴桂香在这一张上。外姓常漏写。流程只写本期，本期含不含六七，印发没写死。</p>
+              <button type="button" class="clause" id="btn-doc-fang">对照房份单</button>
+            </article>
+            <article class="doc doc-ledger" data-owner="accounts-ledger">
+              <span class="issuer">账房礼簿</span>
+              <img src="jpeg/04-ledger.jpg" alt="礼簿">
+              <p>礼簿有吴成山。黄叔无名。夹缝四七份子墨淡。</p>
+              <button type="button" class="clause" id="btn-doc-ledger">对照礼簿</button>
+              <button type="button" class="clause" id="btn-crack">夹缝份子</button>
+              <p>讣告只读。亡者栏吴伯川。头七窗从第六夜到第七日晨。</p>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="work-post">
+        <img id="still" src="jpeg/00-open.jpg" alt="门岗台">
+        <div class="row">
+          <div id="who">沈晚闸 · 门岗临聘 · 二十六 · 柳埠殡仪馆</div>
+          <div id="night-mark">第1晚</div>
+          <div>工钱 <span id="wage">¥0</span></div>
+        </div>
+        <p class="lock-line" id="lock-line">今晚征兆只能管今晚。放错了人会回来。</p>
+        <p id="silhouette">门外无人。点下一晚。</p>
+        <p id="group-hint">不成组不判。光听广播不够。门外空了就点下一晚。</p>
+        <div class="gate">
+          <button type="button" id="btn-admit" disabled>放进</button>
+          <button type="button" id="btn-deny" disabled>拒之</button>
+        </div>
+        <div class="clip">
+          <h3>放进名单夹 · 钥匙钩</h3>
+          <p>袋 <span id="pocket">袋空</span></p>
+          <p>放进 <span id="admit-list">名单空</span></p>
+          <p>拒之 <span id="deny-list">拒之空</span></p>
+          <img src="jpeg/10-slit.jpg" alt="门缝">
+          <button type="button" class="clause" id="btn-slit">门缝看走廊</button>
+          <button type="button" id="btn-next">下一晚</button>
+          <p>门外无人就点下一晚。第三晚空了也要点。未齐别交钥匙当《本期》。</p>
+          <button type="button" id="btn-key">交钥匙</button>
+          <div class="ghost">
+            <button type="button" id="refuse-obit">改讣告原文</button>
+            <button type="button" id="refuse-wcs">替吴成山按手印</button>
+            <button type="button" id="refuse-wgx">替吴桂香按手印</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>柯班对讲一直开着。工钱按有效班。成组了再裁。走廊有人念回魂冲煞——他骂过，别拿那套当流程。没交钥匙刷新，夹子还在。未齐交钥匙当不了《本期》。</p>
+    <p id="msg">柯班：征兆今晚才算。成组了再裁。门外空了点下一晚。名单没齐就交钥匙，他不算你这一班。</p>
+    <div class="dims">
+      <span>工钱格 <b id="dim-wage">4</b></span>
+      <span>神智 <b id="dim-mind">4</b></span>
+      <span>馆誉 <b id="dim-rep">4</b></span>
+      <span>门缝 <b id="dim-slit">4</b></span>
+    </div>
+    <div id="ending-layer" class="ending"></div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

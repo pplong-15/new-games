@@ -45,6 +45,8 @@ html.skin-intro-manual .boot-actions button {
   border: 0;
   padding: 8px 16px;
   margin: 0 8px 8px 0;
+  min-height: 44px;
+  box-sizing: border-box;
   font: 16px/1.4 "PingFang SC", "Microsoft YaHei", sans-serif;
   text-decoration: none;
   cursor: pointer;

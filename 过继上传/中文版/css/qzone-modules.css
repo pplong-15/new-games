@@ -358,3 +358,29 @@ html.skin-qzone-modules .sr-only {
   height: 1px;
   overflow: hidden;
 }
+
+/* 窄屏：900 模块墙改单列。橙斜边发表钮与绿模块头不改。 */
+@media (max-width: 800px) {
+  html.skin-qzone-modules .topbar {
+    height: auto;
+  }
+  html.skin-qzone-modules .topbar-inner,
+  html.skin-qzone-modules .banner,
+  html.skin-qzone-modules .cols,
+  html.skin-qzone-modules .site-foot {
+    width: auto;
+    max-width: 100%;
+  }
+  html.skin-qzone-modules .cols > div,
+  html.skin-qzone-modules .cols > div:nth-child(2) {
+    float: none;
+    width: auto;
+    margin: 0 8px 8px;
+  }
+  html.skin-qzone-modules .talk textarea,
+  html.skin-qzone-modules .gb-form textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}

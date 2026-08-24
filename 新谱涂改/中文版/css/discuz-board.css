@@ -197,3 +197,81 @@ html.skin-discuz-board .pages strong {
 html.skin-discuz-board .pages strong { background: var(--th); color: #444; font-weight: 700; }
 html.skin-discuz-board .pages em { font-style: normal; }
 html.skin-discuz-board .ft { clear: both; text-align: center; color: #999; padding: 12px 0 24px; border-top: 1px solid var(--border); }
+html.skin-discuz-board a:focus-visible,
+html.skin-discuz-board button:focus-visible,
+html.skin-discuz-board input:focus-visible {
+  outline: 3px solid #c9a227;
+  outline-offset: 2px;
+}
+
+@media (max-width: 800px) {
+  html.skin-discuz-board .wp { width: auto; margin: 0 4px; }
+  html.skin-discuz-board .hd {
+    height: auto;
+    overflow: visible;
+  }
+  html.skin-discuz-board .hd > span:first-child,
+  html.skin-discuz-board .hd .logo,
+  html.skin-discuz-board .hd > span:last-child,
+  html.skin-discuz-board .hd .y,
+  html.skin-discuz-board .hd form {
+    float: none;
+    display: block;
+    height: auto;
+    line-height: 1.4;
+    padding: 8px;
+  }
+  html.skin-discuz-board .hd .logo {
+    font: 700 16px/44px Tahoma, SimSun, sans-serif;
+    min-height: 44px;
+  }
+  html.skin-discuz-board .hd input {
+    float: none;
+    width: 70%;
+    min-height: 44px;
+    height: 44px;
+    box-sizing: border-box;
+  }
+  html.skin-discuz-board .hd button {
+    float: none;
+    min-height: 44px;
+    height: 44px;
+  }
+  html.skin-discuz-board .nv {
+    height: auto;
+    overflow: visible;
+  }
+  html.skin-discuz-board .nv a {
+    float: none;
+    display: block;
+    min-height: 44px;
+    height: auto;
+    line-height: 44px;
+  }
+  html.skin-discuz-board table.forum { table-layout: auto; }
+  html.skin-discuz-board table.forum td,
+  html.skin-discuz-board table.forum th {
+    word-break: break-word;
+  }
+  html.skin-discuz-board table.forum a {
+    display: inline-block;
+    min-height: 44px;
+    line-height: 44px;
+  }
+  html.skin-discuz-board .u {
+    float: none;
+    width: auto;
+  }
+  html.skin-discuz-board .t {
+    margin-left: 0;
+    border-left: 0;
+    border-top: 1px solid var(--border);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.skin-discuz-board * {
+    animation: none;
+    transition: none;
+  }
+}

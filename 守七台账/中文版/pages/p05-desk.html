@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="skin-service-cyan-desk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>守七台账</title>
+  <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/shouqi.css">
+  <script src="../js/keywords.js"></script>
+  <script src="../js/keyword-search.js"></script>
+  <script src="../js/data.js"></script>
+  <script src="../js/engine.js"></script>
+</head>
+<body data-page="5">
+<div id="wrap">
+<header>
+  <strong>守七台账</strong>
+  <div>
+    <a class="ghost-btn" href="p07-login.html">登录</a>
+    <form id="search-form" action="../search-results.html" method="get" style="display:inline">
+      <input id="search-input" name="q" placeholder="搜索内容...">
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+</header>
+<nav class="desk-nav" aria-label="台账分区">
+  <a href="p05-desk.html">值班台</a>
+  <a href="p06-doors.html">原件柜</a>
+  <a href="p07-login.html">登录袋</a>
+  <a href="p28-handover.html">交班</a>
+</nav>
+<div class="notice">
+<h2>使用须知</h2>
+<div id="shift-panel"></div>
+<p>接运终期算第一日。头七设奠在第七日夜。第六日夜只备厅，不开厅。口述、地方号、旅游文，写不进终期栏。写进去的人以前有过，后来被馆里把工号记在红单上。红单在白班的抽屉，夜班看不见，看不见不等于没有。</p>
+<p>馆内日历：己亥年六月初七。子时铃在值班钟上，铃响没交的条，按主家走。钟是石英的，电池换过，换电池的人把旧电池扔在杯托里，杯托有一圈锈。</p>
+<p><button type="button" class="pin" data-claim="v_tonight_chu7">把「今晚是六月初七」记进交班本</button></p>
+<p>本班先调的门在原件柜。柜里的纸，搜索打不开。打开搜索只会碰到中心、告别厅、词条这种公开页。公开页逛熟了，替不了三份原件。</p>
+<p><a href="p06-doors.html">去原件柜</a>　<a href="p30-form.html">写证实条</a>　<a href="p26-rule.html">计日口诀全文</a>　<a href="p29-phone.html">镇值班电话</a></p>
+<p><button type="button" id="btn-handover">交班还柜</button></p>
+<p class="feedback" id="handover-fb"></p>
+<p><button type="button" id="btn-reset">清档重开</button></p>
+</div>
+<div class="hint-box">
+<button type="button" id="hint-next">下一档指点</button>
+<div id="hint-log"></div>
+</div>
+</div>
+<footer class="pg">5/36</footer>
+</body>
+</html>

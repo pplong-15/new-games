@@ -1,0 +1,76 @@
+/* archive-simsun：馆内宋体卷宗。牛皮纸底、双线框、800 栏、无网站顶栏。 */
+html.skin-archive-simsun body {
+  margin: 0;
+  background: #e8dcc8;
+  color: #1a1a1a;
+  font: 16px/1.8 SimSun, "Songti SC", "NSimSun", serif;
+}
+html.skin-archive-simsun .record {
+  width: 800px;
+  max-width: 92%;
+  margin: 32px auto 48px;
+  background: #fbf7ee;
+  border: 4px double #333;
+  padding: 40px 48px;
+  box-shadow: 4px 4px 0 rgba(60, 40, 20, 0.12);
+}
+html.skin-archive-simsun h1 {
+  text-align: center;
+  border-bottom: 2px solid #333;
+  padding-bottom: 12px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #111;
+  font-family: SimSun, "Songti SC", serif;
+}
+html.skin-archive-simsun .meta {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted #666;
+  padding-bottom: 12px;
+  color: #444;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+html.skin-archive-simsun p { text-indent: 2em; }
+html.skin-archive-simsun table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 8px 0 24px;
+  font-size: 15px;
+  text-indent: 0;
+}
+html.skin-archive-simsun th,
+html.skin-archive-simsun td {
+  border: 1px solid #666;
+  padding: 6px 8px;
+  text-align: left;
+  text-indent: 0;
+}
+html.skin-archive-simsun th { background: #efe6d6; font-weight: 700; }
+html.skin-archive-simsun .stamp {
+  color: #a40000;
+  border: 2px solid #a40000;
+  display: inline-block;
+  padding: 4px 10px;
+  transform: rotate(-8deg);
+  font-family: SimSun, serif;
+  letter-spacing: 0.2em;
+}
+html.skin-archive-simsun button.pin {
+  background: #fbf7ee;
+  color: #1a1a1a;
+  border: 1px solid #333;
+  font-family: SimSun, "Songti SC", serif;
+}
+html.skin-archive-simsun button.pin.have {
+  outline: 2px solid #a40000;
+  color: #a40000;
+}
+html.skin-archive-simsun a { color: #00e; }
+@media (max-width: 800px) {
+  html.skin-archive-simsun .record { padding: 20px 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html.skin-archive-simsun .stamp { transform: none; }
+}

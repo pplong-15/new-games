@@ -1,0 +1,273 @@
+{
+  "zh": {
+    "bfs": {
+      "n": 20,
+      "ending": [],
+      "has_ending": false
+    },
+    "appeal": {
+      "ok": true,
+      "expected_title": "钱退了",
+      "log": [
+        {
+          "step": "intro",
+          "href": "http://127.0.0.1:8970/introduction.html",
+          "title": "桐县文旅　短信回执"
+        },
+        {
+          "step": "index",
+          "href": "http://127.0.0.1:8970/index.html"
+        },
+        {
+          "step": "ticket",
+          "href": "http://127.0.0.1:8970/ticket.html",
+          "save": {
+            "t_home": 1,
+            "t_ticket": 1
+          }
+        },
+        {
+          "step": "troupe",
+          "href": "http://127.0.0.1:8970/pages/troupe.html"
+        },
+        {
+          "step": "visit",
+          "href": "http://127.0.0.1:8970/pages/visit.html",
+          "save": {
+            "t_home": 1,
+            "t_ticket": 1,
+            "t_visit": 1
+          }
+        },
+        {
+          "step": "login",
+          "href": "http://127.0.0.1:8970/pages/login.html"
+        },
+        {
+          "step": "order",
+          "href": "http://127.0.0.1:8970/pages/order.html",
+          "save": {
+            "t_home": 1,
+            "t_ticket": 1,
+            "t_visit": 1,
+            "t_login": 1,
+            "t_order": 1
+          }
+        },
+        {
+          "step": "ending",
+          "href": "http://127.0.0.1:8970/pages/ending.html",
+          "title": "今晚交割",
+          "save": {
+            "t_home": 1,
+            "t_ticket": 1,
+            "t_visit": 1,
+            "t_login": 1,
+            "t_order": 1,
+            "t_endpage": 1
+          }
+        },
+        {
+          "step": "appeal",
+          "href": "http://127.0.0.1:8970/pages/end-appeal.html",
+          "title": "钱退了",
+          "save": {
+            "t_home": 1,
+            "t_ticket": 1,
+            "t_visit": 1,
+            "t_login": 1,
+            "t_order": 1,
+            "t_endpage": 1,
+            "lock": "appeal"
+          }
+        }
+      ]
+    },
+    "strike": {
+      "ok": true,
+      "href": "http://127.0.0.1:8970/pages/end-strike.html",
+      "title": "划掉了",
+      "save": {
+        "t_yinggong": 1,
+        "t_xidan": 1,
+        "t_xianghuo": 1,
+        "t_order": 1,
+        "t_endpage": 1,
+        "lock": "strike"
+      },
+      "btn": "#end-strike",
+      "dest": "end-strike.html"
+    },
+    "enter": {
+      "ok": true,
+      "href": "http://127.0.0.1:8970/pages/end-enter.html",
+      "title": "入场",
+      "save": {
+        "t_ticket": 1,
+        "t_visit": 1,
+        "t_forum": 1,
+        "t_order": 1,
+        "t_endpage": 1,
+        "lock": "enter"
+      },
+      "btn": "#end-enter",
+      "dest": "end-enter.html"
+    },
+    "day": {
+      "ok": true,
+      "href": "http://127.0.0.1:8970/pages/end-day.html",
+      "title": "改挂白戏",
+      "save": {
+        "t_baixi": 1,
+        "t_yinggong": 1,
+        "t_order": 1,
+        "t_endpage": 1,
+        "lock": "day"
+      },
+      "btn": "#end-day",
+      "dest": "end-day.html"
+    }
+  },
+  "en": {
+    "bfs": {
+      "n": 20,
+      "ending": [],
+      "has_ending": false
+    },
+    "appeal": {
+      "ok": true,
+      "expected_title": "Money refunded",
+      "log": [
+        {
+          "step": "intro",
+          "href": "http://127.0.0.1:8971/introduction.html",
+          "title": "Tongxian Tourism · SMS receipt"
+        },
+        {
+          "step": "index",
+          "href": "http://127.0.0.1:8971/index.html"
+        },
+        {
+          "step": "ticket",
+          "href": "http://127.0.0.1:8971/ticket.html",
+          "save": {
+            "t_home": 1,
+            "t_ticket": 1
+          }
+        },
+        {
+          "step": "troupe",
+          "href": "http://127.0.0.1:8971/pages/troupe.html"
+        },
+        {
+          "step": "visit",
+          "href": "http://127.0.0.1:8971/pages/visit.html",
+          "save": {
+            "t_home": 1,
+            "t_ticket": 1,
+            "t_visit": 1
+          }
+        },
+        {
+          "step": "login",
+          "href": "http://127.0.0.1:8971/pages/login.html"
+        },
+        {
+          "step": "order",
+          "href": "http://127.0.0.1:8971/pages/order.html",
+          "save": {
+            "t_home": 1,
+            "t_ticket": 1,
+            "t_visit": 1,
+            "t_login": 1,
+            "t_order": 1
+          }
+        },
+        {
+          "step": "ending",
+          "href": "http://127.0.0.1:8971/pages/ending.html",
+          "title": "Tonight's settlement",
+          "save": {
+            "t_home": 1,
+            "t_ticket": 1,
+            "t_visit": 1,
+            "t_login": 1,
+            "t_order": 1,
+            "t_endpage": 1
+          }
+        },
+        {
+          "step": "appeal",
+          "href": "http://127.0.0.1:8971/pages/end-appeal.html",
+          "title": "Money refunded",
+          "save": {
+            "t_home": 1,
+            "t_ticket": 1,
+            "t_visit": 1,
+            "t_login": 1,
+            "t_order": 1,
+            "t_endpage": 1,
+            "lock": "appeal"
+          }
+        }
+      ]
+    },
+    "strike": {
+      "ok": true,
+      "href": "http://127.0.0.1:8971/pages/end-strike.html",
+      "title": "Struck through",
+      "save": {
+        "t_yinggong": 1,
+        "t_xidan": 1,
+        "t_xianghuo": 1,
+        "t_order": 1,
+        "t_endpage": 1,
+        "lock": "strike"
+      },
+      "btn": "#end-strike",
+      "dest": "end-strike.html"
+    },
+    "enter": {
+      "ok": true,
+      "href": "http://127.0.0.1:8971/pages/end-enter.html",
+      "title": "Admission",
+      "save": {
+        "t_ticket": 1,
+        "t_visit": 1,
+        "t_forum": 1,
+        "t_order": 1,
+        "t_endpage": 1,
+        "lock": "enter"
+      },
+      "btn": "#end-enter",
+      "dest": "end-enter.html"
+    },
+    "day": {
+      "ok": true,
+      "href": "http://127.0.0.1:8971/pages/end-day.html",
+      "title": "Refiled as WhitePlay",
+      "save": {
+        "t_baixi": 1,
+        "t_yinggong": 1,
+        "t_order": 1,
+        "t_endpage": 1,
+        "lock": "day"
+      },
+      "btn": "#end-day",
+      "dest": "end-day.html"
+    }
+  },
+  "all_ok": false,
+  "checks": [
+    false,
+    true,
+    true,
+    true,
+    true,
+    false,
+    true,
+    true,
+    true,
+    true
+  ]
+}

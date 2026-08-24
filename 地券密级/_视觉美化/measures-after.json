@@ -1,0 +1,900 @@
+{
+  "zh-01-boot-first-screen": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/01-boot-first-screen.png",
+    "bytes": 357991,
+    "url": "http://127.0.0.1:8824/introduction.html",
+    "href": "http://127.0.0.1:8824/introduction.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-02-core-verb": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/02-core-verb.png",
+    "bytes": 181596,
+    "url": "http://127.0.0.1:8824/public/deed-047.html",
+    "href": "http://127.0.0.1:8824/public/deed-047.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-03-success-feedback": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/03-success-feedback.png",
+    "bytes": 46220,
+    "url": "http://127.0.0.1:8824/desk/result.html",
+    "href": "http://127.0.0.1:8824/desk/result.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-04-near-fail": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/04-near-fail.png",
+    "bytes": 38884,
+    "url": "http://127.0.0.1:8824/desk/result.html",
+    "href": "http://127.0.0.1:8824/desk/result.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-05-recovery": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/05-recovery.png",
+    "bytes": 90886,
+    "url": "http://127.0.0.1:8824/desk/note.html",
+    "href": "http://127.0.0.1:8824/desk/note.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-06-narrow-320": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/06-narrow-320.png",
+    "bytes": 108968,
+    "url": "http://127.0.0.1:8824/public/deed-047.html",
+    "href": "http://127.0.0.1:8824/public/deed-047.html",
+    "w": 320,
+    "h": 720,
+    "boxes": {
+      "overflowX": false,
+      "scrollW": 320,
+      "clientW": 320,
+      "small": [],
+      "smallN": 0
+    }
+  },
+  "zh-07-keyboard-focus": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/07-keyboard-focus.png",
+    "bytes": 146208,
+    "url": "http://127.0.0.1:8824/introduction.html",
+    "href": "http://127.0.0.1:8824/introduction.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-08-touch-targets": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/08-touch-targets.png",
+    "bytes": 27616,
+    "url": "http://127.0.0.1:8824/desk/login.html",
+    "href": "http://127.0.0.1:8824/desk/login.html",
+    "w": 390,
+    "h": 844,
+    "boxes": {
+      "overflowX": false,
+      "scrollW": 390,
+      "clientW": 390,
+      "small": [],
+      "smallN": 0
+    }
+  },
+  "zh-09-muted-or-reduced-motion": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/09-muted-or-reduced-motion.png",
+    "bytes": 204078,
+    "url": "http://127.0.0.1:8824/public/deed-047.html",
+    "href": "http://127.0.0.1:8824/public/deed-047.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-10-non-color-state": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/10-non-color-state.png",
+    "bytes": 90073,
+    "url": "http://127.0.0.1:8824/desk/note.html",
+    "href": "http://127.0.0.1:8824/desk/note.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-11-empty-or-loading": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/11-empty-or-loading.png",
+    "bytes": 87697,
+    "url": "http://127.0.0.1:8824/desk/note.html",
+    "href": "http://127.0.0.1:8824/desk/note.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-12-error-or-pause": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/12-error-or-pause.png",
+    "bytes": 41027,
+    "url": "http://127.0.0.1:8824/desk/login.html",
+    "href": "http://127.0.0.1:8824/desk/login.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-13-intro-no-search": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/13-intro-no-search.png",
+    "bytes": 357991,
+    "url": "http://127.0.0.1:8824/introduction.html",
+    "href": "http://127.0.0.1:8824/introduction.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-14-public-catalog": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/14-public-catalog.png",
+    "bytes": 97510,
+    "url": "http://127.0.0.1:8824/public/catalog.html",
+    "href": "http://127.0.0.1:8824/public/catalog.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-15-desk-dead-search": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/15-desk-dead-search.png",
+    "bytes": 80218,
+    "url": "http://127.0.0.1:8824/desk/home.html",
+    "href": "http://127.0.0.1:8824/desk/home.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-16-denied-gate": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/16-denied-gate.png",
+    "bytes": 42632,
+    "url": "http://127.0.0.1:8824/desk/restricted-047.html",
+    "href": "http://127.0.0.1:8824/desk/denied.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-17-archive-public-047": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/17-archive-public-047.png",
+    "bytes": 205312,
+    "url": "http://127.0.0.1:8824/public/deed-047.html",
+    "href": "http://127.0.0.1:8824/public/deed-047.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-18-layer-internal-047": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/18-layer-internal-047.png",
+    "bytes": 145704,
+    "url": "http://127.0.0.1:8824/desk/internal-047.html",
+    "href": "http://127.0.0.1:8824/desk/internal-047.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-19-layer-restrict-047": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/19-layer-restrict-047.png",
+    "bytes": 155579,
+    "url": "http://127.0.0.1:8824/desk/restricted-047.html",
+    "href": "http://127.0.0.1:8824/desk/restricted-047.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-20-two-source-gov": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/20-two-source-gov.png",
+    "bytes": 59948,
+    "url": "http://127.0.0.1:8824/gov/index.html",
+    "href": "http://127.0.0.1:8824/gov/index.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-21-embedded-forum": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/21-embedded-forum.png",
+    "bytes": 64458,
+    "url": "http://127.0.0.1:8824/forum/list.html",
+    "href": "http://127.0.0.1:8824/forum/list.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-22-mail-skin": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/22-mail-skin.png",
+    "bytes": 31498,
+    "url": "http://127.0.0.1:8824/mail/login.html",
+    "href": "http://127.0.0.1:8824/mail/login.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-23-baike-skin": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/23-baike-skin.png",
+    "bytes": 179648,
+    "url": "http://127.0.0.1:8824/baike/maidiquan.html",
+    "href": "http://127.0.0.1:8824/baike/maidiquan.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-24-still-no-token": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/24-still-no-token.png",
+    "bytes": 187373,
+    "url": "http://127.0.0.1:8824/public/deed-047.html",
+    "href": "http://127.0.0.1:8824/public/deed-047.html",
+    "w": 1280,
+    "h": 700
+  },
+  "zh-25-deed-012-dead": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/25-deed-012-dead.png",
+    "bytes": 91856,
+    "url": "http://127.0.0.1:8824/public/deed-012.html",
+    "href": "http://127.0.0.1:8824/public/deed-012.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-26-login-internal": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/26-login-internal.png",
+    "bytes": 32911,
+    "url": "http://127.0.0.1:8824/desk/login.html",
+    "href": "http://127.0.0.1:8824/desk/login.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-27-login-restrict": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/27-login-restrict.png",
+    "bytes": 41292,
+    "url": "http://127.0.0.1:8824/desk/lock.html",
+    "href": "http://127.0.0.1:8824/desk/lock.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-28-news-portal": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/28-news-portal.png",
+    "bytes": 62383,
+    "url": "http://127.0.0.1:8824/news/index.html",
+    "href": "http://127.0.0.1:8824/news/index.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-29-classified-yellow": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/29-classified-yellow.png",
+    "bytes": 60747,
+    "url": "http://127.0.0.1:8824/classified/hou.html",
+    "href": "http://127.0.0.1:8824/classified/hou.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-30-old-save-restore": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/30-old-save-restore.png",
+    "bytes": 78702,
+    "url": "http://127.0.0.1:8824/desk/note.html",
+    "href": "http://127.0.0.1:8824/desk/note.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-31-blog-orange": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/31-blog-orange.png",
+    "bytes": 209141,
+    "url": "http://127.0.0.1:8824/blog/shen.html",
+    "href": "http://127.0.0.1:8824/blog/shen.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-32-narrow-320-login": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/32-narrow-320-login.png",
+    "bytes": 25922,
+    "url": "http://127.0.0.1:8824/desk/login.html",
+    "href": "http://127.0.0.1:8824/desk/login.html",
+    "w": 320,
+    "h": 720,
+    "boxes": {
+      "overflowX": false,
+      "scrollW": 320,
+      "clientW": 320,
+      "small": [],
+      "smallN": 0
+    }
+  },
+  "zh-33-touch-390-note": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/33-touch-390-note.png",
+    "bytes": 71416,
+    "url": "http://127.0.0.1:8824/desk/note.html",
+    "href": "http://127.0.0.1:8824/desk/note.html",
+    "w": 390,
+    "h": 844,
+    "boxes": {
+      "overflowX": false,
+      "scrollW": 390,
+      "clientW": 390,
+      "small": [
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        }
+      ],
+      "smallN": 20
+    }
+  },
+  "zh-34-shift-badge-still": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/34-shift-badge-still.png",
+    "bytes": 169593,
+    "url": "http://127.0.0.1:8824/desk/shift.html",
+    "href": "http://127.0.0.1:8824/desk/shift.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-35-exhibit-brick-still": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/35-exhibit-brick-still.png",
+    "bytes": 225599,
+    "url": "http://127.0.0.1:8824/public/exhibit.html",
+    "href": "http://127.0.0.1:8824/public/exhibit.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-01-boot-first-screen": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/01-boot-first-screen.png",
+    "bytes": 366011,
+    "url": "http://127.0.0.1:8825/introduction.html",
+    "href": "http://127.0.0.1:8825/introduction.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-02-core-verb": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/02-core-verb.png",
+    "bytes": 157009,
+    "url": "http://127.0.0.1:8825/public/deed-047.html",
+    "href": "http://127.0.0.1:8825/public/deed-047.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-03-success-feedback": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/03-success-feedback.png",
+    "bytes": 59291,
+    "url": "http://127.0.0.1:8825/desk/result.html",
+    "href": "http://127.0.0.1:8825/desk/result.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-04-near-fail": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/04-near-fail.png",
+    "bytes": 49630,
+    "url": "http://127.0.0.1:8825/desk/result.html",
+    "href": "http://127.0.0.1:8825/desk/result.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-05-recovery": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/05-recovery.png",
+    "bytes": 110648,
+    "url": "http://127.0.0.1:8825/desk/note.html",
+    "href": "http://127.0.0.1:8825/desk/note.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-06-narrow-320": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/06-narrow-320.png",
+    "bytes": 104990,
+    "url": "http://127.0.0.1:8825/public/deed-047.html",
+    "href": "http://127.0.0.1:8825/public/deed-047.html",
+    "w": 320,
+    "h": 720,
+    "boxes": {
+      "overflowX": false,
+      "scrollW": 320,
+      "clientW": 320,
+      "small": [],
+      "smallN": 0
+    }
+  },
+  "en-07-keyboard-focus": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/07-keyboard-focus.png",
+    "bytes": 119391,
+    "url": "http://127.0.0.1:8825/introduction.html",
+    "href": "http://127.0.0.1:8825/introduction.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-08-touch-targets": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/08-touch-targets.png",
+    "bytes": 32117,
+    "url": "http://127.0.0.1:8825/desk/login.html",
+    "href": "http://127.0.0.1:8825/desk/login.html",
+    "w": 390,
+    "h": 844,
+    "boxes": {
+      "overflowX": false,
+      "scrollW": 390,
+      "clientW": 390,
+      "small": [],
+      "smallN": 0
+    }
+  },
+  "en-09-muted-or-reduced-motion": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/09-muted-or-reduced-motion.png",
+    "bytes": 204099,
+    "url": "http://127.0.0.1:8825/public/deed-047.html",
+    "href": "http://127.0.0.1:8825/public/deed-047.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-10-non-color-state": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/10-non-color-state.png",
+    "bytes": 109949,
+    "url": "http://127.0.0.1:8825/desk/note.html",
+    "href": "http://127.0.0.1:8825/desk/note.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-11-empty-or-loading": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/11-empty-or-loading.png",
+    "bytes": 103995,
+    "url": "http://127.0.0.1:8825/desk/note.html",
+    "href": "http://127.0.0.1:8825/desk/note.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-12-error-or-pause": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/12-error-or-pause.png",
+    "bytes": 53759,
+    "url": "http://127.0.0.1:8825/desk/login.html",
+    "href": "http://127.0.0.1:8825/desk/login.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-13-intro-no-search": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/13-intro-no-search.png",
+    "bytes": 366011,
+    "url": "http://127.0.0.1:8825/introduction.html",
+    "href": "http://127.0.0.1:8825/introduction.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-14-public-catalog": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/14-public-catalog.png",
+    "bytes": 95040,
+    "url": "http://127.0.0.1:8825/public/catalog.html",
+    "href": "http://127.0.0.1:8825/public/catalog.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-15-desk-dead-search": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/15-desk-dead-search.png",
+    "bytes": 94959,
+    "url": "http://127.0.0.1:8825/desk/home.html",
+    "href": "http://127.0.0.1:8825/desk/home.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-16-denied-gate": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/16-denied-gate.png",
+    "bytes": 50952,
+    "url": "http://127.0.0.1:8825/desk/restricted-047.html",
+    "href": "http://127.0.0.1:8825/desk/denied.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-17-archive-public-047": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/17-archive-public-047.png",
+    "bytes": 205707,
+    "url": "http://127.0.0.1:8825/public/deed-047.html",
+    "href": "http://127.0.0.1:8825/public/deed-047.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-18-layer-internal-047": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/18-layer-internal-047.png",
+    "bytes": 158366,
+    "url": "http://127.0.0.1:8825/desk/internal-047.html",
+    "href": "http://127.0.0.1:8825/desk/internal-047.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-19-layer-restrict-047": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/19-layer-restrict-047.png",
+    "bytes": 183303,
+    "url": "http://127.0.0.1:8825/desk/restricted-047.html",
+    "href": "http://127.0.0.1:8825/desk/restricted-047.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-20-two-source-gov": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/20-two-source-gov.png",
+    "bytes": 58413,
+    "url": "http://127.0.0.1:8825/gov/index.html",
+    "href": "http://127.0.0.1:8825/gov/index.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-21-embedded-forum": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/21-embedded-forum.png",
+    "bytes": 68561,
+    "url": "http://127.0.0.1:8825/forum/list.html",
+    "href": "http://127.0.0.1:8825/forum/list.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-22-mail-skin": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/22-mail-skin.png",
+    "bytes": 37408,
+    "url": "http://127.0.0.1:8825/mail/login.html",
+    "href": "http://127.0.0.1:8825/mail/login.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-23-baike-skin": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/23-baike-skin.png",
+    "bytes": 184627,
+    "url": "http://127.0.0.1:8825/baike/maidiquan.html",
+    "href": "http://127.0.0.1:8825/baike/maidiquan.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-24-still-no-token": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/24-still-no-token.png",
+    "bytes": 186580,
+    "url": "http://127.0.0.1:8825/public/deed-047.html",
+    "href": "http://127.0.0.1:8825/public/deed-047.html",
+    "w": 1280,
+    "h": 700
+  },
+  "en-25-deed-012-dead": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/25-deed-012-dead.png",
+    "bytes": 88856,
+    "url": "http://127.0.0.1:8825/public/deed-012.html",
+    "href": "http://127.0.0.1:8825/public/deed-012.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-26-login-internal": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/26-login-internal.png",
+    "bytes": 36817,
+    "url": "http://127.0.0.1:8825/desk/login.html",
+    "href": "http://127.0.0.1:8825/desk/login.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-27-login-restrict": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/27-login-restrict.png",
+    "bytes": 55397,
+    "url": "http://127.0.0.1:8825/desk/lock.html",
+    "href": "http://127.0.0.1:8825/desk/lock.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-28-news-portal": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/28-news-portal.png",
+    "bytes": 60169,
+    "url": "http://127.0.0.1:8825/news/index.html",
+    "href": "http://127.0.0.1:8825/news/index.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-29-classified-yellow": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/29-classified-yellow.png",
+    "bytes": 67882,
+    "url": "http://127.0.0.1:8825/classified/hou.html",
+    "href": "http://127.0.0.1:8825/classified/hou.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-30-old-save-restore": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/30-old-save-restore.png",
+    "bytes": 93136,
+    "url": "http://127.0.0.1:8825/desk/note.html",
+    "href": "http://127.0.0.1:8825/desk/note.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-31-blog-orange": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/31-blog-orange.png",
+    "bytes": 217184,
+    "url": "http://127.0.0.1:8825/blog/shen.html",
+    "href": "http://127.0.0.1:8825/blog/shen.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-32-narrow-320-login": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/32-narrow-320-login.png",
+    "bytes": 30878,
+    "url": "http://127.0.0.1:8825/desk/login.html",
+    "href": "http://127.0.0.1:8825/desk/login.html",
+    "w": 320,
+    "h": 720,
+    "boxes": {
+      "overflowX": false,
+      "scrollW": 320,
+      "clientW": 320,
+      "small": [],
+      "smallN": 0
+    }
+  },
+  "en-33-touch-390-note": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/33-touch-390-note.png",
+    "bytes": 74803,
+    "url": "http://127.0.0.1:8825/desk/note.html",
+    "href": "http://127.0.0.1:8825/desk/note.html",
+    "w": 390,
+    "h": 844,
+    "boxes": {
+      "overflowX": false,
+      "scrollW": 390,
+      "clientW": 390,
+      "small": [
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        },
+        {
+          "tag": "INPUT",
+          "cls": "",
+          "t": "",
+          "w": 18,
+          "h": 18
+        }
+      ],
+      "smallN": 20
+    }
+  },
+  "en-34-shift-badge-still": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/34-shift-badge-still.png",
+    "bytes": 175670,
+    "url": "http://127.0.0.1:8825/desk/shift.html",
+    "href": "http://127.0.0.1:8825/desk/shift.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-35-exhibit-brick-still": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/35-exhibit-brick-still.png",
+    "bytes": 210591,
+    "url": "http://127.0.0.1:8825/public/exhibit.html",
+    "href": "http://127.0.0.1:8825/public/exhibit.html",
+    "w": 1280,
+    "h": 800
+  }
+}

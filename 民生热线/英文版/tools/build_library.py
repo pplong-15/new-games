@@ -11,9 +11,12 @@ from pathlib import Path
 from PIL import Image, ImageEnhance, ImageFilter, ImageOps
 
 ROOT = Path(__file__).resolve().parents[1]
-BASE = ROOT / "assets" / "base"
+_REF_BASE = Path("/Users/jianglong/Desktop/游戏美化/_视觉美化工作/ref/民生热线-base") / ROOT.name / "assets" / "base"
+BASE = _REF_BASE if _REF_BASE.exists() else (ROOT / "assets" / "base")
 STILL = ROOT / "assets" / "stills"
 JS = ROOT / "js" / "clips.js"
+# English clips.js is owned by localize_clips.py. Never let this builder overwrite it.
+WRITE_CLIPS_JS = not (ROOT / "js" / "clips.zh.js").exists()
 
 CORE = [
     {
@@ -614,7 +617,7 @@ def make_still(src: Path, dest: Path, seed: int, ticker_crop: bool) -> None:
     else:
         box = (left, top, right, bottom)
     im = im.crop(box)
-    im = im.resize((640, 480), Image.Resampling.BICUBIC)
+    im = im.resize((480, 360), Image.Resampling.BICUBIC)
     if rng.random() < 0.35:
         im = ImageOps.mirror(im)
     im = ImageEnhance.Color(im).enhance(rng.uniform(0.55, 1.15))
@@ -623,8 +626,9 @@ def make_still(src: Path, dest: Path, seed: int, ticker_crop: bool) -> None:
     if rng.random() < 0.5:
         im = im.filter(ImageFilter.GaussianBlur(radius=rng.uniform(0.2, 0.9)))
     px = im.load()
-    for y in range(0, 480, 2 + rng.randint(0, 2)):
-        for x in range(640):
+    tw, th = im.size
+    for y in range(0, th, 2 + rng.randint(0, 2)):
+        for x in range(tw):
             r, g, b = px[x, y]
             d = rng.randint(-18, 18)
             px[x, y] = (
@@ -634,8 +638,8 @@ def make_still(src: Path, dest: Path, seed: int, ticker_crop: bool) -> None:
             )
     # unique analog grain field
     for _ in range(900):
-        x = rng.randint(0, 639)
-        y = rng.randint(0, 479)
+        x = rng.randint(0, tw - 1)
+        y = rng.randint(0, th - 1)
         r, g, b = px[x, y]
         n = rng.randint(-40, 40)
         px[x, y] = (
@@ -644,7 +648,7 @@ def make_still(src: Path, dest: Path, seed: int, ticker_crop: bool) -> None:
             max(0, min(255, b + n)),
         )
     dest.parent.mkdir(parents=True, exist_ok=True)
-    im.save(dest, "JPEG", quality=rng.randint(62, 78), optimize=True)
+    im.save(dest, "JPEG", quality=48, optimize=True, progressive=True)
 
 
 TICKER = {"woman-coat.jpg", "man-father.jpg", "village-doctor.jpg", "woman-phone.jpg", "editor-pc.jpg", "tv-corridor.jpg"}
@@ -691,7 +695,10 @@ def main() -> None:
             "tokens": c.get("tokens") or [],
         })
 
-    JS.write_text("window.CLIPS = " + json.dumps(out, ensure_ascii=False) + ";\n", encoding="utf-8")
+    if WRITE_CLIPS_JS:
+        JS.write_text("window.CLIPS = " + json.dumps(out, ensure_ascii=False) + ";\n", encoding="utf-8")
+    else:
+        print("skip clips.js write (English localize_clips.py owns this file)")
     stills = list(STILL.glob("*.jpg"))
     ying = sum(1 for c in out if "应声" in c["text"])
     print("clips", len(out))

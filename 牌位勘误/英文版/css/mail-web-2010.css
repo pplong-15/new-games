@@ -1,8 +1,4 @@
-/* mail-web-2010
- * 记忆 2008–2013 网页邮箱三栏：文件夹 / 列表 / 阅读。不是 Gmail 2024。
- * 顶栏 #2b6cb0 高 32px，960 float：160 / 280 / 其余。12px Tahoma。
- * 斜边蓝钮。禁止：Google Logo、极简白底、CSS Grid。
- */
+/* 牌位勘误 · 2010 网页邮箱三栏。斜边蓝钮。不是 Gmail，不是著录桌。 */
 html.skin-mail-web-2010 {
   --bar: #2b6cb0;
   --page: #eef2f5;
@@ -29,10 +25,7 @@ html.skin-mail-web-2010 body {
   color: #333;
   font: 12px/1.5 Tahoma, SimSun, sans-serif;
 }
-html.skin-mail-web-2010 a {
-  color: var(--link);
-  text-decoration: none;
-}
+html.skin-mail-web-2010 a { color: var(--link); text-decoration: none; }
 html.skin-mail-web-2010 a:hover { text-decoration: underline; }
 html.skin-mail-web-2010 button {
   font: 12px Tahoma, SimSun, sans-serif;
@@ -40,10 +33,8 @@ html.skin-mail-web-2010 button {
   appearance: none;
   border-radius: 0;
 }
-
-/* 顶栏 32px */
 html.skin-mail-web-2010 .top {
-  height: 32px;
+  min-height: 32px;
   line-height: 32px;
   background: var(--bar);
   color: #fff;
@@ -54,10 +45,7 @@ html.skin-mail-web-2010 .top b {
   padding: 0 12px;
   font-size: 13px;
 }
-html.skin-mail-web-2010 .top .unread-n {
-  float: left;
-  color: #dff;
-}
+html.skin-mail-web-2010 .top .unread-n { float: left; color: #dff; }
 html.skin-mail-web-2010 .top .unread-n b {
   float: none;
   padding: 0 2px;
@@ -67,14 +55,24 @@ html.skin-mail-web-2010 .top a {
   float: right;
   color: #fff;
   padding: 0 12px;
+  min-height: 32px;
+  line-height: 32px;
+}
+@media (pointer: coarse) {
+  html.skin-mail-web-2010 .top {
+    min-height: 44px;
+    line-height: 44px;
+  }
+  html.skin-mail-web-2010 .top a {
+    min-height: 44px;
+    line-height: 44px;
+  }
 }
 html.skin-mail-web-2010 .top a:hover {
   background: #245e9a;
   text-decoration: none;
   color: #fff;
 }
-
-/* 960 三栏 float：160 / 280 / 其余 */
 html.skin-mail-web-2010 .panes {
   width: 960px;
   margin: 8px auto;
@@ -96,14 +94,15 @@ html.skin-mail-web-2010 .folders {
   border-right: 1px solid var(--line);
   padding: 8px 0 12px;
   min-height: 480px;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 html.skin-mail-web-2010 .folders .write {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 88px;
-  height: 24px;
-  line-height: 24px;
+  min-height: 44px;
+  line-height: 1.2;
   margin: 0 12px 10px;
   text-align: center;
   color: #fff;
@@ -112,6 +111,7 @@ html.skin-mail-web-2010 .folders .write {
   border-color: var(--hi) var(--lo) var(--lo) var(--hi);
   cursor: pointer;
   text-decoration: none;
+  box-sizing: border-box;
 }
 html.skin-mail-web-2010 .folders .write:hover {
   text-decoration: none;
@@ -120,7 +120,9 @@ html.skin-mail-web-2010 .folders .write:hover {
 }
 html.skin-mail-web-2010 .folders a {
   display: block;
-  padding: 5px 12px;
+  padding: 10px 12px;
+  min-height: 44px;
+  box-sizing: border-box;
   color: var(--link);
   text-decoration: none;
 }
@@ -132,18 +134,15 @@ html.skin-mail-web-2010 .folders a.on {
   background: var(--sel);
   font-weight: 700;
   color: #333;
+  box-shadow: inset 4px 0 0 var(--bar);
 }
-html.skin-mail-web-2010 .folders .n {
-  color: #c30;
-  font-weight: 700;
-}
+html.skin-mail-web-2010 .folders .n { color: #c30; font-weight: 700; }
 html.skin-mail-web-2010 .mails {
   float: left;
   width: 280px;
   border-right: 1px solid var(--line);
   min-height: 480px;
   background: #fff;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 html.skin-mail-web-2010 .mails h4 {
@@ -155,10 +154,12 @@ html.skin-mail-web-2010 .mails h4 {
   font-weight: 700;
 }
 html.skin-mail-web-2010 .m {
-  padding: 8px 10px;
+  padding: 10px;
+  min-height: 44px;
   border-bottom: 1px solid #eee;
   cursor: default;
   zoom: 1;
+  box-sizing: border-box;
 }
 html.skin-mail-web-2010 .m:after {
   content: ".";
@@ -167,24 +168,13 @@ html.skin-mail-web-2010 .m:after {
   clear: both;
   visibility: hidden;
 }
-html.skin-mail-web-2010 .m b {
-  display: block;
-  font-weight: 400;
-  color: #333;
-}
-html.skin-mail-web-2010 .m span {
-  color: #888;
-  font-size: 11px;
-}
-html.skin-mail-web-2010 .unread {
-  font-weight: 700;
-  background: #f3f8ff;
-}
-html.skin-mail-web-2010 .unread b {
-  font-weight: 700;
-}
+html.skin-mail-web-2010 .m b { display: block; font-weight: 400; color: #333; }
+html.skin-mail-web-2010 .m span { color: #888; font-size: 11px; }
+html.skin-mail-web-2010 .unread { font-weight: 700; background: #f3f8ff; }
+html.skin-mail-web-2010 .unread b { font-weight: 700; }
 html.skin-mail-web-2010 .m.on {
   background: var(--sel);
+  box-shadow: inset 4px 0 0 var(--bar);
 }
 html.skin-mail-web-2010 .read {
   overflow: hidden;
@@ -197,12 +187,13 @@ html.skin-mail-web-2010 .toolbar {
   background: #f0f4f8;
   border-bottom: 1px solid var(--line);
   padding: 6px 10px;
-  height: 26px;
+  min-height: 44px;
+  box-sizing: border-box;
 }
 html.skin-mail-web-2010 .toolbar button,
 html.skin-mail-web-2010 .btn {
   float: left;
-  height: 24px;
+  min-height: 44px;
   margin-right: 6px;
   padding: 0 12px;
   color: #fff;
@@ -212,9 +203,7 @@ html.skin-mail-web-2010 .btn {
   cursor: pointer;
 }
 html.skin-mail-web-2010 .toolbar button:hover,
-html.skin-mail-web-2010 .btn:hover {
-  background: #4a8fd1;
-}
+html.skin-mail-web-2010 .btn:hover { background: #4a8fd1; }
 html.skin-mail-web-2010 .read h3 {
   font-size: 16px;
   font-weight: 700;
@@ -238,4 +227,30 @@ html.skin-mail-web-2010 .ft {
   text-align: center;
   color: #888;
   font-size: 11px;
+}
+html.skin-mail-web-2010 a[href="javascript:void(0)"] {
+  text-decoration: line-through;
+  cursor: not-allowed;
+  color: #666;
+  border: 1px dashed #888;
+}
+html.skin-mail-web-2010 :focus { outline: none; }
+html.skin-mail-web-2010 :focus-visible {
+  outline: 3px dotted #111;
+  outline-offset: 2px;
+}
+@media (max-width: 800px) {
+  html.skin-mail-web-2010 .panes,
+  html.skin-mail-web-2010 .ft { width: auto; margin-left: 6px; margin-right: 6px; }
+  html.skin-mail-web-2010 .folders,
+  html.skin-mail-web-2010 .mails {
+    float: none;
+    width: auto;
+    min-height: 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html.skin-mail-web-2010 * { animation: none !important; transition: none !important; }
 }

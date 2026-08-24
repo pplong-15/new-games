@@ -1,0 +1,51 @@
+{
+  "round": "D12-20260823",
+  "method": "local-deterministic-pillow-svg",
+  "no_remote": true,
+  "no_download": true,
+  "camera": {
+    "canvas": [720, 1280],
+    "vanishing_point": [360, 392],
+    "horizon_y": 392,
+    "counter_top_y": 742,
+    "counter_front_y": 1188,
+    "door_cx": 360,
+    "door_w": 168,
+    "door_top": 428,
+    "awning_y": 348,
+    "light_dir": "from ceiling tubes, slightly toward camera; key on upper-left of figures",
+    "line_weight_1x_px": 2.0,
+    "line_weight_accent_px": 3.0
+  },
+  "palette_3": {
+    "ink": "#040605",
+    "paper": "#d9c7a1",
+    "stamp": "#c45c18"
+  },
+  "lamp_only": "#3ee07d",
+  "support": {
+    "wet": "#12161a",
+    "tube": "#c8dcc8",
+    "cool": "#9ec4c8",
+    "skin": "#d2b48c",
+    "hair": "#1c1816",
+    "line": "#0c0e0d"
+  },
+  "sizes": {
+    "exterior": [720, 1280, "jpeg"],
+    "interior": [720, 1280, "jpeg"],
+    "counter-fx": [720, 1280, "webp"],
+    "cat": [480, 502, "webp"],
+    "wang": [720, 854, "webp"],
+    "lin": [720, 900, "webp"],
+    "wet": [720, 954, "webp"],
+    "bai": [409, 826, "webp"],
+    "old": [640, 927, "webp"],
+    "taxi": [720, 874, "webp"],
+    "wu": [720, 808, "webp"],
+    "zhou": [720, 927, "webp"]
+  },
+  "jpeg_quality": 84,
+  "webp_quality": 80,
+  "webp_method": 6
+}

@@ -1,0 +1,240 @@
+{
+  "notes": "Search words are unique in-game queries (ZH: hanzi-only, min 2; EN: case-insensitive, spaces stripped) that hit exactly one granting clip. Grant clip ids are identical in both language packs.",
+  "tokens": {
+    "yingsheng": {
+      "grant_clip_ids": [
+        "C001",
+        "C002",
+        "C003",
+        "C004",
+        "C005",
+        "C026",
+        "C009",
+        "C046",
+        "C013",
+        "C042"
+      ],
+      "zh_search": "耳背",
+      "zh_hits": [
+        "C001"
+      ],
+      "en_search": "Duty",
+      "en_hits": [
+        "C002"
+      ]
+    },
+    "zhaozhao": {
+      "grant_clip_ids": [
+        "C005",
+        "C006",
+        "C007",
+        "C008",
+        "C026",
+        "C038",
+        "C010",
+        "C035",
+        "C015",
+        "C030",
+        "C041",
+        "C033",
+        "C049"
+      ],
+      "zh_search": "好听",
+      "zh_hits": [
+        "C015"
+      ],
+      "en_search": "folks",
+      "en_hits": [
+        "C006"
+      ]
+    },
+    "liusuochang": {
+      "grant_clip_ids": [
+        "C003",
+        "C040",
+        "C004",
+        "C020"
+      ],
+      "zh_search": "香灰",
+      "zh_hits": [
+        "C040"
+      ],
+      "en_search": "reflex",
+      "en_hits": [
+        "C004"
+      ]
+    },
+    "zhouyindi": {
+      "grant_clip_ids": [
+        "C031",
+        "C006",
+        "C009",
+        "C010",
+        "C012",
+        "C027",
+        "C035",
+        "C039",
+        "C046",
+        "C013",
+        "C016",
+        "C017",
+        "C048"
+      ],
+      "zh_search": "不准",
+      "zh_hits": [
+        "C048"
+      ],
+      "en_search": "paint",
+      "en_hits": [
+        "C017"
+      ]
+    },
+    "touqi": {
+      "grant_clip_ids": [
+        "C031",
+        "C032",
+        "C009",
+        "C010",
+        "C011",
+        "C027",
+        "C039",
+        "C046",
+        "C014",
+        "C016",
+        "C018",
+        "C021"
+      ],
+      "zh_search": "田埂",
+      "zh_hits": [
+        "C032"
+      ],
+      "en_search": "smoke",
+      "en_hits": [
+        "C014"
+      ]
+    },
+    "piyao": {
+      "grant_clip_ids": [
+        "C019",
+        "C020",
+        "C044",
+        "C025"
+      ],
+      "zh_search": "月奖金",
+      "zh_hits": [
+        "C044"
+      ],
+      "en_search": "bureau",
+      "en_hits": [
+        "C019"
+      ]
+    },
+    "laocui": {
+      "grant_clip_ids": [
+        "C021",
+        "C022",
+        "C033",
+        "C045"
+      ],
+      "zh_search": "扣过片",
+      "zh_hits": [
+        "C021"
+      ],
+      "en_search": "Splice",
+      "en_hits": [
+        "C021"
+      ]
+    },
+    "wuyong": {
+      "grant_clip_ids": [
+        "C021",
+        "C022",
+        "C045"
+      ],
+      "zh_search": "播也行",
+      "zh_hits": [
+        "C022"
+      ],
+      "en_search": "layer",
+      "en_hits": [
+        "C045"
+      ]
+    }
+  },
+  "query_first5": {
+    "zh": {
+      "应声": [
+        "C001",
+        "C002",
+        "C003",
+        "C004",
+        "C005"
+      ],
+      "招招": [
+        "C005",
+        "C006",
+        "C008",
+        "C026",
+        "C038"
+      ],
+      "辟谣": [
+        "C040",
+        "C004",
+        "C019",
+        "C044",
+        "C021"
+      ],
+      "刘所长": [
+        "C003",
+        "C040",
+        "C004",
+        "C008",
+        "C020"
+      ],
+      "头七": [
+        "C031",
+        "C032",
+        "C009",
+        "C010",
+        "C011"
+      ]
+    },
+    "en": {
+      "Answer": [
+        "C001",
+        "C002",
+        "C003",
+        "C004",
+        "C005"
+      ],
+      "Zhaozhao": [
+        "C005",
+        "C006",
+        "C008",
+        "C026",
+        "C038"
+      ],
+      "circular": [
+        "C004",
+        "C019",
+        "C020",
+        "C044",
+        "C021"
+      ],
+      "Liu": [
+        "C003",
+        "C040",
+        "C004",
+        "C008",
+        "C194"
+      ],
+      "Seventh": [
+        "C031",
+        "C032",
+        "C009",
+        "C010",
+        "C011"
+      ]
+    }
+  }
+}

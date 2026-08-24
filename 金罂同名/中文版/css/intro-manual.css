@@ -43,11 +43,18 @@ html.skin-intro-manual .boot-actions button {
   background: #333;
   color: #fff;
   border: 0;
-  padding: 8px 16px;
+  padding: 0 16px;
   margin: 0 8px 8px 0;
-  font: 16px/1.4 "PingFang SC", "Microsoft YaHei", sans-serif;
+  min-height: 44px;
+  line-height: 44px;
+  font: 16px/44px "PingFang SC", "Microsoft YaHei", sans-serif;
   text-decoration: none;
   cursor: pointer;
+  box-sizing: border-box;
+}
+html.skin-intro-manual :focus-visible {
+  outline: 3px solid #333;
+  outline-offset: 2px;
 }
 html.skin-intro-manual .boot-actions .ghost {
   background: #fff;

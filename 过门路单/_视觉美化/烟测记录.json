@@ -1,0 +1,24 @@
+{
+  "build_id": "polish-20260824",
+  "http": ["http://127.0.0.1:8856/", "http://127.0.0.1:8857/"],
+  "js_hashes": "match baseline sha256 for app.js data.js engine.js both locales",
+  "endings_walked": ["xi-pass", "listen-guest"],
+  "save_key": "guomen-state",
+  "save_migrate": "no new keys",
+  "controls": "same click/hold/key as baseline",
+  "buttons_css_px": {
+    "btn-hold": {"w": 257.2, "h": 48.8},
+    "btn-key": {"w": 257.2, "h": 44},
+    "fleet-listen": {"w": 371.1, "h": 46.6},
+    "btn-mirror": {"w": 78, "h": 44}
+  },
+  "smoke7": {
+    "narrow_touch": "320 screenshot 06/08 PRESENT; hold/key/clause >=44 on 1280",
+    "keyboard": "07 btn-hold :focus-visible",
+    "touch_same_line": "clause and hold are buttons, no hover-only",
+    "muted": "no audio in pack; 09 reduced-motion hold fill still shape",
+    "reduced_motion": "CSS @media prefers-reduced-motion width transition none",
+    "non_color": "10 holding hatch+outline; picked dog-ear",
+    "no_fullscreen_flash": "no >3/s flash"
+  }
+}

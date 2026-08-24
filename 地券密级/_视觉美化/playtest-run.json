@@ -1,0 +1,78 @@
+{
+  "zh": {
+    "three": {
+      "extracts": [
+        5,
+        5,
+        5
+      ],
+      "after_internal_login_path": "/desk/home.html",
+      "internal_title": "内部层　047",
+      "result_path": "/desk/result.html",
+      "result_title": "已收　三层对照进表",
+      "ending": "three",
+      "closed": true,
+      "visited_restrict": true
+    },
+    "overclaim": {
+      "result_path": "/desk/result.html",
+      "result_title": "退回　请改亡者栏",
+      "ending": "overclaim",
+      "closed": false,
+      "note_after_recover": true
+    },
+    "old_save": {
+      "loaded_picks": {
+        "time": "time-public",
+        "money": "money-public",
+        "bound": "",
+        "guar": "",
+        "dead": ""
+      },
+      "ui": {
+        "time": "time-public",
+        "money": "money-public",
+        "n": "2"
+      },
+      "key_ok": true
+    }
+  },
+  "en": {
+    "three": {
+      "extracts": [
+        5,
+        5,
+        5
+      ],
+      "after_internal_login_path": "/desk/home.html",
+      "internal_title": "Internal layer · 047",
+      "result_path": "/desk/result.html",
+      "result_title": "Received · three-layer cross-check entered the table",
+      "ending": "three",
+      "closed": true,
+      "visited_restrict": true
+    },
+    "overclaim": {
+      "result_path": "/desk/result.html",
+      "result_title": "Returned · rewrite the wangzhe box",
+      "ending": "overclaim",
+      "closed": false,
+      "note_after_recover": true
+    },
+    "old_save": {
+      "loaded_picks": {
+        "time": "time-public",
+        "money": "money-public",
+        "bound": "",
+        "guar": "",
+        "dead": ""
+      },
+      "ui": {
+        "time": "time-public",
+        "money": "money-public",
+        "n": "2"
+      },
+      "key_ok": true
+    }
+  }
+}

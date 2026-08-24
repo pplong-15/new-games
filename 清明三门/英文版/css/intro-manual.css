@@ -27,11 +27,12 @@ html.skin-intro-manual .intro-hero h1 {
 }
 html.skin-intro-manual main { max-width: 820px; margin: 0 auto; padding: 20px; }
 html.skin-intro-manual section {
-  background: var(--card);
+  background: #f7f1de;
   padding: 20px;
   margin-bottom: 30px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  box-shadow: none;
+  border: 1px solid #333;
 }
 html.skin-intro-manual h1, html.skin-intro-manual h2, html.skin-intro-manual h3 { color: #444; }
 html.skin-intro-manual .intro-hero h1 { color: #fff; }
@@ -42,12 +43,16 @@ html.skin-intro-manual .boot-actions button {
   display: inline-block;
   background: #333;
   color: #fff;
-  border: 0;
-  padding: 8px 16px;
+  border: 2px solid #111;
+  padding: 10px 16px;
   margin: 0 8px 8px 0;
   font: 16px/1.4 "PingFang SC", "Microsoft YaHei", sans-serif;
   text-decoration: none;
   cursor: pointer;
+  min-height: 44px;
+  min-width: 44px;
+  box-sizing: border-box;
+  border-radius: 0;
 }
 html.skin-intro-manual .boot-actions .ghost {
   background: #fff;

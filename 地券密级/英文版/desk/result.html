@@ -22,6 +22,8 @@
   <script src="../js/state.js"></script>
   <script>
     var s = DQ.load();
+    var notice = document.querySelector(".notice");
+    if (notice) notice.className = "notice dq-end-" + (s.ending || "empty");
     var t = document.getElementById("dq-rt");
     var b = document.getElementById("dq-rb");
     function p(s) { var e = document.createElement("p"); e.textContent = s; b.appendChild(e); }

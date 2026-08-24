@@ -53,27 +53,27 @@ html.skin-baidu-baike .clearfix:after {
 html.skin-baidu-baike .top {
   background: var(--bar);
   color: #fff;
-  height: 36px;
+  height: 44px;
 }
 html.skin-baidu-baike .top-inner {
   width: 960px;
-  height: 36px;
+  height: 44px;
   margin: 0 auto;
 }
 html.skin-baidu-baike .logo {
   float: left;
-  height: 36px;
-  line-height: 36px;
+  height: 44px;
+  line-height: 44px;
   color: #fff;
-  font: 700 16px/36px SimSun, sans-serif;
+  font: 700 16px/44px SimSun, sans-serif;
   padding-right: 16px;
   letter-spacing: 1px;
 }
 html.skin-baidu-baike .top a {
   float: left;
   color: #fff;
-  height: 36px;
-  line-height: 36px;
+  height: 44px;
+  line-height: 44px;
   margin-right: 12px;
   text-decoration: none;
 }
@@ -247,4 +247,17 @@ html.skin-baidu-baike body > p {
   html.skin-baidu-baike .top input {
     width: 52%;
   }
+  html.skin-baidu-baike .top {
+    height: auto;
+  }
+  html.skin-baidu-baike .top-inner { height: auto; }
+  html.skin-baidu-baike .toc a {
+    display: inline-block;
+    min-height: 44px;
+    line-height: 44px;
+  }
+}
+html.skin-baidu-baike :focus-visible {
+  outline: 3px dotted #2932e1;
+  outline-offset: 2px;
 }

@@ -22,19 +22,26 @@ html.skin-service-cyan-desk header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
   padding: 12px 20px;
   border-bottom: 1px solid #e0eaf1;
 }
 html.skin-service-cyan-desk #search-form { display: inline-flex; margin-left: 12px; }
 html.skin-service-cyan-desk #search-input {
-  border: 1px solid #ccc;
-  padding: 6px 10px;
+  border: 1px solid #9ab;
+  padding: 8px 10px;
+  min-height: 44px;
+  height: 44px;
+  background: #f7fcff;
 }
 html.skin-service-cyan-desk #search-form button {
   border: 0;
-  background: #d15c20;
+  background: var(--btn);
   color: #fff;
-  padding: 6px 12px;
+  padding: 0 12px;
+  min-height: 44px;
+  height: 44px;
 }
 html.skin-service-cyan-desk .ghost-btn {
   border: 1px solid #ccc;
@@ -109,12 +116,13 @@ html.skin-service-cyan-desk .login-box input[name="pass"],
 html.skin-service-cyan-desk .login-box input[type="text"],
 html.skin-service-cyan-desk .login-box input[type="password"] {
   width: 100%;
-  height: 34px;
+  height: 44px;
+  min-height: 44px;
   border: 1px solid #ced4da;
   padding: 6px 12px;
   margin: 0 0 12px;
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: 16px;
   -webkit-appearance: none;
   appearance: none;
 }
@@ -124,6 +132,7 @@ html.skin-service-cyan-desk .login-box button[type="submit"] {
   color: #fff;
   border: 0;
   padding: 8px 16px;
+  min-height: 44px;
   font-size: 14px;
   cursor: pointer;
 }

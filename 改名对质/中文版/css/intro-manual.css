@@ -30,8 +30,9 @@ html.skin-intro-manual section {
   background: var(--card);
   padding: 20px;
   margin-bottom: 30px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  border-radius: 0;
+  box-shadow: none;
 }
 html.skin-intro-manual h1, html.skin-intro-manual h2, html.skin-intro-manual h3 { color: #444; }
 html.skin-intro-manual .intro-hero h1 { color: #fff; }
@@ -39,15 +40,20 @@ html.skin-intro-manual .enter-link { font-weight: 700; }
 html.skin-intro-manual .boot-actions { margin: 16px 0 8px; }
 html.skin-intro-manual .boot-actions a,
 html.skin-intro-manual .boot-actions button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: #333;
   color: #fff;
   border: 0;
+  min-height: 44px;
+  min-width: 44px;
   padding: 8px 16px;
   margin: 0 8px 8px 0;
   font: 16px/1.4 "PingFang SC", "Microsoft YaHei", sans-serif;
   text-decoration: none;
   cursor: pointer;
+  box-sizing: border-box;
 }
 html.skin-intro-manual .boot-actions .ghost {
   background: #fff;

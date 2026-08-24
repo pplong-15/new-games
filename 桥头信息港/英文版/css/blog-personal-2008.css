@@ -221,3 +221,53 @@ html.skin-blog-personal-2008 .ft {
   border-top: 1px solid var(--line);
   padding: 8px 0;
 }
+html.skin-blog-personal-2008 .nav form,
+html.skin-blog-personal-2008 .nav input,
+html.skin-blog-personal-2008 .nav button,
+html.skin-blog-personal-2008 .side input,
+html.skin-blog-personal-2008 .side button {
+  min-height: 44px;
+  height: 44px;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  font-size: 14px;
+}
+html.skin-blog-personal-2008 .nav {
+  height: auto;
+  min-height: 44px;
+  line-height: 44px;
+}
+html.skin-blog-personal-2008 .side button,
+html.skin-blog-personal-2008 .nav button {
+  min-width: 44px;
+  padding: 0 12px;
+}
+html.skin-blog-personal-2008 a:focus,
+html.skin-blog-personal-2008 a:focus-visible,
+html.skin-blog-personal-2008 input:focus,
+html.skin-blog-personal-2008 button:focus,
+html.skin-blog-personal-2008 button:focus-visible {
+  outline: 3px dotted #a04000;
+  outline-offset: 1px;
+}
+
+@media (max-width: 390px) {
+  html.skin-blog-personal-2008 .wrap,
+  html.skin-blog-personal-2008 .ft {
+    width: auto;
+  }
+  html.skin-blog-personal-2008 .main,
+  html.skin-blog-personal-2008 .post,
+  html.skin-blog-personal-2008 article,
+  html.skin-blog-personal-2008 .side,
+  html.skin-blog-personal-2008 aside {
+    float: none;
+    width: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.skin-blog-personal-2008 * { transition: none; }
+}
+

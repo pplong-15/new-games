@@ -1,0 +1,38 @@
+{
+  "date": "20260823",
+  "player_html": {
+    "zh_path": "夜班/中文版/夜班.html",
+    "en_path": "夜班/英文版/夜班.html",
+    "zh_bytes": 1492556,
+    "en_bytes": 1494885
+  },
+  "embedded_media": {
+    "zh": {
+      "data_uri_count": 18,
+      "decoded_bytes": 941669,
+      "decoded_mb": 0.898,
+      "kinds": {
+        "image/jpeg": 309154,
+        "image/webp": 429654,
+        "audio/mp4": 202861
+      }
+    },
+    "en": {
+      "data_uri_count": 18,
+      "decoded_bytes": 941669,
+      "decoded_mb": 0.898,
+      "kinds": {
+        "image/jpeg": 309154,
+        "image/webp": 429654,
+        "audio/mp4": 202861
+      }
+    },
+    "cap_mb": 8,
+    "under_cap": true
+  },
+  "google_fonts": {
+    "fonts.googleapis": 0,
+    "fonts.gstatic": 0
+  },
+  "note": "工作台 CSS 注入后体积；内嵌媒体未再增减。"
+}

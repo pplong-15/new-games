@@ -1,39 +1,77 @@
-/* 本局热区与窄屏，不改皮肤骨架 */
+/* 本局热区、材质与窄屏。不改皮肤骨架，不改热区百分比语义。 */
 .shot {
   position: relative;
   display: inline-block;
   max-width: 100%;
   vertical-align: top;
+  overflow: visible;
 }
 .shot img {
   display: block;
   max-width: 100%;
   height: auto;
-  border: 1px solid #bbb;
+  border: 1px solid #7a6a52;
+  box-shadow: 0 0 0 1px #d8cbb0;
 }
+
+/* 教学首跳：朱红虚线，常态可察 */
 .hot {
   position: absolute;
   display: block;
   box-sizing: border-box;
-  border: 1px dashed rgba(176, 48, 32, 0.7);
-  background: rgba(220, 70, 40, 0.08);
+  min-width: 44px;
+  min-height: 44px;
+  border: 1px dashed rgba(158, 42, 28, 0.88);
+  background: rgba(196, 72, 48, 0.1);
   cursor: pointer;
   text-decoration: none;
+  z-index: 2;
 }
-.hot:hover,
+
+/* quiet：墨点线+四角裁切，不依赖 hover */
+.hot.quiet {
+  border: 1px dotted rgba(92, 62, 38, 0.78);
+  background:
+    linear-gradient(#5c3e26, #5c3e26) left top / 9px 1px no-repeat,
+    linear-gradient(#5c3e26, #5c3e26) left top / 1px 9px no-repeat,
+    linear-gradient(#5c3e26, #5c3e26) right top / 9px 1px no-repeat,
+    linear-gradient(#5c3e26, #5c3e26) right top / 1px 9px no-repeat,
+    linear-gradient(#5c3e26, #5c3e26) left bottom / 9px 1px no-repeat,
+    linear-gradient(#5c3e26, #5c3e26) left bottom / 1px 9px no-repeat,
+    linear-gradient(#5c3e26, #5c3e26) right bottom / 9px 1px no-repeat,
+    linear-gradient(#5c3e26, #5c3e26) right bottom / 1px 9px no-repeat,
+    rgba(255, 250, 240, 0.08);
+}
+
+/* 跳后同物件：旧拓上无 quiet 的浅磨 = 虚线+内圈，轮廓差可读 */
+html.skin-archive-simsun .hot:not(.quiet) {
+  box-shadow: inset 0 0 0 1px rgba(92, 62, 38, 0.4);
+}
+
+.hot:hover {
+  background: rgba(196, 72, 48, 0.18);
+}
+.hot.quiet:hover {
+  background:
+    linear-gradient(#5c3e26, #5c3e26) left top / 9px 1px no-repeat,
+    linear-gradient(#5c3e26, #5c3e26) left top / 1px 9px no-repeat,
+    linear-gradient(#5c3e26, #5c3e26) right top / 9px 1px no-repeat,
+    linear-gradient(#5c3e26, #5c3e26) right top / 1px 9px no-repeat,
+    linear-gradient(#5c3e26, #5c3e26) left bottom / 9px 1px no-repeat,
+    linear-gradient(#5c3e26, #5c3e26) left bottom / 1px 9px no-repeat,
+    linear-gradient(#5c3e26, #5c3e26) right bottom / 9px 1px no-repeat,
+    linear-gradient(#5c3e26, #5c3e26) right bottom / 1px 9px no-repeat,
+    rgba(196, 72, 48, 0.12);
+}
 .hot:focus {
-  background: rgba(220, 70, 40, 0.2);
   outline: 0;
 }
-.hot.quiet {
-  border-color: rgba(176, 48, 32, 0.15);
-  background: transparent;
+.hot:focus-visible {
+  outline: 2px dotted #5c3a20;
+  outline-offset: 2px;
+  background: rgba(196, 72, 48, 0.2);
 }
-.hot.quiet:hover,
-.hot.quiet:focus {
-  border-color: rgba(176, 48, 32, 0.55);
-  background: rgba(220, 70, 40, 0.12);
-}
+
 .cap {
   font-size: 12px;
   color: #666;
@@ -51,16 +89,193 @@ html.skin-service-cyan-desk .notice .shot {
   display: block;
   margin: 8px auto;
 }
+
+/* 值班条：方角纸块，去掉圆角卡影 */
+html.skin-intro-manual body {
+  background: #e8e4da;
+}
+html.skin-intro-manual section {
+  border-radius: 0;
+  box-shadow: none;
+  border: 1px solid #b8b0a4;
+  background: #f2eee4;
+}
+html.skin-intro-manual .boot-actions a,
+html.skin-intro-manual .boot-actions button {
+  min-height: 44px;
+  min-width: 44px;
+  box-sizing: border-box;
+  padding: 12px 16px;
+  border-radius: 0;
+}
+html.skin-intro-manual a:focus-visible,
+html.skin-intro-manual button:focus-visible {
+  outline: 2px dotted #5c3a20;
+  outline-offset: 2px;
+}
+
+/* 卷宗：牛皮底 + 拓纸，不是白卡 */
+html.skin-archive-simsun body {
+  background:
+    repeating-linear-gradient(0deg, rgba(90, 70, 40, 0.035) 0 1px, transparent 1px 5px),
+    #cfc4ae;
+}
+html.skin-archive-simsun .record {
+  background: #f3ead6;
+  border: 1px solid #8a7458;
+  box-shadow: inset 0 0 0 1px #e8dcc4;
+}
+html.skin-archive-simsun a:focus-visible {
+  outline: 2px dotted #5c3a20;
+  outline-offset: 2px;
+}
+
+/* 夜班台：浅青层压，方角控件 */
+html.skin-service-cyan-desk body {
+  background:
+    repeating-linear-gradient(90deg, rgba(20, 60, 80, 0.035) 0 1px, transparent 1px 9px),
+    #c5d8e0;
+}
+html.skin-service-cyan-desk #wrap {
+  background: #e8f2f6;
+  border-left: 1px solid #8aa8b4;
+  border-right: 1px solid #8aa8b4;
+}
+html.skin-service-cyan-desk header {
+  background: #d7e8ee;
+  border-bottom: 2px solid #5a7a88;
+}
+html.skin-service-cyan-desk .notice {
+  position: relative;
+  background: #f4f8fa;
+  border: 1px solid #9bb4be;
+  border-radius: 0;
+}
+html.skin-service-cyan-desk .ghost-btn {
+  border-radius: 0;
+  min-height: 44px;
+  box-sizing: border-box;
+}
+html.skin-service-cyan-desk .tabs a {
+  border-radius: 0;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+}
 html.skin-service-cyan-desk .choice {
-  display: block;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
   margin: 10px 0;
-  padding: 8px;
-  border: 1px solid #d0e4ee;
-  background: #fff;
+  padding: 10px 10px 10px 12px;
+  min-height: 44px;
+  border: 1px solid #8a8a82;
+  background: #f6f1e4;
+  border-radius: 0;
+  box-sizing: border-box;
+}
+html.skin-service-cyan-desk .choice:has(input:checked) {
+  box-shadow: inset 6px 0 0 #5c3a20;
+  font-weight: 700;
+  background: #efe6d2;
+}
+html.skin-service-cyan-desk .choice input {
+  width: 18px;
+  height: 18px;
+  margin-top: 3px;
+  flex: none;
 }
 html.skin-service-cyan-desk .warn {
   color: #a40000;
 }
+html.skin-service-cyan-desk .warn:not(:empty) {
+  border-left: 4px solid #9e2a1c;
+  padding-left: 8px;
+}
+html.skin-service-cyan-desk #go,
+html.skin-service-cyan-desk button[type="button"],
+html.skin-service-cyan-desk button[type="submit"],
+html.skin-service-cyan-desk #search-form button {
+  min-height: 44px;
+  min-width: 44px;
+  border-radius: 0;
+  box-sizing: border-box;
+}
+html.skin-service-cyan-desk #search-input {
+  min-height: 44px;
+  box-sizing: border-box;
+}
+html.skin-service-cyan-desk a:focus-visible,
+html.skin-service-cyan-desk button:focus-visible,
+html.skin-service-cyan-desk input:focus-visible {
+  outline: 2px dotted #5c3a20;
+  outline-offset: 2px;
+}
+html.skin-service-cyan-desk p a[href="submit.html"],
+html.skin-service-cyan-desk p a[href="home.html"] {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  padding: 0 8px;
+}
+html.skin-archive-simsun a[href="../desk/home.html"] {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+}
+
+/* 回单形状差，不唯色、不加玩法文案 */
+body.slip-empty .notice {
+  border: 2px dotted #6a6a6a;
+  background: repeating-linear-gradient(-45deg, #f4f8fa, #f4f8fa 8px, #e8eef0 8px, #e8eef0 16px);
+}
+body.slip-recarve .notice {
+  border: 2px solid #355535;
+  box-shadow: inset 8px 0 0 #355535;
+}
+body.slip-recarve .notice::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: 44px;
+  height: 28px;
+  border: 2px solid #355535;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+body.slip-same .notice {
+  border: 2px dashed #7a5a18;
+  box-shadow: inset 0 8px 0 #c4a050;
+}
+body.slip-same .notice::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: 44px;
+  height: 28px;
+  border: 2px dashed #7a5a18;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+body.slip-approve .notice {
+  border: 3px double #8a1010;
+}
+body.slip-approve .notice::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: 44px;
+  height: 44px;
+  border: 3px solid #8a1010;
+  box-sizing: border-box;
+  transform: rotate(-12deg);
+  pointer-events: none;
+}
+
 html.skin-gov-redbar .wrap {
   max-width: 100%;
   width: auto;
@@ -81,6 +296,33 @@ html.skin-gov-redbar .article p {
 html.skin-gov-redbar .article p.noin {
   text-indent: 0;
 }
+html.skin-gov-redbar a:focus-visible,
+html.skin-corp-table-2005 a:focus-visible,
+html.skin-corp-table-2005 button:focus-visible,
+html.skin-wechat-mp-article a:focus-visible,
+html.skin-blog-personal-2008 a:focus-visible,
+html.skin-classified-yellow a:focus-visible,
+html.skin-classified-yellow button:focus-visible,
+html.skin-classified-yellow input:focus-visible {
+  outline: 2px dotted #5c3a20;
+  outline-offset: 2px;
+}
+html.skin-classified-yellow .top button,
+html.skin-corp-table-2005 .banner button {
+  min-height: 44px;
+  min-width: 44px;
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hot,
+  html.skin-archive-simsun .stamp,
+  body.slip-approve .notice::after {
+    transition: none;
+    transform: none;
+  }
+}
+
 @media (max-width: 820px) {
   html.skin-classified-yellow .top-inner,
   html.skin-classified-yellow .layout {
@@ -162,5 +404,8 @@ html.skin-gov-redbar .article p.noin {
   html.skin-gov-redbar .wrap table td.box {
     display: block;
     width: auto;
+  }
+  html.skin-service-cyan-desk .tabs {
+    flex-wrap: wrap;
   }
 }

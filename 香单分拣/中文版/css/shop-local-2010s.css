@@ -85,3 +85,8 @@ html.skin-shop-local-2010s footer {
   padding: 8px;
 }
 html.skin-shop-local-2010s .hero-photo { width: 100%; height: auto; display: block; }
+@media (max-width: 800px) {
+  html.skin-shop-local-2010s header { flex-wrap: wrap; gap: 8px; }
+  html.skin-shop-local-2010s nav ul,
+  html.skin-shop-local-2010s #menubar ul { flex-wrap: wrap; margin: 0 12px; }
+}

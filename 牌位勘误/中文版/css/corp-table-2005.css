@@ -1,13 +1,11 @@
-/* corp-table-2005
- * 记忆 2003–2008 表格居中企业站。协会、旅行社、工厂。禁止现代栅格、flex、圆角卡。
- * 778px table.site，宋体 12px，链 #00e 下划线，横幅黑体 24px。
- */
+/* 牌位勘误 · 宗亲账簿表。778 表、宋体 12、酒红会旗。不是通用企业蓝，不是圆角卡。 */
 html.skin-corp-table-2005 {
-  --banner: #1e4b87;
-  --nav: #2f6ead;
+  --banner: #5a2d2d;
+  --nav: #7a3d3d;
   --link: #00e;
-  --bevel-hi: #6a93c8;
-  --bevel-lo: #0f2d55;
+  --hi: #a07070;
+  --lo: #3a1818;
+  --paper: #f6f0dc;
 }
 html.skin-corp-table-2005,
 html.skin-corp-table-2005 body,
@@ -24,7 +22,9 @@ html.skin-corp-table-2005 button {
 }
 html.skin-corp-table-2005 body {
   margin: 0;
-  background: #d9d9d9;
+  background:
+    repeating-linear-gradient(180deg, #c4c0b0 0 8px, #bbb6a6 8px 9px),
+    #c9c4b0;
   color: #000;
   font: 12px/1.7 SimSun, "Songti SC", serif;
 }
@@ -42,71 +42,54 @@ html.skin-corp-table-2005 button {
 html.skin-corp-table-2005 table.site {
   width: 778px;
   margin: 8px auto;
-  border: 1px solid #999;
+  border: 1px solid #7a6a4a;
   border-collapse: collapse;
-  background: #fff;
+  background:
+    repeating-linear-gradient(180deg, transparent 0 23px, rgba(90, 45, 45, 0.08) 23px 24px),
+    var(--paper);
 }
 html.skin-corp-table-2005 table.site td { padding: 0; }
 html.skin-corp-table-2005 table.site td.left { padding: 8px; }
 html.skin-corp-table-2005 table.site td.main { padding: 12px; }
 html.skin-corp-table-2005 table.site td.ft { padding: 8px; }
-
 html.skin-corp-table-2005 .banner {
-  height: 90px;
+  min-height: 90px;
   background: var(--banner);
-  color: #fff;
+  color: #f6f0dc;
   font: 24px/90px SimHei, "Heiti SC", sans-serif;
   padding: 0 16px;
   overflow: hidden;
+  letter-spacing: 0.12em;
 }
-html.skin-corp-table-2005 .banner form {
-  float: right;
-  height: 90px;
-  padding: 34px 0 0;
-  font: 12px SimSun, "Songti SC", serif;
-}
-html.skin-corp-table-2005 .banner input {
-  float: left;
-  width: 128px;
-  height: 16px;
-  line-height: 16px;
-  border: 1px solid #0f2d55;
-  padding: 2px 4px;
-  background: #fff;
-  color: #000;
-}
-html.skin-corp-table-2005 .banner button {
-  float: left;
-  height: 22px;
-  margin-left: 4px;
-  padding: 0 8px;
-  color: #fff;
-  background: var(--banner);
-  border: 1px solid;
-  border-color: var(--bevel-hi) var(--bevel-lo) var(--bevel-lo) var(--bevel-hi);
-  cursor: pointer;
-}
-
+html.skin-corp-table-2005 .banner form { display: none; }
 html.skin-corp-table-2005 .nav {
   background: var(--nav);
   color: #fff;
-  height: 24px;
+  min-height: 24px;
   line-height: 24px;
   text-align: center;
   letter-spacing: 2px;
   overflow: hidden;
 }
 html.skin-corp-table-2005 .nav a {
+  display: inline-block;
   color: #fff;
   text-decoration: none;
   margin: 0 10px;
+  min-height: 24px;
+  line-height: 24px;
+}
+@media (pointer: coarse) {
+  html.skin-corp-table-2005 .nav a {
+    min-height: 44px;
+    line-height: 44px;
+  }
 }
 html.skin-corp-table-2005 .nav a:hover { text-decoration: underline; color: #fff; }
-
 html.skin-corp-table-2005 .left {
   width: 180px;
-  background: #eef3f9;
-  border-right: 1px solid #99b;
+  background: #efe4cc;
+  border-right: 1px solid #b8a070;
   padding: 8px;
   vertical-align: top;
 }
@@ -121,8 +104,12 @@ html.skin-corp-table-2005 .left h4 {
 html.skin-corp-table-2005 .left p {
   margin: 0 0 4px;
   line-height: 22px;
-  border-bottom: 1px dashed #c5d0e0;
+  border-bottom: 1px dashed #c5b080;
   padding: 0 0 4px 4px;
+}
+html.skin-corp-table-2005 .left a {
+  display: inline-block;
+  min-height: 22px;
 }
 html.skin-corp-table-2005 .main {
   padding: 12px;
@@ -132,23 +119,33 @@ html.skin-corp-table-2005 .main {
 html.skin-corp-table-2005 .main p { margin: 0 0 10px; }
 html.skin-corp-table-2005 marquee,
 html.skin-corp-table-2005 .scroll {
-  background: #ffffcc;
-  border: 1px solid #ccc;
+  background: #fff6d0;
+  border: 1px solid #c9b89a;
   padding: 2px 6px;
   margin: 0 0 10px;
-  height: 22px;
+  min-height: 22px;
   line-height: 22px;
   overflow: hidden;
 }
 html.skin-corp-table-2005 .ft {
   text-align: center;
-  color: #666;
+  color: #555;
   padding: 8px;
-  background: #eee;
+  background: #e8dfc8;
   font-size: 12px;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #b8a070;
 }
-
+html.skin-corp-table-2005 a[href="javascript:void(0)"] {
+  text-decoration: line-through;
+  cursor: not-allowed;
+  color: #555;
+  border-bottom: 1px dashed #666;
+}
+html.skin-corp-table-2005 :focus { outline: none; }
+html.skin-corp-table-2005 :focus-visible {
+  outline: 3px dotted #111;
+  outline-offset: 2px;
+}
 @media (max-width: 800px) {
   html.skin-corp-table-2005 table.site {
     width: auto;
@@ -162,7 +159,7 @@ html.skin-corp-table-2005 .ft {
   html.skin-corp-table-2005 .left {
     width: auto;
     border-right: 0;
-    border-bottom: 1px solid #99b;
+    border-bottom: 1px solid #b8a070;
   }
   html.skin-corp-table-2005 .banner {
     height: auto;
@@ -176,4 +173,11 @@ html.skin-corp-table-2005 .ft {
     overflow: visible;
     white-space: normal;
   }
+  html.skin-corp-table-2005 .nav a {
+    min-height: 44px;
+    line-height: 44px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html.skin-corp-table-2005 * { animation: none !important; transition: none !important; }
 }

@@ -1,53 +1,216 @@
-/* 站内用户上传图：细边框，不要圆角卡片 */
+/* 用户上传快照：按所有者拆纸边。禁止全站同一灰细边相框。 */
 img.shot {
   display: block;
-  width: 100%;
-  max-width: 640px;
   height: auto;
-  border: 1px solid #808080;
-  margin: 8px 0;
+  max-width: 100%;
 }
-img.shot-wide {
-  max-width: 960px;
+
+/* 黄页：分类帖附图 = 黄卡厚底边 */
+html.skin-classified-yellow img.shot {
+  width: auto;
+  max-width: 480px;
+  padding: 5px 5px 22px;
+  background: #fff8dc;
+  border: 1px solid #c9a227;
+  border-bottom-width: 18px;
+  margin: 10px 0 14px;
+  box-shadow: 2px 2px 0 #e6d48a;
 }
-.thumbs {
+html.skin-classified-yellow img.shot-wide {
+  max-width: 920px;
+  width: 100%;
+  padding: 4px 4px 10px;
+  border-bottom-width: 8px;
+}
+html.skin-classified-yellow .thumbs {
   overflow: hidden;
   zoom: 1;
   margin: 8px 0 12px;
 }
-.thumbs img {
+html.skin-classified-yellow .thumbs img {
   float: left;
   width: 31%;
-  height: 90px;
+  height: 72px;
   object-fit: cover;
   margin: 0 2% 8px 0;
-  border: 1px solid #808080;
+  padding: 3px;
+  background: #fff8dc;
+  border: 1px solid #c9a227;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
-.thumbs img:nth-child(3n) { margin-right: 0; }
+html.skin-classified-yellow .thumbs img:nth-child(3n) { margin-right: 0; }
+
+/* 问问台：柜台摄像头青塑料框 */
+html.skin-service-cyan-desk img.shot {
+  max-width: 360px;
+  margin: 8px auto 12px;
+  padding: 0;
+  border: 10px solid #4aa3b5;
+  outline: 2px solid #0b6b82;
+  background: #c5eef4;
+  box-shadow: inset 0 0 0 2px #fff;
+}
+
+/* 企业表：单元格 inset */
+html.skin-corp-table-2005 img.shot {
+  max-width: 280px;
+  margin: 8px 0;
+  padding: 3px;
+  background: #d4d0c8;
+  border: 2px inset #808080;
+}
+
+/* 档案：影印件黑框白边 */
+html.skin-archive-simsun img.shot {
+  max-width: 520px;
+  margin: 16px auto;
+  padding: 0;
+  border: 1px solid #111;
+  outline: 7px solid #fff;
+  box-shadow: 0 0 0 8px #333;
+  background: #fff;
+}
+
+/* 政务：红头附件双线 */
+html.skin-gov-redbar img.shot {
+  max-width: 480px;
+  margin: 12px auto;
+  padding: 8px;
+  background: #fff;
+  border: 3px double #c8161d;
+}
+
+/* 博客：纸卡留白底边 */
+html.skin-blog-personal-2008 img.shot {
+  max-width: 460px;
+  margin: 8px 0 12px;
+  padding: 8px 8px 26px;
+  background: #fffdf6;
+  border: 1px solid #d4c49a;
+  box-shadow: 4px 4px 0 #e4d6b0;
+}
+
+/* 空间：相册白边绿描，主图小 */
+html.skin-qzone-modules img.shot {
+  width: 140px;
+  max-width: 140px;
+  margin: 4px 0 8px;
+  padding: 3px;
+  background: #fff;
+  border: 1px solid #7aa344;
+  outline: 3px solid #fff;
+}
+html.skin-qzone-modules .thumbs {
+  overflow: hidden;
+  zoom: 1;
+}
+html.skin-qzone-modules .thumbs img {
+  float: left;
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  margin: 0 6px 6px 0;
+  padding: 2px;
+  background: #fff;
+  border: 1px solid #9c9;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* 回执配图：文件扫描底边，不是帖附图 */
+html.skin-intro-manual .intro-hero img,
+html.skin-intro-manual img {
+  display: block;
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+  border: 0;
+  border-bottom: 8px solid #333;
+}
+
 .grey {
-  color: #666;
+  color: #555;
+  font-size: 12px;
+}
+html.skin-classified-yellow .grey {
+  border-left: 3px dotted #c9a227;
+  padding-left: 6px;
 }
 .strike {
   text-decoration: line-through;
-  color: #888;
+  color: #444;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 7px,
+    #ddd 7px,
+    #ddd 8px
+  );
 }
 .paused {
-  color: #999;
+  color: #444;
+  text-decoration: line-through;
+  border: 1px dashed #888;
+  padding: 1px 4px;
 }
+
+/* 结局钮：缺件用虚线+删除线+前缀，不靠灰字 */
 button.end-btn {
   display: block;
   width: 100%;
   max-width: 420px;
   margin: 8px 0;
-  padding: 8px 10px;
+  min-height: 44px;
+  padding: 10px 12px;
   font: 14px SimSun, "Songti SC", serif;
   cursor: pointer;
+  border: 2px solid #333;
+  background: #f7f0e0;
+  color: #111;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
 }
 button.end-btn:disabled {
   cursor: not-allowed;
-  color: #888;
+  color: #222;
+  background: #eee;
+  border: 2px dashed #555;
+  text-decoration: line-through;
+}
+html[lang="zh-CN"] button.end-btn:disabled::before {
+  content: "〔缺件〕 ";
+  font-weight: 700;
+  text-decoration: none;
+}
+html[lang="en"] button.end-btn:disabled::before {
+  content: "[missing] ";
+  font-weight: 700;
+}
+button.end-btn:focus,
+button.end-btn:focus-visible {
+  outline: 3px dotted #333;
+  outline-offset: 2px;
 }
 .err {
-  color: #a00;
+  color: #111;
   margin-top: 8px;
+  border: 1px dashed #333;
+  padding: 8px 10px;
+  background: repeating-linear-gradient(135deg, #fff 0 8px, #f0f0f0 8px 16px);
+  min-height: 1.2em;
+}
+.err:empty {
+  display: none;
+  border: 0;
+  padding: 0;
+  background: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  img.shot,
+  button.end-btn {
+    transition: none;
+  }
 }

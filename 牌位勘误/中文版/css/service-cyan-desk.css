@@ -1,142 +1,378 @@
-/* service-cyan-desk：浅青咨询台。登山福安饭层的对标。不要再出现橙色餐馆导航。 */
+/* 牌位勘误 · 夜岗著录桌 本局材质合同。禁止边检亭、禁止搜词橙钮、禁止回写共享皮库。 */
 html.skin-service-cyan-desk {
-  --page: #e0f7fa;
-  --card: #fff;
-  --title: #26c5e9;
-  --link: #337ab7;
-  --btn: #007bff;
+  --page: #c5d0c8;
+  --paper: #efe6d2;
+  --ink: #222;
+  --rule: #c4b89a;
+  --link: #1a3d5c;
+  --submit: #1a3d5c;
+  --over: #7a1c12;
+  --hole: #d7d2c4;
 }
 html.skin-service-cyan-desk body {
   margin: 0;
-  background: var(--page);
-  color: #333;
+  background:
+    repeating-linear-gradient(90deg, rgba(40, 70, 55, 0.04) 0 2px, transparent 2px 12px),
+    linear-gradient(180deg, #9aa89e 0, var(--page) 48px);
+  color: var(--ink);
   font: 14px/1.6 "Microsoft YaHei", sans-serif;
 }
 html.skin-service-cyan-desk #wrap {
   max-width: 960px;
   margin: 0 auto;
-  background: var(--card);
+  background:
+    repeating-linear-gradient(180deg, transparent 0 27px, rgba(180, 160, 120, 0.28) 27px 28px),
+    linear-gradient(90deg, var(--hole) 0 18px, transparent 18px 22px, var(--paper) 22px);
+  background-color: var(--paper);
   min-height: 100vh;
+  box-shadow: inset 18px 0 0 var(--hole), 0 0 0 1px #8a8474;
+  border-radius: 0;
 }
 html.skin-service-cyan-desk header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 20px;
-  border-bottom: 1px solid #e0eaf1;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 10px 20px 10px 28px;
+  border-bottom: 2px solid #2c4a4e;
+  background: #2c4a4e;
+  color: #e8e0d0;
 }
-html.skin-service-cyan-desk #search-form { display: inline-flex; margin-left: 12px; }
-html.skin-service-cyan-desk #search-input {
-  border: 1px solid #ccc;
-  padding: 6px 10px;
-}
-html.skin-service-cyan-desk #search-form button {
-  border: 0;
-  background: #d15c20;
-  color: #fff;
-  padding: 6px 12px;
-}
-html.skin-service-cyan-desk .ghost-btn {
-  border: 1px solid #ccc;
-  padding: 6px 12px;
-  color: #333;
+html.skin-service-cyan-desk header a { color: #e8e0d0; }
+html.skin-service-cyan-desk #search-form { display: none; }
+html.skin-service-cyan-desk .ghost-btn,
+html.skin-service-cyan-desk header .ghost-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 8px 14px;
+  border: 1px solid #c4b89a;
+  color: var(--ink);
+  background: #f7f1e2;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 0;
   font-size: 13px;
+  box-sizing: border-box;
+}
+html.skin-service-cyan-desk header .ghost-btn {
+  border-color: #9bb0a8;
+  background: #3d5c60;
+  color: #e8e0d0;
 }
 html.skin-service-cyan-desk .notice {
-  width: 80%;
+  width: auto;
+  max-width: 86%;
   margin: 20px auto;
-  background: #f0f8ff;
-  border: 1px solid #e0eaf1;
+  background: rgba(255, 252, 240, 0.72);
+  border: 1px solid #8a8474;
+  border-left: 6px solid #2c4a4e;
   padding: 16px;
+  border-radius: 0;
 }
 html.skin-service-cyan-desk .notice h2 {
-  color: var(--title);
-  text-align: center;
-  margin: 0 0 8px;
-  font-size: 24px;
-  font-weight: 700;
-}
-html.skin-service-cyan-desk .tabs { display: flex; justify-content: center; gap: 10px; margin: 12px 0; }
-html.skin-service-cyan-desk .tabs a {
-  background: #111;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 24px;
-  border-radius: 4px;
-}
-html.skin-service-cyan-desk table { width: 80%; margin: 20px auto; border-collapse: collapse; }
-html.skin-service-cyan-desk td, html.skin-service-cyan-desk th {
-  border-bottom: 1px solid #f0f0f0;
-  padding: 10px 0;
+  color: #1a3336;
   text-align: left;
+  margin: 0 0 8px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+html.skin-service-cyan-desk .tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 0;
+  margin: 12px 28px;
+  border-bottom: 1px solid #8a8474;
+}
+html.skin-service-cyan-desk .tabs a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 8px 16px;
+  margin: 0 4px 0 0;
+  background: #d9d0b8;
+  color: var(--ink);
+  text-decoration: none;
+  border: 1px solid #8a8474;
+  border-bottom: 0;
+  border-radius: 0;
+  box-sizing: border-box;
+}
+html.skin-service-cyan-desk table {
+  width: auto;
+  max-width: 86%;
+  margin: 16px auto 20px;
+  border-collapse: collapse;
+  background: #fbf6e8;
+  box-shadow: inset 0 0 0 1px #8a8474;
+}
+html.skin-service-cyan-desk td,
+html.skin-service-cyan-desk th {
+  border-bottom: 1px solid var(--rule);
+  border-right: 1px solid #eee6d2;
+  padding: 10px 8px;
+  text-align: left;
+}
+html.skin-service-cyan-desk th {
+  background: #e4dcc4;
+  font-weight: 700;
 }
 html.skin-service-cyan-desk a { color: var(--link); }
 
-/* 登录页：浅青底上的 360px 白卡片，主钮 Bootstrap 风 #007bff */
 html.skin-service-cyan-desk body.login-page #wrap {
-  background: transparent;
-  max-width: none;
+  background: var(--paper);
+  max-width: 420px;
   min-height: 0;
+  margin: 48px auto;
+  box-shadow: inset 18px 0 0 var(--hole), 0 0 0 1px #8a8474;
 }
 html.skin-service-cyan-desk body.login-page header {
   max-width: none;
-  background: #fff;
 }
 html.skin-service-cyan-desk .login-box {
-  width: 360px;
-  margin: 48px auto;
-  border: 1px solid #ccc;
-  padding: 24px;
-  background: #fff;
+  width: auto;
+  margin: 24px 28px 32px;
+  border: 0;
+  padding: 0;
+  background: transparent;
   box-sizing: border-box;
+  border-radius: 0;
 }
 html.skin-service-cyan-desk .login-box h1 {
-  color: var(--title);
+  color: #1a3336;
   font-size: 18px;
   font-weight: 700;
   margin: 0 0 16px;
-  text-align: center;
+  text-align: left;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 8px;
 }
 html.skin-service-cyan-desk .login-box label {
   display: block;
   margin: 0 0 4px;
-  color: #333;
+  color: var(--ink);
 }
 html.skin-service-cyan-desk .login-box input[name="user"],
 html.skin-service-cyan-desk .login-box input[name="pass"],
 html.skin-service-cyan-desk .login-box input[type="text"],
-html.skin-service-cyan-desk .login-box input[type="password"] {
+html.skin-service-cyan-desk .login-box input[type="password"],
+html.skin-service-cyan-desk select,
+html.skin-service-cyan-desk #cardform select {
   width: 100%;
-  height: 34px;
-  border: 1px solid #ced4da;
+  min-height: 44px;
+  height: 44px;
+  border: 1px solid #8a8474;
   padding: 6px 12px;
   margin: 0 0 12px;
   box-sizing: border-box;
   font-size: 14px;
+  border-radius: 0;
+  background: #fffdf6;
   -webkit-appearance: none;
   appearance: none;
 }
-html.skin-service-cyan-desk .login-box button[type="submit"] {
+html.skin-service-cyan-desk .login-box button[type="submit"],
+html.skin-service-cyan-desk button[type="submit"] {
   width: 100%;
-  background: #007bff;
-  color: #fff;
-  border: 0;
-  padding: 8px 16px;
+  min-height: 44px;
+  background: var(--submit);
+  color: #f4efe3;
+  border: 2px solid #0f2436;
+  border-color: #3a6588 var(--submit) var(--submit) #3a6588;
+  padding: 10px 16px;
   font-size: 14px;
   cursor: pointer;
+  border-radius: 0;
 }
-html.skin-service-cyan-desk .login-box .hint {
-  color: #888;
+html.skin-service-cyan-desk .login-box .hint,
+html.skin-service-cyan-desk .hint {
+  color: #444;
   font-size: 12px;
   margin: 12px 0 0;
 }
-html.skin-service-cyan-desk button[type="submit"] {
-  background: var(--btn);
-  color: #fff;
-  border: 0;
-  padding: 10px 18px;
+html.skin-service-cyan-desk .hint.is-err {
+  border-left: 6px solid var(--over);
+  padding: 8px 8px 8px 10px;
+  background: #f6ebe6;
+  color: var(--ink);
 }
-html.skin-service-cyan-desk .post { border-bottom: 1px solid #eee; padding: 10px 0; }
-html.skin-service-cyan-desk .post-info span { color: var(--btn); font-weight: 700; }
+html.skin-service-cyan-desk .hint.is-err::before {
+  content: "■ ";
+  font-weight: 700;
+}
+
+/* 方案卡：六栏序号 / 选中内凹 / 越权双线章 */
+html.skin-service-cyan-desk #cardform {
+  counter-reset: col;
+  position: relative;
+  width: auto !important;
+  max-width: 32em;
+  margin: 16px 28px 24px;
+  padding: 12px 12px 16px 8px;
+  border: 1px solid #8a8474;
+  background: repeating-linear-gradient(180deg, #fbf6e8 0 43px, #efe6d2 43px 44px);
+  box-sizing: border-box;
+}
+html.skin-service-cyan-desk #cardform h1 {
+  margin: 0 0 12px 36px;
+}
+html.skin-service-cyan-desk #cardform label {
+  display: block;
+  position: relative;
+  margin: 0 0 4px 36px;
+  font-weight: 700;
+}
+html.skin-service-cyan-desk #cardform label::before {
+  counter-increment: col;
+  content: counter(col);
+  position: absolute;
+  left: -36px;
+  top: 0;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  background: #2c4a4e;
+  color: #e8e0d0;
+  font-size: 12px;
+}
+html.skin-service-cyan-desk #cardform select {
+  margin-left: 36px;
+  width: calc(100% - 36px);
+}
+html.skin-service-cyan-desk #cardform select:focus,
+html.skin-service-cyan-desk #cardform select:focus-visible {
+  outline: 3px dotted #111;
+  outline-offset: 2px;
+  box-shadow: inset 6px 0 0 #1a3d5c, inset 0 0 0 2px #1a3d5c;
+  background: #fff;
+}
+html.skin-service-cyan-desk #cardform:has(#auth option[value="approve"]:checked),
+html.skin-service-cyan-desk #cardform:has(#auth option[value="dianzhu"]:checked),
+html.skin-service-cyan-desk #cardform:has(#auth option[value="edit"]:checked) {
+  border: 3px double var(--over);
+  box-shadow: inset 0 0 0 1px var(--over);
+}
+html.skin-service-cyan-desk #cardform:has(#auth option[value="approve"]:checked)::after,
+html.skin-service-cyan-desk #cardform:has(#auth option[value="dianzhu"]:checked)::after,
+html.skin-service-cyan-desk #cardform:has(#auth option[value="edit"]:checked)::after {
+  content: "×";
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  width: 48px;
+  height: 48px;
+  line-height: 44px;
+  text-align: center;
+  border: 3px solid var(--over);
+  color: var(--over);
+  font-size: 32px;
+  font-weight: 700;
+  transform: rotate(-12deg);
+  pointer-events: none;
+  background: rgba(255, 255, 255, 0.5);
+}
+html.skin-service-cyan-desk #cardform button[type="submit"] {
+  margin-left: 36px;
+  width: calc(100% - 36px);
+}
+
+/* 四回单 */
+html.skin-service-cyan-desk body.slip-hold .notice {
+  border: 2px solid #2c4a4e;
+  border-left: 10px solid #2c4a4e;
+  position: relative;
+}
+html.skin-service-cyan-desk body.slip-hold .notice h2::before {
+  content: "■ ";
+}
+html.skin-service-cyan-desk body.slip-over .notice {
+  border: 3px double var(--over);
+  position: relative;
+}
+html.skin-service-cyan-desk body.slip-over .notice h2::before {
+  content: "× ";
+  color: var(--over);
+}
+html.skin-service-cyan-desk body.slip-half .notice {
+  border: 2px dashed #5a4a2a;
+  border-left: 10px dashed #5a4a2a;
+}
+html.skin-service-cyan-desk body.slip-print .notice {
+  border: 1px dotted #444;
+  background-image: repeating-linear-gradient(90deg, transparent 0 6px, rgba(0, 0, 0, 0.06) 6px 7px);
+}
+
+html.skin-service-cyan-desk .post { border-bottom: 1px solid var(--rule); padding: 10px 0; }
+html.skin-service-cyan-desk .post-info span { color: var(--submit); font-weight: 700; }
+
+html.skin-service-cyan-desk a[href="javascript:void(0)"] {
+  text-decoration: line-through;
+  border-bottom: 1px dashed #666;
+  cursor: not-allowed;
+  color: #555;
+}
+
+html.skin-service-cyan-desk :focus { outline: none; }
+html.skin-service-cyan-desk :focus-visible {
+  outline: 3px dotted #111;
+  outline-offset: 2px;
+}
+
+@media (max-width: 390px) {
+  html.skin-service-cyan-desk #wrap,
+  html.skin-service-cyan-desk body.login-page #wrap {
+    max-width: 100%;
+    margin: 0;
+  }
+  html.skin-service-cyan-desk .notice,
+  html.skin-service-cyan-desk table {
+    max-width: none;
+    width: auto;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  html.skin-service-cyan-desk #cardform,
+  html.skin-service-cyan-desk .login-box,
+  html.skin-service-cyan-desk .tabs {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  html.skin-service-cyan-desk #cardform label,
+  html.skin-service-cyan-desk #cardform h1,
+  html.skin-service-cyan-desk #cardform select,
+  html.skin-service-cyan-desk #cardform button[type="submit"] {
+    margin-left: 32px;
+  }
+  html.skin-service-cyan-desk #cardform select,
+  html.skin-service-cyan-desk #cardform button[type="submit"] {
+    width: calc(100% - 32px);
+  }
+}
+@media (max-width: 320px) {
+  html.skin-service-cyan-desk header {
+    padding-left: 22px;
+  }
+  html.skin-service-cyan-desk table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html.skin-service-cyan-desk *,
+  html.skin-service-cyan-desk *::before,
+  html.skin-service-cyan-desk *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  html.skin-service-cyan-desk #cardform:has(#auth option[value="approve"]:checked)::after,
+  html.skin-service-cyan-desk #cardform:has(#auth option[value="dianzhu"]:checked)::after,
+  html.skin-service-cyan-desk #cardform:has(#auth option[value="edit"]:checked)::after {
+    transform: none;
+  }
+}

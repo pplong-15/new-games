@@ -140,3 +140,14 @@ html.skin-service-cyan-desk button[type="submit"] {
 }
 html.skin-service-cyan-desk .post { border-bottom: 1px solid #eee; padding: 10px 0; }
 html.skin-service-cyan-desk .post-info span { color: var(--btn); font-weight: 700; }
+
+@media (max-width: 800px) {
+  html.skin-service-cyan-desk header {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  html.skin-service-cyan-desk .notice {
+    width: auto;
+    margin: 12px 8px;
+  }
+}

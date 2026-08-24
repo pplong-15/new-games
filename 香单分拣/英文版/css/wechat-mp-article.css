@@ -35,6 +35,7 @@ html.skin-wechat-mp-article button {
 /* 栏宽保持 677 */
 html.skin-wechat-mp-article .article {
   width: 677px;
+  max-width: 100%;
   margin: 0 auto;
   background: #fff;
   padding: 20px 15px 48px;

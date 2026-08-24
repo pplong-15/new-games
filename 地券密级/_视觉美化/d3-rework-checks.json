@@ -1,0 +1,78 @@
+{
+  "zh": {
+    "three_class": "notice dq-end-three",
+    "three_borderStyle": "solid",
+    "over_class": "notice dq-end-overclaim",
+    "over_borderStyle": "double",
+    "w320_login_overflow": false,
+    "w320_047_overflow": false,
+    "w390_note": {
+      "overflowX": false,
+      "minLabelH": 44,
+      "n": 20
+    },
+    "deed012": {
+      "className": "record dq-layer-other",
+      "tableBorder": "1px dotted rgb(102, 102, 102)",
+      "hasScan": false
+    },
+    "table_public": {
+      "sel": "table.dq-scan-table, article.dq-layer-public table, .dq-layer-internal table, .dq-layer-restrict table",
+      "className": "dq-scan-table",
+      "border": "1px solid rgb(51, 51, 51)",
+      "boxShadow": "none"
+    },
+    "table_internal": {
+      "sel": "table.dq-scan-table, article.dq-layer-public table, .dq-layer-internal table, .dq-layer-restrict table",
+      "className": "dq-scan-table dq-layer-internal",
+      "border": "2px dashed rgb(51, 51, 51)",
+      "boxShadow": "rgb(51, 51, 51) 10px 0px 0px 0px inset"
+    },
+    "table_restrict": {
+      "sel": "table.dq-scan-table, article.dq-layer-public table, .dq-layer-internal table, .dq-layer-restrict table",
+      "className": "dq-scan-table dq-layer-restrict",
+      "border": "3px double rgb(51, 51, 51)",
+      "boxShadow": "none"
+    },
+    "login_internal_shadow": "rgb(51, 51, 51) 8px 0px 0px 0px inset",
+    "login_internal_border": "dashed"
+  },
+  "en": {
+    "three_class": "notice dq-end-three",
+    "three_borderStyle": "solid",
+    "over_class": "notice dq-end-overclaim",
+    "over_borderStyle": "double",
+    "w320_login_overflow": false,
+    "w320_047_overflow": false,
+    "w390_note": {
+      "overflowX": false,
+      "minLabelH": 44,
+      "n": 20
+    },
+    "deed012": {
+      "className": "record dq-layer-other",
+      "tableBorder": "1px dotted rgb(102, 102, 102)",
+      "hasScan": false
+    },
+    "table_public": {
+      "sel": "table.dq-scan-table, article.dq-layer-public table, .dq-layer-internal table, .dq-layer-restrict table",
+      "className": "dq-scan-table",
+      "border": "1px solid rgb(51, 51, 51)",
+      "boxShadow": "none"
+    },
+    "table_internal": {
+      "sel": "table.dq-scan-table, article.dq-layer-public table, .dq-layer-internal table, .dq-layer-restrict table",
+      "className": "dq-scan-table dq-layer-internal",
+      "border": "2px dashed rgb(51, 51, 51)",
+      "boxShadow": "rgb(51, 51, 51) 10px 0px 0px 0px inset"
+    },
+    "table_restrict": {
+      "sel": "table.dq-scan-table, article.dq-layer-public table, .dq-layer-internal table, .dq-layer-restrict table",
+      "className": "dq-scan-table dq-layer-restrict",
+      "border": "3px double rgb(51, 51, 51)",
+      "boxShadow": "none"
+    },
+    "login_internal_shadow": "rgb(51, 51, 51) 8px 0px 0px 0px inset",
+    "login_internal_border": "dashed"
+  }
+}

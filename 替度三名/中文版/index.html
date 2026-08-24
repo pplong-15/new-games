@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>替度</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/tidu.css">
+</head>
+<body>
+  <div id="title-layer">
+    <img src="jpeg/00-open.jpg" alt="检查室工作台">
+    <p class="lock-line">三份不能再是同一个人。对了才锁。错了不揭晓。</p>
+    <p class="who">邱小汀。今晚交锁定组。</p>
+    <button type="button" id="btn-enter">进站</button>
+  </div>
+
+  <div id="desk">
+    <header class="topbar">
+      <div class="badge" id="badge">
+        安渡县民宗局 · 场所登记抽查<br>
+        临聘录入 <span id="player-name">邱小汀</span>
+        <span id="staff-id">安民录临6</span>
+      </div>
+      <div class="lock-line" id="lock-line">三份不能再是同一个人。对了才锁。错了不揭晓。</div>
+      <div class="sms" id="sms">今晚交抽查表。</div>
+      <div id="clock">距截点 10:00</div>
+      <div class="wage">今日工钱 <span id="wage">¥0</span></div>
+    </header>
+
+    <div class="columns">
+      <section class="col left" id="col-still">
+        <div class="still-wrap">
+          <img id="still-img" src="jpeg/01-still.jpg" alt="悬挂期现场静帧">
+          <div class="hits">
+            <button type="button" class="hit" id="hit-before" aria-label="疏前的人">疏前的人</button>
+            <button type="button" class="hit" id="hit-absent" aria-label="不在场的人">不在场的人</button>
+            <button type="button" class="hit" id="hit-shu" aria-label="疏本身">疏本身</button>
+          </div>
+        </div>
+        <p>悬挂期未满。先点图上的位置，再读旁边的文书。别把走廊那句写进表。</p>
+        <button type="button" id="gossip">走廊声</button>
+      </section>
+
+      <section class="col mid docs" id="col-docs">
+        <p>三份都写着周阿海。对照静帧，别并成一个人。</p>
+        <button type="button" id="doc-hukou" class="doc">本人户籍 · 周阿海</button>
+        <button type="button" id="doc-dudie" class="doc">替僧度牒 · 俗名周阿海</button>
+        <button type="button" id="doc-dudie-fuye" class="doc">度牒附页 · 代出家人周石根</button>
+        <button type="button" id="doc-shu" class="doc">纸人疏 · 疏首周阿海</button>
+        <button type="button" id="doc-register" class="doc">宗教活动场所登记表</button>
+        <button type="button" id="doc-note" class="doc">笔记影印</button>
+        <button type="button" id="doc-pay" class="doc">计件单</button>
+        <div class="doc-preview" id="doc-preview"></div>
+        <p class="pay-slip" id="pay-copy">
+          锁定组才有工钱。<br>
+          当同一个人，今晚零。<br>
+          填错不标红。
+        </p>
+      </section>
+
+      <section class="col right" id="col-form">
+        <p>锁定组。工号 <span>安民录临6</span>。三行填完再交。只填名分和怎么没的。不批准超度，不批准解除。</p>
+        <p class="sheet-stamp" aria-live="polite">
+          <span class="stamp-white">未锁定</span>
+          <span class="stamp-frost">已锁定</span>
+        </p>
+        <table class="lock-table white" id="lock-table">
+          <thead>
+            <tr><th>行</th><th>名分</th><th>怎么没的</th></tr>
+          </thead>
+          <tbody>
+            <tr data-slot="slot-before-shu">
+              <td>疏前的人</td>
+              <td><select class="slot-name" data-slot="slot-before-shu" aria-label="疏前的人名分"></select></td>
+              <td><select class="slot-fate" data-slot="slot-before-shu" aria-label="疏前的人怎么没的"></select></td>
+            </tr>
+            <tr data-slot="slot-absent">
+              <td>不在场的人</td>
+              <td><select class="slot-name" data-slot="slot-absent" aria-label="不在场的人名分"></select></td>
+              <td><select class="slot-fate" data-slot="slot-absent" aria-label="不在场的人怎么没的"></select></td>
+            </tr>
+            <tr data-slot="slot-shu">
+              <td>疏本身</td>
+              <td><select class="slot-name" data-slot="slot-shu" aria-label="疏本身名分"></select></td>
+              <td><select class="slot-fate" data-slot="slot-shu" aria-label="疏本身怎么没的"></select></td>
+            </tr>
+          </tbody>
+        </table>
+        <button type="button" id="btn-submit">交抽查表·锁定组</button>
+        <p id="hold-hint">按住才交。松手不算。</p>
+        <p id="reject"></p>
+        <img id="form-img" alt="" hidden>
+      </section>
+    </div>
+  </div>
+  <div id="ending" class="ending"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

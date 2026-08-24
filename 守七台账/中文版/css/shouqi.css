@@ -1,0 +1,267 @@
+/* 本局叠加：班次、三份、交班本。不代替各站皮肤，不画进度条。 */
+html, body { overflow-x: hidden; }
+body { padding-bottom: 72px; }
+#shouqi-bar {
+  position: sticky;
+  bottom: 0;
+  z-index: 20;
+  background: #3a332c;
+  color: #f0e6d2;
+  font: 13px/1.4 SimSun, "Songti SC", "PingFang SC", sans-serif;
+  padding: 8px 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  border-top: 2px solid #8a7a64;
+}
+#shouqi-bar a {
+  color: #f0e6d2;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 8px;
+  text-decoration: underline;
+}
+#shouqi-bar .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+#shouqi-bar .chip {
+  background: #f0e6d2;
+  border: 1px solid #5a4e40;
+  color: #3a332c;
+  padding: 6px 8px;
+  font-size: 12px;
+}
+html button.pin,
+html #btn-handover,
+html #hint-next,
+html #btn-reset,
+html #claim-form button {
+  margin: 8px 8px 0 0;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 16px;
+  min-height: 44px;
+  min-width: 44px;
+  box-sizing: border-box;
+}
+html button.pin:focus-visible,
+html #btn-handover:focus-visible,
+html #hint-next:focus-visible,
+html #btn-reset:focus-visible,
+html a:focus-visible,
+html input:focus-visible,
+html button:focus-visible {
+  outline: 3px solid #000;
+  outline-offset: 2px;
+}
+.gate-wait { color: #444; padding: 24px; font-size: 16px; }
+.door-card {
+  border: 2px solid #111;
+  background: #f7f7f7;
+  padding: 12px;
+  margin: 8px 0;
+  cursor: pointer;
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  min-height: 44px;
+  box-sizing: border-box;
+  font: 14px/1.4 "Microsoft YaHei", sans-serif;
+}
+.door-card.sent {
+  outline: 2px solid #111;
+  box-shadow: inset 6px 0 0 #c45a12;
+}
+.door-card.wait {
+  opacity: 1;
+  cursor: default;
+  outline: 1px dashed #111;
+  background: repeating-linear-gradient(135deg, #f7f7f7, #f7f7f7 8px, #ececec 8px, #ececec 16px);
+}
+#claim-form .row {
+  border: 1px dashed #444;
+  padding: 10px;
+  margin: 6px 0;
+  background: #fafafa;
+  display: block;
+  min-height: 44px;
+}
+#claim-form .row input { margin-right: 8px; min-width: 18px; min-height: 18px; }
+#claim-form .feedback { min-height: 1.6em; margin-top: 8px; }
+.hint-box { margin-top: 16px; font-size: 14px; }
+footer.pg {
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  padding: 16px 8px 72px;
+}
+img.hero-photo, img.inline-photo, img { max-width: 100%; height: auto; }
+@media (max-width: 800px) {
+  #shouqi-bar { font-size: 12px; }
+}
+@media (max-width: 320px) {
+  #shouqi-bar { position: static; }
+  body { padding-bottom: 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html, body { scroll-behavior: auto; }
+  * { transition: none !important; animation: none !important; }
+}
+body[data-page="33"],
+body[data-page="34"],
+body[data-page="35"] {
+  padding-bottom: 16px;
+}
+body[data-page="33"] footer.pg,
+body[data-page="34"] footer.pg,
+body[data-page="35"] footer.pg {
+  padding-bottom: 24px;
+}
+
+/* Original stills replacing unlicensed JPGs. Geometric ink textures. No type, faces, brands. */
+figure.still {
+  margin: 0 0 12px;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border: 0;
+  box-sizing: border-box;
+}
+figure.still.hero, figure.still.intro-still, .intro-hero figure.still {
+  min-height: 200px;
+  height: 36vw;
+  max-height: 380px;
+}
+figure.still.inline, figure.still.inline-photo {
+  min-height: 120px;
+  height: 160px;
+  max-width: 520px;
+}
+figure.still::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.35;
+  background:
+    repeating-linear-gradient(0deg, transparent 0 3px, rgba(0,0,0,.04) 3px 4px);
+}
+@media (max-width: 320px) {
+  figure.still.hero, figure.still.intro-still, .intro-hero figure.still { height: 140px; min-height: 140px; }
+  figure.still.inline, figure.still.inline-photo { height: 110px; min-height: 110px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  figure.still { animation: none; }
+}
+
+/* wet stairs: stacked treads, cool gray-green, one rail */
+.still-stairs {
+  background:
+    linear-gradient(105deg, transparent 62%, rgba(40,50,48,.45) 62.5%, rgba(40,50,48,.45) 66%, transparent 66.5%),
+    repeating-linear-gradient(180deg, #6a746c 0 18px, #4e5852 18px 22px, #c5cdc4 22px 24px);
+  box-shadow: inset 0 -24px 40px rgba(20,24,22,.35);
+}
+
+/* metal gate: vertical bars */
+.still-gate {
+  background:
+    linear-gradient(180deg, #6a6860 0 10%, transparent 10% 88%, #4a4840 88%),
+    repeating-linear-gradient(90deg, #3a3834 0 9px, #9a968c 9px 12px, #5c5850 12px 22px);
+  background-color: #4a4842;
+}
+
+/* waiting chairs: repeating seat blocks */
+.still-chairs {
+  background:
+    repeating-linear-gradient(90deg, #7a4a2a 0 70px, #3d2418 70px 84px),
+    repeating-linear-gradient(180deg, transparent 0 28px, #c4b49a 28px 70px, transparent 70px 110px);
+  background-color: #d8cbb8;
+}
+
+/* courtyard weeds */
+.still-yard {
+  background:
+    radial-gradient(circle at 20% 80%, #3d4a28 0 8px, transparent 9px),
+    radial-gradient(circle at 70% 60%, #2f3a20 0 6px, transparent 7px),
+    repeating-linear-gradient(122deg, #6a7a48 0 6px, #4a5a32 6px 9px, #8a9a60 9px 11px);
+}
+
+/* water trough */
+.still-trough {
+  background:
+    linear-gradient(180deg, #9aa7a0 0 22%, #2a4a55 22% 70%, #6a5a48 70%),
+    repeating-linear-gradient(90deg, rgba(255,255,255,.08) 0 8px, transparent 8px 16px);
+}
+
+/* township crossroad */
+.still-road {
+  background:
+    linear-gradient(90deg, transparent 46%, #c8c2b0 46% 54%, transparent 54%),
+    linear-gradient(180deg, transparent 44%, #c8c2b0 44% 56%, transparent 56%),
+    repeating-linear-gradient(90deg, #3a3a32 0 40%, #2a2a24 40% 50%, #3a3a32 50%);
+  background-color: #4a5340;
+}
+
+/* bus shed corrugation */
+.still-shed {
+  background:
+    repeating-linear-gradient(90deg, #6a6e68 0 10px, #4a4e48 10px 12px, #8a8e86 12px 14px),
+    linear-gradient(180deg, #3a4038 0 30%, #2a2018 30%);
+}
+
+/* empty hall / classroom */
+.still-hall {
+  background:
+    linear-gradient(180deg, #9eb0c0 0 38%, #d8d0c4 38% 42%, #cfc6b8 42%),
+    repeating-linear-gradient(90deg, transparent 0 48px, rgba(255,255,255,.35) 48px 52px, transparent 52px 96px);
+  background-color: #cfc6b8;
+}
+
+/* plastic stools: three ellipses via radial */
+.still-stools {
+  background:
+    radial-gradient(ellipse 28% 18% at 22% 62%, #c45a2a 0 42%, #6a2a18 43% 48%, transparent 49%),
+    radial-gradient(ellipse 28% 18% at 50% 58%, #d4d0c8 0 42%, #6a6860 43% 48%, transparent 49%),
+    radial-gradient(ellipse 28% 18% at 78% 64%, #2a5a8a 0 42%, #12243a 43% 48%, transparent 49%),
+    linear-gradient(180deg, #e8e0d0 0 40%, #b0a090 40%);
+}
+
+/* meeting room table */
+.still-meeting {
+  background:
+    linear-gradient(180deg, #6a7a88 0 28%, #d0c8b8 28% 32%, #8a9aa0 32% 38%, #d8d2c6 38%),
+    radial-gradient(ellipse 70% 24% at 50% 58%, #5a4030 0 40%, transparent 41%);
+  background-color: #d8d2c6;
+}
+
+/* tea stall / duty thermos */
+.still-tea {
+  background:
+    radial-gradient(circle at 50% 42%, #c8d0d4 0 18%, #8a9094 19% 22%, transparent 23%),
+    linear-gradient(180deg, #3a2a22 0 30%, #c45a28 30% 34%, #f2e6d4 34% 70%, #6a4a32 70%);
+}
+
+#btn-stop, #btn-open, #btn-late {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 10px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+#btn-stop:focus-visible,
+#btn-open:focus-visible,
+#btn-late:focus-visible {
+  outline: 3px solid #000;
+  outline-offset: 2px;
+}
+/* Duty log is chips + text, never a meter. */
+#shouqi-bar meter, #shouqi-bar progress { display: none !important; }
+footer.pg {
+  background: none;
+  height: auto;
+  border-radius: 0;
+}

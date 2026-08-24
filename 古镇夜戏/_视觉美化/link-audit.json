@@ -1,0 +1,958 @@
+{
+  "zh": {
+    "root": "/Users/jianglong/Desktop/github游戏/游戏库/古镇夜戏/中文版",
+    "html_count": 44,
+    "reachable_html": [
+      "guestbook.html",
+      "heritage.html",
+      "index.html",
+      "introduction.html",
+      "pages/baixi.html",
+      "pages/blog-doupi.html",
+      "pages/blog-maju.html",
+      "pages/cheng.html",
+      "pages/cs.html",
+      "pages/forum-rules.html",
+      "pages/forum.html",
+      "pages/history.html",
+      "pages/incense.html",
+      "pages/leave.html",
+      "pages/login.html",
+      "pages/order.html",
+      "pages/playbill-scan.html",
+      "pages/playbill.html",
+      "pages/roster.html",
+      "pages/staff.html",
+      "pages/stele.html",
+      "pages/temple.html",
+      "pages/thread-doupi.html",
+      "pages/thread-food.html",
+      "pages/thread-guide.html",
+      "pages/thread-hotel.html",
+      "pages/thread-maju.html",
+      "pages/troupe.html",
+      "pages/visit.html",
+      "search-results.html",
+      "ticket.html",
+      "traffic.html"
+    ],
+    "unreachable_html": [
+      "pages/contact.html",
+      "pages/end-appeal.html",
+      "pages/end-day.html",
+      "pages/end-enter.html",
+      "pages/end-strike.html",
+      "pages/ending.html",
+      "pages/help.html",
+      "pages/leave-note.html",
+      "pages/mp.html",
+      "pages/photo.html",
+      "pages/zhidao.html",
+      "stay.html"
+    ],
+    "path_to_ending": null,
+    "inbound_ending": [],
+    "four_endings": {
+      "pages/end-appeal.html": {
+        "reachable_from_intro": false,
+        "inbound": [
+          "js/ending.js#GO"
+        ],
+        "path": null
+      },
+      "pages/end-strike.html": {
+        "reachable_from_intro": false,
+        "inbound": [
+          "js/ending.js#GO"
+        ],
+        "path": null
+      },
+      "pages/end-enter.html": {
+        "reachable_from_intro": false,
+        "inbound": [
+          "js/ending.js#GO"
+        ],
+        "path": null
+      },
+      "pages/end-day.html": {
+        "reachable_from_intro": false,
+        "inbound": [
+          "js/ending.js#GO"
+        ],
+        "path": null
+      }
+    },
+    "need_tokens": {
+      "appeal": [
+        "t_ticket",
+        "t_visit",
+        "t_order"
+      ],
+      "strike": [
+        "t_yinggong",
+        "t_xidan",
+        "t_xianghuo"
+      ],
+      "enter": [
+        "t_ticket",
+        "t_visit",
+        "t_forum"
+      ],
+      "day": [
+        "t_baixi",
+        "t_yinggong"
+      ]
+    },
+    "go_map": {
+      "appeal": "end-appeal.html",
+      "strike": "end-strike.html",
+      "enter": "end-enter.html",
+      "day": "end-day.html"
+    },
+    "grants": {
+      "index.html": "t_home",
+      "pages/baixi.html": "t_baixi",
+      "pages/cheng.html": "t_cheng",
+      "pages/ending.html": "t_endpage",
+      "pages/incense.html": "t_xianghuo",
+      "pages/leave.html": "t_dihou",
+      "pages/order.html": "t_order",
+      "pages/playbill-scan.html": "t_xidan",
+      "pages/playbill.html": "t_xidan_pub",
+      "pages/roster.html": "t_yinggong",
+      "pages/thread-doupi.html": "t_forum",
+      "pages/thread-maju.html": "t_maju",
+      "pages/visit.html": "t_visit",
+      "ticket.html": "t_ticket"
+    },
+    "keyword_targets": [
+      {
+        "queries": [
+          "龙套"
+        ],
+        "href": "pages/thread-doupi.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "龙套"
+        ],
+        "href": "pages/thread-maju.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "应工"
+        ],
+        "href": "pages/roster.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "应工"
+        ],
+        "href": "pages/playbill.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "狄厚"
+        ],
+        "href": "pages/leave.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "狄厚"
+        ],
+        "href": "pages/staff.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "沈南"
+        ],
+        "href": "pages/order.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "沈南"
+        ],
+        "href": "pages/roster.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "香火"
+        ],
+        "href": "pages/incense.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "老郎"
+        ],
+        "href": "pages/temple.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "老郎"
+        ],
+        "href": "pages/stele.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "目连"
+        ],
+        "href": "heritage.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "目连"
+        ],
+        "href": "pages/playbill.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "夜戏"
+        ],
+        "href": "ticket.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "夜戏"
+        ],
+        "href": "pages/visit.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "白戏"
+        ],
+        "href": "pages/baixi.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "程石"
+        ],
+        "href": "pages/cheng.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "程石"
+        ],
+        "href": "pages/staff.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "马句"
+        ],
+        "href": "pages/thread-maju.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "马句"
+        ],
+        "href": "pages/blog-maju.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "豆皮"
+        ],
+        "href": "pages/thread-doupi.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "豆皮"
+        ],
+        "href": "pages/blog-doupi.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "检场"
+        ],
+        "href": "pages/staff.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "检场"
+        ],
+        "href": "pages/leave.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "开锣"
+        ],
+        "href": "ticket.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "开锣"
+        ],
+        "href": "pages/cs.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "后台"
+        ],
+        "href": "ticket.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "后台"
+        ],
+        "href": "pages/visit.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "戏单"
+        ],
+        "href": "pages/playbill.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "戏单"
+        ],
+        "href": "pages/playbill-scan.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "乔干"
+        ],
+        "href": "pages/temple.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "吴窗"
+        ],
+        "href": "pages/cs.html",
+        "forbidden": false
+      }
+    ],
+    "keyword_queries": [
+      "龙套",
+      "应工",
+      "狄厚",
+      "沈南",
+      "香火",
+      "老郎",
+      "目连",
+      "夜戏",
+      "白戏",
+      "程石",
+      "马句",
+      "豆皮",
+      "检场",
+      "开锣",
+      "后台",
+      "戏单",
+      "乔干",
+      "吴窗",
+      "源码",
+      "管理员密码"
+    ],
+    "dead_links": [],
+    "assets_base_files": [
+      "assets/base/bus-station.jpg",
+      "assets/base/closed-ledger.jpg",
+      "assets/base/costume-rack.jpg",
+      "assets/base/empty-seats.jpg",
+      "assets/base/guesthouse-yard.jpg",
+      "assets/base/inn-corridor.jpg",
+      "assets/base/netcafe-crt.jpg",
+      "assets/base/opera-stage.jpg",
+      "assets/base/playbill-blur.jpg",
+      "assets/base/river-bridge.jpg",
+      "assets/base/tea-table.jpg",
+      "assets/base/temple-niche.jpg",
+      "assets/base/ticket-window.jpg",
+      "assets/base/town-dusk.jpg",
+      "assets/base/troupe-office.jpg",
+      "assets/base/wet-alley.jpg"
+    ],
+    "assets_base_count": 16,
+    "assets_base_bytes": 35717635,
+    "assets_stills_count": 48,
+    "assets_stills_bytes": 1881365,
+    "stills_referenced": [
+      "assets/stills/s01.jpg",
+      "assets/stills/s02.jpg",
+      "assets/stills/s03.jpg",
+      "assets/stills/s04.jpg",
+      "assets/stills/s05.jpg",
+      "assets/stills/s06.jpg",
+      "assets/stills/s07.jpg",
+      "assets/stills/s08.jpg",
+      "assets/stills/s09.jpg",
+      "assets/stills/s10.jpg",
+      "assets/stills/s11.jpg",
+      "assets/stills/s12.jpg",
+      "assets/stills/s13.jpg",
+      "assets/stills/s14.jpg",
+      "assets/stills/s15.jpg",
+      "assets/stills/s16.jpg",
+      "assets/stills/s17.jpg",
+      "assets/stills/s18.jpg",
+      "assets/stills/s19.jpg",
+      "assets/stills/s20.jpg",
+      "assets/stills/s21.jpg",
+      "assets/stills/s22.jpg",
+      "assets/stills/s23.jpg",
+      "assets/stills/s24.jpg",
+      "assets/stills/s25.jpg",
+      "assets/stills/s26.jpg",
+      "assets/stills/s27.jpg",
+      "assets/stills/s28.jpg",
+      "assets/stills/s29.jpg",
+      "assets/stills/s30.jpg",
+      "assets/stills/s31.jpg",
+      "assets/stills/s32.jpg",
+      "assets/stills/s33.jpg",
+      "assets/stills/s34.jpg",
+      "assets/stills/s35.jpg",
+      "assets/stills/s36.jpg",
+      "assets/stills/s37.jpg",
+      "assets/stills/s38.jpg"
+    ],
+    "base_referenced_in_img": [],
+    "files_mentioning_assets_base": [],
+    "volume_total_bytes": 37902653,
+    "volume_total_files": 134,
+    "media_bytes": 37599000,
+    "storage_key": "guxz-v1",
+    "orphan_pages": [
+      "pages/contact.html",
+      "pages/ending.html",
+      "pages/leave-note.html",
+      "pages/mp.html",
+      "pages/photo.html",
+      "pages/zhidao.html",
+      "stay.html"
+    ]
+  },
+  "en": {
+    "root": "/Users/jianglong/Desktop/github游戏/游戏库/古镇夜戏/英文版",
+    "html_count": 44,
+    "reachable_html": [
+      "guestbook.html",
+      "heritage.html",
+      "index.html",
+      "introduction.html",
+      "pages/baixi.html",
+      "pages/blog-doupi.html",
+      "pages/blog-maju.html",
+      "pages/cheng.html",
+      "pages/cs.html",
+      "pages/forum-rules.html",
+      "pages/forum.html",
+      "pages/history.html",
+      "pages/incense.html",
+      "pages/leave.html",
+      "pages/login.html",
+      "pages/order.html",
+      "pages/playbill-scan.html",
+      "pages/playbill.html",
+      "pages/roster.html",
+      "pages/staff.html",
+      "pages/stele.html",
+      "pages/temple.html",
+      "pages/thread-doupi.html",
+      "pages/thread-food.html",
+      "pages/thread-guide.html",
+      "pages/thread-hotel.html",
+      "pages/thread-maju.html",
+      "pages/troupe.html",
+      "pages/visit.html",
+      "search-results.html",
+      "ticket.html",
+      "traffic.html"
+    ],
+    "unreachable_html": [
+      "pages/contact.html",
+      "pages/end-appeal.html",
+      "pages/end-day.html",
+      "pages/end-enter.html",
+      "pages/end-strike.html",
+      "pages/ending.html",
+      "pages/help.html",
+      "pages/leave-note.html",
+      "pages/mp.html",
+      "pages/photo.html",
+      "pages/zhidao.html",
+      "stay.html"
+    ],
+    "path_to_ending": null,
+    "inbound_ending": [],
+    "four_endings": {
+      "pages/end-appeal.html": {
+        "reachable_from_intro": false,
+        "inbound": [
+          "js/ending.js#GO"
+        ],
+        "path": null
+      },
+      "pages/end-strike.html": {
+        "reachable_from_intro": false,
+        "inbound": [
+          "js/ending.js#GO"
+        ],
+        "path": null
+      },
+      "pages/end-enter.html": {
+        "reachable_from_intro": false,
+        "inbound": [
+          "js/ending.js#GO"
+        ],
+        "path": null
+      },
+      "pages/end-day.html": {
+        "reachable_from_intro": false,
+        "inbound": [
+          "js/ending.js#GO"
+        ],
+        "path": null
+      }
+    },
+    "need_tokens": {
+      "appeal": [
+        "t_ticket",
+        "t_visit",
+        "t_order"
+      ],
+      "strike": [
+        "t_yinggong",
+        "t_xidan",
+        "t_xianghuo"
+      ],
+      "enter": [
+        "t_ticket",
+        "t_visit",
+        "t_forum"
+      ],
+      "day": [
+        "t_baixi",
+        "t_yinggong"
+      ]
+    },
+    "go_map": {
+      "appeal": "end-appeal.html",
+      "strike": "end-strike.html",
+      "enter": "end-enter.html",
+      "day": "end-day.html"
+    },
+    "grants": {
+      "index.html": "t_home",
+      "pages/baixi.html": "t_baixi",
+      "pages/cheng.html": "t_cheng",
+      "pages/ending.html": "t_endpage",
+      "pages/incense.html": "t_xianghuo",
+      "pages/leave.html": "t_dihou",
+      "pages/order.html": "t_order",
+      "pages/playbill-scan.html": "t_xidan",
+      "pages/playbill.html": "t_xidan_pub",
+      "pages/roster.html": "t_yinggong",
+      "pages/thread-doupi.html": "t_forum",
+      "pages/thread-maju.html": "t_maju",
+      "pages/visit.html": "t_visit",
+      "ticket.html": "t_ticket"
+    },
+    "keyword_targets": [
+      {
+        "queries": [
+          "Extra",
+          "龙套"
+        ],
+        "href": "pages/thread-doupi.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "Extra",
+          "龙套"
+        ],
+        "href": "pages/thread-maju.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "DutyBook",
+          "应工"
+        ],
+        "href": "pages/roster.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "DutyBook",
+          "应工"
+        ],
+        "href": "pages/playbill.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "DiHou",
+          "狄厚"
+        ],
+        "href": "pages/leave.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "DiHou",
+          "狄厚"
+        ],
+        "href": "pages/staff.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "ShenNan",
+          "沈南"
+        ],
+        "href": "pages/order.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "ShenNan",
+          "沈南"
+        ],
+        "href": "pages/roster.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "IncenseAccount",
+          "香火"
+        ],
+        "href": "pages/incense.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "Laolang",
+          "老郎"
+        ],
+        "href": "pages/temple.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "Laolang",
+          "老郎"
+        ],
+        "href": "pages/stele.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "Mulian",
+          "目连"
+        ],
+        "href": "heritage.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "Mulian",
+          "目连"
+        ],
+        "href": "pages/playbill.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "NightPlay",
+          "夜戏"
+        ],
+        "href": "ticket.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "NightPlay",
+          "夜戏"
+        ],
+        "href": "pages/visit.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "WhitePlay",
+          "白戏"
+        ],
+        "href": "pages/baixi.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "ChengShi",
+          "程石"
+        ],
+        "href": "pages/cheng.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "ChengShi",
+          "程石"
+        ],
+        "href": "pages/staff.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "MaJu",
+          "马句"
+        ],
+        "href": "pages/thread-maju.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "MaJu",
+          "马句"
+        ],
+        "href": "pages/blog-maju.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "DouPi",
+          "豆皮"
+        ],
+        "href": "pages/thread-doupi.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "DouPi",
+          "豆皮"
+        ],
+        "href": "pages/blog-doupi.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "Stagehand",
+          "检场"
+        ],
+        "href": "pages/staff.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "Stagehand",
+          "检场"
+        ],
+        "href": "pages/leave.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "CurtainUp",
+          "开锣"
+        ],
+        "href": "ticket.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "CurtainUp",
+          "开锣"
+        ],
+        "href": "pages/cs.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "Backstage",
+          "后台"
+        ],
+        "href": "ticket.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "Backstage",
+          "后台"
+        ],
+        "href": "pages/visit.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "Playbill",
+          "戏单"
+        ],
+        "href": "pages/playbill.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "Playbill",
+          "戏单"
+        ],
+        "href": "pages/playbill-scan.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "QiaoGan",
+          "乔干"
+        ],
+        "href": "pages/temple.html",
+        "forbidden": false
+      },
+      {
+        "queries": [
+          "WuChuang",
+          "吴窗"
+        ],
+        "href": "pages/cs.html",
+        "forbidden": false
+      }
+    ],
+    "keyword_queries": [
+      "Extra",
+      "龙套",
+      "DutyBook",
+      "应工",
+      "DiHou",
+      "狄厚",
+      "ShenNan",
+      "沈南",
+      "IncenseAccount",
+      "香火",
+      "Laolang",
+      "老郎",
+      "Mulian",
+      "目连",
+      "NightPlay",
+      "夜戏",
+      "WhitePlay",
+      "白戏",
+      "ChengShi",
+      "程石",
+      "MaJu",
+      "马句",
+      "DouPi",
+      "豆皮",
+      "Stagehand",
+      "检场",
+      "CurtainUp",
+      "开锣",
+      "Backstage",
+      "后台",
+      "Playbill",
+      "戏单",
+      "QiaoGan",
+      "乔干",
+      "WuChuang",
+      "吴窗",
+      "源码",
+      "管理员密码"
+    ],
+    "dead_links": [],
+    "assets_base_files": [
+      "assets/base/bus-station.jpg",
+      "assets/base/closed-ledger.jpg",
+      "assets/base/costume-rack.jpg",
+      "assets/base/empty-seats.jpg",
+      "assets/base/guesthouse-yard.jpg",
+      "assets/base/inn-corridor.jpg",
+      "assets/base/netcafe-crt.jpg",
+      "assets/base/opera-stage.jpg",
+      "assets/base/playbill-blur.jpg",
+      "assets/base/river-bridge.jpg",
+      "assets/base/tea-table.jpg",
+      "assets/base/temple-niche.jpg",
+      "assets/base/ticket-window.jpg",
+      "assets/base/town-dusk.jpg",
+      "assets/base/troupe-office.jpg",
+      "assets/base/wet-alley.jpg"
+    ],
+    "assets_base_count": 16,
+    "assets_base_bytes": 35717635,
+    "assets_stills_count": 48,
+    "assets_stills_bytes": 1881365,
+    "stills_referenced": [
+      "assets/stills/s01.jpg",
+      "assets/stills/s02.jpg",
+      "assets/stills/s03.jpg",
+      "assets/stills/s04.jpg",
+      "assets/stills/s05.jpg",
+      "assets/stills/s06.jpg",
+      "assets/stills/s07.jpg",
+      "assets/stills/s08.jpg",
+      "assets/stills/s09.jpg",
+      "assets/stills/s10.jpg",
+      "assets/stills/s11.jpg",
+      "assets/stills/s12.jpg",
+      "assets/stills/s13.jpg",
+      "assets/stills/s14.jpg",
+      "assets/stills/s15.jpg",
+      "assets/stills/s16.jpg",
+      "assets/stills/s17.jpg",
+      "assets/stills/s18.jpg",
+      "assets/stills/s19.jpg",
+      "assets/stills/s20.jpg",
+      "assets/stills/s21.jpg",
+      "assets/stills/s22.jpg",
+      "assets/stills/s23.jpg",
+      "assets/stills/s24.jpg",
+      "assets/stills/s25.jpg",
+      "assets/stills/s26.jpg",
+      "assets/stills/s27.jpg",
+      "assets/stills/s28.jpg",
+      "assets/stills/s29.jpg",
+      "assets/stills/s30.jpg",
+      "assets/stills/s31.jpg",
+      "assets/stills/s32.jpg",
+      "assets/stills/s33.jpg",
+      "assets/stills/s34.jpg",
+      "assets/stills/s35.jpg",
+      "assets/stills/s36.jpg",
+      "assets/stills/s37.jpg",
+      "assets/stills/s38.jpg"
+    ],
+    "base_referenced_in_img": [],
+    "files_mentioning_assets_base": [],
+    "volume_total_bytes": 37874607,
+    "volume_total_files": 133,
+    "media_bytes": 37599000,
+    "storage_key": "guxz-v1-en",
+    "orphan_pages": [
+      "pages/contact.html",
+      "pages/ending.html",
+      "pages/leave-note.html",
+      "pages/mp.html",
+      "pages/photo.html",
+      "pages/zhidao.html",
+      "stay.html"
+    ]
+  }
+}

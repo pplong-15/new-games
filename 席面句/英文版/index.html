@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Banquet Sentence</title>
+  <link rel="icon" href="favicon.ico" sizes="16x16">
+  <link rel="stylesheet" href="css/ximian.css">
+</head>
+<body>
+  <div id="title-layer">
+    <div class="title-chrome" aria-hidden="true">
+      <p class="title-brand">Tong Jiangxi</p>
+      <p class="title-nav">Home　Menu dates　Cases　Banquet</p>
+    </div>
+    <figure class="title-stage">
+      <img src="jpeg/01-xian.jpg" alt="Banquet banner, names can be picked">
+      <p class="title-pick" aria-hidden="true"><span>Han Chengzhi</span>　newly wed　<span>Lin Qiutang</span></p>
+    </figure>
+    <p class="title-slots" aria-hidden="true">Who　／　To whom　／　Does what</p>
+    <p class="artifact-translation">Typed copy of the banquet still: red tables, gold chairs, banner Han Chengzhi · newly wed · Lin Qiutang. Names on the banner are for picking into a sentence.</p>
+    <p class="lock-line">Hand in this one sentence tonight. The sentence is a recommend, not an approval.</p>
+    <p>Tong Wanhe · Tongxi Danglin 08 · recommend. Pay takes a send to the ledger.</p>
+    <p class="fiction">Tong Jiangxi, Tong Wanhe, Han Chengzhi, Lin Qiutang, Han Shoushan, and Zhao Pusheng are written names.</p>
+    <button type="button" id="btn-enter">Clock in</button>
+  </div>
+
+  <div id="app">
+    <header class="chrome">
+      <div class="brand">Tong Jiangxi</div>
+      <nav class="tabs">
+        <button type="button" class="tab" data-go="intro">Notice</button>
+        <button type="button" class="tab" data-go="home">Home</button>
+        <button type="button" class="tab" data-go="calendar">Menu calendar</button>
+        <button type="button" class="tab" data-go="cases">Cases</button>
+        <button type="button" class="tab" data-go="join">Franchise</button>
+        <button type="button" class="tab" data-go="att-xian">Banquet</button>
+        <button type="button" class="tab" data-go="desk">Catalog desk</button>
+        <button type="button" class="tab" data-go="att-hetong">Contract</button>
+        <button type="button" class="tab" data-go="att-weiji">Critical</button>
+        <button type="button" class="tab" data-go="att-lishu">Almanac</button>
+      </nav>
+    </header>
+    <div id="page-foot"></div>
+    <div id="view"></div>
+
+    <section id="desk">
+      <div class="desk-top">
+        <div class="badge">
+          Tong Jiangxi · schedule clerk<br>
+          <span id="player-name">Tong Wanhe</span>
+          <span id="staff-id">Tongxi Danglin 08</span>
+          Authority: recommend
+        </div>
+        <div class="lock-line" id="lock-line">Hand in this one sentence tonight. The sentence is a recommend, not an approval.</div>
+        <div id="clock">Until 18:00 600 s</div>
+        <div class="wage">Today's pay <span id="wage">¥0</span></div>
+      </div>
+      <p>A word enters the bag only from an opened page. The ledger prints: open by the original file. A proper name in a slot: drag it back to the bag before you swap.</p>
+      <div class="still-wrap" id="desk-still-wrap">
+        <img id="desk-still" src="jpeg/01-xian.jpg" alt="Banquet still">
+        <div class="hits" id="desk-hits">
+          <button type="button" class="word hit-hcz" data-word="w-hcz">Han Chengzhi</button>
+          <button type="button" class="word hit-lqt" data-word="w-lqt">Lin Qiutang</button>
+        </div>
+      </div>
+      <p class="artifact-translation">Typed copy of the banquet still: banner Han Chengzhi · newly wed, congratulations · Lin Qiutang. Cups mouth-down. A paper corner under the head table.</p>
+      <div class="desk-grid">
+        <div>
+          <p>Word bag</p>
+          <div class="bag" id="bag"></div>
+        </div>
+        <div class="slots">
+          <p>Sentence card <span id="who-flag" style="display:none">Who</span></p>
+          <div class="slot" id="slot-who"><span class="lab">Who</span></div>
+          <div class="slot" id="slot-whom"><span class="lab">To whom</span></div>
+          <div class="slot" id="slot-did"><span class="lab">Does what</span></div>
+        </div>
+        <div class="send">
+          <button type="button" id="btn-submit">Incomplete</button>
+          <p>Recommend. Not an approval.</p>
+          <button type="button" id="btn-approve">Approve the banquet</button>
+          <p id="msg"></p>
+          <button type="button" id="replay">Replay</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

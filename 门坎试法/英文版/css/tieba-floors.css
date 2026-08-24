@@ -41,20 +41,20 @@ html.skin-tieba-floors button {
 /* 满宽蓝条，内槽 980×36，白链 */
 html.skin-tieba-floors .bar {
   background: var(--bar);
-  height: 36px;
+  height: 44px;
   color: #fff;
 }
 html.skin-tieba-floors .bar .in {
   width: 980px;
-  height: 36px;
+  height: 44px;
   margin: 0 auto;
   overflow: hidden;
 }
 html.skin-tieba-floors .bar .site,
 html.skin-tieba-floors .bar > span:first-child {
   float: left;
-  height: 36px;
-  line-height: 36px;
+  height: 44px;
+  line-height: 44px;
   padding: 0 12px 0 0;
   font-weight: 700;
   color: #fff;
@@ -63,8 +63,8 @@ html.skin-tieba-floors .bar a {
   float: left;
   color: #fff;
   text-decoration: none;
-  height: 36px;
-  line-height: 36px;
+  height: 44px;
+  line-height: 44px;
   padding: 0 10px;
 }
 html.skin-tieba-floors .bar a:hover {
@@ -177,4 +177,40 @@ html.skin-tieba-floors .ft {
   text-align: center;
   color: #999;
   font-size: 12px;
+}
+html.skin-tieba-floors :focus-visible {
+  outline: 3px dotted #1b3f74;
+  outline-offset: 2px;
+}
+@media (max-width: 800px) {
+  html.skin-tieba-floors .bar { height: auto; }
+  html.skin-tieba-floors .bar .in,
+  html.skin-tieba-floors .title,
+  html.skin-tieba-floors .floor,
+  html.skin-tieba-floors .ft {
+    width: auto;
+    max-width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html.skin-tieba-floors .bar .in { height: auto; overflow: visible; }
+  html.skin-tieba-floors .bar a,
+  html.skin-tieba-floors .bar .site {
+    height: 44px;
+    line-height: 44px;
+  }
+  html.skin-tieba-floors .who {
+    float: none;
+    width: auto;
+    border-right: 0;
+    border-bottom: 1px solid #eee;
+  }
+  html.skin-tieba-floors .txt {
+    margin-left: 0;
+  }
+  html.skin-tieba-floors .txt p a {
+    display: inline-block;
+    min-height: 44px;
+    line-height: 44px;
+  }
 }

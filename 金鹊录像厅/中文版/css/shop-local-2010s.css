@@ -8,7 +8,9 @@ html.skin-shop-local-2010s {
 }
 html.skin-shop-local-2010s body {
   margin: 0;
-  background: var(--bg);
+  background:
+    repeating-linear-gradient(0deg, rgba(120, 80, 40, 0.035) 0 1px, transparent 1px 4px),
+    var(--bg);
   color: var(--ink);
   font: 16px/1.8 "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 }
@@ -28,15 +30,19 @@ html.skin-shop-local-2010s #search-form { display: flex; }
 html.skin-shop-local-2010s #search-input {
   border: 1px solid #ccc;
   border-radius: 5px 0 0 5px;
-  padding: 10px 14px;
+  padding: 8px 14px;
   width: 220px;
-  background: #fff;
+  min-height: 44px;
+  height: 44px;
+  background: #fff8f0;
 }
 html.skin-shop-local-2010s #search-form button {
   border: 0;
   background: var(--accent);
   color: #fff;
-  padding: 10px 16px;
+  padding: 0 16px;
+  min-height: 44px;
+  height: 44px;
   border-radius: 0 5px 5px 0;
 }
 html.skin-shop-local-2010s nav ul {
@@ -76,3 +82,7 @@ html.skin-shop-local-2010s footer {
   padding: 8px;
 }
 html.skin-shop-local-2010s .hero-photo { width: 100%; height: auto; display: block; }
+html.skin-shop-local-2010s img.game-photo {
+  box-shadow: 0 0 0 6px #f3e2cc, 1px 2px 0 #c9a882;
+  background: #f7ecd8;
+}

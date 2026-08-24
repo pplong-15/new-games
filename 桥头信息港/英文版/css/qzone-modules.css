@@ -359,3 +359,67 @@ html.skin-qzone-modules .sr-only {
   height: 1px;
   overflow: hidden;
 }
+html.skin-qzone-modules .topbar,
+html.skin-qzone-modules .topbar-inner {
+  height: auto;
+  min-height: 44px;
+}
+html.skin-qzone-modules .topbar a,
+html.skin-qzone-modules .topbar .logo,
+html.skin-qzone-modules .topbar-inner > span {
+  height: 44px;
+  line-height: 44px;
+}
+html.skin-qzone-modules .topbar input,
+html.skin-qzone-modules .topbar button,
+html.skin-qzone-modules .btn-pub,
+html.skin-qzone-modules .talk button,
+html.skin-qzone-modules .gb-form button {
+  min-height: 44px;
+  height: 44px;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+html.skin-qzone-modules .topbar button {
+  min-width: 44px;
+}
+html.skin-qzone-modules .topbar form,
+html.skin-qzone-modules .topbar .site-search {
+  margin: 0;
+  height: 44px;
+  padding-top: 0;
+}
+html.skin-qzone-modules a:focus,
+html.skin-qzone-modules a:focus-visible,
+html.skin-qzone-modules input:focus,
+html.skin-qzone-modules textarea:focus,
+html.skin-qzone-modules button:focus,
+html.skin-qzone-modules button:focus-visible {
+  outline: 3px dotted #c46800;
+  outline-offset: 1px;
+}
+
+@media (max-width: 390px) {
+  html.skin-qzone-modules .topbar-inner,
+  html.skin-qzone-modules .banner,
+  html.skin-qzone-modules .cols,
+  html.skin-qzone-modules .site-foot {
+    width: auto;
+  }
+  html.skin-qzone-modules .cols > div,
+  html.skin-qzone-modules .cols > div:nth-child(2) {
+    float: none;
+    width: auto;
+    margin: 0 8px 8px;
+  }
+  html.skin-qzone-modules .talk textarea,
+  html.skin-qzone-modules .gb-form textarea {
+    width: 96%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.skin-qzone-modules * { transition: none; }
+}
+

@@ -1,0 +1,1490 @@
+{
+  "zh-01-boot-first-screen": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-zh/01-boot-first-screen.png",
+    "bytes": 755837,
+    "url": "http://127.0.0.1:9006/introduction.html",
+    "w": 1280,
+    "h": 900,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "zh-02-core-verb": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-zh/02-core-verb.png",
+    "bytes": 41220,
+    "url": "http://127.0.0.1:9006/desk/try.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "zh-03-success-feedback": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-zh/03-success-feedback.png",
+    "bytes": 73143,
+    "url": "http://127.0.0.1:9006/desk/result-hold.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "zh-04-near-fail": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-zh/04-near-fail.png",
+    "bytes": 47615,
+    "url": "http://127.0.0.1:9006/desk/result-letin.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "zh-05-recovery": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-zh/05-recovery.png",
+    "bytes": 42061,
+    "url": "http://127.0.0.1:9006/desk/try-ok.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "zh-06-narrow-320": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-zh/06-narrow-320.png",
+    "bytes": 35334,
+    "url": "http://127.0.0.1:9006/desk/try.html",
+    "w": 320,
+    "h": 720,
+    "overflow": {
+      "client": 320,
+      "scroll": 320,
+      "overflow": false
+    },
+    "boxes": [
+      {
+        "tag": "A",
+        "cls": "ghost-btn",
+        "title": "回台",
+        "w": 56,
+        "h": 46,
+        "x": 248,
+        "y": 8
+      },
+      {
+        "tag": "LABEL",
+        "cls": "",
+        "title": "踩踏",
+        "w": 286,
+        "h": 46,
+        "x": 17,
+        "y": 280
+      },
+      {
+        "tag": "LABEL",
+        "cls": "",
+        "title": "擦杠",
+        "w": 286,
+        "h": 46,
+        "x": 17,
+        "y": 334
+      },
+      {
+        "tag": "LABEL",
+        "cls": "",
+        "title": "正常跨",
+        "w": 286,
+        "h": 46,
+        "x": 17,
+        "y": 388
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "交试记",
+        "w": 83,
+        "h": 44,
+        "x": 17,
+        "y": 442
+      }
+    ]
+  },
+  "zh-07-keyboard-focus": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-zh/07-keyboard-focus.png",
+    "bytes": 43760,
+    "url": "http://127.0.0.1:9006/desk/try.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "zh-08-touch-targets": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-zh/08-touch-targets.png",
+    "bytes": 37197,
+    "url": "http://127.0.0.1:9006/desk/try.html",
+    "w": 390,
+    "h": 844,
+    "overflow": {
+      "client": 390,
+      "scroll": 390,
+      "overflow": false
+    },
+    "boxes": [
+      {
+        "tag": "A",
+        "cls": "ghost-btn",
+        "title": "回台",
+        "w": 56,
+        "h": 46,
+        "x": 318,
+        "y": 8
+      },
+      {
+        "tag": "LABEL",
+        "cls": "",
+        "title": "踩踏",
+        "w": 356,
+        "h": 46,
+        "x": 17,
+        "y": 280
+      },
+      {
+        "tag": "LABEL",
+        "cls": "",
+        "title": "擦杠",
+        "w": 356,
+        "h": 46,
+        "x": 17,
+        "y": 334
+      },
+      {
+        "tag": "LABEL",
+        "cls": "",
+        "title": "正常跨",
+        "w": 356,
+        "h": 46,
+        "x": 17,
+        "y": 388
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "交试记",
+        "w": 83,
+        "h": 44,
+        "x": 17,
+        "y": 442
+      }
+    ]
+  },
+  "zh-09-muted-or-reduced-motion": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-zh/09-muted-or-reduced-motion.png",
+    "bytes": 74870,
+    "url": "http://127.0.0.1:9006/key/log.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "zh-10-non-color-state": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-zh/10-non-color-state.png",
+    "bytes": 41220,
+    "url": "http://127.0.0.1:9006/desk/try.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "zh-11-empty-or-loading": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-zh/11-empty-or-loading.png",
+    "bytes": 48625,
+    "url": "http://127.0.0.1:9006/desk/advise.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "zh-12-error-or-pause": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-zh/12-error-or-pause.png",
+    "bytes": 43703,
+    "url": "http://127.0.0.1:9006/desk/login.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "zh-13-intro-no-search": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-zh/13-intro-no-search.png",
+    "bytes": 755837,
+    "url": "http://127.0.0.1:9006/introduction.html",
+    "w": 1280,
+    "h": 900,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "zh-14-duty-board": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-zh/14-duty-board.png",
+    "bytes": 77810,
+    "url": "http://127.0.0.1:9006/desk/home.html",
+    "w": 1280,
+    "h": 900,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "zh-15-embedded-phone": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-zh/15-embedded-phone.png",
+    "bytes": 53403,
+    "url": "http://127.0.0.1:9006/phone/inbox.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "zh-16-archive-dossier": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-zh/16-archive-dossier.png",
+    "bytes": 76646,
+    "url": "http://127.0.0.1:9006/key/log.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "zh-17-try-reject": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-zh/17-try-reject.png",
+    "bytes": 40696,
+    "url": "http://127.0.0.1:9006/desk/try-reject.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "zh-18-advise-four": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-zh/18-advise-four.png",
+    "bytes": 57718,
+    "url": "http://127.0.0.1:9006/desk/advise.html",
+    "w": 1280,
+    "h": 900,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "zh-19-two-source-public": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-zh/19-two-source-public.png",
+    "bytes": 493744,
+    "url": "http://127.0.0.1:9006/index.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "zh-20-two-source-forum": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-zh/20-two-source-forum.png",
+    "bytes": 42951,
+    "url": "http://127.0.0.1:9006/forum/list.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "zh-21-yellow-pages": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-zh/21-yellow-pages.png",
+    "bytes": 643828,
+    "url": "http://127.0.0.1:9006/team/index.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "zh-22-mail-skin": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-zh/22-mail-skin.png",
+    "bytes": 257262,
+    "url": "http://127.0.0.1:9006/mail/inbox.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "zh-23-folk-baike": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-zh/23-folk-baike.png",
+    "bytes": 675308,
+    "url": "http://127.0.0.1:9006/folk/index.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "zh-24-sms-mu": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-zh/24-sms-mu.png",
+    "bytes": 61117,
+    "url": "http://127.0.0.1:9006/phone/mu.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "zh-25-record-grid": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-zh/25-record-grid.png",
+    "bytes": 67005,
+    "url": "http://127.0.0.1:9006/desk/record.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "zh-26-result-rewrite": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-zh/26-result-rewrite.png",
+    "bytes": 44552,
+    "url": "http://127.0.0.1:9006/desk/result-rewrite.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "zh-27-bounce-advise": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-zh/27-bounce-advise.png",
+    "bytes": 58748,
+    "url": "http://127.0.0.1:9006/desk/advise.html",
+    "w": 1280,
+    "h": 900,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "zh-28-empty-submit": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-zh/28-empty-submit.png",
+    "bytes": 61054,
+    "url": "http://127.0.0.1:9006/desk/advise.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "zh-29-old-save-restore": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-zh/29-old-save-restore.png",
+    "bytes": 80072,
+    "url": "http://127.0.0.1:9006/desk/home.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "zh-30-narrow-320-home": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-zh/30-narrow-320-home.png",
+    "bytes": 62281,
+    "url": "http://127.0.0.1:9006/desk/home.html",
+    "w": 320,
+    "h": 720,
+    "overflow": {
+      "client": 320,
+      "scroll": 320,
+      "overflow": false
+    },
+    "boxes": [
+      {
+        "tag": "A",
+        "cls": "ghost-btn",
+        "title": "试记",
+        "w": 56,
+        "h": 46,
+        "x": 127,
+        "y": 8
+      },
+      {
+        "tag": "A",
+        "cls": "ghost-btn",
+        "title": "记录",
+        "w": 56,
+        "h": 46,
+        "x": 187,
+        "y": 8
+      },
+      {
+        "tag": "A",
+        "cls": "ghost-btn",
+        "title": "建议",
+        "w": 56,
+        "h": 46,
+        "x": 248,
+        "y": 8
+      }
+    ]
+  },
+  "zh-31-narrow-320-advise": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-zh/31-narrow-320-advise.png",
+    "bytes": 44693,
+    "url": "http://127.0.0.1:9006/desk/advise.html",
+    "w": 320,
+    "h": 720,
+    "overflow": {
+      "client": 320,
+      "scroll": 320,
+      "overflow": false
+    },
+    "boxes": [
+      {
+        "tag": "A",
+        "cls": "ghost-btn",
+        "title": "回台",
+        "w": 56,
+        "h": 46,
+        "x": 248,
+        "y": 8
+      },
+      {
+        "tag": "LABEL",
+        "cls": "",
+        "title": "仪礼性质\n          \n            （空）\n        ",
+        "w": 286,
+        "h": 70,
+        "x": 17,
+        "y": 362
+      },
+      {
+        "tag": "SELECT",
+        "cls": "",
+        "title": "（空）\n            喜\n            丧\n        ",
+        "w": 286,
+        "h": 44,
+        "x": 17,
+        "y": 388
+      },
+      {
+        "tag": "LABEL",
+        "cls": "",
+        "title": "过门栏\n          \n            （空）\n         ",
+        "w": 286,
+        "h": 70,
+        "x": 17,
+        "y": 444
+      },
+      {
+        "tag": "SELECT",
+        "cls": "",
+        "title": "（空）\n            干净可进\n            已有踩踏",
+        "w": 286,
+        "h": 44,
+        "x": 17,
+        "y": 471
+      },
+      {
+        "tag": "LABEL",
+        "cls": "",
+        "title": "处置\n          \n            （空）\n          ",
+        "w": 286,
+        "h": 70,
+        "x": 17,
+        "y": 527
+      },
+      {
+        "tag": "SELECT",
+        "cls": "",
+        "title": "（空）\n            建议放行进堂\n            建议不放行",
+        "w": 286,
+        "h": 44,
+        "x": 17,
+        "y": 553
+      },
+      {
+        "tag": "LABEL",
+        "cls": "",
+        "title": "权限\n          \n            （空）\n          ",
+        "w": 286,
+        "h": 70,
+        "x": 17,
+        "y": 609
+      },
+      {
+        "tag": "SELECT",
+        "cls": "",
+        "title": "（空）\n            建议\n            批准开匙",
+        "w": 286,
+        "h": 44,
+        "x": 17,
+        "y": 635
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "交建议",
+        "w": 83,
+        "h": 44,
+        "x": 17,
+        "y": 691
+      }
+    ]
+  },
+  "zh-32-touch-390-advise": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-zh/32-touch-390-advise.png",
+    "bytes": 50073,
+    "url": "http://127.0.0.1:9006/desk/advise.html",
+    "w": 390,
+    "h": 844,
+    "overflow": {
+      "client": 390,
+      "scroll": 390,
+      "overflow": false
+    },
+    "boxes": [
+      {
+        "tag": "A",
+        "cls": "ghost-btn",
+        "title": "回台",
+        "w": 56,
+        "h": 46,
+        "x": 318,
+        "y": 8
+      },
+      {
+        "tag": "LABEL",
+        "cls": "",
+        "title": "仪礼性质\n          \n            （空）\n        ",
+        "w": 356,
+        "h": 70,
+        "x": 17,
+        "y": 362
+      },
+      {
+        "tag": "SELECT",
+        "cls": "",
+        "title": "（空）\n            喜\n            丧\n        ",
+        "w": 356,
+        "h": 44,
+        "x": 17,
+        "y": 388
+      },
+      {
+        "tag": "LABEL",
+        "cls": "",
+        "title": "过门栏\n          \n            （空）\n         ",
+        "w": 356,
+        "h": 70,
+        "x": 17,
+        "y": 444
+      },
+      {
+        "tag": "SELECT",
+        "cls": "",
+        "title": "（空）\n            干净可进\n            已有踩踏",
+        "w": 356,
+        "h": 44,
+        "x": 17,
+        "y": 471
+      },
+      {
+        "tag": "LABEL",
+        "cls": "",
+        "title": "处置\n          \n            （空）\n          ",
+        "w": 356,
+        "h": 70,
+        "x": 17,
+        "y": 527
+      },
+      {
+        "tag": "SELECT",
+        "cls": "",
+        "title": "（空）\n            建议放行进堂\n            建议不放行",
+        "w": 356,
+        "h": 44,
+        "x": 17,
+        "y": 553
+      },
+      {
+        "tag": "LABEL",
+        "cls": "",
+        "title": "权限\n          \n            （空）\n          ",
+        "w": 356,
+        "h": 70,
+        "x": 17,
+        "y": 609
+      },
+      {
+        "tag": "SELECT",
+        "cls": "",
+        "title": "（空）\n            建议\n            批准开匙",
+        "w": 356,
+        "h": 44,
+        "x": 17,
+        "y": 635
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "交建议",
+        "w": 83,
+        "h": 44,
+        "x": 17,
+        "y": 691
+      }
+    ]
+  },
+  "zh-33-login-box": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-zh/33-login-box.png",
+    "bytes": 46067,
+    "url": "http://127.0.0.1:9006/desk/login.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "zh-34-narrow-320-intro": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-zh/34-narrow-320-intro.png",
+    "bytes": 153323,
+    "url": "http://127.0.0.1:9006/introduction.html",
+    "w": 320,
+    "h": 720,
+    "overflow": {
+      "client": 320,
+      "scroll": 320,
+      "overflow": false
+    },
+    "boxes": [
+      {
+        "tag": "A",
+        "cls": "enter-link",
+        "title": "进夜岗台",
+        "w": 256,
+        "h": 44,
+        "x": 32,
+        "y": 1368
+      },
+      {
+        "tag": "A",
+        "cls": "ghost",
+        "title": "先看对外页",
+        "w": 256,
+        "h": 44,
+        "x": 32,
+        "y": 1422
+      },
+      {
+        "tag": "A",
+        "cls": "ghost",
+        "title": "接着上次的台",
+        "w": 256,
+        "h": 44,
+        "x": 32,
+        "y": 1476
+      }
+    ]
+  },
+  "en-01-boot-first-screen": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-en/01-boot-first-screen.png",
+    "bytes": 765018,
+    "url": "http://127.0.0.1:9007/introduction.html",
+    "w": 1280,
+    "h": 900,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "en-02-core-verb": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-en/02-core-verb.png",
+    "bytes": 50839,
+    "url": "http://127.0.0.1:9007/desk/try.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "en-03-success-feedback": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-en/03-success-feedback.png",
+    "bytes": 92406,
+    "url": "http://127.0.0.1:9007/desk/result-hold.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "en-04-near-fail": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-en/04-near-fail.png",
+    "bytes": 54071,
+    "url": "http://127.0.0.1:9007/desk/result-letin.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "en-05-recovery": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-en/05-recovery.png",
+    "bytes": 46519,
+    "url": "http://127.0.0.1:9007/desk/try-ok.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "en-06-narrow-320": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-en/06-narrow-320.png",
+    "bytes": 44385,
+    "url": "http://127.0.0.1:9007/desk/try.html",
+    "w": 320,
+    "h": 720,
+    "overflow": {
+      "client": 320,
+      "scroll": 320,
+      "overflow": false
+    },
+    "boxes": [
+      {
+        "tag": "A",
+        "cls": "ghost-btn",
+        "title": "Back to desk",
+        "w": 109,
+        "h": 46,
+        "x": 195,
+        "y": 8
+      },
+      {
+        "tag": "LABEL",
+        "cls": "",
+        "title": "Stepping on the threshold",
+        "w": 286,
+        "h": 46,
+        "x": 17,
+        "y": 347
+      },
+      {
+        "tag": "LABEL",
+        "cls": "",
+        "title": "Pole scraping",
+        "w": 286,
+        "h": 46,
+        "x": 17,
+        "y": 401
+      },
+      {
+        "tag": "LABEL",
+        "cls": "",
+        "title": "Stepping over cleanly",
+        "w": 286,
+        "h": 46,
+        "x": 17,
+        "y": 455
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "File trial entry",
+        "w": 128,
+        "h": 44,
+        "x": 17,
+        "y": 509
+      }
+    ]
+  },
+  "en-07-keyboard-focus": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-en/07-keyboard-focus.png",
+    "bytes": 52964,
+    "url": "http://127.0.0.1:9007/desk/try.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "en-08-touch-targets": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-en/08-touch-targets.png",
+    "bytes": 45368,
+    "url": "http://127.0.0.1:9007/desk/try.html",
+    "w": 390,
+    "h": 844,
+    "overflow": {
+      "client": 390,
+      "scroll": 390,
+      "overflow": false
+    },
+    "boxes": [
+      {
+        "tag": "A",
+        "cls": "ghost-btn",
+        "title": "Back to desk",
+        "w": 109,
+        "h": 46,
+        "x": 265,
+        "y": 8
+      },
+      {
+        "tag": "LABEL",
+        "cls": "",
+        "title": "Stepping on the threshold",
+        "w": 356,
+        "h": 46,
+        "x": 17,
+        "y": 325
+      },
+      {
+        "tag": "LABEL",
+        "cls": "",
+        "title": "Pole scraping",
+        "w": 356,
+        "h": 46,
+        "x": 17,
+        "y": 379
+      },
+      {
+        "tag": "LABEL",
+        "cls": "",
+        "title": "Stepping over cleanly",
+        "w": 356,
+        "h": 46,
+        "x": 17,
+        "y": 433
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "File trial entry",
+        "w": 128,
+        "h": 44,
+        "x": 17,
+        "y": 487
+      }
+    ]
+  },
+  "en-09-muted-or-reduced-motion": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-en/09-muted-or-reduced-motion.png",
+    "bytes": 71897,
+    "url": "http://127.0.0.1:9007/key/log.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "en-10-non-color-state": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-en/10-non-color-state.png",
+    "bytes": 50839,
+    "url": "http://127.0.0.1:9007/desk/try.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "en-11-empty-or-loading": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-en/11-empty-or-loading.png",
+    "bytes": 60621,
+    "url": "http://127.0.0.1:9007/desk/advise.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "en-12-error-or-pause": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-en/12-error-or-pause.png",
+    "bytes": 48912,
+    "url": "http://127.0.0.1:9007/desk/login.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "en-13-intro-no-search": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-en/13-intro-no-search.png",
+    "bytes": 765018,
+    "url": "http://127.0.0.1:9007/introduction.html",
+    "w": 1280,
+    "h": 900,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "en-14-duty-board": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-en/14-duty-board.png",
+    "bytes": 99186,
+    "url": "http://127.0.0.1:9007/desk/home.html",
+    "w": 1280,
+    "h": 900,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "en-15-embedded-phone": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-en/15-embedded-phone.png",
+    "bytes": 54670,
+    "url": "http://127.0.0.1:9007/phone/inbox.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "en-16-archive-dossier": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-en/16-archive-dossier.png",
+    "bytes": 74199,
+    "url": "http://127.0.0.1:9007/key/log.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "en-17-try-reject": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-en/17-try-reject.png",
+    "bytes": 52310,
+    "url": "http://127.0.0.1:9007/desk/try-reject.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "en-18-advise-four": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-en/18-advise-four.png",
+    "bytes": 70615,
+    "url": "http://127.0.0.1:9007/desk/advise.html",
+    "w": 1280,
+    "h": 900,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "en-19-two-source-public": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-en/19-two-source-public.png",
+    "bytes": 462777,
+    "url": "http://127.0.0.1:9007/index.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "en-20-two-source-forum": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-en/20-two-source-forum.png",
+    "bytes": 52529,
+    "url": "http://127.0.0.1:9007/forum/list.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "en-21-yellow-pages": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-en/21-yellow-pages.png",
+    "bytes": 643546,
+    "url": "http://127.0.0.1:9007/team/index.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "en-22-mail-skin": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-en/22-mail-skin.png",
+    "bytes": 266756,
+    "url": "http://127.0.0.1:9007/mail/inbox.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "en-23-folk-baike": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-en/23-folk-baike.png",
+    "bytes": 656945,
+    "url": "http://127.0.0.1:9007/folk/index.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "en-24-sms-mu": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-en/24-sms-mu.png",
+    "bytes": 63411,
+    "url": "http://127.0.0.1:9007/phone/mu.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "en-25-record-grid": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-en/25-record-grid.png",
+    "bytes": 88562,
+    "url": "http://127.0.0.1:9007/desk/record.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "en-26-result-rewrite": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-en/26-result-rewrite.png",
+    "bytes": 53312,
+    "url": "http://127.0.0.1:9007/desk/result-rewrite.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "en-27-bounce-advise": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-en/27-bounce-advise.png",
+    "bytes": 73245,
+    "url": "http://127.0.0.1:9007/desk/advise.html",
+    "w": 1280,
+    "h": 900,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "en-28-empty-submit": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-en/28-empty-submit.png",
+    "bytes": 73984,
+    "url": "http://127.0.0.1:9007/desk/advise.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "en-29-old-save-restore": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-en/29-old-save-restore.png",
+    "bytes": 94879,
+    "url": "http://127.0.0.1:9007/desk/home.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "en-30-narrow-320-home": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-en/30-narrow-320-home.png",
+    "bytes": 62364,
+    "url": "http://127.0.0.1:9007/desk/home.html",
+    "w": 320,
+    "h": 720,
+    "overflow": {
+      "client": 320,
+      "scroll": 320,
+      "overflow": false
+    },
+    "boxes": [
+      {
+        "tag": "A",
+        "cls": "ghost-btn",
+        "title": "Trial entry",
+        "w": 91,
+        "h": 46,
+        "x": 16,
+        "y": 42
+      },
+      {
+        "tag": "A",
+        "cls": "ghost-btn",
+        "title": "Record",
+        "w": 73,
+        "h": 46,
+        "x": 112,
+        "y": 42
+      },
+      {
+        "tag": "A",
+        "cls": "ghost-btn",
+        "title": "Recommend",
+        "w": 105,
+        "h": 46,
+        "x": 190,
+        "y": 42
+      }
+    ]
+  },
+  "en-31-narrow-320-advise": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-en/31-narrow-320-advise.png",
+    "bytes": 46911,
+    "url": "http://127.0.0.1:9007/desk/advise.html",
+    "w": 320,
+    "h": 720,
+    "overflow": {
+      "client": 320,
+      "scroll": 320,
+      "overflow": false
+    },
+    "boxes": [
+      {
+        "tag": "A",
+        "cls": "ghost-btn",
+        "title": "Back to desk",
+        "w": 109,
+        "h": 46,
+        "x": 16,
+        "y": 42
+      },
+      {
+        "tag": "LABEL",
+        "cls": "",
+        "title": "Rite nature\n          \n            (blan",
+        "w": 286,
+        "h": 70,
+        "x": 17,
+        "y": 515
+      },
+      {
+        "tag": "SELECT",
+        "cls": "",
+        "title": "(blank)\n            Wedding\n            ",
+        "w": 286,
+        "h": 44,
+        "x": 17,
+        "y": 542
+      },
+      {
+        "tag": "LABEL",
+        "cls": "",
+        "title": "Crossing field\n          \n            (b",
+        "w": 286,
+        "h": 70,
+        "x": 17,
+        "y": 598
+      },
+      {
+        "tag": "SELECT",
+        "cls": "",
+        "title": "(blank)\n            Clean; may enter\n   ",
+        "w": 286,
+        "h": 44,
+        "x": 17,
+        "y": 624
+      },
+      {
+        "tag": "LABEL",
+        "cls": "",
+        "title": "Action\n          \n            (blank)\n  ",
+        "w": 286,
+        "h": 70,
+        "x": 17,
+        "y": 680
+      },
+      {
+        "tag": "SELECT",
+        "cls": "",
+        "title": "(blank)\n            Recommend: let them ",
+        "w": 286,
+        "h": 44,
+        "x": 17,
+        "y": 707
+      },
+      {
+        "tag": "LABEL",
+        "cls": "",
+        "title": "Authority\n          \n            (blank)",
+        "w": 286,
+        "h": 70,
+        "x": 17,
+        "y": 763
+      },
+      {
+        "tag": "SELECT",
+        "cls": "",
+        "title": "(blank)\n            Recommend\n          ",
+        "w": 286,
+        "h": 44,
+        "x": 17,
+        "y": 789
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "File recommendation",
+        "w": 178,
+        "h": 44,
+        "x": 17,
+        "y": 845
+      }
+    ]
+  },
+  "en-32-touch-390-advise": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-en/32-touch-390-advise.png",
+    "bytes": 57763,
+    "url": "http://127.0.0.1:9007/desk/advise.html",
+    "w": 390,
+    "h": 844,
+    "overflow": {
+      "client": 390,
+      "scroll": 390,
+      "overflow": false
+    },
+    "boxes": [
+      {
+        "tag": "A",
+        "cls": "ghost-btn",
+        "title": "Back to desk",
+        "w": 109,
+        "h": 46,
+        "x": 265,
+        "y": 8
+      },
+      {
+        "tag": "LABEL",
+        "cls": "",
+        "title": "Rite nature\n          \n            (blan",
+        "w": 356,
+        "h": 70,
+        "x": 17,
+        "y": 427
+      },
+      {
+        "tag": "SELECT",
+        "cls": "",
+        "title": "(blank)\n            Wedding\n            ",
+        "w": 356,
+        "h": 44,
+        "x": 17,
+        "y": 454
+      },
+      {
+        "tag": "LABEL",
+        "cls": "",
+        "title": "Crossing field\n          \n            (b",
+        "w": 356,
+        "h": 70,
+        "x": 17,
+        "y": 510
+      },
+      {
+        "tag": "SELECT",
+        "cls": "",
+        "title": "(blank)\n            Clean; may enter\n   ",
+        "w": 356,
+        "h": 44,
+        "x": 17,
+        "y": 536
+      },
+      {
+        "tag": "LABEL",
+        "cls": "",
+        "title": "Action\n          \n            (blank)\n  ",
+        "w": 356,
+        "h": 70,
+        "x": 17,
+        "y": 592
+      },
+      {
+        "tag": "SELECT",
+        "cls": "",
+        "title": "(blank)\n            Recommend: let them ",
+        "w": 356,
+        "h": 44,
+        "x": 17,
+        "y": 619
+      },
+      {
+        "tag": "LABEL",
+        "cls": "",
+        "title": "Authority\n          \n            (blank)",
+        "w": 356,
+        "h": 70,
+        "x": 17,
+        "y": 675
+      },
+      {
+        "tag": "SELECT",
+        "cls": "",
+        "title": "(blank)\n            Recommend\n          ",
+        "w": 356,
+        "h": 44,
+        "x": 17,
+        "y": 701
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "File recommendation",
+        "w": 178,
+        "h": 44,
+        "x": 17,
+        "y": 757
+      }
+    ]
+  },
+  "en-33-login-box": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-en/33-login-box.png",
+    "bytes": 52074,
+    "url": "http://127.0.0.1:9007/desk/login.html",
+    "w": 1280,
+    "h": 800,
+    "overflow": {
+      "client": 1280,
+      "scroll": 1280,
+      "overflow": false
+    }
+  },
+  "en-34-narrow-320-intro": {
+    "path": "/Users/jianglong/Desktop/游戏美化/门坎试法/visual/撞法留证建议/polish-20260823-en/34-narrow-320-intro.png",
+    "bytes": 142203,
+    "url": "http://127.0.0.1:9007/introduction.html",
+    "w": 320,
+    "h": 720,
+    "overflow": {
+      "client": 320,
+      "scroll": 320,
+      "overflow": false
+    },
+    "boxes": [
+      {
+        "tag": "A",
+        "cls": "enter-link",
+        "title": "Enter the night desk",
+        "w": 256,
+        "h": 44,
+        "x": 32,
+        "y": 2124
+      },
+      {
+        "tag": "A",
+        "cls": "ghost",
+        "title": "See the public page first",
+        "w": 256,
+        "h": 44,
+        "x": 32,
+        "y": 2178
+      },
+      {
+        "tag": "A",
+        "cls": "ghost",
+        "title": "Back to last desk",
+        "w": 256,
+        "h": 44,
+        "x": 32,
+        "y": 2232
+      }
+    ]
+  }
+}

@@ -1,4 +1,4 @@
-/* 本局补丁：不改皮肤骨架，只补名册表、静帧、窄屏。 */
+/* 本局补丁：不改皮肤骨架与玩法。补名册四档可读、静帧、窄屏可点。 */
 html.skin-service-cyan-desk .book {
   width: 92%;
   margin: 8px auto 18px;
@@ -14,10 +14,37 @@ html.skin-service-cyan-desk .book td {
   vertical-align: top;
 }
 html.skin-service-cyan-desk .book th { background: #e8f6f8; }
+html.skin-service-cyan-desk .goes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: stretch;
+}
 html.skin-service-cyan-desk .goes label {
-  display: inline-block;
-  margin: 2px 8px 2px 0;
-  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+  min-height: 44px;
+  min-width: 44px;
+  margin: 0;
+  padding: 8px 10px;
+  border: 1px dashed #5a6a70;
+  background: #fff;
+  cursor: pointer;
+  white-space: normal;
+  font-weight: 400;
+  line-height: 1.3;
+}
+html.skin-service-cyan-desk .goes label:has(input:checked) {
+  border: 2px solid #111;
+  font-weight: 700;
+  box-shadow: inset 5px 0 0 #111;
+  background: #f7fbfc;
+}
+html.skin-service-cyan-desk .goes label:has(input:checked)::after {
+  content: " \2713";
+  font-weight: 700;
+  margin-left: 4px;
 }
 html.skin-service-cyan-desk .sms {
   width: 80%;
@@ -63,16 +90,384 @@ html.skin-intro-manual .image-area img {
 html.skin-service-cyan-desk .endbox {
   width: 80%;
   margin: 16px auto;
-  background: #fff;
-  border: 1px solid #c5d8de;
+  background: repeating-linear-gradient(-45deg, #fff 0 8px, #f0f0f0 8px 16px);
+  border: 2px dashed #667;
   padding: 14px 16px;
 }
+html.skin-service-cyan-desk .endbox.end-adopt {
+  background: #fff;
+  border: 3px solid #111;
+}
+html.skin-service-cyan-desk .endbox.end-adopt h3::before { content: "\25A0  "; }
+html.skin-service-cyan-desk .endbox.end-legend {
+  background: #fff;
+  border: 3px dashed #111;
+}
+html.skin-service-cyan-desk .endbox.end-legend h3::before { content: "\25A1  "; }
+html.skin-service-cyan-desk .endbox.end-erase {
+  background: #fff;
+  border: 3px double #111;
+}
+html.skin-service-cyan-desk .endbox.end-erase h3::before { content: "\00D7  "; }
+html.skin-service-cyan-desk .endbox.end-chaos {
+  background: #fff;
+  border: 3px dotted #111;
+}
+html.skin-service-cyan-desk .endbox.end-chaos h3::before { content: "\21BA  "; }
+
+html.skin-service-cyan-desk .notice,
+html.skin-service-cyan-desk .sms,
+html.skin-service-cyan-desk .slip,
+html.skin-service-cyan-desk .endbox,
+html.skin-service-cyan-desk .book,
+html.skin-service-cyan-desk header,
+html.skin-service-cyan-desk #wrap {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+html.skin-service-cyan-desk #send-btn {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 10px 18px;
+  cursor: pointer;
+}
+html.skin-service-cyan-desk #send-warn[hidden] { display: none !important; }
+html.skin-service-cyan-desk #send-warn:not([hidden]) {
+  display: block;
+  border: 2px dashed #111;
+  border-left: 8px solid #9e2a1c;
+  padding: 12px;
+  font-weight: 700;
+  background: #fff;
+}
+
+html.skin-service-cyan-desk .ghost-btn {
+  min-height: 44px;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+html.skin-service-cyan-desk .tabs { flex-wrap: wrap; }
+html.skin-service-cyan-desk .tabs a {
+  min-height: 44px;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+}
+
+html.skin-intro-manual .boot-actions a,
+html.skin-intro-manual .boot-actions button {
+  min-height: 44px;
+  min-width: 44px;
+  box-sizing: border-box;
+  padding: 12px 16px;
+}
+
+html.skin-search-results .box a {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px dotted #888;
+  padding: 8px 0;
+}
+html.skin-search-results .miss {
+  border: 2px dashed #555;
+  padding: 12px;
+  font-weight: 700;
+}
+html.skin-forbidden .box {
+  border-width: 3px;
+  border-style: solid;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+label:focus-visible {
+  outline: 3px dotted #111;
+  outline-offset: 2px;
+}
+html.skin-forbidden a:focus-visible,
+html.skin-forbidden button:focus-visible,
+html.skin-forbidden input:focus-visible {
+  outline-color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.skin-archive-simsun .stamp { transform: none; }
+}
+
 @media (max-width: 640px) {
-  html.skin-service-cyan-desk header { display: block; }
-  html.skin-service-cyan-desk #search-form { display: flex; margin: 8px 0 0; }
+  html.skin-service-cyan-desk header {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    padding: 12px;
+  }
+  html.skin-service-cyan-desk header > div {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    width: 100%;
+  }
+  html.skin-service-cyan-desk #search-form {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    gap: 6px;
+  }
+  html.skin-service-cyan-desk #search-input,
+  html.skin-service-cyan-desk #search-form input[name="q"] {
+    flex: 1;
+    min-width: 0;
+    min-height: 44px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  html.skin-service-cyan-desk #search-form button {
+    min-height: 44px;
+    min-width: 44px;
+    padding: 8px 12px;
+  }
   html.skin-service-cyan-desk .notice,
   html.skin-service-cyan-desk .sms,
   html.skin-service-cyan-desk .slip,
   html.skin-service-cyan-desk .endbox { width: 92%; }
-  html.skin-service-cyan-desk .book { width: 96%; display: block; overflow-x: auto; }
+  html.skin-service-cyan-desk .book {
+    width: 96%;
+    display: block;
+    overflow-x: visible;
+  }
+  html.skin-service-cyan-desk .book thead,
+  html.skin-service-cyan-desk .book tbody,
+  html.skin-service-cyan-desk .book tr,
+  html.skin-service-cyan-desk .book th,
+  html.skin-service-cyan-desk .book td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  html.skin-service-cyan-desk .book thead tr {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    background: #e8f6f8;
+    padding: 6px 8px;
+  }
+  html.skin-service-cyan-desk .book thead th {
+    width: auto;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    font-size: 12px;
+  }
+  html.skin-service-cyan-desk .book tbody tr {
+    border: 1px solid #b7d3dc;
+    margin: 0 0 10px;
+    padding: 8px;
+    background: #fff;
+  }
+  html.skin-service-cyan-desk .book td:nth-child(1) {
+    font-weight: 700;
+    font-size: 16px;
+    border: 0;
+    padding: 4px 0;
+  }
+  html.skin-service-cyan-desk .book td:nth-child(2) {
+    font-size: 13px;
+    border: 0;
+    border-bottom: 1px dotted #b7d3dc;
+    padding: 0 0 8px;
+    margin: 0 0 8px;
+  }
+  html.skin-service-cyan-desk .book td.goes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    border: 0;
+    padding: 0;
+    width: 100%;
+  }
+  html.skin-service-cyan-desk .goes label {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* 其余所有者：窄屏拉满栏宽、露出联查，不收成同一张卡 */
+  html.skin-gov-redbar .links {
+    height: auto;
+    overflow: visible;
+    line-height: 1.4;
+    padding: 8px;
+  }
+  html.skin-gov-redbar .links a {
+    display: inline-block;
+    min-height: 44px;
+    line-height: 44px;
+  }
+  html.skin-gov-redbar .links input,
+  html.skin-gov-redbar .links button {
+    min-height: 44px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  html.skin-gov-redbar .wrap { width: auto; max-width: 100%; }
+  html.skin-gov-redbar .wrap table,
+  html.skin-gov-redbar .wrap tr,
+  html.skin-gov-redbar .wrap td.box {
+    display: block;
+    width: auto;
+  }
+
+  html.skin-news-portal-163 .top { height: auto; }
+  html.skin-news-portal-163 .top-inner,
+  html.skin-news-portal-163 .nav-inner,
+  html.skin-news-portal-163 .wrap,
+  html.skin-news-portal-163 .site-foot { width: auto; }
+  html.skin-news-portal-163 .top .logo,
+  html.skin-news-portal-163 .top form { float: none; }
+  html.skin-news-portal-163 .top input,
+  html.skin-news-portal-163 .top button {
+    height: auto;
+    min-height: 44px;
+    float: none;
+    font-size: 16px;
+  }
+  html.skin-news-portal-163 .nav { height: auto; overflow: visible; }
+  html.skin-news-portal-163 .nav a {
+    float: none;
+    display: inline-block;
+    min-height: 44px;
+    line-height: 44px;
+  }
+  html.skin-news-portal-163 .main,
+  html.skin-news-portal-163 article,
+  html.skin-news-portal-163 .side,
+  html.skin-news-portal-163 aside {
+    float: none;
+    width: auto;
+  }
+
+  html.skin-corp-table-2005 table.site { width: 100%; }
+  html.skin-corp-table-2005 table.site,
+  html.skin-corp-table-2005 table.site tbody,
+  html.skin-corp-table-2005 table.site tr,
+  html.skin-corp-table-2005 table.site td {
+    display: block;
+    width: auto;
+  }
+  html.skin-corp-table-2005 .banner {
+    height: auto;
+    line-height: 1.3;
+    padding: 12px;
+    font-size: 18px;
+  }
+  html.skin-corp-table-2005 .banner form {
+    float: none;
+    height: auto;
+    padding: 8px 0 0;
+  }
+  html.skin-corp-table-2005 .banner input,
+  html.skin-corp-table-2005 .banner button {
+    height: auto;
+    min-height: 44px;
+    float: none;
+    font-size: 16px;
+  }
+  html.skin-corp-table-2005 .nav {
+    height: auto;
+    line-height: 1.4;
+    letter-spacing: 0;
+  }
+  html.skin-corp-table-2005 .nav a {
+    display: inline-block;
+    min-height: 44px;
+    line-height: 44px;
+  }
+  html.skin-corp-table-2005 .left { width: auto; }
+
+  html.skin-discuz-board .wp { width: auto; }
+  html.skin-discuz-board .hd {
+    height: auto;
+    overflow: visible;
+  }
+  html.skin-discuz-board .hd > span:first-child,
+  html.skin-discuz-board .hd .logo,
+  html.skin-discuz-board .hd > span:last-child,
+  html.skin-discuz-board .hd .y,
+  html.skin-discuz-board .hd form {
+    float: none;
+    height: auto;
+    display: block;
+  }
+  html.skin-discuz-board .hd input,
+  html.skin-discuz-board .hd button {
+    height: auto;
+    min-height: 44px;
+    float: none;
+    font-size: 16px;
+  }
+  html.skin-discuz-board .nv {
+    height: auto;
+    overflow: visible;
+  }
+  html.skin-discuz-board .nv a {
+    float: none;
+    display: inline-block;
+    min-height: 44px;
+    line-height: 44px;
+  }
+  html.skin-discuz-board .u { float: none; width: auto; }
+  html.skin-discuz-board .t { margin-left: 0; }
+
+  html.skin-baidu-baike .top { height: auto; }
+  html.skin-baidu-baike .top-inner,
+  html.skin-baidu-baike .wrap,
+  html.skin-baidu-baike .site-foot { width: auto; }
+  html.skin-baidu-baike .logo,
+  html.skin-baidu-baike .top a,
+  html.skin-baidu-baike .top form { float: none; }
+  html.skin-baidu-baike .top input,
+  html.skin-baidu-baike .top button {
+    height: auto;
+    min-height: 44px;
+    float: none;
+    font-size: 16px;
+  }
+  html.skin-baidu-baike .toc,
+  html.skin-baidu-baike .box,
+  html.skin-baidu-baike .infobox,
+  html.skin-baidu-baike .main {
+    float: none;
+    width: auto;
+    margin: 0 0 12px;
+  }
+
+  html.skin-mail-web-2010 .panes,
+  html.skin-mail-web-2010 .ft { width: auto; }
+  html.skin-mail-web-2010 .folders,
+  html.skin-mail-web-2010 .mails {
+    float: none;
+    width: auto;
+    min-height: 0;
+  }
+  html.skin-mail-web-2010 .folders a,
+  html.skin-mail-web-2010 .folders .write {
+    min-height: 44px;
+    box-sizing: border-box;
+    line-height: 44px;
+    height: auto;
+  }
+
+  html.skin-archive-simsun .record { padding: 16px; }
+  html.skin-archive-simsun .meta { flex-direction: column; }
+
+  html.skin-search-results .box,
+  html.skin-forbidden .box {
+    margin: 16px 10px;
+    max-width: none;
+  }
 }

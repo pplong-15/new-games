@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Seventh-Day Door</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/touqi.css">
+</head>
+<body>
+  <div id="title-layer">
+    <aside class="wait-strip" aria-hidden="true">Please wait — back shortly</aside>
+    <div class="title-board">
+      <div class="title-still">
+        <img src="jpeg/00-open.jpg" alt="Door desk, farewell hall">
+        <p class="artifact-translation">Door desk. Key hook. Hand in before dawn. Broadcast slot empty.</p>
+      </div>
+      <div class="title-doc-rack" aria-hidden="true">
+        <article class="doc doc-flow title-doc">
+          <span class="issuer">Hall mimeograph</span>
+          <span class="seal">DUTY KE</span>
+          <h4>Hall process</h4>
+          <p>This period’s seven only.</p>
+          <p>No outsiders.</p>
+        </article>
+        <article class="doc doc-fang title-doc">
+          <span class="issuer">Clan fangfen</span>
+          <span class="chop">WU</span>
+          <h4>Share sheet</h4>
+          <p>Night-1 son must enter.</p>
+          <p>Night-6 married-out daughter must enter.</p>
+        </article>
+        <article class="doc doc-ledger title-doc">
+          <span class="issuer">Accounts ledger</span>
+          <h4>Gift ledger</h4>
+          <p>Wu Chengshan named</p>
+          <p>Uncle Huang unnamed</p>
+        </article>
+      </div>
+    </div>
+    <div class="title-entry">
+      <p class="lock-line">Tonight’s omen governs tonight only. A wrong admission returns.</p>
+      <p>Shen Wanzha. Woman. Twenty-six. Night door at Liubu funeral hall, temp, third week. Keys before dawn. A complete name list is a valid shift. Pay is by that. Refresh before you hand the keys, the clip stays. Hand them, then refresh, you clock in from the start.</p>
+      <p class="title-verb">Three issuers laid out. Mark the pair that fights. Group, then rule.</p>
+      <button type="button" id="btn-enter">Clock in</button>
+    </div>
+  </div>
+
+  <div id="desk">
+    <aside class="wait-strip" aria-hidden="true">Please wait — back shortly</aside>
+    <div class="band">
+      <div class="pa-slot">
+        <span class="pa-label" aria-hidden="true">Hall PA</span>
+        <div id="radio">Broadcast slot empty. No omen on this layer.</div>
+      </div>
+      <div>Energy <span id="energy">4</span></div>
+    </div>
+    <div class="work-board">
+      <div class="work-docs">
+        <div class="paper">
+          <h3 class="drawer-label">Paper drawer</h3>
+          <div class="doc-rack">
+            <article class="doc doc-flow" data-owner="hall-print">
+              <span class="issuer">Hall mimeograph</span>
+              <span class="seal" aria-hidden="true">DUTY KE</span>
+              <img src="jpeg/01-flow.jpg" alt="Hall process page">
+              <p class="artifact-translation">Hall print, typed copy. Farewell-hall door process. 1. Only receive people doing the seven for this period. 2. No outsiders. Stamp: Foreman Ke on duty.</p>
+              <button type="button" class="clause" id="btn-benqi">Only receive people doing the seven this period</button>
+              <button type="button" class="clause" id="btn-doc-flow">Check the process page</button>
+              <button type="button" class="clause" id="btn-omen">Read tonight’s omen</button>
+              <p>No outsiders. Foreman Ke signed. He changed two characters on this period. Ink still wet. I didn’t ask if he widened it or narrowed it.</p>
+            </article>
+            <article id="paper-pencil" class="doc doc-pencil" data-owner="shift-pencil" style="display:none">
+              <span class="issuer">Shift pencil</span>
+              <p>Lao Que is gone. Pencil still here. He wrote: everyone this night, let in as a whole-night exception. He wrote night-after-night once — he talks fast. Print still says no outsiders. I checked the two pages.</p>
+              <button type="button" class="clause" id="btn-doc-pencil">Check the pencil</button>
+            </article>
+            <article id="paper-fang" class="doc doc-fang" data-owner="clan-fang" style="display:none">
+              <span class="issuer">Clan fangfen</span>
+              <span class="chop" aria-hidden="true">WU</span>
+              <img src="jpeg/07-fang.jpg" alt="Household-share sheet">
+              <p class="artifact-translation">Household share (fangfen) sheet. Filial son must enter on night 1 of the seven. Married-out daughter must enter on night 6. Wu Guixiang is listed.</p>
+              <p>Filial son must enter on night 1 of the seven. Married-out daughter must enter on night 6. Wu Guixiang is on this sheet. Outside surnames often get left off. Process only writes this period. Whether this period holds night 6, the print does not lock.</p>
+              <button type="button" class="clause" id="btn-doc-fang">Check the household-share sheet</button>
+            </article>
+            <article class="doc doc-ledger" data-owner="accounts-ledger">
+              <span class="issuer">Accounts ledger</span>
+              <img src="jpeg/04-ledger.jpg" alt="Gift ledger">
+              <p class="artifact-translation">Gift ledger. Name / gift money. Wu Chengshan has a line. Uncle Huang does not.</p>
+              <p>Gift ledger has Wu Chengshan. Uncle Huang has no name. Seam money for night 4 of the seven, ink faint.</p>
+              <button type="button" class="clause" id="btn-doc-ledger">Check the gift ledger</button>
+              <button type="button" class="clause" id="btn-crack">Seam money</button>
+              <p>Obituary is read-only. Deceased line: Wu Bochuan. The touqi (first seven days) window runs from night 6 to the morning of day 7.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="work-post">
+        <img id="still" src="jpeg/00-open.jpg" alt="Door desk">
+        <p class="artifact-translation" id="still-bridge">Door desk. Key hook. Hand in before dawn. Broadcast slot empty.</p>
+        <div class="row">
+          <div id="who">Shen Wanzha · temp door · twenty-six · Liubu funeral hall</div>
+          <div id="night-mark">Night 1</div>
+          <div>Pay <span id="wage">¥0</span></div>
+        </div>
+        <p class="lock-line" id="lock-line">Tonight’s omen governs tonight only. A wrong admission returns.</p>
+        <p id="silhouette">No one at the door. Hit next night.</p>
+        <p id="group-hint">No group, no ruling. Broadcast alone is not enough. Door empty, hit next night.</p>
+        <div class="gate">
+          <button type="button" id="btn-admit" disabled>Let in</button>
+          <button type="button" id="btn-deny" disabled>Refuse</button>
+        </div>
+        <div class="clip">
+          <h3>Admit clip · key hook</h3>
+          <p>Bag <span id="pocket">empty</span></p>
+          <p>Let in <span id="admit-list">list empty</span></p>
+          <p>Refuse <span id="deny-list">refuse empty</span></p>
+          <img src="jpeg/10-slit.jpg" alt="Door slit">
+          <p class="artifact-translation">Door slit. Corridor.</p>
+          <button type="button" class="clause" id="btn-slit">Door slit, look at the corridor</button>
+          <button type="button" id="btn-next">Next night</button>
+          <p>Door empty, hit next night. Night 3 empty still needs the hit. Incomplete list, don’t hand the keys as This Period.</p>
+          <button type="button" id="btn-key">Hand the keys</button>
+          <div class="ghost">
+            <button type="button" id="refuse-obit">Rewrite the obituary</button>
+            <button type="button" id="refuse-wcs">Stamp for Wu Chengshan</button>
+            <button type="button" id="refuse-wgx">Stamp for Wu Guixiang</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>Foreman Ke’s radio stays on. Pay is by valid shift. Group first, then rule. Corridor talk about returning-soul rusha — he swore, don’t take that as process. Refresh before keys, clip stays. Incomplete keys will not pass as This Period.</p>
+    <p id="msg">Foreman Ke: omen counts tonight only. Group first, then rule. Door empty, hit next night. Hand the keys with an incomplete list, he will not count this shift.</p>
+    <div class="dims">
+      <span>Pay cells <b id="dim-wage">4</b></span>
+      <span>Mind <b id="dim-mind">4</b></span>
+      <span>Hall name <b id="dim-rep">4</b></span>
+      <span>Slit <b id="dim-slit">4</b></span>
+    </div>
+    <div id="ending-layer" class="ending"></div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

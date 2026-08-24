@@ -1,56 +1,140 @@
-/* intro-manual: game note / manual. Do not use on a fake official site. */
+/* intro-manual：游戏说明书。禁止用在假官网。
+ * 封面压成横条；三门与今夜任务进首屏。圆角白卡只留在引言。
+ */
 html.skin-intro-manual {
-  --bg: #f4f4f4;
-  --card: #fff;
-  --ink: #333;
-  --muted: #444;
-  --header: #333;
+  --bg: #e6e1d6;
+  --card: #fffdf8;
+  --ink: #221f1b;
+  --muted: #4a453c;
+  --header: #2a2926;
+  --duty: #f4efe4;
 }
 html.skin-intro-manual body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font: 16px/1.75 "PingFang SC", "Microsoft YaHei", sans-serif;
+  font: 16px/1.7 "PingFang SC", "Hiragino Sans GB", "Heiti SC", sans-serif;
 }
 html.skin-intro-manual .intro-hero {
-  background: #333;
-  color: #fff;
+  background: var(--header);
+  color: var(--duty);
   text-align: center;
-  padding: 0;
+  padding: 0 0 12px;
 }
-html.skin-intro-manual .intro-hero img { width: 100%; max-height: 420px; object-fit: cover; display: block; }
+html.skin-intro-manual .intro-hero img,
+html.skin-intro-manual .image-area img {
+  width: 100%;
+  height: 128px;
+  max-height: 128px;
+  object-fit: cover;
+  object-position: 50% 40%;
+  display: block;
+}
 html.skin-intro-manual .intro-hero h1 {
   margin: 0;
-  padding: 16px;
-  font-size: 28px;
+  padding: 12px 16px 6px;
+  font-size: 22px;
   font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.04em;
 }
-html.skin-intro-manual main { max-width: 820px; margin: 0 auto; padding: 20px; }
+html.skin-intro-manual .intro-hero .duty {
+  margin: 0 auto 8px;
+  max-width: 640px;
+  padding: 0 16px;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--duty);
+  text-align: left;
+}
+html.skin-intro-manual main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 16px;
+}
 html.skin-intro-manual section {
   background: var(--card);
-  padding: 20px;
-  margin-bottom: 30px;
+  padding: 16px 18px;
+  margin-bottom: 20px;
+  border: 1px solid #d7d0c4;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
 }
-html.skin-intro-manual h1, html.skin-intro-manual h2, html.skin-intro-manual h3 { color: #444; }
+html.skin-intro-manual h1,
+html.skin-intro-manual h2,
+html.skin-intro-manual h3 { color: #3d3932; }
 html.skin-intro-manual .intro-hero h1 { color: #fff; }
 html.skin-intro-manual .enter-link { font-weight: 700; }
-html.skin-intro-manual .boot-actions { margin: 16px 0 8px; }
+html.skin-intro-manual .boot-actions {
+  margin: 8px 12px 4px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
 html.skin-intro-manual .boot-actions a,
 html.skin-intro-manual .boot-actions button {
-  display: inline-block;
-  background: #333;
-  color: #fff;
-  border: 0;
-  padding: 8px 16px;
-  margin: 0 8px 8px 0;
-  font: 16px/1.4 "PingFang SC", "Microsoft YaHei", sans-serif;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 10px 16px;
+  margin: 0;
+  font: 16px/1.2 "PingFang SC", "Hiragino Sans GB", sans-serif;
   text-decoration: none;
   cursor: pointer;
+  border-radius: 0;
 }
 html.skin-intro-manual .boot-actions .ghost {
   background: #fff;
   color: #333;
   border: 1px solid #333;
+}
+html.skin-intro-manual .boot-actions .enter-link {
+  background: #0e6e7c;
+  color: #fff;
+  border: 2px solid #0a5560;
+}
+html.skin-intro-manual .boot-actions a.ghost:nth-child(2) {
+  background: #f4efe4;
+  color: #2c1810;
+  border: 2px solid #2c1810;
+  font-family: "SimSun", "Songti SC", serif;
+}
+html.skin-intro-manual .boot-actions a.ghost:nth-child(3) {
+  background: #2b7ac2;
+  color: #fff;
+  border: 2px solid #164a7a;
+  font-family: Tahoma, "SimSun", sans-serif;
+}
+html.skin-intro-manual a:focus-visible,
+html.skin-intro-manual button:focus-visible {
+  outline: 3px solid #c9a227;
+  outline-offset: 2px;
+}
+@media (max-width: 800px) {
+  html.skin-intro-manual .intro-hero img,
+  html.skin-intro-manual .image-area img {
+    height: 96px;
+    max-height: 96px;
+  }
+  html.skin-intro-manual .intro-hero h1 {
+    font-size: 18px;
+    padding: 8px 12px 4px;
+  }
+  html.skin-intro-manual .boot-actions {
+    flex-direction: column;
+    align-items: stretch;
+    margin: 8px;
+  }
+  html.skin-intro-manual .boot-actions a { width: 100%; }
+  html.skin-intro-manual main { padding: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html.skin-intro-manual * {
+    animation: none;
+    transition: none;
+  }
 }

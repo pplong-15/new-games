@@ -30,9 +30,10 @@ html.skin-forbidden .box {
   max-width: 720px;
   margin: 40px auto;
   background: #2a0a0a;
-  border: 1px solid #f00;
+  border: 2px solid #f00;
   padding: 24px;
   text-align: center;
+  box-shadow: 8px 8px 0 #000;
 }
 html.skin-forbidden h2 { color: #f00; }
 html.skin-forbidden .hidden-ink {

@@ -14,7 +14,7 @@ html.skin-search-results .box {
   padding: 20px;
 }
 html.skin-search-results h2 { text-align: center; }
-html.skin-search-results a { display: block; margin-top: 10px; color: #337ab7; }
+html.skin-search-results a { display: inline-flex; align-items: center; min-height: 44px; margin-top: 10px; color: #337ab7; }
 html.skin-search-results .hit { margin-top: 14px; }
 html.skin-search-results .hit a { font-size: 16px; margin-top: 0; }
 html.skin-search-results .hit p { color: #666; font-size: 13px; margin: 4px 0 0; }

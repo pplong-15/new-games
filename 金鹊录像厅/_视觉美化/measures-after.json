@@ -1,0 +1,1262 @@
+{
+  "zh-01-boot-first-screen": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-zh/01-boot-first-screen.png",
+    "bytes": 777684,
+    "url": "http://127.0.0.1:8928/introduction.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-02-core-verb": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-zh/02-core-verb.png",
+    "bytes": 869703,
+    "url": "http://127.0.0.1:8928/index.html",
+    "w": 1280,
+    "h": 900,
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "cls": "",
+        "title": "搜索内容...",
+        "w": 220,
+        "h": 44,
+        "x": 972,
+        "y": 12
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "",
+        "title": "搜索",
+        "w": 60,
+        "h": 44,
+        "x": 1196,
+        "y": 12
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "title": "首页",
+        "w": 68,
+        "h": 52,
+        "x": 24,
+        "y": 68
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "title": "排片",
+        "w": 68,
+        "h": 52,
+        "x": 104,
+        "y": 68
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "title": "环境",
+        "w": 68,
+        "h": 52,
+        "x": 184,
+        "y": 68
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "title": "小卖",
+        "w": 68,
+        "h": 52,
+        "x": 264,
+        "y": 68
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "dead",
+        "title": "包厢",
+        "w": 70,
+        "h": 52,
+        "x": 344,
+        "y": 68
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "title": "帮助",
+        "w": 68,
+        "h": 52,
+        "x": 426,
+        "y": 68
+      }
+    ]
+  },
+  "zh-03-success-feedback": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-zh/03-success-feedback.png",
+    "bytes": 46969,
+    "url": "http://127.0.0.1:8928/search-results.html?q=%E5%8A%A0%E6%98%A0%E5%9C%BA",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-04-near-fail": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-zh/04-near-fail.png",
+    "bytes": 171956,
+    "url": "http://127.0.0.1:8928/pages/choice.html",
+    "w": 1280,
+    "h": 800,
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "cls": "",
+        "title": "搜索内容...",
+        "w": 220,
+        "h": 44,
+        "x": 711,
+        "y": 183
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "",
+        "title": "搜索",
+        "w": 56,
+        "h": 44,
+        "x": 935,
+        "y": 183
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "",
+        "title": "退票",
+        "w": 88,
+        "h": 44,
+        "x": 546,
+        "y": 470
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "",
+        "title": "坐到完",
+        "w": 88,
+        "h": 44,
+        "x": 646,
+        "y": 470
+      }
+    ]
+  },
+  "zh-05-recovery": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-zh/05-recovery.png",
+    "bytes": 39672,
+    "url": "http://127.0.0.1:8928/search-results.html?q=%E8%A5%BF%E7%93%9C",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-06-narrow-320": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-zh/06-narrow-320.png",
+    "bytes": 140647,
+    "url": "http://127.0.0.1:8928/index.html",
+    "w": 320,
+    "h": 720,
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "cls": "",
+        "title": "搜索内容...",
+        "w": 208,
+        "h": 44,
+        "x": 24,
+        "y": 60
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "",
+        "title": "搜索",
+        "w": 60,
+        "h": 44,
+        "x": 236,
+        "y": 60
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "title": "首页",
+        "w": 68,
+        "h": 52,
+        "x": 8,
+        "y": 116
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "title": "排片",
+        "w": 68,
+        "h": 52,
+        "x": 88,
+        "y": 116
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "title": "环境",
+        "w": 68,
+        "h": 52,
+        "x": 168,
+        "y": 116
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "title": "小卖",
+        "w": 68,
+        "h": 52,
+        "x": 8,
+        "y": 180
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "dead",
+        "title": "包厢",
+        "w": 70,
+        "h": 52,
+        "x": 88,
+        "y": 180
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "title": "帮助",
+        "w": 68,
+        "h": 52,
+        "x": 170,
+        "y": 180
+      }
+    ]
+  },
+  "zh-07-keyboard-focus": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-zh/07-keyboard-focus.png",
+    "bytes": 870249,
+    "url": "http://127.0.0.1:8928/index.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-08-touch-targets": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-zh/08-touch-targets.png",
+    "bytes": 66909,
+    "url": "http://127.0.0.1:8928/pages/forum.html",
+    "w": 390,
+    "h": 844,
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "cls": "",
+        "title": "搜索内容...",
+        "w": 226,
+        "h": 44,
+        "x": 20,
+        "y": 62
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "",
+        "title": "搜索",
+        "w": 56,
+        "h": 44,
+        "x": 250,
+        "y": 62
+      }
+    ]
+  },
+  "zh-09-muted-or-reduced-motion": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-zh/09-muted-or-reduced-motion.png",
+    "bytes": 777684,
+    "url": "http://127.0.0.1:8928/introduction.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-10-non-color-state": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-zh/10-non-color-state.png",
+    "bytes": 39672,
+    "url": "http://127.0.0.1:8928/search-results.html?q=%E8%A5%BF%E7%93%9C",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-11-empty-or-loading": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-zh/11-empty-or-loading.png",
+    "bytes": 41420,
+    "url": "http://127.0.0.1:8928/search-results.html?q=",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-12-error-or-pause": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-zh/12-error-or-pause.png",
+    "bytes": 111643,
+    "url": "http://127.0.0.1:8928/pages/paused.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-13-intro-no-search": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-zh/13-intro-no-search.png",
+    "bytes": 777684,
+    "url": "http://127.0.0.1:8928/introduction.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-14-public-shop-nav": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-zh/14-public-shop-nav.png",
+    "bytes": 869703,
+    "url": "http://127.0.0.1:8928/index.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-15-embedded-cyan-desk": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-zh/15-embedded-cyan-desk.png",
+    "bytes": 117592,
+    "url": "http://127.0.0.1:8928/pages/desk.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-16-search-hit-newpage": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-zh/16-search-hit-newpage.png",
+    "bytes": 46969,
+    "url": "http://127.0.0.1:8928/search-results.html?q=%E5%8A%A0%E6%98%A0%E5%9C%BA",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-17-search-miss-sentence": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-zh/17-search-miss-sentence.png",
+    "bytes": 39672,
+    "url": "http://127.0.0.1:8928/search-results.html?q=%E8%A5%BF%E7%93%9C",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-18-forbidden-black-red": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-zh/18-forbidden-black-red.png",
+    "bytes": 49444,
+    "url": "http://127.0.0.1:8928/search-results.html?q=%E6%BA%90%E7%A0%81",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-19-archive-dossier": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-zh/19-archive-dossier.png",
+    "bytes": 414747,
+    "url": "http://127.0.0.1:8928/pages/ticket.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-20-hidden-qzone": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-zh/20-hidden-qzone.png",
+    "bytes": 184799,
+    "url": "http://127.0.0.1:8928/pages/space-tianmai.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-21-two-source-forum": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-zh/21-two-source-forum.png",
+    "bytes": 107316,
+    "url": "http://127.0.0.1:8928/pages/post-lu.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-22-local-mp-account": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-zh/22-local-mp-account.png",
+    "bytes": 567559,
+    "url": "http://127.0.0.1:8928/pages/obit-hou.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-23-still-no-token-home": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-zh/23-still-no-token-home.png",
+    "bytes": 869703,
+    "url": "http://127.0.0.1:8928/index.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-24-login-desk": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-zh/24-login-desk.png",
+    "bytes": 18052,
+    "url": "http://127.0.0.1:8928/pages/login.html",
+    "w": 1280,
+    "h": 800,
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "cls": "",
+        "title": "搜索内容...",
+        "w": 220,
+        "h": 44,
+        "x": 824,
+        "y": 12
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "",
+        "title": "搜索",
+        "w": 52,
+        "h": 44,
+        "x": 1048,
+        "y": 12
+      },
+      {
+        "tag": "INPUT",
+        "id": "",
+        "cls": "",
+        "title": "",
+        "w": 304,
+        "h": 44,
+        "x": 490,
+        "y": 185
+      },
+      {
+        "tag": "INPUT",
+        "id": "",
+        "cls": "",
+        "title": "",
+        "w": 304,
+        "h": 44,
+        "x": 490,
+        "y": 280
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "",
+        "title": "登录",
+        "w": 63,
+        "h": 44,
+        "x": 490,
+        "y": 338
+      }
+    ]
+  },
+  "zh-25-ending-refund": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-zh/25-ending-refund.png",
+    "bytes": 189405,
+    "url": "http://127.0.0.1:8928/pages/ending-a.html",
+    "w": 1280,
+    "h": 800,
+    "boxes": []
+  },
+  "zh-26-classified-yellow": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-zh/26-classified-yellow.png",
+    "bytes": 77214,
+    "url": "http://127.0.0.1:8928/pages/classified.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-27-mail-web": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-zh/27-mail-web.png",
+    "bytes": 80948,
+    "url": "http://127.0.0.1:8928/pages/mail-lu.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-28-gov-redbar": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-zh/28-gov-redbar.png",
+    "bytes": 892520,
+    "url": "http://127.0.0.1:8928/pages/gazetteer.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-29-blog-2008": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-zh/29-blog-2008.png",
+    "bytes": 174040,
+    "url": "http://127.0.0.1:8928/pages/blog-jiaoying.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-30-lock-handbook-login": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-zh/30-lock-handbook-login.png",
+    "bytes": 18052,
+    "url": "http://127.0.0.1:8928/pages/handbook.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-31-unlocked-handbook": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-zh/31-unlocked-handbook.png",
+    "bytes": 393177,
+    "url": "http://127.0.0.1:8928/pages/handbook.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-32-narrow-320-forum": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-zh/32-narrow-320-forum.png",
+    "bytes": 60681,
+    "url": "http://127.0.0.1:8928/pages/forum.html",
+    "w": 320,
+    "h": 720,
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "cls": "",
+        "title": "搜索内容...",
+        "w": 220,
+        "h": 44,
+        "x": 20,
+        "y": 62
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "",
+        "title": "搜索",
+        "w": 56,
+        "h": 44,
+        "x": 244,
+        "y": 62
+      }
+    ]
+  },
+  "zh-33-touch-390-shop": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-zh/33-touch-390-shop.png",
+    "bytes": 214931,
+    "url": "http://127.0.0.1:8928/index.html",
+    "w": 390,
+    "h": 844,
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "cls": "",
+        "title": "搜索内容...",
+        "w": 278,
+        "h": 44,
+        "x": 24,
+        "y": 60
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "",
+        "title": "搜索",
+        "w": 60,
+        "h": 44,
+        "x": 306,
+        "y": 60
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "title": "首页",
+        "w": 68,
+        "h": 52,
+        "x": 8,
+        "y": 116
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "title": "排片",
+        "w": 68,
+        "h": 52,
+        "x": 88,
+        "y": 116
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "title": "环境",
+        "w": 68,
+        "h": 52,
+        "x": 168,
+        "y": 116
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "title": "小卖",
+        "w": 68,
+        "h": 52,
+        "x": 248,
+        "y": 116
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "dead",
+        "title": "包厢",
+        "w": 70,
+        "h": 52,
+        "x": 8,
+        "y": 180
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "title": "帮助",
+        "w": 68,
+        "h": 52,
+        "x": 90,
+        "y": 180
+      }
+    ]
+  },
+  "zh-34-corp-points": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-zh/34-corp-points.png",
+    "bytes": 129354,
+    "url": "http://127.0.0.1:8928/pages/points.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-35-forbidden-static": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-zh/35-forbidden-static.png",
+    "bytes": 46744,
+    "url": "http://127.0.0.1:8928/pages/forbidden.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-01-boot-first-screen": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-en/01-boot-first-screen.png",
+    "bytes": 765640,
+    "url": "http://127.0.0.1:8929/introduction.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-02-core-verb": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-en/02-core-verb.png",
+    "bytes": 878243,
+    "url": "http://127.0.0.1:8929/index.html",
+    "w": 1280,
+    "h": 900,
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "cls": "",
+        "title": "Search...",
+        "w": 220,
+        "h": 44,
+        "x": 956,
+        "y": 12
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "",
+        "title": "Search",
+        "w": 76,
+        "h": 44,
+        "x": 1180,
+        "y": 12
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "title": "Home",
+        "w": 81,
+        "h": 52,
+        "x": 24,
+        "y": 68
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "title": "Showtimes",
+        "w": 120,
+        "h": 52,
+        "x": 117,
+        "y": 68
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "title": "House",
+        "w": 84,
+        "h": 52,
+        "x": 248,
+        "y": 68
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "title": "Snacks",
+        "w": 91,
+        "h": 52,
+        "x": 344,
+        "y": 68
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "dead",
+        "title": "PrivateRoom",
+        "w": 135,
+        "h": 52,
+        "x": 447,
+        "y": 68
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "title": "Help",
+        "w": 71,
+        "h": 52,
+        "x": 595,
+        "y": 68
+      }
+    ]
+  },
+  "en-03-success-feedback": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-en/03-success-feedback.png",
+    "bytes": 45699,
+    "url": "http://127.0.0.1:8929/search-results.html?q=ExtraShow",
+    "w": 1280,
+    "h": 800
+  },
+  "en-04-near-fail": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-en/04-near-fail.png",
+    "bytes": 145705,
+    "url": "http://127.0.0.1:8929/pages/choice.html",
+    "w": 1280,
+    "h": 800,
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "cls": "",
+        "title": "Search...",
+        "w": 220,
+        "h": 44,
+        "x": 695,
+        "y": 183
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "",
+        "title": "Search",
+        "w": 72,
+        "h": 44,
+        "x": 919,
+        "y": 183
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "",
+        "title": "Refund",
+        "w": 88,
+        "h": 44,
+        "x": 542,
+        "y": 499
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "",
+        "title": "Sit through",
+        "w": 96,
+        "h": 44,
+        "x": 642,
+        "y": 499
+      }
+    ]
+  },
+  "en-05-recovery": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-en/05-recovery.png",
+    "bytes": 38278,
+    "url": "http://127.0.0.1:8929/search-results.html?q=NoSuchWord",
+    "w": 1280,
+    "h": 800
+  },
+  "en-06-narrow-320": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-en/06-narrow-320.png",
+    "bytes": 132860,
+    "url": "http://127.0.0.1:8929/index.html",
+    "w": 320,
+    "h": 720,
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "cls": "",
+        "title": "Search...",
+        "w": 192,
+        "h": 44,
+        "x": 24,
+        "y": 60
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "",
+        "title": "Search",
+        "w": 76,
+        "h": 44,
+        "x": 220,
+        "y": 60
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "title": "Home",
+        "w": 81,
+        "h": 52,
+        "x": 8,
+        "y": 116
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "title": "Showtimes",
+        "w": 120,
+        "h": 52,
+        "x": 101,
+        "y": 116
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "title": "House",
+        "w": 84,
+        "h": 52,
+        "x": 8,
+        "y": 180
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "title": "Snacks",
+        "w": 91,
+        "h": 52,
+        "x": 104,
+        "y": 180
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "dead",
+        "title": "PrivateRoom",
+        "w": 135,
+        "h": 52,
+        "x": 8,
+        "y": 244
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "title": "Help",
+        "w": 71,
+        "h": 52,
+        "x": 155,
+        "y": 244
+      }
+    ]
+  },
+  "en-07-keyboard-focus": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-en/07-keyboard-focus.png",
+    "bytes": 878774,
+    "url": "http://127.0.0.1:8929/index.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-08-touch-targets": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-en/08-touch-targets.png",
+    "bytes": 70058,
+    "url": "http://127.0.0.1:8929/pages/forum.html",
+    "w": 390,
+    "h": 844,
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "cls": "",
+        "title": "Search...",
+        "w": 235,
+        "h": 44,
+        "x": 20,
+        "y": 62
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "",
+        "title": "Search",
+        "w": 72,
+        "h": 44,
+        "x": 259,
+        "y": 62
+      }
+    ]
+  },
+  "en-09-muted-or-reduced-motion": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-en/09-muted-or-reduced-motion.png",
+    "bytes": 765640,
+    "url": "http://127.0.0.1:8929/introduction.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-10-non-color-state": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-en/10-non-color-state.png",
+    "bytes": 38278,
+    "url": "http://127.0.0.1:8929/search-results.html?q=NoSuchWord",
+    "w": 1280,
+    "h": 800
+  },
+  "en-11-empty-or-loading": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-en/11-empty-or-loading.png",
+    "bytes": 42457,
+    "url": "http://127.0.0.1:8929/search-results.html?q=",
+    "w": 1280,
+    "h": 800
+  },
+  "en-12-error-or-pause": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-en/12-error-or-pause.png",
+    "bytes": 132886,
+    "url": "http://127.0.0.1:8929/pages/paused.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-13-intro-no-search": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-en/13-intro-no-search.png",
+    "bytes": 765640,
+    "url": "http://127.0.0.1:8929/introduction.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-14-public-shop-nav": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-en/14-public-shop-nav.png",
+    "bytes": 878243,
+    "url": "http://127.0.0.1:8929/index.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-15-embedded-cyan-desk": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-en/15-embedded-cyan-desk.png",
+    "bytes": 122287,
+    "url": "http://127.0.0.1:8929/pages/desk.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-16-search-hit-newpage": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-en/16-search-hit-newpage.png",
+    "bytes": 45699,
+    "url": "http://127.0.0.1:8929/search-results.html?q=ExtraShow",
+    "w": 1280,
+    "h": 800
+  },
+  "en-17-search-miss-sentence": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-en/17-search-miss-sentence.png",
+    "bytes": 38278,
+    "url": "http://127.0.0.1:8929/search-results.html?q=NoSuchWord",
+    "w": 1280,
+    "h": 800
+  },
+  "en-18-forbidden-black-red": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-en/18-forbidden-black-red.png",
+    "bytes": 47904,
+    "url": "http://127.0.0.1:8929/search-results.html?q=Source",
+    "w": 1280,
+    "h": 800
+  },
+  "en-19-archive-dossier": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-en/19-archive-dossier.png",
+    "bytes": 415021,
+    "url": "http://127.0.0.1:8929/pages/ticket.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-20-hidden-qzone": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-en/20-hidden-qzone.png",
+    "bytes": 167935,
+    "url": "http://127.0.0.1:8929/pages/space-tianmai.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-21-two-source-forum": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-en/21-two-source-forum.png",
+    "bytes": 116229,
+    "url": "http://127.0.0.1:8929/pages/post-lu.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-22-local-mp-account": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-en/22-local-mp-account.png",
+    "bytes": 561685,
+    "url": "http://127.0.0.1:8929/pages/obit-hou.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-23-still-no-token-home": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-en/23-still-no-token-home.png",
+    "bytes": 878243,
+    "url": "http://127.0.0.1:8929/index.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-24-login-desk": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-en/24-login-desk.png",
+    "bytes": 20585,
+    "url": "http://127.0.0.1:8929/pages/login.html",
+    "w": 1280,
+    "h": 800,
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "cls": "",
+        "title": "Search...",
+        "w": 220,
+        "h": 44,
+        "x": 808,
+        "y": 12
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "",
+        "title": "Search",
+        "w": 68,
+        "h": 44,
+        "x": 1032,
+        "y": 12
+      },
+      {
+        "tag": "INPUT",
+        "id": "",
+        "cls": "",
+        "title": "",
+        "w": 304,
+        "h": 44,
+        "x": 490,
+        "y": 185
+      },
+      {
+        "tag": "INPUT",
+        "id": "",
+        "cls": "",
+        "title": "",
+        "w": 304,
+        "h": 44,
+        "x": 490,
+        "y": 280
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "",
+        "title": "Log in",
+        "w": 72,
+        "h": 44,
+        "x": 490,
+        "y": 338
+      }
+    ]
+  },
+  "en-25-ending-refund": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-en/25-ending-refund.png",
+    "bytes": 155007,
+    "url": "http://127.0.0.1:8929/pages/ending-a.html",
+    "w": 1280,
+    "h": 800,
+    "boxes": []
+  },
+  "en-26-classified-yellow": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-en/26-classified-yellow.png",
+    "bytes": 81054,
+    "url": "http://127.0.0.1:8929/pages/classified.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-27-mail-web": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-en/27-mail-web.png",
+    "bytes": 76176,
+    "url": "http://127.0.0.1:8929/pages/mail-lu.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-28-gov-redbar": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-en/28-gov-redbar.png",
+    "bytes": 892601,
+    "url": "http://127.0.0.1:8929/pages/gazetteer.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-29-blog-2008": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-en/29-blog-2008.png",
+    "bytes": 148130,
+    "url": "http://127.0.0.1:8929/pages/blog-jiaoying.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-30-lock-handbook-login": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-en/30-lock-handbook-login.png",
+    "bytes": 20585,
+    "url": "http://127.0.0.1:8929/pages/handbook.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-31-unlocked-handbook": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-en/31-unlocked-handbook.png",
+    "bytes": 389508,
+    "url": "http://127.0.0.1:8929/pages/handbook.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-32-narrow-320-forum": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-en/32-narrow-320-forum.png",
+    "bytes": 52903,
+    "url": "http://127.0.0.1:8929/pages/forum.html",
+    "w": 320,
+    "h": 720,
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "cls": "",
+        "title": "Search...",
+        "w": 204,
+        "h": 44,
+        "x": 20,
+        "y": 62
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "",
+        "title": "Search",
+        "w": 72,
+        "h": 44,
+        "x": 228,
+        "y": 62
+      }
+    ]
+  },
+  "en-33-touch-390-shop": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-en/33-touch-390-shop.png",
+    "bytes": 205632,
+    "url": "http://127.0.0.1:8929/index.html",
+    "w": 390,
+    "h": 844,
+    "boxes": [
+      {
+        "tag": "INPUT",
+        "id": "search-input",
+        "cls": "",
+        "title": "Search...",
+        "w": 262,
+        "h": 44,
+        "x": 24,
+        "y": 60
+      },
+      {
+        "tag": "BUTTON",
+        "id": "",
+        "cls": "",
+        "title": "Search",
+        "w": 76,
+        "h": 44,
+        "x": 290,
+        "y": 60
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "title": "Home",
+        "w": 81,
+        "h": 52,
+        "x": 8,
+        "y": 116
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "title": "Showtimes",
+        "w": 120,
+        "h": 52,
+        "x": 101,
+        "y": 116
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "title": "House",
+        "w": 84,
+        "h": 52,
+        "x": 232,
+        "y": 116
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "title": "Snacks",
+        "w": 91,
+        "h": 52,
+        "x": 8,
+        "y": 180
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "dead",
+        "title": "PrivateRoom",
+        "w": 135,
+        "h": 52,
+        "x": 111,
+        "y": 180
+      },
+      {
+        "tag": "A",
+        "id": "",
+        "cls": "",
+        "title": "Help",
+        "w": 71,
+        "h": 52,
+        "x": 259,
+        "y": 180
+      }
+    ]
+  },
+  "en-34-corp-points": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-en/34-corp-points.png",
+    "bytes": 123591,
+    "url": "http://127.0.0.1:8929/pages/points.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-35-forbidden-static": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/金鹊录像厅/visual/停更录像厅搜词调查/20260823-d9-en/35-forbidden-static.png",
+    "bytes": 49973,
+    "url": "http://127.0.0.1:8929/pages/forbidden.html",
+    "w": 1280,
+    "h": 800
+  }
+}

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mai · Logged as Already Burned</title>
   <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/pick-overlay.css">
 </head>
 <body>
   <div id="wrap">
@@ -20,7 +21,7 @@
       </div>
     </header>
     
-    <div class="notice">
+    <div class="notice end-burned">
       <h2>It went in on your line</h2>
       <p>Already-burned on paper and cold at the brick mouth are two things. If Jing Qiubai takes this line into the shed, the elders will trust the paper. If Shao Pu takes this line to the shop, the shop number can only point at your six blanks.</p>
       <p id="why"></p>
@@ -46,5 +47,6 @@
     var el = document.getElementById("why");
     if (el) el.textContent = "You filed: " + (f.who||"") + " / " + (f.what||"") + " / " + (f.act||"") + " / " + (f.night||"") + " / " + (f.life||"") + ".";
 </script>
+  <link rel="stylesheet" href="../css/pick-overlay.css">
 </body>
 </html>

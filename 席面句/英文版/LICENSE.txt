@@ -1,0 +1,33 @@
+MIT License
+
+Copyright (c) 2026 席面句
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+本包允许随作品一起复制和分发。
+
+桐江县、桐江喜事、桐晚禾、桐喜档临08、韩承志、林秋棠、韩守山、赵浦生及所有合同、病危通知、假条、家属群均为虚构，不得对照现实婚庆公司、酒店宴会部和医院文书。
+
+静帧是记忆中的著录台与席面，不是任何婚庆品牌、酒店或医院的官方切图。
+
+禁止把文中合同条款、病危表格、黄历宜忌写成可实操的婚礼仪轨、医疗步骤或替代手续。句子是建议，不是批准开席。
+
+AI 辅助生成了部分静帧，商店页若需要请按渠道习惯披露。

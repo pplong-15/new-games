@@ -140,23 +140,35 @@
     if (!claim) return;
     var s = load();
     var box = document.getElementById("gm-feedback");
+    var b = document.querySelector('[data-claim="' + cid + '"]');
     if (claim.push) {
-      if (box) box.textContent = claim.push;
+      if (box) {
+        box.textContent = claim.push;
+        box.setAttribute("data-fb", "push");
+      }
+      if (b && (b.className || "").indexOf("gm-pushed") < 0) {
+        b.className = (b.className || "") + " gm-pushed";
+      }
       toast("对方把理由顶回来了。");
       return;
     }
     if (!hasSaved(s, claim.need)) {
-      if (box) box.textContent = claim.miss;
+      if (box) {
+        box.textContent = claim.miss;
+        box.setAttribute("data-fb", "miss");
+      }
       toast(claim.miss);
       return;
     }
     s.cracks[claim.crack] = true;
     save(s);
-    if (box) box.textContent = claim.ok;
+    if (box) {
+      box.textContent = claim.ok;
+      box.setAttribute("data-fb", "ok");
+    }
     toast("这句对不上。他顶不回来。");
     renderStatus();
-    var b = document.querySelector('[data-claim="' + cid + '"]');
-    if (b) {
+    if (b && (b.className || "").indexOf("gm-cracked") < 0) {
       b.className = (b.className || "") + " gm-cracked";
     }
   }
@@ -233,6 +245,7 @@
     });
     if (!n) {
       var empty = document.createElement("li");
+      empty.className = "gm-empty";
       empty.textContent = "袋子是空的。页上有钮的句子才能收。";
       ul.appendChild(empty);
     }
@@ -261,7 +274,7 @@
     CLAIMS.forEach(function (c) {
       var btn = document.createElement("button");
       btn.type = "button";
-      btn.className = "gm-claim" + (s.cracks[c.crack] ? " gm-cracked" : "");
+      btn.className = "gm-claim" + (c.push ? " gm-pushable" : "") + (s.cracks[c.crack] ? " gm-cracked" : "");
       btn.setAttribute("data-claim", c.id);
       btn.textContent = c.text;
       btn.onclick = function () {

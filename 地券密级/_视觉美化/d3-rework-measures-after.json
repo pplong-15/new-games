@@ -1,0 +1,266 @@
+{
+  "zh-04-near-fail": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/04-near-fail.png",
+    "bytes": 38884,
+    "href": "http://127.0.0.1:8964/desk/result.html",
+    "w": 1280,
+    "h": 900,
+    "styles": {
+      "href": "http://127.0.0.1:8964/desk/result.html",
+      "title": "备注回执",
+      "login": {
+        "missing": true,
+        "sel": ".login-box"
+      },
+      "notice": {
+        "sel": ".notice",
+        "className": "notice dq-end-overclaim",
+        "borderWidth": "3px",
+        "borderStyle": "double",
+        "borderColor": "rgb(51, 51, 51)",
+        "boxShadow": "none",
+        "backgroundImage": "none",
+        "backgroundSize": "auto"
+      },
+      "table047": {
+        "missing": true,
+        "sel": "table.dq-scan-table, article.dq-layer-public table, .dq-layer-internal table, .dq-layer-restrict table"
+      },
+      "article012": null,
+      "overflowX": false,
+      "scrollW": 1280,
+      "clientW": 1280
+    }
+  },
+  "zh-16-denied-gate": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/16-denied-gate.png",
+    "bytes": 42632,
+    "href": "http://127.0.0.1:8964/desk/denied.html",
+    "w": 1280,
+    "h": 800,
+    "styles": {
+      "href": "http://127.0.0.1:8964/desk/denied.html",
+      "title": "本层未登入",
+      "login": {
+        "missing": true,
+        "sel": ".login-box"
+      },
+      "notice": {
+        "sel": ".notice",
+        "className": "notice dq-denied",
+        "borderWidth": "2px",
+        "borderStyle": "dashed",
+        "borderColor": "rgb(51, 51, 51)",
+        "boxShadow": "none",
+        "backgroundImage": "none",
+        "backgroundSize": "auto"
+      },
+      "table047": {
+        "missing": true,
+        "sel": "table.dq-scan-table, article.dq-layer-public table, .dq-layer-internal table, .dq-layer-restrict table"
+      },
+      "article012": null,
+      "overflowX": false,
+      "scrollW": 1280,
+      "clientW": 1280
+    }
+  },
+  "zh-26-login-internal": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/26-login-internal.png",
+    "bytes": 32911,
+    "href": "http://127.0.0.1:8964/desk/login.html",
+    "w": 1280,
+    "h": 800,
+    "styles": {
+      "href": "http://127.0.0.1:8964/desk/login.html",
+      "title": "数字化室　内部登入",
+      "login": {
+        "sel": ".login-box",
+        "className": "login-box dq-layer-internal",
+        "borderWidth": "2px",
+        "borderStyle": "dashed",
+        "borderColor": "rgb(51, 51, 51)",
+        "boxShadow": "rgb(51, 51, 51) 8px 0px 0px 0px inset",
+        "backgroundImage": "none",
+        "backgroundSize": "auto"
+      },
+      "notice": {
+        "missing": true,
+        "sel": ".notice"
+      },
+      "table047": {
+        "missing": true,
+        "sel": "table.dq-scan-table, article.dq-layer-public table, .dq-layer-internal table, .dq-layer-restrict table"
+      },
+      "article012": null,
+      "overflowX": false,
+      "scrollW": 1280,
+      "clientW": 1280
+    }
+  },
+  "zh-27-login-restrict": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/27-login-restrict.png",
+    "bytes": 41292,
+    "href": "http://127.0.0.1:8964/desk/lock.html",
+    "w": 1280,
+    "h": 800,
+    "styles": {
+      "href": "http://127.0.0.1:8964/desk/lock.html",
+      "title": "数字化室　限制柜登入",
+      "login": {
+        "sel": ".login-box",
+        "className": "login-box dq-layer-restrict",
+        "borderWidth": "3px",
+        "borderStyle": "double",
+        "borderColor": "rgb(51, 51, 51)",
+        "boxShadow": "none",
+        "backgroundImage": "linear-gradient(rgb(51, 51, 51), rgb(51, 51, 51)), linear-gradient(rgb(51, 51, 51), rgb(51, 51, 51)), linear-gradient(rgb(51, 51, 51), rgb(51, 51, 51)), linear-gradient(rgb(51, 51, 51), rgb(51, 51, 51)), linear-gradient(rgb(51, 51, 51), rgb",
+        "backgroundSize": "16px 3px, 3px 16px, 16px 3px, 3px 16px, 16px 3px, 3px 16px, 16px 3px, 3px 16px, auto"
+      },
+      "notice": {
+        "missing": true,
+        "sel": ".notice"
+      },
+      "table047": {
+        "missing": true,
+        "sel": "table.dq-scan-table, article.dq-layer-public table, .dq-layer-internal table, .dq-layer-restrict table"
+      },
+      "article012": null,
+      "overflowX": false,
+      "scrollW": 1280,
+      "clientW": 1280
+    }
+  },
+  "en-04-near-fail": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/04-near-fail.png",
+    "bytes": 49630,
+    "href": "http://127.0.0.1:8965/desk/result.html",
+    "w": 1280,
+    "h": 900,
+    "styles": {
+      "href": "http://127.0.0.1:8965/desk/result.html",
+      "title": "Viewing-note receipt",
+      "login": {
+        "missing": true,
+        "sel": ".login-box"
+      },
+      "notice": {
+        "sel": ".notice",
+        "className": "notice dq-end-overclaim",
+        "borderWidth": "3px",
+        "borderStyle": "double",
+        "borderColor": "rgb(51, 51, 51)",
+        "boxShadow": "none",
+        "backgroundImage": "none",
+        "backgroundSize": "auto"
+      },
+      "table047": {
+        "missing": true,
+        "sel": "table.dq-scan-table, article.dq-layer-public table, .dq-layer-internal table, .dq-layer-restrict table"
+      },
+      "article012": null,
+      "overflowX": false,
+      "scrollW": 1280,
+      "clientW": 1280
+    }
+  },
+  "en-16-denied-gate": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/16-denied-gate.png",
+    "bytes": 50952,
+    "href": "http://127.0.0.1:8965/desk/denied.html",
+    "w": 1280,
+    "h": 800,
+    "styles": {
+      "href": "http://127.0.0.1:8965/desk/denied.html",
+      "title": "This layer is not logged in",
+      "login": {
+        "missing": true,
+        "sel": ".login-box"
+      },
+      "notice": {
+        "sel": ".notice",
+        "className": "notice dq-denied",
+        "borderWidth": "2px",
+        "borderStyle": "dashed",
+        "borderColor": "rgb(51, 51, 51)",
+        "boxShadow": "none",
+        "backgroundImage": "none",
+        "backgroundSize": "auto"
+      },
+      "table047": {
+        "missing": true,
+        "sel": "table.dq-scan-table, article.dq-layer-public table, .dq-layer-internal table, .dq-layer-restrict table"
+      },
+      "article012": null,
+      "overflowX": false,
+      "scrollW": 1280,
+      "clientW": 1280
+    }
+  },
+  "en-26-login-internal": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/26-login-internal.png",
+    "bytes": 36817,
+    "href": "http://127.0.0.1:8965/desk/login.html",
+    "w": 1280,
+    "h": 800,
+    "styles": {
+      "href": "http://127.0.0.1:8965/desk/login.html",
+      "title": "Digitization desk · Internal login",
+      "login": {
+        "sel": ".login-box",
+        "className": "login-box dq-layer-internal",
+        "borderWidth": "2px",
+        "borderStyle": "dashed",
+        "borderColor": "rgb(51, 51, 51)",
+        "boxShadow": "rgb(51, 51, 51) 8px 0px 0px 0px inset",
+        "backgroundImage": "none",
+        "backgroundSize": "auto"
+      },
+      "notice": {
+        "missing": true,
+        "sel": ".notice"
+      },
+      "table047": {
+        "missing": true,
+        "sel": "table.dq-scan-table, article.dq-layer-public table, .dq-layer-internal table, .dq-layer-restrict table"
+      },
+      "article012": null,
+      "overflowX": false,
+      "scrollW": 1280,
+      "clientW": 1280
+    }
+  },
+  "en-27-login-restrict": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/27-login-restrict.png",
+    "bytes": 55397,
+    "href": "http://127.0.0.1:8965/desk/lock.html",
+    "w": 1280,
+    "h": 800,
+    "styles": {
+      "href": "http://127.0.0.1:8965/desk/lock.html",
+      "title": "Digitization desk · Restricted-cabinet login",
+      "login": {
+        "sel": ".login-box",
+        "className": "login-box dq-layer-restrict",
+        "borderWidth": "3px",
+        "borderStyle": "double",
+        "borderColor": "rgb(51, 51, 51)",
+        "boxShadow": "none",
+        "backgroundImage": "linear-gradient(rgb(51, 51, 51), rgb(51, 51, 51)), linear-gradient(rgb(51, 51, 51), rgb(51, 51, 51)), linear-gradient(rgb(51, 51, 51), rgb(51, 51, 51)), linear-gradient(rgb(51, 51, 51), rgb(51, 51, 51)), linear-gradient(rgb(51, 51, 51), rgb",
+        "backgroundSize": "16px 3px, 3px 16px, 16px 3px, 3px 16px, 16px 3px, 3px 16px, 16px 3px, 3px 16px, auto"
+      },
+      "notice": {
+        "missing": true,
+        "sel": ".notice"
+      },
+      "table047": {
+        "missing": true,
+        "sel": "table.dq-scan-table, article.dq-layer-public table, .dq-layer-internal table, .dq-layer-restrict table"
+      },
+      "article012": null,
+      "overflowX": false,
+      "scrollW": 1280,
+      "clientW": 1280
+    }
+  }
+}

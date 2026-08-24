@@ -1,0 +1,139 @@
+{
+  "round": "D9",
+  "largest_gap": "D9 中英 1280 顶栏搜索主按钮宽 42px < 44。只加 form[data-act=search] button / form.site-search button 的 min-width:44px。",
+  "contract_status": "CANDIDATE",
+  "review_status": "UNCHANGED",
+  "http": {
+    "zh": "http://127.0.0.1:9010",
+    "en": "http://127.0.0.1:9011",
+    "iframe": false,
+    "stopped": true
+  },
+  "css": {
+    "files": [
+      "中文版/工程/css/common.css",
+      "英文版/工程/css/common.css"
+    ],
+    "identical": true,
+    "rule": "form[data-act=\"search\"] button, form.site-search button { min-width: 44px; }"
+  },
+  "verdict_producer": "搜钮双维均 ≥44；1280 顶栏/html 无横溢；390/320 顶栏与搜表无横溢（visualViewport/clientWidth）。制作人不得写 D9 PASS。",
+  "results": [
+    {
+      "lang": "zh",
+      "viewport": 1280,
+      "path": "/home.html",
+      "button_w": 44,
+      "button_h": 44,
+      "text": "搜索",
+      "minWidth": "44px",
+      "overflow_top": false,
+      "overflow_html": false,
+      "pass_wh": true
+    },
+    {
+      "lang": "zh",
+      "viewport": 390,
+      "path": "/home.html",
+      "button_w": 72,
+      "button_h": 44,
+      "text": "搜索",
+      "minWidth": "72px",
+      "overflow_top": false,
+      "overflow_form": false,
+      "button_right": 376,
+      "clientWidth": 390,
+      "pass_wh": true
+    },
+    {
+      "lang": "zh",
+      "viewport": 320,
+      "path": "/home.html",
+      "button_w": 72,
+      "button_h": 44,
+      "text": "搜索",
+      "minWidth": "72px",
+      "overflow_top": false,
+      "overflow_form": false,
+      "button_right": 306,
+      "clientWidth": 320,
+      "pass_wh": true
+    },
+    {
+      "lang": "zh",
+      "viewport": 1280,
+      "path": "/space-syz.html",
+      "button_w": 44,
+      "button_h": 44,
+      "text": "搜索",
+      "overflow_html": false,
+      "pass_wh": true
+    },
+    {
+      "lang": "en",
+      "viewport": 1280,
+      "path": "/home.html",
+      "button_w": 53.83,
+      "button_h": 44,
+      "text": "Search",
+      "minWidth": "44px",
+      "overflow_top": false,
+      "overflow_html": false,
+      "pass_wh": true
+    },
+    {
+      "lang": "en",
+      "viewport": 390,
+      "path": "/home.html",
+      "button_w": 72,
+      "button_h": 44,
+      "text": "Search",
+      "minWidth": "72px",
+      "overflow_top": false,
+      "overflow_form": false,
+      "button_right": 376,
+      "clientWidth": 390,
+      "pass_wh": true
+    },
+    {
+      "lang": "en",
+      "viewport": 320,
+      "path": "/home.html",
+      "button_w": 72,
+      "button_h": 44,
+      "text": "Search",
+      "minWidth": "72px",
+      "overflow_top": false,
+      "overflow_form": false,
+      "button_right": 306,
+      "clientWidth": 320,
+      "pass_wh": true
+    },
+    {
+      "lang": "en",
+      "viewport": 1280,
+      "path": "/space-syz.html",
+      "button_w": 53.83,
+      "button_h": 44,
+      "text": "Search",
+      "overflow_html": false,
+      "pass_wh": true
+    }
+  ],
+  "cdp_note": "headless 在 320/390 时 window.innerWidth 偶发残留 556，visualViewport.width 与 documentElement.clientWidth 为 320/390。横溢判定用 clientWidth + .top/.site-search scrollWidth。feed 列 right=556 属该 CDP 残留，非顶栏搜钮。390/320 after PNG 与旧 after 逐字节相同。",
+  "shots_after_updated": [
+    "visual/校园实名站搜词/20260823-d4-zh/02-core-verb.png",
+    "visual/校园实名站搜词/20260823-d4-zh/06-narrow-320.png",
+    "visual/校园实名站搜词/20260823-d4-zh/08-touch-targets.png",
+    "visual/校园实名站搜词/20260823-d4-zh/14-public-sns-search.png",
+    "visual/校园实名站搜词/20260823-d4-zh/15-embedded-qzone.png",
+    "visual/校园实名站搜词/20260823-d4-zh/32-space-syz-avatar.png",
+    "visual/校园实名站搜词/20260823-d4-en/02-core-verb.png",
+    "visual/校园实名站搜词/20260823-d4-en/06-narrow-320.png",
+    "visual/校园实名站搜词/20260823-d4-en/08-touch-targets.png",
+    "visual/校园实名站搜词/20260823-d4-en/14-public-sns-search.png",
+    "visual/校园实名站搜词/20260823-d4-en/15-embedded-qzone.png",
+    "visual/校园实名站搜词/20260823-d4-en/32-space-syz-avatar.png"
+  ],
+  "befores_kept": true
+}

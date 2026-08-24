@@ -473,6 +473,163 @@ table.oa tr.dead td { text-decoration: line-through; outline: 1px solid var(--ba
 @media (prefers-reduced-motion: reduce) {
   .scanline, .flicker, .tab.blink, .cursor, .crt::after { animation: none; }
 }
+
+/* ===== polish-20260823: six-station chrome / 44px / a11y (no portraits) ===== */
+.btn, .dlg-acts .btn, .login-actions .btn {
+  min-height: 44px; height: auto; padding: 10px 14px; line-height: 1.2;
+}
+.tab {
+  min-height: 44px; padding: 10px 14px; display: inline-flex; align-items: center;
+}
+.list-item, .card, .tree-line, .cell, table.oa tr, .tl-item {
+  min-height: 44px;
+}
+.list-item { align-items: center; padding: 10px 12px; }
+.menubar button { min-height: 44px; padding: 10px 12px; }
+.card { align-items: center; }
+
+button:focus, .tab:focus, .list-item:focus, .tree-line:focus, .cell:focus, .btn:focus {
+  outline: none;
+}
+button:focus-visible, .tab:focus-visible, .list-item:focus-visible,
+.tree-line:focus-visible, .cell:focus-visible, .btn:focus-visible, [data-act]:focus-visible {
+  outline: 2px dotted #0a246a;
+  outline-offset: 2px;
+}
+#st4 :focus-visible, #st4 .tree-line:focus-visible, .chrome-crt :focus-visible {
+  outline-color: #9dff9d;
+}
+
+/* D1/D3: >=3 chrome diffs per station — fill, titlebar, control shape, font */
+#st1, .chrome-scan {
+  background: #c5ced8;
+  font-family: Tahoma, "Microsoft Sans Serif", SimSun, sans-serif;
+}
+#st1 .hd, .chrome-scan .hd {
+  background: linear-gradient(#3a6ea5, #1e4a78);
+  color: #fff;
+  border-bottom: 3px solid #0b2744;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  font-family: Tahoma, "Microsoft Sans Serif", sans-serif;
+}
+#st1 .btn, .chrome-scan .btn {
+  border-radius: 0;
+  box-shadow: inset 1px 1px 0 #fff, inset -1px -1px 0 #6a6a6a;
+}
+#st1 .scanbed, .chrome-scan .scanbed {
+  border: 6px ridge #8b95a2;
+  box-shadow: inset 0 0 0 3px #111;
+}
+
+#st2, .chrome-wms {
+  background: #c3d0c4;
+  font-family: "Segoe UI", Tahoma, SimSun, sans-serif;
+}
+#st2 .hd, .chrome-wms .hd {
+  background: #2a4631;
+  color: #e7f0e5;
+  border-bottom: 2px solid #121f16;
+  font-variant: small-caps;
+  letter-spacing: .08em;
+}
+#st2 .cell, .chrome-wms .cell {
+  border: 2px outset #9aaa96;
+  background: #e6eee4;
+  border-radius: 0;
+}
+
+#st3, .chrome-roster {
+  background: #eadfcb;
+  font-family: SimSun, "Songti SC", "NSimSun", serif;
+}
+#st3 .hd, .chrome-roster .hd {
+  background: #6a4e2c;
+  color: #f4ead6;
+  border-bottom: 4px double #d8c6a0;
+  font-family: SimSun, "Songti SC", serif;
+}
+#st3 .card, .chrome-roster .card {
+  border: 1px solid #8a7654;
+  box-shadow: 2px 2px 0 #cbb896;
+  background: #f6f0e3;
+}
+
+#st4, .chrome-crt {
+  background: #031403;
+  color: var(--crt);
+  font-family: "Courier New", ui-monospace, "NSimSun", monospace;
+}
+#st4 .hd, .chrome-crt .hd {
+  background: #000;
+  color: #33ff33;
+  border: 1px solid #145014;
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  text-shadow: 0 0 4px #33ff33;
+}
+
+#st5, .chrome-oa {
+  background: #ece9d8;
+  font-family: Tahoma, "MS Sans Serif", SimSun, sans-serif;
+}
+#st5 .hd, .chrome-oa .hd {
+  background: #003c74;
+  color: #fff;
+  border-bottom: 2px solid #d4d0c8;
+  font-family: Tahoma, "MS Sans Serif", sans-serif;
+}
+#st5 table.oa, .chrome-oa table.oa {
+  border: 2px inset #aca899;
+  background: #fff;
+}
+#st5 table.oa th, .chrome-oa table.oa th { background: #ece9d8; }
+
+#st6, .chrome-tl {
+  background: #d5e3f2;
+  font-family: Arial, Tahoma, SimSun, sans-serif;
+}
+#st6 .hd, .chrome-tl .hd {
+  background: #003399;
+  color: #fff;
+  border-left: 10px solid #ffcc00;
+  font-family: Arial, Tahoma, sans-serif;
+}
+#st6 .tl-item, .chrome-tl .tl-item {
+  border-left: 4px solid #1d4e89;
+  border-radius: 0;
+  background: #fff;
+}
+
+/* non-color status */
+.list-item.anomaly { border-left: 4px dashed #8a6d00; }
+.list-item.danger { border-left: 4px solid #7a0000; }
+.list-item.done { text-decoration: line-through; opacity: 1; color: #555; }
+.btn-danger { font-weight: 700; box-shadow: inset 0 0 0 1px #4a0000; }
+.btn-warn { border-style: dashed; font-weight: 700; }
+.chip.warn::before { content: "! "; font-weight: 700; }
+.chip.hot::before { content: "× "; font-weight: 700; }
+
+@media (prefers-reduced-motion: reduce) {
+  .scanline, .scanning .scanline {
+    animation: none !important;
+    display: block !important;
+    top: 46% !important;
+    height: 3px;
+    background: #c00;
+    opacity: 1;
+  }
+  .flicker, .tab.blink, .cursor, .crt::after { animation: none !important; }
+  .flicker { text-decoration: underline; font-weight: 700; color: #8b0000; }
+}
+
+@media (max-width: 390px) {
+  .tab { min-width: 72px; }
+  .col-r .btn { width: 100%; }
+  .titlebar { flex-wrap: wrap; min-height: 44px; }
+  .login-box { width: min(320px, 100%); }
+}
+
 </style>
 </head>
 <body>
@@ -519,12 +676,12 @@ table.oa tr.dead td { text-decoration: line-through; outline: 1px solid var(--ba
     </div>
     <div class="tabs" id="tabs"></div>
     <div class="work" id="work">
-      <section class="station on" id="st1"></section>
-      <section class="station" id="st2"></section>
-      <section class="station" id="st3"></section>
-      <section class="station" id="st4"></section>
-      <section class="station" id="st5"></section>
-      <section class="station" id="st6"></section>
+      <section class="station on chrome-scan" id="st1"></section>
+      <section class="station chrome-wms" id="st2"></section>
+      <section class="station chrome-roster" id="st3"></section>
+      <section class="station chrome-crt" id="st4"></section>
+      <section class="station chrome-oa" id="st5"></section>
+      <section class="station chrome-tl" id="st6"></section>
     </div>
     <div class="statusbar">
       <span>Link: <b>Local</b></span>

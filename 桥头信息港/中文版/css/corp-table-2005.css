@@ -149,3 +149,53 @@ html.skin-corp-table-2005 .ft {
   font-size: 12px;
   border-top: 1px solid #ccc;
 }
+html.skin-corp-table-2005 .banner input,
+html.skin-corp-table-2005 .banner button,
+html.skin-corp-table-2005 input,
+html.skin-corp-table-2005 button {
+  min-height: 44px;
+  height: 44px;
+  font-size: 14px;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+html.skin-corp-table-2005 .banner button {
+  min-width: 44px;
+  padding: 0 12px;
+}
+html.skin-corp-table-2005 .banner form {
+  padding: 22px 0 0;
+}
+html.skin-corp-table-2005 a:focus,
+html.skin-corp-table-2005 a:focus-visible,
+html.skin-corp-table-2005 input:focus,
+html.skin-corp-table-2005 button:focus,
+html.skin-corp-table-2005 button:focus-visible {
+  outline: 3px dotted #fff;
+  outline-offset: 1px;
+}
+html.skin-corp-table-2005 .main a:focus,
+html.skin-corp-table-2005 .left a:focus {
+  outline-color: #1e4b87;
+}
+
+@media (max-width: 390px) {
+  html.skin-corp-table-2005 table.site {
+    width: 100%;
+  }
+  html.skin-corp-table-2005 .banner form {
+    float: none;
+    height: auto;
+    padding: 8px 0;
+  }
+  html.skin-corp-table-2005 .left {
+    width: auto;
+    display: block;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.skin-corp-table-2005 * { transition: none; }
+}
+

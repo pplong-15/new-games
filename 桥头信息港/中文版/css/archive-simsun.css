@@ -1,32 +1,42 @@
-/* archive-simsun：内部卷宗。登山敬献记录层。 */
+/* archive-simsun：内部卷宗。宋体纸页，不要 flex 卡片。 */
 html.skin-archive-simsun body {
   margin: 0;
-  background: #f7f7f7;
-  color: #333;
-  font: 16px/1.8 "SimSun", "Songti SC", serif;
+  background: #c8c4b8;
+  color: #111;
+  font: 16px/1.8 SimSun, "Songti SC", serif;
   overflow-x: auto;
 }
 html.skin-archive-simsun .record {
-  width: min(800px, 92%);
-  margin: 40px auto;
-  background: #fff;
-  border: 1px solid #ddd;
-  padding: 40px 48px;
+  width: 780px;
+  max-width: 94%;
+  margin: 24px auto;
+  background: #fffcf4;
+  border: 1px solid #333;
+  padding: 28px 36px 32px;
+  box-shadow: 4px 4px 0 #8a8678;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 html.skin-archive-simsun h1 {
   text-align: center;
-  border-bottom: 2px solid #333;
-  padding-bottom: 12px;
-  font-size: 28px;
+  border-bottom: 3px double #333;
+  padding-bottom: 10px;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin: 0 0 12px;
 }
 html.skin-archive-simsun .meta {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px dotted #ccc;
-  padding-bottom: 12px;
-  color: #666;
-  margin-bottom: 24px;
+  overflow: hidden;
+  zoom: 1;
+  border-bottom: 1px dotted #666;
+  padding-bottom: 10px;
+  color: #444;
+  margin-bottom: 20px;
+  font-size: 14px;
 }
+html.skin-archive-simsun .meta span:first-child { float: left; }
+html.skin-archive-simsun .meta span:last-child { float: right; }
 html.skin-archive-simsun p { text-indent: 2em; }
 html.skin-archive-simsun table {
   width: 100%;
@@ -37,16 +47,67 @@ html.skin-archive-simsun table {
 }
 html.skin-archive-simsun th,
 html.skin-archive-simsun td {
-  border: 1px solid #ccc;
+  border: 1px solid #666;
   padding: 6px 8px;
   text-align: left;
   text-indent: 0;
 }
-html.skin-archive-simsun th { background: #f0f0f0; font-weight: 700; }
+html.skin-archive-simsun th { background: #eee8d8; font-weight: 700; }
 html.skin-archive-simsun .stamp {
   color: #a40000;
   border: 2px solid #a40000;
   display: inline-block;
   padding: 2px 8px;
-  transform: rotate(-8deg);
+  text-indent: 0;
+}
+html.skin-archive-simsun form {
+  margin-top: 16px;
+  text-indent: 0;
+}
+html.skin-archive-simsun input,
+html.skin-archive-simsun button {
+  font: 14px SimSun, "Songti SC", serif;
+  min-height: 44px;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+html.skin-archive-simsun input[name="q"],
+html.skin-archive-simsun #search-input {
+  width: 200px;
+  border: 1px solid #333;
+  padding: 0 8px;
+  background: #fff;
+}
+html.skin-archive-simsun button[type="submit"] {
+  min-width: 44px;
+  padding: 0 14px;
+  margin-left: 4px;
+  border: 1px solid #333;
+  background: #eee8d8;
+  cursor: pointer;
+}
+html.skin-archive-simsun a { color: #00e; }
+html.skin-archive-simsun a:focus,
+html.skin-archive-simsun a:focus-visible,
+html.skin-archive-simsun input:focus,
+html.skin-archive-simsun button:focus,
+html.skin-archive-simsun button:focus-visible {
+  outline: 3px dotted #a40000;
+  outline-offset: 2px;
+}
+
+@media (max-width: 390px) {
+  html.skin-archive-simsun .record {
+    width: auto;
+    margin: 12px 8px;
+    padding: 16px 12px;
+  }
+  html.skin-archive-simsun .meta span { float: none; display: block; }
+  html.skin-archive-simsun input[name="q"],
+  html.skin-archive-simsun #search-input { width: 58%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.skin-archive-simsun * { transition: none; }
 }

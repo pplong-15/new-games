@@ -1,0 +1,49 @@
+{
+  "build_id": "polish-20260824",
+  "http": ["http://127.0.0.1:8846/index.html", "http://127.0.0.1:8847/index.html"],
+  "iframe": false,
+  "steps": [
+    {
+      "id": 1,
+      "name": "缩到手机宽主按钮可点",
+      "result": "RAN",
+      "note": "320 CSS px 截图 06-narrow-320.png。回传钮 44x148，席面热区 48x70。句卡单列。页偏高，需滚动到三格。"
+    },
+    {
+      "id": 2,
+      "name": "只键盘走到第一个主线点",
+      "result": "RAN",
+      "note": "07-keyboard-focus.png 焦点落到不成组钮，:focus-visible 金描边。未做全程只键盘通关。"
+    },
+    {
+      "id": 3,
+      "name": "只触控走同一段",
+      "result": "RAN",
+      "note": "08-touch-targets.png 390 宽采韩承志。无 hover 依赖。未真机手指。"
+    },
+    {
+      "id": 4,
+      "name": "关声走同一段",
+      "result": "RAN",
+      "note": "无音效/BGM。静音与否画面相同。"
+    },
+    {
+      "id": 5,
+      "name": "减弱动效后主反馈仍在",
+      "result": "RAN",
+      "note": "09-muted-or-reduced-motion.png 采词仍入袋。扫描线为静帧渐变。"
+    },
+    {
+      "id": 6,
+      "name": "状态不唯色",
+      "result": "RAN",
+      "note": "不成组=虚线+文案；齐了=双线+下划线+回传台账；打回与回传不同页。"
+    },
+    {
+      "id": 7,
+      "name": "无整屏频闪",
+      "result": "RAN",
+      "note": "无 >3 次/秒闪烁。无循环动画。"
+    }
+  ]
+}

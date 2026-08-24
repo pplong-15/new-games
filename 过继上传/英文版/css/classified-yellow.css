@@ -216,3 +216,28 @@ html.skin-classified-yellow .ft {
   color: #888;
   font-size: 12px;
 }
+
+/* 窄屏：960 黄页改叠栏。死搜仍是死搜，不升真检索。 */
+@media (max-width: 800px) {
+  html.skin-classified-yellow .top-inner,
+  html.skin-classified-yellow .layout,
+  html.skin-classified-yellow .ft {
+    width: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  html.skin-classified-yellow nav,
+  html.skin-classified-yellow .list {
+    float: none;
+    width: auto;
+  }
+  html.skin-classified-yellow .top input {
+    width: auto;
+    max-width: 100%;
+  }
+  html.skin-classified-yellow .row a {
+    float: none;
+    width: auto;
+    white-space: normal;
+  }
+}

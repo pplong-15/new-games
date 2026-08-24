@@ -1,72 +1,158 @@
-/* 夜岗台附加：试记、建议、已证实条。不另做 HUD。 */
+/* 夜岗台附加：值班板 / 试记 / 打回 / 四栏。形状差，不唯色。不另做 HUD。 */
 html.skin-service-cyan-desk .mk-chips {
   width: 80%;
   margin: 8px auto 0;
-  padding: 8px 12px;
-  background: #fff8d6;
-  border: 1px solid #e0d08a;
+  padding: 10px 12px 10px 16px;
+  background: #f3ead0;
+  border: 2px dashed #6a5a20;
+  border-left: 8px solid #6a5a20;
   font-size: 13px;
+  font-weight: 700;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html.skin-service-cyan-desk .mk-chips::before {
+  content: "■ ";
+  font-style: normal;
 }
 html.skin-service-cyan-desk .mk-law {
   width: 80%;
   margin: 12px auto;
-  padding: 12px 14px;
-  background: #fffef4;
-  border: 1px solid #d8c48a;
+  padding: 12px 14px 12px 16px;
+  background: #f4ead2;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 27px,
+    #e4d4b0 28px
+  );
+  border: 2px solid #5a4a28;
+  border-left: 10px solid #8b6914;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 html.skin-service-cyan-desk .mk-law h3 {
   margin: 0 0 8px;
   font-size: 16px;
+  color: #3a2a10;
+  border-bottom: 1px solid #8b6914;
+  padding-bottom: 4px;
 }
 html.skin-service-cyan-desk .mk-err {
   width: 80%;
   margin: 12px auto;
-  color: #a40000;
-  border: 1px solid #e0b0b0;
-  background: #fff4f4;
-  padding: 10px 12px;
+  color: #3a2020;
+  border: 4px double #5a3030;
+  background: #f6ecec;
+  padding: 12px 14px;
+  font-weight: 700;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html.skin-service-cyan-desk .mk-err::before {
+  content: "× ";
 }
 html.skin-service-cyan-desk .mk-ok {
   width: 80%;
   margin: 12px auto;
-  border: 1px solid #b0d0b0;
-  background: #f4fff4;
-  padding: 10px 12px;
+  border: 2px dotted #3a5a3a;
+  background: #eef4ee;
+  padding: 12px 14px;
+  color: #203020;
+  font-weight: 700;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html.skin-service-cyan-desk .mk-ok::before {
+  content: "○ ";
 }
 html.skin-service-cyan-desk fieldset {
   width: 80%;
   margin: 16px auto;
-  border: 1px solid #c5d6dc;
-  padding: 12px 16px;
+  border: 1px solid #8aa0a8;
+  padding: 12px 16px 16px;
+  counter-reset: mkcol;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #f4f8fa;
 }
-html.skin-service-cyan-desk fieldset label {
+html.skin-service-cyan-desk fieldset legend {
+  font-weight: 700;
+  padding: 0 6px;
+  color: #2f5d6a;
+}
+html.skin-service-cyan-desk fieldset > label {
   display: block;
   margin: 8px 0;
+}
+html.skin-service-cyan-desk fieldset > label:has(input[type="radio"]) {
+  min-height: 44px;
+  line-height: 24px;
+  padding: 10px 12px;
+  border: 1px dashed #6a7a80;
+  background: #eef4f6;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+html.skin-service-cyan-desk fieldset > label:has(input[type="radio"]:checked) {
+  border: 2px solid #2f5d6a;
+  border-left: 8px solid #2f5d6a;
+  font-weight: 700;
+  background: #dceaf0;
+}
+html.skin-service-cyan-desk fieldset > label:has(select)::before {
+  counter-increment: mkcol;
+  content: counter(mkcol) " · ";
+  font-weight: 700;
+  color: #2f5d6a;
 }
 html.skin-service-cyan-desk select {
   display: block;
   width: 100%;
   margin: 4px 0 12px;
-  padding: 6px;
+  padding: 8px 10px;
+  min-height: 44px;
+  border: 1px dashed #6a7a80;
+  background: #eef4f6;
+  font-size: 16px;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html.skin-service-cyan-desk select:has(option:not([value=""]):checked) {
+  border: 2px solid #2f5d6a;
+  font-weight: 700;
+  background: #dceaf0;
 }
 html.skin-service-cyan-desk .mk-side {
   width: 80%;
   margin: 8px auto 20px;
   font-size: 13px;
 }
-html.skin-service-cyan-desk .mk-side a { margin-right: 12px; }
+html.skin-service-cyan-desk .mk-side a {
+  display: inline-block;
+  margin: 0 12px 8px 0;
+  min-height: 44px;
+  line-height: 44px;
+  padding: 0 8px;
+  border-bottom: 1px solid #8aa0a8;
+  text-decoration: none;
+}
 html.skin-intro-manual .boot-actions a {
   display: inline-block;
   margin-right: 16px;
 }
 
-/* 加厚段落回皮内，不漂在浅青页底 */
 html.skin-service-cyan-desk body > p.mk-side,
 html.skin-service-cyan-desk body > p.hint {
   width: 80%;
   max-width: 960px;
   margin: 0 auto 12px;
-  background: #fff;
+  background: #dceaf0;
+  border: 1px solid #8aa0a8;
   padding: 10px 14px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -79,6 +165,16 @@ html.skin-intro-manual body > p {
   padding: 16px 20px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+/* hold 回单：实线匣 + ■，不镀金 */
+html.skin-service-cyan-desk body:has(#how) .notice {
+  border: 2px solid #2f5d6a;
+  border-left: 10px solid #2f5d6a;
+  background: #e8f0f3;
+}
+html.skin-service-cyan-desk body:has(#how) .notice h2::before {
+  content: "■ ";
 }
 
 @media (max-width: 800px) {

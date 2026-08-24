@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Huaixi Beam Desk</title>
+  <link rel="icon" href="favicon.ico" sizes="16x16">
+  <link rel="stylesheet" href="css/liang.css">
+</head>
+<body>
+  <div id="title-layer">
+    <div class="cover">
+      <div class="cover-art">
+        <img src="jpeg/00-open.jpg" alt="Gatehouse desk, scaffolding outside">
+        <div class="cover-tools" aria-hidden="true">
+          <span>Settlement slip</span>
+          <span>Supervisor clip</span>
+          <span>Before sunset</span>
+        </div>
+      </div>
+      <div class="cover-plaque">
+        <p class="cover-who">Huaixi Town self-built site · gatehouse</p>
+        <p class="lock-line">Hear one paper today. Which one burns you, say it when you file.</p>
+        <p>Qi Wanzhi. Woman. Twenty-seven. Temp clerk, two weeks in. File which paper you heard today before sunset. Pay is by valid days. Refresh returns to the title.</p>
+        <p class="disclaimer">Huaixi Town, these papers, and the named people are fiction.</p>
+        <button type="button" id="btn-enter">Clock in</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="desk">
+    <div class="band">
+      <div id="night-line">Yuan's page is out. Unfiled is written as all day. Hit the first line to hold it.</div>
+      <div id="sun">Before sunset</div>
+    </div>
+    <img id="still" src="jpeg/00-open.jpg" alt="Gatehouse desk">
+    <div class="row">
+      <div id="who">Qi Wanzhi · temp clerk · 27 · Huaixi Town self-built site</div>
+      <div id="night-mark">Day 1</div>
+      <div>Pay <span id="wage">¥0</span></div>
+    </div>
+    <p class="lock-line" id="lock-line">Hear one paper today. Which one burns you, say it when you file.</p>
+    <p id="pending-mark">Nothing on hold. Open a paper first.</p>
+    <p id="group-hint">Opening a paper is not filing. Write one cell, file before sunset.</p>
+    <div class="gate">
+      <button type="button" id="btn-write">Write the main cell</button>
+      <button type="button" id="btn-sunset">Sunset is here</button>
+    </div>
+    <div id="ending-layer" class="ending"></div>
+
+    <div class="split">
+      <div class="paper">
+        <h3>On the desk</h3>
+        <div class="sheet sheet-jianli">
+          <img src="jpeg/01-jianli.jpg" alt="Supervisor stop-work order">
+          <p class="artifact-translation">Typed copy of the stamp slip: “Without filing, the beam may not be raised.” Inspector Yuan’s seal. Date blank.</p>
+          <button type="button" class="clause" id="btn-jianli-line">Without filing, do not raise the beam</button>
+          <p>Yuan’s hand. Unfiled written as all day. Hit the first line to hold it.</p>
+          <p id="limit-line"></p>
+        </div>
+        <div id="paper-red-block" class="sheet sheet-red" style="display:none">
+          <img src="jpeg/02-red.jpg" alt="Owner raise-the-beam paper">
+          <p class="artifact-translation">Typed copy of the red paper: raise at the auspicious hour. Homeowner must be present. The send-the-beam line is empty.</p>
+          <button type="button" class="clause" id="btn-red">Raise at the auspicious hour</button>
+          <p>Fang Shoucheng wants it raised at the auspicious hour. Homeowner must be present. The send-the-beam (jiliang) line is blank.</p>
+          <div id="paper-red-extra" style="display:none">
+            <p>The stop-work says do not raise. The red paper says you must. Still one filing today.</p>
+          </div>
+        </div>
+        <div id="paper-safe-block" class="sheet sheet-safe" style="display:none">
+          <img src="jpeg/03-safe.jpg" alt="Crew safety slip">
+          <p class="artifact-translation">Typed copy of the crew slip: outsiders off the yard. Fang Shoucheng is circled in the outsider column.</p>
+          <button type="button" class="clause" id="btn-safe">Outsiders off the yard</button>
+          <p>Tian An. The outsider column circles Fang Shoucheng.</p>
+          <div id="paper-safe-extra" style="display:none">
+            <p>The homeowner is supposed to be present. The safety slip circles him as an outsider.</p>
+          </div>
+        </div>
+        <div id="paper-pencil" class="sheet sheet-pencil" style="display:none">
+          <img src="jpeg/07-pencil.jpg" alt="Last shift’s pencil">
+          <p class="artifact-translation">Pencil on last shift’s scrap. Lao Xun’s hand. Hour changed. Exception written as the whole week.</p>
+          <p>Lao Xun is gone. The pencil is still here. Hour changed, exception written as the whole week. The main cell will not take it.</p>
+          <button type="button" class="clause" id="btn-pencil">Check the pencil</button>
+        </div>
+        <div id="paper-print" class="sheet sheet-print" style="display:none">
+          <p>Print stack: Yuan’s stop-work, Fang’s red paper, Tian An’s safety slip. Whether the beam crushes anyone is not on the paper.</p>
+          <button type="button" class="clause" id="btn-crack">Old name in the seam</button>
+        </div>
+        <div id="paper-kouxin" class="sheet sheet-kouxin" style="display:none">
+          <p>Fang Shoucheng sent word. Write both the stop-work and the red paper today. The main slot is one cell.</p>
+          <button type="button" class="clause" id="btn-kouxin">Write both</button>
+        </div>
+        <div id="paper-visit" class="sheet sheet-visit" style="display:none">
+          <p>Foreman Cheng is back. He only asks which paper you heard today. Answer him, then file.</p>
+          <button type="button" class="clause" id="btn-visit">Visit: which paper today</button>
+        </div>
+      </div>
+      <div class="clip">
+        <h3>Settlement slip · one main cell</h3>
+        <img src="jpeg/04-slip.jpg" alt="Settlement slip">
+        <p class="artifact-translation">Printed slip: which paper today / record / notes. One cell.</p>
+        <p>Bag <span id="pocket">empty</span></p>
+        <p>Main <span id="slip-main">empty</span></p>
+        <p>Record <span id="slip-rec">empty</span></p>
+        <img src="jpeg/10-beam.jpg" alt="Send-the-beam rope">
+        <p class="artifact-translation">Window view: rope on the beam. Looking is not climbing.</p>
+        <button type="button" class="clause" id="btn-beam">Send-the-beam rope outside</button>
+        <button type="button" class="clause" id="btn-gossip">Neighbors talking about the light</button>
+        <button type="button" id="btn-trust-red" class="clause" style="display:none">Take the red paper as the whole truth</button>
+        <button type="button" id="btn-submit">File the slip</button>
+        <button type="button" id="btn-next">Next day</button>
+        <p>Opening a paper only holds it. Write one cell. File before sunset. Two papers bounce at once. File today before you take the next day.</p>
+        <div class="ghost">
+          <button type="button" id="refuse-contract">Rewrite the contract</button>
+          <button type="button" id="refuse-sign">Sign for the homeowner</button>
+        </div>
+      </div>
+    </div>
+    <p>Pay is by valid days. An empty slip is not a valid day. Neighbors on the light, Foreman Cheng treats as chatter. Refresh returns to the title.</p>
+    <p id="msg">File which paper you heard today before sunset. Opening a paper only holds it. Write one cell, then file.</p>
+    <div class="dims">
+      <span class="dim">Pay cells <b id="dim-wage">4</b><i class="meter" id="meter-wage" aria-hidden="true"></i></span>
+      <span class="dim">Mind <b id="dim-mind">4</b><i class="meter" id="meter-mind" aria-hidden="true"></i></span>
+      <span class="dim">Shift name <b id="dim-rep">4</b><i class="meter" id="meter-rep" aria-hidden="true"></i></span>
+      <span class="dim">Glass <b id="dim-mirror">4</b><i class="meter" id="meter-mirror" aria-hidden="true"></i></span>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

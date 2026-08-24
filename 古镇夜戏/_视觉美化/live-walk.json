@@ -1,0 +1,80 @@
+{
+  "zh": {
+    "origin": "http://127.0.0.1:8910/",
+    "reachable": [
+      "guestbook.html",
+      "heritage.html",
+      "index.html",
+      "introduction.html",
+      "pages/baixi.html",
+      "pages/forum-rules.html",
+      "pages/forum.html",
+      "pages/history.html",
+      "pages/leave.html",
+      "pages/login.html",
+      "pages/playbill.html",
+      "pages/staff.html",
+      "pages/thread-doupi.html",
+      "pages/thread-food.html",
+      "pages/thread-guide.html",
+      "pages/thread-hotel.html",
+      "pages/troupe.html",
+      "pages/visit.html",
+      "search-results.html",
+      "ticket.html",
+      "traffic.html"
+    ],
+    "n": 21,
+    "ending_in_bfs": [],
+    "pages_with_ending_href": [],
+    "intro_hrefs": [
+      "index.html"
+    ],
+    "errors": [],
+    "http_ending": {
+      "url": "http://127.0.0.1:8910/pages/ending.html",
+      "http": 200,
+      "has_buttons": true,
+      "note": "typed-URL GET; not in introduction BFS"
+    }
+  },
+  "en": {
+    "origin": "http://127.0.0.1:8911/",
+    "reachable": [
+      "guestbook.html",
+      "heritage.html",
+      "index.html",
+      "introduction.html",
+      "pages/baixi.html",
+      "pages/forum-rules.html",
+      "pages/forum.html",
+      "pages/history.html",
+      "pages/leave.html",
+      "pages/login.html",
+      "pages/playbill.html",
+      "pages/staff.html",
+      "pages/thread-doupi.html",
+      "pages/thread-food.html",
+      "pages/thread-guide.html",
+      "pages/thread-hotel.html",
+      "pages/troupe.html",
+      "pages/visit.html",
+      "search-results.html",
+      "ticket.html",
+      "traffic.html"
+    ],
+    "n": 21,
+    "ending_in_bfs": [],
+    "pages_with_ending_href": [],
+    "intro_hrefs": [
+      "index.html"
+    ],
+    "errors": [],
+    "http_ending": {
+      "url": "http://127.0.0.1:8911/pages/ending.html",
+      "http": 200,
+      "has_buttons": true,
+      "note": "typed-URL GET; not in introduction BFS"
+    }
+  }
+}

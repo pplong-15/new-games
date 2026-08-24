@@ -31,8 +31,8 @@ html.skin-intro-manual section {
   background: var(--card);
   padding: 20px;
   margin-bottom: 30px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #bbb;
+  box-shadow: 2px 2px 0 #ccc;
 }
 html.skin-intro-manual h1, html.skin-intro-manual h2, html.skin-intro-manual h3 { color: #444; }
 html.skin-intro-manual .intro-hero h1 { color: #fff; }
@@ -44,11 +44,21 @@ html.skin-intro-manual .boot-actions button {
   background: #333;
   color: #fff;
   border: 0;
-  padding: 8px 16px;
+  min-height: 44px;
+  line-height: 44px;
+  padding: 0 16px;
   margin: 0 8px 8px 0;
-  font: 16px/1.4 "PingFang SC", "Microsoft YaHei", sans-serif;
+  font: 16px/44px "PingFang SC", "Microsoft YaHei", sans-serif;
   text-decoration: none;
   cursor: pointer;
+  box-sizing: border-box;
+}
+html.skin-intro-manual .boot-actions a:focus,
+html.skin-intro-manual .boot-actions a:focus-visible,
+html.skin-intro-manual .boot-actions button:focus,
+html.skin-intro-manual .boot-actions button:focus-visible {
+  outline: 3px dotted #000;
+  outline-offset: 2px;
 }
 html.skin-intro-manual .boot-actions .ghost {
   background: #fff;

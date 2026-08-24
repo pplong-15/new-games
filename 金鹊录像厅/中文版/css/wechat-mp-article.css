@@ -12,8 +12,25 @@ html.skin-wechat-mp-article .article {
   padding: 20px 16px 48px;
 }
 html.skin-wechat-mp-article h1 { font-size: 22px; font-weight: 700; margin: 0 0 12px; }
-html.skin-wechat-mp-article .meta { color: #888; font-size: 15px; margin-bottom: 24px; }
+html.skin-wechat-mp-article .meta {
+  color: #888;
+  font-size: 15px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
 html.skin-wechat-mp-article .meta .acct { color: #576b95; }
+html.skin-wechat-mp-article .meta form { display: inline-flex; gap: 4px; flex-wrap: wrap; }
+html.skin-wechat-mp-article .meta input,
+html.skin-wechat-mp-article .meta button {
+  height: 44px;
+  min-height: 44px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+html.skin-wechat-mp-article .meta button { min-width: 44px; }
 html.skin-wechat-mp-article p { margin: 0 0 1em; }
 html.skin-wechat-mp-article img { max-width: 100%; display: block; margin: 12px 0; }
 html.skin-wechat-mp-article a { color: #576b95; }

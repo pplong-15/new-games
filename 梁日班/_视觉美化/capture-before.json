@@ -1,0 +1,62 @@
+{
+  "phase": "before",
+  "shots": [
+    "/Users/jianglong/Desktop/新游戏3/梁日班/visual/html-game-rule-horror/polish-20260824-en/01-boot-first-screen-before.png",
+    "/Users/jianglong/Desktop/新游戏3/梁日班/visual/html-game-rule-horror/polish-20260824-en/11-empty-or-loading-before.png",
+    "/Users/jianglong/Desktop/新游戏3/梁日班/visual/html-game-rule-horror/polish-20260824-en/16-person-job-first-rule-before.png",
+    "/Users/jianglong/Desktop/新游戏3/梁日班/visual/html-game-rule-horror/polish-20260824-en/20-night1-not-all-manuals-before.png",
+    "/Users/jianglong/Desktop/新游戏3/梁日班/visual/html-game-rule-horror/polish-20260824-en/02-core-verb-before.png",
+    "/Users/jianglong/Desktop/新游戏3/梁日班/visual/html-game-rule-horror/polish-20260824-en/02-core-verb-written-before.png",
+    "/Users/jianglong/Desktop/新游戏3/梁日班/visual/html-game-rule-horror/polish-20260824-en/03-success-feedback-before.png",
+    "/Users/jianglong/Desktop/新游戏3/梁日班/visual/html-game-rule-horror/polish-20260824-en/15-group-submit-before.png",
+    "/Users/jianglong/Desktop/新游戏3/梁日班/visual/html-game-rule-horror/polish-20260824-en/07-keyboard-focus-before.png",
+    "/Users/jianglong/Desktop/新游戏3/梁日班/visual/html-game-rule-horror/polish-20260824-en/19-near-answer-text-before.png",
+    "/Users/jianglong/Desktop/新游戏3/梁日班/visual/html-game-rule-horror/polish-20260824-en/12-error-or-pause-before.png",
+    "/Users/jianglong/Desktop/新游戏3/梁日班/visual/html-game-rule-horror/polish-20260824-en/04-near-fail-before.png",
+    "/Users/jianglong/Desktop/新游戏3/梁日班/visual/html-game-rule-horror/polish-20260824-en/18-true-mutex-before.png",
+    "/Users/jianglong/Desktop/新游戏3/梁日班/visual/html-game-rule-horror/polish-20260824-en/05-recovery-before.png",
+    "/Users/jianglong/Desktop/新游戏3/梁日班/visual/html-game-rule-horror/polish-20260824-en/09-muted-or-reduced-motion-before.png",
+    "/Users/jianglong/Desktop/新游戏3/梁日班/visual/html-game-rule-horror/polish-20260824-en/13-two-plus-rules-side-before.png",
+    "/Users/jianglong/Desktop/新游戏3/梁日班/visual/html-game-rule-horror/polish-20260824-en/17-four-plus-papers-before.png",
+    "/Users/jianglong/Desktop/新游戏3/梁日班/visual/html-game-rule-horror/polish-20260824-en/22-six-skins-before.png",
+    "/Users/jianglong/Desktop/新游戏3/梁日班/visual/html-game-rule-horror/polish-20260824-en/21-handover-flags-no-progress-before.png",
+    "/Users/jianglong/Desktop/新游戏3/梁日班/visual/html-game-rule-horror/polish-20260824-en/14-paper-voice-diff-before.png",
+    "/Users/jianglong/Desktop/新游戏3/梁日班/visual/html-game-rule-horror/polish-20260824-en/03-success-day7-ji-before.png",
+    "/Users/jianglong/Desktop/新游戏3/梁日班/visual/html-game-rule-horror/polish-20260824-en/04-near-fail-late-before.png",
+    "/Users/jianglong/Desktop/新游戏3/梁日班/visual/html-game-rule-horror/polish-20260824-en/06-narrow-320-cover-before.png",
+    "/Users/jianglong/Desktop/新游戏3/梁日班/visual/html-game-rule-horror/polish-20260824-en/06-narrow-320-before.png",
+    "/Users/jianglong/Desktop/新游戏3/梁日班/visual/html-game-rule-horror/polish-20260824-en/08-touch-targets-before.png",
+    "/Users/jianglong/Desktop/新游戏3/梁日班/visual/html-game-rule-horror/polish-20260824-en/08-touch-targets-390-before.png",
+    "/Users/jianglong/Desktop/新游戏3/梁日班/visual/html-game-rule-horror/polish-20260824-en/10-non-color-state-before.png"
+  ],
+  "sizes": {
+    "before-en": {
+      "btn-enter": null,
+      "btn-write": {
+        "w": 300,
+        "h": 48,
+        "visible": true
+      },
+      "btn-submit": {
+        "w": 278,
+        "h": 44,
+        "visible": true
+      },
+      "btn-sunset": {
+        "w": 300,
+        "h": 44,
+        "visible": true
+      },
+      "btn-next": {
+        "w": 278,
+        "h": 44,
+        "visible": true
+      },
+      "btn-jianli-line": {
+        "w": 242,
+        "h": 44,
+        "visible": true
+      }
+    }
+  }
+}

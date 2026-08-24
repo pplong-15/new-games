@@ -1,0 +1,302 @@
+/* shop-detail-2008
+ * 记忆 2008 电商详情：橙头、左图右买、参数表。不要平台商标。
+ * 950px；左图 300；价红 #c00 20px；立刻购买橙斜边钮。12px 宋体。
+ */
+html.skin-shop-detail-2008 {
+  --orange: #ff4400;
+  --hi: #ff8844;
+  --lo: #c33000;
+  --price: #c00;
+  --link: #36c;
+}
+html.skin-shop-detail-2008,
+html.skin-shop-detail-2008 body,
+html.skin-shop-detail-2008 div,
+html.skin-shop-detail-2008 span,
+html.skin-shop-detail-2008 p,
+html.skin-shop-detail-2008 a,
+html.skin-shop-detail-2008 h1,
+html.skin-shop-detail-2008 form,
+html.skin-shop-detail-2008 input,
+html.skin-shop-detail-2008 button,
+html.skin-shop-detail-2008 table,
+html.skin-shop-detail-2008 th,
+html.skin-shop-detail-2008 td,
+html.skin-shop-detail-2008 b {
+  margin: 0;
+  padding: 0;
+}
+html.skin-shop-detail-2008 body {
+  background: #fff;
+  color: #333;
+  font: 12px/1.6 SimSun, "Songti SC", sans-serif;
+}
+html.skin-shop-detail-2008 a { color: var(--link); text-decoration: none; }
+html.skin-shop-detail-2008 a:hover { text-decoration: underline; }
+html.skin-shop-detail-2008 input,
+html.skin-shop-detail-2008 button {
+  font: 12px SimSun, sans-serif;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+html.skin-shop-detail-2008 .clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+html.skin-shop-detail-2008 .top {
+  background: var(--orange);
+  color: #fff;
+  height: 36px;
+}
+html.skin-shop-detail-2008 .top-inner {
+  width: 950px;
+  height: 36px;
+  margin: 0 auto;
+}
+html.skin-shop-detail-2008 .top b {
+  float: left;
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+html.skin-shop-detail-2008 .top a {
+  float: left;
+  color: #fff;
+  height: 36px;
+  line-height: 36px;
+  margin-left: 14px;
+}
+html.skin-shop-detail-2008 .top a:hover { color: #ff0; text-decoration: none; }
+html.skin-shop-detail-2008 .top form {
+  float: right;
+  padding: 6px 0 0;
+}
+html.skin-shop-detail-2008 .top input {
+  float: left;
+  width: 220px;
+  height: 16px;
+  line-height: 16px;
+  border: 1px solid #c33000;
+  padding: 3px 4px;
+  background: #fff;
+  color: #333;
+}
+html.skin-shop-detail-2008 .top button {
+  float: left;
+  height: 24px;
+  margin-left: 4px;
+  padding: 0 10px;
+  color: #fff;
+  background: var(--orange);
+  border: 1px solid;
+  border-color: var(--hi) var(--lo) var(--lo) var(--hi);
+  cursor: pointer;
+}
+
+html.skin-shop-detail-2008 .wrap {
+  width: 950px;
+  margin: 0 auto;
+}
+html.skin-shop-detail-2008 .crumb {
+  padding: 8px 0;
+  color: #666;
+}
+html.skin-shop-detail-2008 .crumb a { color: #666; }
+
+html.skin-shop-detail-2008 .detail {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eee;
+}
+html.skin-shop-detail-2008 .detail:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+html.skin-shop-detail-2008 .pic {
+  float: left;
+  width: 300px;
+  height: 300px;
+  background: #ccc;
+  border: 1px solid #999;
+}
+html.skin-shop-detail-2008 .thumbs {
+  float: left;
+  width: 300px;
+  clear: left;
+  padding-top: 6px;
+}
+html.skin-shop-detail-2008 .thumbs i {
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-right: 4px;
+  border: 1px solid #ccc;
+  background: #ddd;
+}
+html.skin-shop-detail-2008 .info {
+  float: left;
+  width: 620px;
+  margin-left: 20px;
+}
+html.skin-shop-detail-2008 h1 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+html.skin-shop-detail-2008 .price-box {
+  background: #fff2e8;
+  border: 1px solid #ffd0b0;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+}
+html.skin-shop-detail-2008 .price-box .lab {
+  color: #666;
+}
+html.skin-shop-detail-2008 .price {
+  color: var(--price);
+  font-size: 20px;
+  font-weight: 700;
+  font-family: Arial, SimSun, sans-serif;
+}
+html.skin-shop-detail-2008 .row {
+  padding: 4px 0;
+  color: #666;
+}
+html.skin-shop-detail-2008 .buy {
+  margin-top: 12px;
+  height: 32px;
+  padding: 0 28px;
+  color: #fff;
+  background: var(--orange);
+  border: 1px solid;
+  border-color: var(--hi) var(--lo) var(--lo) var(--hi);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+html.skin-shop-detail-2008 .buy-sec {
+  height: 28px;
+  margin-left: 8px;
+  padding: 0 16px;
+  background: #ffe4d0;
+  color: var(--orange);
+  border: 1px solid;
+  border-color: #ffd0b0 #e08040 #e08040 #ffd0b0;
+  cursor: pointer;
+}
+
+html.skin-shop-detail-2008 .sec-hd {
+  margin: 16px 0 0;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 8px;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-bottom: 0;
+  font-weight: 700;
+}
+html.skin-shop-detail-2008 .params {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  font-size: 12px;
+}
+html.skin-shop-detail-2008 .params th,
+html.skin-shop-detail-2008 .params td {
+  border: 1px solid #eee;
+  padding: 6px 8px;
+  text-align: left;
+}
+html.skin-shop-detail-2008 .params th {
+  width: 120px;
+  background: #fafafa;
+  color: #666;
+  font-weight: 400;
+}
+
+html.skin-shop-detail-2008 .site-foot {
+  width: 950px;
+  margin: 20px auto;
+  text-align: center;
+  color: #999;
+  border-top: 1px solid #eee;
+  padding-top: 8px;
+}
+
+/* 本局骨架桥：页用 #wrap，不是对照馆 .top/.wrap/.detail */
+html.skin-shop-detail-2008 body::before {
+  content: "泰安纸马铺　　首页　我的订单　收藏夹";
+  display: block;
+  background: #ff4400;
+  color: #fff;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 12px;
+  font: 14px/36px SimSun, "Songti SC", sans-serif;
+  letter-spacing: 1px;
+}
+html.skin-shop-detail-2008 #wrap {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 10px 8px 24px;
+  box-sizing: border-box;
+}
+html.skin-shop-detail-2008 #wrap:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+html.skin-shop-detail-2008 #wrap h1 {
+  font: 700 16px/22px SimSun, "Songti SC", sans-serif;
+  margin: 8px 0 10px;
+  color: #333;
+}
+html.skin-shop-detail-2008 #wrap p {
+  margin: 8px 0;
+  font: 12px/1.7 SimSun, "Songti SC", sans-serif;
+  color: #333;
+}
+html.skin-shop-detail-2008 #wrap img {
+  float: left;
+  width: 300px;
+  max-width: 46%;
+  height: auto;
+  margin: 0 16px 8px 0;
+  border: 1px solid #999;
+  background: #ccc;
+}
+html.skin-shop-detail-2008 #wrap a {
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  padding: 0 10px;
+  margin: 4px 4px 0 0;
+  color: #fff;
+  background: #ff4400;
+  border: 1px solid;
+  border-color: #ff8844 #c33000 #c33000 #ff8844;
+  text-decoration: none;
+  font: 12px/24px SimSun, "Songti SC", sans-serif;
+}
+html.skin-shop-detail-2008 .top input,
+html.skin-shop-detail-2008 .top button {
+  min-height: 44px;
+  height: 44px;
+  box-sizing: border-box;
+}
+html.skin-shop-detail-2008 .top,
+html.skin-shop-detail-2008 .top-inner { height: auto; min-height: 44px; }
+html.skin-shop-detail-2008 body { background: #fff8f3; }
+html.skin-shop-detail-2008 #wrap { max-width: 950px; }

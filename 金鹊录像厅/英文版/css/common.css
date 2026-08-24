@@ -1,9 +1,25 @@
-/* 金鹊录像厅：页脚、搜索嵌入、窄屏。不要做成游戏 HUD。 */
+/* 金鹊录像厅：页脚、搜索嵌入、窄屏、触控。不要做成游戏 HUD。 */
 :root { --ft-muted: #888; }
 html { box-sizing: border-box; }
 *, *::before, *::after { box-sizing: inherit; }
 img { max-width: 100%; height: auto; }
-:focus-visible { outline: 2px solid #d15c20; outline-offset: 2px; }
+:focus-visible {
+  outline: 3px solid #d15c20;
+  outline-offset: 2px;
+}
+html.skin-shop-local-2010s :focus-visible { outline-color: #1a1a1a; }
+html.skin-forbidden :focus-visible { outline: 3px dashed #ffd54a; outline-offset: 3px; }
+html.skin-search-results :focus-visible { outline-color: #006064; }
+html.skin-gov-redbar :focus-visible { outline: 3px dashed #111; }
+html.skin-service-cyan-desk :focus-visible { outline-color: #007bff; }
+html.skin-discuz-board :focus-visible { outline-color: #1f5d96; }
+#search-form input:focus-visible,
+#search-input:focus-visible,
+#search-form button:focus-visible {
+  outline: 3px solid #1a1a1a;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 1px #fff;
+}
 .sr-only {
   position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
   overflow: hidden; clip: rect(0,0,0,0); border: 0;
@@ -55,27 +71,91 @@ img.avatar-photo {
 .muted { color: #888; }
 .flash {
   border: 1px solid #ccc;
-  padding: 8px 12px;
+  padding: 8px 12px 8px 36px;
   margin: 8px 0;
   background: #fffbe6;
+  position: relative;
+  min-height: 44px;
 }
-.flash-bad { background: #fdecea; border-color: #f5c2c0; }
-.flash-ok { background: #eaf7ea; border-color: #b7dfb9; }
+.flash::before {
+  position: absolute;
+  left: 10px;
+  top: 8px;
+  font-weight: 700;
+  font-family: "Courier New", monospace;
+  content: "!";
+}
+.flash-bad {
+  background: #fdecea;
+  border: 2px dashed #7a1f1a;
+  color: #4a1210;
+}
+.flash-bad::before { content: "x"; }
+.flash-ok {
+  background: #eaf7ea;
+  border: 2px solid #1b5e20;
+  color: #1b5e20;
+}
+.flash-ok::before { content: "+"; }
 html.reduce *, html.reduce *::before, html.reduce *::after {
   animation: none !important;
   transition: none !important;
 }
 html.large body { font-size: 18px !important; line-height: 1.7; }
 
+/* —— D9：搜框 / 搜钮 / 主链控件 ≥44px —— */
+#search-form {
+  display: inline-flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 4px;
+  max-width: 100%;
+  vertical-align: middle;
+}
+#search-form input,
+#search-input {
+  min-height: 44px;
+  height: 44px;
+  width: min(220px, 52vw);
+  min-width: 0;
+  font-size: 16px;
+  line-height: 1.2;
+  box-sizing: border-box;
+  padding: 8px 10px;
+}
+#search-form button {
+  min-height: 44px;
+  height: 44px;
+  min-width: 44px;
+  padding: 0 12px;
+  font-size: 14px;
+  box-sizing: border-box;
+  line-height: 1;
+}
+
 html.skin-shop-local-2010s nav a[aria-current="page"] { background: #d15c20; }
 html.skin-shop-local-2010s main { padding: 0 24px 24px; max-width: 960px; margin: 0 auto; }
 html.skin-shop-local-2010s .hero-photo { margin: 0 0 16px; }
-html.skin-shop-local-2010s .dead { color: #aaa; cursor: default; }
+html.skin-shop-local-2010s .dead {
+  color: #666;
+  cursor: default;
+  text-decoration: line-through;
+  border: 1px dashed #888;
+  background: #ececec;
+}
+html.skin-shop-local-2010s [data-act="hint"] {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 10px 16px;
+}
 
 html.skin-qzone-modules .topbar {
   display: flex;
   align-items: center;
   padding: 0;
+  height: auto;
+  min-height: 52px;
+  line-height: 1.3;
 }
 html.skin-qzone-modules .topbar-inner {
   width: 900px;
@@ -83,8 +163,11 @@ html.skin-qzone-modules .topbar-inner {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  height: 36px;
-  padding: 0 12px;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-height: 52px;
+  height: auto;
+  padding: 4px 12px;
 }
 html.skin-qzone-modules .topbar form { margin-left: auto; display: flex; gap: 4px; }
 html.skin-blog-personal-2008 .nav {
@@ -92,8 +175,17 @@ html.skin-blog-personal-2008 .nav {
   align-items: center;
   gap: 8px;
   flex-wrap: wrap;
+  padding: 8px 16px;
+  min-height: 52px;
 }
 html.skin-blog-personal-2008 .nav form { margin-left: auto; display: flex; gap: 4px; }
+html.skin-discuz-board .hd {
+  flex-wrap: wrap;
+  gap: 8px;
+  min-height: 52px;
+  height: auto;
+  padding: 8px 12px;
+}
 html.skin-discuz-board .hd form,
 html.skin-gov-redbar .links form,
 html.skin-corp-table-2005 .nav form,
@@ -105,25 +197,60 @@ html.skin-service-cyan-desk header form {
   display: inline-flex;
   gap: 4px;
   align-items: center;
+  flex-wrap: wrap;
+  max-width: 100%;
 }
-html.skin-blog-personal-2008 .nav input,
-html.skin-qzone-modules .topbar input,
-html.skin-discuz-board .hd input,
-html.skin-gov-redbar .links input,
-html.skin-corp-table-2005 .nav input,
+html.skin-gov-redbar .links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px;
+  min-height: 52px;
+}
+html.skin-corp-table-2005 .nav {
+  padding: 8px 0;
+  min-height: 52px;
+}
+html.skin-classified-yellow .top {
+  flex-wrap: wrap;
+  min-height: 52px;
+}
 html.skin-classified-yellow .top input,
-html.skin-mail-web-2010 .top input,
-html.skin-archive-simsun .meta input,
-html.skin-service-cyan-desk header input {
-  height: 22px;
-  width: min(200px, 48vw);
+html.skin-classified-yellow .top button {
+  height: 44px;
+  min-height: 44px;
 }
-html.skin-wechat-mp-article .meta input { height: 28px; }
+html.skin-mail-web-2010 .top {
+  height: auto;
+  min-height: 52px;
+  line-height: 1.3;
+  padding: 4px 12px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+html.skin-mail-web-2010 .top a { float: none; margin-left: auto; }
+html.skin-mail-web-2010 .panes { height: auto; min-height: calc(100vh - 56px); }
+html.skin-wechat-mp-article .meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+html.skin-archive-simsun .meta {
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
 html.skin-search-results .hit-ex { color: #666; font-size: 13px; margin: 4px 0 12px; }
 html.skin-search-results .mini {
   background: #d15c20;
   color: #fff;
-  height: 36px;
+  height: auto;
+  min-height: 52px;
   display: flex;
   align-items: center;
 }
@@ -133,35 +260,69 @@ html.skin-search-results .mini-inner {
   margin: 0 auto;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 12px;
-  padding: 0 8px;
+  padding: 6px 8px;
 }
-html.skin-search-results .mini a { color: #fff; text-decoration: none; display: inline; margin: 0; }
+html.skin-search-results .mini a { color: #fff; text-decoration: underline; display: inline; margin: 0; min-height: 44px; line-height: 44px; }
 html.skin-search-results .mini form { margin-left: auto; display: flex; }
-html.skin-search-results .mini input { height: 22px; border: 0; width: 180px; }
-html.skin-search-results .mini button {
-  height: 22px;
+html.skin-search-results .mini input {
+  height: 44px;
+  min-height: 44px;
   border: 0;
-  background: #555;
-  color: #fff;
-  padding: 0 10px;
+  width: min(180px, 48vw);
+  font-size: 16px;
 }
-html.skin-search-results .box { margin-top: 16px; }
+html.skin-search-results .mini button {
+  height: 44px;
+  min-height: 44px;
+  min-width: 44px;
+  border: 0;
+  background: #333;
+  color: #fff;
+  padding: 0 12px;
+}
+html.skin-search-results .box { margin-top: 16px; counter-reset: hits; }
+html.skin-search-results .box a {
+  display: block;
+  margin-top: 4px;
+  padding: 10px 8px;
+  min-height: 44px;
+  border-bottom: 1px dotted #8a8a8a;
+  text-decoration: underline;
+}
+html.skin-search-results .box a::before {
+  counter-increment: hits;
+  content: counter(hits) ". ";
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+}
 html.skin-intro-manual .boot-actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
 html.skin-intro-manual .boot-actions button {
   background: #333;
   color: #fff;
   border: 0;
-  padding: 8px 14px;
+  padding: 10px 16px;
+  min-height: 44px;
+  min-width: 44px;
 }
 html.skin-intro-manual .boot-actions .ghost { background: #fff; color: #333; border: 1px solid #333; }
 html.skin-archive-simsun .choice-row { text-align: center; margin-top: 24px; text-indent: 0; }
 html.skin-archive-simsun .choice-row button {
   margin: 6px;
-  padding: 8px 16px;
+  padding: 10px 16px;
   background: #333;
   color: #fff;
   border: 0;
+  min-height: 44px;
+  min-width: 88px;
+}
+html.skin-archive-simsun [data-choice-miss]:not(:empty) {
+  border: 2px dashed #6b3a12;
+  padding: 10px 12px;
+  min-height: 44px;
+  background: repeating-linear-gradient(0deg, #f7ecd0, #f7ecd0 8px, #efe0c0 8px 16px);
+  text-indent: 0;
 }
 html.skin-archive-simsun table { width: 100%; border-collapse: collapse; margin: 12px 0; }
 html.skin-archive-simsun td, html.skin-archive-simsun th {
@@ -170,8 +331,29 @@ html.skin-archive-simsun td, html.skin-archive-simsun th {
   text-indent: 0;
 }
 html.skin-service-cyan-desk .login-box label { display: block; margin: 8px 0 4px; }
-html.skin-service-cyan-desk .login-box input { width: 100%; height: 32px; }
-html.skin-forbidden .box a { color: #f88; }
+html.skin-service-cyan-desk .login-box input { width: 100%; min-height: 44px; height: 44px; font-size: 16px; }
+html.skin-service-cyan-desk button[type="submit"] {
+  min-height: 44px;
+  min-width: 44px;
+}
+html.skin-service-cyan-desk .ghost-btn {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+html.skin-service-cyan-desk .tabs a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+html.skin-forbidden .box a {
+  color: #f88;
+  display: inline-block;
+  min-height: 44px;
+  line-height: 44px;
+  text-decoration: underline;
+  border-bottom: 1px solid #f88;
+}
 
 @media (max-width: 800px) {
   html.skin-shop-local-2010s nav ul { flex-wrap: wrap; margin: 0 8px; }
@@ -187,4 +369,30 @@ html.skin-forbidden .box a { color: #f88; }
   html.skin-service-cyan-desk .login-box,
   html.skin-service-cyan-desk table,
   html.skin-service-cyan-desk .notice { width: auto; margin: 12px; }
+}
+
+@media (max-width: 390px) {
+  #search-form { width: 100%; }
+  #search-form input,
+  #search-input,
+  html.skin-search-results .mini input {
+    width: min(100%, 70vw);
+    flex: 1 1 140px;
+  }
+  html.skin-shop-local-2010s header,
+  html.skin-shop-local-2010s nav ul,
+  html.skin-search-results .mini-inner,
+  html.skin-qzone-modules .topbar-inner,
+  html.skin-discuz-board .hd,
+  html.skin-classified-yellow .top,
+  html.skin-mail-web-2010 .top {
+    flex-wrap: wrap;
+  }
+  html.skin-shop-local-2010s main,
+  html.skin-intro-manual main,
+  html.skin-archive-simsun .record {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  html.skin-archive-simsun .record { padding: 20px 12px; margin: 12px auto; }
 }

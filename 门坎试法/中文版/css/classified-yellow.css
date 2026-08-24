@@ -137,10 +137,13 @@ html.skin-classified-yellow nav h4 {
 }
 html.skin-classified-yellow nav a {
   display: block;
-  padding: 4px 10px;
+  padding: 10px 10px;
+  min-height: 44px;
   color: var(--link);
   text-decoration: none;
-  line-height: 18px;
+  line-height: 24px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 html.skin-classified-yellow nav a:hover {
   background: #fff3c4;
@@ -271,4 +274,8 @@ html.skin-classified-yellow body > p {
     display: inline;
     margin-right: 8px;
   }
+}
+html.skin-classified-yellow :focus-visible {
+  outline: 3px dotted #5a3d00;
+  outline-offset: 2px;
 }

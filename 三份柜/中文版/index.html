@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>三份柜</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/sanfen.css">
+</head>
+<body>
+  <div id="title-layer">
+    <img src="jpeg/00-open.jpg" alt="值班台开局">
+    <div class="title-split" aria-hidden="true">
+      <div class="title-loose"><span class="mark-loose"></span>打开过 · 交班清空</div>
+      <div class="title-pin"><span class="mark-pin"></span>已证实 · 钉住留下</div>
+    </div>
+    <p class="lock-line">打开过不等于证实了。交班清空桌面，不清已证实。</p>
+    <p>卫小棠 · 澄安备临3 · 建议。今晚交已证实三条以内。</p>
+    <button type="button" id="btn-enter">进站</button>
+  </div>
+
+  <div id="app">
+    <header class="chrome">
+      <div class="brand">安怀堂</div>
+      <nav class="tabs">
+        <button type="button" class="tab" data-go="intro">说明书</button>
+        <button type="button" class="tab" data-go="home">备案首页</button>
+        <button type="button" class="tab" data-go="book">预约挂号</button>
+        <button type="button" class="tab" data-go="notice">值班须知</button>
+        <button type="button" class="tab" data-go="desk">值班台</button>
+        <button type="button" class="tab" data-go="scenic">景区</button>
+        <button type="button" class="tab" data-go="footer-miaoli">庙历</button>
+        <button type="button" class="tab" data-go="desk-claims">交条</button>
+        <button type="button" class="tab" data-go="desk-last">上一班</button>
+      </nav>
+      <form id="site-search" action="#" method="get">
+        <input type="search" name="q" id="q" placeholder="站内检索" autocomplete="off">
+        <button type="submit">检索</button>
+      </form>
+    </header>
+    <div id="page-foot"></div>
+    <div id="view"></div>
+
+    <section id="desk" class="duty-board">
+      <div class="desk-top">
+        <div class="badge">
+          安怀堂备案临聘第三周<br>
+          <span id="player-name">卫小棠</span>
+          <span id="staff-id">澄安备临3</span>
+          权限 建议
+        </div>
+        <div class="lock-line" id="lock-line">打开过不等于证实了。交班清空桌面，不清已证实。</div>
+        <div id="clock">交班钟 1800 秒</div>
+        <div class="wage">今日工钱 <span id="wage">¥0</span></div>
+      </div>
+      <p>须知：今晚交已证实三条以内。工钱按条，不按打开份数。交条要勾，不勾等于没交。刷新整晚没。零条也是一种交。</p>
+      <div class="still-wrap">
+        <img id="desk-still" src="jpeg/00-open.jpg" alt="值班台静帧">
+        <div class="hits">
+          <button type="button" class="door lit" id="door-fang">今日坐堂方</button>
+          <button type="button" class="door dim" id="door-gui">柜 · 霍成</button>
+          <button type="button" class="door dimmer" id="door-zhang">账 · 钱素白</button>
+        </div>
+      </div>
+      <div class="cols">
+        <div class="col tray tray-loose">
+          <h3>打开过</h3>
+          <div class="col-open" id="col-seen"></div>
+        </div>
+        <div class="col tray tray-pinned">
+          <h3>已证实</h3>
+          <div class="col-ver" id="col-verified"></div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div id="claims-list"></div>
+        <button type="button" id="btn-handoff">交班</button>
+        <button type="button" id="btn-submit">交条</button>
+        <button type="button" id="btn-approve">批准进销存</button>
+        <p id="msg"></p>
+      </div>
+    </section>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

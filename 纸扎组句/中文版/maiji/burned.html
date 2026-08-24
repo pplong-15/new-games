@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>麦记·按已烧入账</title>
   <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/pick-overlay.css">
 </head>
 <body>
   <div id="wrap">
@@ -20,7 +21,7 @@
       </div>
     </header>
     
-    <div class="notice">
+    <div class="notice end-burned">
       <h2>按你那句入了</h2>
       <p>纸面上的已烧和砖口的冷是两回事。井秋白若拿这句进棚，老人会信纸面。邵浦若拿这句问铺，铺号只能指着你的六格。</p>
       <p id="why"></p>
@@ -46,5 +47,6 @@
     var el = document.getElementById("why");
     if (el) el.textContent = "你交的是：" + (f.who||"") + " / " + (f.what||"") + " / " + (f.act||"") + " / " + (f.night||"") + " / " + (f.life||"") + "。";
 </script>
+  <link rel="stylesheet" href="../css/pick-overlay.css">
 </body>
 </html>

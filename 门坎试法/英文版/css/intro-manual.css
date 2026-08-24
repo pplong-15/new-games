@@ -43,14 +43,31 @@ html.skin-intro-manual .boot-actions button {
   background: #333;
   color: #fff;
   border: 0;
-  padding: 8px 16px;
+  padding: 10px 16px;
+  min-height: 44px;
+  line-height: 24px;
   margin: 0 8px 8px 0;
   font: 16px/1.4 "PingFang SC", "Microsoft YaHei", sans-serif;
   text-decoration: none;
   cursor: pointer;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 html.skin-intro-manual .boot-actions .ghost {
   background: #fff;
   color: #333;
   border: 1px solid #333;
+}
+html.skin-intro-manual :focus-visible {
+  outline: 3px dotted #111;
+  outline-offset: 2px;
+}
+@media (max-width: 800px) {
+  html.skin-intro-manual main { padding: 12px; }
+  html.skin-intro-manual .boot-actions a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 10px;
+  }
 }

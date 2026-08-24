@@ -43,8 +43,8 @@ html.skin-mail-web-2010 button {
 
 /* 顶栏 32px */
 html.skin-mail-web-2010 .top {
-  height: 32px;
-  line-height: 32px;
+  height: 44px;
+  line-height: 44px;
   background: var(--bar);
   color: #fff;
   overflow: hidden;
@@ -238,4 +238,43 @@ html.skin-mail-web-2010 .ft {
   text-align: center;
   color: #888;
   font-size: 11px;
+}
+html.skin-mail-web-2010 :focus-visible {
+  outline: 3px dotted #1a4a7c;
+  outline-offset: 2px;
+}
+@media (max-width: 800px) {
+  html.skin-mail-web-2010 .panes,
+  html.skin-mail-web-2010 .ft,
+  html.skin-mail-web-2010 body > p {
+    width: auto;
+    max-width: 100%;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  html.skin-mail-web-2010 .top {
+    height: auto;
+    overflow: visible;
+  }
+  html.skin-mail-web-2010 .top a {
+    float: none;
+    display: inline-block;
+    min-height: 44px;
+    line-height: 44px;
+  }
+  html.skin-mail-web-2010 .folders,
+  html.skin-mail-web-2010 .mails,
+  html.skin-mail-web-2010 .read {
+    float: none;
+    width: auto;
+    min-height: 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+  html.skin-mail-web-2010 .folders a,
+  html.skin-mail-web-2010 .m {
+    min-height: 44px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 }

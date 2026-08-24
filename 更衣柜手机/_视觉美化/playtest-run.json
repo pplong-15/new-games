@@ -1,0 +1,151 @@
+{
+  "ok": true,
+  "log": [
+    {
+      "step": "zh-pick-up",
+      "clicked": true,
+      "url": "http://127.0.0.1:8816/lock.html"
+    },
+    {
+      "step": "zh-pin-3716",
+      "pin": {
+        "ok": true,
+        "log": [
+          "3",
+          "7",
+          "1",
+          "6"
+        ]
+      },
+      "url": "http://127.0.0.1:8816/home.html"
+    },
+    {
+      "step": "zh-open-gallery",
+      "clicked": true,
+      "url": "http://127.0.0.1:8816/album.html"
+    },
+    {
+      "step": "zh-id-a",
+      "clicked": true,
+      "url": "http://127.0.0.1:8816/photo-zheng.html",
+      "flag": "1"
+    },
+    {
+      "step": "zh-id-b",
+      "clicked": true,
+      "url": "http://127.0.0.1:8816/photo-fu.html",
+      "flag": "1"
+    },
+    {
+      "step": "zh-backroom-how",
+      "how": "白底甲你打开过。白底乙你也打开过。"
+    },
+    {
+      "step": "zh-end-old",
+      "clicked": "三月十四那张我交给你。后来补的我没带出来。",
+      "url": "http://127.0.0.1:8816/end-old.html",
+      "p1": "你交的是拍摄停在二十三年三月十四、备注写着入职健康证的那张。",
+      "shot": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/_视觉美化/../visual/html-game-puzzle/polish-20260823-zh/playtest-end-old.png"
+    },
+    {
+      "step": "zh-end-new-ethical-near-fail",
+      "clicked": "八月十二那张我交给你。你要过检就用这张。",
+      "url": "http://127.0.0.1:8816/end-new.html",
+      "p1": "你交出去的是图库里拍摄停在八月十二的那张。系统备注是空的。",
+      "shot": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/_视觉美化/../visual/html-game-puzzle/polish-20260823-zh/playtest-end-new.png"
+    },
+    {
+      "step": "zh-old-save",
+      "how": "白底甲你打开过。白底乙你也打开过。她自己写过两张该怎么分。通话停在二十日凌晨。日历上她把办证和补拍写成两条。隔板那张是通话之后拍的。",
+      "keys": [
+        "gys_seen0314",
+        "gys_seen0812",
+        "gys_seencal",
+        "gys_seencalls",
+        "gys_seenlocker",
+        "gys_seenmemo"
+      ],
+      "shot": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/_视觉美化/../visual/html-game-puzzle/polish-20260823-zh/playtest-old-save.png"
+    },
+    {
+      "step": "zh-wrong-pin-recovery",
+      "pin": {
+        "ok": true,
+        "log": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "err": "密码错误，再试",
+      "url": "http://127.0.0.1:8816/lock.html"
+    },
+    {
+      "step": "en-pick-up",
+      "clicked": true,
+      "url": "http://127.0.0.1:8817/lock.html"
+    },
+    {
+      "step": "en-pin-3716",
+      "pin": {
+        "ok": true,
+        "log": [
+          "3",
+          "7",
+          "1",
+          "6"
+        ]
+      },
+      "url": "http://127.0.0.1:8817/home.html"
+    },
+    {
+      "step": "en-open-gallery",
+      "clicked": true,
+      "url": "http://127.0.0.1:8817/album.html"
+    },
+    {
+      "step": "en-id-a",
+      "clicked": true,
+      "url": "http://127.0.0.1:8817/photo-zheng.html",
+      "flag": "1"
+    },
+    {
+      "step": "en-id-b",
+      "clicked": true,
+      "url": "http://127.0.0.1:8817/photo-fu.html",
+      "flag": "1"
+    },
+    {
+      "step": "en-backroom-how",
+      "how": "White-bg A you opened. White-bg B you opened too. "
+    },
+    {
+      "step": "en-end-old",
+      "clicked": "The 2023-03-14 one I hand to you. The later shoot I didn't bring out.",
+      "url": "http://127.0.0.1:8817/end-old.html",
+      "p1": "You handed over the one captured 2023-03-14, note still saying hire health certificate.",
+      "shot": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/_视觉美化/../visual/html-game-puzzle/polish-20260823-en/playtest-end-old.png"
+    },
+    {
+      "step": "en-end-new-ethical-near-fail",
+      "clicked": "The 2026-08-12 one I hand to you. You need to pass, use this.",
+      "url": "http://127.0.0.1:8817/end-new.html",
+      "p1": "What you handed over is the gallery file whose capture stopped on 2026-08-12. System note is blank.",
+      "shot": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/_视觉美化/../visual/html-game-puzzle/polish-20260823-en/playtest-end-new.png"
+    },
+    {
+      "step": "en-old-save",
+      "how": "White-bg A you opened. White-bg B you opened too. She wrote how she would split the two. Calls stop on the 20th, early. Calendar she logged the certificate sitting and the reshoot as two lines. The shelf shot is after the call. ",
+      "keys": [
+        "gys_en_seen0314",
+        "gys_en_seen0812",
+        "gys_en_seencal",
+        "gys_en_seencalls",
+        "gys_en_seenlocker",
+        "gys_en_seenmemo"
+      ],
+      "shot": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/_视觉美化/../visual/html-game-puzzle/polish-20260823-en/playtest-old-save.png"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>梁日班</title>
+  <link rel="icon" href="favicon.ico" sizes="16x16">
+  <link rel="stylesheet" href="css/liang.css">
+</head>
+<body>
+  <div id="title-layer">
+    <div class="cover">
+      <div class="cover-art">
+        <img src="jpeg/00-open.jpg" alt="岗亭台面，窗外脚手架">
+        <div class="cover-tools" aria-hidden="true">
+          <span>结算条</span>
+          <span>监理夹</span>
+          <span>日落前</span>
+        </div>
+      </div>
+      <div class="cover-plaque">
+        <p class="cover-who">槐溪镇自建房工地 · 岗亭</p>
+        <p class="lock-line">今天只能听一份。哪份坑人，交差那天再说。</p>
+        <p>祁晚纸。女。二十七。临聘文员，干了两周。日落前交本日听哪份。工钱按有效日。刷新回标题。</p>
+        <p class="disclaimer">槐溪镇、本案文件与具名人物均为虚构。</p>
+        <button type="button" id="btn-enter">进站</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="desk">
+    <div class="band">
+      <div id="night-line">袁检那页摊着。未报建写成全天。点第一行进待听。</div>
+      <div id="sun">日落前</div>
+    </div>
+    <img id="still" src="jpeg/00-open.jpg" alt="岗亭台">
+    <div class="row">
+      <div id="who">祁晚纸 · 临聘文员 · 二十七 · 槐溪镇自建房工地</div>
+      <div id="night-mark">第1日</div>
+      <div>工钱 <span id="wage">¥0</span></div>
+    </div>
+    <p class="lock-line" id="lock-line">今天只能听一份。哪份坑人，交差那天再说。</p>
+    <p id="pending-mark">待听空。先点一份纸。</p>
+    <p id="group-hint">只点纸不算。写入主栏一格，日落前交，才算交差。</p>
+    <div class="gate">
+      <button type="button" id="btn-write">写入主栏</button>
+      <button type="button" id="btn-sunset">日落到了</button>
+    </div>
+    <div id="ending-layer" class="ending"></div>
+
+    <div class="split">
+      <div class="paper">
+        <h3>台面已摊</h3>
+        <div class="sheet sheet-jianli">
+          <img src="jpeg/01-jianli.jpg" alt="监理停工令">
+          <button type="button" class="clause" id="btn-jianli-line">未报建不得升梁</button>
+          <p>袁检手笔。未报建写成全天。点第一行进待听。</p>
+          <p id="limit-line"></p>
+        </div>
+        <div id="paper-red-block" class="sheet sheet-red" style="display:none">
+          <img src="jpeg/02-red.jpg" alt="东家上梁文">
+          <button type="button" class="clause" id="btn-red">吉时必须升</button>
+          <p>方守成要吉时升。宅主须在场。寄梁那一行空着。</p>
+          <div id="paper-red-extra" style="display:none">
+            <p>停工令写不得升，红纸写必须升。今日仍只交一份。</p>
+          </div>
+        </div>
+        <div id="paper-safe-block" class="sheet sheet-safe" style="display:none">
+          <img src="jpeg/03-safe.jpg" alt="队里安全单">
+          <button type="button" class="clause" id="btn-safe">外人离场</button>
+          <p>田安。外人栏圈着方守成。</p>
+          <div id="paper-safe-extra" style="display:none">
+            <p>宅主要在场，安全单又圈他外人。</p>
+          </div>
+        </div>
+        <div id="paper-pencil" class="sheet sheet-pencil" style="display:none">
+          <img src="jpeg/07-pencil.jpg" alt="上一班铅笔">
+          <p>老荀人不在，铅笔还在。吉时改过，特例写成全周。主栏不收。</p>
+          <button type="button" class="clause" id="btn-pencil">对照铅笔</button>
+        </div>
+        <div id="paper-print" class="sheet sheet-print" style="display:none">
+          <p>印发：袁检停工令，方守成红纸，田安安全单。梁压不压人，纸上没写。</p>
+          <button type="button" class="clause" id="btn-crack">夹缝旧名</button>
+        </div>
+        <div id="paper-kouxin" class="sheet sheet-kouxin" style="display:none">
+          <p>方守成口信。今日停工令和红纸都要写上。主栏只有一格。</p>
+          <button type="button" class="clause" id="btn-kouxin">两份都写上</button>
+        </div>
+        <div id="paper-visit" class="sheet sheet-visit" style="display:none">
+          <p>程匠头回访。只问今日听了哪一份。先应他，再交。</p>
+          <button type="button" class="clause" id="btn-visit">回访：今日听哪份</button>
+        </div>
+      </div>
+      <div class="clip">
+        <h3>结算条 · 主栏一格</h3>
+        <img src="jpeg/04-slip.jpg" alt="结算条">
+        <p>袋 <span id="pocket">袋空</span></p>
+        <p>主栏 <span id="slip-main">空</span></p>
+        <p>记录 <span id="slip-rec">空</span></p>
+        <img src="jpeg/10-beam.jpg" alt="寄梁绳位">
+        <button type="button" class="clause" id="btn-beam">窗外寄梁绳位</button>
+        <button type="button" class="clause" id="btn-gossip">邻家挡光闲话</button>
+        <button type="button" id="btn-trust-red" class="clause" style="display:none">把红纸当全真</button>
+        <button type="button" id="btn-submit">提交结算条</button>
+        <button type="button" id="btn-next">下一日</button>
+        <p>点纸只是待听。写入主栏一格，日落前交。两份当场打回。当日交完再点下一日。</p>
+        <div class="ghost">
+          <button type="button" id="refuse-contract">改合同原件</button>
+          <button type="button" id="refuse-sign">替宅主签字</button>
+        </div>
+      </div>
+    </div>
+    <p>工钱按有效日。空条不是有效日。邻家挡光，程匠头当闲话。刷新回标题。</p>
+    <p id="msg">日落前交本日听哪份。点纸只是待听。写入主栏一格再交。</p>
+    <div class="dims">
+      <span class="dim">工钱格 <b id="dim-wage">4</b><i class="meter" id="meter-wage" aria-hidden="true"></i></span>
+      <span class="dim">神智 <b id="dim-mind">4</b><i class="meter" id="meter-mind" aria-hidden="true"></i></span>
+      <span class="dim">班誉 <b id="dim-rep">4</b><i class="meter" id="meter-rep" aria-hidden="true"></i></span>
+      <span class="dim">镜 <b id="dim-mirror">4</b><i class="meter" id="meter-mirror" aria-hidden="true"></i></span>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

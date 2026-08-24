@@ -1,0 +1,64 @@
+/* intro-manual：游戏说明书。禁止用在假官网。 */
+html.skin-intro-manual {
+  --bg: #f4f4f4;
+  --card: #fff;
+  --ink: #333;
+  --muted: #444;
+  --header: #333;
+}
+html.skin-intro-manual body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.75 "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+html.skin-intro-manual .intro-hero {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 0;
+}
+html.skin-intro-manual .intro-hero img,
+html.skin-intro-manual .intro-hero figure.still { width: 100%; max-height: 420px; min-height: 180px; height: 240px; object-fit: cover; display: block; }
+html.skin-intro-manual .intro-hero h1 {
+  margin: 0;
+  padding: 16px;
+  font-size: 28px;
+  font-weight: 700;
+}
+html.skin-intro-manual main { max-width: 820px; margin: 0 auto; padding: 20px; }
+html.skin-intro-manual section {
+  background: var(--card);
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+html.skin-intro-manual h1, html.skin-intro-manual h2, html.skin-intro-manual h3 { color: #444; }
+html.skin-intro-manual .intro-hero h1 { color: #fff; }
+html.skin-intro-manual .enter-link { font-weight: 700; }
+html.skin-intro-manual .boot-actions { margin: 16px 0 8px; }
+html.skin-intro-manual .boot-actions a,
+html.skin-intro-manual .boot-actions button {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  border: 0;
+  padding: 12px 16px;
+  margin: 0 8px 8px 0;
+  min-height: 44px;
+  box-sizing: border-box;
+  font: 16px/1.4 "PingFang SC", "Microsoft YaHei", sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+}
+html.skin-intro-manual #search-form { display: none; }
+@media (max-width: 320px) {
+  html.skin-intro-manual main { padding: 12px; }
+  html.skin-intro-manual section { padding: 12px; }
+}
+html.skin-intro-manual .boot-actions .ghost {
+  background: #fff;
+  color: #333;
+  border: 1px solid #333;
+}

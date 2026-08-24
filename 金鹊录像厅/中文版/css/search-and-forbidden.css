@@ -1,40 +1,128 @@
-/* search-and-forbidden：搜索命中盒与禁止访问页。 */
+/* search-and-forbidden：搜索命中盒与禁止访问页。0 圆角卡；CRT 索引 vs 黑红禁页。 */
 html.skin-search-results body {
   margin: 0;
-  background: #e0f7fa;
+  background:
+    repeating-linear-gradient(0deg, rgba(0, 40, 48, 0.05) 0 1px, transparent 1px 3px),
+    #cfe8ec;
   font: 14px/1.6 "Microsoft YaHei", sans-serif;
   color: #333;
 }
 html.skin-search-results .box {
   max-width: 720px;
   margin: 40px auto;
-  background: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  background: #f4f1e4;
+  border: 1px solid #7a8a8e;
+  border-radius: 0;
   padding: 20px;
+  box-shadow: 2px 2px 0 #9bb;
 }
-html.skin-search-results h2 { text-align: center; }
-html.skin-search-results a { display: block; margin-top: 10px; color: #337ab7; }
-html.skin-search-results .miss { color: #666; }
+html.skin-search-results h2 {
+  text-align: left;
+  font-family: "Courier New", Courier, monospace;
+  border-bottom: 2px solid #006064;
+  padding-bottom: 8px;
+}
+html.skin-search-results a { display: block; margin-top: 10px; color: #0b4f8a; }
+html.skin-search-results .miss {
+  color: #222;
+  border: 2px dashed #555;
+  padding: 16px;
+  background:
+    repeating-linear-gradient(135deg, #f7f7f2 0 10px, #ecece4 10px 20px);
+  min-height: 72px;
+}
+html.skin-search-results .miss::before {
+  display: block;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #888;
+}
+html[lang="zh-CN"].skin-search-results .miss::before { content: "0 项"; }
+html[lang="en"].skin-search-results .miss::before { content: "0 hits"; }
 
 html.skin-forbidden body {
   margin: 0;
-  background: #1b1c1d;
+  background:
+    repeating-linear-gradient(135deg, #1b1c1d 0 10px, #2c0c0c 10px 20px);
   color: #f00;
   font: 14px/1.6 "Microsoft YaHei", sans-serif;
 }
 html.skin-forbidden .box {
   max-width: 720px;
   margin: 40px auto;
-  background: #2a0a0a;
-  border: 1px solid #f00;
+  background: #140404;
+  border: 4px double #f00;
+  border-radius: 0;
   padding: 24px;
   text-align: center;
 }
-html.skin-forbidden h2 { color: #f00; }
+html.skin-forbidden .box::before {
+  display: block;
+  border: 2px solid #f00;
+  padding: 6px 16px;
+  margin: 0 auto 16px;
+  width: max-content;
+  letter-spacing: 0.45em;
+  font-weight: 700;
+  font-family: "Courier New", Courier, monospace;
+}
+html[lang="zh-CN"].skin-forbidden .box::before { content: "禁止"; }
+html[lang="en"].skin-forbidden .box::before { content: "DENIED"; }
+html.skin-forbidden h2 { color: #f00; letter-spacing: 0.12em; }
 html.skin-forbidden .hidden-ink {
   background: #000;
   color: #000;
   padding: 2px 6px;
+  border: 1px dashed #400;
+  display: inline-block;
 }
 html.skin-forbidden .hidden-ink::selection { color: #f00; background: #333; }
+
+/* 搜禁词时仍留着结果页顶栏 DOM，必须换成禁页 chrome，不能变回无皮白框 */
+html.skin-forbidden .mini {
+  background: #3a0000;
+  color: #f88;
+  height: auto;
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #f00;
+}
+html.skin-forbidden .mini-inner {
+  width: 720px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 6px 8px;
+}
+html.skin-forbidden .mini a {
+  color: #f88;
+  text-decoration: underline;
+  min-height: 44px;
+  line-height: 44px;
+}
+html.skin-forbidden .mini form { margin-left: auto; display: flex; }
+html.skin-forbidden .mini input {
+  height: 44px;
+  min-height: 44px;
+  width: min(180px, 48vw);
+  font-size: 16px;
+  background: #111;
+  color: #f88;
+  border: 1px solid #f00;
+}
+html.skin-forbidden .mini button {
+  height: 44px;
+  min-height: 44px;
+  min-width: 44px;
+  border: 1px solid #f00;
+  background: #000;
+  color: #f00;
+  padding: 0 12px;
+}

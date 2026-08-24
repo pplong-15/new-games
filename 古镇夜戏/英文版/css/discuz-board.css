@@ -37,7 +37,8 @@ html.skin-discuz-board .wp { width: 960px; margin: 0 auto; }
 html.skin-discuz-board .hd {
   background: var(--head);
   color: #fff;
-  height: 48px;
+  height: auto;
+  min-height: 52px;
   overflow: hidden;
 }
 html.skin-discuz-board .hd > span:first-child,
@@ -62,20 +63,25 @@ html.skin-discuz-board .hd .y {
 html.skin-discuz-board .hd a { color: #fff; text-decoration: none; margin-left: 12px; }
 html.skin-discuz-board .hd a:hover { color: #fff; text-decoration: underline; }
 html.skin-discuz-board .hd .logo { margin-left: 0; }
-html.skin-discuz-board .hd form { float: right; height: 48px; padding: 13px 8px 0 0; }
+html.skin-discuz-board .hd form { float: right; height: auto; padding: 4px 8px 4px 0; }
 html.skin-discuz-board .hd input {
   float: left;
   width: 148px;
-  height: 16px;
-  line-height: 16px;
+  height: 44px;
+  min-height: 44px;
+  line-height: 1.2;
   border: 1px solid #1a5a96;
   padding: 2px 4px;
   background: #fff;
   color: #333;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 html.skin-discuz-board .hd button {
   float: left;
-  height: 22px;
+  height: 44px;
+  min-height: 44px;
+  min-width: 44px;
   margin-left: 4px;
   padding: 0 10px;
   color: #fff;

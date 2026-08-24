@@ -1,16 +1,30 @@
-/* 摘录钮与值班台铺件。不充当游戏仪表盘。 */
+/* 摘录钮与值班台铺件。不充当游戏仪表盘。
+ * 320/390：折栏、露出摘取与回台，禁止靠整页横滑藏主操作。
+ * 锁栏/空栏/不可用/拒收：形状+字，不唯色。不剧透选项对错。
+ */
 .pick {
   display: inline-block;
   margin: 8px 8px 8px 0;
-  padding: 4px 10px;
+  padding: 10px 12px;
+  min-height: 44px;
+  min-width: 44px;
+  box-sizing: border-box;
   cursor: pointer;
   font-size: 12px;
-  line-height: 1.4;
+  line-height: 1.35;
   vertical-align: middle;
+  border-radius: 0;
 }
 .pick[disabled] {
-  opacity: 0.55;
-  cursor: default;
+  opacity: 1;
+  color: #444;
+  cursor: not-allowed;
+  text-decoration: line-through;
+  box-shadow: inset 0 0 0 1px #666;
+}
+.pick[disabled]::before {
+  content: "× ";
+  text-decoration: none;
 }
 .hy-toast {
   position: fixed;
@@ -19,10 +33,38 @@
   max-width: 16em;
   background: #2a2a2a;
   color: #fff;
-  padding: 8px 12px;
+  padding: 8px 12px 8px 14px;
   font: 13px/1.45 "Microsoft YaHei", sans-serif;
   z-index: 40;
+  border-left: 6px solid #fff;
+  box-shadow: 2px 2px 0 #111;
 }
+.hy-toast::before {
+  content: "▸ ";
+  font-weight: 700;
+}
+
+.pick:focus-visible,
+#issue:focus-visible,
+#hint-btn:focus-visible,
+#again:focus-visible,
+.ghost-btn:focus-visible,
+.enter-link:focus-visible,
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 2px dashed #111;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hy-toast {
+    transition: none;
+    animation: none;
+  }
+}
+
+/* —— 综治值班台：四区可指认（规 / 工单 / 托盘 / 签发+草稿）—— */
 html.skin-service-cyan-desk .desk-clock {
   font: 13px/1.4 Consolas, "Courier New", monospace;
   color: #555;
@@ -30,6 +72,10 @@ html.skin-service-cyan-desk .desk-clock {
 html.skin-service-cyan-desk .desk-clock.late {
   color: #b00020;
   font-weight: 700;
+  text-decoration: underline;
+}
+html.skin-service-cyan-desk .desk-clock.late::before {
+  content: "▲ ";
 }
 html.skin-service-cyan-desk .desk-split {
   width: 94%;
@@ -43,24 +89,73 @@ html.skin-service-cyan-desk .desk-split > tbody > tr > td {
   padding: 12px 14px;
   background: #fbfdff;
 }
+html.skin-service-cyan-desk .notice {
+  border-left: 6px solid #0a6e8a;
+}
 html.skin-service-cyan-desk fieldset.tray {
-  border: 1px solid #c5d8e6;
+  border: 1px dashed #8a9eae;
   margin: 0 0 10px;
   padding: 8px 10px 10px;
+  background: #fff;
 }
 html.skin-service-cyan-desk fieldset.tray legend {
   color: #0a6e8a;
   font-weight: 700;
   padding: 0 6px;
 }
+html.skin-service-cyan-desk fieldset.tray legend::before {
+  content: "□ ";
+  font-weight: 400;
+  color: #5c4033;
+}
 html.skin-service-cyan-desk fieldset.tray label {
   display: block;
   margin: 4px 0;
   font-size: 13px;
 }
+html.skin-service-cyan-desk fieldset.tray:not(.locked) p::before {
+  content: "□ ";
+  color: #5c4033;
+}
 html.skin-service-cyan-desk .locked {
   background: #eef6ea;
-  border-color: #9cbb8e;
+  border-style: double;
+  border-width: 3px;
+  border-color: #3d5c34;
+  box-shadow: inset 5px 0 0 #3d5c34;
+}
+html.skin-service-cyan-desk fieldset.tray.locked legend::before {
+  content: "■ ";
+  color: #1b3d16;
+}
+html.skin-service-cyan-desk fieldset.tray button,
+html.skin-service-cyan-desk #issue,
+html.skin-service-cyan-desk #hint-btn,
+html.skin-service-cyan-desk #again {
+  min-height: 44px;
+  min-width: 44px;
+  box-sizing: border-box;
+  padding: 8px 14px;
+  margin: 6px 8px 6px 0;
+  cursor: pointer;
+  font: 13px/1.3 "Microsoft YaHei", sans-serif;
+}
+html.skin-service-cyan-desk #issue {
+  border: 2px outset #337ab7;
+  background: #007bff;
+  color: #fff;
+}
+html.skin-service-cyan-desk #draft {
+  border: 1px dashed #c5b48a;
+  background: #fffbeb;
+  min-height: 2.6em;
+  padding: 8px 12px;
+  margin: 0;
+  color: #5c4033;
+}
+html.skin-service-cyan-desk #draft:empty::before {
+  content: "—";
+  color: #666;
 }
 html.skin-service-cyan-desk .auth {
   font-size: 12px;
@@ -76,6 +171,13 @@ html.skin-service-cyan-desk .memo {
   font-size: 13px;
 }
 html.skin-service-cyan-desk .memo p { margin: 6px 0; }
+html.skin-service-cyan-desk .ghost-btn {
+  min-height: 44px;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+}
+
 html.skin-archive-simsun .scanpic {
   display: block;
   width: 100%;
@@ -115,30 +217,497 @@ html.skin-qzone-modules .banner.yard {
   background: url("../img/yard.jpg") center/cover no-repeat;
   text-shadow: 1px 1px 2px #222;
 }
-html.skin-mail-web-2010 .read p { text-indent: 0; }
+html.skin-qzone-modules a[href="desk.html"] {
+  display: inline-block;
+  min-height: 44px;
+  line-height: 44px;
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+
+/* 各所有者摘钮：年代面，不做成现代胶囊卡 */
+html.skin-gov-redbar .pick,
+html.skin-archive-simsun .pick,
+html.skin-corp-table-2005 .pick,
+html.skin-classified-yellow .pick,
+html.skin-mail-web-2010 .pick,
+html.skin-qzone-modules .pick,
+html.skin-service-cyan-desk .pick {
+  background: #f0f0f0;
+  color: #111;
+  border: 1px solid;
+  border-color: #fff #7a7a7a #7a7a7a #fff;
+}
+html.skin-mail-web-2010 .pick {
+  background: #3a7fc1;
+  color: #fff;
+  border-color: #9ec9ee #1a4a7c #1a4a7c #9ec9ee;
+}
+html.skin-qzone-modules .pick {
+  background: #ff9c00;
+  color: #fff;
+  border-color: #ffd080 #c46800 #c46800 #ffd080;
+}
+html.skin-mail-web-2010 .pick[disabled],
+html.skin-qzone-modules .pick[disabled] {
+  background: #ddd;
+  color: #444;
+  border-color: #bbb #888 #888 #bbb;
+}
+
+html.skin-intro-manual .boot-actions a,
+html.skin-intro-manual .boot-actions button,
+html.skin-intro-manual .enter-link {
+  min-height: 44px;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* D2 返工：仅 ≥801px。1280×800 首屏须同时看见规 / 工单 / 托盘 / 签发+草稿。
+ * 不改色、不改来源皮、不动 max-width:800px 折栏与 44px。 */
+@media (min-width: 801px) {
+  html.skin-service-cyan-desk header {
+    padding: 8px 16px;
+  }
+  html.skin-service-cyan-desk .notice {
+    width: auto;
+    margin: 8px 16px 6px;
+    padding: 8px 12px;
+  }
+  html.skin-service-cyan-desk .notice h2 {
+    font-size: 18px;
+    margin: 0 0 4px;
+  }
+  html.skin-service-cyan-desk .notice .auth,
+  html.skin-service-cyan-desk .notice p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.45;
+  }
+  html.skin-service-cyan-desk .desk-split {
+    width: auto;
+    margin: 0 16px 8px;
+  }
+  html.skin-service-cyan-desk .desk-split > tbody > tr > td {
+    padding: 8px 10px;
+  }
+  html.skin-service-cyan-desk .desk-split h3 {
+    margin: 0 0 6px;
+    font-size: 15px;
+    line-height: 1.3;
+  }
+  html.skin-service-cyan-desk .desk-split p {
+    margin: 0 0 6px;
+    line-height: 1.4;
+  }
+  html.skin-service-cyan-desk .desk-split ul {
+    margin: 0 0 8px;
+    padding-left: 1.2em;
+  }
+  html.skin-service-cyan-desk .desk-split li {
+    margin: 0;
+    line-height: 1.35;
+  }
+  html.skin-service-cyan-desk #trays {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    margin: 0 0 8px;
+  }
+  html.skin-service-cyan-desk fieldset.tray {
+    margin: 0;
+    padding: 4px 8px 6px;
+  }
+  html.skin-service-cyan-desk fieldset.tray p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.35;
+  }
+  html.skin-service-cyan-desk fieldset.tray legend {
+    padding: 0 4px;
+  }
+  html.skin-service-cyan-desk #issue {
+    margin: 4px 8px 4px 0;
+  }
+  html.skin-service-cyan-desk #draft {
+    min-height: 2.2em;
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+}
+
+/* —— 窄屏：折栏，不整页横滑；摘取/回台/上传可见可点 —— */
 @media (max-width: 800px) {
+  html.skin-gov-redbar,
+  html.skin-classified-yellow,
+  html.skin-mail-web-2010,
+  html.skin-qzone-modules,
+  html.skin-corp-table-2005,
+  html.skin-archive-simsun,
+  html.skin-service-cyan-desk,
+  html.skin-intro-manual {
+    overflow-x: clip;
+  }
   html.skin-gov-redbar body,
   html.skin-classified-yellow body,
   html.skin-mail-web-2010 body,
   html.skin-qzone-modules body,
-  html.skin-corp-table-2005 body {
-    overflow-x: auto;
+  html.skin-corp-table-2005 body,
+  html.skin-archive-simsun body,
+  html.skin-service-cyan-desk body {
+    overflow-x: clip;
+    max-width: 100%;
+  }
+
+  html.skin-service-cyan-desk header {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  html.skin-service-cyan-desk .notice,
+  html.skin-service-cyan-desk .memo,
+  html.skin-service-cyan-desk .desk-split {
+    width: auto;
+    margin: 8px;
   }
   html.skin-service-cyan-desk .desk-split > tbody > tr > td {
     display: block;
     width: auto;
   }
-  /* 过继上传：窄屏下导航链接折行，不被裁切 */
-  html.skin-corp-table-2005 .nav {
+  html.skin-service-cyan-desk fieldset.tray label {
+    min-height: 44px;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  html.skin-service-cyan-desk fieldset.tray input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    flex: 0 0 18px;
+    margin-top: 4px;
+  }
+  html.skin-service-cyan-desk #issue {
+    position: sticky;
+    bottom: 0;
+    z-index: 18;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  html.skin-gov-redbar .wrap {
+    width: auto !important;
+    max-width: 100%;
+    margin: 8px;
+    box-sizing: border-box;
+  }
+  html.skin-gov-redbar .wrap > table,
+  html.skin-gov-redbar .wrap > table > tbody,
+  html.skin-gov-redbar .wrap > table > tbody > tr,
+  html.skin-gov-redbar .box {
+    display: block;
+    width: auto !important;
+    max-width: 100%;
+  }
+  html.skin-gov-redbar .links {
+    height: auto !important;
+    line-height: 1.3;
+    overflow: visible !important;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    padding: 4px 4px 6px;
+  }
+  html.skin-gov-redbar .links a {
+    display: inline-block;
+    min-height: 44px;
+    line-height: 44px;
+    margin: 0 6px;
+  }
+  html.skin-gov-redbar .red h1 {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  html.skin-gov-redbar .box li {
+    height: auto;
+    overflow: visible;
+    line-height: 1.5;
+  }
+  html.skin-gov-redbar .sheet {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    overflow-x: auto;
+  }
+  html.skin-gov-redbar .note,
+  html.skin-gov-redbar .ft {
+    width: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  html.skin-gov-redbar .note:has(.pick),
+  html.skin-gov-redbar p:has(> .pick) {
+    position: sticky;
+    bottom: 0;
+    z-index: 16;
+    background: #fff;
+    border-top: 1px solid #c9c9c9;
+    padding: 8px;
+    margin: 0;
+  }
+
+  html.skin-classified-yellow .top-inner,
+  html.skin-classified-yellow .layout,
+  html.skin-classified-yellow .ft {
+    width: auto !important;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  html.skin-classified-yellow .top b,
+  html.skin-classified-yellow .top form,
+  html.skin-classified-yellow .top .search,
+  html.skin-classified-yellow .top input,
+  html.skin-classified-yellow .top button,
+  html.skin-classified-yellow .top .city {
+    float: none;
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+  }
+  html.skin-classified-yellow .top input {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 32px;
+  }
+  html.skin-classified-yellow .top button {
+    margin: 6px 0;
+    min-height: 32px;
+  }
+  html.skin-classified-yellow nav,
+  html.skin-classified-yellow .list {
+    float: none;
+    width: auto !important;
+    max-width: 100%;
+  }
+  html.skin-classified-yellow nav {
+    position: sticky;
+    top: 0;
+    z-index: 28;
+  }
+  html.skin-classified-yellow nav a {
+    min-height: 44px;
+    line-height: 44px;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  html.skin-classified-yellow .row a,
+  html.skin-classified-yellow .hd-row .t {
+    float: none;
+    width: auto !important;
     white-space: normal;
-    word-break: break-all;
-    padding: 4px 6px;
+    display: block;
+    overflow: visible;
+  }
+  html.skin-classified-yellow .row span,
+  html.skin-classified-yellow .hd-row span {
+    float: none;
+    display: inline;
+    width: auto;
+  }
+  html.skin-classified-yellow p:has(> .pick),
+  html.skin-classified-yellow .postbody p:has(> .pick) {
+    position: sticky;
+    bottom: 0;
+    z-index: 16;
+    background: #fff;
+    border-top: 1px solid #e6d9a8;
+    padding: 8px 4px;
+  }
+
+  html.skin-mail-web-2010 .top {
+    height: auto !important;
+    overflow: visible !important;
+    line-height: 1.3;
+  }
+  html.skin-mail-web-2010 .top b,
+  html.skin-mail-web-2010 .top a,
+  html.skin-mail-web-2010 .top .unread-n {
+    float: none;
+    display: inline-block;
+    min-height: 44px;
+    line-height: 44px;
+  }
+  html.skin-mail-web-2010 .panes,
+  html.skin-mail-web-2010 .ft {
+    width: auto !important;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  html.skin-mail-web-2010 .folders,
+  html.skin-mail-web-2010 .mails,
+  html.skin-mail-web-2010 .read {
+    float: none;
+    width: auto !important;
+    min-height: 0;
+    border-right: 0;
+    border-bottom: 1px solid #c5d0da;
+  }
+  html.skin-mail-web-2010 .toolbar {
+    height: auto;
+    overflow: visible;
+  }
+  html.skin-mail-web-2010 .toolbar button,
+  html.skin-mail-web-2010 .btn {
+    min-height: 44px;
+    float: none;
+    display: inline-block;
+  }
+  html.skin-mail-web-2010 p:has(> .pick) {
+    position: sticky;
+    bottom: 0;
+    z-index: 16;
+    background: #fff;
+    border-top: 1px solid #c5d0da;
+    padding: 8px;
+  }
+
+  html.skin-qzone-modules .topbar {
+    height: auto !important;
+  }
+  html.skin-qzone-modules .topbar-inner,
+  html.skin-qzone-modules .banner,
+  html.skin-qzone-modules .cols,
+  html.skin-qzone-modules .site-foot {
+    width: auto !important;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  html.skin-qzone-modules .topbar .logo,
+  html.skin-qzone-modules .topbar-inner > span,
+  html.skin-qzone-modules .topbar a,
+  html.skin-qzone-modules .topbar .extra,
+  html.skin-qzone-modules .topbar form,
+  html.skin-qzone-modules .topbar .site-search {
+    float: none;
+    display: inline-block;
+    height: auto;
+    min-height: 44px;
+    line-height: 44px;
+  }
+  html.skin-qzone-modules .topbar input {
+    float: none;
+    width: 8em;
+  }
+  html.skin-qzone-modules .cols > div,
+  html.skin-qzone-modules .cols > div:nth-child(2) {
+    float: none !important;
+    width: auto !important;
+    margin: 0 8px 8px;
+  }
+  html.skin-qzone-modules .talk textarea,
+  html.skin-qzone-modules .gb-form textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  html.skin-qzone-modules .banner {
+    height: auto;
+    min-height: 100px;
+    padding: 48px 12px 10px;
+  }
+  html.skin-qzone-modules p:has(> .pick) {
+    position: sticky;
+    bottom: 0;
+    z-index: 16;
+    background: #fff;
+    border-top: 1px solid #b7d48a;
+    padding: 8px;
+  }
+
+  html.skin-corp-table-2005 table.site {
+    width: 100% !important;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  html.skin-corp-table-2005 .nav {
+    overflow: visible;
+    height: auto;
+    white-space: normal;
+    padding: 4px 2px;
+    line-height: 1.6;
+    position: sticky;
+    top: 0;
+    z-index: 28;
   }
   html.skin-corp-table-2005 .nav a {
     white-space: normal;
     display: inline-block;
+    min-height: 44px;
+    line-height: 44px;
     max-width: 100%;
     overflow-wrap: anywhere;
-    margin: 1px 2px;
+    margin: 0 4px;
+  }
+  html.skin-corp-table-2005 .left,
+  html.skin-corp-table-2005 .main {
+    display: block;
+    width: auto;
+  }
+  html.skin-corp-table-2005 .left {
+    border-right: none;
+    border-bottom: 1px solid #99b;
+  }
+  html.skin-corp-table-2005 .banner {
+    height: auto;
+    line-height: 1.4;
+    font-size: 18px;
+    padding: 12px;
+    overflow: visible;
+  }
+  html.skin-corp-table-2005 .banner form {
+    float: none;
+    height: auto;
+    padding: 8px 0 0;
+  }
+  html.skin-corp-table-2005 p:has(> .pick) {
+    position: sticky;
+    bottom: 0;
+    z-index: 16;
+    background: #fff;
+    border-top: 1px solid #ccc;
+    padding: 8px;
+  }
+
+  html.skin-archive-simsun .record {
+    width: auto;
+    max-width: 100%;
+    margin: 8px;
+    padding: 16px 12px;
+    box-sizing: border-box;
+  }
+  html.skin-archive-simsun .meta {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  html.skin-archive-simsun a[href="desk.html"] {
+    display: inline-block;
+    min-height: 44px;
+    line-height: 44px;
+  }
+  html.skin-archive-simsun p:has(> .pick),
+  html.skin-archive-simsun p:has(a[href="desk.html"]) {
+    position: sticky;
+    bottom: 0;
+    z-index: 16;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    padding: 8px 0;
+    text-indent: 0;
   }
 }

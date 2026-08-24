@@ -1,29 +1,32 @@
-/* archive-simsun: internal holdings copy. */
+/* archive-simsun：内部卷宗。登山敬献记录层。 */
 html.skin-archive-simsun body {
   margin: 0;
-  background: #f7f7f7;
-  color: #333;
+  background: #f3eee3;
+  color: #2c1810;
   font: 16px/1.8 "SimSun", "Songti SC", serif;
 }
 html.skin-archive-simsun .record {
-  width: min(800px, 92%);
+  width: min(720px, 92%);
   margin: 40px auto;
-  background: #fff;
-  border: 1px solid #ddd;
+  background: #fffdf6;
+  border: 2px solid #2c1810;
+  outline: 1px solid #cbb99a;
+  outline-offset: -6px;
   padding: 40px 48px;
 }
 html.skin-archive-simsun h1 {
   text-align: center;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid #2c1810;
   padding-bottom: 12px;
   font-size: 28px;
+  color: #2c1810;
 }
 html.skin-archive-simsun .meta {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px dotted #ccc;
+  border-bottom: 1px dotted #8a7a62;
   padding-bottom: 12px;
-  color: #666;
+  color: #5c4e3a;
   margin-bottom: 24px;
 }
 html.skin-archive-simsun p { text-indent: 2em; }
@@ -36,16 +39,46 @@ html.skin-archive-simsun table {
 }
 html.skin-archive-simsun th,
 html.skin-archive-simsun td {
-  border: 1px solid #ccc;
-  padding: 6px 8px;
+  border: 1px solid #8a7a62;
+  padding: 8px;
   text-align: left;
   text-indent: 0;
 }
-html.skin-archive-simsun th { background: #f0f0f0; font-weight: 700; }
+html.skin-archive-simsun th { background: #efe6d4; font-weight: 700; }
 html.skin-archive-simsun .stamp {
   color: #a40000;
   border: 2px solid #a40000;
   display: inline-block;
   padding: 2px 8px;
   transform: rotate(-8deg);
+}
+html.skin-archive-simsun a {
+  color: #7a1010;
+  display: inline-block;
+  min-height: 44px;
+  line-height: 44px;
+  padding: 0 4px;
+}
+html.skin-archive-simsun a:focus-visible {
+  outline: 3px solid #c9a227;
+  outline-offset: 2px;
+}
+
+@media (max-width: 800px) {
+  html.skin-archive-simsun .record {
+    width: auto;
+    margin: 12px;
+    padding: 16px;
+    outline-offset: -4px;
+  }
+  html.skin-archive-simsun h1 { font-size: 20px; }
+  html.skin-archive-simsun .meta {
+    display: block;
+  }
+  html.skin-archive-simsun .meta span { display: block; margin: 4px 0; }
+  html.skin-archive-simsun table { font-size: 13px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.skin-archive-simsun .stamp { transform: none; }
 }

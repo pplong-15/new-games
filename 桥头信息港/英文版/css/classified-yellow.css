@@ -217,3 +217,84 @@ html.skin-classified-yellow .ft {
   color: #888;
   font-size: 12px;
 }
+
+/* 44 / focus / 窄屏：不改主动词，只加可点高度与单栏 */
+html.skin-classified-yellow .top,
+html.skin-classified-yellow .top-inner,
+html.skin-classified-yellow .top b,
+html.skin-classified-yellow .top form {
+  height: auto;
+  min-height: 44px;
+}
+html.skin-classified-yellow .top b { line-height: 44px; }
+html.skin-classified-yellow .top input {
+  height: 44px;
+  min-height: 44px;
+  font-size: 16px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html.skin-classified-yellow .top button {
+  height: 44px;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0 16px;
+}
+html.skin-classified-yellow .city { line-height: 44px; height: 44px; }
+html.skin-classified-yellow a:focus,
+html.skin-classified-yellow a:focus-visible,
+html.skin-classified-yellow input:focus,
+html.skin-classified-yellow button:focus,
+html.skin-classified-yellow button:focus-visible {
+  outline: 3px dotted #5a3d00;
+  outline-offset: 1px;
+}
+html.skin-classified-yellow nav a {
+  min-height: 44px;
+  line-height: 22px;
+  padding: 11px 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media (max-width: 390px) {
+  html.skin-classified-yellow .top-inner,
+  html.skin-classified-yellow .layout,
+  html.skin-classified-yellow .ft {
+    width: auto;
+    max-width: 100%;
+  }
+  html.skin-classified-yellow nav,
+  html.skin-classified-yellow .list {
+    float: none;
+    width: auto;
+  }
+  html.skin-classified-yellow .top b,
+  html.skin-classified-yellow .top form,
+  html.skin-classified-yellow .city {
+    float: none;
+    display: block;
+  }
+  html.skin-classified-yellow .top input {
+    width: 62%;
+  }
+  html.skin-classified-yellow .row a,
+  html.skin-classified-yellow .hd-row .t {
+    float: none;
+    width: auto;
+    display: block;
+    white-space: normal;
+  }
+  html.skin-classified-yellow .row span,
+  html.skin-classified-yellow .hd-row span {
+    float: none;
+    width: auto;
+    display: inline;
+    margin-right: 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.skin-classified-yellow * { transition: none; }
+}
+

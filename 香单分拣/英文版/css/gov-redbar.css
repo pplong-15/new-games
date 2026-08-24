@@ -112,3 +112,7 @@ html.skin-gov-redbar .ft {
   clear: both;
   border-top: 1px solid #eee;
 }
+@media (max-width: 800px) {
+  html.skin-gov-redbar .wrap { width: auto; max-width: 100%; }
+  html.skin-gov-redbar .wrap table { table-layout: auto; }
+}

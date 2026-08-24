@@ -1,0 +1,44 @@
+{
+  "zh": {
+    "unlockedPay": "jpeg/07-form-blank.jpg",
+    "near": {
+      "locked": false,
+      "wage": 0,
+      "sms": "表还是白的。不标哪一行。今晚仍要交。",
+      "table": "lock-table white"
+    },
+    "A": {
+      "endingId": "A",
+      "wage": 36,
+      "locked": true,
+      "form": "jpeg/08-form-locked.jpg",
+      "has11": false
+    },
+    "B": {
+      "endingId": "B",
+      "wage": 0,
+      "has11": false
+    }
+  },
+  "en": {
+    "unlockedPay": "jpeg/07-form-blank.jpg",
+    "near": {
+      "locked": false,
+      "wage": 0,
+      "sms": "The sheet is still blank. No row is marked. Still due tonight.",
+      "table": "lock-table white"
+    },
+    "A": {
+      "endingId": "A",
+      "wage": 36,
+      "locked": true,
+      "form": "jpeg/08-form-locked.jpg",
+      "has11": false
+    },
+    "B": {
+      "endingId": "B",
+      "wage": 0,
+      "has11": false
+    }
+  }
+}

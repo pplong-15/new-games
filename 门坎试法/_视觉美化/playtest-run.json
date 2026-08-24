@@ -1,0 +1,159 @@
+{
+  "ok": true,
+  "log": [
+    {
+      "step": "zh-intro",
+      "url": "http://127.0.0.1:9006/introduction.html",
+      "save": null
+    },
+    {
+      "step": "zh-login-page",
+      "url": "http://127.0.0.1:9006/desk/login.html",
+      "clicked": true
+    },
+    {
+      "step": "zh-login-ok",
+      "url": "http://127.0.0.1:9006/desk/home.html",
+      "save": {
+        "token-in": true,
+        "seen.law": true
+      }
+    },
+    {
+      "step": "zh-try-step",
+      "url": "http://127.0.0.1:9006/desk/try-reject.html",
+      "broke": true,
+      "why": "按值班法，踩踏不得记为有效过门。本台已记下：法被撞过一次。"
+    },
+    {
+      "step": "zh-sms",
+      "save": {
+        "token-in": true,
+        "seen.law": true,
+        "last-try": "step",
+        "verified.broke": true,
+        "seen.sms": true
+      },
+      "url": "http://127.0.0.1:9006/phone/mu.html"
+    },
+    {
+      "step": "zh-hold-funeral",
+      "url": "http://127.0.0.1:9006/desk/result-hold.html"
+    },
+    {
+      "step": "zh-let-in",
+      "url": "http://127.0.0.1:9006/desk/result-letin.html"
+    },
+    {
+      "step": "zh-letin-recovery",
+      "present": true
+    },
+    {
+      "step": "zh-bounce-record",
+      "bounce": {
+        "display": "block",
+        "text": "过门栏勾了干净。本台格子或试记若已经脏了，这一栏对不上。",
+        "stillAdvise": true
+      }
+    },
+    {
+      "step": "zh-old-save",
+      "chips": "<p class=\"mk-chips\">已证实：法被撞过一次</p>",
+      "save": {
+        "verified.broke": true,
+        "token-in": true,
+        "seen.law": true
+      }
+    },
+    {
+      "step": "zh-hrefs-sample",
+      "hrefs": [
+        "try.html",
+        "record.html",
+        "advise.html",
+        "try.html",
+        "record.html",
+        "board.html",
+        "shift.html",
+        "memo.html"
+      ]
+    },
+    {
+      "step": "en-intro",
+      "url": "http://127.0.0.1:9007/introduction.html",
+      "save": null
+    },
+    {
+      "step": "en-login-page",
+      "url": "http://127.0.0.1:9007/desk/login.html",
+      "clicked": true
+    },
+    {
+      "step": "en-login-ok",
+      "url": "http://127.0.0.1:9007/desk/home.html",
+      "save": {
+        "token-in": true,
+        "seen.law": true
+      }
+    },
+    {
+      "step": "en-try-step",
+      "url": "http://127.0.0.1:9007/desk/try-reject.html",
+      "broke": true,
+      "why": "Under the duty rule, stepping on the threshold cannot be recorded as a valid crossing. This desk has noted: the rule was broken once."
+    },
+    {
+      "step": "en-sms",
+      "save": {
+        "token-in": true,
+        "seen.law": true,
+        "last-try": "step",
+        "verified.broke": true,
+        "seen.sms": true
+      },
+      "url": "http://127.0.0.1:9007/phone/mu.html"
+    },
+    {
+      "step": "en-hold-funeral",
+      "url": "http://127.0.0.1:9007/desk/result-hold.html"
+    },
+    {
+      "step": "en-let-in",
+      "url": "http://127.0.0.1:9007/desk/result-letin.html"
+    },
+    {
+      "step": "en-letin-recovery",
+      "present": true
+    },
+    {
+      "step": "en-bounce-record",
+      "bounce": {
+        "display": "block",
+        "text": "The crossing field is ticked clean. If this desk's cells or a trial entry already show dirt, that field does not match.",
+        "stillAdvise": true
+      }
+    },
+    {
+      "step": "en-old-save",
+      "chips": "<p class=\"mk-chips\">Verified: the rule was broken once</p>",
+      "save": {
+        "verified.broke": true,
+        "token-in": true,
+        "seen.law": true
+      }
+    },
+    {
+      "step": "en-hrefs-sample",
+      "hrefs": [
+        "try.html",
+        "record.html",
+        "advise.html",
+        "try.html",
+        "record.html",
+        "board.html",
+        "shift.html",
+        "memo.html"
+      ]
+    }
+  ]
+}

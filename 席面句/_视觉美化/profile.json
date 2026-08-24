@@ -1,0 +1,44 @@
+{
+  "game": "席面句",
+  "build_id": "polish-20260824",
+  "ports": { "zh": "http://127.0.0.1:8846/index.html", "en": "http://127.0.0.1:8847/index.html" },
+  "iframe": false,
+  "pipeline_id": "VP1",
+  "genre_profile": "金偶像式席面采词组句",
+  "contract_status": "CANDIDATE",
+  "largest_gap": "本轮只返工 D13：12 与 20 分帧。review_status 留空待独立复评。",
+  "js_locked": {
+    "app.js": "unchanged vs 基线清单.sha256",
+    "data.js": "unchanged",
+    "engine.js": "unchanged",
+    "save_key": "ximian-state"
+  },
+  "measured": {
+    "index_html_ms": 5.2,
+    "css_ms": 0.8,
+    "enter_interactive_ms": 154,
+    "zh_bundle_bytes": 1927928,
+    "en_bundle_bytes": 1934639,
+    "zh_jpeg_bytes": 1863623,
+    "css_zh_bytes": 16655,
+    "css_en_bytes": 16823,
+    "btn_submit_px": [148, 44],
+    "word_hit_px": [70, 48],
+    "sim": "SIM_OK 37 pages 17 words",
+    "correct_sentence": "ending A wage 36",
+    "near_fail": "整句对不上 resubmit true"
+  },
+  "did_not_prove": [
+    "真机手机",
+    "色觉",
+    "帧率",
+    "e2e.mjs（缺局内 puppeteer-core）",
+    "独立盲测"
+  ],
+  "owner_chrome_sample_rgb": {
+    "intro": [59, 59, 57],
+    "site": [119, 28, 39],
+    "scan": [141, 137, 131],
+    "desk": [230, 218, 194]
+  }
+}

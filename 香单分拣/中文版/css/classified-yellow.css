@@ -216,3 +216,9 @@ html.skin-classified-yellow .ft {
   color: #888;
   font-size: 12px;
 }
+@media (max-width: 800px) {
+  html.skin-classified-yellow .top-inner,
+  html.skin-classified-yellow .layout,
+  html.skin-classified-yellow .ft { width: auto; }
+  html.skin-classified-yellow .top input { width: 12em; max-width: 60%; }
+}

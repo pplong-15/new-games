@@ -1,0 +1,335 @@
+{
+  "meta": {
+    "role": "第二批全库最终发布总审",
+    "model": "Grok 4.6",
+    "grade": "最高档",
+    "date": "2026-08-23",
+    "project_root": "/Users/jianglong/Desktop/游戏美化",
+    "skill": "/Users/jianglong/Desktop/视觉档案部-旧游戏美化-SKILL.md",
+    "wrote_only": [
+      "_视觉美化工作/最终验收总表.md",
+      "_视觉美化工作/最终验收总表.json",
+      "_视觉美化工作/发布文件清单.sha256",
+      "_视觉美化工作/改动摘要.md"
+    ],
+    "did_not_modify_games_or_single_reviews": true,
+    "candidate_does_not_count_as_pass": true,
+    "counts": { "PASS": 9, "REWORK": 0, "HOLD": 1 }
+  },
+  "blockers": [
+    {
+      "game": "夜班",
+      "review_status": "HOLD",
+      "largest_gap": "D12",
+      "detail": "店景 JPEG / 柜台 WebP / 人物与猫 WebP 许可证 UNSET；无来源、权属、可再分发证据。单局评审「原来就在包里」不能替代许可。",
+      "path": "/Users/jianglong/Desktop/游戏美化/夜班/_视觉美化/licenses.md"
+    }
+  ],
+  "environment": {
+    "backup_zip": "/Users/jianglong/Desktop/游戏美化-视觉美化前备份-20260823.zip",
+    "backup_zip_exists": true,
+    "backup_zip_bytes": 347392502,
+    "backup_zip_readable": true,
+    "backup_testzip": "ALL_OK",
+    "baseline_sha256": "/Users/jianglong/Desktop/游戏美化/_视觉美化工作/基线清单.sha256",
+    "baseline_lines": 2363,
+    "ports_9000_9228_project_http": "none",
+    "game_tree_chrome_profiles": [],
+    "zhenshan_ref_manifest_ok": 619,
+    "zhenshan_ref_manifest_fail": 0,
+    "zhenshan_whitelist_ok": 7,
+    "minsheng_player_base_dir": false,
+    "minsheng_ref_base_jpg": 32,
+    "yeban_marketing_in_player": 0,
+    "yeban_marketing_ref_sha_ok": 16
+  },
+  "player_manifest": {
+    "path": "_视觉美化工作/发布文件清单.sha256",
+    "entries": 1659,
+    "excludes": ["_视觉美化*", "visual/", "rollback*", "rejected*", "ref/", "generated-img", "_loc", ".DS_Store", "._*"],
+    "zhenshan_policy": "whitelist_7_only",
+    "per_game": {
+      "同窗在线": 149,
+      "夜台听写": 154,
+      "夜班": 40,
+      "桥头信息港": 128,
+      "民生热线": 591,
+      "清明三门": 156,
+      "牌位勘误": 150,
+      "纸扎组句": 132,
+      "镇山契": 7,
+      "门坎试法": 152
+    }
+  },
+  "games": [
+    {
+      "name": "牌位勘误",
+      "genre": "html-game-puzzle",
+      "pipeline_id": "VP1",
+      "contract_status": "CANDIDATE",
+      "independent_review_status": "PASS",
+      "independent_review_path": "牌位勘误/_视觉美化/独立评审.md",
+      "review_status": "PASS",
+      "largest_gap": "无",
+      "player_entry_zh": "牌位勘误/中文版/introduction.html",
+      "player_entry_en": "牌位勘误/英文版/introduction.html",
+      "storage_zh": "paiwei-kanwu-v1",
+      "storage_en": "paiwei-kanwu-v1-en",
+      "media_bytes_zh": 1751578,
+      "dimension_verdicts": {
+        "D1": "PASS", "D2": "PASS", "D3": "PASS", "D4": "PASS",
+        "D5": "PASS", "D6": "PASS", "D7": "PASS", "D8": "PASS",
+        "D9": "PASS", "D10": "PASS", "D11": "PASS", "D12": "PASS",
+        "D13": "PASS", "D14": "PASS"
+      },
+      "screenshots": { "zh_after": 38, "zh_before": 38, "en_after": 38, "en_before": 38 },
+      "before_log_hash_match": "76/76",
+      "lock": {
+        "engine_zh_sha256": "2eb2799a605e0e7c3344213a673a7ca134a10b75c378f71cc0879be1bb5852bf",
+        "engine_vs_zip": "MATCH"
+      },
+      "visual_html_css_exceptions": ["desk HTML class catalog-card/slip-*/is-err", "select min-height 44px", "9 CSS skins x2"]
+    },
+    {
+      "name": "夜台听写",
+      "genre": "html-game-puzzle",
+      "pipeline_id": "VP1",
+      "contract_status": "CANDIDATE",
+      "independent_review_status": "PASS",
+      "independent_review_path": "夜台听写/_视觉美化工作/独立评审.md",
+      "review_status": "PASS",
+      "largest_gap": "无",
+      "player_entry_zh": "夜台听写/中文版/introduction.html",
+      "player_entry_en": "夜台听写/英文版/introduction.html",
+      "storage_zh": "yt_seen + yt_end",
+      "storage_en": "yt_en_seen + yt_en_end",
+      "media_bytes_zh": 2981014,
+      "dimension_verdicts": {
+        "D1": "PASS", "D2": "PASS", "D3": "PASS", "D4": "PASS",
+        "D5": "PASS", "D6": "PASS", "D7": "PASS", "D8": "PASS",
+        "D9": "PASS", "D10": "PASS", "D11": "PASS", "D12": "PASS",
+        "D13": "PASS", "D14": "PASS"
+      },
+      "screenshots": { "zh_after": 28, "zh_before": 28, "en_after": 28, "en_before": 28 },
+      "visual_html_css_exceptions": ["css/win7-aero.css patches intro-manual search-and-forbidden", "seen.js heard/unheard class", "annotate.html end-* class"]
+    },
+    {
+      "name": "民生热线",
+      "genre": "html-game-puzzle",
+      "pipeline_id": "VP1",
+      "contract_status": "CANDIDATE",
+      "independent_review_status": "PASS",
+      "independent_review_path": "民生热线/_视觉美化/独立评审.md",
+      "review_status": "PASS",
+      "largest_gap": "无",
+      "player_entry_zh": "民生热线/中文版/introduction.html",
+      "player_entry_en": "民生热线/英文版/introduction.html",
+      "storage_zh": "minsheng-v1",
+      "storage_en": "minsheng-v1-en",
+      "media_bytes_zh": 6166266,
+      "stills": 280,
+      "dimension_verdicts": {
+        "D1": "PASS", "D2": "PASS", "D3": "PASS", "D4": "PASS",
+        "D5": "PASS", "D6": "PASS", "D7": "PASS", "D8": "PASS",
+        "D9": "PASS", "D10": "PASS", "D11": "PASS", "D12": "PASS",
+        "D13": "PASS", "D14": "PASS"
+      },
+      "remarks": "after 12/15/16 same sha256; 03/17 same sha256; unique dedicated still >=8; not largest_gap",
+      "clips_js_zh_sha256": "70969827c8be1fbacfbbf503673ce404321ebb89904b9687ad5f42da185b0ddb",
+      "visual_html_css_exceptions": ["winxp-luna.css app.css intro-manual.css", "engine.js tabIndex+Enter/Space only", "280 JPEG re-encode", "base moved to ref"]
+    },
+    {
+      "name": "门坎试法",
+      "genre": "html-game-puzzle",
+      "pipeline_id": "VP1",
+      "contract_status": "CANDIDATE",
+      "independent_review_status": "PASS",
+      "independent_review_path": "门坎试法/_视觉美化/独立评审.md",
+      "review_status": "PASS",
+      "largest_gap": "无",
+      "player_entry_zh": "门坎试法/中文版/introduction.html",
+      "player_entry_en": "门坎试法/英文版/introduction.html",
+      "storage_zh": "menkan-shifa-v1",
+      "storage_en": "menkan-shifa-v1-en",
+      "media_bytes_zh": 2269204,
+      "dimension_verdicts": {
+        "D1": "PASS", "D2": "PASS", "D3": "PASS", "D4": "PASS",
+        "D5": "PASS", "D6": "PASS", "D7": "PASS", "D8": "PASS",
+        "D9": "PASS", "D10": "PASS", "D11": "PASS", "D12": "PASS",
+        "D13": "PASS", "D14": "PASS"
+      },
+      "screenshots": { "zh_after": 34, "zh_before": 34, "en_after": 34, "en_before": 34 },
+      "visual_html_css_exceptions": ["10 CSS skins x2 only; HTML/JS/jpg MATCH zip"]
+    },
+    {
+      "name": "桥头信息港",
+      "genre": "html-game-puzzle",
+      "pipeline_id": "VP1",
+      "contract_status": "CANDIDATE",
+      "independent_review_status": "PASS",
+      "independent_review_path": "桥头信息港/_视觉美化工作/visual/html-game-puzzle-expired-classified/20260823-d3/independent-review.md",
+      "review_status": "PASS",
+      "largest_gap": "无",
+      "player_entry_zh": "桥头信息港/中文版/introduction.html",
+      "player_entry_en": "桥头信息港/英文版/introduction.html",
+      "storage_zh": "qiaotou-v1",
+      "storage_en": "qiaotou-v1-en",
+      "media_bytes_zh": 3272484,
+      "dimension_verdicts": {
+        "D1": "PASS", "D2": "PASS", "D3": "PASS", "D4": "PASS",
+        "D5": "PASS", "D6": "PASS", "D7": "PASS", "D8": "PASS",
+        "D9": "PASS", "D10": "PASS", "D11": "PASS", "D12": "PASS",
+        "D13": "PASS", "D14": "PASS"
+      },
+      "screenshots": { "after": 72, "before": 72 },
+      "rollback_html_in_baseline": true,
+      "visual_html_css_exceptions": ["10 CSS files x2"]
+    },
+    {
+      "name": "同窗在线",
+      "genre": "html-game-puzzle",
+      "pipeline_id": "VP1",
+      "contract_status": "CANDIDATE",
+      "independent_review_status": "PASS",
+      "independent_review_path": "同窗在线/_视觉美化/独立评审.md",
+      "review_status": "PASS",
+      "largest_gap": "无",
+      "player_entry_zh": "同窗在线/中文版/工程/index.html",
+      "player_entry_en": "同窗在线/英文版/工程/index.html",
+      "live_index_is_redirect": true,
+      "storage_zh": "tongchuang-online-v1",
+      "storage_en": "tongchuang-online-v1-en",
+      "media_bytes_zh": 389437,
+      "stills": 7,
+      "dimension_verdicts": {
+        "D1": "PASS", "D2": "PASS", "D3": "PASS", "D4": "PASS",
+        "D5": "PASS", "D6": "PASS", "D7": "PASS", "D8": "PASS",
+        "D9": "PASS", "D10": "PASS", "D11": "PASS", "D12": "PASS",
+        "D13": "PASS", "D14": "PASS"
+      },
+      "visual_html_css_exceptions": ["工程/css/common.css min-width 44 and chrome", "7 Pillow geometry jpg"]
+    },
+    {
+      "name": "纸扎组句",
+      "genre": "html-game-puzzle",
+      "pipeline_id": "VP1",
+      "contract_status": "CANDIDATE",
+      "independent_review_status": "PASS",
+      "independent_review_path": "纸扎组句/_视觉美化工作/independent-review.md",
+      "review_status": "PASS",
+      "largest_gap": "无",
+      "player_entry_zh": "纸扎组句/中文版/introduction.html",
+      "player_entry_en": "纸扎组句/英文版/introduction.html",
+      "storage_zh": "zhizha-juzi-v1",
+      "storage_en": "zhizha-juzi-v1-en",
+      "media_bytes_zh": 1350545,
+      "dimension_verdicts": {
+        "D1": "PASS", "D2": "PASS", "D3": "PASS", "D4": "PASS",
+        "D5": "PASS", "D6": "PASS", "D7": "PASS", "D8": "PASS",
+        "D9": "PASS", "D10": "PASS", "D11": "PASS", "D12": "PASS",
+        "D13": "PASS", "D14": "PASS"
+      },
+      "end_slips": {
+        "filed_zh_sha256": "b02181ea0fec2c334eb3bf5d426bdf913eb6a7f7348cbfc15a48d4c268117f70",
+        "burned_zh_sha256": "d65dbdfe614a4b620bc9a63e9ebacb20a8732c29d78c987b1e34fd6cddd187bd",
+        "bounced_zh_sha256": "da3ae49288ee3dee6effc9ad712fe0c52aeda94a0baace654ca86c17eccfe0f5",
+        "engine_zh_sha256": "b535fdfb4047e4b506e9a085370035bd7d915c912111a7b3e8aab0e5ea919973",
+        "engine_vs_zip": "MATCH"
+      },
+      "visual_html_css_exceptions": ["css/pick-overlay.css new", "HTML overlay link + bag-slip + end-filed/burned/bounced class"]
+    },
+    {
+      "name": "清明三门",
+      "genre": "html-game-puzzle",
+      "pipeline_id": "VP1",
+      "contract_status": "CANDIDATE",
+      "independent_review_status": "PASS",
+      "independent_review_path": "清明三门/_视觉美化/独立评审.md",
+      "review_status": "PASS",
+      "largest_gap": "无",
+      "player_entry_zh": "清明三门/中文版/introduction.html",
+      "player_entry_en": "清明三门/英文版/introduction.html",
+      "storage_zh": "qingming-sanmen-v1",
+      "storage_en": "qingming-sanmen-v1-en",
+      "media_bytes_zh": 1403158,
+      "dimension_verdicts": {
+        "D1": "PASS", "D2": "PASS", "D3": "PASS", "D4": "PASS",
+        "D5": "PASS", "D6": "PASS", "D7": "PASS", "D8": "PASS",
+        "D9": "PASS", "D10": "PASS", "D11": "PASS", "D12": "PASS",
+        "D13": "PASS", "D14": "PASS"
+      },
+      "jpg_reencode": 8,
+      "connection_refused_sizes_in_current_matrix": false,
+      "visual_html_css_exceptions": ["game-extra.css intro-manual.css service-cyan-desk.css x2", "8 jpg JPEG re-encode"]
+    },
+    {
+      "name": "夜班",
+      "genre": "html-game-rule-horror",
+      "pipeline_id": "VP1",
+      "contract_status": "CANDIDATE",
+      "independent_review_status": "PASS",
+      "independent_review_overridden": true,
+      "override_reason": "SKILL D12 许可不清必须 HOLD。「原来就在包里」不能替代来源/权属/可再分发证据。licenses.md 店景/柜台/人物仍 UNSET。",
+      "independent_review_path": "夜班/_视觉美化/独立评审.md",
+      "licenses_path": "夜班/_视觉美化/licenses.md",
+      "review_status": "HOLD",
+      "largest_gap": "D12 店景 JPEG / 柜台 WebP / 人物与猫 WebP 无来源、权属、可再分发证据",
+      "player_entry_zh": "夜班/中文版/夜班.html",
+      "player_entry_en": "夜班/英文版/夜班.html",
+      "storage_zh": "hengdeng-nightshift-v2",
+      "storage_en": "hengdeng-nightshift-v2-en",
+      "player_html_bytes_zh": 1492556,
+      "player_html_bytes_en": 1494885,
+      "embedded_media_decoded_bytes": 941669,
+      "dimension_verdicts": {
+        "D1": "PASS", "D2": "PASS", "D3": "PASS", "D4": "PASS",
+        "D5": "PASS", "D6": "PASS", "D7": "PASS", "D8": "PASS",
+        "D9": "PASS", "D10": "PASS", "D11": "PASS", "D12": "HOLD",
+        "D13": "PASS", "D14": "PASS"
+      },
+      "d13_seven_nights": {
+        "zh_status": "OK",
+        "en_status": "OK",
+        "debug_query": false,
+        "skip_clicks": false,
+        "ending_zh": "正常下班",
+        "ending_en": "Clock out",
+        "png_21_zh_sha256": "33e06035287ca5cfa60c27a19183e000773436b54691d34adad74ec08ad9a2b8",
+        "png_21_en_sha256": "ad8226c573dc4fc48ff7e3169b9e6e12bead09735d09c1203c9035bd9d046672"
+      },
+      "unset_assets": [
+        "interior/exterior JPEG",
+        "counter-fx WebP",
+        "character/cat WebP wang lin wet bai old taxi wu zhou cat"
+      ],
+      "visual_html_css_exceptions": ["夜班.html 工作台 CSS 与内嵌媒体重压；SAVE/结局键未改"]
+    },
+    {
+      "name": "镇山契",
+      "genre": "html-game-puzzle",
+      "pipeline_id": "VP1",
+      "contract_status": "CANDIDATE",
+      "independent_review_status": "PASS",
+      "independent_review_path": "镇山契/_视觉美化/独立评审.md",
+      "review_status": "PASS",
+      "largest_gap": "无",
+      "player_entry_zh": "镇山契/中文版/相关素材与可玩版/镇山契_第九位到访者_v0_3_真实网页与可视证据版.html",
+      "player_entry_en": "镇山契/英文版/相关素材与可玩版/镇山契_第九位到访者_v0_3_真实网页与可视证据版.html",
+      "live_index_is_redirect": true,
+      "storage_zh": "zhenshan_webgame_v0_3_cn_state_v1",
+      "storage_en": "zhenshan_webgame_v0_3_en_state_v1",
+      "player_html_bytes_zh": 694301,
+      "player_html_bytes_en": 716487,
+      "dimension_verdicts": {
+        "D1": "PASS", "D2": "PASS", "D3": "PASS", "D4": "PASS",
+        "D5": "PASS", "D6": "PASS", "D7": "PASS", "D8": "PASS",
+        "D9": "PASS", "D10": "PASS", "D11": "PASS", "D12": "PASS",
+        "D13": "PASS", "D14": "PASS"
+      },
+      "ref_619": "MANIFEST 619/619 OK",
+      "whitelist_7": "OK",
+      "remarks": "07-keyboard-focus.png is forbidden-page not focus ring; field 3px outline exists; not largest_gap",
+      "visual_html_css_exceptions": ["inline overlay CSS ZHENSHAN_VISUAL_POLISH_20260823", "empty-miss/empty-forbidden class"]
+    }
+  ]
+}

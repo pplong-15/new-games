@@ -39,11 +39,15 @@ html.skin-intro-manual .enter-link { font-weight: 700; }
 html.skin-intro-manual .boot-actions { margin: 16px 0 8px; }
 html.skin-intro-manual .boot-actions a,
 html.skin-intro-manual .boot-actions button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-height: 44px;
   background: #333;
   color: #fff;
   border: 0;
-  padding: 8px 16px;
+  padding: 12px 18px;
   margin: 0 8px 8px 0;
   font: 16px/1.4 "PingFang SC", "Microsoft YaHei", sans-serif;
   text-decoration: none;

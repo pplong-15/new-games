@@ -14,16 +14,20 @@ html.skin-classified-yellow .top {
 }
 html.skin-classified-yellow .top b { font-size: 20px; }
 html.skin-classified-yellow .top input {
-  width: 360px;
-  height: 28px;
+  width: min(360px, 70vw);
+  height: 44px;
+  min-height: 44px;
   border: 1px solid #c90;
   padding: 0 8px;
+  font-size: 16px;
 }
 html.skin-classified-yellow .top button {
   background: #c30;
   color: #fff;
   border: 0;
-  height: 30px;
+  height: 44px;
+  min-height: 44px;
+  min-width: 44px;
   padding: 0 14px;
 }
 html.skin-classified-yellow .layout {

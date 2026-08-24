@@ -239,3 +239,23 @@ html.skin-mail-web-2010 .ft {
   color: #888;
   font-size: 11px;
 }
+
+/* 窄屏：三栏改叠，顶栏回台不被 overflow 裁掉。 */
+@media (max-width: 800px) {
+  html.skin-mail-web-2010 .top {
+    height: auto;
+    overflow: visible;
+  }
+  html.skin-mail-web-2010 .panes,
+  html.skin-mail-web-2010 .ft {
+    width: auto;
+    max-width: 100%;
+  }
+  html.skin-mail-web-2010 .folders,
+  html.skin-mail-web-2010 .mails,
+  html.skin-mail-web-2010 .read {
+    float: none;
+    width: auto;
+    min-height: 0;
+  }
+}

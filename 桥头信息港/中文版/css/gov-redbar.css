@@ -113,3 +113,49 @@ html.skin-gov-redbar .ft {
   clear: both;
   border-top: 1px solid #eee;
 }
+html.skin-gov-redbar .links form,
+html.skin-gov-redbar .links input,
+html.skin-gov-redbar .links button {
+  display: inline-block;
+  vertical-align: middle;
+}
+html.skin-gov-redbar input,
+html.skin-gov-redbar button {
+  min-height: 44px;
+  height: 44px;
+  font: 14px SimSun, "Songti SC", serif;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+html.skin-gov-redbar button {
+  min-width: 44px;
+  padding: 0 12px;
+  background: var(--red);
+  color: #fff;
+  border: 1px solid #7a0a10;
+  cursor: pointer;
+}
+html.skin-gov-redbar .links {
+  height: auto;
+  min-height: 44px;
+  line-height: 44px;
+}
+html.skin-gov-redbar a:focus,
+html.skin-gov-redbar a:focus-visible,
+html.skin-gov-redbar input:focus,
+html.skin-gov-redbar button:focus,
+html.skin-gov-redbar button:focus-visible {
+  outline: 3px dotted #c9a227;
+  outline-offset: 1px;
+}
+
+@media (max-width: 390px) {
+  html.skin-gov-redbar .wrap { width: auto; margin: 8px; }
+  html.skin-gov-redbar .box { width: auto; display: block; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.skin-gov-redbar * { transition: none; }
+}
+

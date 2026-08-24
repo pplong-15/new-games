@@ -1,0 +1,65 @@
+{
+  "date": "20260823",
+  "driver": "Playwright Chromium (Google Chrome for Testing), deviceScaleFactor=2, isolated context. HTTP 9216/9217. No ?debug. No window.__ns. No Runtime state writes. Space tap + click #line to skip typing (public UI).",
+  "urls": {
+    "zh": "http://127.0.0.1:9216/夜班.html",
+    "en": "http://127.0.0.1:9217/夜班.html",
+    "debug_query": false
+  },
+  "attempts": {
+    "zh": 1,
+    "en": 1,
+    "hold": false
+  },
+  "clerk_path": {
+    "zh": "去上夜班 → 进货(牛奶/面包/烟/茶/面/电池) → 开始值班 → 老板短信知道了 → 林阿姨卖出 → 王师傅卖出 → 展开纸条 → 周晓晚卖面 → 湿发多看一眼→还是卖给他 → 吴保安请喝水 → 灯调亮 → 先睡到傍晚 ×6 间夜：拒草莓奶、不卖香、拒纸钱、收手电、不让后间、不热饭盒、收下桃子、拒二次纸钱、不开门、放钥匙、走到门口等天亮 → 看看后来",
+    "en": "Take the night shift → restock → Start shift → Got it → sell Auntie Lin → sell Wang → Unfold the slip → Zhou noodles → Look again → Sell to him anyway → Offer Wu water → lights up → Sleep till evening; nights 2–7: no strawberry, don't sell incense, don't take joss, take flashlight, no back room, don't heat, peaches, still don't sell, three taps, put keys down, walk to door wait for dawn → See afterward"
+  },
+  "ending_id": "dawn",
+  "ending_title": {
+    "zh": "正常下班",
+    "en": "Clock out"
+  },
+  "ending_source": "seven public nights then settle primary button (看看后来 / See afterward) → game finish(pickEnding(state)). Not __ns.finish. Not skip-to-dawn.",
+  "save_night_sequence": [1, 2, 3, 4, 5, 6, 7],
+  "terminal_flags_night7": [
+    "leaveAtDawn",
+    "walkOut",
+    "refusedJoss",
+    "gotFlashlight",
+    "powerOut",
+    "lookedWet",
+    "leftCash"
+  ],
+  "near_fail": "湿发男人公开选项「多看一眼」后「还是卖给他 / Sell to him anyway」。then 文案「好看吗」+干纸币+电池小票。flags.lookedWet。renderChoices 只打 choice，截图时 .choice.warn=0。未 classList.add('warn')，未改 sanity 字段。",
+  "role_spot": {
+    "method": "after real dawn, click 返回标题 / Back to title",
+    "keys_written_by_game": [
+      "hengdeng-cleared",
+      "hengdeng-endings",
+      "hengdeng-unlockedCatView",
+      "hengdeng-cleared-en",
+      "hengdeng-endings-en",
+      "hengdeng-unlockedCatView-en"
+    ],
+    "not_written": [
+      "hengdeng-unlockedRoles full roster injection"
+    ],
+    "shot": "22-role-line.png title: clerk selected, other roles locked, 正常下班/Clock out chip on, cat view unlocked by any ending"
+  },
+  "old_save_keys_still_hengdeng": true,
+  "logic_untouched": [
+    "RULES texts",
+    "buildNight",
+    "pickEnding",
+    "ROLE_ENDINGS ids",
+    "hengdeng-* key strings",
+    "space/long-press",
+    "restock/cat-eye JS",
+    "夜班.html",
+    "workbench.css"
+  ],
+  "fake_mutex_qa": "N/A — 未把同一段店规改成两个标题。16 为第3晚真实规页说明帧。",
+  "rejected_evidence": "rejected-evidence/d13-debug-contaminated/ — old after frames with debug skip, fake warn, or __ns.finish",
+  "full_click_log": "d13-play-log.json"
+}

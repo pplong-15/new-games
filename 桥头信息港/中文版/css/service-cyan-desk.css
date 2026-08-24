@@ -1,97 +1,178 @@
-/* service-cyan-desk：浅青咨询台。登山福安饭层的对标。不要再出现橙色餐馆导航。 */
+/* service-cyan-desk：2015 浅青咨询台。不要圆角胶囊，不要跟检索页抢青卡。 */
 html.skin-service-cyan-desk {
-  --page: #e0f7fa;
+  --page: #d4eef2;
   --card: #fff;
-  --title: #26c5e9;
-  --link: #337ab7;
-  --btn: #007bff;
+  --title: #0a7a92;
+  --link: #06c;
+  --btn: #007a99;
 }
 html.skin-service-cyan-desk body {
   margin: 0;
   background: var(--page);
-  color: #333;
-  font: 14px/1.6 "Microsoft YaHei", sans-serif;
+  color: #222;
+  font: 14px/1.6 "Microsoft YaHei", SimSun, sans-serif;
   overflow-x: auto;
 }
 html.skin-service-cyan-desk #wrap {
-  max-width: 960px;
+  width: 960px;
+  max-width: 100%;
   margin: 0 auto;
   background: var(--card);
   min-height: 100vh;
+  border-left: 1px solid #9cc;
+  border-right: 1px solid #9cc;
 }
 html.skin-service-cyan-desk header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 20px;
-  border-bottom: 1px solid #e0eaf1;
-}
-html.skin-service-cyan-desk #search-form { display: inline-flex; margin-left: 12px; }
-html.skin-service-cyan-desk #search-input {
-  border: 1px solid #ccc;
-  padding: 6px 10px;
-}
-html.skin-service-cyan-desk #search-form button {
-  border: 0;
-  background: #d15c20;
+  overflow: hidden;
+  zoom: 1;
+  padding: 8px 16px;
+  background: #0e7c94;
   color: #fff;
-  padding: 6px 12px;
+  border-bottom: 3px solid #065566;
+}
+html.skin-service-cyan-desk header strong {
+  float: left;
+  height: 44px;
+  line-height: 44px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+html.skin-service-cyan-desk header form,
+html.skin-service-cyan-desk #search-form {
+  float: right;
+  margin: 0;
+  height: 44px;
+}
+html.skin-service-cyan-desk #search-input,
+html.skin-service-cyan-desk input[name="q"] {
+  float: left;
+  width: 180px;
+  height: 40px;
+  min-height: 40px;
+  border: 1px solid #055;
+  padding: 0 8px;
+  background: #fff;
+  color: #111;
+  font-size: 14px;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html.skin-service-cyan-desk header button,
+html.skin-service-cyan-desk #search-form button {
+  float: left;
+  height: 44px;
+  min-height: 44px;
+  min-width: 44px;
+  margin-left: 4px;
+  padding: 0 14px;
+  border: 1px solid;
+  border-color: #7fd4e6 #055 #055 #7fd4e6;
+  background: var(--btn);
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 0;
 }
 html.skin-service-cyan-desk .ghost-btn {
-  border: 1px solid #ccc;
-  padding: 6px 12px;
-  color: #333;
+  float: right;
+  display: inline-block;
+  height: 44px;
+  min-height: 44px;
+  line-height: 42px;
+  margin-right: 8px;
+  padding: 0 12px;
+  border: 1px solid #fff;
+  color: #fff;
   text-decoration: none;
-  border-radius: 5px;
+  background: transparent;
   font-size: 13px;
+  border-radius: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 html.skin-service-cyan-desk .notice {
   width: 80%;
   margin: 20px auto;
-  background: #f0f8ff;
-  border: 1px solid #e0eaf1;
+  background: #f2fbfd;
+  border: 1px solid #9dd3de;
+  border-left: 8px solid var(--title);
   padding: 16px;
+  border-radius: 0;
 }
 html.skin-service-cyan-desk .notice h2 {
   color: var(--title);
-  text-align: center;
+  text-align: left;
   margin: 0 0 8px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
 }
-html.skin-service-cyan-desk .tabs { display: flex; justify-content: center; gap: 10px; margin: 12px 0; }
+html.skin-service-cyan-desk .tabs {
+  overflow: hidden;
+  zoom: 1;
+  width: 80%;
+  margin: 12px auto;
+}
 html.skin-service-cyan-desk .tabs a {
+  float: left;
   background: #111;
   color: #fff;
   text-decoration: none;
-  padding: 10px 24px;
-  border-radius: 4px;
+  padding: 10px 20px;
+  min-height: 44px;
+  line-height: 24px;
+  margin-right: 4px;
+  border-radius: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
-html.skin-service-cyan-desk table { width: 80%; margin: 20px auto; border-collapse: collapse; }
-html.skin-service-cyan-desk td, html.skin-service-cyan-desk th {
-  border-bottom: 1px solid #f0f0f0;
-  padding: 10px 0;
+html.skin-service-cyan-desk table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border: 1px solid #cde;
+}
+html.skin-service-cyan-desk td,
+html.skin-service-cyan-desk th {
+  border-bottom: 1px solid #dde;
+  padding: 10px 8px;
   text-align: left;
 }
-html.skin-service-cyan-desk a { color: var(--link); }
+html.skin-service-cyan-desk th {
+  background: #e7f6f9;
+  color: #065;
+}
+html.skin-service-cyan-desk header > div { float: right; }
+html.skin-service-cyan-desk header:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
 
-/* 登录页：浅青底上的 360px 白卡片，主钮 Bootstrap 风 #007bff */
 html.skin-service-cyan-desk body.login-page #wrap {
   background: transparent;
+  width: auto;
   max-width: none;
   min-height: 0;
+  border: 0;
 }
 html.skin-service-cyan-desk body.login-page header {
-  max-width: none;
-  background: #fff;
+  width: 100%;
 }
 html.skin-service-cyan-desk .login-box {
   width: 360px;
+  max-width: 94%;
   margin: 48px auto;
-  border: 1px solid #ccc;
+  border: 2px solid #0e7c94;
   padding: 24px;
   background: #fff;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  border-radius: 0;
 }
 html.skin-service-cyan-desk .login-box h1 {
   color: var(--title);
@@ -99,6 +180,8 @@ html.skin-service-cyan-desk .login-box h1 {
   font-weight: 700;
   margin: 0 0 16px;
   text-align: center;
+  border-bottom: 2px solid #0e7c94;
+  padding-bottom: 8px;
 }
 html.skin-service-cyan-desk .login-box label {
   display: block;
@@ -110,34 +193,60 @@ html.skin-service-cyan-desk .login-box input[name="pass"],
 html.skin-service-cyan-desk .login-box input[type="text"],
 html.skin-service-cyan-desk .login-box input[type="password"] {
   width: 100%;
-  height: 34px;
-  border: 1px solid #ced4da;
+  height: 44px;
+  min-height: 44px;
+  border: 1px solid #7aa;
   padding: 6px 12px;
   margin: 0 0 12px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: 16px;
   -webkit-appearance: none;
   appearance: none;
+  border-radius: 0;
 }
 html.skin-service-cyan-desk .login-box button[type="submit"] {
   width: 100%;
-  background: #007bff;
+  min-height: 44px;
+  background: #007a99;
   color: #fff;
-  border: 0;
-  padding: 8px 16px;
+  border: 1px solid;
+  border-color: #7fd4e6 #055 #055 #7fd4e6;
+  padding: 10px 16px;
   font-size: 14px;
   cursor: pointer;
+  border-radius: 0;
 }
 html.skin-service-cyan-desk .login-box .hint {
-  color: #888;
+  color: #555;
   font-size: 12px;
   margin: 12px 0 0;
+  border-left: 3px dotted #0e7c94;
+  padding-left: 8px;
 }
-html.skin-service-cyan-desk button[type="submit"] {
-  background: var(--btn);
-  color: #fff;
-  border: 0;
-  padding: 10px 18px;
+html.skin-service-cyan-desk a:focus,
+html.skin-service-cyan-desk a:focus-visible,
+html.skin-service-cyan-desk input:focus,
+html.skin-service-cyan-desk button:focus,
+html.skin-service-cyan-desk button:focus-visible {
+  outline: 3px dotted #065566;
+  outline-offset: 2px;
 }
-html.skin-service-cyan-desk .post { border-bottom: 1px solid #eee; padding: 10px 0; }
-html.skin-service-cyan-desk .post-info span { color: var(--btn); font-weight: 700; }
+
+@media (max-width: 390px) {
+  html.skin-service-cyan-desk #wrap { width: auto; }
+  html.skin-service-cyan-desk header strong,
+  html.skin-service-cyan-desk header form,
+  html.skin-service-cyan-desk .ghost-btn {
+    float: none;
+    display: block;
+  }
+  html.skin-service-cyan-desk #search-input { width: 62%; }
+  html.skin-service-cyan-desk .notice,
+  html.skin-service-cyan-desk .tabs,
+  html.skin-service-cyan-desk table { width: auto; margin-left: 8px; margin-right: 8px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.skin-service-cyan-desk * { transition: none; }
+}

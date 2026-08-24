@@ -1,0 +1,186 @@
+[
+  {
+    "lang": "zh",
+    "slug": "04-near-fail",
+    "size": [
+      1280,
+      900
+    ],
+    "before_sha": "644d9ba46c9f01839586169ef09f589122114d5a7550faddb4b85fe04ced685a",
+    "after_sha": "293c1d70ead38ef7073a63e3417159dd7d1b54d2cb45ea8593e583b61515f765",
+    "diff_bbox": [
+      160,
+      12,
+      1120,
+      353
+    ],
+    "changed_pixels": 176839,
+    "changed_ratio": 0.153506,
+    "mean_abs_rgb": [
+      3.668,
+      3.972,
+      5.311
+    ]
+  },
+  {
+    "lang": "zh",
+    "slug": "16-denied-gate",
+    "size": [
+      1280,
+      800
+    ],
+    "before_sha": "8963ddab86a6042e33f1d6d96a0f30168af7e3381ee22e189872bf31d5655298",
+    "after_sha": "7b65a25b25926922fc05982f7b6b66fef7a1889f69f194a449bbbbc7a0a85fb6",
+    "diff_bbox": [
+      160,
+      12,
+      1120,
+      337
+    ],
+    "changed_pixels": 169559,
+    "changed_ratio": 0.165585,
+    "mean_abs_rgb": [
+      6.384,
+      5.745,
+      7.117
+    ]
+  },
+  {
+    "lang": "zh",
+    "slug": "26-login-internal",
+    "size": [
+      1280,
+      800
+    ],
+    "before_sha": "b84ec9e968053f697eb4105c39b9cf97c537d765d687b5799fb7cdc60573cc2b",
+    "after_sha": "0e8e069dce5b2d1f835ee3829f3316a9c79d571e3c23acde28b9c5257f039f88",
+    "diff_bbox": [
+      0,
+      12,
+      1280,
+      564
+    ],
+    "changed_pixels": 131436,
+    "changed_ratio": 0.128355,
+    "mean_abs_rgb": [
+      7.371,
+      4.993,
+      4.065
+    ]
+  },
+  {
+    "lang": "zh",
+    "slug": "27-login-restrict",
+    "size": [
+      1280,
+      800
+    ],
+    "before_sha": "a14605072a83d54abcdeec93e48810cf89ea36e176f6e83097b059b19432a6b7",
+    "after_sha": "6d7e5e60fda8c9318ab502edf7bf0eb81f4295971c14af7eb57ea0c3ab082b59",
+    "diff_bbox": [
+      460,
+      95,
+      820,
+      544
+    ],
+    "changed_pixels": 114381,
+    "changed_ratio": 0.1117,
+    "mean_abs_rgb": [
+      5.926,
+      4.273,
+      3.719
+    ]
+  },
+  {
+    "lang": "en",
+    "slug": "04-near-fail",
+    "size": [
+      1280,
+      900
+    ],
+    "before_sha": "3175c60c0ee2650eae2fce0f05cd469e3a0ed7f5fa16557ec9b191b389c06a2d",
+    "after_sha": "79e1f08386caed631935151184d16fd9434e27574b288d6f0b135643942d7f04",
+    "diff_bbox": [
+      160,
+      12,
+      1120,
+      398
+    ],
+    "changed_pixels": 215245,
+    "changed_ratio": 0.186845,
+    "mean_abs_rgb": [
+      5.358,
+      5.486,
+      7.008
+    ]
+  },
+  {
+    "lang": "en",
+    "slug": "16-denied-gate",
+    "size": [
+      1280,
+      800
+    ],
+    "before_sha": "cdd6852bb1bf9acce5477646c8eb6b433debbb8ad150d25e5aca1f769b4821c5",
+    "after_sha": "7d4038d2e14bf01469bb2b16b35604b9d4818fb8efd06127cffd82d2d31143ed",
+    "diff_bbox": [
+      160,
+      12,
+      1120,
+      381
+    ],
+    "changed_pixels": 211730,
+    "changed_ratio": 0.206768,
+    "mean_abs_rgb": [
+      9.243,
+      8.475,
+      10.154
+    ]
+  },
+  {
+    "lang": "en",
+    "slug": "26-login-internal",
+    "size": [
+      1280,
+      800
+    ],
+    "before_sha": "6a3172e9901b597aba89420f07989c1c6f9e116a926a9c1dd84abc3eeed55d96",
+    "after_sha": "4fd5a3ec39e5843272584a107b0dc3ba5d8337085bf86c8c038cdeb61b7e29c8",
+    "diff_bbox": [
+      0,
+      12,
+      1280,
+      584
+    ],
+    "changed_pixels": 149840,
+    "changed_ratio": 0.146328,
+    "mean_abs_rgb": [
+      9.073,
+      6.074,
+      4.577
+    ]
+  },
+  {
+    "lang": "en",
+    "slug": "27-login-restrict",
+    "size": [
+      1280,
+      800
+    ],
+    "before_sha": "aa1f1bfe5d67e9d3adb56c6310bc239ddb137b78f52703403e3b2f39bf6e1ed2",
+    "after_sha": "2987668de4c580cb71ca64f60534c2528bc86278ad9554fbaca25e29943b1982",
+    "diff_bbox": [
+      460,
+      95,
+      820,
+      584
+    ],
+    "changed_pixels": 128785,
+    "changed_ratio": 0.125767,
+    "mean_abs_rgb": [
+      6.658,
+      4.963,
+      4.301
+    ]
+  }
+]

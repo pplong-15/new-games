@@ -1,0 +1,204 @@
+{
+  "zh": {
+    "intro": {
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 297.890625
+      },
+      "doors": {
+        "x": 12,
+        "y": 237.890625,
+        "width": 1256,
+        "height": 44
+      },
+      "duty": {
+        "x": 304,
+        "y": 183.390625,
+        "width": 672,
+        "height": 46.5
+      },
+      "img": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 128
+      },
+      "door_count": 3,
+      "doors_on_first_screen": true,
+      "duty_on_first_screen": true
+    },
+    "intro_320": {
+      "doors": {
+        "x": 8,
+        "y": 216.34375,
+        "width": 304,
+        "height": 148
+      },
+      "doors_on_first_screen": true
+    },
+    "stamp_reduced": "none",
+    "search_bg": "rgb(14, 110, 124)",
+    "hukou_1280_wrap": {
+      "x": 139,
+      "y": 127.984375,
+      "width": 1002,
+      "height": 242.96875
+    },
+    "hukou_320_wrap": {
+      "x": 8,
+      "y": 130.984375,
+      "width": 304,
+      "height": 424.6875
+    },
+    "near_fail_empty": {
+      "gate": "差还没写出来。先去对照台。退回。",
+      "still_slip": true,
+      "url": "http://127.0.0.1:8832/hengpu/slip.html"
+    },
+    "hung": {
+      "msg1": "差已写入。可回台面看留言，或去挂条口。",
+      "msg2": "差已写入。可回台面看留言，或去挂条口。",
+      "bits": {
+        "canSlip": true,
+        "tokens": [
+          "v-new",
+          "v-old",
+          "cmp-erase",
+          "v-hk",
+          "cmp-reason"
+        ]
+      },
+      "end": {
+        "path": "/hengpu/hung.html",
+        "tokens": [
+          "v-new",
+          "v-old",
+          "cmp-erase",
+          "v-hk",
+          "cmp-reason"
+        ],
+        "slip": {
+          "dirt": "paint",
+          "line": "move",
+          "proof": "hukou",
+          "extra": "lineonly"
+        }
+      }
+    },
+    "old_save": {
+      "new": "已打开",
+      "old": "已打开",
+      "read": {
+        "tokens": [
+          "v-new",
+          "v-old"
+        ],
+        "from": "pre-polish"
+      }
+    },
+    "bounce": "http://127.0.0.1:8832/hengpu/bounced.html"
+  },
+  "en": {
+    "intro": {
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 297.890625
+      },
+      "doors": {
+        "x": 12,
+        "y": 237.890625,
+        "width": 1256,
+        "height": 44
+      },
+      "duty": {
+        "x": 304,
+        "y": 183.390625,
+        "width": 672,
+        "height": 46.5
+      },
+      "img": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 128
+      },
+      "door_count": 3,
+      "doors_on_first_screen": true,
+      "duty_on_first_screen": true
+    },
+    "intro_320": {
+      "doors": {
+        "x": 8,
+        "y": 262.84375,
+        "width": 304,
+        "height": 148
+      },
+      "doors_on_first_screen": true
+    },
+    "stamp_reduced": "none",
+    "search_bg": "rgb(14, 110, 124)",
+    "hukou_1280_wrap": {
+      "x": 139,
+      "y": 127.984375,
+      "width": 1002,
+      "height": 264.5625
+    },
+    "hukou_320_wrap": {
+      "x": 8,
+      "y": 174.984375,
+      "width": 304,
+      "height": 555.0625
+    },
+    "near_fail_empty": {
+      "gate": "Difference is not written yet. Comparison desk first. Bounced.",
+      "still_slip": true,
+      "url": "http://127.0.0.1:8833/hengpu/slip.html"
+    },
+    "hung": {
+      "msg1": "Difference written. Go back to the desk for the note, or to the slip mouth.",
+      "msg2": "Difference written. Go back to the desk for the note, or to the slip mouth.",
+      "bits": {
+        "canSlip": true,
+        "tokens": [
+          "v-new",
+          "v-old",
+          "cmp-erase",
+          "v-hk",
+          "cmp-reason"
+        ]
+      },
+      "end": {
+        "path": "/hengpu/hung.html",
+        "tokens": [
+          "v-new",
+          "v-old",
+          "cmp-erase",
+          "v-hk",
+          "cmp-reason"
+        ],
+        "slip": {
+          "dirt": "paint",
+          "line": "move",
+          "proof": "hukou",
+          "extra": "lineonly"
+        }
+      }
+    },
+    "old_save": {
+      "new": "Opened",
+      "old": "Opened",
+      "read": {
+        "tokens": [
+          "v-new",
+          "v-old"
+        ],
+        "from": "pre-polish"
+      }
+    },
+    "bounce": "http://127.0.0.1:8833/hengpu/bounced.html"
+  }
+}

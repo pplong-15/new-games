@@ -12,8 +12,25 @@ html.skin-blog-personal-2008 .top {
 }
 html.skin-blog-personal-2008 .top h1 { margin: 0; font-size: 22px; }
 html.skin-blog-personal-2008 .top p { margin: 4px 0 0; font-size: 12px; opacity: .9; }
-html.skin-blog-personal-2008 .nav { background: #a04000; padding: 6px 16px; }
+html.skin-blog-personal-2008 .nav {
+  background: #a04000;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  min-height: 52px;
+}
 html.skin-blog-personal-2008 .nav a { color: #fff; margin-right: 14px; text-decoration: none; font-size: 13px; }
+html.skin-blog-personal-2008 .nav form { margin-left: auto; display: flex; gap: 4px; }
+html.skin-blog-personal-2008 .nav input,
+html.skin-blog-personal-2008 .nav button {
+  height: 44px;
+  min-height: 44px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+html.skin-blog-personal-2008 .nav button { min-width: 44px; }
 html.skin-blog-personal-2008 .wrap {
   width: 900px;
   margin: 12px auto;

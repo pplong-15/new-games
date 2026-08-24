@@ -64,7 +64,12 @@ html.skin-wap-phone-2007 .menu p {
   color: #fff;
   font-size: 12px;
 }
-html.skin-wap-phone-2007 .menu a { color: #ff0; }
+html.skin-wap-phone-2007 .menu a {
+  color: #ff0;
+  display: inline-block;
+  min-height: 44px;
+  line-height: 44px;
+}
 html.skin-wap-phone-2007 .num { color: #0ff; }
 html.skin-wap-phone-2007 form {
   padding: 6px;
@@ -100,9 +105,16 @@ html.skin-wap-phone-2007 .ft {
 html.skin-wap-phone-2007 .ft a {
   color: #00f;
   background: #fff;
-  padding: 0 2px;
+  padding: 0 8px;
+  display: inline-block;
+  min-height: 44px;
+  line-height: 44px;
 }
 html.skin-wap-phone-2007 .ft a.back { color: #ff0; background: transparent; }
+html.skin-wap-phone-2007 :focus-visible {
+  outline: 2px dotted #ff0;
+  outline-offset: 1px;
+}
 html.skin-wap-phone-2007 .hint {
   padding: 4px 6px;
   color: #0f0;

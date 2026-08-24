@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>麦记·句卡</title>
   <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/pick-overlay.css">
 </head>
 <body>
   <div id="wrap">
@@ -26,9 +27,9 @@
       <p>麦老把这张卡钉在权限后面。格子是死的，不能另写长文。想解释混堆怎么来的，他明早也不听。他只听六格加权限。袋里没有的词，下拉是空的，别去柜台外找同义词硬填。</p>
       <p>井秋白催得再密，也填不进未采的格。娄石的照片再糊，也不能替你勾准烧。交之前自己把档期和店群对一遍。</p>
       <p>空格没收齐，这句还不能交。一格填了也不判。词须来自已经打开的页，并且进过袋。本卡是建议，不是批条。</p>
-      <div class="bagbox" id="wordbag"></div>
+      <div class="bagbox bag-slip" id="wordbag"></div>
       <p id="bagflash"></p>
-      <form id="sent">
+      <form id="sent" class="sent-card">
         <p class="sent-row">
           <select id="slot-who"></select>的
           <select id="slot-what"></select>被
@@ -37,13 +38,13 @@
           <select id="slot-night"></select>。
           <select id="slot-life"></select>。
         </p>
-        <p>
+        <p class="auth-row">
           <label><input type="radio" name="auth" value="recommend" checked> 只作著录建议</label><br>
           <label><input type="radio" name="auth" value="approve"> 准予今夜焚化</label><br>
           <label><input type="radio" name="auth" value="teach"> 附录扎作步骤</label>
         </p>
         <p><button type="submit">成句</button></p>
-        <p id="sent-msg"></p>
+        <p id="sent-msg" class="near-msg"></p>
       </form>
       <p>档期、店群、发票对不上的时候，整句会退，不标哪一格对。对了一格也不单收。单收了，临工会只改那一格交差。</p>
       <p>权限三选在最底下。默认建议。另两格画出来，是怕临工以为没有，不是请你去勾。</p>
@@ -53,5 +54,6 @@
   </div>
   <script src="../js/engine.js"></script>
   <script>ZJ.bootSentence();</script>
+  <link rel="stylesheet" href="../css/pick-overlay.css">
 </body>
 </html>

@@ -1,14 +1,11 @@
-/* tieba-floors
- * 记忆 2011 楼层回帖：蓝顶栏 + 白帖盒 + 左 ID 右正文 + 楼中楼。不要贴吧商标。
- * 页底 #eef2f5，14px 雅黑，栏宽 980。楼层用 float，禁止 CSS Grid。
- */
+/* 牌位勘误 · 地方帖楼层。蓝条+左栏身份+楼中楼。不是著录后台。 */
 html.skin-tieba-floors {
   --bar: #2d64b3;
   --line: #e4e6eb;
   --who: #f7f8fa;
   --link: #2d64b3;
-  --bevel-hi: #6a9ad4;
-  --bevel-lo: #1b3f74;
+  --hi: #6a9ad4;
+  --lo: #1b3f74;
 }
 html.skin-tieba-floors,
 html.skin-tieba-floors body,
@@ -37,23 +34,21 @@ html.skin-tieba-floors button {
   appearance: none;
   border-radius: 0;
 }
-
-/* 满宽蓝条，内槽 980×36，白链 */
 html.skin-tieba-floors .bar {
   background: var(--bar);
-  height: 36px;
+  min-height: 36px;
   color: #fff;
 }
 html.skin-tieba-floors .bar .in {
   width: 980px;
-  height: 36px;
+  min-height: 36px;
   margin: 0 auto;
   overflow: hidden;
 }
 html.skin-tieba-floors .bar .site,
 html.skin-tieba-floors .bar > span:first-child {
   float: left;
-  height: 36px;
+  min-height: 36px;
   line-height: 36px;
   padding: 0 12px 0 0;
   font-weight: 700;
@@ -63,42 +58,23 @@ html.skin-tieba-floors .bar a {
   float: left;
   color: #fff;
   text-decoration: none;
-  height: 36px;
+  min-height: 36px;
   line-height: 36px;
   padding: 0 10px;
+  box-sizing: border-box;
+}
+@media (pointer: coarse) {
+  html.skin-tieba-floors .bar a {
+    min-height: 44px;
+    line-height: 44px;
+  }
 }
 html.skin-tieba-floors .bar a:hover {
   background: #245394;
   text-decoration: none;
   color: #fff;
 }
-html.skin-tieba-floors .bar form {
-  float: right;
-  height: 36px;
-  padding: 7px 0 0;
-}
-html.skin-tieba-floors .bar input {
-  float: left;
-  width: 148px;
-  height: 14px;
-  line-height: 14px;
-  border: 1px solid #1b3f74;
-  padding: 3px 4px;
-  background: #fff;
-  color: #333;
-}
-html.skin-tieba-floors .bar button {
-  float: left;
-  height: 22px;
-  margin-left: 4px;
-  padding: 0 8px;
-  color: #fff;
-  background: var(--bar);
-  border: 1px solid;
-  border-color: var(--bevel-hi) var(--bevel-lo) var(--bevel-lo) var(--bevel-hi);
-  cursor: pointer;
-}
-
+html.skin-tieba-floors .bar form { display: none; }
 html.skin-tieba-floors .title {
   width: 948px;
   margin: 10px auto;
@@ -108,8 +84,6 @@ html.skin-tieba-floors .title {
   font-size: 20px;
   font-weight: 700;
 }
-
-/* 楼层：左 130px float 灰底，右正文。不是 grid */
 html.skin-tieba-floors .floor {
   width: 980px;
   margin: 0 auto 8px;
@@ -151,10 +125,7 @@ html.skin-tieba-floors .txt {
   min-height: 80px;
 }
 html.skin-tieba-floors .txt p { margin: 0 0 8px; }
-html.skin-tieba-floors .n {
-  color: #999;
-  font-size: 12px;
-}
+html.skin-tieba-floors .n { color: #999; font-size: 12px; }
 html.skin-tieba-floors .txt > .n { float: right; margin: 0 0 8px 12px; }
 html.skin-tieba-floors .lzl {
   background: var(--who);
@@ -177,4 +148,41 @@ html.skin-tieba-floors .ft {
   text-align: center;
   color: #999;
   font-size: 12px;
+}
+html.skin-tieba-floors a[href="javascript:void(0)"] {
+  text-decoration: line-through;
+  cursor: not-allowed;
+  border-bottom: 1px dashed #666;
+  color: #666;
+}
+html.skin-tieba-floors :focus { outline: none; }
+html.skin-tieba-floors :focus-visible {
+  outline: 3px dotted #111;
+  outline-offset: 2px;
+}
+@media (max-width: 800px) {
+  html.skin-tieba-floors .bar .in,
+  html.skin-tieba-floors .title,
+  html.skin-tieba-floors .floor,
+  html.skin-tieba-floors .ft {
+    width: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  html.skin-tieba-floors .who {
+    float: none;
+    width: auto;
+    border-right: 0;
+    border-bottom: 1px solid #eee;
+  }
+  html.skin-tieba-floors .txt {
+    margin-left: 0;
+  }
+  html.skin-tieba-floors .bar a {
+    min-height: 44px;
+    line-height: 44px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html.skin-tieba-floors * { animation: none !important; transition: none !important; }
 }

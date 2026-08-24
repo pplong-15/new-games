@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Threshold Waybill</title>
+  <link rel="icon" href="favicon.ico" sizes="16x16">
+  <link rel="stylesheet" href="css/guomen.css">
+</head>
+<body>
+  <div id="title-layer" class="cab-boot">
+    <img src="jpeg/00-open.jpg" alt="Cab seat, night street">
+    <p class="artifact-translation">Cab seat. Clipboard on the dash. Hand in before zishi.</p>
+    <p class="lock-line">No paper is wholly true. Waybill identity decides which paper you hear.</p>
+    <p>Jiang Wanlu. Man. Twenty-nine. Two weeks as night relief driver, Shuanghekou Town. Hand the waybill and the keys before zishi (first double-hour, 23:00–01:00). Pay is by valid bill. Mark tonight, then press.</p>
+    <p class="fiction">Shuanghekou Town, Jin Gui Yuan, Jiang Wanlu, Du Heng, and Lao Shen are written.</p>
+    <button type="button" id="btn-enter">Take the seat</button>
+  </div>
+
+  <div id="desk" class="cab-desk">
+    <div class="mirror mirror-housing">Rear glass · hall threshold edge <button type="button" id="btn-mirror">Look again</button></div>
+    <div class="band">
+      <div id="radio">Shortwave. Bridge report.</div>
+      <div id="clock">12:00</div>
+    </div>
+    <img id="still" src="jpeg/00-open.jpg" alt="Cab seat">
+    <p class="artifact-translation" id="still-bridge">Cab seat. Clipboard on the dash. Hand in before zishi.</p>
+    <div class="row">
+      <div id="who">Jiang Wanlu · relief driver · twenty-nine · Shuanghekou Town</div>
+      <div id="night-mark">Night 1</div>
+      <div>Pay <span id="wage">¥0</span></div>
+    </div>
+    <div class="dims">
+      <span>Oil <b id="dim-oil">4</b></span>
+      <span>Mind <b id="dim-mind">4</b></span>
+      <span>Cab name <b id="dim-rep">4</b></span>
+      <span>Glass <b id="dim-mirror">4</b></span>
+    </div>
+    <p class="lock-line" id="lock-line">No paper is wholly true. Waybill identity decides which paper you hear.</p>
+
+    <div class="split">
+      <div class="paper seat-bin">
+        <h3 class="seat-label">Passenger seat</h3>
+        <section class="doc doc-fleet" id="paper-fleet">
+          <img src="jpeg/01-rule.jpg" alt="Fleet driver rules">
+          <p class="artifact-translation">Fleet print, typed copy. Title: driver rules. Line 1: guest names a door, go through it. Stamp: fleet print. Date blank.</p>
+          <p class="src-fleet">Shuanghekou night fleet print. Door the guest names, point the nose there. Do not ask joy or funeral. Relief pay is by valid bill.</p>
+          <button type="button" class="clause" id="fleet-listen">Guest’s door, go through · hear the guest</button>
+        </section>
+        <p class="slot-empty" id="slot-empty">This slot has no paper yet. Process slips light later. Don’t press yet.</p>
+        <div id="paper-pencil" class="doc doc-pencil" style="display:none">
+          <img src="jpeg/06-pencil.jpg" alt="Last shift’s pencil">
+          <p class="artifact-translation">Pencil on last shift’s scrap. Lao Shen’s hand. zishi. this door. must.</p>
+          <p class="src-pencil">Gone already. Pencil still in the visor slit. Lao Shen’s writing.</p>
+          <button type="button" class="clause" id="pencil-zishi">zishi this door must go</button>
+        </div>
+        <div id="paper-slip" class="doc doc-slip" style="display:none">
+          <img src="jpeg/07-slip.jpg" alt="Guest process slips">
+          <p class="artifact-translation">Process slip, typed copy. Zhou Qiming, joy, hall threshold may be crossed. Zhou Qiping, funeral, funeral does not leave a joy threshold. Stop outside.</p>
+          <p class="src-xi">Zhou Qiming. Joy (hongshi). Hall threshold may be crossed. The door character was traced once.</p>
+          <p class="src-sang">Zhou Qiping. Funeral (baishi). Funeral does not leave a joy threshold. Stop outside.</p>
+          <button type="button" id="btn-ink">Check the door-character ink</button>
+          <button type="button" class="clause" id="slip-xi">Hall threshold may be crossed · Zhou Qiming joy slip</button>
+          <button type="button" class="clause" id="slip-sang">Funeral does not leave a joy threshold · Zhou Qiping funeral slip</button>
+        </div>
+        <div id="paper-sms" class="doc doc-sms" style="display:none">
+          <img src="jpeg/05-sms.jpg" alt="Jin Gui Yuan gate SMS">
+          <p class="artifact-translation">Estate SMS, typed copy. Sender: Jin Gui Yuan property. Night work. No coffin out around zishi. This text is not to be rewritten.</p>
+          <p class="src-sms">Jin Gui Yuan property: night work. No coffin out around zishi. This SMS is not to be rewritten.</p>
+          <button type="button" class="clause" id="sms-night">No coffin out at night</button>
+        </div>
+        <div id="paper-foot" class="doc doc-foot" style="display:none">
+          <p class="src-foot">Print order: fleet night rule, then process slips, then gate SMS. One footer line. Du Heng on the radio: first print is not scripture. Calling ghosts, slope damnation — mouth talk.</p>
+          <button type="button" id="btn-order">Open the footer</button>
+        </div>
+        <p id="pair-ink">Mark two that fight. Ink stays.</p>
+        <button type="button" id="btn-waste">No joy threshold so that page is waste</button>
+      </div>
+      <div class="waybill doc-waybill">
+        <h3>Waybill</h3>
+        <img src="jpeg/03-waybill.jpg" alt="Waybill">
+        <p class="artifact-translation">Printed waybill: identity / destination / guest / hand in before zishi. Default fill: joy car, hall door, Zhou Qiming.</p>
+        <p>Destination <strong id="dest">Hall door</strong></p>
+        <p>Guest <span id="guest">Zhou Qiming</span></p>
+        <p>Identity <span id="role">Joy car</span></p>
+        <div class="roles">
+          <button type="button" id="role-xi">Joy car Zhou Qiming</button>
+          <button type="button" id="role-sang">Funeral car Zhou Qiping</button>
+          <button type="button" id="role-blank">Identity blank</button>
+        </div>
+        <p>Bag <span id="pocket">empty</span></p>
+        <p class="chips-label">Which paper to press</p>
+        <p class="chips">
+          <button type="button" data-press="fleet">Fleet</button>
+          <button type="button" data-press="pencil">Pencil</button>
+          <button type="button" data-press="xi_slip">Joy slip</button>
+          <button type="button" data-press="sang_slip">Funeral slip</button>
+          <button type="button" data-press="gate_sms">Gate SMS</button>
+        </p>
+        <button type="button" id="btn-hold">Mark tonight, then press · this bill hears this paper</button>
+        <img src="jpeg/10-keys.jpg" alt="Ignition key">
+        <p class="artifact-translation">Ignition hole. Hand over, then pull the key.</p>
+        <button type="button" id="btn-key">Hand the keys</button>
+        <div class="ghost">
+          <button type="button" id="refuse-sms">Rewrite Jin Gui Yuan gate SMS</button>
+          <button type="button" id="refuse-xi">Stamp for Zhou Qiming</button>
+          <button type="button" id="refuse-sang">Stamp for Zhou Qiping</button>
+          <button type="button" id="refuse-ghost">Write calling-ghosts on the waybill</button>
+        </div>
+      </div>
+    </div>
+    <p>Du Heng is on the radio. Pay is by valid bill. Mark a pair, then press. Hand the keys before the next night.</p>
+    <p id="msg">Du Heng: mark tonight, then press. Hand the keys. Pay is by valid bill.</p>
+    <div id="ending-layer" class="ending"></div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

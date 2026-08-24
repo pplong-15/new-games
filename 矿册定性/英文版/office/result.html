@@ -57,6 +57,7 @@
         chaos: "Advice received — whole sheet sent back"
       };
       if (!key || !titles[key]) return;
+      box.className = "endbox end-" + key;
       box.innerHTML =
         "<h3>" + titles[key] + "</h3><p>" + reason(key) + "</p><p>" + after(key) +
         "</p><p><a href=\"register.html\">Back to roster</a>　<a href=\"#\" id=\"again\">Void and reopen (this machine only)</a></p>";

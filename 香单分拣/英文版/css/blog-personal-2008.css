@@ -220,3 +220,7 @@ html.skin-blog-personal-2008 .ft {
   border-top: 1px solid var(--line);
   padding: 8px 0;
 }
+@media (max-width: 800px) {
+  html.skin-blog-personal-2008 .wrap,
+  html.skin-blog-personal-2008 .ft { width: auto; }
+}

@@ -1,0 +1,110 @@
+{
+  "date": "20260823",
+  "device_scale": 2,
+  "checks": [
+    {
+      "id": 1,
+      "name": "320/390 tap 44px",
+      "pass": true,
+      "measure": {
+        "390_zh": {
+          "choice_min_h": 44.296875,
+          "icon_btn_min_h": 44,
+          "mute_min_h": 44
+        },
+        "390_en": {
+          "choice_min_h": 44.296875,
+          "icon_btn_min_h": 44,
+          "mute_min_h": 44
+        },
+        "320_title_primary_h": 46,
+        "320_title_mute_h": 44,
+        "320_prep_primary_h": 46,
+        "320_prep_icon_btn_h": 44
+      },
+      "note": "实测 .choice/.primary/.icon-btn/#muteBtn 最小高度均 ≥44px。"
+    },
+    {
+      "id": 2,
+      "name": "keyboard first main point (focus-visible)",
+      "pass": true,
+      "measure": {
+        "outlineWidth": "3px",
+        "outlineStyle": "solid",
+        "target": ".choice after Tab/keyboard modality"
+      },
+      "note": "page.locator(choice).focus() + 键盘事件后 :focus-visible 3px solid。"
+    },
+    {
+      "id": 3,
+      "name": "touch same (emulated)",
+      "pass": true,
+      "measure": {
+        "title": {
+          "choice": null,
+          "primary": 46,
+          "icon_btn": null,
+          "mute": 44,
+          "n_choice": 0,
+          "n_primary": 1,
+          "n_icon": 0
+        },
+        "prep": {
+          "choice": null,
+          "primary": 46,
+          "icon_btn": 44,
+          "mute": 44,
+          "n_choice": 0,
+          "n_primary": 1,
+          "n_icon": 4
+        }
+      },
+      "note": "Playwright has_touch+is_mobile 320 视口；主钮/图标 ≥44。非真机。"
+    },
+    {
+      "id": 4,
+      "name": "muted",
+      "pass": true,
+      "measure": {
+        "zh_label": "静",
+        "en_label": "✕",
+        "zh_aria": "静音",
+        "en_aria": "Mute"
+      },
+      "note": "中文点按后钮面「静」。英文既有 JS 为 ♪/✕，未改 gameplay；aria-label 已是 Mute。"
+    },
+    {
+      "id": 5,
+      "name": "reduced-motion rain animation-name none",
+      "pass": true,
+      "measure": {
+        "exists": true,
+        "animationName": "none",
+        "opacity": "0"
+      },
+      "note": "emulate prefers-reduced-motion: reduce；.rain animation-name=none。首段雨幕 class 可能为 .off 故 opacity=0，减动规则仍生效。"
+    },
+    {
+      "id": 6,
+      "name": "non-color state",
+      "pass": true,
+      "measure": {
+        "li": 5,
+        "ink_fresh": 1,
+        "pencil": 1
+      },
+      "note": "店规油纸 + .ink-fresh 焦糖竖标 + .pencil ✎，不是只靠变色。"
+    },
+    {
+      "id": 7,
+      "name": "no full-screen flicker",
+      "pass": true,
+      "measure": {
+        "exists": true,
+        "on": false,
+        "hidden": false
+      },
+      "note": "#flicker 存在但默认无 .on；闪灯是事件叠层，不是全屏常闪壳。"
+    }
+  ]
+}

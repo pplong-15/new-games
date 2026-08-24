@@ -1,0 +1,110 @@
+/* wap-phone-2007
+ * 记忆功能机 WAP（Nokia / 移动梦网一类），不是 iPhone 浏览器、不是 HTML5 App。
+ * 240px 居中，黑底或藏青条，12px 宋体，编号链 [1][2]，黄链或蓝链。
+ */
+html.skin-wap-phone-2007,
+html.skin-wap-phone-2007 body,
+html.skin-wap-phone-2007 div,
+html.skin-wap-phone-2007 p,
+html.skin-wap-phone-2007 a,
+html.skin-wap-phone-2007 form,
+html.skin-wap-phone-2007 input,
+html.skin-wap-phone-2007 table,
+html.skin-wap-phone-2007 td {
+  margin: 0;
+  padding: 0;
+}
+html.skin-wap-phone-2007 body {
+  background: #444;
+  color: #fff;
+  font: 12px/1.5 SimSun, "Songti SC", sans-serif;
+}
+html.skin-wap-phone-2007 input {
+  font: 12px SimSun, sans-serif;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+html.skin-wap-phone-2007 a {
+  color: #ff0;
+  text-decoration: underline;
+}
+
+/* 屏幕：240px 黑底，像诺基亚 WAP 浏览器视口 */
+html.skin-wap-phone-2007 .phone {
+  width: 240px;
+  margin: 0 auto;
+  background: #000;
+  color: #fff;
+  min-height: 320px;
+  border-left: 8px solid #222;
+  border-right: 8px solid #222;
+}
+html.skin-wap-phone-2007 .hd {
+  background: #003;
+  color: #fff;
+  padding: 4px 6px;
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+  border-bottom: 1px solid #006;
+}
+html.skin-wap-phone-2007 .sub {
+  background: #003;
+  color: #ff0;
+  padding: 2px 6px;
+  font-size: 12px;
+  border-bottom: 1px solid #000;
+}
+html.skin-wap-phone-2007 .menu {
+  padding: 4px 6px 8px;
+}
+html.skin-wap-phone-2007 .menu p {
+  padding: 3px 0;
+  color: #fff;
+  font-size: 12px;
+}
+html.skin-wap-phone-2007 .menu a { color: #ff0; }
+html.skin-wap-phone-2007 .num { color: #0ff; }
+html.skin-wap-phone-2007 form {
+  padding: 6px;
+  border-top: 1px solid #003;
+  border-bottom: 1px solid #003;
+}
+html.skin-wap-phone-2007 form input {
+  width: 140px;
+  height: 16px;
+  border: 1px solid #666;
+  background: #fff;
+  color: #000;
+  padding: 1px 2px;
+}
+html.skin-wap-phone-2007 form button {
+  height: 18px;
+  padding: 0 6px;
+  background: #003;
+  color: #ff0;
+  border: 1px solid #66f;
+  font: 12px SimSun, sans-serif;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+html.skin-wap-phone-2007 .ft {
+  padding: 6px;
+  font-size: 12px;
+  color: #ccc;
+  border-top: 1px solid #003;
+}
+html.skin-wap-phone-2007 .ft a {
+  color: #00f;
+  background: #fff;
+  padding: 0 2px;
+}
+html.skin-wap-phone-2007 .ft a.back { color: #ff0; background: transparent; }
+html.skin-wap-phone-2007 .hint {
+  padding: 4px 6px;
+  color: #0f0;
+  font-size: 12px;
+}

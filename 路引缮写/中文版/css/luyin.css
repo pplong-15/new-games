@@ -1,0 +1,792 @@
+/* 本局叠加：采词、纸袋夹、句卡。不代替各站皮肤。
+ * D14：袋是代班手里的纸夹/店内文具，页脚是站点版权，不是关卡 HUD。
+ * 袋栏颜色、字体、栏宽跟当前 html.skin-* 走。 */
+
+.word {
+  border-bottom: 1px dashed #c45a12;
+  cursor: pointer;
+  color: inherit;
+  padding: 0 2px 1px;
+}
+.word.have { border-bottom-color: #888; background: transparent; }
+.word:active { background: #ffd; }
+.word[data-word="luyin"] {
+  background: #fff3c4;
+  border-bottom: 2px dashed #c45a12;
+  padding: 0 4px;
+  font-weight: 700;
+}
+
+/* —— 纸夹：默认牛皮纸，各站会覆写 —— */
+#luyin-bar {
+  position: relative;
+  bottom: auto;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 10px;
+  padding: 8px 12px 8px 28px;
+  background: #efe4c8;
+  color: #3a2a14;
+  font: 13px/1.4 SimSun, "Songti SC", serif;
+  border-top: 1px solid #c4a574;
+  box-shadow: inset 0 1px 0 #fff8e4;
+}
+#luyin-bar::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 18px;
+  border-right: 1px solid #c4a574;
+  background:
+    radial-gradient(circle at 9px 14px, #f7f0dc 3px, #c4a574 4px, transparent 5px),
+    radial-gradient(circle at 9px 34px, #f7f0dc 3px, #c4a574 4px, transparent 5px),
+    repeating-linear-gradient(#d4bc8c, #d4bc8c 2px, #efe4c8 2px, #efe4c8 10px);
+}
+#luyin-bar { left: auto; right: auto; }
+#luyin-bar strong {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  border: 1px solid #8a5a2b;
+  background: #fff8e8;
+  padding: 6px 8px;
+  min-height: 44px;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+}
+#luyin-bar a {
+  color: #5a3010;
+  text-decoration: underline;
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+#luyin-bar > span:not(.chips) {
+  font-size: 11px;
+  color: #7a6240;
+  letter-spacing: 0.04em;
+}
+#luyin-bar .chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  min-height: 44px;
+  align-items: center;
+  flex: 1 1 220px;
+}
+#luyin-bar .chips:not(:has(.chip)) {
+  min-width: min(100%, 420px);
+  border: 1px dashed #8a5a2b;
+  background: #fffdf6;
+  padding: 6px 8px;
+  color: #7a6540;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+}
+#luyin-bar .chips:not(:has(.chip))::after {
+  content: "谁　在哪　对谁　做了什么";
+  grid-column: 1 / -1;
+  font-size: 12px;
+  letter-spacing: 0.28em;
+  color: #7a6540;
+}
+#luyin-bar .chip {
+  background: #fffdf6;
+  border: 1px solid #8a5a2b;
+  color: #3a2a12;
+  padding: 0 10px;
+  cursor: pointer;
+  font-size: 13px;
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+#luyin-bar .chip.on {
+  outline: 2px solid #6b2a00;
+  outline-offset: 1px;
+  background: #ffe082;
+  font-weight: 700;
+}
+
+.gate-wait { color: #666; border-bottom: 1px dotted #888; }
+
+#sentence-card {
+  border: 1px solid #8a5a2b;
+  background: #f7f0d8;
+  padding: 12px;
+  margin: 12px 0;
+  box-shadow: inset 0 0 0 1px #e6d3a3;
+}
+#sentence-card .slots {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+#sentence-card .slot {
+  min-height: 48px;
+  border: 1px dashed #8a5a2b;
+  padding: 8px;
+  cursor: pointer;
+  background: #fffdf6;
+  box-sizing: border-box;
+}
+#sentence-card .slot b {
+  display: block;
+  font-size: 12px;
+  color: #6b2a00;
+  font-family: SimSun, "Songti SC", serif;
+}
+#sentence-card .slot .val { color: #3a2a12; }
+#sentence-card .feedback { min-height: 1.6em; margin-top: 8px; }
+#sentence-card button {
+  margin-top: 10px;
+  padding: 10px 16px;
+  cursor: pointer;
+  min-height: 44px;
+  min-width: 44px;
+  font-size: 16px;
+}
+#submit-sent {
+  min-height: 44px;
+  background: #6b2a00;
+  color: #f7f0d8;
+  border: 2px solid #3a2a12;
+  font: 16px/1.2 SimSun, "Songti SC", "PingFang SC", serif;
+}
+.hint-box { margin-top: 16px; font-size: 14px; }
+.hint-box button {
+  margin-right: 6px;
+  min-height: 44px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* 页脚：站点页码/版权，不是关卡条。各站覆写底色与前缀。 */
+footer.pg {
+  text-align: left;
+  font-size: 11px;
+  color: #8a8680;
+  padding: 10px 16px 12px;
+  letter-spacing: 0.02em;
+  background: transparent;
+  border-top: 1px dotted #c8c0b4;
+  font-family: SimSun, "Songti SC", serif;
+}
+
+.word:focus-visible,
+.chip:focus-visible,
+#sentence-card .slot:focus-visible,
+#submit-sent:focus-visible,
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid #c45a12;
+  outline-offset: 2px;
+}
+
+img[src$="avatar-square.jpg"] {
+  display: none !important;
+}
+
+/* —— 各所有者：袋夹 + 页脚穿本站皮（至少底色/字体/边色分家） —— */
+
+html.skin-intro-manual #luyin-bar { display: none; }
+html.skin-intro-manual footer.pg { display: none; }
+
+html.skin-shop-local-2010s #luyin-bar {
+  background: #eee8e0;
+  color: #555;
+  border-top: 4px solid #d15c20;
+  font: 14px/1.4 "Microsoft YaHei", "PingFang SC", sans-serif;
+  box-shadow: none;
+}
+html.skin-shop-local-2010s #luyin-bar::before { display: none; }
+html.skin-shop-local-2010s #luyin-bar { padding-left: 12px; }
+html.skin-shop-local-2010s #luyin-bar strong {
+  background: #d15c20;
+  color: #fff;
+  border-color: #d15c20;
+  letter-spacing: 0.08em;
+  font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+}
+html.skin-shop-local-2010s #luyin-bar a { color: #d15c20; }
+html.skin-shop-local-2010s footer.pg {
+  background: #eee;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  color: #888;
+  font: 12px/1.5 "Microsoft YaHei", sans-serif;
+}
+html.skin-shop-local-2010s footer.pg::before {
+  content: "官道车马店　夜间网页　";
+  display: block;
+  color: #aaa;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+}
+
+html.skin-shop-detail-2008 #luyin-bar {
+  background: #fff4ec;
+  color: #333;
+  border-top: 3px solid #ff4400;
+  font: 12px/1.4 SimSun, "Songti SC", serif;
+  box-shadow: none;
+  padding-left: 12px;
+}
+html.skin-shop-detail-2008 #luyin-bar::before { display: none; }
+html.skin-shop-detail-2008 #luyin-bar strong {
+  background: #ff4400;
+  color: #fff;
+  border-color: #c33000;
+  letter-spacing: 0;
+}
+html.skin-shop-detail-2008 #luyin-bar a { color: #36c; }
+html.skin-shop-detail-2008 footer.pg {
+  width: 950px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-top: 1px solid #eee;
+  color: #999;
+  font: 12px SimSun, serif;
+}
+html.skin-shop-detail-2008 footer.pg::before {
+  content: "泰安纸马铺　商品详情　";
+  color: #bbb;
+}
+
+html.skin-gov-redbar #luyin-bar {
+  background: #f2f2f2;
+  color: #000;
+  border-top: 4px solid #c8161d;
+  font: 12px/1.6 SimSun, "Songti SC", serif;
+  box-shadow: none;
+  padding-left: 12px;
+}
+html.skin-gov-redbar #luyin-bar::before { display: none; }
+html.skin-gov-redbar #luyin-bar strong {
+  background: #c8161d;
+  color: #fff;
+  border: 0;
+  letter-spacing: 0.2em;
+  font-family: SimHei, "Heiti SC", sans-serif;
+}
+html.skin-gov-redbar #luyin-bar a { color: #00e; }
+html.skin-gov-redbar footer.pg {
+  background: #f2f2f2;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  color: #666;
+  font: 12px/1.6 SimSun, serif;
+}
+html.skin-gov-redbar footer.pg::before {
+  content: "石津县人民医院　信息科　";
+  display: block;
+  color: #999;
+}
+
+html.skin-archive-simsun #luyin-bar {
+  background: #efe6d4;
+  color: #333;
+  border-top: 2px solid #333;
+  font: 16px/1.6 SimSun, "Songti SC", serif;
+  box-shadow: none;
+  padding-left: 28px;
+}
+html.skin-archive-simsun #luyin-bar strong {
+  background: transparent;
+  border: 2px solid #a40000;
+  color: #a40000;
+  letter-spacing: 0.3em;
+}
+html.skin-archive-simsun #luyin-bar a { color: #600; }
+html.skin-archive-simsun footer.pg {
+  width: min(800px, 92%);
+  margin: 0 auto 24px;
+  text-align: center;
+  border-top: 1px solid #c8b89a;
+  color: #666;
+  font: 14px SimSun, serif;
+  background: #efe6d4;
+}
+html.skin-archive-simsun footer.pg::before {
+  content: "路引房底册　内部卷宗　";
+}
+
+html.skin-mail-web-2010 #luyin-bar {
+  background: #eef2f5;
+  color: #333;
+  border-top: 3px solid #2b6cb0;
+  font: 12px/1.4 Tahoma, SimSun, sans-serif;
+  box-shadow: none;
+  padding-left: 12px;
+}
+html.skin-mail-web-2010 #luyin-bar::before { display: none; }
+html.skin-mail-web-2010 #luyin-bar strong {
+  background: #2b6cb0;
+  color: #fff;
+  border: 0;
+  letter-spacing: 0;
+  font-family: Tahoma, sans-serif;
+}
+html.skin-mail-web-2010 #luyin-bar a { color: #06c; }
+html.skin-mail-web-2010 footer.pg {
+  background: #eef2f5;
+  text-align: center;
+  border-top: 1px solid #c5d0da;
+  color: #888;
+  font: 11px Tahoma, SimSun, sans-serif;
+}
+html.skin-mail-web-2010 footer.pg::before {
+  content: "网页邮箱　收件箱　";
+}
+
+html.skin-qzone-modules #luyin-bar {
+  background: #cde8a0;
+  color: #333;
+  border-top: 3px solid #6ea3d4;
+  font: 12px/1.4 Tahoma, SimSun, sans-serif;
+  box-shadow: none;
+  padding-left: 12px;
+}
+html.skin-qzone-modules #luyin-bar::before { display: none; }
+html.skin-qzone-modules #luyin-bar strong {
+  background: #6ea3d4;
+  color: #fff;
+  border: 0;
+  letter-spacing: 0;
+}
+html.skin-qzone-modules #luyin-bar a { color: #005eac; }
+html.skin-qzone-modules footer.pg {
+  background: #b7d48a;
+  text-align: center;
+  border-top: 1px solid #8fbc5a;
+  color: #3a5a20;
+  font: 12px Tahoma, SimSun, sans-serif;
+}
+html.skin-qzone-modules footer.pg::before {
+  content: "个人空间　";
+}
+
+html.skin-discuz-board #luyin-bar {
+  background: #e5edf2;
+  color: #444;
+  border-top: 3px solid #2b7ac2;
+  font: 12px/1.5 Tahoma, SimSun, sans-serif;
+  box-shadow: none;
+  padding-left: 12px;
+}
+html.skin-discuz-board #luyin-bar::before { display: none; }
+html.skin-discuz-board #luyin-bar strong {
+  background: #2b7ac2;
+  color: #fff;
+  border: 0;
+  letter-spacing: 0;
+  font-family: Tahoma, SimSun, sans-serif;
+}
+html.skin-discuz-board #luyin-bar a { color: #369; }
+html.skin-discuz-board footer.pg {
+  background: #fff;
+  text-align: center;
+  border-top: 1px solid #c2d5e3;
+  color: #999;
+  font: 12px Tahoma, SimSun, sans-serif;
+}
+html.skin-discuz-board footer.pg::before {
+  content: "官道镇事　论坛　";
+}
+
+html.skin-classified-yellow #luyin-bar {
+  background: #fff8e1;
+  color: #333;
+  border-top: 4px solid #f5c518;
+  font: 12px/1.5 SimSun, "Songti SC", serif;
+  box-shadow: none;
+  padding-left: 12px;
+}
+html.skin-classified-yellow #luyin-bar::before { display: none; }
+html.skin-classified-yellow #luyin-bar strong {
+  background: #f5c518;
+  color: #5a3d00;
+  border-color: #e0b000;
+  letter-spacing: 0;
+  font-family: SimHei, "Heiti SC", sans-serif;
+}
+html.skin-classified-yellow #luyin-bar a { color: #00e; }
+html.skin-classified-yellow footer.pg {
+  background: #fff8e1;
+  text-align: center;
+  border-top: 1px solid #e6d9a8;
+  color: #888;
+  font: 12px SimSun, serif;
+}
+html.skin-classified-yellow footer.pg::before {
+  content: "分类信息　";
+}
+
+html.skin-winxp-luna #luyin-bar {
+  background: #ece9d8;
+  color: #000;
+  border-top: 2px solid #245edc;
+  font: 11px/1.4 Tahoma, "MS Sans Serif", sans-serif;
+  box-shadow: inset 1px 1px #fff;
+  padding-left: 12px;
+}
+html.skin-winxp-luna #luyin-bar::before { display: none; }
+html.skin-winxp-luna #luyin-bar strong {
+  background: #245edc;
+  color: #fff;
+  border: 1px solid #0a246a;
+  letter-spacing: 0;
+  font: 700 11px/1 Tahoma, sans-serif;
+  min-height: 44px;
+}
+html.skin-winxp-luna #luyin-bar a { color: #00e; }
+html.skin-winxp-luna footer.pg {
+  background: #245edc;
+  color: #fff;
+  border-top: 0;
+  text-align: left;
+  font: 11px Tahoma, sans-serif;
+  padding: 8px 12px;
+}
+html.skin-winxp-luna footer.pg::before {
+  content: "document.txt  —  ";
+}
+
+html.skin-service-cyan-desk #luyin-bar {
+  background: #fff;
+  color: #333;
+  border-top: 3px solid #26c6e9;
+  font: 14px/1.5 "Microsoft YaHei", sans-serif;
+  box-shadow: 0 -1px 0 #e0f7fa;
+  padding-left: 12px;
+}
+html.skin-service-cyan-desk #luyin-bar::before { display: none; }
+html.skin-service-cyan-desk #luyin-bar strong {
+  background: #007bff;
+  color: #fff;
+  border: 0;
+  letter-spacing: 0;
+  font-family: "Microsoft YaHei", sans-serif;
+}
+html.skin-service-cyan-desk #luyin-bar a { color: #337ab7; }
+html.skin-service-cyan-desk footer.pg {
+  background: #e0f7fa;
+  text-align: center;
+  border-top: 1px solid #b2ebf2;
+  color: #007b8a;
+  font: 12px "Microsoft YaHei", sans-serif;
+}
+html.skin-service-cyan-desk footer.pg::before {
+  content: "路引房值班台　代班席　";
+  display: block;
+  font-size: 11px;
+}
+
+html.skin-baidu-baike #luyin-bar {
+  background: #fff;
+  color: #333;
+  border-top: 3px solid #2932e1;
+  font: 14px/1.5 arial, SimSun, sans-serif;
+  box-shadow: none;
+  padding-left: 12px;
+}
+html.skin-baidu-baike #luyin-bar::before { display: none; }
+html.skin-baidu-baike #luyin-bar strong {
+  background: #2932e1;
+  color: #fff;
+  border: 0;
+  letter-spacing: 0;
+}
+html.skin-baidu-baike #luyin-bar a { color: #136ec2; }
+html.skin-baidu-baike footer.pg {
+  background: #fff;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  color: #999;
+  font: 12px arial, SimSun, sans-serif;
+}
+html.skin-baidu-baike footer.pg::before {
+  content: "词条　";
+}
+
+html.skin-news-portal-163 #luyin-bar {
+  background: #fff;
+  color: #333;
+  border-top: 3px solid #e00;
+  font: 12px/1.6 SimSun, "Songti SC", serif;
+  box-shadow: none;
+  padding-left: 12px;
+}
+html.skin-news-portal-163 #luyin-bar::before { display: none; }
+html.skin-news-portal-163 #luyin-bar strong {
+  background: #e00;
+  color: #fff;
+  border: 0;
+  letter-spacing: 0.12em;
+  font-family: SimSun, serif;
+}
+html.skin-news-portal-163 #luyin-bar a { color: #1e50a2; }
+html.skin-news-portal-163 footer.pg {
+  background: #fff;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  color: #999;
+  font: 12px SimSun, serif;
+}
+html.skin-news-portal-163 footer.pg::before {
+  content: "石津晚报地方版　";
+}
+
+html.skin-search-results #luyin-bar {
+  background: #e8e8e8;
+  color: #333;
+  border-top: 2px solid #555;
+  font: 14px/1.4 "Microsoft YaHei", sans-serif;
+  box-shadow: none;
+  padding-left: 12px;
+}
+html.skin-search-results #luyin-bar::before { display: none; }
+html.skin-search-results #luyin-bar strong {
+  background: #555;
+  color: #fff;
+  border: 0;
+  letter-spacing: 0;
+}
+html.skin-search-results #luyin-bar a { color: #337ab7; }
+html.skin-search-results footer.pg {
+  background: #e8e8e8;
+  text-align: left;
+  border-top: 1px solid #ccc;
+  color: #888;
+  font: 12px "Microsoft YaHei", sans-serif;
+}
+html.skin-search-results footer.pg::before {
+  content: "站内检索　结果页　";
+}
+
+html.skin-forbidden #luyin-bar {
+  background: #111;
+  color: #f88;
+  border-top: 3px solid #c00;
+  font: 14px/1.4 "Microsoft YaHei", Tahoma, sans-serif;
+  box-shadow: none;
+  padding-left: 12px;
+}
+html.skin-forbidden #luyin-bar::before { display: none; }
+html.skin-forbidden #luyin-bar strong {
+  background: #c00;
+  color: #fff;
+  border: 0;
+  letter-spacing: 0.2em;
+}
+html.skin-forbidden #luyin-bar a { color: #f88; }
+html.skin-forbidden #luyin-bar .chip {
+  background: #2a0a0a;
+  border-color: #c00;
+  color: #fcc;
+}
+html.skin-forbidden footer.pg {
+  background: #000;
+  color: #800;
+  text-align: center;
+  border-top: 1px solid #c00;
+  font: 12px Tahoma, sans-serif;
+}
+html.skin-forbidden footer.pg::before {
+  content: "FORBIDDEN  ";
+  color: #c00;
+}
+
+html.skin-wap-phone-2007 #luyin-bar {
+  position: relative;
+  width: 240px;
+  margin: 0 auto;
+  background: #000;
+  color: #ff0;
+  border-top: 1px solid #003;
+  border-left: 8px solid #222;
+  border-right: 8px solid #222;
+  font: 12px/1.4 SimSun, "Songti SC", sans-serif;
+  box-shadow: none;
+  padding: 4px 6px;
+  z-index: 2;
+}
+html.skin-wap-phone-2007 #luyin-bar::before { display: none; }
+html.skin-wap-phone-2007 #luyin-bar strong {
+  background: #003;
+  color: #fff;
+  border: 0;
+  letter-spacing: 0;
+  min-height: 44px;
+  font-size: 12px;
+}
+html.skin-wap-phone-2007 #luyin-bar a { color: #ff0; }
+html.skin-wap-phone-2007 #luyin-bar .chip {
+  background: #003;
+  border-color: #66f;
+  color: #ff0;
+}
+html.skin-wap-phone-2007 footer.pg {
+  width: 240px;
+  margin: 0 auto 8px;
+  background: #000;
+  color: #ccc;
+  text-align: center;
+  border: 0;
+  border-left: 8px solid #222;
+  border-right: 8px solid #222;
+  font: 12px SimSun, sans-serif;
+  padding: 6px;
+}
+html.skin-wap-phone-2007 footer.pg::before {
+  content: "[返回] ";
+  color: #ff0;
+}
+
+@media (max-width: 800px) {
+  #sentence-card .slots { grid-template-columns: 1fr; }
+  #luyin-bar { font-size: 12px; }
+  #luyin-bar .chips:not(:has(.chip)) { grid-template-columns: 1fr 1fr; min-width: 0; }
+  img { max-width: 100%; height: auto; }
+  html.skin-gov-redbar .page,
+  html.skin-shop-detail-2008 #wrap,
+  html.skin-mail-web-2010 #layout,
+  html.skin-discuz-board #wp,
+  html.skin-news-portal-163 #wrap,
+  html.skin-classified-yellow #wrap,
+  html.skin-qzone-modules #wrap,
+  html.skin-baidu-baike #content,
+  html.skin-archive-simsun .doc,
+  html.skin-archive-simsun .record {
+    width: auto !important;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  html.skin-shop-detail-2008 #wrap img {
+    float: none !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  html.skin-mail-web-2010 #layout .side {
+    float: none !important;
+    width: auto !important;
+    min-height: 0 !important;
+    border-right: 0 !important;
+    border-bottom: 1px solid #c5d0da;
+  }
+  html.skin-wap-phone-2007 body::before,
+  html.skin-wap-phone-2007 body > p,
+  html.skin-wap-phone-2007 footer.pg,
+  html.skin-wap-phone-2007 #luyin-bar {
+    width: 100% !important;
+    max-width: 240px;
+  }
+  html.skin-shop-detail-2008 footer.pg,
+  html.skin-archive-simsun footer.pg {
+    width: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.skin-archive-simsun .stamp { transform: none; }
+  * { animation: none !important; transition: none !important; }
+}
+
+body[data-page="34"],
+body[data-page="35"] {
+  padding-bottom: 16px;
+}
+
+html:lang(en) #luyin-bar .chips:not(:has(.chip))::after {
+  content: "Who / Where / Whom / Did what";
+  letter-spacing: 0.12em;
+}
+html:lang(en).skin-shop-local-2010s footer.pg::before {
+  content: "Official-Road Inn  night page  ";
+}
+html:lang(en).skin-shop-detail-2008 footer.pg::before {
+  content: "Tai'an paper-horse shop  ";
+}
+html:lang(en).skin-gov-redbar footer.pg::before {
+  content: "Shijin County Hospital  info desk  ";
+}
+html:lang(en).skin-archive-simsun footer.pg::before {
+  content: "Road-pass room  internal file  ";
+}
+html:lang(en).skin-mail-web-2010 footer.pg::before {
+  content: "Web mail  inbox  ";
+}
+html:lang(en).skin-qzone-modules footer.pg::before {
+  content: "Personal space  ";
+}
+html:lang(en).skin-discuz-board footer.pg::before {
+  content: "Guandao town board  ";
+}
+html:lang(en).skin-classified-yellow footer.pg::before {
+  content: "Classifieds  ";
+}
+html:lang(en).skin-service-cyan-desk footer.pg::before {
+  content: "Road-pass duty desk  relief shift  ";
+}
+html:lang(en).skin-baidu-baike footer.pg::before {
+  content: "Entry  ";
+}
+html:lang(en).skin-news-portal-163 footer.pg::before {
+  content: "Shijin evening local  ";
+}
+html:lang(en).skin-search-results footer.pg::before {
+  content: "Site search  results  ";
+}
+html:lang(en).skin-wap-phone-2007 footer.pg::before {
+  content: "[Back] ";
+}
+
+html:lang(en).skin-intro-manual .boot-actions::before {
+  content: "Who               Where\AToward whom      Did what";
+}
+html:lang(en).skin-gov-redbar .page h1::after {
+  content: "Notices  Night window  Death register (off)  Visits";
+}
+html:lang(en).skin-shop-detail-2008 body::before {
+  content: "Tai'an paper-horse shop    Home  Orders  Favorites";
+}
+html:lang(en).skin-mail-web-2010 body::before {
+  content: "Web mail    Unread    Settings  Sign out";
+}
+html:lang(en).skin-mail-web-2010 #layout .side::before {
+  content: "Compose";
+}
+html:lang(en).skin-discuz-board #wp .header::after {
+  content: "Forum  Boards  Search";
+}
+html:lang(en).skin-qzone-modules #wrap .top::after {
+  content: "Home  Diary  Album  Talk  Guestbook";
+}
+html:lang(en).skin-news-portal-163 #wrap .top::after {
+  content: "News  Local  Comments";
+}
+html:lang(en).skin-baidu-baike body::before {
+  content: "Entry    Home  Category  Search";
+}
+html:lang(en).skin-wap-phone-2007 body::before {
+  content: "Inbox";
+}
+html:lang(en).skin-search-results body::before {
+  content: "Site search";
+}
+html:lang(en).skin-forbidden h2::before {
+  content: "Denied ";
+}

@@ -46,11 +46,13 @@ html.skin-baidu-zhidao .clearfix:after {
 html.skin-baidu-zhidao .top {
   background: var(--bar);
   color: #fff;
-  height: 36px;
+  height: auto;
+  min-height: 52px;
 }
 html.skin-baidu-zhidao .top-inner {
   width: 960px;
-  height: 36px;
+  height: auto;
+  min-height: 52px;
   margin: 0 auto;
 }
 html.skin-baidu-zhidao .logo,
@@ -74,21 +76,26 @@ html.skin-baidu-zhidao .top a {
 html.skin-baidu-zhidao .top a:hover { text-decoration: underline; color: #fff; }
 html.skin-baidu-zhidao .top form {
   float: right;
-  padding: 5px 0 0;
+  padding: 4px 0 0;
 }
 html.skin-baidu-zhidao .top input {
   float: left;
   width: 280px;
-  height: 16px;
-  line-height: 16px;
+  height: 44px;
+  min-height: 44px;
+  line-height: 1.2;
   border: 1px solid #1a22b0;
   padding: 3px 4px;
   background: #fff;
   color: #333;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 html.skin-baidu-zhidao .top button {
   float: left;
-  height: 24px;
+  height: 44px;
+  min-height: 44px;
+  min-width: 44px;
   margin-left: 4px;
   padding: 0 12px;
   color: #fff;

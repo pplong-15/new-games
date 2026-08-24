@@ -52,32 +52,38 @@ html.skin-corp-table-2005 table.site td.main { padding: 12px; }
 html.skin-corp-table-2005 table.site td.ft { padding: 8px; }
 
 html.skin-corp-table-2005 .banner {
-  height: 90px;
+  height: auto;
+  min-height: 90px;
   background: var(--banner);
   color: #fff;
-  font: 24px/90px SimHei, "Heiti SC", sans-serif;
-  padding: 0 16px;
-  overflow: hidden;
+  font: 24px/1.3 SimHei, "Heiti SC", sans-serif;
+  padding: 16px;
+  overflow: visible;
 }
 html.skin-corp-table-2005 .banner form {
   float: right;
-  height: 90px;
-  padding: 34px 0 0;
+  height: auto;
+  padding: 8px 0 0;
   font: 12px SimSun, "Songti SC", serif;
 }
 html.skin-corp-table-2005 .banner input {
   float: left;
   width: 128px;
-  height: 16px;
-  line-height: 16px;
+  height: 44px;
+  min-height: 44px;
+  line-height: 1.2;
   border: 1px solid #0f2d55;
   padding: 2px 4px;
   background: #fff;
   color: #000;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 html.skin-corp-table-2005 .banner button {
   float: left;
-  height: 22px;
+  height: 44px;
+  min-height: 44px;
+  min-width: 44px;
   margin-left: 4px;
   padding: 0 8px;
   color: #fff;

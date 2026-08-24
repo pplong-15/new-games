@@ -1,0 +1,290 @@
+[
+  {
+    "lang": "zh",
+    "phase": "before",
+    "slug": "04-near-fail",
+    "url": "http://127.0.0.1:8990/desk/result.html",
+    "title": "备注回执",
+    "viewport": {
+      "dpr": 1,
+      "h": 900,
+      "scrollX": 0,
+      "scrollY": 0,
+      "w": 1280
+    },
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/04-near-fail-before.png",
+    "sha256": "644d9ba46c9f01839586169ef09f589122114d5a7550faddb4b85fe04ced685a",
+    "bytes": 38876,
+    "timestamp": "2026-08-23T17:54:22+0800"
+  },
+  {
+    "lang": "zh",
+    "phase": "after",
+    "slug": "04-near-fail",
+    "url": "http://127.0.0.1:8992/desk/result.html",
+    "title": "备注回执",
+    "viewport": {
+      "dpr": 1,
+      "h": 900,
+      "scrollX": 0,
+      "scrollY": 0,
+      "w": 1280
+    },
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/04-near-fail.png",
+    "sha256": "293c1d70ead38ef7073a63e3417159dd7d1b54d2cb45ea8593e583b61515f765",
+    "bytes": 38726,
+    "timestamp": "2026-08-23T17:54:23+0800"
+  },
+  {
+    "lang": "zh",
+    "phase": "before",
+    "slug": "16-denied-gate",
+    "url": "http://127.0.0.1:8990/desk/denied.html",
+    "title": "本层未登入",
+    "viewport": {
+      "dpr": 1,
+      "h": 800,
+      "scrollX": 0,
+      "scrollY": 0,
+      "w": 1280
+    },
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/16-denied-gate-before.png",
+    "sha256": "8963ddab86a6042e33f1d6d96a0f30168af7e3381ee22e189872bf31d5655298",
+    "bytes": 41864,
+    "timestamp": "2026-08-23T17:54:23+0800"
+  },
+  {
+    "lang": "zh",
+    "phase": "after",
+    "slug": "16-denied-gate",
+    "url": "http://127.0.0.1:8992/desk/denied.html",
+    "title": "本层未登入",
+    "viewport": {
+      "dpr": 1,
+      "h": 800,
+      "scrollX": 0,
+      "scrollY": 0,
+      "w": 1280
+    },
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/16-denied-gate.png",
+    "sha256": "7b65a25b25926922fc05982f7b6b66fef7a1889f69f194a449bbbbc7a0a85fb6",
+    "bytes": 41967,
+    "timestamp": "2026-08-23T17:54:23+0800"
+  },
+  {
+    "lang": "zh",
+    "phase": "before",
+    "slug": "26-login-internal",
+    "url": "http://127.0.0.1:8990/desk/login.html",
+    "title": "数字化室　内部登入",
+    "viewport": {
+      "dpr": 1,
+      "h": 800,
+      "scrollX": 0,
+      "scrollY": 0,
+      "w": 1280
+    },
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/26-login-internal-before.png",
+    "sha256": "b84ec9e968053f697eb4105c39b9cf97c537d765d687b5799fb7cdc60573cc2b",
+    "bytes": 28406,
+    "timestamp": "2026-08-23T17:54:24+0800"
+  },
+  {
+    "lang": "zh",
+    "phase": "after",
+    "slug": "26-login-internal",
+    "url": "http://127.0.0.1:8992/desk/login.html",
+    "title": "数字化室　内部登入",
+    "viewport": {
+      "dpr": 1,
+      "h": 800,
+      "scrollX": 0,
+      "scrollY": 0,
+      "w": 1280
+    },
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/26-login-internal.png",
+    "sha256": "0e8e069dce5b2d1f835ee3829f3316a9c79d571e3c23acde28b9c5257f039f88",
+    "bytes": 31701,
+    "timestamp": "2026-08-23T17:54:24+0800"
+  },
+  {
+    "lang": "zh",
+    "phase": "before",
+    "slug": "27-login-restrict",
+    "url": "http://127.0.0.1:8990/desk/lock.html",
+    "title": "数字化室　限制柜登入",
+    "viewport": {
+      "dpr": 1,
+      "h": 800,
+      "scrollX": 0,
+      "scrollY": 0,
+      "w": 1280
+    },
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/27-login-restrict-before.png",
+    "sha256": "a14605072a83d54abcdeec93e48810cf89ea36e176f6e83097b059b19432a6b7",
+    "bytes": 28912,
+    "timestamp": "2026-08-23T17:54:24+0800"
+  },
+  {
+    "lang": "zh",
+    "phase": "after",
+    "slug": "27-login-restrict",
+    "url": "http://127.0.0.1:8992/desk/lock.html",
+    "title": "数字化室　限制柜登入",
+    "viewport": {
+      "dpr": 1,
+      "h": 800,
+      "scrollX": 0,
+      "scrollY": 0,
+      "w": 1280
+    },
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-zh/27-login-restrict.png",
+    "sha256": "6d7e5e60fda8c9318ab502edf7bf0eb81f4295971c14af7eb57ea0c3ab082b59",
+    "bytes": 41481,
+    "timestamp": "2026-08-23T17:54:25+0800"
+  },
+  {
+    "lang": "en",
+    "phase": "before",
+    "slug": "04-near-fail",
+    "url": "http://127.0.0.1:8991/desk/result.html",
+    "title": "Viewing-note receipt",
+    "viewport": {
+      "dpr": 1,
+      "h": 900,
+      "scrollX": 0,
+      "scrollY": 0,
+      "w": 1280
+    },
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/04-near-fail-before.png",
+    "sha256": "3175c60c0ee2650eae2fce0f05cd469e3a0ed7f5fa16557ec9b191b389c06a2d",
+    "bytes": 49051,
+    "timestamp": "2026-08-23T17:54:25+0800"
+  },
+  {
+    "lang": "en",
+    "phase": "after",
+    "slug": "04-near-fail",
+    "url": "http://127.0.0.1:8993/desk/result.html",
+    "title": "Viewing-note receipt",
+    "viewport": {
+      "dpr": 1,
+      "h": 900,
+      "scrollX": 0,
+      "scrollY": 0,
+      "w": 1280
+    },
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/04-near-fail.png",
+    "sha256": "79e1f08386caed631935151184d16fd9434e27574b288d6f0b135643942d7f04",
+    "bytes": 49531,
+    "timestamp": "2026-08-23T17:54:26+0800"
+  },
+  {
+    "lang": "en",
+    "phase": "before",
+    "slug": "16-denied-gate",
+    "url": "http://127.0.0.1:8991/desk/denied.html",
+    "title": "This layer is not logged in",
+    "viewport": {
+      "dpr": 1,
+      "h": 800,
+      "scrollX": 0,
+      "scrollY": 0,
+      "w": 1280
+    },
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/16-denied-gate-before.png",
+    "sha256": "cdd6852bb1bf9acce5477646c8eb6b433debbb8ad150d25e5aca1f769b4821c5",
+    "bytes": 49353,
+    "timestamp": "2026-08-23T17:54:26+0800"
+  },
+  {
+    "lang": "en",
+    "phase": "after",
+    "slug": "16-denied-gate",
+    "url": "http://127.0.0.1:8993/desk/denied.html",
+    "title": "This layer is not logged in",
+    "viewport": {
+      "dpr": 1,
+      "h": 800,
+      "scrollX": 0,
+      "scrollY": 0,
+      "w": 1280
+    },
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/16-denied-gate.png",
+    "sha256": "7d4038d2e14bf01469bb2b16b35604b9d4818fb8efd06127cffd82d2d31143ed",
+    "bytes": 50376,
+    "timestamp": "2026-08-23T17:54:26+0800"
+  },
+  {
+    "lang": "en",
+    "phase": "before",
+    "slug": "26-login-internal",
+    "url": "http://127.0.0.1:8991/desk/login.html",
+    "title": "Digitization desk · Internal login",
+    "viewport": {
+      "dpr": 1,
+      "h": 800,
+      "scrollX": 0,
+      "scrollY": 0,
+      "w": 1280
+    },
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/26-login-internal-before.png",
+    "sha256": "6a3172e9901b597aba89420f07989c1c6f9e116a926a9c1dd84abc3eeed55d96",
+    "bytes": 32799,
+    "timestamp": "2026-08-23T17:54:27+0800"
+  },
+  {
+    "lang": "en",
+    "phase": "after",
+    "slug": "26-login-internal",
+    "url": "http://127.0.0.1:8993/desk/login.html",
+    "title": "Digitization desk · Internal login",
+    "viewport": {
+      "dpr": 1,
+      "h": 800,
+      "scrollX": 0,
+      "scrollY": 0,
+      "w": 1280
+    },
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/26-login-internal.png",
+    "sha256": "4fd5a3ec39e5843272584a107b0dc3ba5d8337085bf86c8c038cdeb61b7e29c8",
+    "bytes": 35898,
+    "timestamp": "2026-08-23T17:54:27+0800"
+  },
+  {
+    "lang": "en",
+    "phase": "before",
+    "slug": "27-login-restrict",
+    "url": "http://127.0.0.1:8991/desk/lock.html",
+    "title": "Digitization desk · Restricted-cabinet login",
+    "viewport": {
+      "dpr": 1,
+      "h": 800,
+      "scrollX": 0,
+      "scrollY": 0,
+      "w": 1280
+    },
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/27-login-restrict-before.png",
+    "sha256": "aa1f1bfe5d67e9d3adb56c6310bc239ddb137b78f52703403e3b2f39bf6e1ed2",
+    "bytes": 37659,
+    "timestamp": "2026-08-23T17:54:27+0800"
+  },
+  {
+    "lang": "en",
+    "phase": "after",
+    "slug": "27-login-restrict",
+    "url": "http://127.0.0.1:8993/desk/lock.html",
+    "title": "Digitization desk · Restricted-cabinet login",
+    "viewport": {
+      "dpr": 1,
+      "h": 800,
+      "scrollX": 0,
+      "scrollY": 0,
+      "w": 1280
+    },
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/地券密级/visual/三密级字段对照/polish-20260823-en/27-login-restrict.png",
+    "sha256": "2987668de4c580cb71ca64f60534c2528bc86278ad9554fbaca25e29943b1982",
+    "bytes": 55216,
+    "timestamp": "2026-08-23T17:54:28+0800"
+  }
+]

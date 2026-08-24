@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Three Cabinets</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/sanfen.css">
+</head>
+<body>
+  <div id="title-layer">
+    <img src="jpeg/00-open.jpg" alt="Night desk at Anhuaitang">
+    <div class="title-split" aria-hidden="true">
+      <div class="title-loose"><span class="mark-loose"></span>Opened · cleared at handoff</div>
+      <div class="title-pin"><span class="mark-pin"></span>Proven · pinned and kept</div>
+    </div>
+    <p class="artifact-translation">Typed copy of the night desk still: three cabinet doors — prescription, cabinet, ledger. A warm-reminder card: speak softly; close the pages at handoff; originals do not leave the shift.</p>
+    <p class="lock-line">Opened is not proven. Handoff clears the desk. Proven stays.</p>
+    <p>Wei Xiaotang · Cheng-An Beilin 3 · recommend. Tonight hand over three proven slips or fewer.</p>
+    <button type="button" id="btn-enter">Clock in</button>
+  </div>
+
+  <div id="app">
+    <header class="chrome">
+      <div class="brand">Anhuaitang</div>
+      <nav class="tabs">
+        <button type="button" class="tab" data-go="intro">Instructions</button>
+        <button type="button" class="tab" data-go="home">Filing home</button>
+        <button type="button" class="tab" data-go="book">Book a number</button>
+        <button type="button" class="tab" data-go="notice">Shift notice</button>
+        <button type="button" class="tab" data-go="desk">Desk</button>
+        <button type="button" class="tab" data-go="scenic">Scenic</button>
+        <button type="button" class="tab" data-go="footer-miaoli">Temple calendar</button>
+        <button type="button" class="tab" data-go="desk-claims">Hand over</button>
+        <button type="button" class="tab" data-go="desk-last">Last shift</button>
+      </nav>
+      <form id="site-search" action="#" method="get">
+        <input type="search" name="q" id="q" placeholder="Site search" autocomplete="off">
+        <button type="submit">Search</button>
+      </form>
+    </header>
+    <div id="page-foot"></div>
+    <div id="view"></div>
+
+    <section id="desk" class="duty-board">
+      <div class="desk-top">
+        <div class="badge">
+          Anhuaitang filing temp, week three<br>
+          <span id="player-name">Wei Xiaotang</span>
+          <span id="staff-id">Cheng-An Beilin 3</span>
+          Authority: recommend
+        </div>
+        <div class="lock-line" id="lock-line">Opened is not proven. Handoff clears the desk. Proven stays.</div>
+        <div id="clock">Handoff clock 1800 s</div>
+        <div class="wage">Today's pay <span id="wage">¥0</span></div>
+      </div>
+      <p>Notice: tonight hand over three proven slips or fewer. Pay is by slip, not by how many copies you opened. Hand-over needs a tick. No tick means not handed over. Refresh wipes the night. Zero slips is also a hand-over.</p>
+      <div class="still-wrap">
+        <img id="desk-still" src="jpeg/00-open.jpg" alt="Night desk still">
+        <div class="hits">
+          <button type="button" class="door lit" id="door-fang">Today's sitting-hall prescription</button>
+          <button type="button" class="door dim" id="door-gui">Cabinet · Huo Cheng</button>
+          <button type="button" class="door dimmer" id="door-zhang">Ledger · Qian Subai</button>
+        </div>
+      </div>
+      <p class="artifact-translation" id="desk-still-caption">Typed copy of the night desk still: three cabinet doors — prescription, cabinet, ledger. Opened is not proven.</p>
+      <div class="cols">
+        <div class="col tray tray-loose">
+          <h3>Opened</h3>
+          <div class="col-open" id="col-seen"></div>
+        </div>
+        <div class="col tray tray-pinned">
+          <h3>Proven</h3>
+          <div class="col-ver" id="col-verified"></div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div id="claims-list"></div>
+        <button type="button" id="btn-handoff">Handoff</button>
+        <button type="button" id="btn-submit">Hand over</button>
+        <button type="button" id="btn-approve">Approve stock in/out</button>
+        <p id="msg"></p>
+      </div>
+    </section>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

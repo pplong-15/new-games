@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 200" width="160" height="200" role="img" aria-hidden="true">
+  <!-- ???????????????V??????????????????? -->
+  <rect width="160" height="200" fill="#e4e4de"/>
+  <rect x="5" y="5" width="150" height="190" fill="#f7f7f4"/>
+  <ellipse cx="80" cy="28" rx="72" ry="22" fill="#ffffff" opacity=".7"/>
+  <!-- short bangs -->
+  <rect x="42" y="28" width="80" height="16" fill="#2b2018"/>
+  <ellipse cx="82" cy="46" rx="40" ry="26" fill="#2b2018"/>
+  <!-- ears out -->
+  <ellipse cx="38" cy="74" rx="9" ry="13" fill="#c4a07c"/>
+  <ellipse cx="126" cy="74" rx="9" ry="13" fill="#c4a07c"/>
+  <ellipse cx="82" cy="76" rx="32" ry="38" fill="#d2b090"/>
+  <rect x="70" y="108" width="24" height="16" fill="#d2b090"/>
+  <!-- brown V jacket -->
+  <path d="M4 118 L52 112 L80 158 L108 112 L156 118 L160 200 L0 200 Z" fill="#4a3a2a"/>
+  <path d="M52 112 L80 158 L44 200 L4 118 Z" fill="#3d3024"/>
+  <path d="M108 112 L80 158 L116 200 L156 118 Z" fill="#564536"/>
+  <path d="M66 124 L80 168 L94 124 Z" fill="#d8d0c4"/>
+</svg>

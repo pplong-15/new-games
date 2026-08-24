@@ -14,4 +14,17 @@
     save(o);
   }
   window.ytSeen = load;
+  var seen = load();
+  var links = document.querySelectorAll(".tl a[href]");
+  for (var i = 0; i < links.length; i++) {
+    var href = links[i].getAttribute("href") || "";
+    var sid = href.replace(/^.*\//, "").replace(/\.html(?:#.*)?$/, "");
+    if (seen[sid]) {
+      if ((" " + links[i].className + " ").indexOf(" heard ") < 0) {
+        links[i].className += " heard";
+      }
+    } else if ((" " + links[i].className + " ").indexOf(" unheard ") < 0) {
+      links[i].className += " unheard";
+    }
+  }
 })();

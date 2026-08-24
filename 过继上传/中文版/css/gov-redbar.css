@@ -112,3 +112,21 @@ html.skin-gov-redbar .ft {
   clear: both;
   border-top: 1px solid #eee;
 }
+
+/* 窄屏：1000 栏改满宽，导航折行，不裁回台链。年代皮仍是红头宋体。 */
+@media (max-width: 800px) {
+  html.skin-gov-redbar .wrap {
+    width: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  html.skin-gov-redbar .links {
+    height: auto;
+    overflow: visible;
+    line-height: 1.4;
+  }
+  html.skin-gov-redbar .box li {
+    height: auto;
+    overflow: visible;
+  }
+}

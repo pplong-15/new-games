@@ -49,3 +49,16 @@ html.skin-archive-simsun .stamp {
   padding: 2px 8px;
   transform: rotate(-8deg);
 }
+
+@media (max-width: 800px) {
+  html.skin-archive-simsun .record {
+    width: auto;
+    max-width: 100%;
+    margin: 8px;
+    padding: 16px 12px;
+    box-sizing: border-box;
+  }
+  html.skin-archive-simsun .meta {
+    flex-wrap: wrap;
+  }
+}

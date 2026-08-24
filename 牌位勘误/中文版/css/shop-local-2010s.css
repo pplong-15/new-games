@@ -1,87 +1,116 @@
-/* shop-local-2010s：中小商家官网 / 日式免费企业模板记忆。登山公开壳的对标。 */
+/* 牌位勘误 · 殡仪馆对外公开包。2010 方签馆站，不是餐馆橙，不是搜词 HUD。 */
 html.skin-shop-local-2010s {
-  --bg: #f9ebde;
-  --ink: #555;
-  --accent: #d15c20;
-  --nav: #777;
-  --footer: #eee;
+  --bg: #efe6d6;
+  --ink: #3a3228;
+  --accent: #6b4a2e;
+  --nav: #5a5248;
+  --footer: #e4d9c8;
 }
 html.skin-shop-local-2010s body {
   margin: 0;
-  background: var(--bg);
+  background:
+    repeating-linear-gradient(90deg, rgba(90, 70, 40, 0.04) 0 8px, transparent 8px 16px),
+    var(--bg);
   color: var(--ink);
   font: 16px/1.8 "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 }
 html.skin-shop-local-2010s #container {
   max-width: 960px;
   margin: 0 auto;
+  background: #f7f0e4;
+  box-shadow: 0 0 0 1px #c9b89a;
 }
 html.skin-shop-local-2010s header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px 24px;
+  border-bottom: 3px solid var(--accent);
+  background: #f3ead8;
 }
 html.skin-shop-local-2010s .logo {
   font-size: 22px;
   color: var(--accent);
   font-weight: 700;
   text-decoration: none;
+  letter-spacing: 0.06em;
 }
-html.skin-shop-local-2010s #search-form { display: flex; }
-html.skin-shop-local-2010s #search-input {
-  border: 1px solid #ccc;
-  border-radius: 5px 0 0 5px;
-  padding: 10px 14px;
-  width: 220px;
-  background: #fff;
-}
-html.skin-shop-local-2010s #search-form button {
-  border: 0;
-  background: var(--accent);
-  color: #fff;
-  padding: 10px 16px;
-  border-radius: 0 5px 5px 0;
-}
+html.skin-shop-local-2010s #search-form { display: none; }
 html.skin-shop-local-2010s nav ul,
 html.skin-shop-local-2010s #menubar ul {
   display: flex;
-  gap: 12px;
+  flex-wrap: wrap;
+  gap: 0;
   list-style: none;
-  margin: 0 24px;
+  margin: 0 16px;
   padding: 0;
+  border-bottom: 1px solid #c9b89a;
 }
 html.skin-shop-local-2010s nav a,
 html.skin-shop-local-2010s #menubar a {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  min-width: 44px;
   background: var(--nav);
-  color: #fff;
+  color: #f7f0e4;
   text-decoration: none;
   font-weight: 700;
-  height: 56px;
-  line-height: 56px;
-  padding: 0 18px;
-  border-radius: 10px 10px 0 0;
+  padding: 0 16px;
+  border-radius: 0;
+  border-right: 1px solid #3f3a34;
+  box-sizing: border-box;
 }
-html.skin-shop-local-2010s main {
-  padding: 16px 24px 32px;
-}
+html.skin-shop-local-2010s main { padding: 16px 24px 32px; }
 html.skin-shop-local-2010s .notice dt {
   display: inline-block;
-  background: #f4edb9;
+  background: #efe3c4;
   padding: 4px 10px;
-  border-radius: 6px;
+  border: 1px solid #c9b89a;
+  border-radius: 0;
   margin-bottom: 6px;
+  font-weight: 700;
 }
 html.skin-shop-local-2010s .menu-section h2 {
   color: var(--accent);
   border-bottom: 2px solid var(--accent);
+  padding-bottom: 4px;
 }
 html.skin-shop-local-2010s .price { color: var(--accent); font-weight: 700; }
 html.skin-shop-local-2010s footer {
   background: var(--footer);
   text-align: center;
   font-size: 12px;
-  padding: 8px;
+  padding: 12px;
+  min-height: 44px;
+  border-top: 1px solid #c9b89a;
 }
-html.skin-shop-local-2010s .hero-photo { width: 100%; height: auto; display: block; }
+html.skin-shop-local-2010s .hero-photo { width: 100%; height: auto; display: block; filter: saturate(0.8); }
+html.skin-shop-local-2010s a { color: #5a3a1a; }
+html.skin-shop-local-2010s a[href="javascript:void(0)"] {
+  text-decoration: line-through;
+  cursor: not-allowed;
+  border: 1px dashed #666;
+  padding: 2px 6px;
+  color: #555;
+}
+html.skin-shop-local-2010s :focus { outline: none; }
+html.skin-shop-local-2010s :focus-visible {
+  outline: 3px dotted #111;
+  outline-offset: 2px;
+}
+@media (max-width: 390px) {
+  html.skin-shop-local-2010s header,
+  html.skin-shop-local-2010s main { padding-left: 12px; padding-right: 12px; }
+  html.skin-shop-local-2010s nav ul,
+  html.skin-shop-local-2010s #menubar ul { margin: 0; }
+}
+@media (max-width: 320px) {
+  html.skin-shop-local-2010s .logo { font-size: 18px; }
+  html.skin-shop-local-2010s nav a,
+  html.skin-shop-local-2010s #menubar a { flex: 1 1 auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html.skin-shop-local-2010s * { animation: none !important; transition: none !important; }
+}

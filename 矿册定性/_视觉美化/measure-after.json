@@ -1,0 +1,202 @@
+{
+  "zh": {
+    "roster320": {
+      "rowCount": 10,
+      "labelCount": 40,
+      "labelMinH": 44,
+      "labelMinW": 139.59375,
+      "overflowX": false,
+      "scrollW": 320,
+      "clientW": 320,
+      "viewport": {
+        "w": 320,
+        "h": 640
+      },
+      "searchForm": {
+        "w": 296,
+        "h": 44,
+        "x": 12,
+        "y": 94
+      },
+      "searchInput": {
+        "w": 239,
+        "h": 44,
+        "x": 12,
+        "y": 94
+      },
+      "searchBtn": {
+        "w": 51,
+        "h": 44,
+        "x": 257,
+        "y": 94
+      },
+      "ghost": {
+        "w": 296,
+        "h": 44,
+        "x": 12,
+        "y": 42
+      },
+      "firstLabel": {
+        "w": 140,
+        "h": 44,
+        "x": 16,
+        "y": 732
+      },
+      "lastLabel": {
+        "w": 140,
+        "h": 44,
+        "x": 164,
+        "y": 2542
+      }
+    },
+    "roster390": {
+      "rowCount": 10,
+      "labelCount": 40,
+      "labelMinH": 44,
+      "labelMinW": 173.1875,
+      "overflowX": false,
+      "scrollW": 390,
+      "clientW": 390,
+      "viewport": {
+        "w": 390,
+        "h": 844
+      },
+      "searchForm": {
+        "w": 366,
+        "h": 44,
+        "x": 12,
+        "y": 94
+      },
+      "searchInput": {
+        "w": 309,
+        "h": 44,
+        "x": 12,
+        "y": 94
+      },
+      "searchBtn": {
+        "w": 51,
+        "h": 44,
+        "x": 327,
+        "y": 94
+      },
+      "ghost": {
+        "w": 366,
+        "h": 44,
+        "x": 12,
+        "y": 42
+      },
+      "firstLabel": {
+        "w": 173,
+        "h": 44,
+        "x": 18,
+        "y": 665
+      },
+      "lastLabel": {
+        "w": 173,
+        "h": 44,
+        "x": 199,
+        "y": 2475
+      }
+    }
+  },
+  "en": {
+    "roster320": {
+      "rowCount": 10,
+      "labelCount": 40,
+      "labelMinH": 44,
+      "labelMinW": 139.59375,
+      "overflowX": false,
+      "scrollW": 320,
+      "clientW": 320,
+      "viewport": {
+        "w": 320,
+        "h": 640
+      },
+      "searchForm": {
+        "w": 296,
+        "h": 44,
+        "x": 12,
+        "y": 94
+      },
+      "searchInput": {
+        "w": 209,
+        "h": 44,
+        "x": 12,
+        "y": 94
+      },
+      "searchBtn": {
+        "w": 81,
+        "h": 44,
+        "x": 227,
+        "y": 94
+      },
+      "ghost": {
+        "w": 296,
+        "h": 44,
+        "x": 12,
+        "y": 42
+      },
+      "firstLabel": {
+        "w": 140,
+        "h": 44,
+        "x": 16,
+        "y": 956
+      },
+      "lastLabel": {
+        "w": 140,
+        "h": 52,
+        "x": 164,
+        "y": 2836
+      }
+    },
+    "roster390": {
+      "rowCount": 10,
+      "labelCount": 40,
+      "labelMinH": 44,
+      "labelMinW": 173.1875,
+      "overflowX": false,
+      "scrollW": 390,
+      "clientW": 390,
+      "viewport": {
+        "w": 390,
+        "h": 844
+      },
+      "searchForm": {
+        "w": 366,
+        "h": 44,
+        "x": 12,
+        "y": 94
+      },
+      "searchInput": {
+        "w": 279,
+        "h": 44,
+        "x": 12,
+        "y": 94
+      },
+      "searchBtn": {
+        "w": 81,
+        "h": 44,
+        "x": 297,
+        "y": 94
+      },
+      "ghost": {
+        "w": 366,
+        "h": 44,
+        "x": 12,
+        "y": 42
+      },
+      "firstLabel": {
+        "w": 173,
+        "h": 44,
+        "x": 18,
+        "y": 844
+      },
+      "lastLabel": {
+        "w": 173,
+        "h": 44,
+        "x": 199,
+        "y": 2654
+      }
+    }
+  }
+}

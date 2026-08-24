@@ -1,0 +1,3806 @@
+[
+  {
+    "lang": "zh",
+    "side": "before",
+    "nn": 1,
+    "slug": "boot-first-screen",
+    "url": "http://127.0.0.1:9214/introduction.html",
+    "page": "introduction.html",
+    "viewport": "1280x800",
+    "state_name": "empty",
+    "state": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-01-boot-first-screen-before.png",
+    "dest_name": "01-boot-first-screen-before.png",
+    "sha256": "7a8b9ae3598d53c02a22cc2cbaf4202d5cf5d160fde52e003b26c2bd0e011d5b",
+    "bytes": 740359,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "before",
+    "nn": 2,
+    "slug": "core-verb",
+    "url": "http://127.0.0.1:9214/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "one",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-02-core-verb-before.png",
+    "dest_name": "02-core-verb-before.png",
+    "sha256": "00d3778652334908e10a0510926ed5d893d244373169260e41fcaeaa7adca865",
+    "bytes": 55010,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "before",
+    "nn": 3,
+    "slug": "success-feedback",
+    "url": "http://127.0.0.1:9214/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "full",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-03-success-feedback-before.png",
+    "dest_name": "03-success-feedback-before.png",
+    "sha256": "546d1d7135cd326a8b947b17709b2ac750080055b8d7eef088cc8753cafa98db",
+    "bytes": 54465,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "before",
+    "nn": 4,
+    "slug": "near-fail",
+    "url": "http://127.0.0.1:9214/note.html",
+    "page": "note.html",
+    "viewport": "1280x800",
+    "state_name": "empty",
+    "state": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-04-near-fail-before.png",
+    "dest_name": "04-near-fail-before.png",
+    "sha256": "2e6c84bb9a5d80c73d5a0fe49d2d4d7c70f365f47455006b7683733221f7bc2c",
+    "bytes": 70419,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "before",
+    "nn": 5,
+    "slug": "recovery",
+    "url": "http://127.0.0.1:9214/ending-thin.html",
+    "page": "ending-thin.html",
+    "viewport": "1280x800",
+    "state_name": "thin",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": {
+        "nature": "private",
+        "codeTo": "none",
+        "goodsTo": "none",
+        "act": "note",
+        "okNeed": false
+      },
+      "ending": "thin"
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": {
+        "nature": "private",
+        "codeTo": "none",
+        "goodsTo": "none",
+        "act": "note",
+        "okNeed": false
+      },
+      "ending": "thin"
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-05-recovery-before.png",
+    "dest_name": "05-recovery-before.png",
+    "sha256": "9defc9c4047e519cd6075d4d91f2c326f0acdc25bdb768c1a0d19176c81a011e",
+    "bytes": 32866,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "before",
+    "nn": 6,
+    "slug": "narrow-320",
+    "url": "http://127.0.0.1:9214/desk.html",
+    "page": "desk.html",
+    "viewport": "320x640",
+    "state_name": "one",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-06-narrow-320-before.png",
+    "dest_name": "06-narrow-320-before.png",
+    "sha256": "bfe28a14310573355efdc16bfad234e104db4fc13de85ce6ed53d0e5df9832cd",
+    "bytes": 36166,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "before",
+    "nn": 7,
+    "slug": "keyboard-focus",
+    "url": "http://127.0.0.1:9214/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "one",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-07-keyboard-focus-before.png",
+    "dest_name": "07-keyboard-focus-before.png",
+    "sha256": "e47f835ccbb4338906731c87844ba0e31a8e19ec30d99e7344707bc6cd8b3e71",
+    "bytes": 55405,
+    "extra": "tab",
+    "tab": {
+      "tabs": 1,
+      "hv": true,
+      "tag": "A.ghost-btn",
+      "text": "钟",
+      "outline": "rgb(0, 95, 204) auto 1px",
+      "outlineWidth": "1px"
+    }
+  },
+  {
+    "lang": "zh",
+    "side": "before",
+    "nn": 8,
+    "slug": "touch-targets",
+    "url": "http://127.0.0.1:9214/desk.html",
+    "page": "desk.html",
+    "viewport": "390x844",
+    "state_name": "one",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-08-touch-targets-before.png",
+    "dest_name": "08-touch-targets-before.png",
+    "sha256": "60eef40145476beeea4cc4ccf426707bcc56137d3ac9b89e9e912a36f5d3424a",
+    "bytes": 48789,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "before",
+    "nn": 9,
+    "slug": "muted-or-reduced-motion",
+    "url": "http://127.0.0.1:9214/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "one",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-09-muted-or-reduced-motion-before.png",
+    "dest_name": "09-muted-or-reduced-motion-before.png",
+    "sha256": "00d3778652334908e10a0510926ed5d893d244373169260e41fcaeaa7adca865",
+    "bytes": 55010,
+    "extra": "reduce",
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "before",
+    "nn": 10,
+    "slug": "non-color-state",
+    "url": "http://127.0.0.1:9214/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "full",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-10-non-color-state-before.png",
+    "dest_name": "10-non-color-state-before.png",
+    "sha256": "546d1d7135cd326a8b947b17709b2ac750080055b8d7eef088cc8753cafa98db",
+    "bytes": 54465,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "before",
+    "nn": 11,
+    "slug": "empty-or-loading",
+    "url": "http://127.0.0.1:9214/board.html",
+    "page": "board.html",
+    "viewport": "1280x800",
+    "state_name": "empty",
+    "state": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-11-empty-or-loading-before.png",
+    "dest_name": "11-empty-or-loading-before.png",
+    "sha256": "575cd748a39c11864e4a7209e859cb8dfdb4ffee2968b350b2fb756593ae9c14",
+    "bytes": 441575,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "before",
+    "nn": 12,
+    "slug": "error-or-pause",
+    "url": "http://127.0.0.1:9214/ending-thin.html",
+    "page": "ending-thin.html",
+    "viewport": "1280x800",
+    "state_name": "thin",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": {
+        "nature": "private",
+        "codeTo": "none",
+        "goodsTo": "none",
+        "act": "note",
+        "okNeed": false
+      },
+      "ending": "thin"
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": {
+        "nature": "private",
+        "codeTo": "none",
+        "goodsTo": "none",
+        "act": "note",
+        "okNeed": false
+      },
+      "ending": "thin"
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-12-error-or-pause-before.png",
+    "dest_name": "12-error-or-pause-before.png",
+    "sha256": "9defc9c4047e519cd6075d4d91f2c326f0acdc25bdb768c1a0d19176c81a011e",
+    "bytes": 32866,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "before",
+    "nn": 17,
+    "slug": "opened-one",
+    "url": "http://127.0.0.1:9214/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "one",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-17-opened-one-before.png",
+    "dest_name": "17-opened-one-before.png",
+    "sha256": "00d3778652334908e10a0510926ed5d893d244373169260e41fcaeaa7adca865",
+    "bytes": 55010,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "before",
+    "nn": 18,
+    "slug": "quota-full",
+    "url": "http://127.0.0.1:9214/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "full",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-18-quota-full-before.png",
+    "dest_name": "18-quota-full-before.png",
+    "sha256": "546d1d7135cd326a8b947b17709b2ac750080055b8d7eef088cc8753cafa98db",
+    "bytes": 54465,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "before",
+    "nn": 19,
+    "slug": "handover-kept",
+    "url": "http://127.0.0.1:9214/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "handover",
+    "state": {
+      "round": 2,
+      "opened": [],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 2,
+      "opened": [],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-19-handover-kept-before.png",
+    "dest_name": "19-handover-kept-before.png",
+    "sha256": "9ce6842f29fd7ffc570d8213855abfa59861db1422d71eeb4c03b8e1af7b2eff",
+    "bytes": 57144,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "before",
+    "nn": 20,
+    "slug": "handover-board",
+    "url": "http://127.0.0.1:9214/board.html",
+    "page": "board.html",
+    "viewport": "1280x1400",
+    "state_name": "handover",
+    "state": {
+      "round": 2,
+      "opened": [],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 2,
+      "opened": [],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-20-handover-board-before.png",
+    "dest_name": "20-handover-board-before.png",
+    "sha256": "e1b2d585efe8bec2773fb6bce3058027e87ac5f7f952abda54e7f558e934aa51",
+    "bytes": 465375,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "before",
+    "nn": 23,
+    "slug": "ghost-nearfail",
+    "url": "http://127.0.0.1:9214/ending-ghost.html",
+    "page": "ending-ghost.html",
+    "viewport": "1280x800",
+    "state_name": "ghost",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": {
+        "nature": "ghost",
+        "codeTo": "martyr",
+        "goodsTo": "plot12",
+        "act": "note",
+        "okNeed": true
+      },
+      "ending": "ghost"
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": {
+        "nature": "ghost",
+        "codeTo": "martyr",
+        "goodsTo": "plot12",
+        "act": "note",
+        "okNeed": true
+      },
+      "ending": "ghost"
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-23-ghost-nearfail-before.png",
+    "dest_name": "23-ghost-nearfail-before.png",
+    "sha256": "89593bdafef3861f40c29cff5b2fd4a05daf9e3d3f9b9c186ea2e65fb5a3069b",
+    "bytes": 68791,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "before",
+    "nn": 24,
+    "slug": "overbook-nearfail",
+    "url": "http://127.0.0.1:9214/ending-overbook.html",
+    "page": "ending-overbook.html",
+    "viewport": "1280x800",
+    "state_name": "overbook",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": {
+        "nature": "cross",
+        "codeTo": "martyr",
+        "goodsTo": "plot12",
+        "act": "change",
+        "okNeed": true
+      },
+      "ending": "overbook"
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": {
+        "nature": "cross",
+        "codeTo": "martyr",
+        "goodsTo": "plot12",
+        "act": "change",
+        "okNeed": true
+      },
+      "ending": "overbook"
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-24-overbook-nearfail-before.png",
+    "dest_name": "24-overbook-nearfail-before.png",
+    "sha256": "61b0de4968c9f808fa5cdf797e5585df8b154477446e8c7957ec04da19f0261a",
+    "bytes": 72885,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "before",
+    "nn": 26,
+    "slug": "intro-no-search",
+    "url": "http://127.0.0.1:9214/introduction.html",
+    "page": "introduction.html",
+    "viewport": "1280x800",
+    "state_name": "empty",
+    "state": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-26-intro-no-search-before.png",
+    "dest_name": "26-intro-no-search-before.png",
+    "sha256": "7a8b9ae3598d53c02a22cc2cbaf4202d5cf5d160fde52e003b26c2bd0e011d5b",
+    "bytes": 740359,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "before",
+    "nn": 28,
+    "slug": "clock",
+    "url": "http://127.0.0.1:9214/clock.html",
+    "page": "clock.html",
+    "viewport": "1280x800",
+    "state_name": "one",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-28-clock-before.png",
+    "dest_name": "28-clock-before.png",
+    "sha256": "bfc9b7c27a8bcf409708103ea05ea837c7219f0857751a2d2dfbb404ebc457f9",
+    "bytes": 529899,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "before",
+    "nn": 32,
+    "slug": "skin-desk",
+    "url": "http://127.0.0.1:9214/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "empty",
+    "state": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-32-skin-desk-before.png",
+    "dest_name": "32-skin-desk-before.png",
+    "sha256": "e8b02497581033b0bad3ec7e1b288967158113206566288bb6b48ff2a89d7e1c",
+    "bytes": 54329,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "after",
+    "nn": 1,
+    "slug": "boot-first-screen",
+    "url": "http://127.0.0.1:9216/introduction.html",
+    "page": "introduction.html",
+    "viewport": "1280x800",
+    "state_name": "empty",
+    "state": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-01-boot-first-screen.png",
+    "dest_name": "01-boot-first-screen.png",
+    "sha256": "4bc26645ab160e93b3b9d4f98a1410ac45435acbabd80472cd4f4a4548d0eeb5",
+    "bytes": 611485,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "after",
+    "nn": 2,
+    "slug": "core-verb",
+    "url": "http://127.0.0.1:9216/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "one",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-02-core-verb.png",
+    "dest_name": "02-core-verb.png",
+    "sha256": "eae598d1f7d8ed1c90ae4bebf67fab376fdbc140d5009c6c8eaed221c43c2479",
+    "bytes": 50912,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "after",
+    "nn": 3,
+    "slug": "success-feedback",
+    "url": "http://127.0.0.1:9216/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "full",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-03-success-feedback.png",
+    "dest_name": "03-success-feedback.png",
+    "sha256": "7c0ca8fdb66451b23a3a1629f8e9b32a9b17658c4ba0dcacb6fa0d2963d61087",
+    "bytes": 69176,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "after",
+    "nn": 4,
+    "slug": "near-fail",
+    "url": "http://127.0.0.1:9216/note.html",
+    "page": "note.html",
+    "viewport": "1280x800",
+    "state_name": "empty",
+    "state": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-04-near-fail.png",
+    "dest_name": "04-near-fail.png",
+    "sha256": "6a008a2f2e99f799ec308889eaa9261f6f37b1cfd0e4a3eb41e629f575427d6d",
+    "bytes": 56308,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "after",
+    "nn": 5,
+    "slug": "recovery",
+    "url": "http://127.0.0.1:9216/ending-thin.html",
+    "page": "ending-thin.html",
+    "viewport": "1280x800",
+    "state_name": "thin",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": {
+        "nature": "private",
+        "codeTo": "none",
+        "goodsTo": "none",
+        "act": "note",
+        "okNeed": false
+      },
+      "ending": "thin"
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": {
+        "nature": "private",
+        "codeTo": "none",
+        "goodsTo": "none",
+        "act": "note",
+        "okNeed": false
+      },
+      "ending": "thin"
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-05-recovery.png",
+    "dest_name": "05-recovery.png",
+    "sha256": "520d50acdfe5479fbf72276604e228b6dac92416eba54134f97f76a5689d7396",
+    "bytes": 35848,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "after",
+    "nn": 6,
+    "slug": "narrow-320",
+    "url": "http://127.0.0.1:9216/desk.html",
+    "page": "desk.html",
+    "viewport": "320x640",
+    "state_name": "one",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-06-narrow-320.png",
+    "dest_name": "06-narrow-320.png",
+    "sha256": "aa9f3d16fc92368b6d8480bf7b5552056667593665f8104e309453fe9cb1c0f9",
+    "bytes": 25325,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "after",
+    "nn": 7,
+    "slug": "keyboard-focus",
+    "url": "http://127.0.0.1:9216/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "one",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-07-keyboard-focus.png",
+    "dest_name": "07-keyboard-focus.png",
+    "sha256": "faafb7f82307a4e138a1e0f3f78474807350d21c99762b45f1af79552355622e",
+    "bytes": 51110,
+    "extra": "tab",
+    "tab": {
+      "tabs": 1,
+      "hv": true,
+      "tag": "A.ghost-btn",
+      "text": "钟",
+      "outline": "rgb(17, 17, 17) dotted 3px",
+      "outlineWidth": "3px"
+    }
+  },
+  {
+    "lang": "zh",
+    "side": "after",
+    "nn": 8,
+    "slug": "touch-targets",
+    "url": "http://127.0.0.1:9216/desk.html",
+    "page": "desk.html",
+    "viewport": "390x844",
+    "state_name": "one",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-08-touch-targets.png",
+    "dest_name": "08-touch-targets.png",
+    "sha256": "5ccbe507a9d398082b676ad01892d708eaccceb459b6b14359f8b94ca6d94d1b",
+    "bytes": 43190,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "after",
+    "nn": 9,
+    "slug": "muted-or-reduced-motion",
+    "url": "http://127.0.0.1:9216/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "one",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-09-muted-or-reduced-motion.png",
+    "dest_name": "09-muted-or-reduced-motion.png",
+    "sha256": "eae598d1f7d8ed1c90ae4bebf67fab376fdbc140d5009c6c8eaed221c43c2479",
+    "bytes": 50912,
+    "extra": "reduce",
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "after",
+    "nn": 10,
+    "slug": "non-color-state",
+    "url": "http://127.0.0.1:9216/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "full",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-10-non-color-state.png",
+    "dest_name": "10-non-color-state.png",
+    "sha256": "7c0ca8fdb66451b23a3a1629f8e9b32a9b17658c4ba0dcacb6fa0d2963d61087",
+    "bytes": 69176,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "after",
+    "nn": 11,
+    "slug": "empty-or-loading",
+    "url": "http://127.0.0.1:9216/board.html",
+    "page": "board.html",
+    "viewport": "1280x800",
+    "state_name": "empty",
+    "state": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-11-empty-or-loading.png",
+    "dest_name": "11-empty-or-loading.png",
+    "sha256": "6b226503b9fa927f719fda5eae3a9c4e1fc4d688a9ec86c16523cb3b15c61c95",
+    "bytes": 238490,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "after",
+    "nn": 12,
+    "slug": "error-or-pause",
+    "url": "http://127.0.0.1:9216/ending-thin.html",
+    "page": "ending-thin.html",
+    "viewport": "1280x800",
+    "state_name": "thin",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": {
+        "nature": "private",
+        "codeTo": "none",
+        "goodsTo": "none",
+        "act": "note",
+        "okNeed": false
+      },
+      "ending": "thin"
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": {
+        "nature": "private",
+        "codeTo": "none",
+        "goodsTo": "none",
+        "act": "note",
+        "okNeed": false
+      },
+      "ending": "thin"
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-12-error-or-pause.png",
+    "dest_name": "12-error-or-pause.png",
+    "sha256": "520d50acdfe5479fbf72276604e228b6dac92416eba54134f97f76a5689d7396",
+    "bytes": 35848,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "after",
+    "nn": 17,
+    "slug": "opened-one",
+    "url": "http://127.0.0.1:9216/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "one",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-17-opened-one.png",
+    "dest_name": "17-opened-one.png",
+    "sha256": "eae598d1f7d8ed1c90ae4bebf67fab376fdbc140d5009c6c8eaed221c43c2479",
+    "bytes": 50912,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "after",
+    "nn": 18,
+    "slug": "quota-full",
+    "url": "http://127.0.0.1:9216/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "full",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-18-quota-full.png",
+    "dest_name": "18-quota-full.png",
+    "sha256": "7c0ca8fdb66451b23a3a1629f8e9b32a9b17658c4ba0dcacb6fa0d2963d61087",
+    "bytes": 69176,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "after",
+    "nn": 19,
+    "slug": "handover-kept",
+    "url": "http://127.0.0.1:9216/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "handover",
+    "state": {
+      "round": 2,
+      "opened": [],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 2,
+      "opened": [],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-19-handover-kept.png",
+    "dest_name": "19-handover-kept.png",
+    "sha256": "c69c4a58326a780c66407acd09815a0bd3dbb1e9cdd6a8f0176dfe872661362c",
+    "bytes": 52761,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "after",
+    "nn": 20,
+    "slug": "handover-board",
+    "url": "http://127.0.0.1:9216/board.html",
+    "page": "board.html",
+    "viewport": "1280x1400",
+    "state_name": "handover",
+    "state": {
+      "round": 2,
+      "opened": [],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 2,
+      "opened": [],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-20-handover-board.png",
+    "dest_name": "20-handover-board.png",
+    "sha256": "b31f66eaa9ac18ccee2a8ab85000c146de8d574c6b76e8084bf8efc78b51b8e0",
+    "bytes": 263732,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "after",
+    "nn": 23,
+    "slug": "ghost-nearfail",
+    "url": "http://127.0.0.1:9216/ending-ghost.html",
+    "page": "ending-ghost.html",
+    "viewport": "1280x800",
+    "state_name": "ghost",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": {
+        "nature": "ghost",
+        "codeTo": "martyr",
+        "goodsTo": "plot12",
+        "act": "note",
+        "okNeed": true
+      },
+      "ending": "ghost"
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": {
+        "nature": "ghost",
+        "codeTo": "martyr",
+        "goodsTo": "plot12",
+        "act": "note",
+        "okNeed": true
+      },
+      "ending": "ghost"
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-23-ghost-nearfail.png",
+    "dest_name": "23-ghost-nearfail.png",
+    "sha256": "89593bdafef3861f40c29cff5b2fd4a05daf9e3d3f9b9c186ea2e65fb5a3069b",
+    "bytes": 68791,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "after",
+    "nn": 24,
+    "slug": "overbook-nearfail",
+    "url": "http://127.0.0.1:9216/ending-overbook.html",
+    "page": "ending-overbook.html",
+    "viewport": "1280x800",
+    "state_name": "overbook",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": {
+        "nature": "cross",
+        "codeTo": "martyr",
+        "goodsTo": "plot12",
+        "act": "change",
+        "okNeed": true
+      },
+      "ending": "overbook"
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": {
+        "nature": "cross",
+        "codeTo": "martyr",
+        "goodsTo": "plot12",
+        "act": "change",
+        "okNeed": true
+      },
+      "ending": "overbook"
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-24-overbook-nearfail.png",
+    "dest_name": "24-overbook-nearfail.png",
+    "sha256": "61b0de4968c9f808fa5cdf797e5585df8b154477446e8c7957ec04da19f0261a",
+    "bytes": 72885,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "after",
+    "nn": 26,
+    "slug": "intro-no-search",
+    "url": "http://127.0.0.1:9216/introduction.html",
+    "page": "introduction.html",
+    "viewport": "1280x800",
+    "state_name": "empty",
+    "state": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-26-intro-no-search.png",
+    "dest_name": "26-intro-no-search.png",
+    "sha256": "4bc26645ab160e93b3b9d4f98a1410ac45435acbabd80472cd4f4a4548d0eeb5",
+    "bytes": 611485,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "after",
+    "nn": 28,
+    "slug": "clock",
+    "url": "http://127.0.0.1:9216/clock.html",
+    "page": "clock.html",
+    "viewport": "1280x800",
+    "state_name": "one",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-28-clock.png",
+    "dest_name": "28-clock.png",
+    "sha256": "f9abb6c209c6db81be968aa2ceb392ac44336da23f2dd96423d724e1ddd76f99",
+    "bytes": 266155,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "zh",
+    "side": "after",
+    "nn": 32,
+    "slug": "skin-desk",
+    "url": "http://127.0.0.1:9216/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "empty",
+    "state": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/zh-32-skin-desk.png",
+    "dest_name": "32-skin-desk.png",
+    "sha256": "154e5229201198279d6dd2ad5c34566736f2d887f75b1be580c082199df10e4a",
+    "bytes": 50110,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "before",
+    "nn": 1,
+    "slug": "boot-first-screen",
+    "url": "http://127.0.0.1:9215/introduction.html",
+    "page": "introduction.html",
+    "viewport": "1280x800",
+    "state_name": "empty",
+    "state": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/en-01-boot-first-screen-before.png",
+    "dest_name": "01-boot-first-screen-before.png",
+    "sha256": "1a169f13b14b62287a2b1084bf617bb0b48dc80bac40c696f9bdc23a18b8b5a0",
+    "bytes": 746693,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "before",
+    "nn": 2,
+    "slug": "core-verb",
+    "url": "http://127.0.0.1:9215/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "one",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/en-02-core-verb-before.png",
+    "dest_name": "02-core-verb-before.png",
+    "sha256": "aa4bac962489cc721e1ca7af797f797aca2254de8f6060b7719e78ad64a4eff7",
+    "bytes": 75111,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "before",
+    "nn": 3,
+    "slug": "success-feedback",
+    "url": "http://127.0.0.1:9215/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "full",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/en-03-success-feedback-before.png",
+    "dest_name": "03-success-feedback-before.png",
+    "sha256": "5f8db390eeeabe872dd541683259535eb92207d083eca1054a743e55fb6d1101",
+    "bytes": 72319,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "before",
+    "nn": 4,
+    "slug": "near-fail",
+    "url": "http://127.0.0.1:9215/note.html",
+    "page": "note.html",
+    "viewport": "1280x800",
+    "state_name": "empty",
+    "state": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/en-04-near-fail-before.png",
+    "dest_name": "04-near-fail-before.png",
+    "sha256": "f7ec9bc49514372dcc3cebe1edf8f3a10ae6eb13e387e12f356fbcfdf48067d8",
+    "bytes": 96056,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "before",
+    "nn": 5,
+    "slug": "recovery",
+    "url": "http://127.0.0.1:9215/ending-thin.html",
+    "page": "ending-thin.html",
+    "viewport": "1280x800",
+    "state_name": "thin",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": {
+        "nature": "private",
+        "codeTo": "none",
+        "goodsTo": "none",
+        "act": "note",
+        "okNeed": false
+      },
+      "ending": "thin"
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": {
+        "nature": "private",
+        "codeTo": "none",
+        "goodsTo": "none",
+        "act": "note",
+        "okNeed": false
+      },
+      "ending": "thin"
+    },
+    "file": "/tmp/sanmen-d13/shots/en-05-recovery-before.png",
+    "dest_name": "05-recovery-before.png",
+    "sha256": "375835ffd47527c49de3906cafdc32b7a21446e020e2b7861f7c73b733a8608d",
+    "bytes": 38870,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "before",
+    "nn": 6,
+    "slug": "narrow-320",
+    "url": "http://127.0.0.1:9215/desk.html",
+    "page": "desk.html",
+    "viewport": "320x640",
+    "state_name": "one",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/en-06-narrow-320-before.png",
+    "dest_name": "06-narrow-320-before.png",
+    "sha256": "bd45238af53bc90d27f8e11bdbc054c333d0c2e2dc1b095e31ba7c3151ec9403",
+    "bytes": 40267,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "before",
+    "nn": 7,
+    "slug": "keyboard-focus",
+    "url": "http://127.0.0.1:9215/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "one",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/en-07-keyboard-focus-before.png",
+    "dest_name": "07-keyboard-focus-before.png",
+    "sha256": "734f2a71d28a04337b86b528f3418438215358acc7870ae683cba3b7730d084b",
+    "bytes": 75524,
+    "extra": "tab",
+    "tab": {
+      "tabs": 1,
+      "hv": true,
+      "tag": "A.ghost-btn",
+      "text": "Clock",
+      "outline": "rgb(0, 95, 204) auto 1px",
+      "outlineWidth": "1px"
+    }
+  },
+  {
+    "lang": "en",
+    "side": "before",
+    "nn": 8,
+    "slug": "touch-targets",
+    "url": "http://127.0.0.1:9215/desk.html",
+    "page": "desk.html",
+    "viewport": "390x844",
+    "state_name": "one",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/en-08-touch-targets-before.png",
+    "dest_name": "08-touch-targets-before.png",
+    "sha256": "b55ee4392226dfb846a17cced3b4748dfb9d08381c773480f0a85c46256913da",
+    "bytes": 56281,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "before",
+    "nn": 9,
+    "slug": "muted-or-reduced-motion",
+    "url": "http://127.0.0.1:9215/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "one",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/en-09-muted-or-reduced-motion-before.png",
+    "dest_name": "09-muted-or-reduced-motion-before.png",
+    "sha256": "aa4bac962489cc721e1ca7af797f797aca2254de8f6060b7719e78ad64a4eff7",
+    "bytes": 75111,
+    "extra": "reduce",
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "before",
+    "nn": 10,
+    "slug": "non-color-state",
+    "url": "http://127.0.0.1:9215/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "full",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/en-10-non-color-state-before.png",
+    "dest_name": "10-non-color-state-before.png",
+    "sha256": "5f8db390eeeabe872dd541683259535eb92207d083eca1054a743e55fb6d1101",
+    "bytes": 72319,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "before",
+    "nn": 11,
+    "slug": "empty-or-loading",
+    "url": "http://127.0.0.1:9215/board.html",
+    "page": "board.html",
+    "viewport": "1280x800",
+    "state_name": "empty",
+    "state": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/en-11-empty-or-loading-before.png",
+    "dest_name": "11-empty-or-loading-before.png",
+    "sha256": "7a91876400614989a5be688845ee36e1aed955e3a3f919e9dc4db3ce8d647156",
+    "bytes": 445940,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "before",
+    "nn": 12,
+    "slug": "error-or-pause",
+    "url": "http://127.0.0.1:9215/ending-thin.html",
+    "page": "ending-thin.html",
+    "viewport": "1280x800",
+    "state_name": "thin",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": {
+        "nature": "private",
+        "codeTo": "none",
+        "goodsTo": "none",
+        "act": "note",
+        "okNeed": false
+      },
+      "ending": "thin"
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": {
+        "nature": "private",
+        "codeTo": "none",
+        "goodsTo": "none",
+        "act": "note",
+        "okNeed": false
+      },
+      "ending": "thin"
+    },
+    "file": "/tmp/sanmen-d13/shots/en-12-error-or-pause-before.png",
+    "dest_name": "12-error-or-pause-before.png",
+    "sha256": "375835ffd47527c49de3906cafdc32b7a21446e020e2b7861f7c73b733a8608d",
+    "bytes": 38870,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "before",
+    "nn": 17,
+    "slug": "opened-one",
+    "url": "http://127.0.0.1:9215/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "one",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/en-17-opened-one-before.png",
+    "dest_name": "17-opened-one-before.png",
+    "sha256": "aa4bac962489cc721e1ca7af797f797aca2254de8f6060b7719e78ad64a4eff7",
+    "bytes": 75111,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "before",
+    "nn": 18,
+    "slug": "quota-full",
+    "url": "http://127.0.0.1:9215/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "full",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/en-18-quota-full-before.png",
+    "dest_name": "18-quota-full-before.png",
+    "sha256": "5f8db390eeeabe872dd541683259535eb92207d083eca1054a743e55fb6d1101",
+    "bytes": 72319,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "before",
+    "nn": 19,
+    "slug": "handover-kept",
+    "url": "http://127.0.0.1:9215/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "handover",
+    "state": {
+      "round": 2,
+      "opened": [],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 2,
+      "opened": [],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/en-19-handover-kept-before.png",
+    "dest_name": "19-handover-kept-before.png",
+    "sha256": "942fa598e29a750ec32a0c2ea25c678dc8e1ad9b9556c0066c6e70bf37960d76",
+    "bytes": 75616,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "before",
+    "nn": 20,
+    "slug": "handover-board",
+    "url": "http://127.0.0.1:9215/board.html",
+    "page": "board.html",
+    "viewport": "1280x1400",
+    "state_name": "handover",
+    "state": {
+      "round": 2,
+      "opened": [],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 2,
+      "opened": [],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/en-20-handover-board-before.png",
+    "dest_name": "20-handover-board-before.png",
+    "sha256": "2fe9fa836ecb075e936aa4f8c72df390393c2861147149c5c966b25f45f55aa1",
+    "bytes": 477184,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "before",
+    "nn": 23,
+    "slug": "ghost-nearfail",
+    "url": "http://127.0.0.1:9215/ending-ghost.html",
+    "page": "ending-ghost.html",
+    "viewport": "1280x800",
+    "state_name": "ghost",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": {
+        "nature": "ghost",
+        "codeTo": "martyr",
+        "goodsTo": "plot12",
+        "act": "note",
+        "okNeed": true
+      },
+      "ending": "ghost"
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": {
+        "nature": "ghost",
+        "codeTo": "martyr",
+        "goodsTo": "plot12",
+        "act": "note",
+        "okNeed": true
+      },
+      "ending": "ghost"
+    },
+    "file": "/tmp/sanmen-d13/shots/en-23-ghost-nearfail-before.png",
+    "dest_name": "23-ghost-nearfail-before.png",
+    "sha256": "043cd3791ad2ae28d09cd6e7d5edf80e5891c89aef54d55c815e57bc063398f6",
+    "bytes": 70730,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "before",
+    "nn": 24,
+    "slug": "overbook-nearfail",
+    "url": "http://127.0.0.1:9215/ending-overbook.html",
+    "page": "ending-overbook.html",
+    "viewport": "1280x800",
+    "state_name": "overbook",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": {
+        "nature": "cross",
+        "codeTo": "martyr",
+        "goodsTo": "plot12",
+        "act": "change",
+        "okNeed": true
+      },
+      "ending": "overbook"
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": {
+        "nature": "cross",
+        "codeTo": "martyr",
+        "goodsTo": "plot12",
+        "act": "change",
+        "okNeed": true
+      },
+      "ending": "overbook"
+    },
+    "file": "/tmp/sanmen-d13/shots/en-24-overbook-nearfail-before.png",
+    "dest_name": "24-overbook-nearfail-before.png",
+    "sha256": "b8663dc9c5ebf83437064fdecaea8cfa0085b7f40b365c830f11ef8acb8a1c06",
+    "bytes": 76755,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "before",
+    "nn": 26,
+    "slug": "intro-no-search",
+    "url": "http://127.0.0.1:9215/introduction.html",
+    "page": "introduction.html",
+    "viewport": "1280x800",
+    "state_name": "empty",
+    "state": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/en-26-intro-no-search-before.png",
+    "dest_name": "26-intro-no-search-before.png",
+    "sha256": "1a169f13b14b62287a2b1084bf617bb0b48dc80bac40c696f9bdc23a18b8b5a0",
+    "bytes": 746693,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "before",
+    "nn": 28,
+    "slug": "clock",
+    "url": "http://127.0.0.1:9215/clock.html",
+    "page": "clock.html",
+    "viewport": "1280x800",
+    "state_name": "one",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/en-28-clock-before.png",
+    "dest_name": "28-clock-before.png",
+    "sha256": "5d194a2416ea79545ceb59513540187613fd685ae027c6f372cb6e0e700521b9",
+    "bytes": 532064,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "before",
+    "nn": 32,
+    "slug": "skin-desk",
+    "url": "http://127.0.0.1:9215/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "empty",
+    "state": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/en-32-skin-desk-before.png",
+    "dest_name": "32-skin-desk-before.png",
+    "sha256": "59a0f63c5c3f2c1e7d95ea22dc1af4401014bc2926a09cfa0677735fc0952e1f",
+    "bytes": 75684,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "after",
+    "nn": 1,
+    "slug": "boot-first-screen",
+    "url": "http://127.0.0.1:9217/introduction.html",
+    "page": "introduction.html",
+    "viewport": "1280x800",
+    "state_name": "empty",
+    "state": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/en-01-boot-first-screen.png",
+    "dest_name": "01-boot-first-screen.png",
+    "sha256": "1c1d4ef593bd11bb316a9bbd7c66e0015a250005b231a5717d9127e752a76c73",
+    "bytes": 616061,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "after",
+    "nn": 2,
+    "slug": "core-verb",
+    "url": "http://127.0.0.1:9217/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "one",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/en-02-core-verb.png",
+    "dest_name": "02-core-verb.png",
+    "sha256": "2196015f5ca9b9b68b8ace91f7e9cc19489145cd908d06712c92ef843a648eba",
+    "bytes": 68467,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "after",
+    "nn": 3,
+    "slug": "success-feedback",
+    "url": "http://127.0.0.1:9217/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "full",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/en-03-success-feedback.png",
+    "dest_name": "03-success-feedback.png",
+    "sha256": "8d4bcf0ada8c95ee1f4b72b128a1a3cc022e6bc08ee73e0c49122dbc5c9752f9",
+    "bytes": 83449,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "after",
+    "nn": 4,
+    "slug": "near-fail",
+    "url": "http://127.0.0.1:9217/note.html",
+    "page": "note.html",
+    "viewport": "1280x800",
+    "state_name": "empty",
+    "state": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/en-04-near-fail.png",
+    "dest_name": "04-near-fail.png",
+    "sha256": "9bafc8417dafb562837a96261e701467b3437a91d0bdfeac7def590af853a4e6",
+    "bytes": 70655,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "after",
+    "nn": 5,
+    "slug": "recovery",
+    "url": "http://127.0.0.1:9217/ending-thin.html",
+    "page": "ending-thin.html",
+    "viewport": "1280x800",
+    "state_name": "thin",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": {
+        "nature": "private",
+        "codeTo": "none",
+        "goodsTo": "none",
+        "act": "note",
+        "okNeed": false
+      },
+      "ending": "thin"
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": {
+        "nature": "private",
+        "codeTo": "none",
+        "goodsTo": "none",
+        "act": "note",
+        "okNeed": false
+      },
+      "ending": "thin"
+    },
+    "file": "/tmp/sanmen-d13/shots/en-05-recovery.png",
+    "dest_name": "05-recovery.png",
+    "sha256": "3467ad97c14624b4598df83ce67b5439170b77f04909a275e50e7d6fba2be84c",
+    "bytes": 42272,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "after",
+    "nn": 6,
+    "slug": "narrow-320",
+    "url": "http://127.0.0.1:9217/desk.html",
+    "page": "desk.html",
+    "viewport": "320x640",
+    "state_name": "one",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/en-06-narrow-320.png",
+    "dest_name": "06-narrow-320.png",
+    "sha256": "91fc69f56a0081571403b82b4ba254fed0db0963a91a41ba36b383f17f2d5e4c",
+    "bytes": 32599,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "after",
+    "nn": 7,
+    "slug": "keyboard-focus",
+    "url": "http://127.0.0.1:9217/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "one",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/en-07-keyboard-focus.png",
+    "dest_name": "07-keyboard-focus.png",
+    "sha256": "41a8d722ee059e8086955542e42efcc64da3b8885b5dd8fc84c4d1ef43932e38",
+    "bytes": 68642,
+    "extra": "tab",
+    "tab": {
+      "tabs": 1,
+      "hv": true,
+      "tag": "A.ghost-btn",
+      "text": "Clock",
+      "outline": "rgb(17, 17, 17) dotted 3px",
+      "outlineWidth": "3px"
+    }
+  },
+  {
+    "lang": "en",
+    "side": "after",
+    "nn": 8,
+    "slug": "touch-targets",
+    "url": "http://127.0.0.1:9217/desk.html",
+    "page": "desk.html",
+    "viewport": "390x844",
+    "state_name": "one",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/en-08-touch-targets.png",
+    "dest_name": "08-touch-targets.png",
+    "sha256": "b40bb0b2b399304b1b38b0ff4695b929456596455d8606edd816903e549bfd9c",
+    "bytes": 51437,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "after",
+    "nn": 9,
+    "slug": "muted-or-reduced-motion",
+    "url": "http://127.0.0.1:9217/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "one",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/en-09-muted-or-reduced-motion.png",
+    "dest_name": "09-muted-or-reduced-motion.png",
+    "sha256": "2196015f5ca9b9b68b8ace91f7e9cc19489145cd908d06712c92ef843a648eba",
+    "bytes": 68467,
+    "extra": "reduce",
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "after",
+    "nn": 10,
+    "slug": "non-color-state",
+    "url": "http://127.0.0.1:9217/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "full",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/en-10-non-color-state.png",
+    "dest_name": "10-non-color-state.png",
+    "sha256": "8d4bcf0ada8c95ee1f4b72b128a1a3cc022e6bc08ee73e0c49122dbc5c9752f9",
+    "bytes": 83449,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "after",
+    "nn": 11,
+    "slug": "empty-or-loading",
+    "url": "http://127.0.0.1:9217/board.html",
+    "page": "board.html",
+    "viewport": "1280x800",
+    "state_name": "empty",
+    "state": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/en-11-empty-or-loading.png",
+    "dest_name": "11-empty-or-loading.png",
+    "sha256": "4ae17b2d3d1dee42899d0e360c976de833757322182f85c92a70d3c556ce204a",
+    "bytes": 242771,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "after",
+    "nn": 12,
+    "slug": "error-or-pause",
+    "url": "http://127.0.0.1:9217/ending-thin.html",
+    "page": "ending-thin.html",
+    "viewport": "1280x800",
+    "state_name": "thin",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": {
+        "nature": "private",
+        "codeTo": "none",
+        "goodsTo": "none",
+        "act": "note",
+        "okNeed": false
+      },
+      "ending": "thin"
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": {
+        "nature": "private",
+        "codeTo": "none",
+        "goodsTo": "none",
+        "act": "note",
+        "okNeed": false
+      },
+      "ending": "thin"
+    },
+    "file": "/tmp/sanmen-d13/shots/en-12-error-or-pause.png",
+    "dest_name": "12-error-or-pause.png",
+    "sha256": "3467ad97c14624b4598df83ce67b5439170b77f04909a275e50e7d6fba2be84c",
+    "bytes": 42272,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "after",
+    "nn": 17,
+    "slug": "opened-one",
+    "url": "http://127.0.0.1:9217/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "one",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/en-17-opened-one.png",
+    "dest_name": "17-opened-one.png",
+    "sha256": "2196015f5ca9b9b68b8ace91f7e9cc19489145cd908d06712c92ef843a648eba",
+    "bytes": 68467,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "after",
+    "nn": 18,
+    "slug": "quota-full",
+    "url": "http://127.0.0.1:9217/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "full",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/en-18-quota-full.png",
+    "dest_name": "18-quota-full.png",
+    "sha256": "8d4bcf0ada8c95ee1f4b72b128a1a3cc022e6bc08ee73e0c49122dbc5c9752f9",
+    "bytes": 83449,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "after",
+    "nn": 19,
+    "slug": "handover-kept",
+    "url": "http://127.0.0.1:9217/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "handover",
+    "state": {
+      "round": 2,
+      "opened": [],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 2,
+      "opened": [],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/en-19-handover-kept.png",
+    "dest_name": "19-handover-kept.png",
+    "sha256": "1069131a707069bdc8a1370650ce219a32d83030b10ef549cb894865bbee8eb2",
+    "bytes": 68776,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "after",
+    "nn": 20,
+    "slug": "handover-board",
+    "url": "http://127.0.0.1:9217/board.html",
+    "page": "board.html",
+    "viewport": "1280x1400",
+    "state_name": "handover",
+    "state": {
+      "round": 2,
+      "opened": [],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 2,
+      "opened": [],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/en-20-handover-board.png",
+    "dest_name": "20-handover-board.png",
+    "sha256": "e9ffed55099d6ef4feee89a3878ffd276b3ebd92be951eeb624f029bebb191e0",
+    "bytes": 275434,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "after",
+    "nn": 23,
+    "slug": "ghost-nearfail",
+    "url": "http://127.0.0.1:9217/ending-ghost.html",
+    "page": "ending-ghost.html",
+    "viewport": "1280x800",
+    "state_name": "ghost",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": {
+        "nature": "ghost",
+        "codeTo": "martyr",
+        "goodsTo": "plot12",
+        "act": "note",
+        "okNeed": true
+      },
+      "ending": "ghost"
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": {
+        "nature": "ghost",
+        "codeTo": "martyr",
+        "goodsTo": "plot12",
+        "act": "note",
+        "okNeed": true
+      },
+      "ending": "ghost"
+    },
+    "file": "/tmp/sanmen-d13/shots/en-23-ghost-nearfail.png",
+    "dest_name": "23-ghost-nearfail.png",
+    "sha256": "043cd3791ad2ae28d09cd6e7d5edf80e5891c89aef54d55c815e57bc063398f6",
+    "bytes": 70730,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "after",
+    "nn": 24,
+    "slug": "overbook-nearfail",
+    "url": "http://127.0.0.1:9217/ending-overbook.html",
+    "page": "ending-overbook.html",
+    "viewport": "1280x800",
+    "state_name": "overbook",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": {
+        "nature": "cross",
+        "codeTo": "martyr",
+        "goodsTo": "plot12",
+        "act": "change",
+        "okNeed": true
+      },
+      "ending": "overbook"
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "seen": [
+        "tousu",
+        "lie",
+        "song"
+      ],
+      "verified": [
+        "ash-neighbor",
+        "code-martyr",
+        "deliver-12"
+      ],
+      "thin": {
+        "nature": "cross",
+        "codeTo": "martyr",
+        "goodsTo": "plot12",
+        "act": "change",
+        "okNeed": true
+      },
+      "ending": "overbook"
+    },
+    "file": "/tmp/sanmen-d13/shots/en-24-overbook-nearfail.png",
+    "dest_name": "24-overbook-nearfail.png",
+    "sha256": "b8663dc9c5ebf83437064fdecaea8cfa0085b7f40b365c830f11ef8acb8a1c06",
+    "bytes": 76755,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "after",
+    "nn": 26,
+    "slug": "intro-no-search",
+    "url": "http://127.0.0.1:9217/introduction.html",
+    "page": "introduction.html",
+    "viewport": "1280x800",
+    "state_name": "empty",
+    "state": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/en-26-intro-no-search.png",
+    "dest_name": "26-intro-no-search.png",
+    "sha256": "1c1d4ef593bd11bb316a9bbd7c66e0015a250005b231a5717d9127e752a76c73",
+    "bytes": 616061,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "after",
+    "nn": 28,
+    "slug": "clock",
+    "url": "http://127.0.0.1:9217/clock.html",
+    "page": "clock.html",
+    "viewport": "1280x800",
+    "state_name": "one",
+    "state": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [
+        "tousu"
+      ],
+      "seen": [
+        "tousu"
+      ],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/en-28-clock.png",
+    "dest_name": "28-clock.png",
+    "sha256": "27b6b06174116a44f2592e81dc88c3f364104e1fabaca0e75950b2168b15397d",
+    "bytes": 268847,
+    "extra": null,
+    "tab": null
+  },
+  {
+    "lang": "en",
+    "side": "after",
+    "nn": 32,
+    "slug": "skin-desk",
+    "url": "http://127.0.0.1:9217/desk.html",
+    "page": "desk.html",
+    "viewport": "1280x800",
+    "state_name": "empty",
+    "state": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "storage_after_reload": {
+      "round": 1,
+      "opened": [],
+      "seen": [],
+      "verified": [],
+      "thin": null,
+      "ending": ""
+    },
+    "file": "/tmp/sanmen-d13/shots/en-32-skin-desk.png",
+    "dest_name": "32-skin-desk.png",
+    "sha256": "0e7b63e0cdc3254cf838c28dec1d2ce995d22c1e8485065e50da2785f2bebc43",
+    "bytes": 68856,
+    "extra": null,
+    "tab": null
+  }
+]

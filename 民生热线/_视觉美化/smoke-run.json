@@ -1,0 +1,38 @@
+{
+  "CAP_still_5": true,
+  "save_keys": {
+    "minsheng-v1": true,
+    "minsheng-v1-en": true
+  },
+  "zh_player_media_bytes": 6166266,
+  "en_player_media_bytes": 6166266,
+  "zh_still_count": 280,
+  "en_still_count": 280,
+  "zh_stills_identical_to_en": true,
+  "budget_bytes": 8388608,
+  "d10_ok": true,
+  "zh_clips_js_sha256": "70969827c8be1fbacfbbf503673ce404321ebb89904b9687ad5f42da185b0ddb",
+  "en_clips_js_sha256": "35ff29dd47aa52a50982d97c8751815b16b241acb625a379201d05f0e0b8b4f2",
+  "clip_id_unchanged": true,
+  "http": {
+    "9004": 200,
+    "9005": 200
+  },
+  "after_png_count": 38,
+  "routes": {
+    "paper": "辟谣 / circular → end-paper",
+    "milk": "应声+招招+刘所长 / Answer+Zhaozhao+Liu → end-milk",
+    "near_fail": "未看齐 token 时四键禁用斜纹",
+    "old_save": "lock=paper 读档立刻出已交片戳"
+  },
+  "a11y_smoke_7": {
+    "narrow_320_main_clickable": "09-320-search PRESENT",
+    "keyboard_focus_visible": "08-focus-search PRESENT（:focus 黄框；物理通关未拍）",
+    "touch_same_path": "UNTESTED 真机；44px 目标见检索/四键",
+    "muted": "N/A 无音轨",
+    "reduced_motion": "17-reduced-motion PRESENT，检索五条反馈仍在",
+    "non_color_state": "05 斜纹删除线；06 虚线井+0；15 双线戳",
+    "no_fullscreen_flash": "PRESENT 无整屏频闪"
+  },
+  "notes": "截图 PNG 不计玩家媒体。旧 smoke 曾把 after PNG 误记为 stills，已更正。"
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Three Names for Passage</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/tidu.css">
+</head>
+<body>
+  <div id="title-layer">
+    <img src="jpeg/00-open.jpg" alt="Inspection-room desk">
+    <p class="artifact-translation">Typed copy of the inspection-desk still: a hanging-period courtyard, a blank lock sheet, three copies that all write one name. Lock only if right. Wrong does not tell you which.</p>
+    <p class="lock-line">The three copies cannot still be the same person. Lock only if right. Wrong does not tell you which.</p>
+    <p class="who">Qiu Xiaoting. File a locked group tonight.</p>
+    <button type="button" id="btn-enter">Clock in</button>
+  </div>
+
+  <div id="desk">
+    <header class="topbar">
+      <div class="badge" id="badge">
+        Andu County Ethnic and Religious Affairs Bureau · venue-register spot check<br>
+        Temp clerk <span id="player-name">Qiu Xiaoting</span>
+        <span id="staff-id">Anmin Lulin 6</span>
+      </div>
+      <div class="lock-line" id="lock-line">The three copies cannot still be the same person. Lock only if right. Wrong does not tell you which.</div>
+      <div class="sms" id="sms">File the spot-check tonight.</div>
+      <div id="clock">Until cutoff 10:00</div>
+      <div class="wage">Today's pay <span id="wage">¥0</span></div>
+    </header>
+
+    <div class="columns">
+      <section class="col left" id="col-still">
+        <div class="still-wrap">
+          <img id="still-img" src="jpeg/01-still.jpg" alt="Hanging-period courtyard still">
+          <div class="hits">
+            <button type="button" class="hit" id="hit-before" aria-label="person before the shu">person before the shu</button>
+            <button type="button" class="hit" id="hit-absent" aria-label="person not present">person not present</button>
+            <button type="button" class="hit" id="hit-shu" aria-label="the shu itself">the shu itself</button>
+          </div>
+        </div>
+        <p class="artifact-translation">Typed copy of the hanging-period still: a man in a quarry jacket before a yellow memorial slip (shu). A red character dai, “in place of.” The substitute monastic is not in frame.</p>
+        <p>Hanging period is not finished. Hit a place on the still first, then read the papers beside it. Do not write the corridor line onto the sheet.</p>
+        <button type="button" id="gossip">Corridor talk</button>
+      </section>
+
+      <section class="col mid docs" id="col-docs">
+        <p>All three copies write Zhou Ahai. Check the still. Do not merge them into one person.</p>
+        <button type="button" id="doc-hukou" class="doc">Household register · Zhou Ahai</button>
+        <button type="button" id="doc-dudie" class="doc">Substitute monastic certificate · lay name Zhou Ahai</button>
+        <button type="button" id="doc-dudie-fuye" class="doc">Certificate insert · ordained in place of Zhou Shigen</button>
+        <button type="button" id="doc-shu" class="doc">Paper-effigy memorial (shu) · heading Zhou Ahai</button>
+        <button type="button" id="doc-register" class="doc">Religious venue registration</button>
+        <button type="button" id="doc-note" class="doc">Notebook photocopy</button>
+        <button type="button" id="doc-pay" class="doc">Piece-rate slip</button>
+        <div class="doc-preview" id="doc-preview"></div>
+        <p class="pay-slip" id="pay-copy">
+          Only a locked group has pay.<br>
+          Treat them as one person, tonight is zero.<br>
+          A wrong fill is not marked red.
+        </p>
+      </section>
+
+      <section class="col right" id="col-form">
+        <p>Locked group. Staff ID <span>Anmin Lulin 6</span>. Fill all three rows, then file. Name-status and how they are gone only. Do not approve a deliverance rite. Do not approve a release.</p>
+        <p class="sheet-stamp" aria-live="polite">
+          <span class="stamp-white">Not locked</span>
+          <span class="stamp-frost">Locked</span>
+        </p>
+        <table class="lock-table white" id="lock-table">
+          <thead>
+            <tr><th>Row</th><th>Name-status</th><th>How gone</th></tr>
+          </thead>
+          <tbody>
+            <tr data-slot="slot-before-shu">
+              <td>person before the shu</td>
+              <td><select class="slot-name" data-slot="slot-before-shu" aria-label="name-status, person before the shu"></select></td>
+              <td><select class="slot-fate" data-slot="slot-before-shu" aria-label="how gone, person before the shu"></select></td>
+            </tr>
+            <tr data-slot="slot-absent">
+              <td>person not present</td>
+              <td><select class="slot-name" data-slot="slot-absent" aria-label="name-status, person not present"></select></td>
+              <td><select class="slot-fate" data-slot="slot-absent" aria-label="how gone, person not present"></select></td>
+            </tr>
+            <tr data-slot="slot-shu">
+              <td>the shu itself</td>
+              <td><select class="slot-name" data-slot="slot-shu" aria-label="name-status, the shu itself"></select></td>
+              <td><select class="slot-fate" data-slot="slot-shu" aria-label="how gone, the shu itself"></select></td>
+            </tr>
+          </tbody>
+        </table>
+        <button type="button" id="btn-submit">File the spot-check · locked group</button>
+        <p id="hold-hint">Hold to file. Let go and it does not count.</p>
+        <p id="reject"></p>
+        <img id="form-img" alt="" hidden>
+      </section>
+    </div>
+  </div>
+  <div id="ending" class="ending"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

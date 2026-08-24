@@ -1,11 +1,16 @@
 /* win7-aero
- * 记忆 Win7：深色任务栏 40px、圆开始、浅色标题。桌面纯色 #1b5e9a，不要微软壁纸。
+ * 记忆 Win7：深色任务栏 40px、圆开始、浅色玻璃标题。桌面纯色 #1b5e9a，不要微软壁纸。
  * 仅开始圆钮可圆角。Segoe UI 12px。
  */
 html.skin-win7-aero {
   --desk: #1b5e9a;
   --task: #1a1a1a;
-  --title: #eee;
+  --title: #c5dff3;
+  --glass-hi: #eaf4fc;
+  --glass-mid: #9ec9ea;
+  --glass-lo: #5a9ac8;
+  --ink: #1a2a3a;
+  --beat: #3c8d0d;
 }
 html.skin-win7-aero,
 html.skin-win7-aero body,
@@ -17,10 +22,13 @@ html.skin-win7-aero p {
 }
 html.skin-win7-aero body {
   min-height: 100vh;
-  background: var(--desk);
   color: #000;
   font: 12px/1.4 "Segoe UI", "Microsoft YaHei", sans-serif;
   overflow: hidden;
+  background:
+    radial-gradient(ellipse at 18% 8%, rgba(255, 255, 255, 0.14), transparent 42%),
+    radial-gradient(ellipse at 88% 100%, rgba(0, 20, 50, 0.35), transparent 48%),
+    linear-gradient(180deg, #2472b5 0%, var(--desk) 38%, #154e80 100%);
 }
 html.skin-win7-aero button {
   font: 12px "Segoe UI", "Microsoft YaHei", sans-serif;
@@ -35,41 +43,49 @@ html.skin-win7-aero .desk {
   right: 0;
   top: 0;
   bottom: 40px;
-  padding: 16px;
+  padding: 12px 12px 8px;
 }
 html.skin-win7-aero .icon {
-  width: 70px;
+  width: 76px;
+  min-height: 72px;
   text-align: center;
   color: #fff;
-  text-shadow: 1px 1px #000;
+  text-shadow: 1px 1px #0a2a4a;
   float: left;
-  margin: 8px;
+  clear: left;
+  margin: 4px 8px 8px 4px;
   font-size: 12px;
+  text-decoration: none;
 }
 html.skin-win7-aero .icon i {
   display: block;
-  width: 32px;
-  height: 32px;
+  width: 44px;
+  height: 44px;
   margin: 0 auto 4px;
   background: #8ec4ea;
   border: 1px solid #0d3a6a;
+  box-shadow: inset 0 1px 0 #e7f4ff, 1px 1px 0 #0a2744;
+  box-sizing: border-box;
 }
 
 html.skin-win7-aero .window {
   width: 640px;
-  margin: 24px auto 0;
-  background: #f0f0f0;
-  border: 1px solid #6a8aaa;
-  box-shadow: 0 0 0 1px #9eb9d4;
+  margin: 8px 12px 0 96px;
+  background: #d9e6f2;
+  border: 1px solid #4a7eab;
+  box-shadow:
+    0 0 0 1px #cfe4f6,
+    0 10px 28px rgba(0, 16, 32, 0.38);
 }
 html.skin-win7-aero .title-bar {
   height: 28px;
-  background: var(--title);
-  color: #333;
+  background: linear-gradient(180deg, var(--glass-hi) 0%, var(--glass-mid) 46%, var(--glass-lo) 100%);
+  color: var(--ink);
   font: 600 12px/28px "Segoe UI", "Microsoft YaHei", sans-serif;
   padding: 0 4px;
   overflow: hidden;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #5a8ab0;
+  box-shadow: inset 0 1px 0 #fff;
 }
 html.skin-win7-aero .title-bar span { float: left; padding-left: 6px; }
 html.skin-win7-aero .ctrls { float: right; }
@@ -80,33 +96,49 @@ html.skin-win7-aero .ctrls span {
   margin: 4px 0 0 1px;
   text-align: center;
   line-height: 18px;
-  background: #e8e8e8;
-  border: 1px solid #aaa;
-  color: #333;
+  background: linear-gradient(180deg, #f7fbff, #c5d8ea);
+  border: 1px solid #7a9ab8;
+  color: #1a2a3a;
   font-size: 12px;
+  box-shadow: inset 0 1px 0 #fff;
 }
 html.skin-win7-aero .ctrls .x {
-  background: #c75050;
+  background: linear-gradient(180deg, #e88989, #c04040);
   color: #fff;
-  border-color: #a03030;
+  border-color: #8a2020;
   width: 36px;
+  box-shadow: inset 0 1px 0 #f7c0c0;
 }
 html.skin-win7-aero .addr {
   height: 24px;
   line-height: 24px;
   background: #fff;
-  border: 1px solid #ccc;
+  border: 1px solid #8aa8c0;
   margin: 6px 8px 0;
-  padding: 0 8px;
+  padding: 0 8px 0 22px;
   color: #666;
   font-size: 12px;
+  box-shadow: inset 1px 1px 0 #d0d8e0;
+  position: relative;
+}
+html.skin-win7-aero .addr::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #6a8aaa;
+  background: #eef4fa;
+  box-sizing: border-box;
 }
 html.skin-win7-aero .body {
   background: #fff;
   margin: 6px 8px 8px;
   padding: 14px;
   min-height: 180px;
-  border: 1px solid #ddd;
+  border: 1px solid #b8c8d6;
+  box-shadow: inset 0 1px 0 #fff;
 }
 
 html.skin-win7-aero .taskbar {
@@ -115,9 +147,11 @@ html.skin-win7-aero .taskbar {
   right: 0;
   bottom: 0;
   height: 40px;
-  background: var(--task);
   color: #fff;
   overflow: hidden;
+  background: linear-gradient(180deg, #4a5560 0%, #2a2e34 18%, var(--task) 100%);
+  border-top: 1px solid #8aa4bc;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.22);
 }
 html.skin-win7-aero .orb {
   float: left;
@@ -125,20 +159,21 @@ html.skin-win7-aero .orb {
   height: 32px;
   margin: 4px 8px 0 6px;
   border-radius: 50%;
-  background: #3c8d0d;
+  background: radial-gradient(circle at 32% 28%, #d6f09a, var(--beat) 54%, #1e5a08 100%);
   border: 2px solid #c8e98a;
-  box-shadow: inset -2px -2px 0 #246808, inset 2px 2px 0 #8ed45a;
+  box-shadow: inset -2px -2px 0 #246808, inset 2px 2px 0 #8ed45a, 0 0 0 1px #0a2a08;
 }
 html.skin-win7-aero .pin {
   float: left;
-  width: 40px;
+  width: 44px;
   height: 32px;
   margin: 4px 2px 0;
-  background: #2a2a2a;
-  border: 1px solid #444;
+  background: linear-gradient(180deg, #3a3a3a, #222);
+  border: 1px solid #555;
   text-align: center;
   line-height: 32px;
   font-size: 11px;
+  box-shadow: inset 0 1px 0 #666;
 }
 html.skin-win7-aero .tray {
   float: right;
@@ -148,4 +183,5 @@ html.skin-win7-aero .tray {
   line-height: 32px;
   font-size: 12px;
   text-align: center;
+  border-left: 1px solid #444;
 }

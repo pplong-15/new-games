@@ -54,6 +54,7 @@
       (function (c) {
         var row = document.createElement("div");
         row.className = "clip-row";
+        row.tabIndex = 0;
         row.innerHTML =
           "<img alt=\"\" src=\"" + c.img + "\">" +
           "<div><b>" + c.date + "　" + c.code + "</b>" +
@@ -61,6 +62,12 @@
           "<div class=\"who\">" + c.who + "</div>" +
           "<div>" + c.text.slice(0, 36) + "…</div></div>";
         row.onclick = function () { openClip(c); };
+        row.onkeydown = function (e) {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            openClip(c);
+          }
+        };
         box.appendChild(row);
       })(res.rows[i]);
     }

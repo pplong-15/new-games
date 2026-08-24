@@ -351,5 +351,172 @@ html.skin-forbidden .box a { color: #f88; }
   margin: 8px 0;
   background: #fffbe6;
 }
-.flash-bad { background: #fdecea; border-color: #f5c2c0; }
-.flash-ok { background: #eaf7ea; border-color: #b7dfb9; }
+.flash-bad { background: #fdecea; border-color: #f5c2c0; border-left: 8px solid #8b1a1a; }
+.flash-ok { background: #eaf7ea; border-color: #b7dfb9; border-left: 8px solid #2a6a2a; }
+
+/* D4 polish: 44px 主操作、320/390、命中/未命中/禁页/终局非唯色
+   选择器对两套皮肤类名都写一遍（skin-campus-sns-2010 与 campus-sns-2010.css 里的 skin-campus-sns-2010）。 */
+form[data-act="search"] input,
+form[data-act="search"] button,
+form.site-search input,
+form.site-search button,
+.login-box input,
+.login-box button,
+.login-box input,
+.login-box button,
+button[data-choice],
+html.skin-campus-sns-2010 .top input,
+html.skin-campus-sns-2010 .top button,
+html.skin-campus-sns-2010 .top input,
+html.skin-campus-sns-2010 .top button,
+html.skin-qzone-modules .topbar input,
+html.skin-qzone-modules .topbar button,
+html.skin-qzone-modules .topbar input,
+html.skin-qzone-modules .topbar button,
+html.skin-intro-manual .boot-actions a,
+html.skin-intro-manual .boot-actions button,
+html.skin-intro-manual .boot-actions a,
+html.skin-intro-manual .boot-actions button,
+html.skin-service-cyan-desk .login-box input,
+html.skin-service-cyan-desk .login-box button,
+html.skin-service-cyan-desk .login-box input,
+html.skin-service-cyan-desk .login-box button,
+html.skin-service-cyan-desk #search-form input,
+html.skin-service-cyan-desk #search-form button,
+html.skin-search-results .mini-bar input,
+html.skin-search-results .mini-bar button,
+html.skin-search-results .mini-bar input,
+html.skin-search-results .mini-bar button,
+html.skin-search-results form input,
+html.skin-search-results form button {
+  min-height: 44px !important;
+  box-sizing: border-box;
+}
+html.skin-campus-sns-2010 .top,
+html.skin-campus-sns-2010 .top,
+html.skin-campus-sns-2010 .top-inner,
+html.skin-campus-sns-2010 .top-inner {
+  height: auto !important;
+  min-height: 44px;
+}
+html.skin-campus-sns-2010 .top form,
+html.skin-campus-sns-2010 .top .site-search,
+html.skin-campus-sns-2010 .top form,
+html.skin-campus-sns-2010 .top .site-search {
+  height: auto !important;
+  padding: 4px 0;
+  display: flex;
+  align-items: center;
+  float: right;
+}
+:focus-visible {
+  outline: 3px solid #c8a000;
+  outline-offset: 2px;
+}
+html.skin-forbidden :focus-visible,
+html.skin-forbidden :focus-visible { outline-color: #ffd24a; }
+html.skin-search-results .hit,
+html.skin-search-results .hit,
+html.skin-search-results .hit {
+  border-left: 4px solid #005eac;
+  padding: 8px 8px 8px 12px;
+  margin: 8px 0;
+  background: #fff;
+}
+html.skin-search-results .hit a,
+html.skin-search-results .hit a,
+html.skin-search-results .hit a { text-decoration: underline; font-weight: 700; }
+html.skin-search-results .miss,
+html.skin-search-results .miss,
+html.skin-search-results .miss {
+  border: 2px dashed #555;
+  padding: 16px 16px 16px 44px;
+  background: repeating-linear-gradient(135deg, #f3f3f3 0 8px, #eaeaea 8px 16px);
+  position: relative;
+}
+html.skin-search-results .miss::before,
+html.skin-search-results .miss::before,
+html.skin-search-results .miss::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 16px;
+  width: 16px;
+  height: 16px;
+  border: 3px solid #444;
+  border-radius: 50%;
+}
+html.skin-forbidden body,
+html.skin-forbidden body {
+  background-color: #111;
+  background-image: repeating-linear-gradient(45deg, #111 0 12px, #3a0000 12px 24px);
+}
+html.skin-forbidden .box,
+html.skin-forbidden .box {
+  border: 4px double #c00;
+  box-shadow: inset 0 0 0 2px #400;
+}
+html.skin-forbidden .box::before,
+html.skin-forbidden .box::before {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 36px;
+  margin: 0 auto 12px;
+  border: 4px solid #c00;
+  transform: rotate(45deg);
+}
+html.skin-archive-simsun .record:not(:has(.choice-row)):not(:has(.choice-row)) p:last-of-type,
+html.skin-archive-simsun .record:not(:has(.choice-row)):not(:has(.choice-row)) p:last-of-type {
+  border: 2px dashed #666;
+  padding: 12px;
+  background: repeating-linear-gradient(0deg, #f3ead4 0 6px, #efe4cc 6px 12px);
+}
+html.skin-archive-simsun h1,
+html.skin-archive-simsun h1 { border-bottom: 3px double #333; padding-bottom: 8px; }
+html.skin-archive-simsun .record:has(.choice-row),
+html.skin-archive-simsun .record:has(.choice-row) {
+  border: 3px solid #333;
+  box-shadow: inset 6px 0 0 #8b1a1a;
+}
+@media (max-width: 390px) {
+  html.skin-campus-sns-2010 .top form,
+  html.skin-campus-sns-2010 .top .site-search,
+  html.skin-campus-sns-2010 .top form,
+  html.skin-campus-sns-2010 .top .site-search { float: none; width: 100%; margin: 0; }
+  html.skin-campus-sns-2010 .top input,
+  html.skin-campus-sns-2010 .top input { width: calc(100% - 96px) !important; min-height: 44px !important; }
+  html.skin-campus-sns-2010 .top button,
+  html.skin-campus-sns-2010 .top button { min-width: 72px; }
+  html.skin-campus-sns-2010 .layout,
+  html.skin-campus-sns-2010 .layout { width: auto; }
+  img.ph.wide { width: 100%; }
+}
+@media (max-width: 320px) {
+  html.skin-campus-sns-2010 .top a,
+  html.skin-campus-sns-2010 .top a {
+    display: inline-block;
+    min-height: 44px;
+    line-height: 44px;
+    padding: 0 8px;
+  }
+}
+.login-box input,
+.login-box button,
+.login-box input,
+.login-box button,
+form[data-act="login"] input,
+form[data-act="login"] button,
+html.skin-service-cyan-desk .login-box input,
+html.skin-service-cyan-desk .login-box button {
+  min-height: 44px !important;
+}
+html.skin-campus-sns-2010 .top input,
+html.skin-campus-sns-2010 .top button {
+  min-height: 44px !important;
+  height: 44px !important;
+}
+form[data-act="search"] button,
+form.site-search button {
+  min-width: 44px;
+}

@@ -1,49 +1,201 @@
-/* 本局补丁：不改皮肤骨架。补滚动、时间轴条、标注格、窄屏。 */
-html.skin-win7-aero body {
-  overflow: auto;
-}
+/* 本局补丁：不改皮肤骨架选择器。补滚动、Win7 图标形、时间轴节拍、标注层级、44px/焦点/窄屏、非唯色态。 */
+html.skin-win7-aero body { overflow: auto; }
 html.skin-win7-aero .desk {
   position: relative;
   min-height: calc(100vh - 40px);
   padding-bottom: 48px;
 }
 html.skin-win7-aero .window {
-  width: min(860px, 94%);
-  margin: 12px auto 48px;
+  width: min(860px, calc(100% - 112px));
+  margin: 8px 12px 48px 96px;
 }
-html.skin-win7-aero .body {
-  overflow: auto;
-}
-html.skin-win7-aero .taskbar {
-  position: fixed;
-}
+html.skin-win7-aero .body { overflow: auto; }
+html.skin-win7-aero .taskbar { position: fixed; z-index: 20; }
 html.skin-win7-aero a.icon {
   text-decoration: none;
   color: #fff;
+  box-sizing: border-box;
 }
+html.skin-win7-aero a.icon:focus-visible,
+html.skin-win7-aero .orb:focus-visible,
+html.skin-win7-aero .pin:focus-visible {
+  outline: 2px dotted #fff;
+  outline-offset: 2px;
+}
+html.skin-win7-aero .window :focus-visible {
+  outline: 2px dotted #003c74;
+  outline-offset: 2px;
+}
+
+/* 桌面图标用形状分职，不靠同一块蓝方 */
+html.skin-win7-aero a.icon[href="timeline.html"] i,
+html.skin-win7-aero a.icon[href="annotate.html"] i,
+html.skin-win7-aero a.icon[href="handover.html"] i,
+html.skin-win7-aero a.icon[href="drawer.html"] i,
+html.skin-win7-aero a.icon[href*="libu"] i,
+html.skin-win7-aero a.icon[href*="obit"] i,
+html.skin-win7-aero a.icon[href*="gov"] i,
+html.skin-win7-aero a.icon[href*="hosp"] i,
+html.skin-win7-aero a.icon[href*="shop"] i,
+html.skin-win7-aero a.icon[href*="bus"] i,
+html.skin-win7-aero a.icon[href*="tape"] i,
+html.skin-win7-aero a.icon[href*="mail"] i,
+html.skin-win7-aero a.icon[href="javascript:void(0)"] i {
+  background-color: #d6ebf8;
+  background-repeat: no-repeat;
+}
+html.skin-win7-aero a.icon[href="timeline.html"] i {
+  background-image:
+    linear-gradient(#3c8d0d, #3c8d0d),
+    linear-gradient(#3c8d0d, #3c8d0d),
+    linear-gradient(#3c8d0d, #3c8d0d),
+    linear-gradient(#3c8d0d, #3c8d0d),
+    linear-gradient(#3c8d0d, #3c8d0d),
+    linear-gradient(#3c8d0d, #3c8d0d),
+    linear-gradient(#3c8d0d, #3c8d0d),
+    linear-gradient(#3c8d0d, #3c8d0d),
+    linear-gradient(#1a4a20, #1a4a20);
+  background-size: 3px 16px, 3px 10px, 3px 18px, 3px 12px, 3px 14px, 3px 8px, 3px 16px, 3px 11px, 28px 2px;
+  background-position: 6px 18px, 10px 24px, 14px 16px, 18px 22px, 22px 20px, 26px 26px, 30px 18px, 34px 23px, 6px 34px;
+}
+html.skin-win7-aero a.icon[href="annotate.html"] i {
+  background-image:
+    linear-gradient(#1a3a5a, #1a3a5a),
+    linear-gradient(#1a3a5a, #1a3a5a),
+    linear-gradient(#1a3a5a, #1a3a5a),
+    linear-gradient(#fff, #fff);
+  background-size: 24px 3px, 20px 3px, 16px 3px, 28px 32px;
+  background-position: 8px 12px, 8px 20px, 8px 28px, 8px 6px;
+  box-shadow: inset 0 0 0 1px #1a3a5a, 1px 1px 0 #0a2744;
+}
+html.skin-win7-aero a.icon[href*="libu"] i {
+  background: linear-gradient(90deg, #7a1a1a 0 8px, #f4e4c4 8px 36px, #7a1a1a 36px 44px);
+  border-color: #4a1010;
+}
+html.skin-win7-aero a.icon[href*="obit"] i {
+  background: #fff;
+  border-top: 8px solid #c00;
+  box-shadow: inset 6px 14px 0 -4px #ddd, inset 6px 20px 0 -4px #ddd, 1px 1px 0 #0a2744;
+}
+html.skin-win7-aero a.icon[href*="gov"] i {
+  background: #fff8f0;
+  border: 2px solid #a40000;
+  box-shadow: inset 0 10px 0 #a40000;
+}
+html.skin-win7-aero a.icon[href*="hosp"] i {
+  background:
+    linear-gradient(#fff, #fff) 18px 8px / 8px 28px no-repeat,
+    linear-gradient(#fff, #fff) 8px 18px / 28px 8px no-repeat,
+    #2a6aa0;
+}
+html.skin-win7-aero a.icon[href*="shop"] i {
+  background: repeating-linear-gradient(180deg, #f6e27a, #f6e27a 8px, #d4b84a 8px 10px);
+  border-color: #8a7010;
+}
+html.skin-win7-aero a.icon[href*="bus"] i {
+  background: #cfc8b4;
+  border: 2px solid #666;
+  box-shadow: inset 8px 12px 0 0 #888, inset 28px 12px 0 0 #888;
+}
+html.skin-win7-aero a.icon[href*="tape"] i {
+  background:
+    radial-gradient(circle at 14px 22px, #333 0 5px, transparent 6px),
+    radial-gradient(circle at 30px 22px, #333 0 5px, transparent 6px),
+    #c4a574;
+  border-color: #5a4030;
+}
+html.skin-win7-aero a.icon[href*="mail"] i {
+  background:
+    linear-gradient(135deg, transparent 50%, #fff 50%) 4px 10px / 36px 18px no-repeat,
+    linear-gradient(45deg, transparent 50%, #fff 50%) 4px 10px / 36px 18px no-repeat,
+    #2b6cb0;
+}
+html.skin-win7-aero a.icon[href="handover.html"] i {
+  background: repeating-linear-gradient(0deg, #f7f1d8, #f7f1d8 6px, #d0c8a0 6px 7px);
+  border-color: #8a8050;
+}
+html.skin-win7-aero a.icon[href="drawer.html"] i {
+  background: #c8b090;
+  border: 2px solid #5a4030;
+  box-shadow: inset 0 16px 0 #a88860, inset 18px 22px 0 2px #5a4030;
+}
+html.skin-win7-aero a.icon[href="javascript:void(0)"] i {
+  background: transparent;
+  border: 2px dashed #cfe4f6;
+  box-shadow: none;
+}
+
 html.skin-win7-aero .tiny {
   font-size: 12px;
   margin: 0 0 8px;
 }
-html.skin-win7-aero .tiny a {
-  margin-right: 8px;
-}
+html.skin-win7-aero .tiny a { margin-right: 8px; }
+
+/* 八段尺：长度仍走原 inline width；空频斜线，已听折角，未听空心 */
 html.skin-win7-aero .tl {
-  margin: 8px 0 12px;
+  position: relative;
+  margin: 16px 0 14px;
   overflow: hidden;
+  padding-top: 14px;
+  border-bottom: 2px solid #1a3a22;
+}
+html.skin-win7-aero .tl::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 10px;
+  background: repeating-linear-gradient(90deg, #1a3a22 0 1px, transparent 1px 12px);
+  pointer-events: none;
 }
 html.skin-win7-aero .tl a {
+  position: relative;
   float: left;
-  margin: 0 3px 3px 0;
-  padding: 10px 6px;
-  background: #5a8;
+  margin: 0 3px 6px 0;
+  padding: 16px 6px 8px;
+  min-height: 44px;
+  box-sizing: border-box;
+  background: var(--beat, #3c8d0d);
   color: #fff;
   text-decoration: none;
   font-size: 11px;
-  border: 1px solid #3a6;
+  text-align: center;
+  border: 1px solid #24580a;
+  box-shadow: inset 0 1px 0 #8ed45a;
+}
+html.skin-win7-aero .tl a::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  right: 4px;
+  top: 4px;
+  height: 6px;
+  background: repeating-linear-gradient(90deg, rgba(255,255,255,.7) 0 2px, transparent 2px 5px);
+  pointer-events: none;
 }
 html.skin-win7-aero .tl a.dim {
-  background: #8a8;
+  background: repeating-linear-gradient(45deg, #d8d8d8 0 5px, #bbb 5px 9px);
+  color: #222;
+  border: 1px dashed #555;
+  box-shadow: none;
+}
+html.skin-win7-aero .tl a.dim::after { background: repeating-linear-gradient(90deg, #555 0 2px, transparent 2px 5px); }
+html.skin-win7-aero .tl a.unheard {
+  box-shadow: inset 0 0 0 2px #fff, inset 0 1px 0 #8ed45a;
+}
+html.skin-win7-aero .tl a.heard {
+  box-shadow: inset 6px 0 0 #102010, inset 0 1px 0 #8ed45a;
+}
+html.skin-win7-aero .tl a.heard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-style: solid;
+  border-width: 0 16px 16px 0;
+  border-color: transparent #102010 transparent transparent;
+  z-index: 1;
 }
 html.skin-win7-aero .tx {
   background: #111;
@@ -52,6 +204,7 @@ html.skin-win7-aero .tx {
   padding: 10px 12px;
   border: 1px solid #333;
   margin: 8px 0;
+  box-shadow: inset 0 0 0 1px #222;
 }
 html.skin-win7-aero .tx b {
   color: #eea;
@@ -63,22 +216,134 @@ html.skin-win7-aero .mood {
   object-fit: cover;
   display: block;
   margin: 0 0 10px;
+  border: 1px solid #333;
+}
+
+/* 标注表：在场格 + 三项下拉分层 */
+html.skin-win7-aero #formbox > p:first-of-type {
+  font-weight: 700;
+  border-left: 4px solid #1b5e9a;
+  padding: 4px 0 4px 8px;
+  margin: 8px 0;
 }
 html.skin-win7-aero label {
   display: block;
-  margin: 8px 0 4px;
+  margin: 0;
+  min-height: 44px;
+  line-height: 1.3;
+  box-sizing: border-box;
+}
+html.skin-win7-aero label:has(input[type="checkbox"]) {
+  display: inline-block;
+  width: 48%;
+  vertical-align: top;
+  padding: 10px 6px 10px 8px;
+  border: 1px solid #c8d4e0;
+  background: #f7fafc;
+  margin: 0 1% 6px 0;
+}
+html.skin-win7-aero label:has(input[type="checkbox"]) input {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+html.skin-win7-aero label:has(select) {
+  border: 1px solid #8aa8c0;
+  background: #eef4fa;
+  padding: 8px 10px;
+  margin: 8px 0;
+  min-height: 52px;
+  box-shadow: inset 4px 0 0 #1b5e9a;
 }
 html.skin-win7-aero select,
 html.skin-win7-aero button {
   margin: 4px 8px 8px 0;
-  padding: 4px 8px;
+  padding: 0 8px;
+  min-height: 44px;
+  font: 12px "Segoe UI", "Microsoft YaHei", sans-serif;
+  border: 1px solid #6a8aaa;
+  background: #fff;
+  box-sizing: border-box;
+}
+html.skin-win7-aero button {
+  min-width: 120px;
+  background: linear-gradient(180deg, #f7fbff, #d0dce8);
+  font-weight: 700;
 }
 html.skin-win7-aero .endbox {
   border: 1px solid #bbb;
   background: #fafafa;
-  padding: 10px 12px;
+  padding: 12px 12px 12px 48px;
   margin-top: 12px;
+  position: relative;
+  min-height: 64px;
 }
+html.skin-win7-aero .endbox.end-true {
+  border: 4px double #1a5a1a;
+  background: #f3faf3;
+}
+html.skin-win7-aero .endbox.end-true::before {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 22px;
+  width: 18px;
+  height: 10px;
+  border: 3px solid #1a5a1a;
+  border-top: 0;
+  border-right: 0;
+  transform: rotate(-50deg);
+}
+html.skin-win7-aero .endbox.end-tape {
+  border: 3px solid #333;
+  background: repeating-linear-gradient(90deg, #f7f7f7 0 10px, #ddd 10px 12px);
+}
+html.skin-win7-aero .endbox.end-tape::before,
+html.skin-win7-aero .endbox.end-tape::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  width: 16px;
+  height: 16px;
+  border: 3px solid #333;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+html.skin-win7-aero .endbox.end-tape::before { left: 12px; }
+html.skin-win7-aero .endbox.end-tape::after { left: 28px; }
+html.skin-win7-aero .endbox.end-hold {
+  border: 2px dashed #555;
+  background: #fff;
+}
+html.skin-win7-aero .endbox.end-hold::before {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 18px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #555;
+  border-bottom-color: transparent;
+  box-sizing: border-box;
+}
+html.skin-win7-aero .endbox.end-erfang {
+  border: 2px solid #7a1a1a;
+  outline: 2px solid #7a1a1a;
+  outline-offset: 3px;
+  background: #fff8f8;
+}
+html.skin-win7-aero .endbox.end-erfang::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 14px;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #7a1a1a;
+  transform: rotate(12deg);
+}
+
 html.skin-archive-simsun img.mood,
 html.skin-gov-redbar img.mood,
 html.skin-news-portal-163 img.mood,
@@ -98,10 +363,96 @@ html.skin-forbidden .back {
   text-align: center;
   margin: 20px 0;
   color: #fcc;
+  min-height: 44px;
+  line-height: 44px;
+  border: 1px solid #f00;
+}
+html.skin-forbidden h2::before {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 22px;
+  margin: 0 auto 10px;
+  border: 3px solid #f00;
+  border-radius: 4px;
+  box-shadow: 0 -10px 0 -4px #f00;
+  box-sizing: border-box;
+}
+
+html.skin-intro-manual .enter-link,
+html.skin-intro-manual .boot-actions a,
+html.skin-intro-manual .boot-actions button {
+  min-height: 44px;
+  line-height: 44px;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+html.skin-intro-manual :focus-visible,
+html.skin-forbidden :focus-visible,
+html.skin-mail-web-2010 :focus-visible,
+html.skin-archive-simsun :focus-visible,
+html.skin-news-portal-163 :focus-visible,
+html.skin-gov-redbar :focus-visible,
+html.skin-corp-table-2005 :focus-visible,
+html.skin-classified-yellow :focus-visible,
+html.skin-shop-local-2010s :focus-visible,
+html.skin-blog-personal-2008 :focus-visible {
+  outline: 2px dotted #000;
+  outline-offset: 2px;
+}
+
+@media (max-width: 390px) {
+  html.skin-win7-aero a.icon {
+    float: left;
+    clear: none;
+    width: 72px;
+    min-height: 64px;
+    margin: 4px;
+  }
+  html.skin-win7-aero .window {
+    clear: both;
+    float: none;
+    width: auto;
+    margin: 8px 6px 56px;
+  }
+  html.skin-win7-aero .taskbar { height: 44px; }
+  html.skin-win7-aero .orb,
+  html.skin-win7-aero .pin,
+  html.skin-win7-aero .tray { height: 36px; line-height: 36px; }
+  html.skin-win7-aero .tl a {
+    float: none;
+    display: block;
+    width: auto !important;
+    min-height: 44px;
+    margin: 0 0 4px;
+  }
+  html.skin-win7-aero label:has(input[type="checkbox"]) { width: 100%; }
+}
+@media (max-width: 320px) {
+  html.skin-win7-aero .body { padding: 10px; }
+  html.skin-win7-aero .title-bar { font-size: 12px; }
+  html.skin-gov-redbar .wrap,
+  html.skin-news-portal-163 .wrap,
+  html.skin-news-portal-163 .top-inner,
+  html.skin-news-portal-163 .nav-inner,
+  html.skin-news-portal-163 .site-foot,
+  html.skin-corp-table-2005 table.site { width: auto; max-width: 100%; }
+  html.skin-news-portal-163 .main,
+  html.skin-news-portal-163 .side { float: none; width: auto; }
+  html.skin-classified-yellow .layout nav,
+  html.skin-classified-yellow .layout .list { display: block; width: auto; }
+  html.skin-mail-web-2010 .panes { display: block; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.skin-win7-aero *,
+  html.skin-intro-manual * {
+    transition: none !important;
+    animation: none !important;
+  }
 }
 
 @media (max-width: 720px) {
-  html.skin-win7-aero .window { width: 96%; }
   html.skin-gov-redbar .wrap,
   html.skin-news-portal-163 .wrap,
   html.skin-news-portal-163 .top-inner,

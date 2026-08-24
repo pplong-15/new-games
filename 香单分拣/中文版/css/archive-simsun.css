@@ -49,3 +49,6 @@ html.skin-archive-simsun .stamp {
   padding: 2px 8px;
   transform: rotate(-8deg);
 }
+@media (prefers-reduced-motion: reduce) {
+  html.skin-archive-simsun .stamp { transform: none; }
+}

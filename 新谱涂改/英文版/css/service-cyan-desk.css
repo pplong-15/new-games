@@ -1,10 +1,10 @@
-/* service-cyan-desk: pale-cyan service counter. No orange restaurant nav. */
+/* service-cyan-desk：浅青咨询台。登山福安饭层的对标。不要再出现橙色餐馆导航。 */
 html.skin-service-cyan-desk {
   --page: #e0f7fa;
   --card: #fff;
-  --title: #26c5e9;
+  --title: #26a9c9;
   --link: #337ab7;
-  --btn: #007bff;
+  --btn: #0e6e7c;
 }
 html.skin-service-cyan-desk body {
   margin: 0;
@@ -23,32 +23,44 @@ html.skin-service-cyan-desk header {
   justify-content: space-between;
   align-items: center;
   padding: 12px 20px;
-  border-bottom: 1px solid #e0eaf1;
+  border-bottom: 2px solid #9fd8e3;
+  background: #fff;
 }
-html.skin-service-cyan-desk #search-form { display: inline-flex; margin-left: 12px; }
+html.skin-service-cyan-desk #search-form { display: inline-flex; margin-left: 12px; align-items: center; }
 html.skin-service-cyan-desk #search-input {
-  border: 1px solid #ccc;
+  border: 1px solid #8aabb8;
   padding: 6px 10px;
+  min-height: 44px;
+  box-sizing: border-box;
 }
 html.skin-service-cyan-desk #search-form button {
   border: 0;
-  background: #d15c20;
+  background: var(--btn);
   color: #fff;
-  padding: 6px 12px;
+  padding: 0 14px;
+  min-height: 44px;
+  min-width: 44px;
+  cursor: pointer;
 }
 html.skin-service-cyan-desk .ghost-btn {
-  border: 1px solid #ccc;
-  padding: 6px 12px;
+  border: 1px solid #5a7c88;
+  padding: 10px 12px;
   color: #333;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 0;
   font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  box-sizing: border-box;
 }
 html.skin-service-cyan-desk .notice {
   width: 80%;
   margin: 20px auto;
   background: #f0f8ff;
-  border: 1px solid #e0eaf1;
+  border: 1px solid #c5dde8;
+  border-left: 6px solid var(--title);
   padding: 16px;
 }
 html.skin-service-cyan-desk .notice h2 {
@@ -58,23 +70,26 @@ html.skin-service-cyan-desk .notice h2 {
   font-size: 24px;
   font-weight: 700;
 }
-html.skin-service-cyan-desk .tabs { display: flex; justify-content: center; gap: 10px; margin: 12px 0; }
+html.skin-service-cyan-desk .tabs { display: flex; justify-content: center; gap: 10px; margin: 12px 0; flex-wrap: wrap; }
 html.skin-service-cyan-desk .tabs a {
   background: #111;
   color: #fff;
   text-decoration: none;
-  padding: 10px 24px;
-  border-radius: 4px;
+  padding: 0 24px;
+  border-radius: 0;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
 }
 html.skin-service-cyan-desk table { width: 80%; margin: 20px auto; border-collapse: collapse; }
 html.skin-service-cyan-desk td, html.skin-service-cyan-desk th {
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid #d7e4ea;
   padding: 10px 0;
   text-align: left;
 }
 html.skin-service-cyan-desk a { color: var(--link); }
 
-/* login page: 360px white card on pale cyan; primary button Bootstrap #007bff */
 html.skin-service-cyan-desk body.login-page #wrap {
   background: transparent;
   max-width: none;
@@ -87,10 +102,11 @@ html.skin-service-cyan-desk body.login-page header {
 html.skin-service-cyan-desk .login-box {
   width: 360px;
   margin: 48px auto;
-  border: 1px solid #ccc;
+  border: 1px solid #8aabb8;
   padding: 24px;
   background: #fff;
   box-sizing: border-box;
+  border-radius: 0;
 }
 html.skin-service-cyan-desk .login-box h1 {
   color: var(--title);
@@ -107,9 +123,11 @@ html.skin-service-cyan-desk .login-box label {
 html.skin-service-cyan-desk .login-box input[name="user"],
 html.skin-service-cyan-desk .login-box input[name="pass"],
 html.skin-service-cyan-desk .login-box input[type="text"],
-html.skin-service-cyan-desk .login-box input[type="password"] {
+html.skin-service-cyan-desk .login-box input[type="password"],
+html.skin-service-cyan-desk .login-box select {
   width: 100%;
-  height: 34px;
+  min-height: 44px;
+  height: 44px;
   border: 1px solid #ced4da;
   padding: 6px 12px;
   margin: 0 0 12px;
@@ -120,23 +138,95 @@ html.skin-service-cyan-desk .login-box input[type="password"] {
 }
 html.skin-service-cyan-desk .login-box button[type="submit"] {
   width: 100%;
-  background: #007bff;
+  background: var(--btn);
   color: #fff;
   border: 0;
   padding: 8px 16px;
+  min-height: 44px;
   font-size: 14px;
   cursor: pointer;
 }
 html.skin-service-cyan-desk .login-box .hint {
-  color: #888;
+  color: #555;
   font-size: 12px;
   margin: 12px 0 0;
 }
-html.skin-service-cyan-desk button[type="submit"] {
+html.skin-service-cyan-desk button[type="submit"],
+html.skin-service-cyan-desk button[type="button"],
+html.skin-service-cyan-desk #spread,
+html.skin-service-cyan-desk #write {
   background: var(--btn);
   color: #fff;
   border: 0;
   padding: 10px 18px;
+  min-height: 44px;
+  min-width: 44px;
+  cursor: pointer;
+  font: 14px/1.4 "Microsoft YaHei", sans-serif;
+}
+html.skin-service-cyan-desk .pair select {
+  min-height: 44px;
+  padding: 8px;
+}
+html.skin-service-cyan-desk #grid th,
+html.skin-service-cyan-desk #grid td {
+  border: 1px solid #b7d3de;
+  padding: 10px 8px;
+  font-size: 13px;
+}
+html.skin-service-cyan-desk #grid input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  vertical-align: middle;
+}
+html.skin-service-cyan-desk #grid td:last-child {
+  text-align: center;
+  min-width: 48px;
+  min-height: 44px;
 }
 html.skin-service-cyan-desk .post { border-bottom: 1px solid #eee; padding: 10px 0; }
 html.skin-service-cyan-desk .post-info span { color: var(--btn); font-weight: 700; }
+
+html.skin-service-cyan-desk a:focus-visible,
+html.skin-service-cyan-desk button:focus-visible,
+html.skin-service-cyan-desk input:focus-visible,
+html.skin-service-cyan-desk select:focus-visible {
+  outline: 3px solid #c9a227;
+  outline-offset: 2px;
+}
+
+@media (max-width: 800px) {
+  html.skin-service-cyan-desk header {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px 12px;
+  }
+  html.skin-service-cyan-desk #search-form {
+    margin: 8px 0 0;
+    width: 100%;
+  }
+  html.skin-service-cyan-desk #search-input { flex: 1; width: auto; min-width: 0; }
+  html.skin-service-cyan-desk .notice,
+  html.skin-service-cyan-desk table,
+  html.skin-service-cyan-desk .pair,
+  html.skin-service-cyan-desk #grid,
+  html.skin-service-cyan-desk #msg {
+    width: auto;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  html.skin-service-cyan-desk .login-box {
+    width: auto;
+    max-width: 100%;
+    margin: 24px 12px;
+  }
+  html.skin-service-cyan-desk .tabs a { flex: 1 1 40%; justify-content: center; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.skin-service-cyan-desk * {
+    animation: none;
+    transition: none;
+  }
+}

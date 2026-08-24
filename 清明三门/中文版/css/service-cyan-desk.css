@@ -23,7 +23,8 @@ html.skin-service-cyan-desk header {
   justify-content: space-between;
   align-items: center;
   padding: 12px 20px;
-  border-bottom: 1px solid #e0eaf1;
+  border-bottom: 4px solid #26c5e9;
+  background: #e8f7fa;
 }
 html.skin-service-cyan-desk #search-form { display: inline-flex; margin-left: 12px; }
 html.skin-service-cyan-desk #search-input {
@@ -31,18 +32,24 @@ html.skin-service-cyan-desk #search-input {
   padding: 6px 10px;
 }
 html.skin-service-cyan-desk #search-form button {
-  border: 0;
-  background: #d15c20;
+  border: 2px solid #135;
+  background: #135;
   color: #fff;
-  padding: 6px 12px;
+  padding: 10px 14px;
+  min-height: 44px;
+  border-radius: 0;
 }
 html.skin-service-cyan-desk .ghost-btn {
-  border: 1px solid #ccc;
-  padding: 6px 12px;
-  color: #333;
+  border: 2px solid #135;
+  padding: 10px 14px;
+  color: #135;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 0;
   font-size: 13px;
+  min-height: 44px;
+  min-width: 44px;
+  box-sizing: border-box;
+  display: inline-block;
 }
 html.skin-service-cyan-desk .notice {
   width: 80%;
@@ -64,7 +71,11 @@ html.skin-service-cyan-desk .tabs a {
   color: #fff;
   text-decoration: none;
   padding: 10px 24px;
-  border-radius: 4px;
+  border-radius: 0;
+  min-height: 44px;
+  box-sizing: border-box;
+  display: inline-block;
+  line-height: 24px;
 }
 html.skin-service-cyan-desk table { width: 80%; margin: 20px auto; border-collapse: collapse; }
 html.skin-service-cyan-desk td, html.skin-service-cyan-desk th {

@@ -165,6 +165,9 @@ html.skin-corp-table-2005 .ft {
   html.skin-corp-table-2005 .nav a {
     white-space: normal;
     margin: 1px 4px;
+    display: inline-block;
+    min-height: 44px;
+    line-height: 44px;
   }
   html.skin-corp-table-2005 .left {
     display: block;

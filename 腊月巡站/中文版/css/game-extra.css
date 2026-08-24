@@ -172,3 +172,546 @@ html.skin-gov-redbar .article h2 + p {
     max-width: 100%;
   }
 }
+
+/* ===== polish-20260823：所有者 chrome、状态、触控、焦点。不改玩法。 ===== */
+
+/* 焦点：形状差，不唯色 */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px dotted #000;
+  outline-offset: 2px;
+}
+html.skin-winxp-luna a:focus-visible,
+html.skin-winxp-luna button:focus-visible,
+html.skin-winxp-luna input:focus-visible {
+  outline: 2px dotted #fff;
+  outline-offset: 1px;
+}
+html.skin-winxp-luna .chk:focus-within {
+  outline: 2px dotted #000;
+  outline-offset: 1px;
+  background: #fff;
+}
+html.skin-winxp-luna .desk a.icon:focus-visible {
+  outline: 2px dotted #fff;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+/* 触控目标：主操作 ≥44px */
+html.skin-intro-manual .enter-link,
+html.skin-intro-manual .boot-actions a,
+html.skin-intro-manual .boot-actions button {
+  min-height: 44px;
+  line-height: 44px;
+  padding: 0 18px;
+  display: inline-block;
+}
+html.skin-winxp-luna .desk a.icon {
+  min-width: 72px;
+  min-height: 64px;
+  padding: 8px 4px 6px;
+  box-sizing: border-box;
+}
+html.skin-winxp-luna .btn3d {
+  min-height: 44px;
+  padding: 0 16px;
+  line-height: 42px;
+}
+html.skin-winxp-luna .chk {
+  min-height: 44px;
+  line-height: 1.4;
+  padding: 10px 8px 10px 28px;
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid #aca899;
+  background: #f3f0e4;
+}
+html.skin-winxp-luna .chk input {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+html.skin-shop-local-2010s #search-form button,
+html.skin-shop-local-2010s #menubar a,
+html.skin-classified-yellow .top button,
+html.skin-classified-yellow nav a,
+html.skin-corp-table-2005 .banner button,
+html.skin-corp-table-2005 .nav a,
+html.skin-gov-redbar .links a,
+html.skin-portal-2006 .search button,
+html.skin-shop-detail-2008 .top a,
+html.skin-shop-detail-2008 .buy,
+html.skin-shop-detail-2008 .buy-sec,
+html.skin-discuz-board .hd a,
+html.skin-mail-web-2010 button {
+  min-height: 44px;
+  box-sizing: border-box;
+}
+html.skin-classified-yellow nav a {
+  padding: 12px 10px;
+  line-height: 20px;
+}
+html.skin-corp-table-2005 .nav {
+  height: auto;
+  min-height: 44px;
+  line-height: 44px;
+}
+html.skin-corp-table-2005 .nav a {
+  display: inline-block;
+  line-height: 44px;
+}
+html.skin-gov-redbar .links {
+  height: auto;
+  min-height: 44px;
+  line-height: 44px;
+}
+html.skin-shop-local-2010s #menubar a {
+  height: 44px;
+  line-height: 44px;
+}
+
+/* 禁用链：删除线 + 灰字，仍可点（行为不改） */
+html.skin-portal-2006 a[href="javascript:void(0)"] {
+  color: #888;
+  text-decoration: line-through;
+  cursor: not-allowed;
+}
+
+/* 回执空态：虚线匣，不是白屏 */
+html.skin-winxp-luna #slip:not(:has(input:checked)) {
+  border: 1px dashed #808080;
+  padding: 8px;
+  background: #fafafa;
+}
+html.skin-winxp-luna .chk:has(input:checked) {
+  background: #fff;
+  border-style: dotted;
+  font-weight: 700;
+}
+
+/* 回执所有者记号：形状差，不标对错 */
+html.skin-winxp-luna .chk::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  margin-top: -5px;
+  background: #888;
+  box-sizing: border-box;
+}
+html.skin-winxp-luna .chk:has([value="fushun"])::before { background: #d15c20; }
+html.skin-winxp-luna .chk:has([value="cuiji"])::before {
+  background: #ff4400;
+  width: 8px;
+  height: 14px;
+  margin-top: -7px;
+}
+html.skin-winxp-luna .chk:has([value="jingxuan"])::before {
+  background: #f5c518;
+  border: 1px solid #5a3d00;
+}
+html.skin-winxp-luna .chk:has([value="chunni"])::before { background: #1e4b87; }
+html.skin-winxp-luna .chk:has([value="jiedao"])::before {
+  background: #c8161d;
+  width: 12px;
+  height: 4px;
+  margin-top: -2px;
+}
+html.skin-winxp-luna .chk:has([value="baike"])::before {
+  background: #2932e1;
+  border: 2px solid #fff;
+  outline: 1px solid #2932e1;
+}
+html.skin-winxp-luna .chk:has([value="forum"])::before { background: #2b7ac2; }
+html.skin-winxp-luna .chk:has([value="portal"])::before {
+  background: #c30;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #390;
+}
+html.skin-winxp-luna .chk:has([value="tanggua"])::before {
+  background: #e8c36a;
+  width: 14px;
+  height: 5px;
+  margin-top: -2px;
+}
+html.skin-winxp-luna .chk:has([value="jingua"])::before {
+  background: #7eb8c8;
+  border-radius: 50%;
+  border: 1px solid #0a3a44;
+}
+html.skin-winxp-luna .chk:has([value="stock"])::before {
+  background: #2d5a32;
+  width: 9px;
+  height: 9px;
+  transform: rotate(45deg);
+}
+
+/* 结局：成功 / 退件 / 未办结 形状差，不靠同帧 */
+html.skin-winxp-luna body.ending-off .window {
+  border-color: #2d6a12;
+}
+html.skin-winxp-luna body.ending-off .title-bar {
+  background: #246b0e;
+}
+html.skin-winxp-luna body.ending-off .body {
+  box-shadow: inset 3px 0 0 #246b0e;
+}
+html.skin-winxp-luna body.ending-off .body::before {
+  content: "接";
+  float: right;
+  margin: 0 0 8px 8px;
+  border: 3px solid #246b0e;
+  color: #246b0e;
+  font: 700 16px/1 SimSun, serif;
+  padding: 6px 8px;
+  transform: rotate(8deg);
+}
+html.skin-winxp-luna body.ending-bounce .window {
+  border-color: #a01010;
+}
+html.skin-winxp-luna body.ending-bounce .title-bar {
+  background: #7a1010;
+}
+html.skin-winxp-luna body.ending-bounce .body {
+  box-shadow: inset 3px 0 0 #a01010;
+}
+html.skin-winxp-luna body.ending-bounce .body::before {
+  content: "退";
+  float: right;
+  margin: 0 0 8px 8px;
+  border: 3px double #a01010;
+  color: #a01010;
+  font: 700 16px/1 SimSun, serif;
+  padding: 6px 8px;
+}
+html.skin-winxp-luna body.ending-miss .window {
+  border-color: #8a6a10;
+}
+html.skin-winxp-luna body.ending-miss .title-bar {
+  background: #6a5410;
+}
+html.skin-winxp-luna body.ending-miss .body {
+  box-shadow: inset 3px 0 0 #8a6a10;
+}
+html.skin-winxp-luna body.ending-miss .body::before {
+  content: "未";
+  float: right;
+  margin: 0 0 8px 8px;
+  border: 3px dashed #8a6a10;
+  color: #6a5410;
+  font: 700 16px/1 SimSun, serif;
+  padding: 6px 8px;
+}
+
+/* 糖瓜：摊位褐底，相对福顺米黄店模板 */
+html.owner-tanggua,
+html.skin-shop-local-2010s:has(a.logo[href="tanggua.html"]) {
+  --bg: #3d2a1c;
+  --ink: #f3e6c8;
+  --accent: #e8c36a;
+  --nav: #2c1c12;
+  --footer: #2a1c14;
+}
+html.owner-tanggua body,
+html.skin-shop-local-2010s:has(a.logo[href="tanggua.html"]) body {
+  background: #2a1c14;
+  color: #f3e6c8;
+  font: 14px/1.8 SimSun, "Songti SC", "NSimSun", serif;
+}
+html.owner-tanggua #container,
+html.skin-shop-local-2010s:has(a.logo[href="tanggua.html"]) #container {
+  max-width: 720px;
+  background: #3d2a1c;
+  border-left: 8px solid #e8c36a;
+  border-right: 1px solid #7a5a30;
+}
+html.owner-tanggua header,
+html.skin-shop-local-2010s:has(a.logo[href="tanggua.html"]) header {
+  border-bottom: 3px double #e8c36a;
+}
+html.owner-tanggua .logo,
+html.skin-shop-local-2010s:has(a.logo[href="tanggua.html"]) .logo {
+  color: #e8c36a;
+  font-family: SimSun, "Songti SC", serif;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+html.owner-tanggua #search-form button,
+html.skin-shop-local-2010s:has(a.logo[href="tanggua.html"]) #search-form button {
+  background: #6a4010;
+  color: #f3e6c8;
+  border-radius: 0;
+}
+html.owner-tanggua #search-input,
+html.skin-shop-local-2010s:has(a.logo[href="tanggua.html"]) #search-input {
+  border-radius: 0;
+  background: #f3e6c8;
+  border-color: #7a5a30;
+}
+html.owner-tanggua #menubar ul,
+html.skin-shop-local-2010s:has(a.logo[href="tanggua.html"]) #menubar ul {
+  gap: 0;
+  margin: 0;
+}
+html.owner-tanggua #menubar a,
+html.skin-shop-local-2010s:has(a.logo[href="tanggua.html"]) #menubar a {
+  background: #2c1c12;
+  color: #e8c36a;
+  border-radius: 0;
+  border: 1px solid #7a5a30;
+  border-bottom: 0;
+  font-weight: 400;
+  font-family: SimSun, "Songti SC", serif;
+}
+html.owner-tanggua .swatch,
+html.skin-shop-local-2010s:has(a.logo[href="tanggua.html"]) .swatch {
+  height: 64px;
+  background: #8a4a18;
+  border: 2px dashed #e8c36a;
+}
+html.owner-tanggua footer,
+html.skin-shop-local-2010s:has(a.logo[href="tanggua.html"]) footer {
+  background: #2a1c14;
+  color: #c9b080;
+  text-align: left;
+  padding: 8px 16px;
+}
+
+/* 净瓜：冰玻璃分类栏，相对净轩黄页 */
+html.owner-jingua,
+html.skin-classified-yellow:has(a.on[href="jingua.html"]) {
+  --bar: #7eb8c8;
+  --page: #e4eef1;
+  --link: #0a4a6a;
+  --btn: #1a6a78;
+  --line: #9cc4cc;
+}
+html.owner-jingua body,
+html.skin-classified-yellow:has(a.on[href="jingua.html"]) body {
+  background: #e4eef1;
+  color: #123;
+  font: 12px/1.7 Tahoma, SimSun, "Songti SC", sans-serif;
+}
+html.owner-jingua .top,
+html.skin-classified-yellow:has(a.on[href="jingua.html"]) .top {
+  background: #7eb8c8;
+  border-bottom: 3px solid #1a6a78;
+}
+html.owner-jingua .top b,
+html.skin-classified-yellow:has(a.on[href="jingua.html"]) .top b {
+  color: #0a3a44;
+  font-family: Tahoma, SimHei, "Heiti SC", sans-serif;
+  letter-spacing: 0;
+}
+html.owner-jingua .top .city,
+html.skin-classified-yellow:has(a.on[href="jingua.html"]) .top .city {
+  color: #0a3a44;
+}
+html.owner-jingua .top-inner,
+html.owner-jingua .layout,
+html.owner-jingua .ft,
+html.skin-classified-yellow:has(a.on[href="jingua.html"]) .top-inner,
+html.skin-classified-yellow:has(a.on[href="jingua.html"]) .layout,
+html.skin-classified-yellow:has(a.on[href="jingua.html"]) .ft {
+  width: 800px;
+}
+html.owner-jingua nav,
+html.skin-classified-yellow:has(a.on[href="jingua.html"]) nav {
+  width: 148px;
+  background: #d4eef2;
+  border-color: #7eb8c8;
+}
+html.owner-jingua nav h4,
+html.skin-classified-yellow:has(a.on[href="jingua.html"]) nav h4 {
+  color: #0a6a78;
+  border-bottom-color: #7eb8c8;
+}
+html.owner-jingua nav a.on,
+html.skin-classified-yellow:has(a.on[href="jingua.html"]) nav a.on {
+  background: #1a6a78;
+  color: #fff;
+}
+html.owner-jingua .list,
+html.skin-classified-yellow:has(a.on[href="jingua.html"]) .list {
+  width: 640px;
+  background: #f7fbfc;
+  border-color: #7eb8c8;
+}
+html.owner-jingua .list h4,
+html.skin-classified-yellow:has(a.on[href="jingua.html"]) .list h4 {
+  background: #c5e4ea;
+  color: #0a3a44;
+  border-bottom-color: #7eb8c8;
+}
+html.owner-jingua .row a,
+html.skin-classified-yellow:has(a.on[href="jingua.html"]) .row a {
+  width: 430px;
+}
+html.owner-jingua .hd-row .t,
+html.skin-classified-yellow:has(a.on[href="jingua.html"]) .hd-row .t {
+  width: 430px;
+}
+html.owner-jingua .top button,
+html.skin-classified-yellow:has(a.on[href="jingua.html"]) .top button {
+  background: #1a6a78;
+  border-color: #9ec9d4 #0a3a44 #0a3a44 #9ec9d4;
+}
+html.owner-jingua .top input,
+html.skin-classified-yellow:has(a.on[href="jingua.html"]) .top input {
+  width: 280px;
+  border-color: #1a6a78;
+}
+
+/* 行情：灰绿业余页，蓝横幅保留（文案：懒得换成红的） */
+html.owner-stock,
+html.skin-corp-table-2005:has(a[href="stock.html"]) {
+  --banner: #1e4b87;
+  --nav: #2d5a32;
+  --link: #0a4a20;
+  --bevel-hi: #6a9a6a;
+  --bevel-lo: #143018;
+}
+html.owner-stock body,
+html.skin-corp-table-2005:has(a[href="stock.html"]) body {
+  background: #c5d0c0;
+  color: #111;
+  font: 12px/1.7 Tahoma, SimSun, "Songti SC", sans-serif;
+}
+html.owner-stock table.site,
+html.skin-corp-table-2005:has(a[href="stock.html"]) table.site {
+  border-color: #4a6a4a;
+}
+html.owner-stock .nav,
+html.skin-corp-table-2005:has(a[href="stock.html"]) .nav {
+  background: #2d5a32;
+  letter-spacing: 0;
+  text-align: left;
+  padding: 0 8px;
+}
+html.owner-stock .left,
+html.skin-corp-table-2005:has(a[href="stock.html"]) .left {
+  background: #dce8d6;
+  border-right-color: #8aaa8a;
+}
+html.owner-stock .left h4,
+html.skin-corp-table-2005:has(a[href="stock.html"]) .left h4 {
+  background: #2d5a32;
+}
+html.owner-stock .scroll,
+html.skin-corp-table-2005:has(a[href="stock.html"]) .scroll {
+  background: #d8f0d8;
+  border-color: #2d5a32;
+  font-family: Tahoma, "Courier New", SimSun, monospace;
+}
+html.owner-stock .ft,
+html.skin-corp-table-2005:has(a[href="stock.html"]) .ft {
+  background: #dce8d6;
+  color: #345034;
+}
+
+/* 减动：章不斜，无过渡 */
+@media (prefers-reduced-motion: reduce) {
+  html.skin-intro-manual .stamp,
+  html.skin-winxp-luna body.ending-off .body::before {
+    transform: none;
+  }
+  html.skin-winxp-luna .chk:has([value="stock"])::before {
+    transform: none;
+    border: 1px solid #0a2010;
+  }
+}
+
+/* 320 / 390 */
+@media (max-width: 720px) {
+  html.skin-winxp-luna .window.center-doc {
+    width: auto;
+    margin: 8px 4px 40px;
+  }
+  html.skin-winxp-luna .chk {
+    font-size: 13px;
+  }
+  html.skin-classified-yellow nav,
+  html.owner-jingua nav,
+  html.skin-classified-yellow .list,
+  html.owner-jingua .list {
+    float: none;
+    width: auto;
+    max-width: 100%;
+  }
+  html.skin-classified-yellow .row a,
+  html.skin-classified-yellow .hd-row .t,
+  html.owner-jingua .row a,
+  html.owner-jingua .hd-row .t {
+    float: none;
+    width: auto;
+    white-space: normal;
+  }
+  html.skin-classified-yellow .top input,
+  html.owner-jingua .top input {
+    width: 42vw;
+    max-width: 180px;
+  }
+  html.skin-shop-local-2010s #search-input {
+    width: 42vw;
+    max-width: 160px;
+  }
+  html.skin-shop-local-2010s #menubar ul {
+    flex-wrap: wrap;
+    margin: 0 8px;
+  }
+  html.owner-tanggua header,
+  html.skin-shop-local-2010s:has(a.logo[href="tanggua.html"]) header {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  html.owner-tanggua .logo,
+  html.skin-shop-local-2010s:has(a.logo[href="tanggua.html"]) .logo {
+    letter-spacing: 0;
+    font-size: 18px;
+  }
+  html.owner-tanggua #container,
+  html.skin-shop-local-2010s:has(a.logo[href="tanggua.html"]) #container {
+    border-left-width: 4px;
+  }
+  html.skin-corp-table-2005 .banner {
+    height: auto;
+    line-height: 1.3;
+    font-size: 18px;
+    padding: 8px;
+  }
+  html.skin-corp-table-2005 .banner form {
+    float: none;
+    height: auto;
+    padding: 8px 0 0;
+  }
+  html.skin-intro-manual main {
+    padding: 8px;
+  }
+  html.skin-intro-manual section {
+    padding: 12px;
+    margin-bottom: 16px;
+  }
+  html.skin-intro-manual .intro-hero h1 {
+    font-size: 18px;
+  }
+  html.skin-intro-manual table.wo th {
+    width: 72px;
+  }
+}
+@media (max-width: 390px) {
+  html.skin-winxp-luna .task {
+    min-width: 0;
+    padding: 0 6px;
+  }
+  html.skin-winxp-luna .desk a.icon {
+    margin: 4px;
+  }
+}

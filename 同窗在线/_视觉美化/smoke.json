@@ -1,0 +1,74 @@
+{
+  "saveKey": "tongchuang-online-v1",
+  "htmlClass_intro": "skin-intro-manual",
+  "intro_has_search": false,
+  "htmlClass_home": "skin-campus-sns-2010",
+  "home_boxes": [
+    {
+      "tag": "INPUT",
+      "id": "q",
+      "h": 44,
+      "w": 678
+    },
+    {
+      "tag": "BUTTON",
+      "id": "",
+      "h": 44,
+      "w": 42
+    }
+  ],
+  "hit_html": "同窗\n首页\n站内搜索\n搜索\n同窗搜索\n\n共有 4 项结果\n\n吴启明的博客 - 纸马课\n\n沈湾。那堂课后来被叫做纸马课。\n\n吴启明的博客 - 回村那晚\n\n回村那晚看见电脑开着班级页。本篇原是未公开草稿。\n\n同窗在线 - 首页\n\n陈小北把链接发来，问起纸马课。吴启明把那篇日志又置顶了。\n\n同窗在线 - 帮助\n\n。一次只搜一个汉字词。有人问纸马课那篇日志为什么还能打开。\n\n同窗搜索只索引本镜像里已经存在的页面。一次一个汉字词。命中会列出标题；未命中会留下一句说明；没有权限会提示没有权限。\n\n普通词只会打到首页、找人、校园、帮助、暂停的应用中心。专名才会打开日志、作坊、空间、卷宗。不要把两个词用空格拼起来，本站没有组合检索。\n\n回首页\n\n06/36 · 镜像缓存，勿对照现实机构或个人。",
+  "hit_class": "skin-search-results",
+  "miss_html": "同窗\n首页\n站内搜索\n搜索\n同窗搜索\n\n没有找到相关结果。换一个出现在页面上的词试试。\n\n同窗搜索只索引本镜像里已经存在的页面。一次一个汉字词。命中会列出标题；未命中会留下一句说明；没有权限会提示没有权限。\n\n普通词只会打到首页、找人、校园、帮助、暂停的应用中心。专名才会打开日志、作坊、空间、卷宗。不要把两个词用空格拼起来，本站没有组合检索。\n\n回首页\n\n06/36 · 镜像缓存，勿对照现实机构或个人。",
+  "forbidden_class": "skin-forbidden",
+  "forbidden_text": "你没有权限查看该内容\n\n可能因为：你不是主人好友，或该内容已删除。\n\n请回首页。\n\n本页不提供权限申请。\n\n（无）\n\n站内搜索\n搜索\n\n回首页　帮助\n\n26/36 · 镜像缓存，勿对照现实机构或个人。",
+  "after_login": "/forbidden.html 你没有权限查看该内容\n\n可能因为：你不是主人好友，或该内容已删除。\n\n请回首页。\n\n本页不提供权限申请。\n\n（无）\n\n站内搜索\n搜索\n\n回首页　帮助\n\n26/36 · 镜像缓存，勿对照现实机构或个人。",
+  "near_choice": "到场与否\n账号处理\n附录\n站内搜索\n搜索\n\n本页不公布新材料。只问要不要应那一声「到」。\n\n不应到：划掉备用，计数归零。接香：把管理员改成自己，镜像继续开着。\n\n提交前可以回去再读。提交后不能用搜索撤销。\n\n账号处理未开放。备用、香火、陈小北、沈连山、林昭弟、沈昭弟的登记还未齐。\n\n33/36 · 镜像缓存，勿对照现实机构或个人。",
+  "ending_a": "不应到\n已提交\n不应到\n\n你在资料页把备用行划掉。来访计数归零。陈小北最后一条状态停在发送失败。沈亦舟的空间灰掉。周棠相册里的灰衣服还在，只是不再刷新。\n\n沈记店里的电脑若还开着，现在应当是黑的。债没有还清，只是不再记在你的名下。班群不会再来信。你活在关站之后的年份里，不再给纸人当香。\n\n叙旧停了。祠堂停香。备用行没有启用。你拒绝到场。\n\n蓝条不会跟着你。班群沉默。沈湾那台电脑若还亮着，也只是亮着。债还在世上，不再记在江晚晴这一行。\n\n一九五九年的数字、一九八七年的应声、二零",
+  "selftest": "{\n  \"emptySearch\": 0,\n  \"spaceSearchType\": \"multi\",\n  \"enSearchType\": \"en\",\n  \"paperhorse\": true,\n  \"aliasShop\": true,\n  \"orphanInputs\": [],\n  \"blocked\": [],\n  \"reachable\": [\n    \"p01\",\n    \"p02\",\n    \"p03\",\n    \"p04\",\n    \"p05\",\n    \"p06\",\n    \"p07\",\n    \"p08\",\n    \"p09\",\n    \"p10\",\n    \"p11\",\n    \"p12\",\n    \"p13\",\n    \"p14\",\n    \"p15\",\n    \"p16\",\n    \"p17\",\n    \"p18\",\n    \"p19a\",\n    \"p19b\"\n  ],\n  \"endings\": {\n    \"logoutNeed\": true,\n    \"keepNeed\": true\n  },\n  \"keywordCount\": 26,\n  \"numberedPages\": 36\n}",
+  "album_imgs": [
+    {
+      "src": "assets/img-album-grad2007.jpg",
+      "w": 960,
+      "h": 640,
+      "ok": true
+    },
+    {
+      "src": "assets/img-album-obituary.jpg",
+      "w": 960,
+      "h": 640,
+      "ok": true
+    }
+  ],
+  "en_saveKey": "tongchuang-online-v1-en",
+  "en_hit": "Classmates\nHome\nOn-site search\nSearch\nClassmates Search\n\n6 result(s)\n\nWuQiming's blog - PaperHorse\n\nlass later got called PaperHorse.\n\nWuQiming's blog - That Night Back in the Village\n\nThat night back in the village the compute\n\nClassmates Online - Home\n\nand asked about PaperHorse. WuQiming\n\nClassma",
+  "w320_boxes": [
+    {
+      "tag": "INPUT",
+      "id": "q",
+      "h": 44,
+      "w": 212
+    },
+    {
+      "tag": "BUTTON",
+      "id": "",
+      "h": 44,
+      "w": 72
+    }
+  ],
+  "w390_boxes": [
+    {
+      "tag": "INPUT",
+      "id": "q",
+      "h": 44,
+      "w": 282
+    },
+    {
+      "tag": "BUTTON",
+      "id": "",
+      "h": 44,
+      "w": 72
+    }
+  ],
+  "game_meta": "{\"pages\":[\"intro\",\"home\",\"find\",\"school\",\"help\",\"apps\",\"search\",\"blog-paperhorse\",\"blog-night\",\"shenji\",\"space-syz\",\"gift\",\"visitors\",\"profile-cxb\",\"album-cxb\",\"class\",\"login\",\"class-rules\",\"class-feed\",\"gazetteer\",\"reservoir\",\"yince\",\"album-zt\",\"wall-zt\",\"forum\",\"mp-sxl\",\"inbox\",\"profile-jwq\",\"forbidden\",\"paper-list\",\"oral-sls\",\"mp-local\",\"genealogy\",\"shrine\",\"choice\",\"ending-a\",\"ending-b\"],\"saveKey\":\"tongchuang-online-v1\",\"public\":[\"intro\",\"home\",\"find\",\"school\",\"help\",\"apps\",\"search\",\"forbidden\"]}"
+}

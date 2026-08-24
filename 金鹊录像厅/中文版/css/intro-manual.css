@@ -35,3 +35,7 @@ html.skin-intro-manual section {
 }
 html.skin-intro-manual h1, html.skin-intro-manual h2, html.skin-intro-manual h3 { color: #444; }
 html.skin-intro-manual .enter-link { font-weight: 700; }
+html.skin-intro-manual .boot-actions button {
+  min-height: 44px;
+  min-width: 44px;
+}

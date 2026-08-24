@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>麦记·著录收下</title>
   <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/pick-overlay.css">
 </head>
 <body>
   <div id="wrap">
@@ -20,7 +21,7 @@
       </div>
     </header>
     
-    <div class="notice">
+    <div class="notice end-filed">
       <h2>一句入账</h2>
       <p>回单打印机卡了一下，第二张才出来。工号章是蓝的，不像丧单上那种淡指印。麦老不在，系统仍按他定的栏收。</p>
       <p id="why"></p>
@@ -46,5 +47,6 @@
     var el = document.getElementById("why");
     if (el) el.textContent = "你交的是：" + (f.who||"") + "的" + (f.what||"") + "被" + (f.act||"") + (f.where||"") + "，今夜" + (f.night||"") + "。" + (f.life||"") + "。权限建议。";
 </script>
+  <link rel="stylesheet" href="../css/pick-overlay.css">
 </body>
 </html>

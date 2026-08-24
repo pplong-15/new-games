@@ -1,0 +1,139 @@
+/* wechat-mp-article
+ * 记忆 2015 公众号长文栏（PC 阅读页），不是 2024 视频号，无顶导航。
+ * 栏宽 677px 白底居中，17px 苹方/雅黑，账号名 #576b95。
+ * 允许略现代的 2015 排版。禁止：品牌 Logo、顶栏、CSS Grid。
+ */
+html.skin-wechat-mp-article,
+html.skin-wechat-mp-article body,
+html.skin-wechat-mp-article div,
+html.skin-wechat-mp-article h1,
+html.skin-wechat-mp-article h2,
+html.skin-wechat-mp-article p,
+html.skin-wechat-mp-article a,
+html.skin-wechat-mp-article span,
+html.skin-wechat-mp-article article {
+  margin: 0;
+  padding: 0;
+}
+html.skin-wechat-mp-article body {
+  background: #f3f3f3;
+  color: #3e3e3e;
+  font: 17px/1.6 "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+html.skin-wechat-mp-article a {
+  color: #576b95;
+  text-decoration: none;
+}
+html.skin-wechat-mp-article a:hover { text-decoration: underline; }
+html.skin-wechat-mp-article button {
+  font: 15px "PingFang SC", "Microsoft YaHei", sans-serif;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+
+/* 栏宽保持 677 */
+html.skin-wechat-mp-article .article {
+  width: 677px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px 15px 48px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html.skin-wechat-mp-article h1 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #000;
+  margin: 0 0 10px;
+}
+html.skin-wechat-mp-article .meta {
+  color: #8c8c8c;
+  font-size: 15px;
+  margin: 0 0 22px;
+  line-height: 20px;
+}
+html.skin-wechat-mp-article .meta .acct {
+  color: #576b95;
+  margin-right: 8px;
+}
+html.skin-wechat-mp-article .meta .orig {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 0 4px;
+  font-size: 11px;
+  line-height: 16px;
+  color: #8c8c8c;
+  border: 1px solid #9e9e9e;
+  vertical-align: middle;
+}
+html.skin-wechat-mp-article p {
+  margin: 0 0 1em;
+  letter-spacing: 0.034em;
+}
+html.skin-wechat-mp-article h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin: 1.2em 0 0.6em;
+}
+html.skin-wechat-mp-article img {
+  max-width: 100%;
+  display: block;
+  margin: 12px 0;
+  border: 0;
+}
+html.skin-wechat-mp-article .ph {
+  height: 168px;
+  background: #eaeaea;
+  border: 1px solid #ddd;
+  text-align: center;
+  line-height: 168px;
+  color: #999;
+  font-size: 14px;
+  margin: 12px 0 18px;
+}
+html.skin-wechat-mp-article .quote {
+  margin: 0 0 1em;
+  padding: 8px 12px;
+  background: #f6f6f6;
+  border-left: 3px solid #d8d8d8;
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+}
+html.skin-wechat-mp-article .tail {
+  color: #8c8c8c;
+  font-size: 14px;
+  border-top: 1px solid #eee;
+  padding-top: 16px;
+  margin-top: 28px;
+  line-height: 1.8;
+}
+html.skin-wechat-mp-article .tail .like {
+  float: right;
+  color: #576b95;
+}
+html.skin-wechat-mp-article .tail:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+html.skin-wechat-mp-article button.pin {
+  background: #fff;
+  color: #576b95;
+  border: 1px solid #576b95;
+  border-radius: 4px;
+  font: 16px "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+html.skin-wechat-mp-article button.pin.have {
+  background: #576b95;
+  color: #fff;
+}
+@media (max-width: 700px) {
+  html.skin-wechat-mp-article .article { width: 100%; }
+}
+

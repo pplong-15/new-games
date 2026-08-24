@@ -1,7 +1,7 @@
 # 闸C 去AI味真实感　古镇夜戏
 
 - 闸：`html-game-deai-qc` v1.0.0（Hermes 第四道闸）
-- 对象：`古镇夜戏/` 全站可见文案 + `assets/base/*.jpg`（16 base → 48 帧）
+- 对象：`古镇夜戏/` 全站可见文案；16 张 `assets/base` 原图在 2026-08-23 视觉闸完整移至 `/Users/jianglong/Desktop/github游戏/_视觉美化工作/ref/古镇夜戏-base/`（玩家目录只留 `assets/stills/`，路径未改）。
 - 判据：真地方绝不会出现的东西 = AI 感。任一关泄底即整体 HOLD。
 - 首评：**HOLD**（2 项 P1 + 1 项体量缺陷）→ 已修 2 项 → **体量待补后 PASS**
 

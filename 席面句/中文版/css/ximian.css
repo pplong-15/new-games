@@ -1,0 +1,763 @@
+/* 席面句 VP1 · 四所有者皮。禁止全站圆角卡、进度条、边检桌、密室机关。 */
+:root {
+  --wine: #6b1520;
+  --goldline: #c9a15b;
+  --desk: #efe6d2;
+  --desk-ink: #3a2a1a;
+  --sys: #8a2c22;
+  --ink: #2a1f1a;
+  --gray: #5c5c58;
+  --scan-bg: #c4bfb4;
+  --intro-bg: #6e6e6a;
+  --paper: #fff8ee;
+}
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  background: #241616;
+  color: var(--ink);
+  font-family: "Songti SC", "SimSun", "Noto Serif SC", serif;
+  min-height: 100%;
+}
+button { font-family: inherit; cursor: pointer; }
+button:focus-visible,
+.word:focus-visible,
+.chip:focus-visible,
+.tab:focus-visible,
+.slot:focus-visible {
+  outline: 3px solid #c9a15b;
+  outline-offset: 2px;
+}
+
+/* —— 标题层：先露出酒红喜宴壳+席面，采词入口可读；不是著录台值班桌 —— */
+#title-layer {
+  position: fixed; inset: 0; z-index: 30;
+  background: #3a0c12;
+  display: flex; flex-direction: column; align-items: center;
+  justify-content: flex-start;
+  color: #f8e7c8;
+  font-family: "STFangsong", "FangSong", "KaiTi", "Songti SC", serif;
+  overflow: auto;
+  padding: 0 0 20px;
+}
+#title-layer .title-chrome {
+  width: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(#7a1c28, #5c121c);
+  border-bottom: 3px double #c9a15b;
+  color: #f8e7c8;
+  text-align: center;
+  padding: 8px 12px 10px;
+}
+#title-layer .title-brand {
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: 0.32em;
+  font-weight: 400;
+}
+#title-layer .title-nav {
+  margin: 6px 0 0;
+  font-size: 14px;
+  letter-spacing: 0.18em;
+  color: #c9a15b;
+  border-top: 1px solid #c9a15b;
+  padding-top: 6px;
+}
+#title-layer .title-stage {
+  margin: 12px 12px 0;
+  max-width: 720px;
+  width: calc(100% - 24px);
+  position: relative;
+}
+#title-layer .title-stage img {
+  width: 100%;
+  max-height: 42vh;
+  object-fit: cover;
+  object-position: center 40%;
+  display: block;
+  border: 1px solid #c9a15b;
+  box-shadow: none;
+}
+#title-layer .title-pick {
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  top: 22%;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+  font-size: 16px;
+}
+#title-layer .title-pick span {
+  display: inline-block;
+  min-height: 44px;
+  line-height: 44px;
+  padding: 0 10px;
+  background: #fff8ee;
+  color: #6b1520;
+  border-bottom: 3px solid #6b1520;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+#title-layer .title-slots {
+  margin: 8px 12px 0;
+  max-width: 720px;
+  width: calc(100% - 24px);
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  text-align: center;
+  letter-spacing: 0.12em;
+  color: #c9a15b;
+  border: 1px dashed #c9a15b;
+  padding: 8px 6px;
+  min-height: 44px;
+  background: rgba(20, 4, 8, 0.35);
+}
+#title-layer .lock-line {
+  color: #c9a15b;
+  font-weight: 700;
+  margin: 10px 16px 4px;
+  text-align: center;
+}
+#title-layer .fiction { color: #c9b8a2; font-size: 13px; max-width: 36em; text-align: center; }
+#btn-enter {
+  margin-top: 10px; min-height: 44px; min-width: 160px;
+  background: #fff8ee; color: #6b1520;
+  border: 3px double #c9a15b;
+  font-size: 16px; font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+#app { display: none; }
+#app.show { display: block; }
+
+/* —— 默认顶栏（进站后立刻是扫描席面；随后按所有者换皮） —— */
+.chrome {
+  background: #5a5852;
+  color: #eeeae2;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
+  padding: 8px 12px;
+  font-family: Tahoma, "SimSun", serif;
+  border-bottom: 2px solid #2e2c28;
+}
+.brand { font-weight: 700; letter-spacing: 0.08em; }
+.tabs button, .chrome .tab {
+  min-height: 44px; min-width: 72px;
+  background: #d8d4cc; color: #222;
+  border: 2px outset #9a958c;
+  padding: 0 10px;
+  border-radius: 0;
+  font-family: Tahoma, "SimSun", sans-serif;
+  font-size: 13px;
+}
+.tabs button.on {
+  background: #fff;
+  border-style: inset;
+  color: #111;
+  font-weight: 700;
+}
+#page-foot {
+  padding: 4px 12px;
+  background: #3e3c38;
+  color: #d8d4cc;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.14em;
+  font-family: Tahoma, "SimSun", sans-serif;
+  text-align: right;
+  border-bottom: 1px solid #2a2824;
+}
+#page-foot:empty { display: none; }
+#page-foot:not(:empty)::before { content: "编号 "; }
+
+#view {
+  background: var(--scan-bg);
+  min-height: 280px;
+  padding: 16px 18px;
+}
+#view h2 { margin: 0 0 12px; }
+
+/* ========== 所有者 1：引言 · 灰底说明书 ========== */
+body:has(#app.show #view.intro) { background: #5a5a56; }
+#app.show:has(#view.intro) .chrome {
+  background: #3a3a38;
+  color: #e8e8e4;
+  font-family: "PingFang SC", "Microsoft YaHei", "Heiti SC", sans-serif;
+  border-bottom: 1px solid #222;
+  flex-direction: column;
+  align-items: stretch;
+}
+#app.show:has(#view.intro) .chrome::before {
+  content: "班前说明书";
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.42em;
+  color: #b8b8b4;
+  border-bottom: 1px solid #666;
+  padding-bottom: 6px;
+  margin-bottom: 4px;
+}
+#app.show:has(#view.intro) .brand {
+  font-weight: 400;
+  letter-spacing: 0;
+  font-size: 13px;
+  color: #c4c4c0;
+}
+#app.show:has(#view.intro) .tabs {
+  display: flex; flex-wrap: wrap; gap: 6px;
+}
+#app.show:has(#view.intro) .tabs button,
+#app.show:has(#view.intro) .chrome .tab {
+  background: #4a4a46;
+  color: #eee;
+  border: 1px solid #222;
+  border-radius: 0;
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+#app.show:has(#view.intro) .tabs button.on {
+  background: #eee;
+  color: #222;
+  border-style: solid;
+  font-weight: 700;
+}
+#app.show:has(#view.intro) #page-foot {
+  background: #2e2e2c;
+  color: #bbb;
+  font-family: "PingFang SC", sans-serif;
+  letter-spacing: 0.08em;
+}
+#view.intro {
+  background: #7a7a76;
+  color: #f3f3ee;
+  font-family: "PingFang SC", "Microsoft YaHei", "Heiti SC", sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+}
+#view.intro h2 {
+  max-width: 640px;
+  margin: 0 auto 12px;
+  color: #222;
+  background: #ecece8;
+  border-bottom: 1px solid #888;
+  padding: 10px 18px 8px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0;
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+#view.intro .card {
+  background: #ecece8;
+  color: #333;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 18px 20px 22px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.18);
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+/* ========== 所有者 2：公开壳 · 酒红婚庆站 ========== */
+body:has(#app.show #view.site) { background: #3a0c12; }
+#app.show:has(#view.site) .chrome {
+  background: linear-gradient(#7a1c28, #5c121c);
+  color: #f8e7c8;
+  font-family: "STFangsong", "FangSong", "KaiTi", "Songti SC", serif;
+  border-bottom: 3px double #c9a15b;
+  flex-direction: row;
+}
+#app.show:has(#view.site) .chrome::before {
+  content: "桐江喜事 · 喜宴档期";
+  flex: 1 0 100%;
+  font-size: 12px;
+  letter-spacing: 0.35em;
+  color: #c9a15b;
+  text-align: center;
+  border-bottom: 1px solid #c9a15b;
+  padding-bottom: 4px;
+  margin-bottom: 2px;
+}
+#app.show:has(#view.site) .brand {
+  font-size: 22px;
+  letter-spacing: 0.28em;
+  color: #f8e7c8;
+  font-weight: 400;
+}
+#app.show:has(#view.site) .tabs button,
+#app.show:has(#view.site) .chrome .tab {
+  background: #6b1520;
+  color: #f8e7c8;
+  border: 1px solid #c9a15b;
+  border-bottom: 0;
+  border-radius: 0;
+  font-family: "STFangsong", "FangSong", "SimSun", serif;
+  font-size: 15px;
+}
+#app.show:has(#view.site) .tabs button.on {
+  background: #f8e7c8;
+  color: #6b1520;
+  border-style: solid;
+  font-weight: 700;
+}
+#app.show:has(#view.site) #page-foot {
+  background: #4a1018;
+  color: #f8e7c8;
+  font-family: "STFangsong", "FangSong", serif;
+  text-align: center;
+  border-bottom: 1px solid #c9a15b;
+}
+#view.site {
+  background: #fff8e8;
+  color: #4a2a22;
+  font-family: "STFangsong", "FangSong", "KaiTi", "Songti SC", serif;
+  font-size: 16px;
+  line-height: 1.85;
+  max-width: none;
+}
+#view.site h1,
+#view.site h2 {
+  font-family: "STFangsong", "FangSong", "KaiTi", serif;
+  color: #6b1520;
+  border-bottom: 3px double #c9a15b;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  text-align: center;
+  padding-bottom: 8px;
+  max-width: 960px;
+  margin: 0 auto 16px;
+}
+#view.site p,
+#view.site > *:not(h1):not(h2) {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#view.site .go {
+  min-height: 44px;
+  background: #6b1520;
+  color: #f8e7c8;
+  border: 1px solid #c9a15b;
+  border-radius: 0;
+  font-family: "STFangsong", "FangSong", "SimSun", serif;
+  padding: 0 14px;
+}
+
+/* ========== 所有者 3：扫描件 · 病危/合同/席面 ========== */
+body:has(#app.show #view.scan) { background: #4a4844; }
+#app.show:has(#view.scan) .chrome {
+  background: #8a8680;
+  color: #1a1a18;
+  font-family: Tahoma, "SimSun", sans-serif;
+  border-bottom: 3px ridge #cfcac0;
+  box-shadow: inset 0 1px 0 #eee, inset 0 -1px 0 #555;
+}
+#app.show:has(#view.scan) .chrome::before {
+  content: "SCAN PREVIEW";
+  flex: 1 0 100%;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  color: #2e2c28;
+  border-bottom: 1px dotted #4a4844;
+  padding-bottom: 3px;
+}
+#app.show:has(#view.scan) .brand {
+  font-family: Tahoma, sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: #222;
+  font-weight: 700;
+}
+#app.show:has(#view.scan) .tabs button,
+#app.show:has(#view.scan) .chrome .tab {
+  background: #d0ccc4;
+  color: #111;
+  border: 2px outset #9a958c;
+  border-radius: 0;
+  font-family: Tahoma, "SimSun", sans-serif;
+  font-size: 12px;
+}
+#app.show:has(#view.scan) .tabs button.on {
+  background: #f4f1ea;
+  border-style: inset;
+  color: #000;
+}
+#app.show:has(#view.scan) #page-foot {
+  background: #6a6660;
+  color: #f0ece4;
+  font-family: Tahoma, sans-serif;
+  letter-spacing: 0.16em;
+}
+#view.scan {
+  background-color: #c8c2b6;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    rgba(40, 36, 30, 0.05) 0,
+    rgba(40, 36, 30, 0.05) 1px,
+    transparent 1px,
+    transparent 4px
+  );
+  color: #222;
+  font-family: "SimSun", "Songti SC", serif;
+  font-size: 15px;
+  line-height: 1.7;
+}
+#view.scan h2 {
+  font-family: "SimSun", "Songti SC", serif;
+  font-size: 15px;
+  color: #222;
+  background: #ece8e0;
+  border: 1px solid #7a766e;
+  padding: 6px 10px;
+  letter-spacing: 0;
+  text-align: left;
+  font-weight: 700;
+  max-width: 720px;
+}
+#view.scan h2::before {
+  content: "SCAN · ";
+  font-family: Tahoma, sans-serif;
+  font-size: 11px;
+  color: #666;
+  letter-spacing: 0.12em;
+}
+#view.scan img,
+#view.scan #still-img {
+  max-width: 720px;
+  border: 1px solid #6a6660;
+  box-shadow: 2px 2px 0 #9a958c;
+  background: #ddd;
+  display: block;
+}
+#view.scan .go {
+  min-height: 44px;
+  background: #d8d4cc;
+  color: #111;
+  border: 2px outset #8a8680;
+  border-radius: 0;
+  font-family: Tahoma, "SimSun", sans-serif;
+  padding: 0 12px;
+}
+
+/* ========== 所有者 4：著录台 · 米色工位（顶栏随 desk 页） ========== */
+body:has(#app.show #view.desk) { background: #c4b496; }
+#app.show:has(#view.desk) .chrome {
+  background: #e8dcc4;
+  color: #3a2a1a;
+  font-family: "SimSun", "Songti SC", serif;
+  border-bottom: 2px solid #6b5a48;
+}
+#app.show:has(#view.desk) .chrome::before {
+  content: "著录台 · 建议栏";
+  flex: 1 0 100%;
+  font-size: 12px;
+  letter-spacing: 0.28em;
+  color: #6b5a48;
+  border-bottom: 1px solid #c4b496;
+  padding-bottom: 4px;
+}
+#app.show:has(#view.desk) .brand {
+  color: #3a2a1a;
+  letter-spacing: 0.12em;
+  font-size: 16px;
+}
+#app.show:has(#view.desk) .tabs button,
+#app.show:has(#view.desk) .chrome .tab {
+  background: #efe6d2;
+  color: #3a2a1a;
+  border: 1px solid #6b5a48;
+  border-radius: 0;
+  font-family: "SimSun", "Songti SC", serif;
+}
+#app.show:has(#view.desk) .tabs button.on {
+  background: #3a2a1a;
+  color: #efe6d2;
+  border-style: solid;
+  font-weight: 700;
+}
+#app.show:has(#view.desk) #page-foot {
+  background: #d8ccb4;
+  color: #3a2a1a;
+  font-family: "SimSun", serif;
+  text-align: left;
+  border-bottom: 1px solid #6b5a48;
+}
+#view.desk {
+  background: #efe6d2;
+  color: #3a2a1a;
+  font-family: "SimSun", "Songti SC", serif;
+  font-size: 16px;
+}
+#view.desk h2 {
+  border-bottom: 2px solid #3a2a1a;
+  color: #3a2a1a;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  text-align: left;
+  padding-bottom: 6px;
+}
+#view.desk .go {
+  min-height: 44px;
+  background: #efe6d2;
+  color: #3a2a1a;
+  border: 1px solid #6b5a48;
+  border-radius: 0;
+  font-family: "SimSun", serif;
+  padding: 0 12px;
+}
+
+/* —— 采词（正文下划线，不是药丸） —— */
+.still-wrap { position: relative; max-width: 720px; }
+.still-wrap img { width: 100%; display: block; }
+.still-wrap .hits { position: absolute; inset: 0; pointer-events: none; }
+.still-wrap .hits .word {
+  pointer-events: auto;
+  position: absolute;
+  background: #fff8ee;
+  border: 1px solid #3a2a1a;
+  border-bottom-width: 3px;
+  box-shadow: 2px 2px 0 #3a2a1a;
+}
+.still-wrap .hits [data-word="w-hcz"] { left: 22%; top: 26%; }
+.still-wrap .hits [data-word="w-lqt"] { left: 64%; top: 26%; }
+.word {
+  display: inline-block;
+  min-height: 44px;
+  line-height: 44px;
+  padding: 0 10px;
+  margin: 4px 2px;
+  border: 0;
+  border-bottom: 3px solid #6b1520;
+  border-radius: 0;
+  background: #fff8ee;
+  color: #1a1210;
+  font-size: 16px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-family: "SimSun", "Songti SC", serif;
+}
+#view.intro .word { background: #fff; }
+#view.scan .word { background: #f4f0e6; border-bottom-color: #222; }
+.word.picked {
+  opacity: 1;
+  text-decoration: line-through;
+  border-bottom-style: dotted;
+  color: #5a5048;
+  background: #e8e4dc;
+}
+.word.picked::after {
+  content: "入袋";
+  font-size: 11px;
+  margin-left: 6px;
+  text-decoration: none;
+  letter-spacing: 0.08em;
+  border: 1px solid currentColor;
+  padding: 0 4px;
+  line-height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* —— 著录台工位：始终米色，与上方面页所有者分开 —— */
+#desk {
+  background: #efe6d2;
+  background-image: linear-gradient(#d8ccb4, #d8ccb4);
+  background-size: 100% 8px;
+  background-repeat: no-repeat;
+  border-top: 8px solid #c4b496;
+  padding: 10px 12px 20px;
+  color: #3a2a1a;
+  font-family: "SimSun", "Songti SC", serif;
+}
+.desk-top {
+  display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+}
+.badge {
+  border: 2px solid #3a2a1a;
+  border-left: 10px solid #6b1520;
+  padding: 6px 10px;
+  min-height: 44px;
+  background: #f7f1e4;
+  border-radius: 0;
+  font-size: 13px;
+  line-height: 1.35;
+}
+.lock-line { color: #6b1520; font-weight: 700; }
+.wage { margin-left: auto; }
+#clock {
+  font-variant-numeric: tabular-nums;
+  font-family: Tahoma, "SimSun", sans-serif;
+  border: 1px solid #6b5a48;
+  padding: 6px 8px;
+  min-height: 44px;
+  background: #f7f1e4;
+}
+.desk-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.1fr;
+  gap: 12px;
+  margin-top: 10px;
+  align-items: stretch;
+}
+@media (max-width: 900px) { .desk-grid { grid-template-columns: 1fr; } }
+
+.bag {
+  min-height: 120px;
+  padding: 8px;
+  background: #d8cbb6;
+  border: 3px inset #b8a88c;
+  border-radius: 0;
+}
+.slots {
+  min-height: 120px;
+  padding: 10px 12px 12px;
+  background: #fffaf0;
+  border: 1px solid #3a2a1a;
+  box-shadow: 3px 3px 0 #c4b496;
+  border-radius: 0;
+}
+.send {
+  min-height: 120px;
+  padding: 10px;
+  background: #d4c8b0;
+  border: 3px outset #a09078;
+  border-radius: 0;
+}
+.empty-bag {
+  display: block;
+  color: #5a5040;
+  font-style: italic;
+  border: 1px dotted #8a7a68;
+  padding: 12px;
+  min-height: 44px;
+}
+.chip {
+  display: inline-block;
+  min-height: 44px;
+  line-height: 44px;
+  padding: 0 10px;
+  margin: 3px;
+  background: #f4ead6;
+  border: 1px solid #3a2a1a;
+  border-left: 6px solid #6b1520;
+  border-radius: 0;
+  font-family: "SimSun", "Songti SC", serif;
+}
+.slot {
+  min-height: 48px;
+  margin: 8px 0;
+  padding: 4px 2px 2px;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px dashed #6b5a48;
+  border-radius: 0;
+}
+.slot:has(.chip) {
+  border-bottom: 2px solid #3a2a1a;
+  background: #fff8ee;
+}
+.slot .lab {
+  font-size: 12px;
+  color: #6b5a48;
+  letter-spacing: 0.16em;
+  display: block;
+}
+
+/* 回传：未成组=虚线灰+「不成组」文案；齐了=双线可点+下划线，不唯色 */
+#btn-submit {
+  min-height: 44px;
+  min-width: 148px;
+  padding: 0 16px;
+  background: #c8c0b4;
+  color: #3a342c;
+  border: 2px dashed #7a7468;
+  border-radius: 0;
+  font-weight: 400;
+  text-decoration: none;
+}
+#btn-submit.ready {
+  background: #fff8ee;
+  color: #6b1520;
+  border: 3px double #6b1520;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  box-shadow: 2px 2px 0 #6b1520;
+}
+#btn-submit:disabled {
+  background: #d8d4cc;
+  color: #666;
+  border: 2px solid #999;
+  border-style: solid;
+  text-decoration: line-through;
+  box-shadow: none;
+  font-weight: 400;
+}
+#btn-approve {
+  min-height: 44px;
+  margin-left: 8px;
+  margin-top: 8px;
+  background: #ece8e0;
+  color: #5a5048;
+  border: 1px dotted #888;
+  border-radius: 0;
+}
+#btn-approve::after {
+  content: " · 无权限";
+  font-size: 12px;
+}
+#replay {
+  min-height: 44px;
+  min-width: 72px;
+  margin-top: 8px;
+  background: #efe6d2;
+  border: 1px solid #6b5a48;
+  border-radius: 0;
+}
+#msg {
+  min-height: 24px;
+  color: var(--desk-ink);
+  font-weight: 700;
+  border-left: 4px solid #6b1520;
+  padding-left: 8px;
+  margin-top: 8px;
+}
+#msg:empty { border: 0; padding: 0; }
+#still-img { max-width: 100%; }
+.att-nav button, .go {
+  min-height: 44px;
+  margin: 4px 4px 4px 0;
+  padding: 0 12px;
+  border-radius: 0;
+}
+.ending-panel {
+  padding: 12px;
+  background: #fffaf0;
+  border: 1px solid #3a2a1a;
+  margin-top: 8px;
+}
+
+/* 打开页已有席面静帧时，著录台不再叠第二份，主操作落到词袋/三格/回传 */
+#app.show:has(#view .still-wrap) #desk-still-wrap { display: none; }
+#desk-still-wrap { max-width: 720px; }
+#desk-hits { position: absolute; inset: 0; pointer-events: none; }
+#desk-hits .word { pointer-events: auto; position: absolute; min-height: 44px; }
+#desk-hits .hit-hcz { left: 22%; top: 26%; }
+#desk-hits .hit-lqt { left: 64%; top: 26%; }
+
+@media (max-width: 390px) {
+  .tabs button, .chrome .tab { min-width: 44px; font-size: 12px; padding: 0 6px; }
+  #view { padding: 10px; }
+  .badge { width: 100%; }
+  .wage { margin-left: 0; }
+  #title-layer .title-brand { font-size: 18px; letter-spacing: 0.14em; }
+  #title-layer .title-nav { font-size: 12px; letter-spacing: 0.06em; }
+  #title-layer .title-pick { font-size: 13px; top: 16%; }
+  #title-layer .title-stage img { max-height: 36vh; }
+}
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}

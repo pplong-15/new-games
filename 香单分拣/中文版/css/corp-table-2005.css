@@ -148,3 +148,8 @@ html.skin-corp-table-2005 .ft {
   font-size: 12px;
   border-top: 1px solid #ccc;
 }
+@media (max-width: 800px) {
+  html.skin-corp-table-2005 table.site { width: 100%; }
+  html.skin-corp-table-2005 .banner { height: auto; font-size: 20px; line-height: 1.4; padding: 12px 16px; }
+  html.skin-corp-table-2005 .banner form { float: none; height: auto; padding: 8px 0 0; }
+}

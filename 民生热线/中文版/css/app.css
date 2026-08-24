@@ -1,7 +1,9 @@
 html.skin-winxp-luna { overflow-x: auto; }
+
+/* Window layers: DigiCut library under monitor; cut keys above notes. */
 html.skin-winxp-luna #win-db {
-  left: 90px;
-  top: 18px;
+  left: 88px;
+  top: 16px;
   width: 760px;
   z-index: 4;
 }
@@ -12,35 +14,92 @@ html.skin-winxp-luna #win-db .body {
   max-height: 520px;
   font: 12px/1.55 "SimSun", "Songti SC", monospace;
   box-shadow: inset 1px 1px #000, inset -1px -1px #444;
+  counter-reset: hit;
 }
 html.skin-winxp-luna .db-head {
   display: flex;
   gap: 8px;
   margin-bottom: 8px;
-  align-items: center;
+  align-items: stretch;
 }
 html.skin-winxp-luna .db-head input {
   flex: 1;
-  height: 22px;
+  min-height: 44px;
   background: #0c0d09;
   color: #e6ecc8;
-  border: 1px solid #5a5e40;
-  font: 12px "SimSun", monospace;
-  padding: 0 6px;
+  border: 2px solid #5a5e40;
+  font: 16px/1.2 "SimSun", monospace;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+html.skin-winxp-luna .db-head input:focus,
+html.skin-winxp-luna .db-head input:focus-visible,
+html.skin-winxp-luna .db-head .btn3d:focus,
+html.skin-winxp-luna .db-head .btn3d:focus-visible {
+  outline: 3px solid #f4e542;
+  outline-offset: 0;
+}
+html.skin-winxp-luna .db-head .btn3d {
+  min-width: 88px;
+  color: #000;
 }
 html.skin-winxp-luna .db-meta {
   color: #9aa07a;
   margin: 0 0 8px;
   font-size: 12px;
+  border-left: 4px solid #8a8;
+  padding-left: 8px;
+}
+html.skin-winxp-luna #results:empty {
+  min-height: 120px;
+  border: 2px dashed #6a6e50;
+  background:
+    repeating-linear-gradient(
+      -45deg,
+      #14160f,
+      #14160f 8px,
+      #1e2018 8px,
+      #1e2018 16px
+    );
+  position: relative;
+}
+html.skin-winxp-luna #results:empty::before {
+  content: "0";
+  display: block;
+  text-align: center;
+  font: 700 42px/120px Tahoma, "SimSun", sans-serif;
+  color: #5a5e40;
+  letter-spacing: 4px;
 }
 html.skin-winxp-luna .clip-row {
   display: flex;
   gap: 10px;
-  padding: 6px;
+  padding: 8px 8px 8px 36px;
   border: 1px solid #3a3e28;
   margin-bottom: 6px;
   cursor: pointer;
   background: #14160f;
+  min-height: 44px;
+  position: relative;
+  box-sizing: border-box;
+}
+html.skin-winxp-luna .clip-row::before {
+  counter-increment: hit;
+  content: counter(hit);
+  position: absolute;
+  left: 6px;
+  top: 8px;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #8a8;
+  color: #e8eeb8;
+  text-align: center;
+  font: 700 11px/22px Tahoma, sans-serif;
+}
+html.skin-winxp-luna .clip-row:focus,
+html.skin-winxp-luna .clip-row:focus-visible {
+  outline: 3px solid #f4e542;
+  border-color: #f4e542;
 }
 html.skin-winxp-luna .clip-row:hover { border-color: #8a8; }
 html.skin-winxp-luna .clip-row img {
@@ -49,19 +108,27 @@ html.skin-winxp-luna .clip-row img {
   object-fit: cover;
   background: #000;
   flex-shrink: 0;
+  border: 2px solid #000;
+  box-shadow: inset 0 0 0 1px #444;
 }
 html.skin-winxp-luna .clip-row b { color: #e8eeb8; font-weight: 700; }
 html.skin-winxp-luna .clip-row .who { color: #c2c89a; }
+
 html.skin-winxp-luna #win-view {
   left: 140px;
-  top: 40px;
+  top: 36px;
   width: 680px;
-  z-index: 6;
+  z-index: 8;
+  border-color: #222;
+}
+html.skin-winxp-luna #win-view .title-bar {
+  background: linear-gradient(180deg, #555, #222);
 }
 html.skin-winxp-luna #win-view .body {
   background: #111;
   color: #ddd;
-  max-height: 500px;
+  max-height: 520px;
+  box-shadow: inset 0 0 0 8px #2a2a2a, inset 0 0 0 10px #000;
 }
 html.skin-winxp-luna #win-view img {
   width: 100%;
@@ -69,24 +136,46 @@ html.skin-winxp-luna #win-view img {
   object-fit: cover;
   display: block;
   margin-bottom: 10px;
+  border: 4px solid #000;
+  box-shadow: 0 0 0 2px #6a6;
+  background:
+    repeating-linear-gradient(
+      180deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 0, 0, 0.18) 2px,
+      rgba(0, 0, 0, 0.18) 3px
+    ),
+    #000;
 }
 html.skin-winxp-luna #win-view .osd {
   color: #8a8;
   margin: 0 0 8px;
   font: 12px "SimSun", monospace;
+  border-bottom: 1px dashed #8a8;
+  padding-bottom: 4px;
 }
 html.skin-winxp-luna #win-view .said {
   white-space: pre-wrap;
   font: 14px/1.7 "SimSun", "Songti SC", serif;
   color: #eee;
 }
+
 html.skin-winxp-luna #win-note,
-html.skin-winxp-luna #win-help,
-html.skin-winxp-luna #win-cut {
+html.skin-winxp-luna #win-help {
   left: 220px;
   top: 70px;
   width: 480px;
   z-index: 5;
+}
+html.skin-winxp-luna #win-cut {
+  left: 200px;
+  top: 56px;
+  width: 500px;
+  z-index: 6;
+}
+html.skin-winxp-luna #win-cut .body {
+  background: #e8e4d4;
 }
 html.skin-winxp-luna #win-cut textarea,
 html.skin-winxp-luna #win-cut .end-btn {
@@ -95,18 +184,94 @@ html.skin-winxp-luna #win-cut .end-btn {
   margin: 8px 0;
   box-sizing: border-box;
 }
-html.skin-winxp-luna .end-btn[disabled] { color: #888; cursor: not-allowed; }
+html.skin-winxp-luna .end-btn {
+  min-height: 44px;
+  text-align: left;
+  padding: 8px 12px 8px 16px;
+  border-left: 6px solid #3c8d0d;
+}
+html.skin-winxp-luna .end-btn:focus,
+html.skin-winxp-luna .end-btn:focus-visible {
+  outline: 3px dotted #003;
+}
+html.skin-winxp-luna .end-btn:disabled {
+  color: #555;
+  cursor: not-allowed;
+  border-left: 6px dotted #666;
+  border-style: dashed;
+  background:
+    repeating-linear-gradient(
+      135deg,
+      #ddd,
+      #ddd 6px,
+      #ece9d8 6px,
+      #ece9d8 12px
+    );
+  text-decoration: line-through;
+  box-shadow: none;
+}
+html.skin-winxp-luna .end-btn:disabled::after {
+  content: " ▢";
+  float: right;
+  font-style: normal;
+  text-decoration: none;
+}
+
 html.skin-winxp-luna #ending {
   display: none;
   position: absolute;
   inset: 0;
   background: #000;
   color: #ccc;
-  z-index: 20;
+  z-index: 40;
   padding: 48px 64px;
   font: 16px/1.8 "SimSun", "Songti SC", serif;
   overflow: auto;
 }
 html.skin-winxp-luna #ending.show { display: block; }
+html.skin-winxp-luna #ending.show::before {
+  content: "已交片";
+  display: inline-block;
+  border: 4px double #c44;
+  color: #c44;
+  padding: 6px 14px;
+  margin-bottom: 16px;
+  font: 700 18px/1 Tahoma, "SimSun", sans-serif;
+  transform: rotate(-8deg);
+}
 html.skin-winxp-luna #ending h2 { color: #fff; font-size: 20px; }
-html.skin-winxp-luna #ending a { color: #9c9; }
+html.skin-winxp-luna #ending a {
+  color: #9c9;
+  min-height: 44px;
+  display: inline-block;
+  line-height: 44px;
+  padding: 0 12px;
+  border: 1px dashed #9c9;
+}
+html.skin-winxp-luna #ending a:focus,
+html.skin-winxp-luna #ending a:focus-visible {
+  outline: 3px dotted #f4e542;
+}
+
+@media (max-width: 390px) {
+  html.skin-winxp-luna .desk { position: relative; bottom: auto; min-height: 0; }
+  html.skin-winxp-luna .window.show {
+    position: relative;
+    left: 0 !important;
+    top: 8px !important;
+    width: auto !important;
+    margin: 8px 0;
+    max-width: 100%;
+  }
+  html.skin-winxp-luna .icon { float: none; display: inline-block; }
+  html.skin-winxp-luna .taskbar { position: sticky; }
+  html.skin-winxp-luna #win-db .body,
+  html.skin-winxp-luna #win-view .body { max-height: none; }
+  html.skin-winxp-luna .clip-row { flex-wrap: wrap; }
+}
+html.reduce #ending.show::before {
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  html.skin-winxp-luna #ending.show::before { transform: none; }
+}

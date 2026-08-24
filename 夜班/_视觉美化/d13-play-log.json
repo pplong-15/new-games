@@ -1,0 +1,2129 @@
+{
+  "moved_to_rejected": [],
+  "langs": {
+    "zh": {
+      "status": "OK",
+      "attempts": 1,
+      "clicks": [
+        {
+          "label": "去上夜班",
+          "who": "—",
+          "night_hud": "第1晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "[restock n1 {'milk': 1, 'bread': 1, 'cigs': 1, 'tea': 1, 'noodles': 1, 'battery': 1}]",
+          "who": "—",
+          "night_hud": "第1晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "开始值班",
+          "who": "—",
+          "night_hud": "第1晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "知道了",
+          "who": "林阿姨",
+          "night_hud": "第1晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "[rules]",
+          "who": "林阿姨",
+          "night_hud": "第1晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "卖给她（牛奶 + 面包 ¥11）",
+          "who": "林阿姨",
+          "night_hud": "第1晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "卖给他（烟 + 冰红茶 ¥22）",
+          "who": "王师傅",
+          "night_hud": "第1晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "展开纸条",
+          "who": "店里",
+          "night_hud": "第1晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "[rules]",
+          "who": "周晓晚",
+          "night_hud": "第1晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "[rules]",
+          "who": "周晓晚",
+          "night_hud": "第1晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "[rules]",
+          "who": "周晓晚",
+          "night_hud": "第1晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "卖方便面（¥6）",
+          "who": "周晓晚",
+          "night_hud": "第1晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "多看一眼",
+          "who": "湿发男人",
+          "night_hud": "第1晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "还是卖给他",
+          "who": "湿发男人",
+          "night_hud": "第1晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "请他喝瓶水",
+          "who": "吴保安",
+          "night_hud": "第1晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "把灯调亮，等天亮",
+          "who": "收音机",
+          "night_hud": "第1晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "#nextNight",
+          "who": "—",
+          "night_hud": "第2晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "[restock n2 {'cigs': 2, 'tea': 1, 'milk': 1, 'water': 2}]",
+          "who": "—",
+          "night_hud": "第2晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "开始值班",
+          "who": "王师傅",
+          "night_hud": "第2晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "老样子，给他（¥22）",
+          "who": "王师傅",
+          "night_hud": "第2晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "说没有草莓味",
+          "who": "白裙女人",
+          "night_hud": "第2晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "卖水+烟（¥20）",
+          "who": "陈师傅",
+          "night_hud": "第2晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "不卖香",
+          "who": "湿发男人",
+          "night_hud": "第2晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "扔掉断掉的那根",
+          "who": "店猫",
+          "night_hud": "第2晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "送她到门口",
+          "who": "林阿姨",
+          "night_hud": "第2晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "#nextNight",
+          "who": "—",
+          "night_hud": "第3晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "[restock n3 {'water': 3, 'cigs': 1}]",
+          "who": "—",
+          "night_hud": "第3晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "开始值班",
+          "who": "—",
+          "night_hud": "第3晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "知道了",
+          "who": "周晓晚",
+          "night_hud": "第3晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "让她早点回去睡",
+          "who": "周晓晚",
+          "night_hud": "第3晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "给她矿泉水（¥2）",
+          "who": "白裙女人",
+          "night_hud": "第3晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "卖水+烟（¥20）",
+          "who": "王师傅",
+          "night_hud": "第3晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "不卖。请把钱收回去",
+          "who": "穿中山装的老人",
+          "night_hud": "第3晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "[rules]",
+          "who": "灯管",
+          "night_hud": "第3晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "[rules]",
+          "who": "灯管",
+          "night_hud": "第3晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "不去数",
+          "who": "灯管",
+          "night_hud": "第3晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "请他天亮再送外卖",
+          "who": "王师傅",
+          "night_hud": "第3晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "记下，收下他的备用手电",
+          "who": "吴保安",
+          "night_hud": "第3晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "[wu_n3 -> 记下，收下他的备用手电]",
+          "who": "吴保安",
+          "night_hud": "第3晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "#nextNight",
+          "who": "—",
+          "night_hud": "第4晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "[restock n4 {'water': 1, 'cigs': 1}]",
+          "who": "—",
+          "night_hud": "第4晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "开始值班",
+          "who": "—",
+          "night_hud": "第4晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "知道了",
+          "who": "湿发男人",
+          "night_hud": "第4晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "不让。后间不对外开放",
+          "who": "湿发男人",
+          "night_hud": "第4晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "擦柜台，听收音机",
+          "who": "店里",
+          "night_hud": "第4晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "不热。请她拿走",
+          "who": "白裙女人",
+          "night_hud": "第4晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "说那是反光",
+          "who": "吴保安",
+          "night_hud": "第4晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "卖给他水和烟",
+          "who": "陈师傅",
+          "night_hud": "第4晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "#nextNight",
+          "who": "—",
+          "night_hud": "第5晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "[restock n5 {'noodles': 2, 'cigs': 1, 'tea': 1}]",
+          "who": "—",
+          "night_hud": "第5晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "开始值班",
+          "who": "林阿姨",
+          "night_hud": "第5晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "收下桃子",
+          "who": "林阿姨",
+          "night_hud": "第5晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "祝她一路顺利",
+          "who": "周晓晚",
+          "night_hud": "第5晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "卖两桶方便面（¥12）",
+          "who": "淋雨的人",
+          "night_hud": "第5晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "卖烟+冰红茶（¥22）",
+          "who": "王师傅",
+          "night_hud": "第5晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "坐着等",
+          "who": "店里",
+          "night_hud": "第5晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "#nextNight",
+          "who": "—",
+          "night_hud": "第6晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "[restock n6 {}]",
+          "who": "—",
+          "night_hud": "第6晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "开始值班",
+          "who": "—",
+          "night_hud": "第6晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "知道了",
+          "who": "账本",
+          "night_hud": "第6晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "把账本合上",
+          "who": "账本",
+          "night_hud": "第6晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "把纸条按回去",
+          "who": "店规",
+          "night_hud": "第6晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "仍然不卖",
+          "who": "穿中山装的老人",
+          "night_hud": "第6晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "知道了",
+          "who": "门铃",
+          "night_hud": "第6晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "不开。敲三下玻璃叫保安",
+          "who": "门铃",
+          "night_hud": "第6晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "#nextNight",
+          "who": "—",
+          "night_hud": "第7晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "[restock n7 {}]",
+          "who": "—",
+          "night_hud": "第7晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "开始值班",
+          "who": "穿中山装的老人",
+          "night_hud": "第7晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "……不说话",
+          "who": "穿中山装的老人",
+          "night_hud": "第7晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "五条原文都留下",
+          "who": "店规",
+          "night_hud": "第7晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "把钱留给下一班",
+          "who": "钱箱",
+          "night_hud": "第7晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "把钥匙放下，准备天亮走",
+          "who": "穿中山装的老人",
+          "night_hud": "第7晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "说还在，快天亮了",
+          "who": "王师傅",
+          "night_hud": "第7晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "走到门口，等天亮",
+          "who": "恒灯便利",
+          "night_hud": "第7晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "#nextNight",
+          "who": "恒灯便利",
+          "night_hud": "第7晚",
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        }
+      ],
+      "nights": [
+        {
+          "hud": "天亮结算 · 第1晚",
+          "save_night": 1,
+          "sanity": 85,
+          "cash": 65,
+          "rep": 61,
+          "cat": 26,
+          "flags": [
+            "clueJustGot",
+            "clueUnread",
+            "cluesTonight",
+            "lookedWet",
+            "looked_湿发男人",
+            "powerMet",
+            "servedLin",
+            "wangRegular"
+          ],
+          "foundRules": true,
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "hud": "天亮结算 · 第2晚",
+          "save_night": 2,
+          "sanity": 89,
+          "cash": 76,
+          "rep": 69,
+          "cat": 41,
+          "flags": [
+            "baiDenied",
+            "clueJustGot",
+            "clueUnread",
+            "cluesTonight",
+            "heardZhizha",
+            "lookedWet",
+            "looked_湿发男人",
+            "powerMet",
+            "refusedIncense",
+            "servedLin",
+            "threwIncense",
+            "wangRegular"
+          ],
+          "foundRules": true,
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "hud": "天亮结算 · 第3晚",
+          "save_night": 3,
+          "sanity": 72,
+          "cash": 84,
+          "rep": 75,
+          "cat": 49,
+          "flags": [
+            "baiDenied",
+            "clueJustGot",
+            "clueUnread",
+            "gotFlashlight",
+            "heardZhizha",
+            "lampUnstable",
+            "lookedWet",
+            "looked_湿发男人",
+            "powerFailedLast",
+            "refusedIncense",
+            "refusedJoss",
+            "sawInkDiff",
+            "sawPencilNote",
+            "servedLin",
+            "threwIncense",
+            "wangRegular",
+            "wuFlashlight",
+            "wuStay",
+            "zhouDream"
+          ],
+          "foundRules": true,
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "hud": "天亮结算 · 第4晚",
+          "save_night": 4,
+          "sanity": 62,
+          "cash": 92,
+          "rep": 76,
+          "cat": 57,
+          "flags": [
+            "baiDenied",
+            "blockedWet",
+            "clueJustGot",
+            "clueUnread",
+            "gotFlashlight",
+            "heardZhizha",
+            "lampUnstable",
+            "lookedWet",
+            "looked_湿发男人",
+            "powerFailedLast",
+            "powerOut",
+            "refusedAsh",
+            "refusedIncense",
+            "refusedJoss",
+            "sawInkDiff",
+            "sawPencilNote",
+            "servedLin",
+            "threwIncense",
+            "wangRegular",
+            "wuFlashlight",
+            "wuStay",
+            "zhouDream"
+          ],
+          "foundRules": true,
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "hud": "天亮结算 · 第5晚",
+          "save_night": 5,
+          "sanity": 57,
+          "cash": 106,
+          "rep": 84,
+          "cat": 59,
+          "flags": [
+            "baiDenied",
+            "blockedWet",
+            "clueJustGot",
+            "clueUnread",
+            "gotFlashlight",
+            "gotPeachFruit",
+            "heardZhizha",
+            "lampUnstable",
+            "lookedWet",
+            "looked_湿发男人",
+            "powerFailedLast",
+            "powerOut",
+            "refusedAsh",
+            "refusedIncense",
+            "refusedJoss",
+            "sawInkDiff",
+            "sawPencilNote",
+            "servedLin",
+            "soldStormNoodles",
+            "stormNight",
+            "threwIncense",
+            "wangRegular",
+            "wuFlashlight",
+            "wuStay",
+            "zhouDream",
+            "zhouLeft"
+          ],
+          "foundRules": true,
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "hud": "天亮结算 · 第6晚",
+          "save_night": 6,
+          "sanity": 39,
+          "cash": 106,
+          "rep": 84,
+          "cat": 64,
+          "flags": [
+            "baiDenied",
+            "blockedWet",
+            "catScratchedRules",
+            "clueJustGot",
+            "clueUnread",
+            "cluesTonight",
+            "gotFlashlight",
+            "gotPeachFruit",
+            "heardZhizha",
+            "knockedWu",
+            "lampUnstable",
+            "lookedWet",
+            "looked_湿发男人",
+            "powerFailedLast",
+            "powerOut",
+            "refusedAsh",
+            "refusedIncense",
+            "refusedJoss",
+            "refusedTwice",
+            "sawInkDiff",
+            "sawLedger",
+            "sawPencilNote",
+            "servedLin",
+            "soldStormNoodles",
+            "stormNight",
+            "threwIncense",
+            "wangRegular",
+            "wuFlashlight",
+            "wuStay",
+            "zhouDream",
+            "zhouLeft"
+          ],
+          "foundRules": true,
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "hud": "天亮结算 · 第7晚",
+          "save_night": 7,
+          "sanity": 24,
+          "cash": 0,
+          "rep": 87,
+          "cat": 68,
+          "flags": [
+            "adjudicatedRules",
+            "baiDenied",
+            "blockedWet",
+            "catScratchedRules",
+            "clueJustGot",
+            "clueUnread",
+            "cluesTonight",
+            "gotFlashlight",
+            "gotPeachFruit",
+            "heardZhizha",
+            "keptRules",
+            "knockedWu",
+            "lampUnstable",
+            "leaveAtDawn",
+            "leftCash",
+            "lookedWet",
+            "looked_湿发男人",
+            "oldRevealedBoss",
+            "powerFailedLast",
+            "powerOut",
+            "refusedAsh",
+            "refusedIncense",
+            "refusedJoss",
+            "refusedTwice",
+            "ruledForNext",
+            "sawInkDiff",
+            "sawLedger",
+            "sawPencilNote",
+            "servedLin",
+            "soldStormNoodles",
+            "stormNight",
+            "threwIncense",
+            "walkOut",
+            "wangRegular",
+            "wuFlashlight",
+            "wuStay",
+            "zhouDream",
+            "zhouLeft"
+          ],
+          "foundRules": true,
+          "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html"
+        }
+      ],
+      "ending": {
+        "title": "正常下班",
+        "kind": "结局",
+        "body_head": "结局\n正常下班\n\n纸钱你没要。钥匙你往柜台上一搁，猫把尾巴绕过钥匙，你就这么走的。\n\n五晚总算熬到头了。灯你也没关，人自己出来了。这份夜班到你这儿就算断了，往后没有第六晚这回事。\n\n六点过一分，招牌上的字能看清了：恒灯便利。白天它就是巷口一家小卖部，卖烟卖面，也卖那种放得快过期的酸奶。\n\n猫送到门口，没跟出来。它还得看店呢。兜里林阿姨塞的那俩桃子，还热乎着。\n\n后来你拨通了「老板」的电话。那人根本不是店主，是上一班值夜班的。他当年没敢数抽屉里的钱，才活着出来了。钥匙他扔过三回",
+        "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html",
+        "save_after": null,
+        "cleared": "1"
+      },
+      "dawn_title_ok": true
+    },
+    "en": {
+      "status": "OK",
+      "attempts": 1,
+      "clicks": [
+        {
+          "label": "Take the night shift",
+          "who": "—",
+          "night_hud": "Night 1",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "[restock n1 {'milk': 1, 'bread': 1, 'cigs': 1, 'tea': 1, 'noodles': 1, 'battery': 1}]",
+          "who": "—",
+          "night_hud": "Night 1",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Start shift",
+          "who": "—",
+          "night_hud": "Night 1",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Got it",
+          "who": "Auntie Lin",
+          "night_hud": "Night 1",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "[rules]",
+          "who": "Auntie Lin",
+          "night_hud": "Night 1",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Sell to her (milk + bread ¥11)",
+          "who": "Auntie Lin",
+          "night_hud": "Night 1",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Sell to him (smokes + iced tea ¥22)",
+          "who": "Delivery Wang",
+          "night_hud": "Night 1",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Unfold the slip",
+          "who": "Inside",
+          "night_hud": "Night 1",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "[rules]",
+          "who": "Zhou Xiaowan",
+          "night_hud": "Night 1",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "[rules]",
+          "who": "Zhou Xiaowan",
+          "night_hud": "Night 1",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "[rules]",
+          "who": "Zhou Xiaowan",
+          "night_hud": "Night 1",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Sell noodles (¥6)",
+          "who": "Zhou Xiaowan",
+          "night_hud": "Night 1",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Look again",
+          "who": "Wet-Hair Man",
+          "night_hud": "Night 1",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Sell to him anyway",
+          "who": "Wet-Hair Man",
+          "night_hud": "Night 1",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Offer him a water",
+          "who": "Guard Wu",
+          "night_hud": "Night 1",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Turn the lights up and wait for dawn",
+          "who": "Radio",
+          "night_hud": "Night 1",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "#nextNight",
+          "who": "—",
+          "night_hud": "Night 2",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "[restock n2 {'cigs': 2, 'tea': 1, 'milk': 1, 'water': 2}]",
+          "who": "—",
+          "night_hud": "Night 2",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Start shift",
+          "who": "Delivery Wang",
+          "night_hud": "Night 2",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "The usual (¥22)",
+          "who": "Delivery Wang",
+          "night_hud": "Night 2",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Say no strawberry",
+          "who": "White-Dress Woman",
+          "night_hud": "Night 2",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Sell water + smokes (¥20)",
+          "who": "Taxi Chen",
+          "night_hud": "Night 2",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Don't sell incense",
+          "who": "Wet-Hair Man",
+          "night_hud": "Night 2",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Throw the broken one out",
+          "who": "Shop cat",
+          "night_hud": "Night 2",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Walk her to the door",
+          "who": "Auntie Lin",
+          "night_hud": "Night 2",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "#nextNight",
+          "who": "—",
+          "night_hud": "Night 3",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "[restock n3 {'water': 3, 'cigs': 1}]",
+          "who": "—",
+          "night_hud": "Night 3",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Start shift",
+          "who": "—",
+          "night_hud": "Night 3",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Got it",
+          "who": "Zhou Xiaowan",
+          "night_hud": "Night 3",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Tell her to go back to sleep",
+          "who": "Zhou Xiaowan",
+          "night_hud": "Night 3",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Give her bottled water (¥2)",
+          "who": "White-Dress Woman",
+          "night_hud": "Night 3",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Sell water + smokes (¥20)",
+          "who": "Delivery Wang",
+          "night_hud": "Night 3",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Don't sell. Take the money back",
+          "who": "Old Man in Zhongshan Suit",
+          "night_hud": "Night 3",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "[rules]",
+          "who": "Tube",
+          "night_hud": "Night 3",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "[rules]",
+          "who": "Tube",
+          "night_hud": "Night 3",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Don't count",
+          "who": "Tube",
+          "night_hud": "Night 3",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Ask him to deliver after dawn",
+          "who": "Delivery Wang",
+          "night_hud": "Night 3",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Note it. Take his spare flashlight",
+          "who": "Guard Wu",
+          "night_hud": "Night 3",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "[wu_n3 -> Note it. Take his spare flashlight]",
+          "who": "Guard Wu",
+          "night_hud": "Night 3",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "#nextNight",
+          "who": "—",
+          "night_hud": "Night 4",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "[restock n4 {'water': 1, 'cigs': 1}]",
+          "who": "—",
+          "night_hud": "Night 4",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Start shift",
+          "who": "—",
+          "night_hud": "Night 4",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Got it",
+          "who": "Wet-Hair Man",
+          "night_hud": "Night 4",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "No. Back room isn't public",
+          "who": "Wet-Hair Man",
+          "night_hud": "Night 4",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Wipe the counter. Listen to the radio",
+          "who": "Inside",
+          "night_hud": "Night 4",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Don't heat it. Take it back",
+          "who": "White-Dress Woman",
+          "night_hud": "Night 4",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Say it's a reflection",
+          "who": "Guard Wu",
+          "night_hud": "Night 4",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Sell him water and smokes",
+          "who": "Taxi Chen",
+          "night_hud": "Night 4",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "#nextNight",
+          "who": "—",
+          "night_hud": "Night 5",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "[restock n5 {'noodles': 2, 'cigs': 1, 'tea': 1}]",
+          "who": "—",
+          "night_hud": "Night 5",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Start shift",
+          "who": "Auntie Lin",
+          "night_hud": "Night 5",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Take the peaches",
+          "who": "Auntie Lin",
+          "night_hud": "Night 5",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Wish her a clean trip",
+          "who": "Zhou Xiaowan",
+          "night_hud": "Night 5",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Sell smokes + iced tea (¥22)",
+          "who": "Delivery Wang",
+          "night_hud": "Night 5",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Sit and wait",
+          "who": "Inside",
+          "night_hud": "Night 5",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "#nextNight",
+          "who": "—",
+          "night_hud": "Night 6",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "[restock n6 {}]",
+          "who": "—",
+          "night_hud": "Night 6",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Start shift",
+          "who": "—",
+          "night_hud": "Night 6",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Got it",
+          "who": "Ledger",
+          "night_hud": "Night 6",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Close the ledger",
+          "who": "Ledger",
+          "night_hud": "Night 6",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Press the slip back",
+          "who": "Store rules",
+          "night_hud": "Night 6",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Still don't sell",
+          "who": "Old Man in Zhongshan Suit",
+          "night_hud": "Night 6",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Got it",
+          "who": "Doorbell",
+          "night_hud": "Night 6",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Don't. Three taps, call the guard",
+          "who": "Doorbell",
+          "night_hud": "Night 6",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "#nextNight",
+          "who": "—",
+          "night_hud": "Night 7",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "[restock n7 {}]",
+          "who": "—",
+          "night_hud": "Night 7",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Start shift",
+          "who": "Old Man in Zhongshan Suit",
+          "night_hud": "Night 7",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "...say nothing",
+          "who": "Old Man in Zhongshan Suit",
+          "night_hud": "Night 7",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Leave all five original lines",
+          "who": "Store rules",
+          "night_hud": "Night 7",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Leave the money for the next shift",
+          "who": "Till",
+          "night_hud": "Night 7",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Put the keys down. Walk out at dawn",
+          "who": "Old Man in Zhongshan Suit",
+          "night_hud": "Night 7",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Say you're still here, almost dawn",
+          "who": "Delivery Wang",
+          "night_hud": "Night 7",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "Walk to the door. Wait for dawn",
+          "who": "Hengdeng Mart",
+          "night_hud": "Night 7",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "label": "#nextNight",
+          "who": "Hengdeng Mart",
+          "night_hud": "Night 7",
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        }
+      ],
+      "nights": [
+        {
+          "hud": "Dawn settle · Night 1",
+          "save_night": 1,
+          "sanity": 85,
+          "cash": 65,
+          "rep": 61,
+          "cat": 26,
+          "flags": [
+            "clueJustGot",
+            "clueUnread",
+            "cluesTonight",
+            "lookedWet",
+            "looked_Wet-Hair Man",
+            "powerMet",
+            "servedLin",
+            "wangRegular"
+          ],
+          "foundRules": true,
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "hud": "Dawn settle · Night 2",
+          "save_night": 2,
+          "sanity": 89,
+          "cash": 76,
+          "rep": 69,
+          "cat": 41,
+          "flags": [
+            "baiDenied",
+            "clueJustGot",
+            "clueUnread",
+            "cluesTonight",
+            "heardZhizha",
+            "lookedWet",
+            "looked_Wet-Hair Man",
+            "powerMet",
+            "refusedIncense",
+            "servedLin",
+            "threwIncense",
+            "wangRegular"
+          ],
+          "foundRules": true,
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "hud": "Dawn settle · Night 3",
+          "save_night": 3,
+          "sanity": 72,
+          "cash": 84,
+          "rep": 75,
+          "cat": 49,
+          "flags": [
+            "baiDenied",
+            "clueJustGot",
+            "clueUnread",
+            "gotFlashlight",
+            "heardZhizha",
+            "lampUnstable",
+            "lookedWet",
+            "looked_Wet-Hair Man",
+            "powerFailedLast",
+            "refusedIncense",
+            "refusedJoss",
+            "sawInkDiff",
+            "sawPencilNote",
+            "servedLin",
+            "threwIncense",
+            "wangRegular",
+            "wuFlashlight",
+            "wuStay",
+            "zhouDream"
+          ],
+          "foundRules": true,
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "hud": "Dawn settle · Night 4",
+          "save_night": 4,
+          "sanity": 62,
+          "cash": 92,
+          "rep": 76,
+          "cat": 57,
+          "flags": [
+            "baiDenied",
+            "blockedWet",
+            "clueJustGot",
+            "clueUnread",
+            "gotFlashlight",
+            "heardZhizha",
+            "lampUnstable",
+            "lookedWet",
+            "looked_Wet-Hair Man",
+            "powerFailedLast",
+            "powerOut",
+            "refusedAsh",
+            "refusedIncense",
+            "refusedJoss",
+            "sawInkDiff",
+            "sawPencilNote",
+            "servedLin",
+            "threwIncense",
+            "wangRegular",
+            "wuFlashlight",
+            "wuStay",
+            "zhouDream"
+          ],
+          "foundRules": true,
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "hud": "Dawn settle · Night 5",
+          "save_night": 5,
+          "sanity": 57,
+          "cash": 94,
+          "rep": 82,
+          "cat": 59,
+          "flags": [
+            "baiDenied",
+            "blockedWet",
+            "clueJustGot",
+            "clueUnread",
+            "gotFlashlight",
+            "gotPeachFruit",
+            "heardZhizha",
+            "lampUnstable",
+            "lookedWet",
+            "looked_Wet-Hair Man",
+            "powerFailedLast",
+            "powerOut",
+            "refusedAsh",
+            "refusedIncense",
+            "refusedJoss",
+            "sawInkDiff",
+            "sawPencilNote",
+            "servedLin",
+            "threwIncense",
+            "wangRegular",
+            "wuFlashlight",
+            "wuStay",
+            "zhouDream",
+            "zhouLeft"
+          ],
+          "foundRules": true,
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "hud": "Dawn settle · Night 6",
+          "save_night": 6,
+          "sanity": 39,
+          "cash": 94,
+          "rep": 82,
+          "cat": 64,
+          "flags": [
+            "baiDenied",
+            "blockedWet",
+            "catScratchedRules",
+            "clueJustGot",
+            "clueUnread",
+            "cluesTonight",
+            "gotFlashlight",
+            "gotPeachFruit",
+            "heardZhizha",
+            "knockedWu",
+            "lampUnstable",
+            "lookedWet",
+            "looked_Wet-Hair Man",
+            "powerFailedLast",
+            "powerOut",
+            "refusedAsh",
+            "refusedIncense",
+            "refusedJoss",
+            "refusedTwice",
+            "sawInkDiff",
+            "sawLedger",
+            "sawPencilNote",
+            "servedLin",
+            "threwIncense",
+            "wangRegular",
+            "wuFlashlight",
+            "wuStay",
+            "zhouDream",
+            "zhouLeft"
+          ],
+          "foundRules": true,
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        },
+        {
+          "hud": "Dawn settle · Night 7",
+          "save_night": 7,
+          "sanity": 24,
+          "cash": 0,
+          "rep": 85,
+          "cat": 68,
+          "flags": [
+            "adjudicatedRules",
+            "baiDenied",
+            "blockedWet",
+            "catScratchedRules",
+            "clueJustGot",
+            "clueUnread",
+            "cluesTonight",
+            "gotFlashlight",
+            "gotPeachFruit",
+            "heardZhizha",
+            "keptRules",
+            "knockedWu",
+            "lampUnstable",
+            "leaveAtDawn",
+            "leftCash",
+            "lookedWet",
+            "looked_Wet-Hair Man",
+            "oldRevealedBoss",
+            "powerFailedLast",
+            "powerOut",
+            "refusedAsh",
+            "refusedIncense",
+            "refusedJoss",
+            "refusedTwice",
+            "ruledForNext",
+            "sawInkDiff",
+            "sawLedger",
+            "sawPencilNote",
+            "servedLin",
+            "threwIncense",
+            "walkOut",
+            "wangRegular",
+            "wuFlashlight",
+            "wuStay",
+            "zhouDream",
+            "zhouLeft"
+          ],
+          "foundRules": true,
+          "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html"
+        }
+      ],
+      "ending": {
+        "title": "Clock out",
+        "kind": "Ending",
+        "body_head": "Ending\nClock out\n\nYou didn't take the joss paper. You put the keys on the counter. The cat wrapped its tail around them. You walked.\n\nFive nights, you made it. You didn't kill the lamp. You walked out. Night shift ends at you. There is no s",
+        "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html",
+        "save_after": null,
+        "cleared": "1"
+      },
+      "dawn_title_ok": true
+    }
+  },
+  "shots": [
+    {
+      "lang": "zh",
+      "file": "11-empty-or-loading.png",
+      "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html",
+      "input": "无存档打开标题；结局图鉴未通关故隐藏",
+      "hud": {
+        "night": "第1晚",
+        "time": "22:00",
+        "cash": "¥80",
+        "who": "—",
+        "tag": ""
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "zh",
+      "file": "01-boot-title.png",
+      "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html",
+      "input": "无 query 打开标题 390×844，点前",
+      "hud": {
+        "night": "第1晚",
+        "time": "22:00",
+        "cash": "¥80",
+        "who": "—",
+        "tag": ""
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "zh",
+      "file": "01-boot-title-320.png",
+      "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html",
+      "input": "同一标题缩到 320×640",
+      "hud": {
+        "night": "第1晚",
+        "time": "22:00",
+        "cash": "¥80",
+        "who": "—",
+        "tag": ""
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "zh",
+      "file": "12-error-or-pause.png",
+      "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html",
+      "input": "点锁定猫视角，toast 真实运行反馈",
+      "hud": {
+        "night": "第1晚",
+        "time": "22:00",
+        "cash": "¥80",
+        "who": "—",
+        "tag": ""
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "zh",
+      "file": "17-group-submit-prep.png",
+      "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html",
+      "input": "第1晚进货面板，点开始值班前",
+      "hud": {
+        "night": "第1晚",
+        "time": "21:50",
+        "cash": "¥42",
+        "who": "—",
+        "tag": ""
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "zh",
+      "file": "02-core-verb.png",
+      "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html",
+      "input": "第1晚林阿姨选项同屏，主动词：对照接待/售卖",
+      "hud": {
+        "night": "第1晚",
+        "time": "22:16",
+        "cash": "¥14",
+        "who": "林阿姨",
+        "tag": "熟客"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "zh",
+      "file": "08-touch-targets.png",
+      "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html",
+      "input": "390 触控，选项与货/规同屏",
+      "hud": {
+        "night": "第1晚",
+        "time": "22:16",
+        "cash": "¥14",
+        "who": "林阿姨",
+        "tag": "熟客"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "zh",
+      "file": "13-person-job-rule.png",
+      "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html",
+      "input": "人物+熟客标签+规钮同屏",
+      "hud": {
+        "night": "第1晚",
+        "time": "22:16",
+        "cash": "¥14",
+        "who": "林阿姨",
+        "tag": "熟客"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "zh",
+      "file": "20-shift-flags-hud.png",
+      "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html",
+      "input": "HUD 时间/晚/神智，无 XP 条",
+      "hud": {
+        "night": "第1晚",
+        "time": "22:16",
+        "cash": "¥14",
+        "who": "林阿姨",
+        "tag": "熟客"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "zh",
+      "file": "07-keyboard-focus.png",
+      "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html",
+      "input": "Tab 落到 .choice，:focus-visible",
+      "hud": {
+        "night": "第1晚",
+        "time": "22:16",
+        "cash": "¥14",
+        "who": "林阿姨",
+        "tag": "熟客"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "zh",
+      "file": "09-muted.png",
+      "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html",
+      "input": "点静音钮后面文变为静/✕（真实 click 事件）",
+      "hud": {
+        "night": "第1晚",
+        "time": "22:16",
+        "cash": "¥14",
+        "who": "林阿姨",
+        "tag": "熟客"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "zh",
+      "file": "06-narrow-320-in-shift.png",
+      "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html",
+      "input": "值班中缩到 320，选项仍可点",
+      "hud": {
+        "night": "第1晚",
+        "time": "22:16",
+        "cash": "¥14",
+        "who": "林阿姨",
+        "tag": "熟客"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "zh",
+      "file": "19-night1-rules.png",
+      "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html",
+      "input": "第1晚尚未展开纸条，规页条目为省略",
+      "hud": {
+        "night": "第1晚",
+        "time": "22:16",
+        "cash": "¥14",
+        "who": "林阿姨",
+        "tag": "熟客"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "zh",
+      "file": "03-success-slip.png",
+      "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html",
+      "input": "点卖出后小票/收银反馈",
+      "hud": {
+        "night": "第1晚",
+        "time": "22:16",
+        "cash": "¥25",
+        "who": "林阿姨",
+        "tag": "熟客"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "zh",
+      "file": "14-rules-listed.png",
+      "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html",
+      "input": "第1晚展开纸条后打开规，≥4 条全文",
+      "hud": {
+        "night": "第1晚",
+        "time": "23:41",
+        "cash": "¥47",
+        "who": "周晓晚",
+        "tag": "住客"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "zh",
+      "file": "18-near-answer-text.png",
+      "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html",
+      "input": "同一张规页，正文可回指「纸钱/灯」",
+      "hud": {
+        "night": "第1晚",
+        "time": "23:41",
+        "cash": "¥47",
+        "who": "周晓晚",
+        "tag": "住客"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "zh",
+      "file": "10-non-color-state.png",
+      "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html",
+      "input": "第1晚规页：编号+省略已展开的文字，不唯色",
+      "hud": {
+        "night": "第1晚",
+        "time": "23:41",
+        "cash": "¥47",
+        "who": "周晓晚",
+        "tag": "住客"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "zh",
+      "file": "04-near-fail-options.png",
+      "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html",
+      "input": "湿发男人真实选项（卖电池/不卖/多看一眼），无 .choice.warn",
+      "hud": {
+        "night": "第1晚",
+        "time": "00:27",
+        "cash": "¥53",
+        "who": "湿发男人",
+        "tag": "？"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "zh",
+      "file": "04-near-fail.png",
+      "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html",
+      "input": "点「还是卖给他/Sell to him anyway」后的 then 文案+HUD，真实反馈",
+      "hud": {
+        "night": "第1晚",
+        "time": "00:27",
+        "cash": "¥65",
+        "who": "湿发男人",
+        "tag": "？"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "zh",
+      "file": "05-recover.png",
+      "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html",
+      "input": "近失败后仍在值班（吴保安或下一拍）",
+      "hud": {
+        "night": "第1晚",
+        "time": "01:10",
+        "cash": "¥65",
+        "who": "吴保安",
+        "tag": "巷口"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "zh",
+      "file": "15-ink-fresh-pencil.png",
+      "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html",
+      "input": "第3晚真实打开规：后添墨+铅笔旁注",
+      "hud": {
+        "night": "第3晚",
+        "time": "00:31",
+        "cash": "¥84",
+        "who": "灯管",
+        "tag": "00:31"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "zh",
+      "file": "16-fake-mutex-qa.png",
+      "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html",
+      "input": "N/A：未把同一段改成两个标题；本帧为第3晚真实规页",
+      "hud": {
+        "night": "第3晚",
+        "time": "00:31",
+        "cash": "¥84",
+        "who": "灯管",
+        "tag": "00:31"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "zh",
+      "file": "21-clerk-ending-dawn.png",
+      "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html",
+      "input": "七晚公开路径后截 .ending-card 全卡（含标题，非 finish API）",
+      "hud": {
+        "night": "第7晚",
+        "time": "05:58",
+        "cash": "¥0",
+        "who": "恒灯便利",
+        "tag": "05:58"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "zh",
+      "file": "22-role-line.png",
+      "url": "http://127.0.0.1:9216/%E5%A4%9C%E7%8F%AD.html",
+      "input": "dawn 后返回标题：真实解锁态（dawn 不解锁其他身份；猫视角可因通关解锁）",
+      "hud": {
+        "night": "第7晚",
+        "time": "05:58",
+        "cash": "¥0",
+        "who": "恒灯便利",
+        "tag": "05:58"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "en",
+      "file": "11-empty-or-loading.png",
+      "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html",
+      "input": "无存档打开标题；结局图鉴未通关故隐藏",
+      "hud": {
+        "night": "Night 1",
+        "time": "22:00",
+        "cash": "¥80",
+        "who": "—",
+        "tag": ""
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "en",
+      "file": "01-boot-title.png",
+      "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html",
+      "input": "无 query 打开标题 390×844，点前",
+      "hud": {
+        "night": "Night 1",
+        "time": "22:00",
+        "cash": "¥80",
+        "who": "—",
+        "tag": ""
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "en",
+      "file": "01-boot-title-320.png",
+      "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html",
+      "input": "同一标题缩到 320×640",
+      "hud": {
+        "night": "Night 1",
+        "time": "22:00",
+        "cash": "¥80",
+        "who": "—",
+        "tag": ""
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "en",
+      "file": "12-error-or-pause.png",
+      "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html",
+      "input": "点锁定猫视角，toast 真实运行反馈",
+      "hud": {
+        "night": "Night 1",
+        "time": "22:00",
+        "cash": "¥80",
+        "who": "—",
+        "tag": ""
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "en",
+      "file": "17-group-submit-prep.png",
+      "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html",
+      "input": "第1晚进货面板，点开始值班前",
+      "hud": {
+        "night": "Night 1",
+        "time": "21:50",
+        "cash": "¥42",
+        "who": "—",
+        "tag": ""
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "en",
+      "file": "02-core-verb.png",
+      "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html",
+      "input": "第1晚林阿姨选项同屏，主动词：对照接待/售卖",
+      "hud": {
+        "night": "Night 1",
+        "time": "22:16",
+        "cash": "¥14",
+        "who": "Auntie Lin",
+        "tag": "Regular"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "en",
+      "file": "08-touch-targets.png",
+      "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html",
+      "input": "390 触控，选项与货/规同屏",
+      "hud": {
+        "night": "Night 1",
+        "time": "22:16",
+        "cash": "¥14",
+        "who": "Auntie Lin",
+        "tag": "Regular"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "en",
+      "file": "13-person-job-rule.png",
+      "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html",
+      "input": "人物+熟客标签+规钮同屏",
+      "hud": {
+        "night": "Night 1",
+        "time": "22:16",
+        "cash": "¥14",
+        "who": "Auntie Lin",
+        "tag": "Regular"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "en",
+      "file": "20-shift-flags-hud.png",
+      "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html",
+      "input": "HUD 时间/晚/神智，无 XP 条",
+      "hud": {
+        "night": "Night 1",
+        "time": "22:16",
+        "cash": "¥14",
+        "who": "Auntie Lin",
+        "tag": "Regular"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "en",
+      "file": "07-keyboard-focus.png",
+      "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html",
+      "input": "Tab 落到 .choice，:focus-visible",
+      "hud": {
+        "night": "Night 1",
+        "time": "22:16",
+        "cash": "¥14",
+        "who": "Auntie Lin",
+        "tag": "Regular"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "en",
+      "file": "09-muted.png",
+      "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html",
+      "input": "点静音钮后面文变为静/✕（真实 click 事件）",
+      "hud": {
+        "night": "Night 1",
+        "time": "22:16",
+        "cash": "¥14",
+        "who": "Auntie Lin",
+        "tag": "Regular"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "en",
+      "file": "06-narrow-320-in-shift.png",
+      "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html",
+      "input": "值班中缩到 320，选项仍可点",
+      "hud": {
+        "night": "Night 1",
+        "time": "22:16",
+        "cash": "¥14",
+        "who": "Auntie Lin",
+        "tag": "Regular"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "en",
+      "file": "19-night1-rules.png",
+      "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html",
+      "input": "第1晚尚未展开纸条，规页条目为省略",
+      "hud": {
+        "night": "Night 1",
+        "time": "22:16",
+        "cash": "¥14",
+        "who": "Auntie Lin",
+        "tag": "Regular"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "en",
+      "file": "03-success-slip.png",
+      "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html",
+      "input": "点卖出后小票/收银反馈",
+      "hud": {
+        "night": "Night 1",
+        "time": "22:16",
+        "cash": "¥25",
+        "who": "Auntie Lin",
+        "tag": "Regular"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "en",
+      "file": "14-rules-listed.png",
+      "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html",
+      "input": "第1晚展开纸条后打开规，≥4 条全文",
+      "hud": {
+        "night": "Night 1",
+        "time": "23:41",
+        "cash": "¥47",
+        "who": "Zhou Xiaowan",
+        "tag": "Upstairs"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "en",
+      "file": "18-near-answer-text.png",
+      "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html",
+      "input": "同一张规页，正文可回指「纸钱/灯」",
+      "hud": {
+        "night": "Night 1",
+        "time": "23:41",
+        "cash": "¥47",
+        "who": "Zhou Xiaowan",
+        "tag": "Upstairs"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "en",
+      "file": "10-non-color-state.png",
+      "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html",
+      "input": "第1晚规页：编号+省略已展开的文字，不唯色",
+      "hud": {
+        "night": "Night 1",
+        "time": "23:41",
+        "cash": "¥47",
+        "who": "Zhou Xiaowan",
+        "tag": "Upstairs"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "en",
+      "file": "04-near-fail-options.png",
+      "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html",
+      "input": "湿发男人真实选项（卖电池/不卖/多看一眼），无 .choice.warn",
+      "hud": {
+        "night": "Night 1",
+        "time": "00:27",
+        "cash": "¥53",
+        "who": "Wet-Hair Man",
+        "tag": "？"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "en",
+      "file": "04-near-fail.png",
+      "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html",
+      "input": "点「还是卖给他/Sell to him anyway」后的 then 文案+HUD，真实反馈",
+      "hud": {
+        "night": "Night 1",
+        "time": "00:27",
+        "cash": "¥65",
+        "who": "Wet-Hair Man",
+        "tag": "？"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "en",
+      "file": "05-recover.png",
+      "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html",
+      "input": "近失败后仍在值班（吴保安或下一拍）",
+      "hud": {
+        "night": "Night 1",
+        "time": "01:10",
+        "cash": "¥65",
+        "who": "Guard Wu",
+        "tag": "Alley mouth"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "en",
+      "file": "15-ink-fresh-pencil.png",
+      "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html",
+      "input": "第3晚真实打开规：后添墨+铅笔旁注",
+      "hud": {
+        "night": "Night 3",
+        "time": "00:31",
+        "cash": "¥84",
+        "who": "Tube",
+        "tag": "00:31"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "en",
+      "file": "16-fake-mutex-qa.png",
+      "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html",
+      "input": "N/A：未把同一段改成两个标题；本帧为第3晚真实规页",
+      "hud": {
+        "night": "Night 3",
+        "time": "00:31",
+        "cash": "¥84",
+        "who": "Tube",
+        "tag": "00:31"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "en",
+      "file": "21-clerk-ending-dawn.png",
+      "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html",
+      "input": "七晚公开路径后截 .ending-card 全卡（含标题，非 finish API）",
+      "hud": {
+        "night": "Night 7",
+        "time": "05:58",
+        "cash": "¥0",
+        "who": "Hengdeng Mart",
+        "tag": "05:58"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    },
+    {
+      "lang": "en",
+      "file": "22-role-line.png",
+      "url": "http://127.0.0.1:9217/%E5%A4%9C%E7%8F%AD.html",
+      "input": "dawn 后返回标题：真实解锁态（dawn 不解锁其他身份；猫视角可因通关解锁）",
+      "hud": {
+        "night": "Night 7",
+        "time": "05:58",
+        "cash": "¥0",
+        "who": "Hengdeng Mart",
+        "tag": "05:58"
+      },
+      "debug_visible": false,
+      "choice_warn": 0
+    }
+  ]
+}

@@ -1,0 +1,658 @@
+/* 梁日班 VP1 岗亭文书壳。纸皮身份靠材质/边/章形，不靠标题。不是夜店金匾、不是边检桌、不是货架、不是进度条。 */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #2a241c;
+  color: #e8dfd0;
+  font-family: "Songti SC", "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
+  overflow-x: hidden;
+}
+img { max-width: 100%; display: block; }
+button {
+  min-height: 44px;
+  min-width: 44px;
+  box-sizing: border-box;
+  touch-action: manipulation;
+  font-family: inherit;
+}
+
+/* —— 封面：岗亭木牌，左对齐，工具签，不是金匾 —— */
+#title-layer {
+  min-height: 100vh;
+  padding: 20px 20px 36px;
+  box-sizing: border-box;
+  background:
+    repeating-linear-gradient(90deg, rgba(0,0,0,.06) 0 1px, transparent 1px 11px),
+    linear-gradient(180deg, #3d3428 0%, #2a241c 46%, #1e1a14 100%);
+}
+.cover { max-width: 980px; }
+.cover-art { position: relative; }
+.cover-art img {
+  width: 100%;
+  margin: 0;
+  border: 2px solid #4a4030;
+  box-shadow: 0 0 0 1px #1c1812;
+}
+.cover-tools {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.cover-tools span {
+  background: #efe6d4;
+  color: #2a251c;
+  padding: 4px 8px;
+  font-size: 12px;
+  border: 1px solid #6a5e48;
+  box-shadow: 1px 1px 0 #1c1812;
+  font-family: "PingFang SC", "Noto Sans SC", sans-serif;
+  letter-spacing: 0.02em;
+}
+.cover-plaque {
+  max-width: 40rem;
+  text-align: left;
+  margin-top: 18px;
+  padding: 14px 16px 16px;
+  color: #2a2218;
+  border: 2px solid #5a4a32;
+  box-shadow: 4px 4px 0 #14110c, inset 0 0 0 1px #c4b494;
+  background:
+    repeating-linear-gradient(90deg, rgba(90,60,20,.07) 0 2px, transparent 2px 9px),
+    linear-gradient(180deg, #e8dcc4 0%, #d4c4a4 100%);
+}
+.cover-who {
+  margin: 0 0 6px;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: #5a4a32;
+  font-family: "PingFang SC", "Noto Sans SC", sans-serif;
+}
+.cover-plaque .lock-line {
+  color: #2a2218;
+  font-size: 17px;
+  letter-spacing: 0.02em;
+  margin: 0 0 10px;
+}
+.cover-plaque p { margin: 0 0 10px; line-height: 1.55; }
+#btn-enter {
+  background: #3a3228;
+  color: #efe6d4;
+  border: 1px solid #1c1812;
+  padding: 10px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  min-height: 44px;
+  box-shadow: 2px 2px 0 #1c1812;
+}
+#btn-enter:focus-visible,
+button:focus-visible {
+  outline: 3px solid #d4a060;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 1px #1c1812;
+}
+.disclaimer { font-size: 13px; color: #6a5e48; }
+
+/* —— 岗亭台面：驾驶座/柜台框，不是便利店 —— */
+#desk { display: none; padding: 12px 16px 32px; }
+#desk.show { display: block; }
+.row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+.band { display: flex; justify-content: space-between; gap: 12px; margin: 8px 0; }
+#night-line {
+  flex: 1;
+  background: #1c1812;
+  padding: 8px 12px;
+  min-height: 36px;
+  border-left: 4px solid #6a5e48;
+  box-shadow: inset 0 0 0 1px #3a3226;
+}
+#sun {
+  color: #e8dfd0;
+  min-width: 72px;
+  font-size: 16px;
+  font-family: "PingFang SC", "Noto Sans SC", sans-serif;
+  border: 1px solid #6a5e48;
+  padding: 6px 10px;
+  background: #1c1812;
+  text-align: center;
+}
+.split { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 12px; }
+.paper, .clip {
+  background: #efe6d4;
+  color: #2a2218;
+  padding: 10px;
+  min-height: 220px;
+  border: 1px solid #5a4e3c;
+  box-shadow: 3px 3px 0 #1c1812;
+}
+.paper h3, .clip h3 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: #3a3228;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  font-family: "PingFang SC", "Noto Sans SC", sans-serif;
+}
+
+/* 台面文书：默认旧纸，再按所有者换皮 */
+.sheet {
+  position: relative;
+  margin: 10px 0 16px;
+  padding: 12px 12px 14px;
+  overflow: hidden;
+  color: #2a2218;
+  background: #f3eee4;
+  border: 1px solid #c8b89a;
+}
+.sheet img {
+  margin: 0 0 8px;
+  border: 1px solid rgba(42,34,24,.25);
+  max-height: 140px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* 监理：旧白纸 + 暗红双边 + 方章 + 夹子。停工令，不是金印更真。 */
+.sheet-jianli {
+  background:
+    repeating-linear-gradient(90deg, rgba(90,70,40,.045) 0 1px, transparent 1px 8px),
+    repeating-linear-gradient(0deg, rgba(90,70,40,.03) 0 1px, transparent 1px 10px),
+    #f4efe6;
+  border: 2px solid #5c1c1c;
+  box-shadow: inset 0 0 0 5px #7a2a2a, 2px 3px 0 #1c1812;
+  padding: 18px 14px 16px 18px;
+  font-family: "Songti SC", "SimSun", "Noto Serif SC", serif;
+}
+.sheet-jianli::before {
+  content: "停";
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  width: 38px;
+  height: 38px;
+  border: 3px solid #8a2424;
+  transform: rotate(-8deg);
+  opacity: 0.72;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Songti SC", "SimSun", serif;
+  font-size: 13px;
+  color: #8a2424;
+  line-height: 1;
+  box-sizing: border-box;
+}
+.sheet-jianli::after {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 24px;
+  width: 13px;
+  height: 30px;
+  border: 2px solid #8a8a88;
+  border-bottom: 0;
+  border-radius: 12px 12px 3px 3px;
+  pointer-events: none;
+}
+
+/* 东家：肉粉底 + 朱边 + 圆章。吉时红纸，不是更官方。 */
+.sheet-red {
+  background:
+    radial-gradient(circle at 88% 16%, rgba(180,40,30,.2) 0 26px, transparent 27px),
+    #f3d0c2;
+  border: 4px solid #b42822;
+  box-shadow: inset 0 0 0 2px #e8a090, 2px 3px 0 #1c1812;
+  padding: 14px 14px 14px 14px;
+  font-family: "Kaiti SC", "STKaiti", "KaiTi", serif;
+}
+.sheet-red::after {
+  content: "吉";
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: 42px;
+  height: 42px;
+  border: 3px solid #c43028;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 6px rgba(196,48,40,.18);
+  opacity: 0.8;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Kaiti SC", "STKaiti", serif;
+  font-size: 16px;
+  color: #b42822;
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+/* 安全单：灰绿复写格 + 装订孔。队里表格，不是衙门。 */
+.sheet-safe {
+  background:
+    repeating-linear-gradient(#c5d0b8 0 1px, transparent 1px 22px),
+    repeating-linear-gradient(90deg, rgba(74,90,56,.12) 0 1px, transparent 1px 32px),
+    #d4dcc8;
+  border: 1px solid #3a4a30;
+  box-shadow: inset 10px 0 0 #4a5a38, 2px 3px 0 #1c1812;
+  padding-left: 18px;
+  font-family: "PingFang SC", "Noto Sans SC", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+.sheet-safe::after {
+  content: "安";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 36px;
+  height: 22px;
+  border: 2px solid #3a4a30;
+  font-family: "PingFang SC", "Noto Sans SC", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.25em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3a4a30;
+  opacity: 0.7;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+.sheet-safe::before {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 18px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #2a241c;
+  box-shadow: 0 26px 0 #2a241c, 0 52px 0 #2a241c;
+  pointer-events: none;
+}
+
+/* 铅笔：发黄拍纸 + 横线 + 毛边。手写，无章。 */
+.sheet-pencil {
+  background:
+    repeating-linear-gradient(transparent 0 21px, #c9a24a 21px 22px),
+    #ead48a;
+  border: 1px solid #b89440;
+  border-left: 14px solid #d4b24a;
+  box-shadow: inset 3px 0 0 #c49a30, 2px 3px 0 #1c1812;
+  color: #3a3420;
+  font-family: "Kaiti SC", "STKaiti", "KaiTi", serif;
+  font-style: italic;
+}
+.sheet-pencil::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 12px;
+  background:
+    repeating-linear-gradient(
+      180deg,
+      transparent 0 9px,
+      #2a241c 9px 11px,
+      transparent 11px 20px
+    );
+  opacity: 0.22;
+  pointer-events: none;
+}
+
+/* 印发：叠纸偏移，不是第七份更真。 */
+.sheet-print {
+  background: #efe8dc;
+  border: 1px solid #6a5e48;
+  box-shadow:
+    3px 3px 0 #e0d6c4,
+    6px 6px 0 #cfc4b0,
+    2px 3px 0 #1c1812;
+}
+
+/* 口信：虚线全边 + 折角。带话，不是原件。 */
+.sheet-kouxin {
+  background: #faf6ee;
+  border: 2px dashed #6a5e48;
+  box-shadow: 3px 3px 0 #d8cfc0;
+  padding: 14px 16px 14px 14px;
+  font-family: "FangSong", "STFangsong", "Songti SC", serif;
+}
+.sheet-kouxin::after {
+  content: "口";
+  position: absolute;
+  bottom: 10px;
+  right: 12px;
+  width: 28px;
+  height: 28px;
+  border: 2px dashed #6a5e48;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "FangSong", "STFangsong", serif;
+  font-size: 13px;
+  color: #5a5040;
+  opacity: 0.7;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+.sheet-kouxin::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-width: 0 18px 18px 0;
+  border-style: solid;
+  border-color: transparent #cfc6b4 transparent transparent;
+  pointer-events: none;
+}
+
+/* 回访：青灰复写 + 夹板头。问句条，不是守则。 */
+.sheet-visit {
+  background:
+    repeating-linear-gradient(#b8c4cc 0 1px, transparent 1px 20px),
+    #cfd8de;
+  border: 1px solid #3a4a5a;
+  box-shadow: inset 0 12px 0 #5a6570, 2px 3px 0 #1c1812;
+  padding-top: 20px;
+  font-family: "PingFang SC", "Noto Sans SC", sans-serif;
+  letter-spacing: 0.03em;
+}
+.sheet-visit::after {
+  content: "问";
+  position: absolute;
+  top: 18px;
+  right: 10px;
+  width: 28px;
+  height: 22px;
+  border: 2px solid #3a4a5a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #3a4a5a;
+  opacity: 0.7;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+.sheet-visit::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 50%;
+  width: 38px;
+  height: 14px;
+  margin-left: -19px;
+  background: #4a5560;
+  border-radius: 0 0 7px 7px;
+  box-shadow: 0 2px 0 #2a241c;
+  pointer-events: none;
+}
+
+.sheet:focus-within {
+  outline: 3px solid #2a241c;
+  outline-offset: 3px;
+}
+
+.clause {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: #f3ece0;
+  border: 1px solid #b8ad9a;
+  color: #2a2218;
+  padding: 8px 10px;
+  margin: 6px 0;
+  cursor: pointer;
+  font-size: 14px;
+  min-height: 44px;
+}
+.sheet-jianli .clause {
+  background: #efe6d8;
+  border: 1px solid #8a5050;
+  border-left: 4px solid #7a2a2a;
+}
+.sheet-red .clause {
+  background: #f8d8cc;
+  border-color: #c07060;
+}
+.sheet-safe .clause {
+  background: #dfe6d0;
+  border-color: #7a8a60;
+  font-family: inherit;
+}
+.sheet-pencil .clause {
+  background: #efe0a8;
+  border-color: #b8a040;
+  font-style: italic;
+}
+.sheet-kouxin .clause {
+  background: #f3efe6;
+  border: 1px dashed #8a8070;
+}
+.sheet-visit .clause {
+  background: #e4eaee;
+  border-color: #6a7a88;
+}
+.sheet-print .clause {
+  background: #e8e0d4;
+  border-color: #8a8070;
+}
+
+.gate { display: flex; gap: 8px; margin: 10px 0; }
+.gate button {
+  flex: 1;
+  height: 48px;
+  min-height: 48px;
+  border: 1px solid #1c1812;
+  font-size: 16px;
+  cursor: pointer;
+  background: #3a3228;
+  color: #efe6d4;
+  box-shadow: 2px 2px 0 #1c1812;
+}
+.gate button:disabled { opacity: 0.35; cursor: not-allowed; background: #6a4038; box-shadow: none; }
+#btn-sunset {
+  flex: 0.55;
+  height: auto;
+  min-height: 44px;
+  font-size: 14px;
+  background: #4a4338;
+  color: #c8bfb0;
+  border: 1px solid #2a241c;
+}
+#btn-sunset.armed {
+  background: #4a4338;
+  color: #efe6d4;
+  outline: 3px solid #efe6d4;
+  outline-offset: 2px;
+  box-shadow: inset 0 0 0 2px #1c1812, 2px 2px 0 #1c1812;
+}
+
+/* 结算条：主栏一格可写，不是进度条 */
+.clip {
+  background:
+    repeating-linear-gradient(#efe6d4, #efe6d4 27px, #e4d8c0 28px);
+}
+#slip-main,
+#slip-rec {
+  display: inline-block;
+  vertical-align: middle;
+  min-height: 2.4em;
+  padding: 6px 10px;
+  margin-left: 6px;
+  color: #2a2218;
+  font-weight: 600;
+}
+#slip-main {
+  min-width: 12em;
+  min-height: 2.8em;
+  border: 2px solid #2a2218;
+  background:
+    repeating-linear-gradient(#fffdf6 0 22px, #e8dcc0 22px 23px);
+  box-shadow: inset 0 0 0 1px #c4b494;
+}
+#slip-rec {
+  min-width: 8em;
+  border: 1px solid #8a8070;
+  background: #efe6d4;
+}
+#pocket {
+  display: inline-block;
+  min-width: 6em;
+  padding: 2px 6px;
+  background: #1c1812;
+  color: #d8cfc0;
+  border: 1px dashed #6a5e48;
+}
+
+#btn-submit {
+  height: auto;
+  min-height: 48px;
+  background: #8a3a30;
+  color: #f4ebe0;
+  border: 1px solid #5a241c;
+  width: 100%;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 #1c1812;
+  font-size: 16px;
+}
+#btn-next {
+  height: auto;
+  min-height: 44px;
+  background: #3a3228;
+  color: #efe6d4;
+  border: 1px solid #1c1812;
+  width: 100%;
+  margin-top: 8px;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 #1c1812;
+}
+#btn-next:disabled { opacity: 0.35; cursor: not-allowed; background: #6a4038; box-shadow: none; }
+
+/* 四维是格数，不是关卡进度条 */
+.dims {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  background: #1c1812;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #6a5e48;
+}
+.dim { display: inline-flex; align-items: center; gap: 6px; min-width: 88px; }
+.meter {
+  display: inline-block;
+  width: 48px;
+  height: 8px;
+  background:
+    linear-gradient(#4a4030, #4a4030) 11px 0 / 1px 8px no-repeat,
+    linear-gradient(#4a4030, #4a4030) 23px 0 / 1px 8px no-repeat,
+    linear-gradient(#4a4030, #4a4030) 35px 0 / 1px 8px no-repeat,
+    #3a3226;
+  vertical-align: middle;
+  position: relative;
+}
+.meter::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: calc(var(--n, 4) * 25%);
+  background:
+    repeating-linear-gradient(90deg, #c4b494 0 11px, transparent 11px 12px);
+}
+
+#msg { min-height: 2.4em; margin: 8px 0; }
+#still {
+  width: 100%;
+  max-height: 148px;
+  object-fit: cover;
+  border: 2px solid #4a4030;
+}
+.ending { display: none; }
+.ending.show {
+  display: block;
+  position: sticky;
+  top: 0;
+  z-index: 6;
+  margin: 8px 0 12px;
+  background: #1c1812;
+  padding: 12px;
+  border: 2px double #c4b494;
+  box-shadow: 4px 4px 0 #14110c;
+}
+.split.ended { display: none; }
+#limit-line { color: #8a8070; font-size: 13px; min-height: 1.4em; }
+.artifact-translation { color: #5a5040; font-size: 12px; line-height: 1.45; }
+.ghost { opacity: 0.75; margin-top: 8px; }
+.ghost button {
+  background: #d8cfc0;
+  border: 1px solid #8a8070;
+  color: #2a2218;
+  padding: 8px 10px;
+  margin: 2px;
+  cursor: pointer;
+  min-height: 44px;
+}
+#group-hint { color: #c4b494; }
+#pending-mark {
+  font-size: 16px;
+  margin: 8px 0;
+  display: inline-block;
+  padding: 6px 10px;
+  border: 1px dashed #8a7050;
+  background: #1c1812;
+  min-height: 1.6em;
+}
+.lock-line {
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  margin: 16px 0 8px;
+  color: #8a3a30;
+  border-left: 4px solid #8a3a30;
+  padding-left: 10px;
+}
+.cover-plaque .lock-line {
+  color: #8a3a30;
+}
+
+@media (max-width: 720px) {
+  .split { grid-template-columns: 1fr; }
+  #desk { padding: 10px 12px 28px; }
+  .cover-plaque { max-width: none; }
+  .lock-line, .cover-plaque .lock-line { font-size: 16px; }
+  .gate { flex-wrap: wrap; }
+  #btn-sunset { flex: 1 1 100%; }
+  .sheet img { max-height: 120px; }
+}
+@media (max-width: 400px) {
+  .split { grid-template-columns: 1fr; }
+  .gate { flex-wrap: wrap; }
+  .gate button, #btn-submit, #btn-next, #btn-enter, .clause, #btn-sunset {
+    min-height: 44px;
+    width: 100%;
+    flex: 1 1 100%;
+  }
+}
+@media (max-width: 360px) {
+  #title-layer, #desk { padding-left: 10px; padding-right: 10px; }
+  #sun { font-size: 14px; min-width: 56px; }
+  .cover-tools span { font-size: 11px; }
+  .clause, #btn-submit, #btn-next, #btn-enter, #btn-write, #btn-sunset { min-height: 44px; }
+  #slip-main { min-width: 8em; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+  .sheet-jianli::before { transform: none; }
+}

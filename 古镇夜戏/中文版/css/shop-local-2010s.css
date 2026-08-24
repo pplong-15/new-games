@@ -8,7 +8,9 @@ html.skin-shop-local-2010s {
 }
 html.skin-shop-local-2010s body {
   margin: 0;
-  background: var(--bg);
+  background:
+    repeating-linear-gradient(0deg, rgba(120, 80, 40, 0.035) 0 1px, transparent 1px 4px),
+    var(--bg);
   color: var(--ink);
   font: 16px/1.8 "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 }
@@ -28,24 +30,30 @@ html.skin-shop-local-2010s .logo {
   font-weight: 700;
   text-decoration: none;
 }
+html.skin-shop-local-2010s header { flex-wrap: wrap; gap: 8px; }
 html.skin-shop-local-2010s #search-form { display: flex; }
 html.skin-shop-local-2010s #search-input {
   border: 1px solid #ccc;
   border-radius: 5px 0 0 5px;
-  padding: 10px 14px;
+  padding: 8px 14px;
   width: 220px;
-  background: #fff;
+  min-height: 44px;
+  height: 44px;
+  background: #fff8f0;
 }
 html.skin-shop-local-2010s #search-form button {
   border: 0;
   background: var(--accent);
   color: #fff;
-  padding: 10px 16px;
+  padding: 0 16px;
+  min-height: 44px;
+  height: 44px;
   border-radius: 0 5px 5px 0;
 }
 html.skin-shop-local-2010s nav ul,
 html.skin-shop-local-2010s #menubar ul {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
   list-style: none;
   margin: 0 24px;
@@ -58,9 +66,18 @@ html.skin-shop-local-2010s #menubar a {
   color: #fff;
   text-decoration: none;
   font-weight: 700;
-  height: 56px;
-  line-height: 56px;
+  height: 52px;
+  line-height: 52px;
   padding: 0 18px;
+  border-radius: 10px 10px 0 0;
+}
+html.skin-shop-local-2010s nav a[href="javascript:void(0)"],
+html.skin-shop-local-2010s #menubar a[href="javascript:void(0)"] {
+  text-decoration: line-through;
+  border: 1px dashed #888;
+  background: #ececec;
+  color: #666;
+  cursor: default;
   border-radius: 10px 10px 0 0;
 }
 html.skin-shop-local-2010s main {

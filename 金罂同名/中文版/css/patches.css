@@ -1,4 +1,4 @@
-/* 本局补丁：不改皮肤骨架，只补证件表、正文栏、窄屏。 */
+/* 本局补丁：不改皮肤骨架，只补证件表、正文栏、窄屏、触控与焦点。 */
 html.skin-service-cyan-desk .book {
   width: 90%;
   margin: 8px auto 18px;
@@ -60,6 +60,9 @@ html.skin-service-cyan-desk .claim-grid button {
   margin: 8px 8px 0 0;
   padding: 8px 14px;
   cursor: pointer;
+  min-height: 44px;
+  min-width: 44px;
+  box-sizing: border-box;
 }
 html.skin-service-cyan-desk .endbox {
   width: 80%;
@@ -67,6 +70,19 @@ html.skin-service-cyan-desk .endbox {
   background: #fff;
   border: 1px solid #c5dbe0;
   padding: 16px 18px;
+}
+html.skin-service-cyan-desk #wrap:has(#endbox:not([hidden])) .claim-grid button {
+  border-style: dashed;
+  text-decoration: line-through;
+}
+html.skin-service-cyan-desk #endbox:not([hidden]) {
+  border-left: 8px solid #111;
+  border-top: 1px solid #c5dbe0;
+  border-right: 1px solid #c5dbe0;
+  border-bottom: 1px solid #c5dbe0;
+}
+html.skin-service-cyan-desk #endbox:not([hidden]) h3::before {
+  content: "■ ";
 }
 
 html.skin-gov-redbar .article {
@@ -113,19 +129,47 @@ html.skin-archive-simsun .zip input {
   padding: 3px 6px;
   font: 13px SimSun, serif;
 }
+html.skin-archive-simsun .zip button {
+  min-height: 44px;
+  min-width: 44px;
+  box-sizing: border-box;
+}
 
 html.skin-news-portal-163 #search-form { float: right; padding: 6px 0 0; }
-html.skin-search-results .hit,
-html.skin-forbidden .hit { margin-top: 12px; }
-html.skin-search-results .hit a { display: block; font-size: 16px; }
-html.skin-search-results .hit p { color: #666; font-size: 13px; margin: 4px 0 0; }
+
+html.skin-search-results .hit p { color: #5a4a32; font-size: 13px; margin: 0 0 0 2.2em; }
 html.skin-search-results .back,
 html.skin-forbidden .back {
   display: block;
-  text-align: center;
-  margin: 20px 0;
-  color: #337ab7;
+  text-decoration: none;
 }
+
+html.skin-service-cyan-desk #search-input,
+html.skin-service-cyan-desk #search-form button,
+html.skin-service-cyan-desk .ghost-btn {
+  min-height: 44px;
+  box-sizing: border-box;
+}
+html.skin-service-cyan-desk #search-form button,
+html.skin-service-cyan-desk .ghost-btn {
+  min-width: 44px;
+}
+html.skin-service-cyan-desk .ghost-btn,
+html.skin-service-cyan-desk .tabs a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  box-sizing: border-box;
+}
+html.skin-service-cyan-desk #search-input {
+  padding: 8px 10px;
+}
+
+html.skin-service-cyan-desk :focus-visible { outline: 3px solid #007bff; outline-offset: 2px; }
+html.skin-gov-redbar :focus-visible { outline: 3px solid #c8161d; outline-offset: 2px; }
+html.skin-archive-simsun :focus-visible { outline: 3px solid #333; outline-offset: 2px; }
+html.skin-news-portal-163 :focus-visible { outline: 3px solid #e00; outline-offset: 2px; }
 
 @media (max-width: 720px) {
   html.skin-gov-redbar .wrap,
@@ -144,4 +188,106 @@ html.skin-forbidden .back {
   html.skin-service-cyan-desk .book,
   html.skin-service-cyan-desk .cert,
   html.skin-service-cyan-desk .endbox { width: 94%; }
+  html.skin-service-cyan-desk header {
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 8px;
+  }
+  html.skin-service-cyan-desk header > strong {
+    flex: 1 1 auto;
+  }
+  html.skin-service-cyan-desk header > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    flex: 1 1 100%;
+    width: 100%;
+    min-width: 0;
+  }
+  html.skin-service-cyan-desk #search-form {
+    display: flex;
+    margin-left: 0;
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 390px) {
+  html.skin-service-cyan-desk header {
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 8px;
+  }
+  html.skin-service-cyan-desk header > strong {
+    flex: 1 1 auto;
+  }
+  html.skin-service-cyan-desk header > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    flex: 1 1 100%;
+    width: 100%;
+    min-width: 0;
+  }
+  html.skin-service-cyan-desk #search-form {
+    display: flex;
+    margin-left: 0;
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+  html.skin-service-cyan-desk #search-input {
+    flex: 1 1 auto;
+    min-width: 0;
+    width: auto;
+  }
+  html.skin-service-cyan-desk .tabs {
+    flex-wrap: wrap;
+  }
+  html.skin-gov-redbar .links {
+    height: auto;
+    line-height: 1.2;
+    overflow: visible;
+  }
+  html.skin-gov-redbar .links a {
+    display: inline-block;
+    min-height: 44px;
+    line-height: 44px;
+  }
+  html.skin-gov-redbar .findbar input,
+  html.skin-gov-redbar .findbar button {
+    min-height: 44px;
+    box-sizing: border-box;
+  }
+  html.skin-news-portal-163 .top,
+  html.skin-news-portal-163 .top-inner { height: auto; }
+  html.skin-news-portal-163 .top form { float: none; padding: 6px 0 8px; }
+  html.skin-news-portal-163 .top input,
+  html.skin-news-portal-163 .top button {
+    height: 44px;
+    min-height: 44px;
+    box-sizing: border-box;
+  }
+  html.skin-news-portal-163 .nav,
+  html.skin-news-portal-163 .nav a {
+    height: auto;
+    min-height: 44px;
+    line-height: 44px;
+  }
+  html.skin-archive-simsun .zip input,
+  html.skin-archive-simsun .zip a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    box-sizing: border-box;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.skin-service-cyan-desk *,
+  html.skin-gov-redbar *,
+  html.skin-archive-simsun *,
+  html.skin-news-portal-163 * {
+    animation: none !important;
+    transition: none !important;
+  }
 }

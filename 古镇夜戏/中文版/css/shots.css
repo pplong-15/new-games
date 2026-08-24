@@ -24,32 +24,295 @@ img.shot-wide {
   border: 1px solid #808080;
 }
 .thumbs img:nth-child(3n) { margin-right: 0; }
-.grey {
-  color: #666;
-}
+.grey { color: #666; }
 .strike {
   text-decoration: line-through;
   color: #888;
 }
-.paused {
-  color: #999;
-}
+.paused { color: #999; }
 button.end-btn {
   display: block;
   width: 100%;
   max-width: 420px;
   margin: 8px 0;
-  padding: 8px 10px;
+  padding: 10px 12px 10px 16px;
+  min-height: 44px;
   font: 14px SimSun, "Songti SC", serif;
   cursor: pointer;
+  text-align: left;
+  border: 1px solid #333;
+  border-left: 6px solid #333;
+  background: #f7f1e2;
+  color: #222;
+  box-sizing: border-box;
 }
 button.end-btn:disabled {
   cursor: not-allowed;
-  color: #888;
+  color: #555;
+  border-style: dashed;
+  background:
+    repeating-linear-gradient(135deg, #eee 0 8px, #e4e4e4 8px 16px);
+}
+button.end-btn:focus-visible {
+  outline: 3px solid #111;
+  outline-offset: 2px;
 }
 .err {
-  color: #a00;
+  color: #7a1f1a;
   margin-top: 8px;
+  border: 2px dashed #7a1f1a;
+  padding: 10px 12px 10px 36px;
+  min-height: 44px;
+  background:
+    repeating-linear-gradient(0deg, #fdecea 0 8px, #f8d7d4 8px 16px);
+  position: relative;
+  box-sizing: border-box;
+}
+.err:empty { display: none; }
+.err::before {
+  content: "!";
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  font: 700 16px/1 "Courier New", Courier, monospace;
+}
+html { overflow-x: auto; }
+
+/* —— 共享：焦点 / 触控 / 窄屏 / 假入口。所有者皮差仍由各 skin 文件钉死。 —— */
+:focus-visible {
+  outline: 3px solid #111;
+  outline-offset: 2px;
+}
+html.skin-shop-local-2010s :focus-visible { outline-color: #1a1a1a; }
+html.skin-forbidden :focus-visible { outline: 3px dashed #ffd54a; outline-offset: 3px; }
+html.skin-search-results :focus-visible { outline-color: #006064; }
+html.skin-gov-redbar :focus-visible { outline: 3px dashed #111; }
+html.skin-service-cyan-desk :focus-visible { outline-color: #007bff; }
+html.skin-discuz-board :focus-visible { outline-color: #1f5d96; }
+html.skin-corp-table-2005 :focus-visible { outline-color: #0f2d55; }
+html.skin-blog-personal-2008 :focus-visible { outline-color: #a04000; }
+html.skin-baidu-zhidao :focus-visible { outline-color: #2932e1; }
+html.skin-archive-simsun :focus-visible { outline-color: #333; }
+html.skin-wechat-mp-article :focus-visible { outline-color: #576b95; }
+
+#search-form {
+  max-width: 100%;
+  vertical-align: middle;
+}
+#search-form input,
+#search-input {
+  min-height: 44px;
+  height: 44px;
+  width: min(220px, 52vw);
+  min-width: 0;
+  font-size: 16px;
+  line-height: 1.2;
+  box-sizing: border-box;
+  padding: 8px 10px;
+}
+#search-form button {
+  min-height: 44px;
+  height: 44px;
+  min-width: 44px;
+  padding: 0 12px;
+  font-size: 14px;
+  box-sizing: border-box;
+  line-height: 1;
+  cursor: pointer;
 }
 
-html { overflow-x: auto; }
+a[href="javascript:void(0)"] {
+  text-decoration: line-through !important;
+  border: 1px dashed #888;
+  background: #ececec;
+  color: #555 !important;
+  cursor: default;
+}
+
+html.reduce *,
+html.reduce *::before,
+html.reduce *::after {
+  animation: none !important;
+  transition: none !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  html.skin-archive-simsun .stamp { transform: none; }
+}
+
+html.skin-service-cyan-desk header {
+  flex-wrap: wrap;
+  gap: 8px;
+}
+html.skin-service-cyan-desk .ghost-btn {
+  min-height: 44px;
+  display: inline-block;
+  line-height: 28px;
+  box-sizing: border-box;
+  padding: 8px 12px;
+}
+html.skin-service-cyan-desk #pw {
+  min-height: 44px;
+  height: 44px;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 8px 10px;
+}
+html.skin-service-cyan-desk #login-go {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+html.skin-shop-local-2010s header {
+  flex-wrap: wrap;
+  gap: 8px;
+}
+html.skin-shop-local-2010s nav ul,
+html.skin-shop-local-2010s #menubar ul {
+  flex-wrap: wrap;
+}
+
+html.skin-corp-table-2005 .banner {
+  height: auto;
+  min-height: 90px;
+  overflow: visible;
+  line-height: 1.3;
+  padding: 12px 16px;
+}
+html.skin-corp-table-2005 .banner form {
+  float: right;
+  height: auto;
+  padding: 0;
+}
+html.skin-corp-table-2005 .nav {
+  height: auto;
+  min-height: 44px;
+  line-height: 44px;
+  overflow: visible;
+}
+html.skin-corp-table-2005 .nav a {
+  display: inline-block;
+  min-height: 44px;
+  line-height: 44px;
+}
+
+html.skin-discuz-board .hd {
+  height: auto;
+  min-height: 52px;
+  overflow: visible;
+}
+html.skin-discuz-board .hd form {
+  height: auto;
+  padding: 4px 8px 4px 0;
+}
+html.skin-discuz-board .nv {
+  height: auto;
+  min-height: 44px;
+  line-height: 44px;
+  overflow: visible;
+}
+html.skin-discuz-board .nv a {
+  height: auto;
+  min-height: 44px;
+  line-height: 44px;
+}
+
+html.skin-blog-personal-2008 .nav {
+  height: auto;
+  min-height: 44px;
+  line-height: 44px;
+  overflow: visible;
+}
+html.skin-blog-personal-2008 .nav a {
+  display: inline-block;
+  min-height: 44px;
+  line-height: 44px;
+}
+
+html.skin-gov-redbar .links {
+  height: auto;
+  min-height: 44px;
+  line-height: 44px;
+  overflow: visible;
+}
+html.skin-gov-redbar .links a {
+  display: inline-block;
+  min-height: 44px;
+  line-height: 44px;
+}
+
+html.skin-baidu-zhidao .top,
+html.skin-baidu-zhidao .top-inner {
+  height: auto;
+  min-height: 52px;
+}
+html.skin-baidu-zhidao .top form { padding: 4px 0; }
+
+html.skin-archive-simsun p:has(a) { text-indent: 0; }
+
+@media (max-width: 800px) {
+  html.skin-shop-local-2010s nav ul,
+  html.skin-shop-local-2010s #menubar ul { margin: 0 8px; }
+  html.skin-corp-table-2005 table.site { width: 100%; }
+  html.skin-discuz-board .wp { width: auto; margin: 0 8px; }
+  html.skin-blog-personal-2008 .wrap,
+  html.skin-blog-personal-2008 .ft { width: auto; margin: 8px; }
+  html.skin-blog-personal-2008 .main,
+  html.skin-blog-personal-2008 .post,
+  html.skin-blog-personal-2008 article,
+  html.skin-blog-personal-2008 .side,
+  html.skin-blog-personal-2008 aside {
+    float: none;
+    width: auto;
+    max-width: 100%;
+  }
+  html.skin-gov-redbar .wrap { width: auto; margin: 8px; }
+  html.skin-gov-redbar .wrap table { table-layout: auto; }
+  html.skin-gov-redbar .box { width: auto; display: block; }
+  html.skin-wechat-mp-article .article { width: auto; max-width: 100%; }
+  html.skin-baidu-zhidao .top-inner,
+  html.skin-baidu-zhidao .q,
+  html.skin-baidu-zhidao .wrap,
+  html.skin-baidu-zhidao .site-foot { width: auto; max-width: 100%; }
+  html.skin-service-cyan-desk #wrap { max-width: 100%; }
+  html.skin-archive-simsun .record { padding: 20px 16px; }
+  img.shot { max-width: 100%; }
+}
+
+@media (max-width: 390px) {
+  #search-form { width: 100%; }
+  #search-form input,
+  #search-input {
+    width: min(100%, 70vw);
+  }
+  html.skin-corp-table-2005 .banner form {
+    float: none;
+    display: block;
+    margin-top: 8px;
+  }
+  html.skin-corp-table-2005 table.site,
+  html.skin-corp-table-2005 table.site tbody,
+  html.skin-corp-table-2005 table.site tr,
+  html.skin-corp-table-2005 table.site td {
+    display: block;
+    width: auto;
+    max-width: 100%;
+  }
+  html.skin-corp-table-2005 .left {
+    width: auto;
+    border-right: 0;
+    border-bottom: 1px solid #99b;
+  }
+  html.skin-discuz-board .u {
+    float: none;
+    width: auto;
+  }
+  html.skin-discuz-board .t {
+    margin-left: 0;
+    border-left: 0;
+  }
+  html.skin-shop-local-2010s header,
+  html.skin-service-cyan-desk header {
+    display: block;
+  }
+  .supp { overflow-wrap: anywhere; }
+}

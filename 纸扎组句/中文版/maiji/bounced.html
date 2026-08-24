@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>麦记·越权退回</title>
   <link rel="stylesheet" href="../css/service-cyan-desk.css">
+  <link rel="stylesheet" href="../css/pick-overlay.css">
 </head>
 <body>
   <div id="wrap">
@@ -20,7 +21,7 @@
       </div>
     </header>
     
-    <div class="notice">
+    <div class="notice end-bounced">
       <h2>这条不收</h2>
       <p>退单上没有人情。麦老把教法和准烧写成同一类越权，省得临工觉得两件事能分开谈。分开谈也不收。</p>
       <p id="why"></p>
@@ -39,5 +40,6 @@
     var el = document.getElementById("why");
     if (el) el.textContent = f.auth === "teach" ? "你勾了附录扎作步骤。" : "你勾了准予今夜焚化。";
 </script>
+  <link rel="stylesheet" href="../css/pick-overlay.css">
 </body>
 </html>

@@ -1,0 +1,1540 @@
+{
+  "zh-01-boot-first-screen": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-zh/01-boot-first-screen.png",
+    "bytes": 114693,
+    "url": "http://127.0.0.1:8816/introduction.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-02-core-verb": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-zh/02-core-verb.png",
+    "bytes": 55880,
+    "url": "http://127.0.0.1:8816/album.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-03-success-feedback": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-zh/03-success-feedback.png",
+    "bytes": 111324,
+    "url": "http://127.0.0.1:8816/end-old.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-04-near-fail": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-zh/04-near-fail.png",
+    "bytes": 112304,
+    "url": "http://127.0.0.1:8816/end-new.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-05-recovery": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-zh/05-recovery.png",
+    "bytes": 93901,
+    "url": "http://127.0.0.1:8816/backroom.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-06-narrow-320": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-zh/06-narrow-320.png",
+    "bytes": 32977,
+    "url": "http://127.0.0.1:8816/album.html",
+    "w": 320,
+    "h": 720,
+    "boxes": [
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "证件夹 · 入职",
+        "w": 132,
+        "h": 126,
+        "x": 25,
+        "y": 118
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "证件夹 · 八月",
+        "w": 132,
+        "h": 126,
+        "x": 163,
+        "y": 118
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "相机 · 三号柜",
+        "w": 132,
+        "h": 126,
+        "x": 25,
+        "y": 249
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "相机 · 店条",
+        "w": 132,
+        "h": 126,
+        "x": 163,
+        "y": 249
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "相机 · 货道",
+        "w": 132,
+        "h": 126,
+        "x": 25,
+        "y": 381
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "相机 · 电子秤",
+        "w": 132,
+        "h": 126,
+        "x": 163,
+        "y": 381
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "回",
+        "w": 97,
+        "h": 44,
+        "x": 14,
+        "y": 678
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "主",
+        "w": 97,
+        "h": 44,
+        "x": 111,
+        "y": 678
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "备",
+        "w": 97,
+        "h": 44,
+        "x": 209,
+        "y": 678
+      }
+    ]
+  },
+  "zh-07-keyboard-focus": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-zh/07-keyboard-focus.png",
+    "bytes": 114930,
+    "url": "http://127.0.0.1:8816/introduction.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-08-touch-targets": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-zh/08-touch-targets.png",
+    "bytes": 36483,
+    "url": "http://127.0.0.1:8816/lock.html",
+    "w": 390,
+    "h": 844,
+    "boxes": [
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "1",
+        "w": 66,
+        "h": 44,
+        "x": 90,
+        "y": 354
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "2",
+        "w": 66,
+        "h": 44,
+        "x": 162,
+        "y": 354
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "3",
+        "w": 66,
+        "h": 44,
+        "x": 234,
+        "y": 354
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "4",
+        "w": 66,
+        "h": 44,
+        "x": 90,
+        "y": 404
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "5",
+        "w": 66,
+        "h": 44,
+        "x": 162,
+        "y": 404
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "6",
+        "w": 66,
+        "h": 44,
+        "x": 234,
+        "y": 404
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "7",
+        "w": 66,
+        "h": 44,
+        "x": 90,
+        "y": 454
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "8",
+        "w": 66,
+        "h": 44,
+        "x": 162,
+        "y": 454
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "9",
+        "w": 66,
+        "h": 44,
+        "x": 234,
+        "y": 454
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "清",
+        "w": 66,
+        "h": 44,
+        "x": 90,
+        "y": 504
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "0",
+        "w": 66,
+        "h": 44,
+        "x": 162,
+        "y": 504
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "ok",
+        "title": "开",
+        "w": 66,
+        "h": 44,
+        "x": 234,
+        "y": 504
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "条",
+        "w": 334,
+        "h": 44,
+        "x": 28,
+        "y": 574
+      }
+    ]
+  },
+  "zh-09-muted-or-reduced-motion": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-zh/09-muted-or-reduced-motion.png",
+    "bytes": 55880,
+    "url": "http://127.0.0.1:8816/album.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-10-non-color-state": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-zh/10-non-color-state.png",
+    "bytes": 81965,
+    "url": "http://127.0.0.1:8816/calls.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-11-empty-or-loading": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-zh/11-empty-or-loading.png",
+    "bytes": 55636,
+    "url": "http://127.0.0.1:8816/lock.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-12-error-or-pause": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-zh/12-error-or-pause.png",
+    "bytes": 58065,
+    "url": "http://127.0.0.1:8816/lock.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-13-intro-no-search": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-zh/13-intro-no-search.png",
+    "bytes": 114693,
+    "url": "http://127.0.0.1:8816/introduction.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-14-two-source-id-a": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-zh/14-two-source-id-a.png",
+    "bytes": 72482,
+    "url": "http://127.0.0.1:8816/photo-zheng.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-15-two-source-id-b": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-zh/15-two-source-id-b.png",
+    "bytes": 74159,
+    "url": "http://127.0.0.1:8816/photo-fu.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-16-gallery-thumbs": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-zh/16-gallery-thumbs.png",
+    "bytes": 55880,
+    "url": "http://127.0.0.1:8816/album.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-17-embedded-sms-holo": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-zh/17-embedded-sms-holo.png",
+    "bytes": 96054,
+    "url": "http://127.0.0.1:8816/sms-kuang.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-18-archive-memo": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-zh/18-archive-memo.png",
+    "bytes": 118696,
+    "url": "http://127.0.0.1:8816/memo-compare.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-19-blocked-nonmodal": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-zh/19-blocked-nonmodal.png",
+    "bytes": 106099,
+    "url": "http://127.0.0.1:8816/blocked.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-20-backroom-other-skin": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-zh/20-backroom-other-skin.png",
+    "bytes": 101210,
+    "url": "http://127.0.0.1:8816/backroom.html",
+    "w": 1280,
+    "h": 900,
+    "boxes": [
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "再拿起机子",
+        "w": 640,
+        "h": 53,
+        "x": 320,
+        "y": 267
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "机子放回三号柜。我跟人还在，只是落了东西。",
+        "w": 640,
+        "h": 53,
+        "x": 320,
+        "y": 330
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "八月十二那张我交给你。你要过检就用这张。",
+        "w": 640,
+        "h": 53,
+        "x": 320,
+        "y": 394
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "三月十四那张我交给你。后来补的我没带出来。",
+        "w": 640,
+        "h": 53,
+        "x": 320,
+        "y": 457
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "我把机子关掉。照片我谁都不给。",
+        "w": 640,
+        "h": 53,
+        "x": 320,
+        "y": 520
+      }
+    ]
+  },
+  "zh-21-home-launcher": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-zh/21-home-launcher.png",
+    "bytes": 75419,
+    "url": "http://127.0.0.1:8816/home.html",
+    "w": 1280,
+    "h": 900
+  },
+  "zh-22-lock-kitkat": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-zh/22-lock-kitkat.png",
+    "bytes": 55636,
+    "url": "http://127.0.0.1:8816/lock.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-23-sms-list": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-zh/23-sms-list.png",
+    "bytes": 78114,
+    "url": "http://127.0.0.1:8816/sms.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-24-memo-list": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-zh/24-memo-list.png",
+    "bytes": 82565,
+    "url": "http://127.0.0.1:8816/memo.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-25-photo-locker": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-zh/25-photo-locker.png",
+    "bytes": 99546,
+    "url": "http://127.0.0.1:8816/photo-locker.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-26-calendar-dates": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-zh/26-calendar-dates.png",
+    "bytes": 88439,
+    "url": "http://127.0.0.1:8816/calendar.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-27-old-save-restore": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-zh/27-old-save-restore.png",
+    "bytes": 108381,
+    "url": "http://127.0.0.1:8816/backroom.html",
+    "w": 1280,
+    "h": 800
+  },
+  "zh-28-narrow-320-lock": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-zh/28-narrow-320-lock.png",
+    "bytes": 27223,
+    "url": "http://127.0.0.1:8816/lock.html",
+    "w": 320,
+    "h": 720,
+    "boxes": [
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "1",
+        "w": 66,
+        "h": 44,
+        "x": 55,
+        "y": 344
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "2",
+        "w": 66,
+        "h": 44,
+        "x": 127,
+        "y": 344
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "3",
+        "w": 66,
+        "h": 44,
+        "x": 199,
+        "y": 344
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "4",
+        "w": 66,
+        "h": 44,
+        "x": 55,
+        "y": 394
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "5",
+        "w": 66,
+        "h": 44,
+        "x": 127,
+        "y": 394
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "6",
+        "w": 66,
+        "h": 44,
+        "x": 199,
+        "y": 394
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "7",
+        "w": 66,
+        "h": 44,
+        "x": 55,
+        "y": 444
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "8",
+        "w": 66,
+        "h": 44,
+        "x": 127,
+        "y": 444
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "9",
+        "w": 66,
+        "h": 44,
+        "x": 199,
+        "y": 444
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "清",
+        "w": 66,
+        "h": 44,
+        "x": 55,
+        "y": 494
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "0",
+        "w": 66,
+        "h": 44,
+        "x": 127,
+        "y": 494
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "ok",
+        "title": "开",
+        "w": 66,
+        "h": 44,
+        "x": 199,
+        "y": 494
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "条",
+        "w": 292,
+        "h": 44,
+        "x": 14,
+        "y": 542
+      }
+    ]
+  },
+  "zh-29-touch-390-home": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-zh/29-touch-390-home.png",
+    "bytes": 51853,
+    "url": "http://127.0.0.1:8816/home.html",
+    "w": 390,
+    "h": 844,
+    "boxes": [
+      {
+        "tag": "A",
+        "cls": "ic",
+        "title": "信信息",
+        "w": 78,
+        "h": 71,
+        "x": 40,
+        "y": 177
+      },
+      {
+        "tag": "A",
+        "cls": "ic",
+        "title": "图图库",
+        "w": 78,
+        "h": 71,
+        "x": 118,
+        "y": 177
+      },
+      {
+        "tag": "A",
+        "cls": "ic",
+        "title": "备备忘",
+        "w": 78,
+        "h": 71,
+        "x": 195,
+        "y": 177
+      },
+      {
+        "tag": "A",
+        "cls": "ic",
+        "title": "话电话",
+        "w": 78,
+        "h": 71,
+        "x": 273,
+        "y": 177
+      },
+      {
+        "tag": "A",
+        "cls": "ic",
+        "title": "录通讯录",
+        "w": 78,
+        "h": 71,
+        "x": 40,
+        "y": 264
+      },
+      {
+        "tag": "A",
+        "cls": "ic",
+        "title": "历日历",
+        "w": 78,
+        "h": 71,
+        "x": 118,
+        "y": 264
+      },
+      {
+        "tag": "A",
+        "cls": "ic",
+        "title": "设设置",
+        "w": 78,
+        "h": 71,
+        "x": 195,
+        "y": 264
+      },
+      {
+        "tag": "A",
+        "cls": "ic",
+        "title": "网浏览器",
+        "w": 78,
+        "h": 71,
+        "x": 273,
+        "y": 264
+      },
+      {
+        "tag": "A",
+        "cls": "ic",
+        "title": "钟闹钟",
+        "w": 78,
+        "h": 71,
+        "x": 40,
+        "y": 352
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "锁",
+        "w": 111,
+        "h": 44,
+        "x": 28,
+        "y": 574
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "主",
+        "w": 111,
+        "h": 44,
+        "x": 139,
+        "y": 574
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "信",
+        "w": 111,
+        "h": 44,
+        "x": 251,
+        "y": 574
+      }
+    ]
+  },
+  "zh-30-touch-390-backroom": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-zh/30-touch-390-backroom.png",
+    "bytes": 98912,
+    "url": "http://127.0.0.1:8816/backroom.html",
+    "w": 390,
+    "h": 844,
+    "boxes": [
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "再拿起机子",
+        "w": 350,
+        "h": 53,
+        "x": 20,
+        "y": 396
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "机子放回三号柜。我跟人还在，只是落了东西。",
+        "w": 350,
+        "h": 80,
+        "x": 20,
+        "y": 460
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "八月十二那张我交给你。你要过检就用这张。",
+        "w": 350,
+        "h": 53,
+        "x": 20,
+        "y": 550
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "三月十四那张我交给你。后来补的我没带出来。",
+        "w": 350,
+        "h": 80,
+        "x": 20,
+        "y": 613
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "我把机子关掉。照片我谁都不给。",
+        "w": 350,
+        "h": 53,
+        "x": 20,
+        "y": 703
+      }
+    ]
+  },
+  "zh-31-narrow-320-intro": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-zh/31-narrow-320-intro.png",
+    "bytes": 74388,
+    "url": "http://127.0.0.1:8816/introduction.html",
+    "w": 320,
+    "h": 720,
+    "boxes": [
+      {
+        "tag": "A",
+        "cls": "enter-link",
+        "title": "拿起这部机子",
+        "w": 130,
+        "h": 44,
+        "x": 25,
+        "y": 904
+      },
+      {
+        "tag": "A",
+        "cls": "ghost",
+        "title": "先到后仓门口说话",
+        "w": 162,
+        "h": 44,
+        "x": 25,
+        "y": 956
+      }
+    ]
+  },
+  "zh-32-end-old-detail": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-zh/32-end-old-detail.png",
+    "bytes": 111324,
+    "url": "http://127.0.0.1:8816/end-old.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-01-boot-first-screen": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-en/01-boot-first-screen.png",
+    "bytes": 95374,
+    "url": "http://127.0.0.1:8817/introduction.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-02-core-verb": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-en/02-core-verb.png",
+    "bytes": 56188,
+    "url": "http://127.0.0.1:8817/album.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-03-success-feedback": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-en/03-success-feedback.png",
+    "bytes": 102238,
+    "url": "http://127.0.0.1:8817/end-old.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-04-near-fail": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-en/04-near-fail.png",
+    "bytes": 101874,
+    "url": "http://127.0.0.1:8817/end-new.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-05-recovery": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-en/05-recovery.png",
+    "bytes": 86707,
+    "url": "http://127.0.0.1:8817/backroom.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-06-narrow-320": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-en/06-narrow-320.png",
+    "bytes": 32945,
+    "url": "http://127.0.0.1:8817/album.html",
+    "w": 320,
+    "h": 720,
+    "boxes": [
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "Papers · hire",
+        "w": 132,
+        "h": 126,
+        "x": 25,
+        "y": 118
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "Papers · August",
+        "w": 132,
+        "h": 126,
+        "x": 163,
+        "y": 118
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "Camera · locker 3",
+        "w": 132,
+        "h": 126,
+        "x": 25,
+        "y": 249
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "Camera · store slip",
+        "w": 132,
+        "h": 126,
+        "x": 163,
+        "y": 249
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "Camera · aisle",
+        "w": 132,
+        "h": 126,
+        "x": 25,
+        "y": 381
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "Camera · scale",
+        "w": 132,
+        "h": 126,
+        "x": 163,
+        "y": 381
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "Back",
+        "w": 97,
+        "h": 44,
+        "x": 14,
+        "y": 697
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "Home",
+        "w": 97,
+        "h": 44,
+        "x": 111,
+        "y": 697
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "Memo",
+        "w": 97,
+        "h": 44,
+        "x": 209,
+        "y": 697
+      }
+    ]
+  },
+  "en-07-keyboard-focus": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-en/07-keyboard-focus.png",
+    "bytes": 95536,
+    "url": "http://127.0.0.1:8817/introduction.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-08-touch-targets": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-en/08-touch-targets.png",
+    "bytes": 37956,
+    "url": "http://127.0.0.1:8817/lock.html",
+    "w": 390,
+    "h": 844,
+    "boxes": [
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "1",
+        "w": 66,
+        "h": 44,
+        "x": 90,
+        "y": 371
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "2",
+        "w": 66,
+        "h": 44,
+        "x": 162,
+        "y": 371
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "3",
+        "w": 66,
+        "h": 44,
+        "x": 234,
+        "y": 371
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "4",
+        "w": 66,
+        "h": 44,
+        "x": 90,
+        "y": 421
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "5",
+        "w": 66,
+        "h": 44,
+        "x": 162,
+        "y": 421
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "6",
+        "w": 66,
+        "h": 44,
+        "x": 234,
+        "y": 421
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "7",
+        "w": 66,
+        "h": 44,
+        "x": 90,
+        "y": 471
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "8",
+        "w": 66,
+        "h": 44,
+        "x": 162,
+        "y": 471
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "9",
+        "w": 66,
+        "h": 44,
+        "x": 234,
+        "y": 471
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "CLR",
+        "w": 66,
+        "h": 44,
+        "x": 90,
+        "y": 521
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "0",
+        "w": 66,
+        "h": 44,
+        "x": 162,
+        "y": 521
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "ok",
+        "title": "OK",
+        "w": 66,
+        "h": 44,
+        "x": 234,
+        "y": 521
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "Slip",
+        "w": 334,
+        "h": 44,
+        "x": 28,
+        "y": 574
+      }
+    ]
+  },
+  "en-09-muted-or-reduced-motion": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-en/09-muted-or-reduced-motion.png",
+    "bytes": 56188,
+    "url": "http://127.0.0.1:8817/album.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-10-non-color-state": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-en/10-non-color-state.png",
+    "bytes": 89949,
+    "url": "http://127.0.0.1:8817/calls.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-11-empty-or-loading": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-en/11-empty-or-loading.png",
+    "bytes": 58743,
+    "url": "http://127.0.0.1:8817/lock.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-12-error-or-pause": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-en/12-error-or-pause.png",
+    "bytes": 60716,
+    "url": "http://127.0.0.1:8817/lock.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-13-intro-no-search": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-en/13-intro-no-search.png",
+    "bytes": 95374,
+    "url": "http://127.0.0.1:8817/introduction.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-14-two-source-id-a": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-en/14-two-source-id-a.png",
+    "bytes": 69979,
+    "url": "http://127.0.0.1:8817/photo-zheng.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-15-two-source-id-b": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-en/15-two-source-id-b.png",
+    "bytes": 72214,
+    "url": "http://127.0.0.1:8817/photo-fu.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-16-gallery-thumbs": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-en/16-gallery-thumbs.png",
+    "bytes": 56188,
+    "url": "http://127.0.0.1:8817/album.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-17-embedded-sms-holo": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-en/17-embedded-sms-holo.png",
+    "bytes": 87460,
+    "url": "http://127.0.0.1:8817/sms-kuang.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-18-archive-memo": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-en/18-archive-memo.png",
+    "bytes": 115133,
+    "url": "http://127.0.0.1:8817/memo-compare.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-19-blocked-nonmodal": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-en/19-blocked-nonmodal.png",
+    "bytes": 89060,
+    "url": "http://127.0.0.1:8817/blocked.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-20-backroom-other-skin": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-en/20-backroom-other-skin.png",
+    "bytes": 94588,
+    "url": "http://127.0.0.1:8817/backroom.html",
+    "w": 1280,
+    "h": 900,
+    "boxes": [
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "Pick the handset up again",
+        "w": 640,
+        "h": 53,
+        "x": 320,
+        "y": 318
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "Phone back on locker 3. I figure she's still her",
+        "w": 640,
+        "h": 53,
+        "x": 320,
+        "y": 381
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "The 2026-08-12 one I hand to you. You need to pa",
+        "w": 640,
+        "h": 53,
+        "x": 320,
+        "y": 445
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "The 2023-03-14 one I hand to you. The later shoo",
+        "w": 640,
+        "h": 53,
+        "x": 320,
+        "y": 508
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "I shut the phone off. Photos I give to nobody.",
+        "w": 640,
+        "h": 53,
+        "x": 320,
+        "y": 571
+      }
+    ]
+  },
+  "en-21-home-launcher": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-en/21-home-launcher.png",
+    "bytes": 78285,
+    "url": "http://127.0.0.1:8817/home.html",
+    "w": 1280,
+    "h": 900
+  },
+  "en-22-lock-kitkat": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-en/22-lock-kitkat.png",
+    "bytes": 58743,
+    "url": "http://127.0.0.1:8817/lock.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-23-sms-list": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-en/23-sms-list.png",
+    "bytes": 81499,
+    "url": "http://127.0.0.1:8817/sms.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-24-memo-list": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-en/24-memo-list.png",
+    "bytes": 85737,
+    "url": "http://127.0.0.1:8817/memo.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-25-photo-locker": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-en/25-photo-locker.png",
+    "bytes": 87338,
+    "url": "http://127.0.0.1:8817/photo-locker.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-26-calendar-dates": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-en/26-calendar-dates.png",
+    "bytes": 84036,
+    "url": "http://127.0.0.1:8817/calendar.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-27-old-save-restore": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-en/27-old-save-restore.png",
+    "bytes": 100236,
+    "url": "http://127.0.0.1:8817/backroom.html",
+    "w": 1280,
+    "h": 800
+  },
+  "en-28-narrow-320-lock": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-en/28-narrow-320-lock.png",
+    "bytes": 29015,
+    "url": "http://127.0.0.1:8817/lock.html",
+    "w": 320,
+    "h": 720,
+    "boxes": [
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "1",
+        "w": 66,
+        "h": 44,
+        "x": 55,
+        "y": 361
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "2",
+        "w": 66,
+        "h": 44,
+        "x": 127,
+        "y": 361
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "3",
+        "w": 66,
+        "h": 44,
+        "x": 199,
+        "y": 361
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "4",
+        "w": 66,
+        "h": 44,
+        "x": 55,
+        "y": 411
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "5",
+        "w": 66,
+        "h": 44,
+        "x": 127,
+        "y": 411
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "6",
+        "w": 66,
+        "h": 44,
+        "x": 199,
+        "y": 411
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "7",
+        "w": 66,
+        "h": 44,
+        "x": 55,
+        "y": 461
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "8",
+        "w": 66,
+        "h": 44,
+        "x": 127,
+        "y": 461
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "9",
+        "w": 66,
+        "h": 44,
+        "x": 199,
+        "y": 461
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "CLR",
+        "w": 66,
+        "h": 44,
+        "x": 55,
+        "y": 511
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "",
+        "title": "0",
+        "w": 66,
+        "h": 44,
+        "x": 127,
+        "y": 511
+      },
+      {
+        "tag": "BUTTON",
+        "cls": "ok",
+        "title": "OK",
+        "w": 66,
+        "h": 44,
+        "x": 199,
+        "y": 511
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "Slip",
+        "w": 292,
+        "h": 44,
+        "x": 14,
+        "y": 559
+      }
+    ]
+  },
+  "en-29-touch-390-home": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-en/29-touch-390-home.png",
+    "bytes": 54934,
+    "url": "http://127.0.0.1:8817/home.html",
+    "w": 390,
+    "h": 844,
+    "boxes": [
+      {
+        "tag": "A",
+        "cls": "ic",
+        "title": "MMessages",
+        "w": 78,
+        "h": 71,
+        "x": 40,
+        "y": 213
+      },
+      {
+        "tag": "A",
+        "cls": "ic",
+        "title": "GGallery",
+        "w": 78,
+        "h": 71,
+        "x": 118,
+        "y": 213
+      },
+      {
+        "tag": "A",
+        "cls": "ic",
+        "title": "NMemos",
+        "w": 78,
+        "h": 71,
+        "x": 195,
+        "y": 213
+      },
+      {
+        "tag": "A",
+        "cls": "ic",
+        "title": "PPhone",
+        "w": 78,
+        "h": 71,
+        "x": 273,
+        "y": 213
+      },
+      {
+        "tag": "A",
+        "cls": "ic",
+        "title": "CContacts",
+        "w": 78,
+        "h": 71,
+        "x": 40,
+        "y": 300
+      },
+      {
+        "tag": "A",
+        "cls": "ic",
+        "title": "DCalendar",
+        "w": 78,
+        "h": 71,
+        "x": 118,
+        "y": 300
+      },
+      {
+        "tag": "A",
+        "cls": "ic",
+        "title": "SSettings",
+        "w": 78,
+        "h": 71,
+        "x": 195,
+        "y": 300
+      },
+      {
+        "tag": "A",
+        "cls": "ic",
+        "title": "WBrowser",
+        "w": 78,
+        "h": 71,
+        "x": 273,
+        "y": 300
+      },
+      {
+        "tag": "A",
+        "cls": "ic",
+        "title": "AAlarm",
+        "w": 78,
+        "h": 71,
+        "x": 40,
+        "y": 388
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "Lock",
+        "w": 111,
+        "h": 44,
+        "x": 28,
+        "y": 574
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "Home",
+        "w": 111,
+        "h": 44,
+        "x": 139,
+        "y": 574
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "Msg",
+        "w": 111,
+        "h": 44,
+        "x": 251,
+        "y": 574
+      }
+    ]
+  },
+  "en-30-touch-390-backroom": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-en/30-touch-390-backroom.png",
+    "bytes": 92577,
+    "url": "http://127.0.0.1:8817/backroom.html",
+    "w": 390,
+    "h": 844,
+    "boxes": [
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "Pick the handset up again",
+        "w": 350,
+        "h": 53,
+        "x": 20,
+        "y": 447
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "Phone back on locker 3. I figure she's still her",
+        "w": 350,
+        "h": 80,
+        "x": 20,
+        "y": 511
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "The 2026-08-12 one I hand to you. You need to pa",
+        "w": 350,
+        "h": 80,
+        "x": 20,
+        "y": 601
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "The 2023-03-14 one I hand to you. The later shoo",
+        "w": 350,
+        "h": 80,
+        "x": 20,
+        "y": 691
+      },
+      {
+        "tag": "A",
+        "cls": "",
+        "title": "I shut the phone off. Photos I give to nobody.",
+        "w": 350,
+        "h": 53,
+        "x": 20,
+        "y": 782
+      }
+    ]
+  },
+  "en-31-narrow-320-intro": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-en/31-narrow-320-intro.png",
+    "bytes": 47606,
+    "url": "http://127.0.0.1:8817/introduction.html",
+    "w": 320,
+    "h": 720,
+    "boxes": [
+      {
+        "tag": "A",
+        "cls": "enter-link",
+        "title": "Pick up the handset",
+        "w": 162,
+        "h": 44,
+        "x": 25,
+        "y": 1044
+      },
+      {
+        "tag": "A",
+        "cls": "ghost",
+        "title": "Talk at the back-room door first",
+        "w": 244,
+        "h": 44,
+        "x": 25,
+        "y": 1096
+      }
+    ]
+  },
+  "en-32-end-old-detail": {
+    "path": "/Users/jianglong/Desktop/github游戏/游戏库/更衣柜手机/visual/html-game-puzzle/polish-20260823-en/32-end-old-detail.png",
+    "bytes": 102238,
+    "url": "http://127.0.0.1:8817/end-old.html",
+    "w": 1280,
+    "h": 800
+  }
+}

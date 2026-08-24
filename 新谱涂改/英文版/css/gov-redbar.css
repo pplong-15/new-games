@@ -1,6 +1,6 @@
 /* gov-redbar
- * Memory 2005–2014 red-header info station. No emblem, real agency name, or real district.
- * SimSun 12px, links #00e, two columns via table 50%. No CSS Grid / flex.
+ * 记忆 2005–2014 红头信息站。不要国徽、机关全称或真实区划。
+ * 宋体 12px，链 #00e，双栏用 table 50%，禁止 CSS Grid / flex。
  */
 html.skin-gov-redbar {
   --red: #c8161d;
@@ -111,4 +111,83 @@ html.skin-gov-redbar .ft {
   font-size: 12px;
   clear: both;
   border-top: 1px solid #eee;
+}
+html.skin-gov-redbar button {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0 12px;
+  font: 12px/1.4 SimSun, "Songti SC", serif;
+  cursor: pointer;
+  border: 1px solid #666;
+  background: #fff;
+  color: #000;
+}
+html.skin-gov-redbar input#q,
+html.skin-gov-redbar input[name="q"] {
+  min-height: 44px;
+  padding: 6px 8px;
+  box-sizing: border-box;
+  font: 12px/1.4 SimSun, "Songti SC", serif;
+}
+html.skin-gov-redbar a:focus-visible,
+html.skin-gov-redbar button:focus-visible,
+html.skin-gov-redbar input:focus-visible {
+  outline: 3px solid #c9a227;
+  outline-offset: 2px;
+}
+
+/* 桌面仍 1000px；窄屏只让表换行，不改红头骨架 */
+@media (max-width: 800px) {
+  html.skin-gov-redbar .wrap {
+    width: auto;
+    max-width: 100%;
+    margin: 8px;
+  }
+  html.skin-gov-redbar .wrap table {
+    width: 100%;
+    table-layout: auto;
+  }
+  html.skin-gov-redbar .box {
+    display: block;
+    width: auto;
+    box-sizing: border-box;
+  }
+  html.skin-gov-redbar .box li {
+    height: auto;
+    line-height: 1.6;
+    overflow: visible;
+    white-space: normal;
+  }
+  html.skin-gov-redbar .date {
+    float: none;
+    display: inline;
+    margin-left: 6px;
+  }
+  html.skin-gov-redbar .red h1 {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+  html.skin-gov-redbar .links {
+    height: auto;
+    line-height: 1.8;
+    white-space: normal;
+    overflow: visible;
+  }
+  html.skin-gov-redbar table th,
+  html.skin-gov-redbar table td {
+    word-break: break-word;
+    white-space: normal;
+  }
+  html.skin-gov-redbar .links a {
+    display: inline-block;
+    min-height: 44px;
+    line-height: 44px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.skin-gov-redbar * {
+    animation: none;
+    transition: none;
+  }
 }

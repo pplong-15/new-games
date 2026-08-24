@@ -46,7 +46,8 @@ html.skin-shop-local-2010s #search-form button {
 html.skin-shop-local-2010s nav ul,
 html.skin-shop-local-2010s #menubar ul {
   display: flex;
-  gap: 12px;
+  flex-wrap: wrap;
+  gap: 8px;
   list-style: none;
   margin: 0 24px;
   padding: 0;
@@ -85,3 +86,26 @@ html.skin-shop-local-2010s footer {
   padding: 8px;
 }
 html.skin-shop-local-2010s .hero-photo { width: 100%; height: auto; display: block; }
+html.skin-shop-local-2010s :focus-visible {
+  outline: 3px dotted #555;
+  outline-offset: 2px;
+}
+@media (max-width: 800px) {
+  html.skin-shop-local-2010s header,
+  html.skin-shop-local-2010s nav ul,
+  html.skin-shop-local-2010s #menubar ul {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  html.skin-shop-local-2010s nav a,
+  html.skin-shop-local-2010s #menubar a {
+    height: 44px;
+    line-height: 44px;
+    padding: 0 12px;
+  }
+  html.skin-shop-local-2010s body > p {
+    width: auto;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}

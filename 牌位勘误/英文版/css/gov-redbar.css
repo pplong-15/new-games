@@ -1,7 +1,4 @@
-/* gov-redbar
- * 记忆 2005–2014 红头信息站。不要国徽、机关全称或真实区划。
- * 宋体 12px，链 #00e，双栏用 table 50%，禁止 CSS Grid / flex。
- */
+/* 牌位勘误 · 殡葬公示红头。金线红头公文纸，不是晚报热榜，无国徽。 */
 html.skin-gov-redbar {
   --red: #c8161d;
   --red2: #9f0a12;
@@ -51,15 +48,24 @@ html.skin-gov-redbar .red p {
 html.skin-gov-redbar .links {
   background: var(--red2);
   color: #fff;
-  text-align: center;
-  height: 28px;
+  min-height: 28px;
   line-height: 28px;
+  text-align: center;
   overflow: hidden;
 }
 html.skin-gov-redbar .links a {
+  display: inline-block;
   color: #fff;
   margin: 0 12px;
   text-decoration: none;
+  min-height: 28px;
+  line-height: 28px;
+}
+@media (pointer: coarse) {
+  html.skin-gov-redbar .links a {
+    min-height: 44px;
+    line-height: 44px;
+  }
 }
 html.skin-gov-redbar .links a:hover { text-decoration: underline; color: #fff; }
 html.skin-gov-redbar .wrap {
@@ -67,6 +73,7 @@ html.skin-gov-redbar .wrap {
   margin: 8px auto;
   background: #fff;
   border: 1px solid #ddd;
+  box-shadow: inset 0 8px 0 #c8161d;
 }
 html.skin-gov-redbar .wrap table {
   width: 100%;
@@ -93,11 +100,15 @@ html.skin-gov-redbar ol {
   padding-left: 22px;
 }
 html.skin-gov-redbar .box li {
-  height: 26px;
+  min-height: 26px;
   line-height: 26px;
   overflow: hidden;
   border-bottom: 1px dashed #e5e5e5;
   list-style: decimal;
+}
+html.skin-gov-redbar .box a {
+  display: inline-block;
+  min-height: 26px;
 }
 html.skin-gov-redbar .date {
   color: #888;
@@ -111,4 +122,69 @@ html.skin-gov-redbar .ft {
   font-size: 12px;
   clear: both;
   border-top: 1px solid #eee;
+}
+html.skin-gov-redbar a[href="javascript:void(0)"] {
+  text-decoration: line-through;
+  cursor: not-allowed;
+  color: #555;
+  border-bottom: 1px dashed #666;
+}
+html.skin-gov-redbar :focus { outline: none; }
+html.skin-gov-redbar :focus-visible {
+  outline: 3px dotted #111;
+  outline-offset: 2px;
+}
+@media (max-width: 800px) {
+  html.skin-gov-redbar .wrap {
+    width: auto;
+    max-width: 100%;
+    margin: 8px;
+  }
+  html.skin-gov-redbar .wrap table {
+    width: 100%;
+    table-layout: auto;
+  }
+  html.skin-gov-redbar .box {
+    display: block;
+    width: auto;
+    box-sizing: border-box;
+  }
+  html.skin-gov-redbar .box li {
+    height: auto;
+    line-height: 1.6;
+    overflow: visible;
+    white-space: normal;
+  }
+  html.skin-gov-redbar .box a {
+    min-height: 44px;
+    line-height: 1.4;
+    padding: 8px 0;
+  }
+  html.skin-gov-redbar .date {
+    float: none;
+    display: inline;
+    margin-left: 6px;
+  }
+  html.skin-gov-redbar .red h1 {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+  html.skin-gov-redbar .links {
+    height: auto;
+    line-height: 1.8;
+    white-space: normal;
+    overflow: visible;
+  }
+  html.skin-gov-redbar .links a {
+    min-height: 44px;
+    line-height: 44px;
+  }
+  html.skin-gov-redbar table th,
+  html.skin-gov-redbar table td {
+    word-break: break-word;
+    white-space: normal;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html.skin-gov-redbar * { animation: none !important; transition: none !important; }
 }

@@ -1,0 +1,698 @@
+{
+  "zh-shop-1280": [
+    {
+      "tag": "INPUT",
+      "id": "search-input",
+      "href": "",
+      "text": "关键词",
+      "w": 250,
+      "h": 39
+    },
+    {
+      "tag": "BUTTON",
+      "id": "",
+      "href": "",
+      "text": "检索",
+      "w": 59,
+      "h": 39
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "index.html",
+      "text": "首页",
+      "w": 68,
+      "h": 56
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "ticket.html",
+      "text": "购票",
+      "w": 68,
+      "h": 56
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "heritage.html",
+      "text": "夜戏",
+      "w": 68,
+      "h": 56
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "traffic.html",
+      "text": "交通住宿",
+      "w": 100,
+      "h": 56
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "guestbook.html",
+      "text": "游客留言",
+      "w": 100,
+      "h": 56
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "javascript:void(0)",
+      "text": "退票办理",
+      "w": 100,
+      "h": 56
+    }
+  ],
+  "zh-shop-320": [
+    {
+      "tag": "INPUT",
+      "id": "search-input",
+      "href": "",
+      "text": "关键词",
+      "w": 238,
+      "h": 58
+    },
+    {
+      "tag": "BUTTON",
+      "id": "",
+      "href": "",
+      "text": "检索",
+      "w": 57,
+      "h": 58
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "index.html",
+      "text": "首页",
+      "w": 52,
+      "h": 56
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "ticket.html",
+      "text": "购票",
+      "w": 52,
+      "h": 56
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "heritage.html",
+      "text": "夜戏",
+      "w": 52,
+      "h": 56
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "traffic.html",
+      "text": "交通住宿",
+      "w": 52,
+      "h": 56
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "guestbook.html",
+      "text": "游客留言",
+      "w": 52,
+      "h": 56
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "javascript:void(0)",
+      "text": "退票办理",
+      "w": 52,
+      "h": 56
+    }
+  ],
+  "zh-shop-390": [
+    {
+      "tag": "INPUT",
+      "id": "search-input",
+      "href": "",
+      "text": "关键词",
+      "w": 238,
+      "h": 58
+    },
+    {
+      "tag": "BUTTON",
+      "id": "",
+      "href": "",
+      "text": "检索",
+      "w": 57,
+      "h": 58
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "index.html",
+      "text": "首页",
+      "w": 52,
+      "h": 56
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "ticket.html",
+      "text": "购票",
+      "w": 52,
+      "h": 56
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "heritage.html",
+      "text": "夜戏",
+      "w": 52,
+      "h": 56
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "traffic.html",
+      "text": "交通住宿",
+      "w": 52,
+      "h": 56
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "guestbook.html",
+      "text": "游客留言",
+      "w": 52,
+      "h": 56
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "javascript:void(0)",
+      "text": "退票办理",
+      "w": 52,
+      "h": 56
+    }
+  ],
+  "zh-forum-390": [
+    {
+      "tag": "INPUT",
+      "id": "search-input",
+      "href": "",
+      "text": "关键词",
+      "w": 158,
+      "h": 22
+    },
+    {
+      "tag": "BUTTON",
+      "id": "",
+      "href": "",
+      "text": "检索",
+      "w": 46,
+      "h": 22
+    }
+  ],
+  "zh-troupe-320": [
+    {
+      "tag": "INPUT",
+      "id": "search-input",
+      "href": "",
+      "text": "关键词",
+      "w": 138,
+      "h": 22
+    },
+    {
+      "tag": "BUTTON",
+      "id": "",
+      "href": "",
+      "text": "检索",
+      "w": 42,
+      "h": 22
+    }
+  ],
+  "zh-login-1280": [
+    {
+      "tag": "A",
+      "id": "",
+      "href": "../pages/login.html",
+      "text": "查询",
+      "w": 52,
+      "h": 32
+    },
+    {
+      "tag": "INPUT",
+      "id": "search-input",
+      "href": "",
+      "text": "关键词",
+      "w": 167,
+      "h": 31
+    },
+    {
+      "tag": "BUTTON",
+      "id": "",
+      "href": "",
+      "text": "检索",
+      "w": 51,
+      "h": 31
+    },
+    {
+      "tag": "INPUT",
+      "id": "pw",
+      "href": "",
+      "text": "",
+      "w": 153,
+      "h": 21
+    },
+    {
+      "tag": "BUTTON",
+      "id": "login-go",
+      "href": "",
+      "text": "查询",
+      "w": 52,
+      "h": 32
+    }
+  ],
+  "zh-ending-1280": [
+    {
+      "tag": "BUTTON",
+      "id": "end-appeal",
+      "href": "",
+      "text": "按订单申诉退票",
+      "w": 420,
+      "h": 40
+    },
+    {
+      "tag": "BUTTON",
+      "id": "end-strike",
+      "href": "",
+      "text": "三本账对上，划掉外地号",
+      "w": 420,
+      "h": 40
+    },
+    {
+      "tag": "BUTTON",
+      "id": "end-enter",
+      "href": "",
+      "text": "按票入场，去东七排",
+      "w": 420,
+      "h": 40
+    },
+    {
+      "tag": "BUTTON",
+      "id": "end-day",
+      "href": "",
+      "text": "申请改挂白戏",
+      "w": 420,
+      "h": 40
+    }
+  ],
+  "zh-intro-1280": [
+    {
+      "tag": "A",
+      "id": "",
+      "href": "index.html",
+      "text": "打开购票页",
+      "w": 112,
+      "h": 38
+    },
+    {
+      "tag": "BUTTON",
+      "id": "wipe",
+      "href": "",
+      "text": "清本机记录",
+      "w": 114,
+      "h": 40
+    }
+  ],
+  "zh-zhidao-390": [
+    {
+      "tag": "INPUT",
+      "id": "search-input",
+      "href": "",
+      "text": "关键词",
+      "w": 290,
+      "h": 24
+    },
+    {
+      "tag": "BUTTON",
+      "id": "",
+      "href": "",
+      "text": "检索",
+      "w": 50,
+      "h": 24
+    }
+  ],
+  "zh-search-miss": [],
+  "zh-forbidden": [],
+  "en-shop-1280": [
+    {
+      "tag": "INPUT",
+      "id": "search-input",
+      "href": "",
+      "text": "keyword",
+      "w": 250,
+      "h": 37
+    },
+    {
+      "tag": "BUTTON",
+      "id": "",
+      "href": "",
+      "text": "Search",
+      "w": 74,
+      "h": 37
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "index.html",
+      "text": "Home",
+      "w": 81,
+      "h": 56
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "ticket.html",
+      "text": "Tickets",
+      "w": 91,
+      "h": 56
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "heritage.html",
+      "text": "NightPlay",
+      "w": 109,
+      "h": 56
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "traffic.html",
+      "text": "Traffic & lodging",
+      "w": 164,
+      "h": 56
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "guestbook.html",
+      "text": "Visitor comments",
+      "w": 170,
+      "h": 56
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "javascript:void(0)",
+      "text": "Refund desk",
+      "w": 132,
+      "h": 56
+    }
+  ],
+  "en-shop-320": [
+    {
+      "tag": "INPUT",
+      "id": "search-input",
+      "href": "",
+      "text": "keyword",
+      "w": 250,
+      "h": 37
+    },
+    {
+      "tag": "BUTTON",
+      "id": "",
+      "href": "",
+      "text": "Search",
+      "w": 74,
+      "h": 37
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "index.html",
+      "text": "Home",
+      "w": 81,
+      "h": 56
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "ticket.html",
+      "text": "Tickets",
+      "w": 91,
+      "h": 56
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "heritage.html",
+      "text": "NightPlay",
+      "w": 109,
+      "h": 56
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "traffic.html",
+      "text": "Traffic & lodging",
+      "w": 92,
+      "h": 56
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "guestbook.html",
+      "text": "Visitor comments",
+      "w": 115,
+      "h": 56
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "javascript:void(0)",
+      "text": "Refund desk",
+      "w": 91,
+      "h": 56
+    }
+  ],
+  "en-shop-390": [
+    {
+      "tag": "INPUT",
+      "id": "search-input",
+      "href": "",
+      "text": "keyword",
+      "w": 250,
+      "h": 37
+    },
+    {
+      "tag": "BUTTON",
+      "id": "",
+      "href": "",
+      "text": "Search",
+      "w": 74,
+      "h": 37
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "index.html",
+      "text": "Home",
+      "w": 81,
+      "h": 56
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "ticket.html",
+      "text": "Tickets",
+      "w": 91,
+      "h": 56
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "heritage.html",
+      "text": "NightPlay",
+      "w": 109,
+      "h": 56
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "traffic.html",
+      "text": "Traffic & lodging",
+      "w": 92,
+      "h": 56
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "guestbook.html",
+      "text": "Visitor comments",
+      "w": 115,
+      "h": 56
+    },
+    {
+      "tag": "A",
+      "id": "",
+      "href": "javascript:void(0)",
+      "text": "Refund desk",
+      "w": 91,
+      "h": 56
+    }
+  ],
+  "en-forum-390": [
+    {
+      "tag": "INPUT",
+      "id": "search-input",
+      "href": "",
+      "text": "keyword",
+      "w": 158,
+      "h": 22
+    },
+    {
+      "tag": "BUTTON",
+      "id": "",
+      "href": "",
+      "text": "Search",
+      "w": 58,
+      "h": 22
+    }
+  ],
+  "en-troupe-320": [
+    {
+      "tag": "INPUT",
+      "id": "search-input",
+      "href": "",
+      "text": "keyword",
+      "w": 138,
+      "h": 22
+    },
+    {
+      "tag": "BUTTON",
+      "id": "",
+      "href": "",
+      "text": "Search",
+      "w": 51,
+      "h": 22
+    }
+  ],
+  "en-login-1280": [
+    {
+      "tag": "A",
+      "id": "",
+      "href": "../pages/login.html",
+      "text": "Lookup",
+      "w": 71,
+      "h": 32
+    },
+    {
+      "tag": "INPUT",
+      "id": "search-input",
+      "href": "",
+      "text": "keyword",
+      "w": 167,
+      "h": 29
+    },
+    {
+      "tag": "BUTTON",
+      "id": "",
+      "href": "",
+      "text": "Search",
+      "w": 66,
+      "h": 29
+    },
+    {
+      "tag": "INPUT",
+      "id": "pw",
+      "href": "",
+      "text": "",
+      "w": 153,
+      "h": 21
+    },
+    {
+      "tag": "BUTTON",
+      "id": "login-go",
+      "href": "",
+      "text": "Lookup",
+      "w": 69,
+      "h": 29
+    }
+  ],
+  "en-ending-1280": [
+    {
+      "tag": "BUTTON",
+      "id": "end-appeal",
+      "href": "",
+      "text": "Appeal a refund from the order",
+      "w": 420,
+      "h": 40
+    },
+    {
+      "tag": "BUTTON",
+      "id": "end-strike",
+      "href": "",
+      "text": "Match three books, strike the out-of",
+      "w": 420,
+      "h": 40
+    },
+    {
+      "tag": "BUTTON",
+      "id": "end-enter",
+      "href": "",
+      "text": "Enter on the ticket, go to East Row ",
+      "w": 420,
+      "h": 40
+    },
+    {
+      "tag": "BUTTON",
+      "id": "end-day",
+      "href": "",
+      "text": "Apply to refile as WhitePlay",
+      "w": 420,
+      "h": 40
+    }
+  ],
+  "en-intro-1280": [
+    {
+      "tag": "A",
+      "id": "",
+      "href": "index.html",
+      "text": "Open ticket page",
+      "w": 160,
+      "h": 38
+    },
+    {
+      "tag": "BUTTON",
+      "id": "wipe",
+      "href": "",
+      "text": "Clear this machine's record",
+      "w": 238,
+      "h": 40
+    }
+  ],
+  "en-zhidao-390": [
+    {
+      "tag": "INPUT",
+      "id": "search-input",
+      "href": "",
+      "text": "keyword",
+      "w": 290,
+      "h": 24
+    },
+    {
+      "tag": "BUTTON",
+      "id": "",
+      "href": "",
+      "text": "Search",
+      "w": 65,
+      "h": 24
+    }
+  ],
+  "en-search-miss": [],
+  "en-forbidden": []
+}

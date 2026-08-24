@@ -1,16 +1,19 @@
 /* archive-simsun：内部卷宗。登山敬献记录层。 */
 html.skin-archive-simsun body {
   margin: 0;
-  background: #f7f7f7;
+  background:
+    repeating-linear-gradient(90deg, #d9c7a2 0 1px, transparent 1px 28px),
+    #e8dcc4;
   color: #333;
   font: 16px/1.8 "SimSun", "Songti SC", serif;
 }
 html.skin-archive-simsun .record {
   width: min(800px, 92%);
   margin: 40px auto;
-  background: #fff;
-  border: 1px solid #ddd;
+  background: linear-gradient(#fff8e8, #f3e6c8);
+  border: 1px solid #c4a574;
   padding: 40px 48px;
+  box-shadow: 3px 4px 0 #cbb896;
 }
 html.skin-archive-simsun h1 {
   text-align: center;
@@ -48,4 +51,9 @@ html.skin-archive-simsun .stamp {
   display: inline-block;
   padding: 2px 8px;
   transform: rotate(-8deg);
+  letter-spacing: 0.2em;
+  font-weight: 700;
+}
+@media (prefers-reduced-motion: reduce) {
+  html.skin-archive-simsun .stamp { transform: none; }
 }

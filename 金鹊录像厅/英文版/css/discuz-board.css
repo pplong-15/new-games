@@ -19,6 +19,9 @@ html.skin-discuz-board .hd {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-height: 52px;
 }
 html.skin-discuz-board .hd a { color: #fff; text-decoration: none; margin-left: 12px; }
 html.skin-discuz-board .nv {

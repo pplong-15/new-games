@@ -1,4 +1,4 @@
-/* 本局附加：三扇门、钟、白板。不改各皮栏宽与顶色。 */
+/* 本局附加：三户上限、已开、采信、交班留存、四栏备注。不改各皮栏宽与顶色。 */
 .sm-doors { display: table; width: 100%; border-collapse: separate; border-spacing: 8px; margin: 12px 0; }
 .sm-doors .door {
   display: table-cell;
@@ -9,13 +9,48 @@
   padding: 10px;
   text-align: left;
 }
-.sm-doors .door.hot { border-color: #a33; background: #fff4e8; }
-.sm-doors .door a { color: #00e; font-weight: 700; }
+.sm-doors .door.hot {
+  border-width: 4px;
+  border-style: solid;
+  outline: 2px dotted #7a2a12;
+  outline-offset: 2px;
+  background: #fff4e8;
+  box-shadow: inset 0 0 0 1px #7a2a12;
+}
+.sm-doors .door a {
+  color: #00e;
+  font-weight: 700;
+  display: inline-block;
+  min-height: 44px;
+  min-width: 44px;
+  line-height: 44px;
+  padding: 0 14px;
+  border: 2px solid #00e;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: #fff;
+}
 .sm-clock, .sm-board {
-  border: 1px dashed #666;
+  border: 2px dashed #666;
   padding: 8px 10px;
   margin: 10px 0;
   background: #fafafa;
+}
+.sm-board #seenbox,
+.sm-board #seebox {
+  border-left: 6px double #888;
+  background: repeating-linear-gradient(0deg, #f3f1ea, #f3f1ea 12px, #eceadf 12px, #eceadf 24px);
+  padding: 8px 10px;
+  min-height: 44px;
+  font-style: italic;
+}
+.sm-board #verbox {
+  border-left: 8px solid #135;
+  background: #fff;
+  padding: 8px 10px;
+  min-height: 44px;
+  font-weight: 700;
+  box-shadow: inset 0 0 0 1px #135;
 }
 .sm-clock img, .sm-board img, .sm-hero, .doc-img {
   max-width: 100%;
@@ -23,47 +58,194 @@
   display: block;
   margin: 8px 0;
 }
-.sm-mini { font-size: 13px; color: #555; margin: 8px 0; }
-.sm-btn {
+/* 三户名额：印位，不是进度条 */
+.sm-mini {
+  font-size: 13px;
+  color: #123;
+  margin: 8px 0;
+  border: 2px solid #135;
+  background: repeating-linear-gradient(-45deg, #f7feff, #f7feff 8px, #e8f3f6 8px, #e8f3f6 16px);
+  padding: 8px 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+.sm-btn,
+a.sm-btn,
+button.sm-btn {
   display: inline-block;
   background: #222;
   color: #fff;
-  border: 0;
-  padding: 6px 12px;
+  border: 2px solid #111;
+  padding: 10px 16px;
   margin: 6px 6px 6px 0;
   cursor: pointer;
   text-decoration: none;
   font-size: 14px;
+  min-height: 44px;
+  min-width: 44px;
+  line-height: 1.2;
+  box-sizing: border-box;
+  vertical-align: middle;
+  border-radius: 0;
 }
-.sm-btn[disabled] { background: #888; cursor: default; }
-.sm-warn { color: #a30; }
-.sm-ok { color: #163; }
+.sm-btn[disabled],
+button.sm-btn[disabled] {
+  background: #ddd;
+  color: #555;
+  border-style: dashed;
+  cursor: default;
+  text-decoration: line-through;
+}
+.sm-btn:focus-visible,
+a.sm-btn:focus-visible,
+button.sm-btn:focus-visible,
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+.ghost-btn:focus-visible,
+.enter-link:focus-visible,
+.boot-actions a:focus-visible,
+.door-list a:focus-visible,
+.sm-doors .door a:focus-visible {
+  outline: 3px dotted #111;
+  outline-offset: 3px;
+}
+.sm-warn {
+  color: #7a2a12;
+  border-left: 6px dashed #a30;
+  padding: 6px 8px 6px 10px;
+  font-style: italic;
+  background: #fff8f2;
+}
+.sm-ok {
+  color: #163;
+  border-left: 6px solid #163;
+  padding: 6px 8px 6px 10px;
+  font-weight: 700;
+  background: #f3f8f3;
+}
 .sm-grid { display: table; width: 100%; }
 .sm-grid .c { display: table-cell; width: 50%; vertical-align: top; padding-right: 8px; }
-.closed-box { border: 1px solid #999; padding: 16px; background: #eee; }
+.closed-box {
+  border: 3px double #666;
+  padding: 16px;
+  background: repeating-linear-gradient(45deg, #eee, #eee 8px, #e4e4e4 8px, #e4e4e4 16px);
+}
+
 html.skin-service-cyan-desk .door-list a {
   display: block;
-  border: 1px solid #9ad;
-  padding: 8px;
+  border: 2px solid #135;
+  padding: 12px 12px 12px 40px;
   margin: 6px 0;
   background: #f7feff;
   text-decoration: none;
   color: #135;
+  min-height: 44px;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 0;
 }
-html.skin-service-cyan-desk .door-list a.used { background: #e8f0e8; }
-html.skin-service-cyan-desk .door-list a.locked { background: #f0f0f0; color: #888; }
+html.skin-service-cyan-desk .door-list a::before {
+  content: "□";
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  font-size: 16px;
+  line-height: 1;
+}
+html.skin-service-cyan-desk .door-list a.used {
+  background: repeating-linear-gradient(0deg, #e8f0e8, #e8f0e8 10px, #dce8dc 10px, #dce8dc 20px);
+  border-width: 3px;
+  border-style: solid;
+  box-shadow: inset 8px 0 0 #135;
+  font-weight: 700;
+}
+html.skin-service-cyan-desk .door-list a.used::before { content: "▣"; }
+html.skin-service-cyan-desk .door-list a.locked {
+  background: repeating-linear-gradient(45deg, #f0f0f0, #f0f0f0 6px, #e4e4e4 6px, #e4e4e4 12px);
+  color: #555;
+  border-style: dashed;
+  text-decoration: line-through;
+}
+html.skin-service-cyan-desk .door-list a.locked::before { content: "✕"; }
+
 .pad { padding: 12px 16px; max-width: 960px; margin: 0 auto; }
-.note-table th { text-align: left; width: 28%; }
-.note-table td, .note-table th { border-bottom: 1px solid #ddd; padding: 6px; }
+.note-table { border-collapse: collapse; width: 100%; background: #fffef8; }
+.note-table th {
+  text-align: left;
+  width: 28%;
+  vertical-align: top;
+  font-weight: 700;
+  background: #f4efe4;
+  border-right: 4px solid #135;
+}
+.note-table td, .note-table th { border-bottom: 2px solid #c9c2b2; padding: 8px; }
+.note-table tr:nth-child(1) th::before { content: "1 · "; }
+.note-table tr:nth-child(2) th::before { content: "2 · "; }
+.note-table tr:nth-child(3) th::before { content: "3 · "; }
+.note-table tr:nth-child(4) th::before { content: "4 · "; }
+.note-table label {
+  display: block;
+  min-height: 44px;
+  line-height: 1.3;
+  padding: 10px 8px 10px 8px;
+  border: 1px dotted #bbb;
+  margin: 4px 0;
+  box-sizing: border-box;
+}
+.note-table label:has(input:checked) {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #135;
+  box-shadow: inset 6px 0 0 #135;
+  font-weight: 700;
+  background: #eef6f2;
+}
+.note-table input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+html.skin-service-cyan-desk .ghost-btn {
+  min-height: 44px;
+  min-width: 44px;
+  line-height: 24px;
+  padding: 10px 14px;
+  box-sizing: border-box;
+  display: inline-block;
+  border-radius: 0;
+}
+html.skin-service-cyan-desk .tabs a {
+  min-height: 44px;
+  line-height: 24px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 0;
+}
+html.skin-intro-manual .boot-actions a,
+html.skin-intro-manual .enter-link,
+html.skin-intro-manual .ghost {
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-block;
+  padding: 10px 16px;
+  box-sizing: border-box;
+  border-radius: 0;
+}
 
 /* 加厚段跟各皮走，避免全站同一块现代白卡 */
 html.skin-intro-manual .pad {
   max-width: 820px;
   margin: 0 auto 20px;
-  background: #fff;
+  background: #f7f1de;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  box-shadow: none;
+  border: 1px solid #333;
+  outline: 4px solid #d8c9a0;
+  outline-offset: -8px;
   font: 16px/1.75 "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 html.skin-service-cyan-desk .pad {
@@ -72,12 +254,14 @@ html.skin-service-cyan-desk .pad {
   background: #fff;
   padding: 8px 20px 24px;
   font: 14px/1.6 "Microsoft YaHei", sans-serif;
+  border-left: 6px solid #26c5e9;
 }
 html.skin-gov-redbar .pad {
   width: 1000px;
   margin: 8px auto 16px;
   background: #fff;
   border: 1px solid #ddd;
+  border-top: 6px solid #c8161d;
   padding: 8px 12px;
   font: 12px/1.8 SimSun, "Songti SC", serif;
   -webkit-box-sizing: border-box;
@@ -190,5 +374,52 @@ html.skin-shop-local-2010s .pad {
   }
   html.skin-intro-manual .pad {
     margin: 0 12px 20px;
+  }
+}
+
+@media (max-width: 390px) {
+  .sm-doors { display: block; border-spacing: 0; }
+  .sm-doors .door {
+    display: block;
+    width: auto;
+    margin: 0 0 10px;
+  }
+  .sm-grid .c {
+    display: block;
+    width: auto;
+    padding-right: 0;
+    margin-bottom: 10px;
+  }
+  .note-table, .note-table tbody, .note-table tr, .note-table th, .note-table td {
+    display: block;
+    width: auto;
+  }
+  .note-table th {
+    border-right: 0;
+    border-bottom: 0;
+    width: auto;
+  }
+  html.skin-service-cyan-desk header {
+    display: block;
+  }
+  html.skin-service-cyan-desk header > div {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 320px) {
+  .pad { padding: 8px; }
+  .sm-btn, a.sm-btn, button.sm-btn,
+  html.skin-service-cyan-desk .ghost-btn,
+  html.skin-service-cyan-desk .door-list a {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
   }
 }
