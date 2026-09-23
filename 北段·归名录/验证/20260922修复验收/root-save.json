@@ -1,0 +1,49 @@
+{
+  "checkedAt": "2026-09-22T08:45:05.443Z",
+  "results": [
+    {
+      "file": "work/beiduan-v2/validation/public-desktop-export.json",
+      "version": 5,
+      "completed": 1,
+      "valid": true,
+      "inputUnchanged": true,
+      "status": "PASS"
+    },
+    {
+      "file": "work/beiduan-v2/validation/ui-fixtures/c2s01-map.json",
+      "version": 5,
+      "completed": 18,
+      "valid": true,
+      "inputUnchanged": true,
+      "status": "PASS"
+    },
+    {
+      "file": "work/beiduan-v2/validation/ui-fixtures/c6s18-map.json",
+      "version": 5,
+      "completed": 107,
+      "valid": true,
+      "inputUnchanged": true,
+      "status": "PASS"
+    },
+    {
+      "file": "work/beiduan-v1-1/validation/ui-exported.json",
+      "version": 4,
+      "completed": 1,
+      "valid": true,
+      "inputUnchanged": true,
+      "status": "PASS"
+    },
+    {
+      "file": "work/beiduan-v1-1/cards-validation/ending.json",
+      "version": 4,
+      "completed": 108,
+      "valid": true,
+      "inputUnchanged": true,
+      "status": "PASS"
+    },
+    {
+      "file": "New version fresh battle round trip",
+      "status": "PASS"
+    }
+  ]
+}

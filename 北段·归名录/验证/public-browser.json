@@ -1,0 +1,42 @@
+{
+  "url": "http://101.43.115.235/playtest/beiduan/",
+  "status": "PASS",
+  "checkedAt": "2026-09-23T01:11:21.327229+00:00",
+  "checks": [
+    {
+      "viewport": "desktop",
+      "status": "PASS",
+      "meta": {
+        "cards": 764,
+        "encounters": 108,
+        "version": 5
+      },
+      "saveReload": true,
+      "invalidImportPreservedSave": true,
+      "V4FileInputImport": true,
+      "exportMatches": true,
+      "handAndMaterials": true,
+      "pageErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "viewport": "mobile",
+      "status": "PASS",
+      "meta": {
+        "cards": 764,
+        "encounters": 108,
+        "version": 5
+      },
+      "saveReload": true,
+      "invalidImportPreservedSave": true,
+      "V4FileInputImport": true,
+      "exportMatches": true,
+      "handAndMaterials": true,
+      "pageErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    }
+  ],
+  "scope": "Fresh desktop and mobile-size Chromium; real UI and file inputs. Not real-phone or human-player acceptance."
+}

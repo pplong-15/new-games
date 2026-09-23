@@ -1,0 +1,405 @@
+[
+  {
+    "id": "ritual01",
+    "name": "净坛",
+    "cost": 1,
+    "type": "防护技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 0,
+    "sourceCase": 0,
+    "source": "北段V2 · 科仪法坛 · 随身牌册",
+    "sourceScene": "c1s01",
+    "art": "salt",
+    "artExt": "webp",
+    "designArtKey": "action-recover",
+    "text": "消除1疲劳；挡住散页；专注+1。",
+    "shortText": "消除1疲劳；挡住散页；专注+1。",
+    "conditions": "",
+    "omen": "坛不清，神不降。",
+    "archetype": "科仪法坛",
+    "buildRole": "消除1疲劳；挡住散页；专注+1",
+    "designId": "BDV2-RIT01",
+    "designEffect": "消除1疲劳；挡住散页；专注+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "calm",
+          "n": 1
+        },
+        {
+          "op": "cover",
+          "value": "scatter"
+        },
+        {
+          "op": "focus",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "消除1疲劳；挡住散页；专注+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "ritual02",
+    "name": "掐诀",
+    "cost": 0,
+    "type": "调度技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 0,
+    "sourceCase": 0,
+    "source": "北段V2 · 科仪法坛 · 随身牌册",
+    "sourceScene": "c1s01",
+    "art": "tool-notebook",
+    "artExt": "webp",
+    "designArtKey": "action-plan",
+    "text": "迅手（每轮同名限1）。下轮费用+1。",
+    "shortText": "迅手（每轮同名限1）。下轮费用+1。",
+    "conditions": "",
+    "omen": "诀未提起，下一法不发。",
+    "archetype": "科仪法坛",
+    "buildRole": "下轮费用+1",
+    "designId": "BDV2-RIT02",
+    "designEffect": "迅手（每轮同名限1）。下轮费用+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "nextEnergy",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "下轮费用+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "ritual03",
+    "name": "召将",
+    "cost": 1,
+    "type": "调度技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 0,
+    "sourceCase": 0,
+    "source": "北段V2 · 科仪法坛 · 随身牌册",
+    "sourceScene": "c1s01",
+    "art": "v2-action-guard",
+    "artExt": "webp",
+    "designArtKey": "action-guard",
+    "text": "抽取1张人物；若有专注，护身+2。",
+    "shortText": "抽取1张人物；若有专注，护身+2。",
+    "conditions": "",
+    "omen": "坛已净，将才降。",
+    "archetype": "科仪法坛",
+    "buildRole": "抽取1张人物；若有专注，护身+2",
+    "designId": "BDV2-RIT03",
+    "designEffect": "抽取1张人物；若有专注，护身+2。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "drawMode",
+          "value": "person"
+        },
+        {
+          "op": "if",
+          "condition": "focus1",
+          "effects": [
+            {
+              "op": "shield",
+              "n": 2
+            }
+          ]
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "抽取1张人物；若有专注，护身+2。",
+      "intent": null
+    }
+  },
+  {
+    "id": "ritual04",
+    "name": "上表",
+    "cost": 1,
+    "type": "调度技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 0,
+    "sourceCase": 0,
+    "source": "北段V2 · 科仪法坛 · 随身牌册",
+    "sourceScene": "c1s01",
+    "art": "tool-pageclip",
+    "artExt": "webp",
+    "designArtKey": "action-plan",
+    "text": "下幕准备+1；下轮费用+1；若专注至少2，抽1牌。",
+    "shortText": "下幕准备+1；下轮费用+1；若专注至少2，抽1牌。",
+    "conditions": "",
+    "omen": "章奏要走文书，不能空口。",
+    "archetype": "科仪法坛",
+    "buildRole": "下幕准备+1；下轮费用+1；若专注至少2，抽1牌",
+    "designId": "BDV2-RIT04",
+    "designEffect": "下幕准备+1；下轮费用+1；若专注至少2，抽1牌。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "nextProgress",
+          "n": 1
+        },
+        {
+          "op": "nextEnergy",
+          "n": 1
+        },
+        {
+          "op": "if",
+          "condition": "focus2",
+          "effects": [
+            {
+              "op": "draw",
+              "n": 1
+            }
+          ]
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "下幕准备+1；下轮费用+1；若专注至少2，抽1牌。",
+      "intent": null
+    }
+  },
+  {
+    "id": "ritual05",
+    "name": "送神",
+    "cost": 1,
+    "type": "调查技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 0,
+    "sourceCase": 0,
+    "source": "北段V2 · 科仪法坛 · 随身牌册",
+    "sourceScene": "c1s01",
+    "art": "lantern",
+    "artExt": "webp",
+    "designArtKey": "action-recover",
+    "text": "调查+2；疲劳+1；若有信任，回复2心神。",
+    "shortText": "调查+2；疲劳+1；若有信任，回复2心神。",
+    "conditions": "",
+    "omen": "请得来，也要送得走。",
+    "archetype": "科仪法坛",
+    "buildRole": "调查+2；疲劳+1；若有信任，回复2心神",
+    "designId": "BDV2-RIT05",
+    "designEffect": "调查+2；疲劳+1；若有信任，回复2心神。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "insight",
+          "n": 2
+        },
+        {
+          "op": "fatigue",
+          "n": 1
+        },
+        {
+          "op": "if",
+          "condition": "resolve1",
+          "effects": [
+            {
+              "op": "heal",
+              "n": 2
+            }
+          ]
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "调查+2；疲劳+1；若有信任，回复2心神。",
+      "intent": null
+    }
+  },
+  {
+    "id": "ritual06",
+    "name": "启坛",
+    "cost": 1,
+    "type": "调度技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 0,
+    "sourceCase": 0,
+    "source": "北段V2 · 科仪法坛 · 随身牌册",
+    "sourceScene": "c1s01",
+    "art": "card-new21",
+    "artExt": "webp",
+    "designArtKey": "setup-watch",
+    "text": "专注+1；信任+1。",
+    "shortText": "专注+1；信任+1。",
+    "conditions": "",
+    "omen": "坛门一开，才算法事起头。",
+    "archetype": "科仪法坛",
+    "buildRole": "专注+1；信任+1",
+    "designId": "BDV2-RIT06",
+    "designEffect": "专注+1；信任+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "focus",
+          "n": 1
+        },
+        {
+          "op": "resolve",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "专注+1；信任+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "ritual07",
+    "name": "青词",
+    "cost": 0,
+    "type": "调查技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 0,
+    "sourceCase": 0,
+    "source": "北段V2 · 科仪法坛 · 随身牌册",
+    "sourceScene": "c1s01",
+    "art": "v2-prop-pen",
+    "artExt": "webp",
+    "designArtKey": "action-plan",
+    "text": "迅手（每轮同名限1）。下幕准备+1。",
+    "shortText": "迅手（每轮同名限1）。下幕准备+1。",
+    "conditions": "",
+    "omen": "青词是表文，不是空话。",
+    "archetype": "科仪法坛",
+    "buildRole": "下幕准备+1",
+    "designId": "BDV2-RIT07",
+    "designEffect": "迅手（每轮同名限1）。下幕准备+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "nextProgress",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "下幕准备+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "ritual08",
+    "name": "急急如律令",
+    "cost": 1,
+    "type": "压制技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 0,
+    "sourceCase": 0,
+    "source": "北段V2 · 科仪法坛 · 随身牌册",
+    "sourceScene": "c1s01",
+    "art": "v2-action-strike",
+    "artExt": "webp",
+    "designArtKey": "action-strike",
+    "text": "打断目标本轮攻击。",
+    "shortText": "打断目标本轮攻击。",
+    "conditions": "",
+    "omen": "令出如律，不得停留。",
+    "archetype": "科仪法坛",
+    "buildRole": "打断目标本轮攻击",
+    "designId": "BDV2-RIT08",
+    "designEffect": "打断目标本轮攻击。",
+    "target": "enemy",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "stun",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "打断目标本轮攻击。",
+      "intent": null
+    }
+  }
+]

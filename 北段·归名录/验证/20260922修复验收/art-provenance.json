@@ -1,0 +1,68 @@
+[
+  {
+    "sheet": "v3-ritual-props-a",
+    "original": "/Users/Zhuanz/.codex/generated_images/01a0c7e7-df6d-7532-8722-b1467ff6d17e/exec-ce62e308-6c69-4630-963f-c4f5fccf5782.png",
+    "asset": "/Users/Zhuanz/Desktop/北段·归名录V2/游戏/assets/v3-ritual-props-a.webp",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "tiles": 16,
+    "processing": "PNG to WebP format conversion only; no crop, resize or rearrangement"
+  },
+  {
+    "sheet": "v3-ritual-props-b",
+    "original": "/Users/Zhuanz/.codex/generated_images/01a0c7e7-df6d-7532-8722-b1467ff6d17e/exec-a9fd3943-4e6d-45f0-a1ec-3781163273b9.png",
+    "asset": "/Users/Zhuanz/Desktop/北段·归名录V2/游戏/assets/v3-ritual-props-b.webp",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "tiles": 16,
+    "processing": "PNG to WebP format conversion only; no crop, resize or rearrangement"
+  },
+  {
+    "sheet": "v3-ritual-actions",
+    "original": "/Users/Zhuanz/.codex/generated_images/01a0c7e7-df6d-7532-8722-b1467ff6d17e/exec-e5d66412-af66-4bd6-8086-40df664768b8.png",
+    "asset": "/Users/Zhuanz/Desktop/北段·归名录V2/游戏/assets/v3-ritual-actions.webp",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "tiles": 16,
+    "processing": "PNG to WebP format conversion only; no crop, resize or rearrangement"
+  },
+  {
+    "sheet": "v3-people-actions",
+    "original": "/Users/Zhuanz/.codex/generated_images/01a0c7e7-df6d-7532-8722-b1467ff6d17e/exec-c5332f4f-58e7-4d5d-a530-9f4173422836.png",
+    "asset": "/Users/Zhuanz/Desktop/北段·归名录V2/游戏/assets/v3-people-actions.webp",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "tiles": 4,
+    "processing": "PNG to WebP format conversion only; no crop, resize or rearrangement"
+  },
+  {
+    "sheet": "v3-ritual-corrections",
+    "original": "/Users/Zhuanz/.codex/generated_images/01a0c7e7-df6d-7532-8722-b1467ff6d17e/exec-e67e5cae-c8b7-42c4-95da-f4dc70779bee.png",
+    "asset": "/Users/Zhuanz/Desktop/北段·归名录V2/游戏/assets/v3-ritual-corrections.webp",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "tiles": 4,
+    "processing": "PNG to WebP format conversion only; no crop, resize or rearrangement"
+  },
+  {
+    "sheet": "v3-ritual-details",
+    "original": "/Users/Zhuanz/.codex/generated_images/01a0c7e7-df6d-7532-8722-b1467ff6d17e/exec-76a43a62-b8f5-42e2-a386-ed0d561e9f08.png",
+    "asset": "/Users/Zhuanz/Desktop/北段·归名录V2/游戏/assets/v3-ritual-details.webp",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "tiles": 4,
+    "processing": "PNG to WebP format conversion only; no crop, resize or rearrangement"
+  }
+]

@@ -1,0 +1,56 @@
+{
+  "scope": "Machine-checked content/runtime structure only; does not certify card design, story quality or human playability.",
+  "counts": {
+    "cards": 600,
+    "modes": {
+      "person": 24,
+      "skill": 283,
+      "response": 85,
+      "equipment": 104,
+      "setup": 104
+    },
+    "investigations": 55,
+    "investigationsByCase": [
+      11,
+      10,
+      9,
+      8,
+      10,
+      7
+    ],
+    "encounters": 108,
+    "stages": 324,
+    "engineVersion": 5
+  },
+  "checks": [
+    {
+      "name": "600 collectible cards with distinct stable identifiers",
+      "status": "PASS"
+    },
+    {
+      "name": "six full cases preserve at least 50 completed-turn stages per case",
+      "status": "PASS"
+    },
+    {
+      "name": "all card faces have a readable identity, cost and effect",
+      "status": "PASS"
+    },
+    {
+      "name": "investigation IDs and options are well formed",
+      "status": "PASS"
+    },
+    {
+      "name": "declared investigation prerequisites are earlier in the campaign",
+      "status": "PASS"
+    },
+    {
+      "name": "all six cases have substantial investigation decisions",
+      "status": "PASS"
+    },
+    {
+      "name": "fresh game and recommended starter satisfy the engine contract",
+      "status": "PASS"
+    }
+  ],
+  "failures": []
+}

@@ -1,0 +1,3787 @@
+[
+  {
+    "id": "c5x01",
+    "name": "引魂幡",
+    "cost": 1,
+    "type": "通路技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 72,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成72场后习得",
+    "sourceScene": "c5s01",
+    "art": "v2-tool-map",
+    "artExt": "webp",
+    "text": "通路+1；若有脚步，解1道束缚。",
+    "shortText": "通路+1；若有脚步，解1道束缚。",
+    "conditions": "",
+    "omen": "脚印只出不进。先核对着地的痕迹。",
+    "archetype": "归棺旧影",
+    "buildRole": "通路+1；若有脚步，解1道束缚",
+    "designId": "BDV2-C5X01",
+    "designEffect": "通路+1；若有脚步，解1道束缚。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "leverage",
+          "n": 1
+        },
+        {
+          "op": "if",
+          "condition": "route1",
+          "effects": [
+            {
+              "op": "cut",
+              "n": 1
+            }
+          ]
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "通路+1；若有脚步，解1道束缚。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x02",
+    "name": "买路钱",
+    "cost": 1,
+    "type": "通路技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 73,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成73场后习得",
+    "sourceScene": "c5s02",
+    "art": "oil",
+    "artExt": "webp",
+    "text": "通路+1；失去1心神；若有脚步，挡住下次敌袭。",
+    "shortText": "通路+1；失去1心神；若有脚步，挡住下次敌袭。",
+    "conditions": "",
+    "omen": "脚印只出不进。先核对着地的痕迹。",
+    "archetype": "归棺旧影",
+    "buildRole": "通路+1；失去1心神；若有脚步，挡住下次敌袭",
+    "designId": "BDV2-C5X02",
+    "designEffect": "通路+1；失去1心神；若有脚步，挡住下次敌袭。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "leverage",
+          "n": 1
+        },
+        {
+          "op": "hurt",
+          "n": 1
+        },
+        {
+          "op": "if",
+          "condition": "route1",
+          "effects": [
+            {
+              "op": "blockNext",
+              "n": 1
+            }
+          ]
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "通路+1；失去1心神；若有脚步，挡住下次敌袭。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x03",
+    "name": "牌位",
+    "cost": 1,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 74,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成74场后习得",
+    "sourceScene": "c5s03",
+    "art": "tool-pageclip",
+    "artExt": "webp",
+    "text": "入场：信任+1。每轮首次交涉行动后：交涉+1；挡住插话。共3次。",
+    "shortText": "入场：信任+1。每轮首次交涉行动后：交涉+1；挡住插话。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "木主上的字还在。人动过没有，另记一行。",
+    "archetype": "归棺旧影",
+    "buildRole": "交涉+1；挡住插话",
+    "designId": "BDV2-C5X03",
+    "designEffect": "入场：信任+1。每轮首次交涉行动后：交涉+1；挡住插话。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "goal_courage",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "resolve",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "courage",
+          "n": 1
+        },
+        {
+          "op": "cover",
+          "value": "interrupt"
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "交涉+1；挡住插话。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x04",
+    "name": "神主",
+    "cost": 1,
+    "type": "装备工具",
+    "mode": "equipment",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 75,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成75场后习得",
+    "sourceScene": "c5s04",
+    "art": "tool-notebook",
+    "artExt": "webp",
+    "text": "入场：信任+1。每轮首次交涉行动后：调查+1；挡住插话。共4次。",
+    "shortText": "入场：信任+1。每轮首次交涉行动后：调查+1；挡住插话。共4次。",
+    "conditions": "最多3件装备",
+    "omen": "木主上的字还在。人动过没有，另记一行。",
+    "archetype": "归棺旧影",
+    "buildRole": "调查+1；挡住插话",
+    "designId": "BDV2-C5X04",
+    "designEffect": "入场：信任+1。每轮首次交涉行动后：调查+1；挡住插话。共4次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "equipment",
+      "trigger": "goal_courage",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "resolve",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "insight",
+          "n": 1
+        },
+        {
+          "op": "cover",
+          "value": "interrupt"
+        }
+      ],
+      "charges": 4,
+      "activateCost": 0,
+      "effectText": "调查+1；挡住插话。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x05",
+    "name": "替身",
+    "cost": 2,
+    "type": "防护技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 76,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成76场后习得",
+    "sourceScene": "c5s05",
+    "art": "v2-action-guard",
+    "artExt": "webp",
+    "text": "护身+6；失去1心神。",
+    "shortText": "护身+6；失去1心神。",
+    "conditions": "",
+    "omen": "纸扎替过谁，要写在面上。洗不掉。",
+    "archetype": "归棺旧影",
+    "buildRole": "护身+6；失去1心神",
+    "designId": "BDV2-C5X05",
+    "designEffect": "护身+6；失去1心神。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "shield",
+          "n": 6
+        },
+        {
+          "op": "hurt",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "护身+6；失去1心神。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x06",
+    "name": "纸扎",
+    "cost": 1,
+    "type": "装备工具",
+    "mode": "equipment",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 77,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成77场后习得",
+    "sourceScene": "c5s06",
+    "art": "salt",
+    "artExt": "webp",
+    "text": "入场：护身+2。每轮首次失去心神后：护身+2；保留护身+1。共4次。",
+    "shortText": "入场：护身+2。每轮首次失去心神后：护身+2；保留护身+1。共4次。",
+    "conditions": "最多3件装备",
+    "omen": "纸扎替过谁，要写在面上。洗不掉。",
+    "archetype": "归棺旧影",
+    "buildRole": "护身+2；保留护身+1",
+    "designId": "BDV2-C5X06",
+    "designEffect": "入场：护身+2。每轮首次失去心神后：护身+2；保留护身+1。共4次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "equipment",
+      "trigger": "hurt",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "shield",
+          "n": 2
+        }
+      ],
+      "effects": [
+        {
+          "op": "shield",
+          "n": 2
+        },
+        {
+          "op": "retain",
+          "n": 1
+        }
+      ],
+      "charges": 4,
+      "activateCost": 0,
+      "effectText": "护身+2；保留护身+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x07",
+    "name": "头七",
+    "cost": 2,
+    "type": "调度技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 78,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成78场后习得",
+    "sourceScene": "c5s07",
+    "art": "lantern",
+    "artExt": "webp",
+    "text": "下幕准备+1；若有专注，抽1牌。",
+    "shortText": "下幕准备+1；若有专注，抽1牌。",
+    "conditions": "",
+    "omen": "仪节按次序走。先做完这一步，再问下一步。",
+    "archetype": "归棺旧影",
+    "buildRole": "下幕准备+1；若有专注，抽1牌",
+    "designId": "BDV2-C5X07",
+    "designEffect": "下幕准备+1；若有专注，抽1牌。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "nextProgress",
+          "n": 1
+        },
+        {
+          "op": "if",
+          "condition": "focus1",
+          "effects": [
+            {
+              "op": "draw",
+              "n": 1
+            }
+          ]
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "下幕准备+1；若有专注，抽1牌。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x08",
+    "name": "判官笔",
+    "cost": 1,
+    "type": "调查技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 79,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成79场后习得",
+    "sourceScene": "c5s08",
+    "art": "tool-notebook",
+    "artExt": "webp",
+    "text": "调查+1；若有专注，目标压力−1。",
+    "shortText": "调查+1；若有专注，目标压力−1。",
+    "conditions": "",
+    "omen": "木主上的字还在。人动过没有，另记一行。",
+    "archetype": "归棺旧影",
+    "buildRole": "调查+1；若有专注，目标压力−1",
+    "designId": "BDV2-C5X08",
+    "designEffect": "调查+1；若有专注，目标压力−1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "insight",
+          "n": 1
+        },
+        {
+          "op": "if",
+          "condition": "focus1",
+          "effects": [
+            {
+              "op": "weaken",
+              "n": 1
+            }
+          ]
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "调查+1；若有专注，目标压力−1。",
+      "intent": null
+    },
+    "target": "enemy"
+  },
+  {
+    "id": "c5x09",
+    "name": "勾牒",
+    "cost": 1,
+    "type": "交涉技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 80,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成80场后习得",
+    "sourceScene": "c5s09",
+    "art": "tool-pageclip",
+    "artExt": "webp",
+    "text": "交涉+1；若有信任，打断目标本轮攻击。",
+    "shortText": "交涉+1；若有信任，打断目标本轮攻击。",
+    "conditions": "",
+    "omen": "木主上的字还在。人动过没有，另记一行。",
+    "archetype": "归棺旧影",
+    "buildRole": "交涉+1；若有信任，打断目标本轮攻击",
+    "designId": "BDV2-C5X09",
+    "designEffect": "交涉+1；若有信任，打断目标本轮攻击。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "courage",
+          "n": 1
+        },
+        {
+          "op": "if",
+          "condition": "resolve1",
+          "effects": [
+            {
+              "op": "stun",
+              "n": 1
+            }
+          ]
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "交涉+1；若有信任，打断目标本轮攻击。",
+      "intent": null
+    },
+    "target": "enemy"
+  },
+  {
+    "id": "c5x10",
+    "name": "度亡",
+    "cost": 2,
+    "type": "压制技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 81,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成81场后习得",
+    "sourceScene": "c5s10",
+    "art": "v2-action-guard",
+    "artExt": "webp",
+    "text": "压制目标3；若目标已受削弱，打断目标本轮攻击。",
+    "shortText": "压制目标3；若目标已受削弱，打断目标本轮攻击。",
+    "conditions": "",
+    "omen": "仪节按次序走。先做完这一步，再问下一步。",
+    "archetype": "归棺旧影",
+    "buildRole": "压制目标3；若目标已受削弱，打断目标本轮攻击",
+    "designId": "BDV2-C5X10",
+    "designEffect": "压制目标3；若目标已受削弱，打断目标本轮攻击。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "damage",
+          "n": 3
+        },
+        {
+          "op": "if",
+          "condition": "weakened",
+          "effects": [
+            {
+              "op": "stun",
+              "n": 1
+            }
+          ]
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "压制目标3；若目标已受削弱，打断目标本轮攻击。",
+      "intent": null
+    },
+    "target": "enemy"
+  },
+  {
+    "id": "c5x11",
+    "name": "破狱",
+    "cost": 1,
+    "type": "通路技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 82,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成82场后习得",
+    "sourceScene": "c5s11",
+    "art": "tool-wedge",
+    "artExt": "webp",
+    "text": "解2道束缚。",
+    "shortText": "解2道束缚。",
+    "conditions": "",
+    "omen": "脚印只出不进。先核对着地的痕迹。",
+    "archetype": "归棺旧影",
+    "buildRole": "解2道束缚",
+    "designId": "BDV2-C5X11",
+    "designEffect": "解2道束缚。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "cut",
+          "n": 2
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "解2道束缚。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x12",
+    "name": "长明灯",
+    "cost": 1,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 83,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成83场后习得",
+    "sourceScene": "c5s12",
+    "art": "lantern",
+    "artExt": "webp",
+    "text": "入场：挡住散页。每轮首次调查行动后：调查+1；挡住散页。共3次。",
+    "shortText": "入场：挡住散页。每轮首次调查行动后：调查+1；挡住散页。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "停灵的厅里，灯只保证照到的那一侧。",
+    "archetype": "归棺旧影",
+    "buildRole": "调查+1；挡住散页",
+    "designId": "BDV2-C5X12",
+    "designEffect": "入场：挡住散页。每轮首次调查行动后：调查+1；挡住散页。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "goal_insight",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "cover",
+          "value": "scatter"
+        }
+      ],
+      "effects": [
+        {
+          "op": "insight",
+          "n": 1
+        },
+        {
+          "op": "cover",
+          "value": "scatter"
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "调查+1；挡住散页。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x13",
+    "name": "守灵",
+    "cost": 1,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 84,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成84场后习得",
+    "sourceScene": "c5s13",
+    "art": "lantern",
+    "artExt": "webp",
+    "text": "入场：护身+2。每轮首次回合末：护身+1；保留护身+1。共3次。",
+    "shortText": "入场：护身+2。每轮首次回合末：护身+1；保留护身+1。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "守到灯尽之前。照见的是谁走过。",
+    "archetype": "归棺旧影",
+    "buildRole": "护身+1；保留护身+1",
+    "designId": "BDV2-C5X13",
+    "designEffect": "入场：护身+2。每轮首次回合末：护身+1；保留护身+1。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "end",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "shield",
+          "n": 2
+        }
+      ],
+      "effects": [
+        {
+          "op": "shield",
+          "n": 1
+        },
+        {
+          "op": "retain",
+          "n": 1
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "护身+1；保留护身+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x14",
+    "name": "绕棺",
+    "cost": 1,
+    "type": "通路技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 85,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成85场后习得",
+    "sourceScene": "c5s14",
+    "art": "v2-tool-map",
+    "artExt": "webp",
+    "text": "通路+1；若有脚步，脚步+1。",
+    "shortText": "通路+1；若有脚步，脚步+1。",
+    "conditions": "",
+    "omen": "脚印只出不进。先核对着地的痕迹。",
+    "archetype": "归棺旧影",
+    "buildRole": "通路+1；若有脚步，脚步+1",
+    "designId": "BDV2-C5X14",
+    "designEffect": "通路+1；若有脚步，脚步+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "leverage",
+          "n": 1
+        },
+        {
+          "op": "if",
+          "condition": "route1",
+          "effects": [
+            {
+              "op": "route",
+              "n": 1
+            }
+          ]
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "通路+1；若有脚步，脚步+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x15",
+    "name": "喊惊",
+    "cost": 0,
+    "type": "调度技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 86,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成86场后习得",
+    "sourceScene": "c5s15",
+    "art": "oil",
+    "artExt": "webp",
+    "text": "迅手（每轮同名限1）。挡住催逼；下轮费用+1。",
+    "shortText": "迅手（每轮同名限1）。挡住催逼；下轮费用+1。",
+    "conditions": "",
+    "omen": "守到灯尽之前。照见的是谁走过。",
+    "archetype": "归棺旧影",
+    "buildRole": "挡住催逼；下轮费用+1",
+    "designId": "BDV2-C5X15",
+    "designEffect": "迅手（每轮同名限1）。挡住催逼；下轮费用+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "cover",
+          "value": "urge"
+        },
+        {
+          "op": "nextEnergy",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "挡住催逼；下轮费用+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x16",
+    "name": "灯花",
+    "cost": 0,
+    "type": "调查技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 87,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成87场后习得",
+    "sourceScene": "c5s16",
+    "art": "lantern",
+    "artExt": "webp",
+    "text": "迅手（每轮同名限1）。调查+1。",
+    "shortText": "迅手（每轮同名限1）。调查+1。",
+    "conditions": "",
+    "omen": "停灵的厅里，灯只保证照到的那一侧。",
+    "archetype": "归棺旧影",
+    "buildRole": "调查+1",
+    "designId": "BDV2-C5X16",
+    "designEffect": "迅手（每轮同名限1）。调查+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "insight",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "调查+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x17",
+    "name": "三炷香",
+    "cost": 0,
+    "type": "调度技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 88,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成88场后习得",
+    "sourceScene": "c5s17",
+    "art": "oil",
+    "artExt": "webp",
+    "text": "迅手（每轮同名限1）。专注+1。",
+    "shortText": "迅手（每轮同名限1）。专注+1。",
+    "conditions": "",
+    "omen": "仪节按次序走。先做完这一步，再问下一步。",
+    "archetype": "归棺旧影",
+    "buildRole": "专注+1",
+    "designId": "BDV2-C5X17",
+    "designEffect": "迅手（每轮同名限1）。专注+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "focus",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "专注+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x18",
+    "name": "掩镜",
+    "cost": 0,
+    "type": "防护技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 89,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成89场后习得",
+    "sourceScene": "c5s18",
+    "art": "salt",
+    "artExt": "webp",
+    "text": "迅手（每轮同名限1）。挡住反光；护身+2。",
+    "shortText": "迅手（每轮同名限1）。挡住反光；护身+2。",
+    "conditions": "",
+    "omen": "守到灯尽之前。照见的是谁走过。",
+    "archetype": "归棺旧影",
+    "buildRole": "挡住反光；护身+2",
+    "designId": "BDV2-C5X18",
+    "designEffect": "迅手（每轮同名限1）。挡住反光；护身+2。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "cover",
+          "value": "glare"
+        },
+        {
+          "op": "shield",
+          "n": 2
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "挡住反光；护身+2。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x19",
+    "name": "不应",
+    "cost": 0,
+    "type": "防护技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 72,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成72场后习得",
+    "sourceScene": "c5s01",
+    "art": "v2-action-guard",
+    "artExt": "webp",
+    "text": "迅手（每轮同名限1）。挡住催逼。",
+    "shortText": "迅手（每轮同名限1）。挡住催逼。",
+    "conditions": "",
+    "omen": "木主上的字还在。人动过没有，另记一行。",
+    "archetype": "归棺旧影",
+    "buildRole": "挡住催逼",
+    "designId": "BDV2-C5X19",
+    "designEffect": "迅手（每轮同名限1）。挡住催逼。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "cover",
+          "value": "urge"
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "挡住催逼。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x20",
+    "name": "回头",
+    "cost": 0,
+    "type": "防护技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 73,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成73场后习得",
+    "sourceScene": "c5s02",
+    "art": "v2-tool-map",
+    "artExt": "webp",
+    "text": "迅手（每轮同名限1）。挡住转移；脚步+1。",
+    "shortText": "迅手（每轮同名限1）。挡住转移；脚步+1。",
+    "conditions": "",
+    "omen": "脚印只出不进。先核对着地的痕迹。",
+    "archetype": "归棺旧影",
+    "buildRole": "挡住转移；脚步+1",
+    "designId": "BDV2-C5X20",
+    "designEffect": "迅手（每轮同名限1）。挡住转移；脚步+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "cover",
+          "value": "transfer"
+        },
+        {
+          "op": "route",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "挡住转移；脚步+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x21",
+    "name": "叫魂",
+    "cost": 1,
+    "type": "交涉技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 74,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成74场后习得",
+    "sourceScene": "c5s03",
+    "art": "tool-notebook",
+    "artExt": "webp",
+    "text": "交涉+1；若有信任，信任+1。",
+    "shortText": "交涉+1；若有信任，信任+1。",
+    "conditions": "",
+    "omen": "木主上的字还在。人动过没有，另记一行。",
+    "archetype": "归棺旧影",
+    "buildRole": "交涉+1；若有信任，信任+1",
+    "designId": "BDV2-C5X21",
+    "designEffect": "交涉+1；若有信任，信任+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "courage",
+          "n": 1
+        },
+        {
+          "op": "if",
+          "condition": "resolve1",
+          "effects": [
+            {
+              "op": "resolve",
+              "n": 1
+            }
+          ]
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "交涉+1；若有信任，信任+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x22",
+    "name": "收魂",
+    "cost": 1,
+    "type": "防护技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 75,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成75场后习得",
+    "sourceScene": "c5s04",
+    "art": "salt",
+    "artExt": "webp",
+    "text": "回复3心神；处理1级轻伤。",
+    "shortText": "回复3心神；处理1级轻伤。",
+    "conditions": "",
+    "omen": "守到灯尽之前。照见的是谁走过。",
+    "archetype": "归棺旧影",
+    "buildRole": "回复3心神；处理1级轻伤",
+    "designId": "BDV2-C5X22",
+    "designEffect": "回复3心神；处理1级轻伤。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "heal",
+          "n": 3
+        },
+        {
+          "op": "care",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "回复3心神；处理1级轻伤。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x23",
+    "name": "点主",
+    "cost": 1,
+    "type": "调查技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 76,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成76场后习得",
+    "sourceScene": "c5s05",
+    "art": "tool-notebook",
+    "artExt": "webp",
+    "text": "调查+1；专注+1。",
+    "shortText": "调查+1；专注+1。",
+    "conditions": "",
+    "omen": "木主上的字还在。人动过没有，另记一行。",
+    "archetype": "归棺旧影",
+    "buildRole": "调查+1；专注+1",
+    "designId": "BDV2-C5X23",
+    "designEffect": "调查+1；专注+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "insight",
+          "n": 1
+        },
+        {
+          "op": "focus",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "调查+1；专注+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x24",
+    "name": "辞灵",
+    "cost": 1,
+    "type": "交涉技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 77,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成77场后习得",
+    "sourceScene": "c5s06",
+    "art": "tool-pageclip",
+    "artExt": "webp",
+    "text": "交涉+1；挡住插话。",
+    "shortText": "交涉+1；挡住插话。",
+    "conditions": "",
+    "omen": "仪节按次序走。先做完这一步，再问下一步。",
+    "archetype": "归棺旧影",
+    "buildRole": "交涉+1；挡住插话",
+    "designId": "BDV2-C5X24",
+    "designEffect": "交涉+1；挡住插话。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "courage",
+          "n": 1
+        },
+        {
+          "op": "cover",
+          "value": "interrupt"
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "交涉+1；挡住插话。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x25",
+    "name": "勾魂",
+    "cost": 1,
+    "type": "压制技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 78,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成78场后习得",
+    "sourceScene": "c5s07",
+    "art": "v2-action-guard",
+    "artExt": "webp",
+    "text": "打断目标本轮攻击；目标压力−1。",
+    "shortText": "打断目标本轮攻击；目标压力−1。",
+    "conditions": "",
+    "omen": "木主上的字还在。人动过没有，另记一行。",
+    "archetype": "归棺旧影",
+    "buildRole": "打断目标本轮攻击；目标压力−1",
+    "designId": "BDV2-C5X25",
+    "designEffect": "打断目标本轮攻击；目标压力−1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "stun",
+          "n": 1
+        },
+        {
+          "op": "weaken",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "打断目标本轮攻击；目标压力−1。",
+      "intent": null
+    },
+    "target": "enemy"
+  },
+  {
+    "id": "c5x26",
+    "name": "纸钱",
+    "cost": 1,
+    "type": "调度技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 79,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成79场后习得",
+    "sourceScene": "c5s08",
+    "art": "oil",
+    "artExt": "webp",
+    "text": "下轮费用+1；脚步+1。",
+    "shortText": "下轮费用+1；脚步+1。",
+    "conditions": "",
+    "omen": "脚印只出不进。先核对着地的痕迹。",
+    "archetype": "归棺旧影",
+    "buildRole": "下轮费用+1；脚步+1",
+    "designId": "BDV2-C5X26",
+    "designEffect": "下轮费用+1；脚步+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "nextEnergy",
+          "n": 1
+        },
+        {
+          "op": "route",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "下轮费用+1；脚步+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x27",
+    "name": "报丧",
+    "cost": 1,
+    "type": "交涉技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 80,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成80场后习得",
+    "sourceScene": "c5s09",
+    "art": "tool-notebook",
+    "artExt": "webp",
+    "text": "交涉+1；抽1牌。",
+    "shortText": "交涉+1；抽1牌。",
+    "conditions": "",
+    "omen": "木主上的字还在。人动过没有，另记一行。",
+    "archetype": "归棺旧影",
+    "buildRole": "交涉+1；抽1牌",
+    "designId": "BDV2-C5X27",
+    "designEffect": "交涉+1；抽1牌。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "courage",
+          "n": 1
+        },
+        {
+          "op": "draw",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "交涉+1；抽1牌。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x28",
+    "name": "执绋",
+    "cost": 1,
+    "type": "通路技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 81,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成81场后习得",
+    "sourceScene": "c5s10",
+    "art": "v2-tool-map",
+    "artExt": "webp",
+    "text": "通路+1；护身+2。",
+    "shortText": "通路+1；护身+2。",
+    "conditions": "",
+    "omen": "脚印只出不进。先核对着地的痕迹。",
+    "archetype": "归棺旧影",
+    "buildRole": "通路+1；护身+2",
+    "designId": "BDV2-C5X28",
+    "designEffect": "通路+1；护身+2。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "leverage",
+          "n": 1
+        },
+        {
+          "op": "shield",
+          "n": 2
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "通路+1；护身+2。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x29",
+    "name": "压胜",
+    "cost": 1,
+    "type": "防护技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 82,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成82场后习得",
+    "sourceScene": "c5s11",
+    "art": "salt",
+    "artExt": "webp",
+    "text": "护身+4。",
+    "shortText": "护身+4。",
+    "conditions": "",
+    "omen": "守到灯尽之前。照见的是谁走过。",
+    "archetype": "归棺旧影",
+    "buildRole": "护身+4",
+    "designId": "BDV2-C5X29",
+    "designEffect": "护身+4。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "shield",
+          "n": 4
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "护身+4。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x30",
+    "name": "收灯",
+    "cost": 1,
+    "type": "调查技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 83,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成83场后习得",
+    "sourceScene": "c5s12",
+    "art": "lantern",
+    "artExt": "webp",
+    "text": "挡住散页；调查+1。",
+    "shortText": "挡住散页；调查+1。",
+    "conditions": "",
+    "omen": "停灵的厅里，灯只保证照到的那一侧。",
+    "archetype": "归棺旧影",
+    "buildRole": "挡住散页；调查+1",
+    "designId": "BDV2-C5X30",
+    "designEffect": "挡住散页；调查+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "cover",
+          "value": "scatter"
+        },
+        {
+          "op": "insight",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "挡住散页；调查+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x31",
+    "name": "盖棺",
+    "cost": 1,
+    "type": "防护技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 84,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成84场后习得",
+    "sourceScene": "c5s13",
+    "art": "tool-wedge",
+    "artExt": "webp",
+    "text": "护身+3；保留护身+2。",
+    "shortText": "护身+3；保留护身+2。",
+    "conditions": "",
+    "omen": "棺还合着。旧物归没归位，要并着看。",
+    "archetype": "归棺旧影",
+    "buildRole": "护身+3；保留护身+2",
+    "designId": "BDV2-C5X31",
+    "designEffect": "护身+3；保留护身+2。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "shield",
+          "n": 3
+        },
+        {
+          "op": "retain",
+          "n": 2
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "护身+3；保留护身+2。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x32",
+    "name": "钉棺",
+    "cost": 1,
+    "type": "压制技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 85,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成85场后习得",
+    "sourceScene": "c5s14",
+    "art": "tool-wedge",
+    "artExt": "webp",
+    "text": "压制目标2；打断目标本轮攻击。",
+    "shortText": "压制目标2；打断目标本轮攻击。",
+    "conditions": "",
+    "omen": "棺还合着。旧物归没归位，要并着看。",
+    "archetype": "归棺旧影",
+    "buildRole": "压制目标2；打断目标本轮攻击",
+    "designId": "BDV2-C5X32",
+    "designEffect": "压制目标2；打断目标本轮攻击。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "damage",
+          "n": 2
+        },
+        {
+          "op": "stun",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "压制目标2；打断目标本轮攻击。",
+      "intent": null
+    },
+    "target": "enemy"
+  },
+  {
+    "id": "c5x33",
+    "name": "望乡台",
+    "cost": 2,
+    "type": "调查技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 86,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成86场后习得",
+    "sourceScene": "c5s15",
+    "art": "card-new05",
+    "artExt": "webp",
+    "text": "调查+2；若有专注，目标破绽+1。",
+    "shortText": "调查+2；若有专注，目标破绽+1。",
+    "conditions": "",
+    "omen": "木主上的字还在。人动过没有，另记一行。",
+    "archetype": "归棺旧影",
+    "buildRole": "调查+2；若有专注，目标破绽+1",
+    "designId": "BDV2-C5X33",
+    "designEffect": "调查+2；若有专注，目标破绽+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "insight",
+          "n": 2
+        },
+        {
+          "op": "if",
+          "condition": "focus1",
+          "effects": [
+            {
+              "op": "expose",
+              "n": 1
+            }
+          ]
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "调查+2；若有专注，目标破绽+1。",
+      "intent": null
+    },
+    "target": "enemy"
+  },
+  {
+    "id": "c5x34",
+    "name": "出殡",
+    "cost": 2,
+    "type": "通路技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 87,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成87场后习得",
+    "sourceScene": "c5s16",
+    "art": "v2-tool-map",
+    "artExt": "webp",
+    "text": "通路+2；脚步+1。",
+    "shortText": "通路+2；脚步+1。",
+    "conditions": "",
+    "omen": "脚印只出不进。先核对着地的痕迹。",
+    "archetype": "归棺旧影",
+    "buildRole": "通路+2；脚步+1",
+    "designId": "BDV2-C5X34",
+    "designEffect": "通路+2；脚步+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "leverage",
+          "n": 2
+        },
+        {
+          "op": "route",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "通路+2；脚步+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x35",
+    "name": "发引",
+    "cost": 2,
+    "type": "通路技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 88,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成88场后习得",
+    "sourceScene": "c5s17",
+    "art": "v2-tool-map",
+    "artExt": "webp",
+    "text": "通路+1；解1道束缚；脚步+1。",
+    "shortText": "通路+1；解1道束缚；脚步+1。",
+    "conditions": "",
+    "omen": "脚印只出不进。先核对着地的痕迹。",
+    "archetype": "归棺旧影",
+    "buildRole": "通路+1；解1道束缚；脚步+1",
+    "designId": "BDV2-C5X35",
+    "designEffect": "通路+1；解1道束缚；脚步+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "leverage",
+          "n": 1
+        },
+        {
+          "op": "cut",
+          "n": 1
+        },
+        {
+          "op": "route",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "通路+1；解1道束缚；脚步+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x36",
+    "name": "方相",
+    "cost": 2,
+    "type": "压制技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 89,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成89场后习得",
+    "sourceScene": "c5s18",
+    "art": "v2-action-guard",
+    "artExt": "webp",
+    "text": "压制所有威胁2；挡住敌袭。",
+    "shortText": "压制所有威胁2；挡住敌袭。",
+    "conditions": "",
+    "omen": "仪节按次序走。先做完这一步，再问下一步。",
+    "archetype": "归棺旧影",
+    "buildRole": "压制所有威胁2；挡住敌袭",
+    "designId": "BDV2-C5X36",
+    "designEffect": "压制所有威胁2；挡住敌袭。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "sweep",
+          "n": 2
+        },
+        {
+          "op": "cover",
+          "value": "attack"
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "压制所有威胁2；挡住敌袭。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x37",
+    "name": "开路神君",
+    "cost": 2,
+    "type": "通路技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 72,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成72场后习得",
+    "sourceScene": "c5s01",
+    "art": "v2-action-guard",
+    "artExt": "webp",
+    "text": "通路+2；挡住敌袭。",
+    "shortText": "通路+2；挡住敌袭。",
+    "conditions": "",
+    "omen": "脚印只出不进。先核对着地的痕迹。",
+    "archetype": "归棺旧影",
+    "buildRole": "通路+2；挡住敌袭",
+    "designId": "BDV2-C5X37",
+    "designEffect": "通路+2；挡住敌袭。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "leverage",
+          "n": 2
+        },
+        {
+          "op": "cover",
+          "value": "attack"
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "通路+2；挡住敌袭。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x38",
+    "name": "香炉",
+    "cost": 0,
+    "type": "装备工具",
+    "mode": "equipment",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 73,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成73场后习得",
+    "sourceScene": "c5s02",
+    "art": "oil",
+    "artExt": "webp",
+    "text": "迅手（每轮同名限1）。入场：专注+1。每轮首次调查行动后：消除1疲劳；专注+1。共4次。",
+    "shortText": "迅手（每轮同名限1）。入场：专注+1。每轮首次调查行动后：消除1疲劳；专注+1。共4次。",
+    "conditions": "最多3件装备",
+    "omen": "仪节按次序走。先做完这一步，再问下一步。",
+    "archetype": "归棺旧影",
+    "buildRole": "消除1疲劳；专注+1",
+    "designId": "BDV2-C5X38",
+    "designEffect": "迅手（每轮同名限1）。入场：专注+1。每轮首次调查行动后：消除1疲劳；专注+1。共4次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "equipment",
+      "trigger": "goal_insight",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "focus",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "calm",
+          "n": 1
+        },
+        {
+          "op": "focus",
+          "n": 1
+        }
+      ],
+      "charges": 4,
+      "activateCost": 0,
+      "effectText": "消除1疲劳；专注+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x39",
+    "name": "引魂灯",
+    "cost": 1,
+    "type": "装备工具",
+    "mode": "equipment",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 74,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成74场后习得",
+    "sourceScene": "c5s03",
+    "art": "lantern",
+    "artExt": "webp",
+    "text": "入场：挡住散页。每轮首次调查行动后：调查+1；脚步+1。共4次。",
+    "shortText": "入场：挡住散页。每轮首次调查行动后：调查+1；脚步+1。共4次。",
+    "conditions": "最多3件装备",
+    "omen": "停灵的厅里，灯只保证照到的那一侧。",
+    "archetype": "归棺旧影",
+    "buildRole": "调查+1；脚步+1",
+    "designId": "BDV2-C5X39",
+    "designEffect": "入场：挡住散页。每轮首次调查行动后：调查+1；脚步+1。共4次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "equipment",
+      "trigger": "goal_insight",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "cover",
+          "value": "scatter"
+        }
+      ],
+      "effects": [
+        {
+          "op": "insight",
+          "n": 1
+        },
+        {
+          "op": "route",
+          "n": 1
+        }
+      ],
+      "charges": 4,
+      "activateCost": 0,
+      "effectText": "调查+1；脚步+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x40",
+    "name": "魂帛",
+    "cost": 1,
+    "type": "装备工具",
+    "mode": "equipment",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 75,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成75场后习得",
+    "sourceScene": "c5s04",
+    "art": "tool-pageclip",
+    "artExt": "webp",
+    "text": "入场：专注+1。每轮首次调查行动后：专注+1；挡住散页。共4次。",
+    "shortText": "入场：专注+1。每轮首次调查行动后：专注+1；挡住散页。共4次。",
+    "conditions": "最多3件装备",
+    "omen": "木主上的字还在。人动过没有，另记一行。",
+    "archetype": "归棺旧影",
+    "buildRole": "专注+1；挡住散页",
+    "designId": "BDV2-C5X40",
+    "designEffect": "入场：专注+1。每轮首次调查行动后：专注+1；挡住散页。共4次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "equipment",
+      "trigger": "goal_insight",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "focus",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "focus",
+          "n": 1
+        },
+        {
+          "op": "cover",
+          "value": "scatter"
+        }
+      ],
+      "charges": 4,
+      "activateCost": 0,
+      "effectText": "专注+1；挡住散页。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x41",
+    "name": "哀杖",
+    "cost": 1,
+    "type": "装备工具",
+    "mode": "equipment",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 76,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成76场后习得",
+    "sourceScene": "c5s05",
+    "art": "tool-wedge",
+    "artExt": "webp",
+    "text": "入场：护身+2。每轮首次挡住压力后：反击+2。共4次。",
+    "shortText": "入场：护身+2。每轮首次挡住压力后：反击+2。共4次。",
+    "conditions": "最多3件装备",
+    "omen": "守到灯尽之前。照见的是谁走过。",
+    "archetype": "归棺旧影",
+    "buildRole": "反击+2",
+    "designId": "BDV2-C5X41",
+    "designEffect": "入场：护身+2。每轮首次挡住压力后：反击+2。共4次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "equipment",
+      "trigger": "block",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "shield",
+          "n": 2
+        }
+      ],
+      "effects": [
+        {
+          "op": "counter",
+          "n": 2
+        }
+      ],
+      "charges": 4,
+      "activateCost": 0,
+      "effectText": "反击+2。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x42",
+    "name": "棺罩",
+    "cost": 1,
+    "type": "装备工具",
+    "mode": "equipment",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 77,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成77场后习得",
+    "sourceScene": "c5s06",
+    "art": "tool-pageclip",
+    "artExt": "webp",
+    "text": "入场：保留护身+1。每轮首次回合末：护身+2。共4次。",
+    "shortText": "入场：保留护身+1。每轮首次回合末：护身+2。共4次。",
+    "conditions": "最多3件装备",
+    "omen": "棺还合着。旧物归没归位，要并着看。",
+    "archetype": "归棺旧影",
+    "buildRole": "护身+2",
+    "designId": "BDV2-C5X42",
+    "designEffect": "入场：保留护身+1。每轮首次回合末：护身+2。共4次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "equipment",
+      "trigger": "end",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "retain",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "shield",
+          "n": 2
+        }
+      ],
+      "charges": 4,
+      "activateCost": 0,
+      "effectText": "护身+2。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x43",
+    "name": "路引",
+    "cost": 1,
+    "type": "装备工具",
+    "mode": "equipment",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 78,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成78场后习得",
+    "sourceScene": "c5s07",
+    "art": "v2-tool-map",
+    "artExt": "webp",
+    "text": "入场：通路+1。每轮首次通路行动后：脚步+1；挡住转移。共4次。",
+    "shortText": "入场：通路+1。每轮首次通路行动后：脚步+1；挡住转移。共4次。",
+    "conditions": "最多3件装备",
+    "omen": "脚印只出不进。先核对着地的痕迹。",
+    "archetype": "归棺旧影",
+    "buildRole": "脚步+1；挡住转移",
+    "designId": "BDV2-C5X43",
+    "designEffect": "入场：通路+1。每轮首次通路行动后：脚步+1；挡住转移。共4次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "equipment",
+      "trigger": "goal_open",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "leverage",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "route",
+          "n": 1
+        },
+        {
+          "op": "cover",
+          "value": "transfer"
+        }
+      ],
+      "charges": 4,
+      "activateCost": 0,
+      "effectText": "脚步+1；挡住转移。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x44",
+    "name": "生死簿",
+    "cost": 2,
+    "type": "装备工具",
+    "mode": "equipment",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 79,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成79场后习得",
+    "sourceScene": "c5s08",
+    "art": "tool-notebook",
+    "artExt": "webp",
+    "text": "入场：专注+1。每轮一次，1费：调查+2；若有专注，抽1牌。共4次。",
+    "shortText": "入场：专注+1。每轮一次，1费：调查+2；若有专注，抽1牌。共4次。",
+    "conditions": "最多3件装备",
+    "omen": "木主上的字还在。人动过没有，另记一行。",
+    "archetype": "归棺旧影",
+    "buildRole": "调查+2；若有专注，抽1牌",
+    "designId": "BDV2-C5X44",
+    "designEffect": "入场：专注+1。每轮一次，1费：调查+2；若有专注，抽1牌。共4次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "equipment",
+      "trigger": "activate",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "focus",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "insight",
+          "n": 2
+        },
+        {
+          "op": "if",
+          "condition": "focus1",
+          "effects": [
+            {
+              "op": "draw",
+              "n": 1
+            }
+          ]
+        }
+      ],
+      "charges": 4,
+      "activateCost": 1,
+      "effectText": "调查+2；若有专注，抽1牌。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x45",
+    "name": "铭旌",
+    "cost": 2,
+    "type": "装备工具",
+    "mode": "equipment",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 80,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成80场后习得",
+    "sourceScene": "c5s09",
+    "art": "tool-pageclip",
+    "artExt": "webp",
+    "text": "入场：挡住插话。每轮首次交涉行动后：交涉+1；信任+1。共4次。",
+    "shortText": "入场：挡住插话。每轮首次交涉行动后：交涉+1；信任+1。共4次。",
+    "conditions": "最多3件装备",
+    "omen": "木主上的字还在。人动过没有，另记一行。",
+    "archetype": "归棺旧影",
+    "buildRole": "交涉+1；信任+1",
+    "designId": "BDV2-C5X45",
+    "designEffect": "入场：挡住插话。每轮首次交涉行动后：交涉+1；信任+1。共4次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "equipment",
+      "trigger": "goal_courage",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "cover",
+          "value": "interrupt"
+        }
+      ],
+      "effects": [
+        {
+          "op": "courage",
+          "n": 1
+        },
+        {
+          "op": "resolve",
+          "n": 1
+        }
+      ],
+      "charges": 4,
+      "activateCost": 0,
+      "effectText": "交涉+1；信任+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x46",
+    "name": "纸马",
+    "cost": 2,
+    "type": "装备工具",
+    "mode": "equipment",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 81,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成81场后习得",
+    "sourceScene": "c5s10",
+    "art": "v2-tool-map",
+    "artExt": "webp",
+    "text": "入场：脚步+1。每轮首次通路行动后：通路+1；脚步+1。共4次。",
+    "shortText": "入场：脚步+1。每轮首次通路行动后：通路+1；脚步+1。共4次。",
+    "conditions": "最多3件装备",
+    "omen": "脚印只出不进。先核对着地的痕迹。",
+    "archetype": "归棺旧影",
+    "buildRole": "通路+1；脚步+1",
+    "designId": "BDV2-C5X46",
+    "designEffect": "入场：脚步+1。每轮首次通路行动后：通路+1；脚步+1。共4次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "equipment",
+      "trigger": "goal_open",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "route",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "leverage",
+          "n": 1
+        },
+        {
+          "op": "route",
+          "n": 1
+        }
+      ],
+      "charges": 4,
+      "activateCost": 0,
+      "effectText": "通路+1；脚步+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x47",
+    "name": "倒头灯",
+    "cost": 2,
+    "type": "装备工具",
+    "mode": "equipment",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 82,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成82场后习得",
+    "sourceScene": "c5s11",
+    "art": "lantern",
+    "artExt": "webp",
+    "text": "入场：挡住反光。每轮首次回合开始：护身+1；挡住散页。共4次。",
+    "shortText": "入场：挡住反光。每轮首次回合开始：护身+1；挡住散页。共4次。",
+    "conditions": "最多3件装备",
+    "omen": "停灵的厅里，灯只保证照到的那一侧。",
+    "archetype": "归棺旧影",
+    "buildRole": "护身+1；挡住散页",
+    "designId": "BDV2-C5X47",
+    "designEffect": "入场：挡住反光。每轮首次回合开始：护身+1；挡住散页。共4次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "equipment",
+      "trigger": "turn",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "cover",
+          "value": "glare"
+        }
+      ],
+      "effects": [
+        {
+          "op": "shield",
+          "n": 1
+        },
+        {
+          "op": "cover",
+          "value": "scatter"
+        }
+      ],
+      "charges": 4,
+      "activateCost": 0,
+      "effectText": "护身+1；挡住散页。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x48",
+    "name": "金童",
+    "cost": 2,
+    "type": "装备工具",
+    "mode": "equipment",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 83,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成83场后习得",
+    "sourceScene": "c5s12",
+    "art": "salt",
+    "artExt": "webp",
+    "text": "入场：护身+3。每轮首次失去心神后：护身+2。共4次。",
+    "shortText": "入场：护身+3。每轮首次失去心神后：护身+2。共4次。",
+    "conditions": "最多3件装备",
+    "omen": "纸扎替过谁，要写在面上。洗不掉。",
+    "archetype": "归棺旧影",
+    "buildRole": "护身+2",
+    "designId": "BDV2-C5X48",
+    "designEffect": "入场：护身+3。每轮首次失去心神后：护身+2。共4次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "equipment",
+      "trigger": "hurt",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "shield",
+          "n": 3
+        }
+      ],
+      "effects": [
+        {
+          "op": "shield",
+          "n": 2
+        }
+      ],
+      "charges": 4,
+      "activateCost": 0,
+      "effectText": "护身+2。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x49",
+    "name": "玉女",
+    "cost": 2,
+    "type": "装备工具",
+    "mode": "equipment",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 84,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成84场后习得",
+    "sourceScene": "c5s13",
+    "art": "salt",
+    "artExt": "webp",
+    "text": "入场：回复2心神。每轮首次回复心神后：处理1级轻伤；回复1心神。共4次。",
+    "shortText": "入场：回复2心神。每轮首次回复心神后：处理1级轻伤；回复1心神。共4次。",
+    "conditions": "最多3件装备",
+    "omen": "纸扎替过谁，要写在面上。洗不掉。",
+    "archetype": "归棺旧影",
+    "buildRole": "处理1级轻伤；回复1心神",
+    "designId": "BDV2-C5X49",
+    "designEffect": "入场：回复2心神。每轮首次回复心神后：处理1级轻伤；回复1心神。共4次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "equipment",
+      "trigger": "heal",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "heal",
+          "n": 2
+        }
+      ],
+      "effects": [
+        {
+          "op": "care",
+          "n": 1
+        },
+        {
+          "op": "heal",
+          "n": 1
+        }
+      ],
+      "charges": 4,
+      "activateCost": 0,
+      "effectText": "处理1级轻伤；回复1心神。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x50",
+    "name": "寿衣",
+    "cost": 2,
+    "type": "装备工具",
+    "mode": "equipment",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 85,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成85场后习得",
+    "sourceScene": "c5s14",
+    "art": "tool-pageclip",
+    "artExt": "webp",
+    "text": "入场：护身+2。每轮首次挡住压力后：保留护身+2；护身+1。共4次。",
+    "shortText": "入场：护身+2。每轮首次挡住压力后：保留护身+2；护身+1。共4次。",
+    "conditions": "最多3件装备",
+    "omen": "棺还合着。旧物归没归位，要并着看。",
+    "archetype": "归棺旧影",
+    "buildRole": "保留护身+2；护身+1",
+    "designId": "BDV2-C5X50",
+    "designEffect": "入场：护身+2。每轮首次挡住压力后：保留护身+2；护身+1。共4次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "equipment",
+      "trigger": "block",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "shield",
+          "n": 2
+        }
+      ],
+      "effects": [
+        {
+          "op": "retain",
+          "n": 2
+        },
+        {
+          "op": "shield",
+          "n": 1
+        }
+      ],
+      "charges": 4,
+      "activateCost": 0,
+      "effectText": "保留护身+2；护身+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x51",
+    "name": "拘魂索",
+    "cost": 2,
+    "type": "装备工具",
+    "mode": "equipment",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 86,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成86场后习得",
+    "sourceScene": "c5s15",
+    "art": "v2-action-guard",
+    "artExt": "webp",
+    "text": "入场：目标压力−1。每轮首次压制后：压制目标1；目标压力−1。共4次。",
+    "shortText": "入场：目标压力−1。每轮首次压制后：压制目标1；目标压力−1。共4次。",
+    "conditions": "最多3件装备",
+    "omen": "木主上的字还在。人动过没有，另记一行。",
+    "archetype": "归棺旧影",
+    "buildRole": "压制目标1；目标压力−1",
+    "designId": "BDV2-C5X51",
+    "designEffect": "入场：目标压力−1。每轮首次压制后：压制目标1；目标压力−1。共4次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "equipment",
+      "trigger": "attack",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "weaken",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "damage",
+          "n": 1
+        },
+        {
+          "op": "weaken",
+          "n": 1
+        }
+      ],
+      "charges": 4,
+      "activateCost": 0,
+      "effectText": "压制目标1；目标压力−1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x52",
+    "name": "香案",
+    "cost": 0,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 87,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成87场后习得",
+    "sourceScene": "c5s16",
+    "art": "oil",
+    "artExt": "webp",
+    "text": "迅手（每轮同名限1）。每轮首次回合末：专注+1。共3次。",
+    "shortText": "迅手（每轮同名限1）。每轮首次回合末：专注+1。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "仪节按次序走。先做完这一步，再问下一步。",
+    "archetype": "归棺旧影",
+    "buildRole": "专注+1",
+    "designId": "BDV2-C5X52",
+    "designEffect": "迅手（每轮同名限1）。每轮首次回合末：专注+1。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "end",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "focus",
+          "n": 1
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "专注+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x53",
+    "name": "白幡",
+    "cost": 1,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 88,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成88场后习得",
+    "sourceScene": "c5s17",
+    "art": "tool-pageclip",
+    "artExt": "webp",
+    "text": "入场：挡住反光。每轮首次通路行动后：脚步+1；挡住反光。共3次。",
+    "shortText": "入场：挡住反光。每轮首次通路行动后：脚步+1；挡住反光。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "脚印只出不进。先核对着地的痕迹。",
+    "archetype": "归棺旧影",
+    "buildRole": "脚步+1；挡住反光",
+    "designId": "BDV2-C5X53",
+    "designEffect": "入场：挡住反光。每轮首次通路行动后：脚步+1；挡住反光。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "goal_open",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "cover",
+          "value": "glare"
+        }
+      ],
+      "effects": [
+        {
+          "op": "route",
+          "n": 1
+        },
+        {
+          "op": "cover",
+          "value": "glare"
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "脚步+1；挡住反光。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x54",
+    "name": "停灵",
+    "cost": 1,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 89,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成89场后习得",
+    "sourceScene": "c5s18",
+    "art": "tool-wedge",
+    "artExt": "webp",
+    "text": "入场：保留护身+2。每轮首次回合开始：专注+1。共3次。",
+    "shortText": "入场：保留护身+2。每轮首次回合开始：专注+1。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "棺还合着。旧物归没归位，要并着看。",
+    "archetype": "归棺旧影",
+    "buildRole": "专注+1",
+    "designId": "BDV2-C5X54",
+    "designEffect": "入场：保留护身+2。每轮首次回合开始：专注+1。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "turn",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "retain",
+          "n": 2
+        }
+      ],
+      "effects": [
+        {
+          "op": "focus",
+          "n": 1
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "专注+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x55",
+    "name": "坐夜",
+    "cost": 1,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 72,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成72场后习得",
+    "sourceScene": "c5s01",
+    "art": "lantern",
+    "artExt": "webp",
+    "text": "每轮首次回合末：回复1心神；护身+1。共3次。",
+    "shortText": "每轮首次回合末：回复1心神；护身+1。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "守到灯尽之前。照见的是谁走过。",
+    "archetype": "归棺旧影",
+    "buildRole": "回复1心神；护身+1",
+    "designId": "BDV2-C5X55",
+    "designEffect": "每轮首次回合末：回复1心神；护身+1。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "end",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "heal",
+          "n": 1
+        },
+        {
+          "op": "shield",
+          "n": 1
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "回复1心神；护身+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x56",
+    "name": "灵堂",
+    "cost": 1,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 73,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成73场后习得",
+    "sourceScene": "c5s02",
+    "art": "card-new05",
+    "artExt": "webp",
+    "text": "入场：挡住插话。每轮首次交涉行动后：交涉+1；挡住插话。共3次。",
+    "shortText": "入场：挡住插话。每轮首次交涉行动后：交涉+1；挡住插话。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "守到灯尽之前。照见的是谁走过。",
+    "archetype": "归棺旧影",
+    "buildRole": "交涉+1；挡住插话",
+    "designId": "BDV2-C5X56",
+    "designEffect": "入场：挡住插话。每轮首次交涉行动后：交涉+1；挡住插话。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "goal_courage",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "cover",
+          "value": "interrupt"
+        }
+      ],
+      "effects": [
+        {
+          "op": "courage",
+          "n": 1
+        },
+        {
+          "op": "cover",
+          "value": "interrupt"
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "交涉+1；挡住插话。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x57",
+    "name": "倒头饭",
+    "cost": 1,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 74,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成74场后习得",
+    "sourceScene": "c5s03",
+    "art": "oil",
+    "artExt": "webp",
+    "text": "入场：挡住催逼。每轮首次回合末：消除1疲劳。共3次。",
+    "shortText": "入场：挡住催逼。每轮首次回合末：消除1疲劳。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "仪节按次序走。先做完这一步，再问下一步。",
+    "archetype": "归棺旧影",
+    "buildRole": "消除1疲劳",
+    "designId": "BDV2-C5X57",
+    "designEffect": "入场：挡住催逼。每轮首次回合末：消除1疲劳。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "end",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "cover",
+          "value": "urge"
+        }
+      ],
+      "effects": [
+        {
+          "op": "calm",
+          "n": 1
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "消除1疲劳。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x58",
+    "name": "孝幔",
+    "cost": 1,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 75,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成75场后习得",
+    "sourceScene": "c5s04",
+    "art": "tool-pageclip",
+    "artExt": "webp",
+    "text": "入场：挡住抢夺。每轮首次挡住压力后：护身+2。共3次。",
+    "shortText": "入场：挡住抢夺。每轮首次挡住压力后：护身+2。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "守到灯尽之前。照见的是谁走过。",
+    "archetype": "归棺旧影",
+    "buildRole": "护身+2",
+    "designId": "BDV2-C5X58",
+    "designEffect": "入场：挡住抢夺。每轮首次挡住压力后：护身+2。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "block",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "cover",
+          "value": "grab"
+        }
+      ],
+      "effects": [
+        {
+          "op": "shield",
+          "n": 2
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "护身+2。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x59",
+    "name": "魂轿",
+    "cost": 1,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 76,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成76场后习得",
+    "sourceScene": "c5s05",
+    "art": "v2-tool-map",
+    "artExt": "webp",
+    "text": "入场：通路+1。每轮首次通路行动后：解1道束缚。共3次。",
+    "shortText": "入场：通路+1。每轮首次通路行动后：解1道束缚。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "脚印只出不进。先核对着地的痕迹。",
+    "archetype": "归棺旧影",
+    "buildRole": "解1道束缚",
+    "designId": "BDV2-C5X59",
+    "designEffect": "入场：通路+1。每轮首次通路行动后：解1道束缚。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "goal_open",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "leverage",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "cut",
+          "n": 1
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "解1道束缚。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x60",
+    "name": "路祭",
+    "cost": 2,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 77,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成77场后习得",
+    "sourceScene": "c5s06",
+    "art": "oil",
+    "artExt": "webp",
+    "text": "入场：交涉+1。每轮首次交涉行动后：交涉+1；信任+1。共3次。",
+    "shortText": "入场：交涉+1。每轮首次交涉行动后：交涉+1；信任+1。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "脚印只出不进。先核对着地的痕迹。",
+    "archetype": "归棺旧影",
+    "buildRole": "交涉+1；信任+1",
+    "designId": "BDV2-C5X60",
+    "designEffect": "入场：交涉+1。每轮首次交涉行动后：交涉+1；信任+1。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "goal_courage",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "courage",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "courage",
+          "n": 1
+        },
+        {
+          "op": "resolve",
+          "n": 1
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "交涉+1；信任+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x61",
+    "name": "大殓",
+    "cost": 2,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 78,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成78场后习得",
+    "sourceScene": "c5s07",
+    "art": "tool-wedge",
+    "artExt": "webp",
+    "text": "入场：保留护身+2。每轮首次部署布置后：护身+2。共3次。",
+    "shortText": "入场：保留护身+2。每轮首次部署布置后：护身+2。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "棺还合着。旧物归没归位，要并着看。",
+    "archetype": "归棺旧影",
+    "buildRole": "护身+2",
+    "designId": "BDV2-C5X61",
+    "designEffect": "入场：保留护身+2。每轮首次部署布置后：护身+2。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "deploy_setup",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "retain",
+          "n": 2
+        }
+      ],
+      "effects": [
+        {
+          "op": "shield",
+          "n": 2
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "护身+2。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x62",
+    "name": "小殓",
+    "cost": 2,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 79,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成79场后习得",
+    "sourceScene": "c5s08",
+    "art": "salt",
+    "artExt": "webp",
+    "text": "入场：处理1级轻伤。每轮首次回复心神后：回复1心神；处理1级轻伤。共3次。",
+    "shortText": "入场：处理1级轻伤。每轮首次回复心神后：回复1心神；处理1级轻伤。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "仪节按次序走。先做完这一步，再问下一步。",
+    "archetype": "归棺旧影",
+    "buildRole": "回复1心神；处理1级轻伤",
+    "designId": "BDV2-C5X62",
+    "designEffect": "入场：处理1级轻伤。每轮首次回复心神后：回复1心神；处理1级轻伤。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "heal",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "care",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "heal",
+          "n": 1
+        },
+        {
+          "op": "care",
+          "n": 1
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "回复1心神；处理1级轻伤。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x63",
+    "name": "封棺",
+    "cost": 2,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 80,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成80场后习得",
+    "sourceScene": "c5s09",
+    "art": "tool-wedge",
+    "artExt": "webp",
+    "text": "入场：护身+3。每轮首次挡住压力后：保留护身+1；挡住敌袭。共3次。",
+    "shortText": "入场：护身+3。每轮首次挡住压力后：保留护身+1；挡住敌袭。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "棺还合着。旧物归没归位，要并着看。",
+    "archetype": "归棺旧影",
+    "buildRole": "保留护身+1；挡住敌袭",
+    "designId": "BDV2-C5X63",
+    "designEffect": "入场：护身+3。每轮首次挡住压力后：保留护身+1；挡住敌袭。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "block",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "shield",
+          "n": 3
+        }
+      ],
+      "effects": [
+        {
+          "op": "retain",
+          "n": 1
+        },
+        {
+          "op": "cover",
+          "value": "attack"
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "保留护身+1；挡住敌袭。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x64",
+    "name": "做七",
+    "cost": 2,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 81,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成81场后习得",
+    "sourceScene": "c5s10",
+    "art": "lantern",
+    "artExt": "webp",
+    "text": "入场：下幕准备+1。每轮首次进入下一幕：专注+1。共3次。",
+    "shortText": "入场：下幕准备+1。每轮首次进入下一幕：专注+1。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "仪节按次序走。先做完这一步，再问下一步。",
+    "archetype": "归棺旧影",
+    "buildRole": "专注+1",
+    "designId": "BDV2-C5X64",
+    "designEffect": "入场：下幕准备+1。每轮首次进入下一幕：专注+1。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "phase",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "nextProgress",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "focus",
+          "n": 1
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "专注+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x65",
+    "name": "殃榜",
+    "cost": 2,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 82,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成82场后习得",
+    "sourceScene": "c5s11",
+    "art": "card-new05",
+    "artExt": "webp",
+    "text": "入场：挡住敌袭。每轮首次回合开始：专注+1；挡住插话。共3次。",
+    "shortText": "入场：挡住敌袭。每轮首次回合开始：专注+1；挡住插话。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "木主上的字还在。人动过没有，另记一行。",
+    "archetype": "归棺旧影",
+    "buildRole": "专注+1；挡住插话",
+    "designId": "BDV2-C5X65",
+    "designEffect": "入场：挡住敌袭。每轮首次回合开始：专注+1；挡住插话。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "turn",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "cover",
+          "value": "attack"
+        }
+      ],
+      "effects": [
+        {
+          "op": "focus",
+          "n": 1
+        },
+        {
+          "op": "cover",
+          "value": "interrupt"
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "专注+1；挡住插话。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x66",
+    "name": "寿材",
+    "cost": 2,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 83,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成83场后习得",
+    "sourceScene": "c5s12",
+    "art": "tool-wedge",
+    "artExt": "webp",
+    "text": "入场：护身+2。每轮首次回合末：保留护身+2。共3次。",
+    "shortText": "入场：护身+2。每轮首次回合末：保留护身+2。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "棺还合着。旧物归没归位，要并着看。",
+    "archetype": "归棺旧影",
+    "buildRole": "保留护身+2",
+    "designId": "BDV2-C5X66",
+    "designEffect": "入场：护身+2。每轮首次回合末：保留护身+2。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "end",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "shield",
+          "n": 2
+        }
+      ],
+      "effects": [
+        {
+          "op": "retain",
+          "n": 2
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "保留护身+2。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c5x67",
+    "name": "避煞",
+    "cost": 0,
+    "type": "应对反制",
+    "mode": "response",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 84,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成84场后习得",
+    "sourceScene": "c5s13",
+    "art": "salt",
+    "artExt": "webp",
+    "text": "迅手（每轮同名限1）。应对敌袭：护身+3。",
+    "shortText": "迅手（每轮同名限1）。应对敌袭：护身+3。",
+    "conditions": "本轮出现敌袭时触发，未触发返还费用",
+    "omen": "守到灯尽之前。照见的是谁走过。",
+    "archetype": "归棺旧影",
+    "buildRole": "护身+3",
+    "designId": "BDV2-C5X67",
+    "designEffect": "迅手（每轮同名限1）。应对敌袭：护身+3。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "response",
+      "trigger": "attack",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "shield",
+          "n": 3
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "护身+3。",
+      "intent": "attack"
+    }
+  },
+  {
+    "id": "c5x68",
+    "name": "回煞",
+    "cost": 1,
+    "type": "应对反制",
+    "mode": "response",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 85,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成85场后习得",
+    "sourceScene": "c5s14",
+    "art": "v2-action-guard",
+    "artExt": "webp",
+    "text": "应对敌袭：打断目标本轮攻击；护身+2。",
+    "shortText": "应对敌袭：打断目标本轮攻击；护身+2。",
+    "conditions": "本轮出现敌袭时触发，未触发返还费用",
+    "omen": "守到灯尽之前。照见的是谁走过。",
+    "archetype": "归棺旧影",
+    "buildRole": "打断目标本轮攻击；护身+2",
+    "designId": "BDV2-C5X68",
+    "designEffect": "应对敌袭：打断目标本轮攻击；护身+2。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "response",
+      "trigger": "attack",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "stun",
+          "n": 1
+        },
+        {
+          "op": "shield",
+          "n": 2
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "打断目标本轮攻击；护身+2。",
+      "intent": "attack"
+    }
+  },
+  {
+    "id": "c5x69",
+    "name": "鬼门关",
+    "cost": 1,
+    "type": "应对反制",
+    "mode": "response",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 86,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成86场后习得",
+    "sourceScene": "c5s15",
+    "art": "tool-wedge",
+    "artExt": "webp",
+    "text": "应对抢夺：护身+3；挡住抢夺。",
+    "shortText": "应对抢夺：护身+3；挡住抢夺。",
+    "conditions": "本轮出现抢夺时触发，未触发返还费用",
+    "omen": "脚印只出不进。先核对着地的痕迹。",
+    "archetype": "归棺旧影",
+    "buildRole": "护身+3；挡住抢夺",
+    "designId": "BDV2-C5X69",
+    "designEffect": "应对抢夺：护身+3；挡住抢夺。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "response",
+      "trigger": "grab",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "shield",
+          "n": 3
+        },
+        {
+          "op": "cover",
+          "value": "grab"
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "护身+3；挡住抢夺。",
+      "intent": "grab"
+    }
+  },
+  {
+    "id": "c5x70",
+    "name": "孟婆汤",
+    "cost": 1,
+    "type": "应对反制",
+    "mode": "response",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 85,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成85场后习得",
+    "sourceScene": "c5s14",
+    "art": "oil",
+    "artExt": "webp",
+    "text": "应对转移：消除1疲劳；回复2心神。",
+    "shortText": "应对转移：消除1疲劳；回复2心神。",
+    "conditions": "本轮出现催逼时触发，未触发返还费用",
+    "omen": "仪节按次序走。先做完这一步，再问下一步。",
+    "archetype": "归棺旧影",
+    "buildRole": "应对转移：消除1疲劳；回复2心神。",
+    "designId": "BDV2-C5X70",
+    "designEffect": "应对转移：消除1疲劳；回复2心神。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "response",
+      "trigger": "urge",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "calm",
+          "n": 1
+        },
+        {
+          "op": "heal",
+          "n": 2
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "应对转移：消除1疲劳；回复2心神。",
+      "intent": "transfer"
+    }
+  },
+  {
+    "id": "c5x71",
+    "name": "断七",
+    "cost": 2,
+    "type": "应对反制",
+    "mode": "response",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 88,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成88场后习得",
+    "sourceScene": "c5s17",
+    "art": "lantern",
+    "artExt": "webp",
+    "text": "应对仓促处置：下幕准备+1；抽1牌。",
+    "shortText": "应对仓促处置：下幕准备+1；抽1牌。",
+    "conditions": "本轮出现仓促处置时触发，未触发返还费用",
+    "omen": "仪节按次序走。先做完这一步，再问下一步。",
+    "archetype": "归棺旧影",
+    "buildRole": "下幕准备+1；抽1牌",
+    "designId": "BDV2-C5X71",
+    "designEffect": "应对仓促处置：下幕准备+1；抽1牌。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "response",
+      "trigger": "disposition",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "nextProgress",
+          "n": 1
+        },
+        {
+          "op": "draw",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "下幕准备+1；抽1牌。",
+      "intent": "disposition"
+    }
+  },
+  {
+    "id": "c5x72",
+    "name": "哭灵",
+    "cost": 1,
+    "type": "应对反制",
+    "mode": "response",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 89,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成89场后习得",
+    "sourceScene": "c5s18",
+    "art": "tool-notebook",
+    "artExt": "webp",
+    "text": "应对插话：交涉+2；信任+1。",
+    "shortText": "应对插话：交涉+2；信任+1。",
+    "conditions": "本轮出现插话时触发，未触发返还费用",
+    "omen": "守到灯尽之前。照见的是谁走过。",
+    "archetype": "归棺旧影",
+    "buildRole": "交涉+2；信任+1",
+    "designId": "BDV2-C5X72",
+    "designEffect": "应对插话：交涉+2；信任+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "response",
+      "trigger": "interrupt",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "courage",
+          "n": 2
+        },
+        {
+          "op": "resolve",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "交涉+2；信任+1。",
+      "intent": "interrupt"
+    }
+  },
+  {
+    "id": "c5x73",
+    "name": "入殓",
+    "cost": 1,
+    "type": "应对反制",
+    "mode": "response",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 72,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成72场后习得",
+    "sourceScene": "c5s01",
+    "art": "card-new05",
+    "artExt": "webp",
+    "text": "应对仓促处置：调查+2；保留护身+1。",
+    "shortText": "应对仓促处置：调查+2；保留护身+1。",
+    "conditions": "本轮出现仓促处置时触发，未触发返还费用",
+    "omen": "棺还合着。旧物归没归位，要并着看。",
+    "archetype": "归棺旧影",
+    "buildRole": "调查+2；保留护身+1",
+    "designId": "BDV2-C5X73",
+    "designEffect": "应对仓促处置：调查+2；保留护身+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "response",
+      "trigger": "disposition",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "insight",
+          "n": 2
+        },
+        {
+          "op": "retain",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "调查+2；保留护身+1。",
+      "intent": "disposition"
+    }
+  },
+  {
+    "id": "c5x74",
+    "name": "暖棺",
+    "cost": 0,
+    "type": "应对反制",
+    "mode": "response",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 73,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成73场后习得",
+    "sourceScene": "c5s02",
+    "art": "oil",
+    "artExt": "webp",
+    "text": "迅手（每轮同名限1）。应对坠落：护身+2；回复1心神。",
+    "shortText": "迅手（每轮同名限1）。应对坠落：护身+2；回复1心神。",
+    "conditions": "本轮出现坠落时触发，未触发返还费用",
+    "omen": "棺还合着。旧物归没归位，要并着看。",
+    "archetype": "归棺旧影",
+    "buildRole": "护身+2；回复1心神",
+    "designId": "BDV2-C5X74",
+    "designEffect": "迅手（每轮同名限1）。应对坠落：护身+2；回复1心神。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "response",
+      "trigger": "fall",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "shield",
+          "n": 2
+        },
+        {
+          "op": "heal",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "护身+2；回复1心神。",
+      "intent": "fall"
+    }
+  },
+  {
+    "id": "c5x75",
+    "name": "纸人",
+    "cost": 2,
+    "type": "应对反制",
+    "mode": "response",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 74,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成74场后习得",
+    "sourceScene": "c5s03",
+    "art": "salt",
+    "artExt": "webp",
+    "text": "应对敌袭：护身+5；失去1心神。",
+    "shortText": "应对敌袭：护身+5；失去1心神。",
+    "conditions": "本轮出现敌袭时触发，未触发返还费用",
+    "omen": "纸扎替过谁，要写在面上。洗不掉。",
+    "archetype": "归棺旧影",
+    "buildRole": "护身+5；失去1心神",
+    "designId": "BDV2-C5X75",
+    "designEffect": "应对敌袭：护身+5；失去1心神。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "response",
+      "trigger": "attack",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "shield",
+          "n": 5
+        },
+        {
+          "op": "hurt",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "护身+5；失去1心神。",
+      "intent": "attack"
+    }
+  },
+  {
+    "id": "c5x76",
+    "name": "招魂幡",
+    "cost": 0,
+    "type": "应对反制",
+    "mode": "response",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 75,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成75场后习得",
+    "sourceScene": "c5s04",
+    "art": "v2-tool-map",
+    "artExt": "webp",
+    "text": "迅手（每轮同名限1）。应对散页：抽1牌；专注+1。",
+    "shortText": "迅手（每轮同名限1）。应对散页：抽1牌；专注+1。",
+    "conditions": "本轮出现散页时触发，未触发返还费用",
+    "omen": "脚印只出不进。先核对着地的痕迹。",
+    "archetype": "归棺旧影",
+    "buildRole": "抽1牌；专注+1",
+    "designId": "BDV2-C5X76",
+    "designEffect": "迅手（每轮同名限1）。应对散页：抽1牌；专注+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "response",
+      "trigger": "scatter",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "draw",
+          "n": 1
+        },
+        {
+          "op": "focus",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "抽1牌；专注+1。",
+      "intent": "scatter"
+    }
+  },
+  {
+    "id": "c5x77",
+    "name": "过桥",
+    "cost": 0,
+    "type": "应对反制",
+    "mode": "response",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 76,
+    "sourceCase": 5,
+    "source": "北段V2 · 归棺旧影 · 完成76场后习得",
+    "sourceScene": "c5s05",
+    "art": "v2-tool-map",
+    "artExt": "webp",
+    "text": "迅手（每轮同名限1）。应对转移：通路+2；脚步+1。",
+    "shortText": "迅手（每轮同名限1）。应对转移：通路+2；脚步+1。",
+    "conditions": "本轮出现转移时触发，未触发返还费用",
+    "omen": "脚印只出不进。先核对着地的痕迹。",
+    "archetype": "归棺旧影",
+    "buildRole": "通路+2；脚步+1",
+    "designId": "BDV2-C5X77",
+    "designEffect": "迅手（每轮同名限1）。应对转移：通路+2；脚步+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "response",
+      "trigger": "transfer",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "leverage",
+          "n": 2
+        },
+        {
+          "op": "route",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "通路+2；脚步+1。",
+      "intent": "transfer"
+    }
+  }
+]

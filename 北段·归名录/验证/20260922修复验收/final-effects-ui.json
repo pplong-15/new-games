@@ -1,0 +1,69 @@
+{
+  "scope": "Visible UI actions from earned map imports; effects observed without changing game state.",
+  "combo": [
+    {
+      "name": "sprite",
+      "card": "c5x07",
+      "events": [
+        {
+          "kind": "lunge",
+          "sprite": "true",
+          "width": "407.14285714285717%",
+          "src": "http://127.0.0.1:8871/assets/v3-ritual-actions.webp"
+        }
+      ]
+    },
+    {
+      "name": "face",
+      "card": "new07",
+      "events": [
+        {
+          "kind": "lunge",
+          "sprite": null,
+          "width": "",
+          "src": "http://127.0.0.1:8871/assets/card-new05.webp"
+        },
+        {
+          "kind": "src",
+          "src": "http://127.0.0.1:8871/assets/card-new05-face.webp"
+        }
+      ]
+    }
+  ],
+  "conditionalTargets": [
+    {
+      "id": "c5x08",
+      "target": "挤进门的围观者",
+      "field": "atk",
+      "value": 1,
+      "cancelFree": true,
+      "otherUnchanged": true
+    },
+    {
+      "id": "c5x09",
+      "target": "挤进门的围观者",
+      "field": "stunned",
+      "value": true,
+      "cancelFree": true,
+      "otherUnchanged": true
+    },
+    {
+      "id": "c5x33",
+      "target": "挤进门的围观者",
+      "field": "exposed",
+      "value": 1,
+      "cancelFree": true,
+      "otherUnchanged": true
+    }
+  ],
+  "mobileNightRule": {
+    "readableText": "本幕夜禁\n\n噤口 · 门外拦住去路的来人\n不能使用基础压制。先用一次「先护现场」或说破来由解除；卡牌仍可化解危险。",
+    "noOverflow": true
+  },
+  "mobileFullArt": {
+    "returnWorks": true,
+    "noOverflow": true
+  },
+  "pageErrors": [],
+  "httpErrors": []
+}

@@ -1,0 +1,15 @@
+{
+  "checkedAt": "2026-09-22T08:52:17.339439+00:00",
+  "package": "/Users/Zhuanz/Documents/Codex/2026-09-06/di-y/outputs/北段·归名录V2.1_修复试玩包",
+  "runtimeFilesIdenticalToSource": 179,
+  "allRuntimeHashesMatch": true,
+  "fileLauncherBattle": true,
+  "cardCount": 764,
+  "baseStrike": 2,
+  "recursiveTargetFixPresent": true,
+  "newArtPresent": true,
+  "cardInspectionDoesNotSpend": true,
+  "saveReloadEqual": true,
+  "jsErrors": [],
+  "scope": "Actual copied player package in fresh Chromium file origin; full source campaigns and UI regression apply through identical runtime hashes."
+}

@@ -1,0 +1,29 @@
+{
+  "frozenMechanicsMatch": true,
+  "frozenArtMatch": true,
+  "frozenGeneratorInputsMatch": true,
+  "jsSyntaxPassed": [
+    "app.js",
+    "art-map.js",
+    "art-overrides.js",
+    "card-copy-horror.js",
+    "card-copy-terms.js",
+    "card-copy.js",
+    "card-names.js",
+    "card-rebalance.js",
+    "catalog-case56.js",
+    "catalog-rules.js",
+    "catalog.js",
+    "data.js",
+    "encounter-rules.js",
+    "engine.js",
+    "horror-rules.js",
+    "mechanics.js",
+    "story-content.js",
+    "story-revisions.js"
+  ],
+  "postCampaignChangedFiles": [
+    "encounter-rules.js"
+  ],
+  "postCampaignChange": "c1s03p0 tactic only: 原册 clarified to 契约与遗物清单. No rule/data changes; final story/source check and UI tests followed."
+}

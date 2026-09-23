@@ -1,0 +1,143 @@
+/* Insets come from the browser; test overrides use these same four variables. */
+:root{
+ --safe-top:env(safe-area-inset-top,0px);
+ --safe-right:env(safe-area-inset-right,0px);
+ --safe-bottom:env(safe-area-inset-bottom,0px);
+ --safe-left:env(safe-area-inset-left,0px);
+ --mobile-nav-height:78px;
+ --mobile-hand-height:144px;
+}
+html{min-height:100%;scroll-padding-top:calc(var(--safe-top) + 12px)}
+body{min-height:100vh;min-height:100dvh;padding:var(--safe-top) var(--safe-right) var(--safe-bottom) var(--safe-left)}
+.mobile-goal-summary,.goal-receipt{display:none}
+.scrim{
+ z-index:100;top:var(--visible-top,0px);bottom:auto;
+ height:100vh;height:var(--visible-height,100dvh);
+ padding:calc(12px + var(--safe-top)) calc(12px + var(--safe-right)) calc(12px + var(--safe-bottom)) calc(12px + var(--safe-left));
+ overflow:hidden;
+}
+.scrim .modal{max-height:100%;max-width:100%;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+.scrim .passage-modal{overflow-y:auto!important;max-height:100%!important}
+#notice{bottom:calc(16px + var(--safe-bottom));max-width:calc(100vw - var(--safe-left) - var(--safe-right) - 24px)}
+@media (max-width:760px), (max-width:1024px) and (max-height:500px){
+ body[data-view="battle"]{padding-bottom:calc(var(--mobile-nav-height) + var(--mobile-hand-height) + var(--safe-bottom) + 12px)!important}
+ body[data-view="battle"][data-mobile-panel="goal"],body[data-view="battle"][data-targeting="true"]{padding-bottom:calc(var(--mobile-nav-height) + var(--safe-bottom) + 16px)!important}
+ .top,body[data-view="battle"] .top{height:54px;min-height:54px;gap:8px;padding:0 10px}
+ .top nav{gap:2px;margin-left:auto}
+ .top nav button{min-width:44px;min-height:44px;padding:6px;font-size:12px}
+ .top .brand{font-size:24px;flex-shrink:0}
+ .top .brand span{display:none}
+ .tabletop.battle.revised-table{min-height:0!important}
+ .revised-table .table-arena{grid-template-rows:auto!important;grid-auto-rows:auto;gap:8px!important;scroll-margin-top:calc(var(--safe-top) + 10px)}
+ .revised-table .mobile-goal-summary{grid-row:1!important}
+ .revised-table .enemy-rank{grid-row:2!important}
+ .revised-table .table-selection{grid-row:3!important}
+ .revised-table .ally-rank{grid-row:4!important}
+ .revised-table .combo-bar{grid-row:5!important}
+ .revised-table .table-status{grid-row:6!important}
+ .revised-table .player-strip{grid-row:7!important}
+ .revised-table .table-rail{scroll-margin-top:calc(var(--safe-top) + 10px)}
+ .goal-receipt{display:block;grid-column:1/-1;padding:12px;border:1px solid #a58b5559;background:#252217;color:#ded3af;font-size:14px;line-height:1.7}
+ .goal-receipt p{margin:5px 0 0}
+ .revised-table .objective-plaque{padding:12px}
+ .revised-table .objective-plaque>.eyebrow{display:none}
+ .revised-table .objective-plaque h2{font-size:20px;line-height:1.4;margin:0 0 6px}
+ .revised-table .objective-plaque strong{font-size:18px;line-height:1.5}
+ .revised-table .objective-plaque .goal-coach{font-size:12px;line-height:1.6;margin:6px 0}
+ .revised-table .objective-plaque .pressure-goal{padding:6px 8px;font-size:12px;margin:6px 0}
+ .revised-table .objective-plaque .pressure-goal small{font-size:11px}
+ .revised-table .objective-plaque .evidence-link{min-height:44px}
+ .revised-table .table-actions{grid-row:3;grid-column:1/-1}
+ .revised-table .action-budget{grid-row:4;grid-column:1/-1}
+ .goal-receipt{grid-row:5}
+ .revised-table .threat-preview{grid-row:6}
+ .revised-table .night-rules{grid-row:7}
+ body[data-mobile-panel="goal"] .revised-table .table-arena{display:none!important}
+ body[data-mobile-panel="goal"] .revised-table .physical-hand,
+ body[data-targeting="true"] .revised-table .physical-hand{display:none!important}
+ .mobile-goal-summary{display:block;width:100%;padding:9px 12px;background:#152017ef;border:1px solid #9b824759;border-left:3px solid #c09b5d}
+ .mobile-goal-summary>span{font-size:11px;color:#bea985}
+ .mobile-goal-summary>b{display:block;font-size:17px;color:#ead6b3;line-height:1.5}
+ .mobile-goal-summary>p{margin:4px 0 0;font-size:12px;color:#d2ccb7;line-height:1.65}
+ .revised-table .physical-hand.hand-section,.revised-table .compact-hand.physical-hand{
+  left:var(--safe-left)!important;right:var(--safe-right)!important;width:auto!important;
+  bottom:calc(var(--mobile-nav-height) + var(--safe-bottom))!important;
+  height:var(--mobile-hand-height)!important;max-height:var(--mobile-hand-height)!important;
+ }
+ .mobile-battle-nav{
+  height:calc(var(--mobile-nav-height) + var(--safe-bottom));
+  padding:6px calc(10px + var(--safe-right)) calc(7px + var(--safe-bottom)) calc(10px + var(--safe-left));
+ }
+ .mobile-battle-nav>span{font-size:11px;line-height:16px;height:16px;white-space:nowrap;margin:0 0 4px}
+ .mobile-battle-nav button{height:44px;min-height:44px;font-size:12px;padding:6px 3px}
+ .revised-table .effect-receipt{
+  left:calc(8px + var(--safe-left))!important;right:calc(8px + var(--safe-right))!important;
+  bottom:calc(var(--mobile-nav-height) + var(--mobile-hand-height) + var(--safe-bottom))!important;
+  max-height:100px;overflow-y:auto;pointer-events:none;
+ }
+ .revised-table .table-selection{min-height:44px!important}
+ .revised-table .table-selection button,.revised-table .mobile-only,
+ .revised-table .companion-medallion button,.revised-table .story-phase .quiet,
+ .revised-table .deployed-use,.revised-table .deployed-remove{min-height:44px!important;min-width:44px!important;font-size:12px!important;line-height:1.4!important;padding:7px 9px!important}
+ .revised-table .player-strip{min-height:94px;gap:8px}
+ .revised-table .companion-medallion b{font-size:12px}
+ .revised-table .companion-medallion small{display:block;font-size:10px;line-height:1.5}
+ .revised-table .table-resources{font-size:11px}
+ .scrim .modal{width:100%!important;padding:40px 16px 20px}
+ .scrim .modal .close{top:0;min-height:44px;z-index:5}
+ .scrim .passage-modal{padding:0!important}
+ .passage{min-height:0!important;padding:20px!important;display:block}
+ .passage-top{position:static!important;margin:0 62px 20px 0!important;padding:0 0 12px!important;font-size:12px}
+ .passage-line{padding:12px 0!important}
+ .passage .spoken{min-height:0;font-size:20px;line-height:1.8;margin:10px 0}
+ .passage-actions{margin:16px 0 0;padding:10px 0 0;gap:10px}
+ .passage-actions button{min-height:46px}
+ .detail{display:grid!important;grid-template-columns:104px minmax(0,1fr);gap:12px;align-items:start}
+ .detail .detail-frame{min-height:148px!important}
+ .detail .detail-frame .card.physical-card.card-v2{width:104px!important;min-width:104px!important;height:148px!important;min-height:148px!important;margin:0!important}
+ .detail .card-v2 .card-v2-title{font-size:10px!important;line-height:16px!important;height:16px!important}
+ .detail .card-v2 .card-v2-rule,.detail .card-v2 .card-v2-mech,.detail .card-v2 .card-v2-mood{font-size:6.5px!important;line-height:1.3!important}
+ .detail .card-v2 .card-v2-cost{width:24px!important;height:24px!important}
+ .detail .card-v2 .card-v2-cost b{font-size:14px!important}
+ .detail h2{font-size:24px;margin:8px 0 14px}
+ .detail .detail-rules p{font-size:15px;line-height:1.65}
+ .detail p,.detail blockquote{overflow-wrap:anywhere}
+ .detail .primary{font-size:14px;padding:12px 8px}
+ .deck-toolbar{top:0;z-index:3}
+ .deck-toolbar input{font-size:16px;min-height:44px}
+ .deck-toolbar button.primary{min-height:44px}
+ .filter-tabs button,.recipe-row button,.quantity button,.picked-chip,.pagination button,
+ .home-actions button,.menu-options button{min-height:44px;min-width:44px}
+ .full-art>img,.full-art>.art-sprite{max-width:100%}
+ #notice{bottom:calc(var(--mobile-nav-height) + var(--safe-bottom) + 8px)}
+}
+@media (max-width:760px) and (max-height:700px){
+ body[data-view="battle"]{padding-bottom:calc(var(--mobile-nav-height) + var(--safe-bottom) + 12px)!important}
+ .revised-table .physical-hand.hand-section{display:none!important}
+ .revised-table .mobile-goal-summary>p{display:none}
+}
+@media (max-width:1024px) and (max-height:500px){
+ body[data-view="battle"]{padding-bottom:calc(var(--mobile-nav-height) + var(--safe-bottom) + 12px)!important}
+ .revised-table .physical-hand.hand-section{display:none!important}
+ .revised-table .table-story{align-items:center}
+ .revised-table .table-story h1{font-size:22px}
+ .revised-table .enemy-rank{min-height:120px!important}
+ .revised-table .table-arena{max-width:700px;margin:0 auto}
+ .revised-table .table-rail{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:start}
+ .revised-table .round-plaque{grid-column:1;grid-row:1;padding:8px 12px;min-height:64px}
+ .revised-table .round-plaque b{font-size:20px}
+ .revised-table .physical-end{grid-column:2;grid-row:1;justify-self:end;width:64px;height:64px;min-height:64px}
+ .revised-table .objective-plaque{grid-column:1;grid-row:2 / span 3}
+ .revised-table .table-actions{grid-column:2;grid-row:2}
+ .revised-table .action-budget{grid-column:2;grid-row:3}
+ .revised-table .goal-receipt{grid-column:2;grid-row:4}
+ .revised-table .threat-preview{grid-column:1/-1;grid-row:6}
+ .revised-table .night-rules{grid-column:1/-1;grid-row:7}
+ .scrim .modal{max-width:760px}
+ .passage .spoken{font-size:18px;line-height:1.7}
+ .passage-top{margin-bottom:8px!important}
+ .passage-line{padding:4px 0!important}
+ .home-copy{padding-top:70px}
+ .detail{grid-template-columns:140px minmax(0,1fr)}
+ .detail .detail-frame{justify-self:center}
+}

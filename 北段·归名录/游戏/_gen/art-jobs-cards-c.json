@@ -1,0 +1,14 @@
+[
+  {"file":"oil.png","ratio":"4:3","shot":"一盏油灯灯芯结了灯花，火更旺但四周更黑。"},
+  {"file":"mirror.png","ratio":"4:3","shot":"铜镜面朝墙壁放着，镜面不照人。镜布盖了一半。"},
+  {"file":"tool-board.png","ratio":"4:3","shot":"一块朱砂画过符的护板立在门后。不要发光。"},
+  {"file":"tool-cushion.png","ratio":"4:3","shot":"拜垫上有人跪过的凹痕，垫前香灰掉了一截。无人。"},
+  {"file":"tool-hook.png","ratio":"4:3","shot":"铜钩钩着一张未贴稳的符纸，符纸要掉。"},
+  {"file":"tool-flask.png","ratio":"4:3","shot":"陶净水瓶，不是保温壶。瓶口缠红布。"},
+  {"file":"v2-tool-whistle.png","ratio":"4:3","shot":"一串旧铜铃，铃舌被红布缠住不让响。"},
+  {"file":"v2-tool-magnifier.png","ratio":"4:3","shot":"铜框放大镜压在名册一行空白上，空白比别处更白。不要现代塑料。"},
+  {"file":"umbrella.png","ratio":"4:3","shot":"油纸伞靠墙，伞下地面有一圈未干的脚印。"},
+  {"file":"v2-hazard-shoebox.png","ratio":"4:3","shot":"客栈柜台鞋盒半开，盒中一只新鞋；木面上旧鞋湿印朝向屋内。一只手伸向盒，不见脸。"},
+  {"file":"v2-card-xiaohao.png","ratio":"4:3","shot":"名册一行正在被朱笔涂去，纸背透出另一个名字。只见手与袖。"},
+  {"file":"v2-card-huming.png","ratio":"4:3","shot":"门楣黄纸帖，下方旧木有更大的浅色印子和纸毛。"}
+]

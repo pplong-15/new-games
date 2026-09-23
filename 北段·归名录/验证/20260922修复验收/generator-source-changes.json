@@ -1,0 +1,199 @@
+[
+  {
+    "file": "case5-cards.json",
+    "id": "c5x10",
+    "fields": [
+      "target"
+    ]
+  },
+  {
+    "file": "case5-cards.json",
+    "id": "c5x25",
+    "fields": [
+      "target"
+    ]
+  },
+  {
+    "file": "case5-cards.json",
+    "id": "c5x32",
+    "fields": [
+      "target"
+    ]
+  },
+  {
+    "file": "case5-cards.json",
+    "id": "c5x70",
+    "fields": [
+      "unlock",
+      "source",
+      "sourceScene",
+      "text",
+      "shortText",
+      "buildRole",
+      "designEffect",
+      "catalogRule.effectText",
+      "catalogRule.intent"
+    ]
+  },
+  {
+    "file": "case6-cards.json",
+    "id": "c6x06",
+    "fields": [
+      "target"
+    ]
+  },
+  {
+    "file": "case6-cards.json",
+    "id": "c6x35",
+    "fields": [
+      "unlock",
+      "source",
+      "sourceScene",
+      "target"
+    ]
+  },
+  {
+    "file": "case6-cards.json",
+    "id": "c6x36",
+    "fields": [
+      "unlock",
+      "source",
+      "sourceScene",
+      "target"
+    ]
+  },
+  {
+    "file": "case6-cards.json",
+    "id": "c6x37",
+    "fields": [
+      "target"
+    ]
+  },
+  {
+    "file": "case6-cards.json",
+    "id": "c6x69",
+    "fields": [
+      "unlock",
+      "source",
+      "sourceScene",
+      "text",
+      "shortText",
+      "buildRole",
+      "designEffect",
+      "catalogRule.effectText",
+      "catalogRule.intent"
+    ]
+  },
+  {
+    "file": "case6-cards.json",
+    "id": "c6x70",
+    "fields": [
+      "unlock",
+      "source",
+      "sourceScene"
+    ]
+  },
+  {
+    "file": "case6-cards.json",
+    "id": "c6x71",
+    "fields": [
+      "unlock",
+      "source",
+      "sourceScene",
+      "text",
+      "shortText",
+      "buildRole",
+      "designEffect",
+      "catalogRule.effectText",
+      "catalogRule.intent"
+    ]
+  },
+  {
+    "file": "case6-cards.json",
+    "id": "c6x72",
+    "fields": [
+      "unlock",
+      "source",
+      "sourceScene"
+    ]
+  },
+  {
+    "file": "case6-cards.json",
+    "id": "c6x77",
+    "fields": [
+      "unlock",
+      "source",
+      "sourceScene",
+      "text",
+      "shortText",
+      "buildRole",
+      "designEffect",
+      "catalogRule.effects",
+      "catalogRule.effectText",
+      "catalogRule.intent"
+    ]
+  },
+  {
+    "file": "ritual-cards.json",
+    "id": "ritual08",
+    "fields": [
+      "target"
+    ]
+  },
+  {
+    "file": "case5-cards.json",
+    "id": "c5x36",
+    "fields": [
+      "target"
+    ]
+  },
+  {
+    "file": "case5-cards.json",
+    "id": "c5x51",
+    "fields": [
+      "target"
+    ]
+  },
+  {
+    "file": "case5-cards.json",
+    "id": "c5x68",
+    "fields": [
+      "target"
+    ]
+  },
+  {
+    "file": "case6-cards.json",
+    "id": "c6x73",
+    "fields": [
+      "target"
+    ]
+  },
+  {
+    "file": "case6-cards.json",
+    "id": "c6x75",
+    "fields": [
+      "target"
+    ]
+  },
+  {
+    "file": "case5-cards.json",
+    "id": "c5x08",
+    "fields": [
+      "target"
+    ]
+  },
+  {
+    "file": "case5-cards.json",
+    "id": "c5x09",
+    "fields": [
+      "target"
+    ]
+  },
+  {
+    "file": "case5-cards.json",
+    "id": "c5x33",
+    "fields": [
+      "target"
+    ]
+  }
+]

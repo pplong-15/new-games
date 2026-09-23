@@ -1,0 +1,3942 @@
+[
+  {
+    "id": "c6x01",
+    "name": "设醮",
+    "cost": 1,
+    "type": "调查技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 90,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成90场后习得",
+    "sourceScene": "c6s01",
+    "art": "salt",
+    "artExt": "webp",
+    "text": "调查+1；专注+1。",
+    "shortText": "调查+1；专注+1。",
+    "conditions": "",
+    "omen": "坛是净的。受祭的名字还空着。",
+    "archetype": "黄灯无客",
+    "buildRole": "调查+1；专注+1",
+    "designId": "C6X01",
+    "designEffect": "调查+1；专注+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "insight",
+          "n": 1
+        },
+        {
+          "op": "focus",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "调查+1；专注+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x02",
+    "name": "献食",
+    "cost": 1,
+    "type": "交涉技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 91,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成91场后习得",
+    "sourceScene": "c6s02",
+    "art": "v2-prop-bench",
+    "artExt": "webp",
+    "text": "交涉+1；信任+1；若有信任，抽1牌。",
+    "shortText": "交涉+1；信任+1；若有信任，抽1牌。",
+    "conditions": "",
+    "omen": "席面齐了。该来的人没有到。",
+    "archetype": "黄灯无客",
+    "buildRole": "交涉+1；信任+1；若有信任，抽1牌",
+    "designId": "C6X02",
+    "designEffect": "交涉+1；信任+1；若有信任，抽1牌。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "courage",
+          "n": 1
+        },
+        {
+          "op": "resolve",
+          "n": 1
+        },
+        {
+          "op": "if",
+          "condition": "resolve1",
+          "effects": [
+            {
+              "op": "draw",
+              "n": 1
+            }
+          ]
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "交涉+1；信任+1；若有信任，抽1牌。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x03",
+    "name": "辞神",
+    "cost": 2,
+    "type": "应对反制",
+    "mode": "response",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 92,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成92场后习得",
+    "sourceScene": "c6s03",
+    "art": "lantern",
+    "artExt": "webp",
+    "text": "应对转移：通路+2；疲劳+1。",
+    "shortText": "应对转移：通路+2；疲劳+1。",
+    "conditions": "本轮出现转移时触发，未触发返还费用",
+    "omen": "送客的礼做完了，席上仍空着主位。",
+    "archetype": "黄灯无客",
+    "buildRole": "通路+2；疲劳+1",
+    "designId": "C6X03",
+    "designEffect": "应对转移：通路+2；疲劳+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "response",
+      "trigger": "transfer",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "leverage",
+          "n": 2
+        },
+        {
+          "op": "fatigue",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "通路+2；疲劳+1。",
+      "intent": "transfer"
+    }
+  },
+  {
+    "id": "c6x04",
+    "name": "空位",
+    "cost": 1,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 93,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成93场后习得",
+    "sourceScene": "c6s04",
+    "art": "v2-prop-bench",
+    "artExt": "webp",
+    "text": "入场：专注+1。每轮首次回合末：调查+1。共3次。",
+    "shortText": "入场：专注+1。每轮首次回合末：调查+1。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "空位留给谁，账上只记灯油，不记等候。",
+    "archetype": "黄灯无客",
+    "buildRole": "调查+1",
+    "designId": "C6X04",
+    "designEffect": "入场：专注+1。每轮首次回合末：调查+1。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "end",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "focus",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "insight",
+          "n": 1
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "调查+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x05",
+    "name": "香几",
+    "cost": 1,
+    "type": "装备工具",
+    "mode": "equipment",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 94,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成94场后习得",
+    "sourceScene": "c6s05",
+    "art": "tool-cardbox",
+    "artExt": "webp",
+    "text": "入场：专注+1。每轮首次调查行动后：调查+1。共4次。",
+    "shortText": "入场：专注+1。每轮首次调查行动后：调查+1。共4次。",
+    "conditions": "最多3件装备",
+    "omen": "坛是净的。受祭的名字还空着。",
+    "archetype": "黄灯无客",
+    "buildRole": "调查+1",
+    "designId": "C6X05",
+    "designEffect": "入场：专注+1。每轮首次调查行动后：调查+1。共4次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "equipment",
+      "trigger": "goal_insight",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "focus",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "insight",
+          "n": 1
+        }
+      ],
+      "charges": 4,
+      "activateCost": 0,
+      "effectText": "调查+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x06",
+    "name": "羹饭",
+    "cost": 1,
+    "type": "压制技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 95,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成95场后习得",
+    "sourceScene": "c6s06",
+    "art": "v2-prop-bench",
+    "artExt": "webp",
+    "text": "目标压力−2；目标破绽+1。",
+    "shortText": "目标压力−2；目标破绽+1。",
+    "conditions": "",
+    "omen": "直插的筷只说明席面犯忌，不说明有人回来。",
+    "archetype": "黄灯无客",
+    "buildRole": "目标压力−2；目标破绽+1",
+    "designId": "C6X06",
+    "designEffect": "目标压力−2；目标破绽+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "weaken",
+          "n": 2
+        },
+        {
+          "op": "expose",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "目标压力−2；目标破绽+1。",
+      "intent": null
+    },
+    "target": "enemy"
+  },
+  {
+    "id": "c6x07",
+    "name": "琉璃灯",
+    "cost": 2,
+    "type": "防护技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 96,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成96场后习得",
+    "sourceScene": "c6s07",
+    "art": "lantern",
+    "artExt": "webp",
+    "text": "护身+4；挡住反光；保留护身+2。",
+    "shortText": "护身+4；挡住反光；保留护身+2。",
+    "conditions": "",
+    "omen": "黄灯照着空席。材料只核对人数与碗盏。",
+    "archetype": "黄灯无客",
+    "buildRole": "护身+4；挡住反光；保留护身+2",
+    "designId": "C6X07",
+    "designEffect": "护身+4；挡住反光；保留护身+2。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "shield",
+          "n": 4
+        },
+        {
+          "op": "cover",
+          "value": "glare"
+        },
+        {
+          "op": "retain",
+          "n": 2
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "护身+4；挡住反光；保留护身+2。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x08",
+    "name": "线香",
+    "cost": 1,
+    "type": "装备工具",
+    "mode": "equipment",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 97,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成97场后习得",
+    "sourceScene": "c6s08",
+    "art": "oil",
+    "artExt": "webp",
+    "text": "入场：专注+1。每轮首次回合末：调查+1；挡住反光。共4次。",
+    "shortText": "入场：专注+1。每轮首次回合末：调查+1；挡住反光。共4次。",
+    "conditions": "最多3件装备",
+    "omen": "三炷香未尽。门口没有脚步。",
+    "archetype": "黄灯无客",
+    "buildRole": "调查+1；挡住反光",
+    "designId": "C6X08",
+    "designEffect": "入场：专注+1。每轮首次回合末：调查+1；挡住反光。共4次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "equipment",
+      "trigger": "end",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "focus",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "insight",
+          "n": 1
+        },
+        {
+          "op": "cover",
+          "value": "glare"
+        }
+      ],
+      "charges": 4,
+      "activateCost": 0,
+      "effectText": "调查+1；挡住反光。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x09",
+    "name": "接神",
+    "cost": 2,
+    "type": "交涉技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 98,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成98场后习得",
+    "sourceScene": "c6s09",
+    "art": "card-new09",
+    "artExt": "webp",
+    "text": "交涉+2；若有信任，抽取1张人物。",
+    "shortText": "交涉+2；若有信任，抽取1张人物。",
+    "conditions": "",
+    "omen": "三炷香未尽。门口没有脚步。",
+    "archetype": "黄灯无客",
+    "buildRole": "交涉+2；若有信任，抽取1张人物",
+    "designId": "C6X09",
+    "designEffect": "交涉+2；若有信任，抽取1张人物。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "courage",
+          "n": 2
+        },
+        {
+          "op": "if",
+          "condition": "resolve1",
+          "effects": [
+            {
+              "op": "drawMode",
+              "value": "person"
+            }
+          ]
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "交涉+2；若有信任，抽取1张人物。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x10",
+    "name": "还愿",
+    "cost": 1,
+    "type": "交涉技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 99,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成99场后习得",
+    "sourceScene": "c6s10",
+    "art": "tool-notebook",
+    "artExt": "webp",
+    "text": "交涉+1；下幕准备+1。",
+    "shortText": "交涉+1；下幕准备+1。",
+    "conditions": "",
+    "omen": "送客的礼做完了，席上仍空着主位。",
+    "archetype": "黄灯无客",
+    "buildRole": "交涉+1；下幕准备+1",
+    "designId": "C6X10",
+    "designEffect": "交涉+1；下幕准备+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "courage",
+          "n": 1
+        },
+        {
+          "op": "nextProgress",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "交涉+1；下幕准备+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x11",
+    "name": "不应声",
+    "cost": 0,
+    "type": "防护技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 100,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成100场后习得",
+    "sourceScene": "c6s11",
+    "art": "card-new10",
+    "artExt": "webp",
+    "text": "迅手（每轮同名限1）。挡住催逼。",
+    "shortText": "迅手（每轮同名限1）。挡住催逼。",
+    "conditions": "",
+    "omen": "镜已掩上。灯火只照见空碗。",
+    "archetype": "黄灯无客",
+    "buildRole": "挡住催逼",
+    "designId": "C6X11",
+    "designEffect": "迅手（每轮同名限1）。挡住催逼。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "cover",
+          "value": "urge"
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "挡住催逼。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x12",
+    "name": "覆镜",
+    "cost": 1,
+    "type": "防护技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 101,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成101场后习得",
+    "sourceScene": "c6s12",
+    "art": "mirror",
+    "artExt": "webp",
+    "text": "挡住反光；护身+3。",
+    "shortText": "挡住反光；护身+3。",
+    "conditions": "",
+    "omen": "镜已掩上。灯火只照见空碗。",
+    "archetype": "黄灯无客",
+    "buildRole": "挡住反光；护身+3",
+    "designId": "C6X12",
+    "designEffect": "挡住反光；护身+3。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "cover",
+          "value": "glare"
+        },
+        {
+          "op": "shield",
+          "n": 3
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "挡住反光；护身+3。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x13",
+    "name": "喊魂",
+    "cost": 1,
+    "type": "防护技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 102,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成102场后习得",
+    "sourceScene": "c6s13",
+    "art": "tool-warmstone",
+    "artExt": "webp",
+    "text": "回复2心神；处理1级轻伤；若心神未满，回复1心神。",
+    "shortText": "回复2心神；处理1级轻伤；若心神未满，回复1心神。",
+    "conditions": "",
+    "omen": "筷还摆着，座是热过的。人对不上名。",
+    "archetype": "黄灯无客",
+    "buildRole": "回复2心神；处理1级轻伤；若心神未满，回复1心神",
+    "designId": "C6X13",
+    "designEffect": "回复2心神；处理1级轻伤；若心神未满，回复1心神。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "heal",
+          "n": 2
+        },
+        {
+          "op": "care",
+          "n": 1
+        },
+        {
+          "op": "if",
+          "condition": "wounded",
+          "effects": [
+            {
+              "op": "heal",
+              "n": 1
+            }
+          ]
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "回复2心神；处理1级轻伤；若心神未满，回复1心神。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x14",
+    "name": "送客",
+    "cost": 1,
+    "type": "通路技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 103,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成103场后习得",
+    "sourceScene": "c6s14",
+    "art": "card-new26",
+    "artExt": "webp",
+    "text": "通路+1；脚步+1；疲劳+1。",
+    "shortText": "通路+1；脚步+1；疲劳+1。",
+    "conditions": "",
+    "omen": "送客的礼做完了，席上仍空着主位。",
+    "archetype": "黄灯无客",
+    "buildRole": "通路+1；脚步+1；疲劳+1",
+    "designId": "C6X14",
+    "designEffect": "通路+1；脚步+1；疲劳+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "leverage",
+          "n": 1
+        },
+        {
+          "op": "route",
+          "n": 1
+        },
+        {
+          "op": "fatigue",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "通路+1；脚步+1；疲劳+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x15",
+    "name": "香篆",
+    "cost": 1,
+    "type": "调查技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 104,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成104场后习得",
+    "sourceScene": "c6s15",
+    "art": "salt",
+    "artExt": "webp",
+    "text": "调查+1；若有专注，抽1牌。",
+    "shortText": "调查+1；若有专注，抽1牌。",
+    "conditions": "",
+    "omen": "香还在烧。客没有来，或者已经走了。",
+    "archetype": "黄灯无客",
+    "buildRole": "调查+1；若有专注，抽1牌",
+    "designId": "C6X15",
+    "designEffect": "调查+1；若有专注，抽1牌。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "insight",
+          "n": 1
+        },
+        {
+          "op": "if",
+          "condition": "focus1",
+          "effects": [
+            {
+              "op": "draw",
+              "n": 1
+            }
+          ]
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "调查+1；若有专注，抽1牌。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x16",
+    "name": "序宾",
+    "cost": 1,
+    "type": "调查技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 105,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成105场后习得",
+    "sourceScene": "c6s16",
+    "art": "tool-notebook",
+    "artExt": "webp",
+    "text": "调查+1；挡住插话。",
+    "shortText": "调查+1；挡住插话。",
+    "conditions": "",
+    "omen": "席面齐了。该来的人没有到。",
+    "archetype": "黄灯无客",
+    "buildRole": "调查+1；挡住插话",
+    "designId": "C6X16",
+    "designEffect": "调查+1；挡住插话。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "insight",
+          "n": 1
+        },
+        {
+          "op": "cover",
+          "value": "interrupt"
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "调查+1；挡住插话。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x17",
+    "name": "灯花结",
+    "cost": 0,
+    "type": "调查技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 106,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成106场后习得",
+    "sourceScene": "c6s17",
+    "art": "oil",
+    "artExt": "webp",
+    "text": "迅手（每轮同名限1）。调查+1。",
+    "shortText": "迅手（每轮同名限1）。调查+1。",
+    "conditions": "",
+    "omen": "灯都点着，主位的碗却已经用过。",
+    "archetype": "黄灯无客",
+    "buildRole": "调查+1",
+    "designId": "C6X17",
+    "designEffect": "迅手（每轮同名限1）。调查+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "insight",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "调查+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x18",
+    "name": "宣疏",
+    "cost": 2,
+    "type": "调查技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 107,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成107场后习得",
+    "sourceScene": "c6s18",
+    "art": "card-new05",
+    "artExt": "webp",
+    "text": "调查+2；若专注至少2，抽1牌。",
+    "shortText": "调查+2；若专注至少2，抽1牌。",
+    "conditions": "",
+    "omen": "坛是净的。受祭的名字还空着。",
+    "archetype": "黄灯无客",
+    "buildRole": "调查+2；若专注至少2，抽1牌",
+    "designId": "C6X18",
+    "designEffect": "调查+2；若专注至少2，抽1牌。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "insight",
+          "n": 2
+        },
+        {
+          "op": "if",
+          "condition": "focus2",
+          "effects": [
+            {
+              "op": "draw",
+              "n": 1
+            }
+          ]
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "调查+2；若专注至少2，抽1牌。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x19",
+    "name": "上香",
+    "cost": 1,
+    "type": "调查技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 90,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成90场后习得",
+    "sourceScene": "c6s01",
+    "art": "oil",
+    "artExt": "webp",
+    "text": "调查+1；挡住反光。",
+    "shortText": "调查+1；挡住反光。",
+    "conditions": "",
+    "omen": "香还在烧。客没有来，或者已经走了。",
+    "archetype": "黄灯无客",
+    "buildRole": "调查+1；挡住反光",
+    "designId": "C6X19",
+    "designEffect": "调查+1；挡住反光。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "insight",
+          "n": 1
+        },
+        {
+          "op": "cover",
+          "value": "glare"
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "调查+1；挡住反光。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x20",
+    "name": "秉烛",
+    "cost": 1,
+    "type": "调查技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 91,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成91场后习得",
+    "sourceScene": "c6s02",
+    "art": "card-new21",
+    "artExt": "webp",
+    "text": "调查+1；挡住反光。",
+    "shortText": "调查+1；挡住反光。",
+    "conditions": "",
+    "omen": "黄灯照着空席。材料只核对人数与碗盏。",
+    "archetype": "黄灯无客",
+    "buildRole": "调查+1；挡住反光",
+    "designId": "C6X20",
+    "designEffect": "调查+1；挡住反光。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "insight",
+          "n": 1
+        },
+        {
+          "op": "cover",
+          "value": "glare"
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "调查+1；挡住反光。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x21",
+    "name": "巡香",
+    "cost": 1,
+    "type": "通路技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 92,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成92场后习得",
+    "sourceScene": "c6s03",
+    "art": "oil",
+    "artExt": "webp",
+    "text": "通路+1；若有脚步，调查+1。",
+    "shortText": "通路+1；若有脚步，调查+1。",
+    "conditions": "",
+    "omen": "三炷香未尽。门口没有脚步。",
+    "archetype": "黄灯无客",
+    "buildRole": "通路+1；若有脚步，调查+1",
+    "designId": "C6X21",
+    "designEffect": "通路+1；若有脚步，调查+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "leverage",
+          "n": 1
+        },
+        {
+          "op": "if",
+          "condition": "route1",
+          "effects": [
+            {
+              "op": "insight",
+              "n": 1
+            }
+          ]
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "通路+1；若有脚步，调查+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x22",
+    "name": "禹步",
+    "cost": 2,
+    "type": "通路技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 93,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成93场后习得",
+    "sourceScene": "c6s04",
+    "art": "card-new24",
+    "artExt": "webp",
+    "text": "通路+2；若有脚步，解1道束缚。",
+    "shortText": "通路+2；若有脚步，解1道束缚。",
+    "conditions": "",
+    "omen": "备席的人把灯拨亮。亮处没有客。",
+    "archetype": "黄灯无客",
+    "buildRole": "通路+2；若有脚步，解1道束缚",
+    "designId": "C6X22",
+    "designEffect": "通路+2；若有脚步，解1道束缚。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "leverage",
+          "n": 2
+        },
+        {
+          "op": "if",
+          "condition": "route1",
+          "effects": [
+            {
+              "op": "cut",
+              "n": 1
+            }
+          ]
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "通路+2；若有脚步，解1道束缚。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x23",
+    "name": "绕坛",
+    "cost": 1,
+    "type": "通路技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 94,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成94场后习得",
+    "sourceScene": "c6s05",
+    "art": "v2-prop-compass",
+    "artExt": "webp",
+    "text": "通路+1；脚步+1。",
+    "shortText": "通路+1；脚步+1。",
+    "conditions": "",
+    "omen": "坛是净的。受祭的名字还空着。",
+    "archetype": "黄灯无客",
+    "buildRole": "通路+1；脚步+1",
+    "designId": "C6X23",
+    "designEffect": "通路+1；脚步+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "leverage",
+          "n": 1
+        },
+        {
+          "op": "route",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "通路+1；脚步+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x24",
+    "name": "延客",
+    "cost": 0,
+    "type": "通路技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 95,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成95场后习得",
+    "sourceScene": "c6s06",
+    "art": "card-new09",
+    "artExt": "webp",
+    "text": "迅手（每轮同名限1）。脚步+1。",
+    "shortText": "迅手（每轮同名限1）。脚步+1。",
+    "conditions": "",
+    "omen": "席面齐了。该来的人没有到。",
+    "archetype": "黄灯无客",
+    "buildRole": "脚步+1",
+    "designId": "C6X24",
+    "designEffect": "迅手（每轮同名限1）。脚步+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "route",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "脚步+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x25",
+    "name": "踏斗",
+    "cost": 1,
+    "type": "通路技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 96,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成96场后习得",
+    "sourceScene": "c6s07",
+    "art": "card-new24",
+    "artExt": "webp",
+    "text": "通路+1；脚步+1。",
+    "shortText": "通路+1；脚步+1。",
+    "conditions": "",
+    "omen": "备席的人把灯拨亮。亮处没有客。",
+    "archetype": "黄灯无客",
+    "buildRole": "通路+1；脚步+1",
+    "designId": "C6X25",
+    "designEffect": "通路+1；脚步+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "leverage",
+          "n": 1
+        },
+        {
+          "op": "route",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "通路+1；脚步+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x26",
+    "name": "奠酒",
+    "cost": 1,
+    "type": "交涉技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 97,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成97场后习得",
+    "sourceScene": "c6s08",
+    "art": "tool-flask",
+    "artExt": "webp",
+    "text": "交涉+1；若有信任，回复2心神。",
+    "shortText": "交涉+1；若有信任，回复2心神。",
+    "conditions": "",
+    "omen": "灯都点着，主位的碗却已经用过。",
+    "archetype": "黄灯无客",
+    "buildRole": "交涉+1；若有信任，回复2心神",
+    "designId": "C6X26",
+    "designEffect": "交涉+1；若有信任，回复2心神。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "courage",
+          "n": 1
+        },
+        {
+          "op": "if",
+          "condition": "resolve1",
+          "effects": [
+            {
+              "op": "heal",
+              "n": 2
+            }
+          ]
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "交涉+1；若有信任，回复2心神。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x27",
+    "name": "侑食",
+    "cost": 0,
+    "type": "交涉技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 98,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成98场后习得",
+    "sourceScene": "c6s09",
+    "art": "v2-prop-bench",
+    "artExt": "webp",
+    "text": "迅手（每轮同名限1）。交涉+1。",
+    "shortText": "迅手（每轮同名限1）。交涉+1。",
+    "conditions": "",
+    "omen": "席面齐了。该来的人没有到。",
+    "archetype": "黄灯无客",
+    "buildRole": "交涉+1",
+    "designId": "C6X27",
+    "designEffect": "迅手（每轮同名限1）。交涉+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "courage",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "交涉+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x28",
+    "name": "剑诀",
+    "cost": 0,
+    "type": "调度技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 99,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成99场后习得",
+    "sourceScene": "c6s10",
+    "art": "v2-prop-gloves",
+    "artExt": "webp",
+    "text": "迅手（每轮同名限1）。下轮费用+1。",
+    "shortText": "迅手（每轮同名限1）。下轮费用+1。",
+    "conditions": "",
+    "omen": "坛是净的。受祭的名字还空着。",
+    "archetype": "黄灯无客",
+    "buildRole": "下轮费用+1",
+    "designId": "C6X28",
+    "designEffect": "迅手（每轮同名限1）。下轮费用+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "nextEnergy",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "下轮费用+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x29",
+    "name": "素词",
+    "cost": 1,
+    "type": "调度技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 100,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成100场后习得",
+    "sourceScene": "c6s11",
+    "art": "v2-prop-pen",
+    "artExt": "webp",
+    "text": "下幕准备+1；下轮费用+1。",
+    "shortText": "下幕准备+1；下轮费用+1。",
+    "conditions": "",
+    "omen": "空位留给谁，账上只记灯油，不记等候。",
+    "archetype": "黄灯无客",
+    "buildRole": "下幕准备+1；下轮费用+1",
+    "designId": "C6X29",
+    "designEffect": "下幕准备+1；下轮费用+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "nextProgress",
+          "n": 1
+        },
+        {
+          "op": "nextEnergy",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "下幕准备+1；下轮费用+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x30",
+    "name": "拜表",
+    "cost": 2,
+    "type": "调度技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 101,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成101场后习得",
+    "sourceScene": "c6s12",
+    "art": "tool-notebook",
+    "artExt": "webp",
+    "text": "下幕准备+2。",
+    "shortText": "下幕准备+2。",
+    "conditions": "",
+    "omen": "坛是净的。受祭的名字还空着。",
+    "archetype": "黄灯无客",
+    "buildRole": "下幕准备+2",
+    "designId": "C6X30",
+    "designEffect": "下幕准备+2。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "nextProgress",
+          "n": 2
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "下幕准备+2。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x31",
+    "name": "存思",
+    "cost": 1,
+    "type": "调度技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 102,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成102场后习得",
+    "sourceScene": "c6s13",
+    "art": "card-new10",
+    "artExt": "webp",
+    "text": "专注+1；下轮费用+1。",
+    "shortText": "专注+1；下轮费用+1。",
+    "conditions": "",
+    "omen": "镜已掩上。灯火只照见空碗。",
+    "archetype": "黄灯无客",
+    "buildRole": "专注+1；下轮费用+1",
+    "designId": "C6X31",
+    "designEffect": "专注+1；下轮费用+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "focus",
+          "n": 1
+        },
+        {
+          "op": "nextEnergy",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "专注+1；下轮费用+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x32",
+    "name": "许愿",
+    "cost": 1,
+    "type": "调度技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 103,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成103场后习得",
+    "sourceScene": "c6s14",
+    "art": "tool-pageclip",
+    "artExt": "webp",
+    "text": "专注+1；若有专注，下轮费用+1。",
+    "shortText": "专注+1；若有专注，下轮费用+1。",
+    "conditions": "",
+    "omen": "三炷香未尽。门口没有脚步。",
+    "archetype": "黄灯无客",
+    "buildRole": "专注+1；若有专注，下轮费用+1",
+    "designId": "C6X32",
+    "designEffect": "专注+1；若有专注，下轮费用+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "focus",
+          "n": 1
+        },
+        {
+          "op": "if",
+          "condition": "focus1",
+          "effects": [
+            {
+              "op": "nextEnergy",
+              "n": 1
+            }
+          ]
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "专注+1；若有专注，下轮费用+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x33",
+    "name": "镇宅",
+    "cost": 2,
+    "type": "防护技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 104,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成104场后习得",
+    "sourceScene": "c6s15",
+    "art": "tool-wedge",
+    "artExt": "webp",
+    "text": "护身+4；保留护身+2。",
+    "shortText": "护身+4；保留护身+2。",
+    "conditions": "",
+    "omen": "坛是净的。受祭的名字还空着。",
+    "archetype": "黄灯无客",
+    "buildRole": "护身+4；保留护身+2",
+    "designId": "C6X33",
+    "designEffect": "护身+4；保留护身+2。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "shield",
+          "n": 4
+        },
+        {
+          "op": "retain",
+          "n": 2
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "护身+4；保留护身+2。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x34",
+    "name": "解厄",
+    "cost": 1,
+    "type": "防护技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 105,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成105场后习得",
+    "sourceScene": "c6s16",
+    "art": "tool-flask",
+    "artExt": "webp",
+    "text": "消除1疲劳；处理1级轻伤；回复2心神。",
+    "shortText": "消除1疲劳；处理1级轻伤；回复2心神。",
+    "conditions": "",
+    "omen": "筷还摆着，座是热过的。人对不上名。",
+    "archetype": "黄灯无客",
+    "buildRole": "消除1疲劳；处理1级轻伤；回复2心神",
+    "designId": "C6X34",
+    "designEffect": "消除1疲劳；处理1级轻伤；回复2心神。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "calm",
+          "n": 1
+        },
+        {
+          "op": "care",
+          "n": 1
+        },
+        {
+          "op": "heal",
+          "n": 2
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "消除1疲劳；处理1级轻伤；回复2心神。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x35",
+    "name": "敕令",
+    "cost": 1,
+    "type": "压制技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 101,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成101场后习得",
+    "sourceScene": "c6s12",
+    "art": "v2-prop-pen",
+    "artExt": "webp",
+    "text": "打断目标本轮攻击；目标压力−1。",
+    "shortText": "打断目标本轮攻击；目标压力−1。",
+    "conditions": "",
+    "omen": "备席的人把灯拨亮。亮处没有客。",
+    "archetype": "黄灯无客",
+    "buildRole": "打断目标本轮攻击；目标压力−1",
+    "designId": "C6X35",
+    "designEffect": "打断目标本轮攻击；目标压力−1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "stun"
+        },
+        {
+          "op": "weaken",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "打断目标本轮攻击；目标压力−1。",
+      "intent": null
+    },
+    "target": "enemy"
+  },
+  {
+    "id": "c6x36",
+    "name": "超度",
+    "cost": 2,
+    "type": "压制技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 102,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成102场后习得",
+    "sourceScene": "c6s13",
+    "art": "lantern",
+    "artExt": "webp",
+    "text": "压制目标3；若目标已受削弱，打断目标本轮攻击。",
+    "shortText": "压制目标3；若目标已受削弱，打断目标本轮攻击。",
+    "conditions": "",
+    "omen": "直插的筷只说明席面犯忌，不说明有人回来。",
+    "archetype": "黄灯无客",
+    "buildRole": "压制目标3；若目标已受削弱，打断目标本轮攻击",
+    "designId": "C6X36",
+    "designEffect": "压制目标3；若目标已受削弱，打断目标本轮攻击。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "damage",
+          "n": 3
+        },
+        {
+          "op": "if",
+          "condition": "weakened",
+          "effects": [
+            {
+              "op": "stun"
+            }
+          ]
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "压制目标3；若目标已受削弱，打断目标本轮攻击。",
+      "intent": null
+    },
+    "target": "enemy"
+  },
+  {
+    "id": "c6x37",
+    "name": "禁声",
+    "cost": 1,
+    "type": "压制技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 90,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成90场后习得",
+    "sourceScene": "c6s01",
+    "art": "card-new25",
+    "artExt": "webp",
+    "text": "打断目标本轮攻击；挡住插话。",
+    "shortText": "打断目标本轮攻击；挡住插话。",
+    "conditions": "",
+    "omen": "镜已掩上。灯火只照见空碗。",
+    "archetype": "黄灯无客",
+    "buildRole": "打断目标本轮攻击；挡住插话",
+    "designId": "C6X37",
+    "designEffect": "打断目标本轮攻击；挡住插话。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "stun"
+        },
+        {
+          "op": "cover",
+          "value": "interrupt"
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "打断目标本轮攻击；挡住插话。",
+      "intent": null
+    },
+    "target": "enemy"
+  },
+  {
+    "id": "c6x38",
+    "name": "博山炉",
+    "cost": 2,
+    "type": "装备工具",
+    "mode": "equipment",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 91,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成91场后习得",
+    "sourceScene": "c6s02",
+    "art": "salt",
+    "artExt": "webp",
+    "text": "入场：挡住反光。每轮首次调查行动后：调查+1；挡住反光。共4次。",
+    "shortText": "入场：挡住反光。每轮首次调查行动后：调查+1；挡住反光。共4次。",
+    "conditions": "最多3件装备",
+    "omen": "香还在烧。客没有来，或者已经走了。",
+    "archetype": "黄灯无客",
+    "buildRole": "调查+1；挡住反光",
+    "designId": "C6X38",
+    "designEffect": "入场：挡住反光。每轮首次调查行动后：调查+1；挡住反光。共4次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "equipment",
+      "trigger": "goal_insight",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "cover",
+          "value": "glare"
+        }
+      ],
+      "effects": [
+        {
+          "op": "insight",
+          "n": 1
+        },
+        {
+          "op": "cover",
+          "value": "glare"
+        }
+      ],
+      "charges": 4,
+      "activateCost": 0,
+      "effectText": "调查+1；挡住反光。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x39",
+    "name": "净水盂",
+    "cost": 1,
+    "type": "装备工具",
+    "mode": "equipment",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 92,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成92场后习得",
+    "sourceScene": "c6s03",
+    "art": "tool-flask",
+    "artExt": "webp",
+    "text": "入场：干燥准备+1。每轮一次，1费：消除1疲劳；处理1级轻伤。共4次。",
+    "shortText": "入场：干燥准备+1。每轮一次，1费：消除1疲劳；处理1级轻伤。共4次。",
+    "conditions": "最多3件装备",
+    "omen": "坛是净的。受祭的名字还空着。",
+    "archetype": "黄灯无客",
+    "buildRole": "消除1疲劳；处理1级轻伤",
+    "designId": "C6X39",
+    "designEffect": "入场：干燥准备+1。每轮一次，1费：消除1疲劳；处理1级轻伤。共4次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "equipment",
+      "trigger": "activate",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "dry",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "calm",
+          "n": 1
+        },
+        {
+          "op": "care",
+          "n": 1
+        }
+      ],
+      "charges": 4,
+      "activateCost": 1,
+      "effectText": "消除1疲劳；处理1级轻伤。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x40",
+    "name": "柳枝",
+    "cost": 1,
+    "type": "装备工具",
+    "mode": "equipment",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 93,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成93场后习得",
+    "sourceScene": "c6s04",
+    "art": "v2-prop-fan",
+    "artExt": "webp",
+    "text": "入场：消除1疲劳。每轮首次回复心神后：回复1心神；干燥准备+1。共4次。",
+    "shortText": "入场：消除1疲劳。每轮首次回复心神后：回复1心神；干燥准备+1。共4次。",
+    "conditions": "最多3件装备",
+    "omen": "坛是净的。受祭的名字还空着。",
+    "archetype": "黄灯无客",
+    "buildRole": "回复1心神；干燥准备+1",
+    "designId": "C6X40",
+    "designEffect": "入场：消除1疲劳。每轮首次回复心神后：回复1心神；干燥准备+1。共4次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "equipment",
+      "trigger": "heal",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "calm",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "heal",
+          "n": 1
+        },
+        {
+          "op": "dry",
+          "n": 1
+        }
+      ],
+      "charges": 4,
+      "activateCost": 0,
+      "effectText": "回复1心神；干燥准备+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x41",
+    "name": "令牌",
+    "cost": 2,
+    "type": "装备工具",
+    "mode": "equipment",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 94,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成94场后习得",
+    "sourceScene": "c6s05",
+    "art": "tool-cardbox",
+    "artExt": "webp",
+    "text": "入场：信任+1。每轮首次交涉行动后：交涉+1；若有协作者，抽取1张人物。共4次。",
+    "shortText": "入场：信任+1。每轮首次交涉行动后：交涉+1；若有协作者，抽取1张人物。共4次。",
+    "conditions": "最多3件装备",
+    "omen": "备席的人把灯拨亮。亮处没有客。",
+    "archetype": "黄灯无客",
+    "buildRole": "交涉+1；若有协作者，抽取1张人物",
+    "designId": "C6X41",
+    "designEffect": "入场：信任+1。每轮首次交涉行动后：交涉+1；若有协作者，抽取1张人物。共4次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "equipment",
+      "trigger": "goal_courage",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "resolve",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "courage",
+          "n": 1
+        },
+        {
+          "op": "if",
+          "condition": "people1",
+          "effects": [
+            {
+              "op": "drawMode",
+              "value": "person"
+            }
+          ]
+        }
+      ],
+      "charges": 4,
+      "activateCost": 0,
+      "effectText": "交涉+1；若有协作者，抽取1张人物。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x42",
+    "name": "朝简",
+    "cost": 1,
+    "type": "装备工具",
+    "mode": "equipment",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 95,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成95场后习得",
+    "sourceScene": "c6s06",
+    "art": "v2-prop-pen",
+    "artExt": "webp",
+    "text": "入场：交涉+1。每轮首次交涉行动后：交涉+1；信任+1。共4次。",
+    "shortText": "入场：交涉+1。每轮首次交涉行动后：交涉+1；信任+1。共4次。",
+    "conditions": "最多3件装备",
+    "omen": "空位留给谁，账上只记灯油，不记等候。",
+    "archetype": "黄灯无客",
+    "buildRole": "交涉+1；信任+1",
+    "designId": "C6X42",
+    "designEffect": "入场：交涉+1。每轮首次交涉行动后：交涉+1；信任+1。共4次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "equipment",
+      "trigger": "goal_courage",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "courage",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "courage",
+          "n": 1
+        },
+        {
+          "op": "resolve",
+          "n": 1
+        }
+      ],
+      "charges": 4,
+      "activateCost": 0,
+      "effectText": "交涉+1；信任+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x43",
+    "name": "烛台",
+    "cost": 1,
+    "type": "装备工具",
+    "mode": "equipment",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 96,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成96场后习得",
+    "sourceScene": "c6s07",
+    "art": "lantern",
+    "artExt": "webp",
+    "text": "入场：挡住反光。每轮首次回合末：保留护身+1；挡住反光。共4次。",
+    "shortText": "入场：挡住反光。每轮首次回合末：保留护身+1；挡住反光。共4次。",
+    "conditions": "最多3件装备",
+    "omen": "灯都点着，主位的碗却已经用过。",
+    "archetype": "黄灯无客",
+    "buildRole": "保留护身+1；挡住反光",
+    "designId": "C6X43",
+    "designEffect": "入场：挡住反光。每轮首次回合末：保留护身+1；挡住反光。共4次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "equipment",
+      "trigger": "end",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "cover",
+          "value": "glare"
+        }
+      ],
+      "effects": [
+        {
+          "op": "retain",
+          "n": 1
+        },
+        {
+          "op": "cover",
+          "value": "glare"
+        }
+      ],
+      "charges": 4,
+      "activateCost": 0,
+      "effectText": "保留护身+1；挡住反光。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x44",
+    "name": "净巾",
+    "cost": 0,
+    "type": "装备工具",
+    "mode": "equipment",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 97,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成97场后习得",
+    "sourceScene": "c6s08",
+    "art": "v2-prop-cape",
+    "artExt": "webp",
+    "text": "迅手（每轮同名限1）。入场：消除1疲劳。每轮首次受伤后：处理1级轻伤；回复1心神。共4次。",
+    "shortText": "迅手（每轮同名限1）。入场：消除1疲劳。每轮首次受伤后：处理1级轻伤；回复1心神。共4次。",
+    "conditions": "最多3件装备",
+    "omen": "坛是净的。受祭的名字还空着。",
+    "archetype": "黄灯无客",
+    "buildRole": "处理1级轻伤；回复1心神",
+    "designId": "C6X44",
+    "designEffect": "迅手（每轮同名限1）。入场：消除1疲劳。每轮首次受伤后：处理1级轻伤；回复1心神。共4次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "equipment",
+      "trigger": "hurt",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "calm",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "care",
+          "n": 1
+        },
+        {
+          "op": "heal",
+          "n": 1
+        }
+      ],
+      "charges": 4,
+      "activateCost": 0,
+      "effectText": "处理1级轻伤；回复1心神。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x45",
+    "name": "木令牌",
+    "cost": 2,
+    "type": "装备工具",
+    "mode": "equipment",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 98,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成98场后习得",
+    "sourceScene": "c6s09",
+    "art": "v2-tool-roll",
+    "artExt": "webp",
+    "text": "入场：打断目标本轮攻击。每轮一次，1费：目标压力−1；打断目标本轮攻击。共4次。",
+    "shortText": "入场：打断目标本轮攻击。每轮一次，1费：目标压力−1；打断目标本轮攻击。共4次。",
+    "conditions": "最多3件装备",
+    "omen": "备席的人把灯拨亮。亮处没有客。",
+    "archetype": "黄灯无客",
+    "buildRole": "目标压力−1；打断目标本轮攻击",
+    "designId": "C6X45",
+    "designEffect": "入场：打断目标本轮攻击。每轮一次，1费：目标压力−1；打断目标本轮攻击。共4次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "equipment",
+      "trigger": "activate",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "stun"
+        }
+      ],
+      "effects": [
+        {
+          "op": "weaken",
+          "n": 1
+        },
+        {
+          "op": "stun"
+        }
+      ],
+      "charges": 4,
+      "activateCost": 1,
+      "effectText": "目标压力−1；打断目标本轮攻击。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x46",
+    "name": "雷印",
+    "cost": 2,
+    "type": "装备工具",
+    "mode": "equipment",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 99,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成99场后习得",
+    "sourceScene": "c6s10",
+    "art": "tool-pageclip",
+    "artExt": "webp",
+    "text": "入场：目标破绽+1。每轮首次调查行动后：目标压力−1；目标破绽+1。共4次。",
+    "shortText": "入场：目标破绽+1。每轮首次调查行动后：目标压力−1；目标破绽+1。共4次。",
+    "conditions": "最多3件装备",
+    "omen": "坛是净的。受祭的名字还空着。",
+    "archetype": "黄灯无客",
+    "buildRole": "目标压力−1；目标破绽+1",
+    "designId": "C6X46",
+    "designEffect": "入场：目标破绽+1。每轮首次调查行动后：目标压力−1；目标破绽+1。共4次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "equipment",
+      "trigger": "goal_insight",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "expose",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "weaken",
+          "n": 1
+        },
+        {
+          "op": "expose",
+          "n": 1
+        }
+      ],
+      "charges": 4,
+      "activateCost": 0,
+      "effectText": "目标压力−1；目标破绽+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x47",
+    "name": "压坛木",
+    "cost": 2,
+    "type": "装备工具",
+    "mode": "equipment",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 100,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成100场后习得",
+    "sourceScene": "c6s11",
+    "art": "tool-wedge",
+    "artExt": "webp",
+    "text": "入场：打断目标本轮攻击。每轮首次敌袭后：打断目标本轮攻击；护身+2。共4次。",
+    "shortText": "入场：打断目标本轮攻击。每轮首次敌袭后：打断目标本轮攻击；护身+2。共4次。",
+    "conditions": "最多3件装备",
+    "omen": "坛是净的。受祭的名字还空着。",
+    "archetype": "黄灯无客",
+    "buildRole": "打断目标本轮攻击；护身+2",
+    "designId": "C6X47",
+    "designEffect": "入场：打断目标本轮攻击。每轮首次敌袭后：打断目标本轮攻击；护身+2。共4次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "equipment",
+      "trigger": "attack",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "stun"
+        }
+      ],
+      "effects": [
+        {
+          "op": "stun"
+        },
+        {
+          "op": "shield",
+          "n": 2
+        }
+      ],
+      "charges": 4,
+      "activateCost": 0,
+      "effectText": "打断目标本轮攻击；护身+2。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x48",
+    "name": "羽觞",
+    "cost": 1,
+    "type": "装备工具",
+    "mode": "equipment",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 101,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成101场后习得",
+    "sourceScene": "c6s12",
+    "art": "tool-flask",
+    "artExt": "webp",
+    "text": "入场：信任+1。每轮首次交涉行动后：交涉+1；回复1心神。共4次。",
+    "shortText": "入场：信任+1。每轮首次交涉行动后：交涉+1；回复1心神。共4次。",
+    "conditions": "最多3件装备",
+    "omen": "席面齐了。该来的人没有到。",
+    "archetype": "黄灯无客",
+    "buildRole": "交涉+1；回复1心神",
+    "designId": "C6X48",
+    "designEffect": "入场：信任+1。每轮首次交涉行动后：交涉+1；回复1心神。共4次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "equipment",
+      "trigger": "goal_courage",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "resolve",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "courage",
+          "n": 1
+        },
+        {
+          "op": "heal",
+          "n": 1
+        }
+      ],
+      "charges": 4,
+      "activateCost": 0,
+      "effectText": "交涉+1；回复1心神。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x49",
+    "name": "食案",
+    "cost": 2,
+    "type": "装备工具",
+    "mode": "equipment",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 102,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成102场后习得",
+    "sourceScene": "c6s13",
+    "art": "v2-prop-bench",
+    "artExt": "webp",
+    "text": "入场：抽1牌。每轮首次交涉行动后：抽1牌；信任+1。共4次。",
+    "shortText": "入场：抽1牌。每轮首次交涉行动后：抽1牌；信任+1。共4次。",
+    "conditions": "最多3件装备",
+    "omen": "灯都点着，主位的碗却已经用过。",
+    "archetype": "黄灯无客",
+    "buildRole": "抽1牌；信任+1",
+    "designId": "C6X49",
+    "designEffect": "入场：抽1牌。每轮首次交涉行动后：抽1牌；信任+1。共4次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "equipment",
+      "trigger": "goal_courage",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "draw",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "draw",
+          "n": 1
+        },
+        {
+          "op": "resolve",
+          "n": 1
+        }
+      ],
+      "charges": 4,
+      "activateCost": 0,
+      "effectText": "抽1牌；信任+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x50",
+    "name": "磬",
+    "cost": 1,
+    "type": "装备工具",
+    "mode": "equipment",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 103,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成103场后习得",
+    "sourceScene": "c6s14",
+    "art": "v2-prop-bell",
+    "artExt": "webp",
+    "text": "入场：挡住插话。每轮首次应对成功后：消除1疲劳；挡住插话。共4次。",
+    "shortText": "入场：挡住插话。每轮首次应对成功后：消除1疲劳；挡住插话。共4次。",
+    "conditions": "最多3件装备",
+    "omen": "镜已掩上。灯火只照见空碗。",
+    "archetype": "黄灯无客",
+    "buildRole": "消除1疲劳；挡住插话",
+    "designId": "C6X50",
+    "designEffect": "入场：挡住插话。每轮首次应对成功后：消除1疲劳；挡住插话。共4次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "equipment",
+      "trigger": "response",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "cover",
+          "value": "interrupt"
+        }
+      ],
+      "effects": [
+        {
+          "op": "calm",
+          "n": 1
+        },
+        {
+          "op": "cover",
+          "value": "interrupt"
+        }
+      ],
+      "charges": 4,
+      "activateCost": 0,
+      "effectText": "消除1疲劳；挡住插话。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x51",
+    "name": "炉瓶三事",
+    "cost": 2,
+    "type": "装备工具",
+    "mode": "equipment",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 104,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成104场后习得",
+    "sourceScene": "c6s15",
+    "art": "salt",
+    "artExt": "webp",
+    "text": "入场：护身+2。每轮首次部署布置后：保留护身+2；挡住反光。共4次。",
+    "shortText": "入场：护身+2。每轮首次部署布置后：保留护身+2；挡住反光。共4次。",
+    "conditions": "最多3件装备",
+    "omen": "香还在烧。客没有来，或者已经走了。",
+    "archetype": "黄灯无客",
+    "buildRole": "保留护身+2；挡住反光",
+    "designId": "C6X51",
+    "designEffect": "入场：护身+2。每轮首次部署布置后：保留护身+2；挡住反光。共4次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "equipment",
+      "trigger": "deploy_setup",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "shield",
+          "n": 2
+        }
+      ],
+      "effects": [
+        {
+          "op": "retain",
+          "n": 2
+        },
+        {
+          "op": "cover",
+          "value": "glare"
+        }
+      ],
+      "charges": 4,
+      "activateCost": 0,
+      "effectText": "保留护身+2；挡住反光。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x52",
+    "name": "虚位",
+    "cost": 2,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 105,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成105场后习得",
+    "sourceScene": "c6s16",
+    "art": "v2-prop-bench",
+    "artExt": "webp",
+    "text": "入场：下轮费用+1。每轮首次回合开始：调查+1；专注+1。共3次。",
+    "shortText": "入场：下轮费用+1。每轮首次回合开始：调查+1；专注+1。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "空位留给谁，账上只记灯油，不记等候。",
+    "archetype": "黄灯无客",
+    "buildRole": "调查+1；专注+1",
+    "designId": "C6X52",
+    "designEffect": "入场：下轮费用+1。每轮首次回合开始：调查+1；专注+1。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "turn",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "nextEnergy",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "insight",
+          "n": 1
+        },
+        {
+          "op": "focus",
+          "n": 1
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "调查+1；专注+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x53",
+    "name": "主位",
+    "cost": 1,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 106,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成106场后习得",
+    "sourceScene": "c6s17",
+    "art": "v2-prop-bench",
+    "artExt": "webp",
+    "text": "入场：信任+1。每轮首次交涉行动后：交涉+1；若为本轮首张，目标破绽+1。共3次。",
+    "shortText": "入场：信任+1。每轮首次交涉行动后：交涉+1；若为本轮首张，目标破绽+1。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "灯都点着，主位的碗却已经用过。",
+    "archetype": "黄灯无客",
+    "buildRole": "交涉+1；若为本轮首张，目标破绽+1",
+    "designId": "C6X53",
+    "designEffect": "入场：信任+1。每轮首次交涉行动后：交涉+1；若为本轮首张，目标破绽+1。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "goal_courage",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "resolve",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "courage",
+          "n": 1
+        },
+        {
+          "op": "if",
+          "condition": "first",
+          "effects": [
+            {
+              "op": "expose",
+              "n": 1
+            }
+          ]
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "交涉+1；若为本轮首张，目标破绽+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x54",
+    "name": "醮坛",
+    "cost": 2,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 107,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成107场后习得",
+    "sourceScene": "c6s18",
+    "art": "salt",
+    "artExt": "webp",
+    "text": "入场：消除1疲劳；专注+1。每轮首次调查行动后：调查+1；挡住散页。共3次。",
+    "shortText": "入场：消除1疲劳；专注+1。每轮首次调查行动后：调查+1；挡住散页。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "坛是净的。受祭的名字还空着。",
+    "archetype": "黄灯无客",
+    "buildRole": "调查+1；挡住散页",
+    "designId": "C6X54",
+    "designEffect": "入场：消除1疲劳；专注+1。每轮首次调查行动后：调查+1；挡住散页。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "goal_insight",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "calm",
+          "n": 1
+        },
+        {
+          "op": "focus",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "insight",
+          "n": 1
+        },
+        {
+          "op": "cover",
+          "value": "scatter"
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "调查+1；挡住散页。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x55",
+    "name": "供桌",
+    "cost": 1,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 90,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成90场后习得",
+    "sourceScene": "c6s01",
+    "art": "v2-prop-bench",
+    "artExt": "webp",
+    "text": "入场：挡住散页。每轮首次调查行动后：调查+1；挡住散页。共3次。",
+    "shortText": "入场：挡住散页。每轮首次调查行动后：调查+1；挡住散页。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "香还在烧。客没有来，或者已经走了。",
+    "archetype": "黄灯无客",
+    "buildRole": "调查+1；挡住散页",
+    "designId": "C6X55",
+    "designEffect": "入场：挡住散页。每轮首次调查行动后：调查+1；挡住散页。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "goal_insight",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "cover",
+          "value": "scatter"
+        }
+      ],
+      "effects": [
+        {
+          "op": "insight",
+          "n": 1
+        },
+        {
+          "op": "cover",
+          "value": "scatter"
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "调查+1；挡住散页。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x56",
+    "name": "神筵",
+    "cost": 2,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 91,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成91场后习得",
+    "sourceScene": "c6s02",
+    "art": "card-new09",
+    "artExt": "webp",
+    "text": "入场：护身+2。每轮首次应对成功后：保留护身+2；信任+1。共3次。",
+    "shortText": "入场：护身+2。每轮首次应对成功后：保留护身+2；信任+1。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "席面齐了。该来的人没有到。",
+    "archetype": "黄灯无客",
+    "buildRole": "保留护身+2；信任+1",
+    "designId": "C6X56",
+    "designEffect": "入场：护身+2。每轮首次应对成功后：保留护身+2；信任+1。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "response",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "shield",
+          "n": 2
+        }
+      ],
+      "effects": [
+        {
+          "op": "retain",
+          "n": 2
+        },
+        {
+          "op": "resolve",
+          "n": 1
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "保留护身+2；信任+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x57",
+    "name": "客位",
+    "cost": 1,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 92,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成92场后习得",
+    "sourceScene": "c6s03",
+    "art": "card-new09",
+    "artExt": "webp",
+    "text": "入场：交涉+1。每轮首次交涉行动后：抽1牌。共3次。",
+    "shortText": "入场：交涉+1。每轮首次交涉行动后：抽1牌。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "席面齐了。该来的人没有到。",
+    "archetype": "黄灯无客",
+    "buildRole": "抽1牌",
+    "designId": "C6X57",
+    "designEffect": "入场：交涉+1。每轮首次交涉行动后：抽1牌。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "goal_courage",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "courage",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "draw",
+          "n": 1
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "抽1牌。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x58",
+    "name": "八仙桌",
+    "cost": 1,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 93,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成93场后习得",
+    "sourceScene": "c6s04",
+    "art": "v2-prop-bench",
+    "artExt": "webp",
+    "text": "入场：抽1牌。每轮首次交涉行动后：交涉+1；挡住插话。共3次。",
+    "shortText": "入场：抽1牌。每轮首次交涉行动后：交涉+1；挡住插话。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "席面齐了。该来的人没有到。",
+    "archetype": "黄灯无客",
+    "buildRole": "交涉+1；挡住插话",
+    "designId": "C6X58",
+    "designEffect": "入场：抽1牌。每轮首次交涉行动后：交涉+1；挡住插话。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "goal_courage",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "draw",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "courage",
+          "n": 1
+        },
+        {
+          "op": "cover",
+          "value": "interrupt"
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "交涉+1；挡住插话。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x59",
+    "name": "香坛",
+    "cost": 1,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 94,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成94场后习得",
+    "sourceScene": "c6s05",
+    "art": "oil",
+    "artExt": "webp",
+    "text": "入场：挡住反光。每轮首次回合末：专注+1；挡住反光。共3次。",
+    "shortText": "入场：挡住反光。每轮首次回合末：专注+1；挡住反光。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "三炷香未尽。门口没有脚步。",
+    "archetype": "黄灯无客",
+    "buildRole": "专注+1；挡住反光",
+    "designId": "C6X59",
+    "designEffect": "入场：挡住反光。每轮首次回合末：专注+1；挡住反光。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "end",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "cover",
+          "value": "glare"
+        }
+      ],
+      "effects": [
+        {
+          "op": "focus",
+          "n": 1
+        },
+        {
+          "op": "cover",
+          "value": "glare"
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "专注+1；挡住反光。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x60",
+    "name": "清坛",
+    "cost": 0,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 95,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成95场后习得",
+    "sourceScene": "c6s06",
+    "art": "salt",
+    "artExt": "webp",
+    "text": "迅手（每轮同名限1）。入场：消除1疲劳；专注+1。每轮首次回合开始：消除1疲劳。共3次。",
+    "shortText": "迅手（每轮同名限1）。入场：消除1疲劳；专注+1。每轮首次回合开始：消除1疲劳。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "坛是净的。受祭的名字还空着。",
+    "archetype": "黄灯无客",
+    "buildRole": "消除1疲劳",
+    "designId": "C6X60",
+    "designEffect": "迅手（每轮同名限1）。入场：消除1疲劳；专注+1。每轮首次回合开始：消除1疲劳。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "turn",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "calm",
+          "n": 1
+        },
+        {
+          "op": "focus",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "calm",
+          "n": 1
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "消除1疲劳。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x61",
+    "name": "开坛",
+    "cost": 2,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 96,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成96场后习得",
+    "sourceScene": "c6s07",
+    "art": "lantern",
+    "artExt": "webp",
+    "text": "入场：专注+1；下轮费用+1。每轮首次打出技能后：调查+1。共3次。",
+    "shortText": "入场：专注+1；下轮费用+1。每轮首次打出技能后：调查+1。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "备席的人把灯拨亮。亮处没有客。",
+    "archetype": "黄灯无客",
+    "buildRole": "调查+1",
+    "designId": "C6X61",
+    "designEffect": "入场：专注+1；下轮费用+1。每轮首次打出技能后：调查+1。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "skill",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "focus",
+          "n": 1
+        },
+        {
+          "op": "nextEnergy",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "insight",
+          "n": 1
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "调查+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x62",
+    "name": "散福",
+    "cost": 1,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 97,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成97场后习得",
+    "sourceScene": "c6s08",
+    "art": "v2-prop-bench",
+    "artExt": "webp",
+    "text": "入场：回复2心神。每轮首次回合末：回复1心神；抽1牌。共3次。",
+    "shortText": "入场：回复2心神。每轮首次回合末：回复1心神；抽1牌。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "送客的礼做完了，席上仍空着主位。",
+    "archetype": "黄灯无客",
+    "buildRole": "回复1心神；抽1牌",
+    "designId": "C6X62",
+    "designEffect": "入场：回复2心神。每轮首次回合末：回复1心神；抽1牌。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "end",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "heal",
+          "n": 2
+        }
+      ],
+      "effects": [
+        {
+          "op": "heal",
+          "n": 1
+        },
+        {
+          "op": "draw",
+          "n": 1
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "回复1心神；抽1牌。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x63",
+    "name": "撤供",
+    "cost": 2,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 98,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成98场后习得",
+    "sourceScene": "c6s09",
+    "art": "tool-cardbox",
+    "artExt": "webp",
+    "text": "入场：抽2牌；疲劳+1。每轮首次回合末：下幕准备+1。共3次。",
+    "shortText": "入场：抽2牌；疲劳+1。每轮首次回合末：下幕准备+1。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "送客的礼做完了，席上仍空着主位。",
+    "archetype": "黄灯无客",
+    "buildRole": "下幕准备+1",
+    "designId": "C6X63",
+    "designEffect": "入场：抽2牌；疲劳+1。每轮首次回合末：下幕准备+1。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "end",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "draw",
+          "n": 2
+        },
+        {
+          "op": "fatigue",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "nextProgress",
+          "n": 1
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "下幕准备+1。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x64",
+    "name": "安席",
+    "cost": 1,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 99,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成99场后习得",
+    "sourceScene": "c6s10",
+    "art": "tool-cushion",
+    "artExt": "webp",
+    "text": "入场：挡住插话。每轮首次交涉行动后：信任+1；挡住插话。共3次。",
+    "shortText": "入场：挡住插话。每轮首次交涉行动后：信任+1；挡住插话。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "席面齐了。该来的人没有到。",
+    "archetype": "黄灯无客",
+    "buildRole": "信任+1；挡住插话",
+    "designId": "C6X64",
+    "designEffect": "入场：挡住插话。每轮首次交涉行动后：信任+1；挡住插话。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "goal_courage",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "cover",
+          "value": "interrupt"
+        }
+      ],
+      "effects": [
+        {
+          "op": "resolve",
+          "n": 1
+        },
+        {
+          "op": "cover",
+          "value": "interrupt"
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "信任+1；挡住插话。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x65",
+    "name": "留座",
+    "cost": 0,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 100,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成100场后习得",
+    "sourceScene": "c6s11",
+    "art": "v2-prop-bench",
+    "artExt": "webp",
+    "text": "迅手（每轮同名限1）。入场：下轮费用+1。每轮首次回合开始：抽1牌。共3次。",
+    "shortText": "迅手（每轮同名限1）。入场：下轮费用+1。每轮首次回合开始：抽1牌。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "空位留给谁，账上只记灯油，不记等候。",
+    "archetype": "黄灯无客",
+    "buildRole": "抽1牌",
+    "designId": "C6X65",
+    "designEffect": "迅手（每轮同名限1）。入场：下轮费用+1。每轮首次回合开始：抽1牌。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "turn",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "nextEnergy",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "draw",
+          "n": 1
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "抽1牌。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x66",
+    "name": "灯檠",
+    "cost": 1,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 101,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成101场后习得",
+    "sourceScene": "c6s12",
+    "art": "card-new21",
+    "artExt": "webp",
+    "text": "入场：挡住反光。每轮首次调查行动后：调查+1；挡住反光。共3次。",
+    "shortText": "入场：挡住反光。每轮首次调查行动后：调查+1；挡住反光。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "黄灯照着空席。材料只核对人数与碗盏。",
+    "archetype": "黄灯无客",
+    "buildRole": "调查+1；挡住反光",
+    "designId": "C6X66",
+    "designEffect": "入场：挡住反光。每轮首次调查行动后：调查+1；挡住反光。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "goal_insight",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "cover",
+          "value": "glare"
+        }
+      ],
+      "effects": [
+        {
+          "op": "insight",
+          "n": 1
+        },
+        {
+          "op": "cover",
+          "value": "glare"
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "调查+1；挡住反光。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x67",
+    "name": "拜垫",
+    "cost": 1,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 102,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成102场后习得",
+    "sourceScene": "c6s13",
+    "art": "tool-cushion",
+    "artExt": "webp",
+    "text": "入场：护身+2。每轮首次受伤后：护身+2。共3次。",
+    "shortText": "入场：护身+2。每轮首次受伤后：护身+2。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "坛是净的。受祭的名字还空着。",
+    "archetype": "黄灯无客",
+    "buildRole": "护身+2",
+    "designId": "C6X67",
+    "designEffect": "入场：护身+2。每轮首次受伤后：护身+2。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "hurt",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "shield",
+          "n": 2
+        }
+      ],
+      "effects": [
+        {
+          "op": "shield",
+          "n": 2
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "护身+2。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x68",
+    "name": "黄箓醮",
+    "cost": 2,
+    "type": "现场布置",
+    "mode": "setup",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 103,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成103场后习得",
+    "sourceScene": "c6s14",
+    "art": "card-new05",
+    "artExt": "webp",
+    "text": "入场：专注+1；下幕准备+1。每轮首次调查行动后：调查+1；消除1疲劳。共3次。",
+    "shortText": "入场：专注+1；下幕准备+1。每轮首次调查行动后：调查+1；消除1疲劳。共3次。",
+    "conditions": "最多2处布置",
+    "omen": "黄灯照着空席。材料只核对人数与碗盏。",
+    "archetype": "黄灯无客",
+    "buildRole": "调查+1；消除1疲劳",
+    "designId": "C6X68",
+    "designEffect": "入场：专注+1；下幕准备+1。每轮首次调查行动后：调查+1；消除1疲劳。共3次。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "setup",
+      "trigger": "goal_insight",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [
+        {
+          "op": "focus",
+          "n": 1
+        },
+        {
+          "op": "nextProgress",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "insight",
+          "n": 1
+        },
+        {
+          "op": "calm",
+          "n": 1
+        }
+      ],
+      "charges": 3,
+      "activateCost": 0,
+      "effectText": "调查+1；消除1疲劳。",
+      "intent": null
+    }
+  },
+  {
+    "id": "c6x69",
+    "name": "莫应",
+    "cost": 0,
+    "type": "应对反制",
+    "mode": "response",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 92,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成92场后习得",
+    "sourceScene": "c6s03",
+    "art": "card-new10",
+    "artExt": "webp",
+    "text": "迅手（每轮同名限1）。应对坠落：护身+2；消除1疲劳。",
+    "shortText": "迅手（每轮同名限1）。应对坠落：护身+2；消除1疲劳。",
+    "conditions": "本轮出现催逼时触发，未触发返还费用",
+    "omen": "镜已掩上。灯火只照见空碗。",
+    "archetype": "黄灯无客",
+    "buildRole": "迅手（每轮同名限1）。应对坠落：护身+2；消除1疲劳。",
+    "designId": "C6X69",
+    "designEffect": "迅手（每轮同名限1）。应对坠落：护身+2；消除1疲劳。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "response",
+      "trigger": "urge",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "shield",
+          "n": 2
+        },
+        {
+          "op": "calm",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "迅手（每轮同名限1）。应对坠落：护身+2；消除1疲劳。",
+      "intent": "fall"
+    }
+  },
+  {
+    "id": "c6x70",
+    "name": "禁语",
+    "cost": 0,
+    "type": "应对反制",
+    "mode": "response",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 96,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成96场后习得",
+    "sourceScene": "c6s07",
+    "art": "card-new25",
+    "artExt": "webp",
+    "text": "迅手（每轮同名限1）。应对插话：交涉+2。",
+    "shortText": "迅手（每轮同名限1）。应对插话：交涉+2。",
+    "conditions": "本轮出现插话时触发，未触发返还费用",
+    "omen": "镜已掩上。灯火只照见空碗。",
+    "archetype": "黄灯无客",
+    "buildRole": "交涉+2",
+    "designId": "C6X70",
+    "designEffect": "迅手（每轮同名限1）。应对插话：交涉+2。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "response",
+      "trigger": "interrupt",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "courage",
+          "n": 2
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "交涉+2。",
+      "intent": "interrupt"
+    }
+  },
+  {
+    "id": "c6x71",
+    "name": "背灯",
+    "cost": 0,
+    "type": "应对反制",
+    "mode": "response",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 100,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成100场后习得",
+    "sourceScene": "c6s11",
+    "art": "card-new21",
+    "artExt": "webp",
+    "text": "迅手（每轮同名限1）。应对抢夺：调查+1；专注+1。",
+    "shortText": "迅手（每轮同名限1）。应对抢夺：调查+1；专注+1。",
+    "conditions": "本轮出现反光时触发，未触发返还费用",
+    "omen": "备席的人把灯拨亮。亮处没有客。",
+    "archetype": "黄灯无客",
+    "buildRole": "迅手（每轮同名限1）。应对抢夺：调查+1；专注+1。",
+    "designId": "C6X71",
+    "designEffect": "迅手（每轮同名限1）。应对抢夺：调查+1；专注+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "response",
+      "trigger": "glare",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "insight",
+          "n": 1
+        },
+        {
+          "op": "focus",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "迅手（每轮同名限1）。应对抢夺：调查+1；专注+1。",
+      "intent": "grab"
+    }
+  },
+  {
+    "id": "c6x72",
+    "name": "压席",
+    "cost": 1,
+    "type": "应对反制",
+    "mode": "response",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 97,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成97场后习得",
+    "sourceScene": "c6s08",
+    "art": "v2-prop-bench",
+    "artExt": "webp",
+    "text": "应对散页：专注+1；取回弃牌顶首张技能。",
+    "shortText": "应对散页：专注+1；取回弃牌顶首张技能。",
+    "conditions": "本轮出现散页时触发，未触发返还费用",
+    "omen": "席面齐了。该来的人没有到。",
+    "archetype": "黄灯无客",
+    "buildRole": "专注+1；取回弃牌顶首张技能",
+    "designId": "C6X72",
+    "designEffect": "应对散页：专注+1；取回弃牌顶首张技能。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "response",
+      "trigger": "scatter",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "focus",
+          "n": 1
+        },
+        {
+          "op": "recycle",
+          "value": "skill"
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "专注+1；取回弃牌顶首张技能。",
+      "intent": "scatter"
+    }
+  },
+  {
+    "id": "c6x73",
+    "name": "守坛",
+    "cost": 2,
+    "type": "应对反制",
+    "mode": "response",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 90,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成90场后习得",
+    "sourceScene": "c6s01",
+    "art": "v2-action-guard",
+    "artExt": "webp",
+    "text": "应对抢夺：护身+3；压制目标2。",
+    "shortText": "应对抢夺：护身+3；压制目标2。",
+    "conditions": "本轮出现抢夺时触发，未触发返还费用",
+    "omen": "坛是净的。受祭的名字还空着。",
+    "archetype": "黄灯无客",
+    "buildRole": "护身+3；压制目标2",
+    "designId": "C6X73",
+    "designEffect": "应对抢夺：护身+3；压制目标2。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "response",
+      "trigger": "grab",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "shield",
+          "n": 3
+        },
+        {
+          "op": "damage",
+          "n": 2
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "护身+3；压制目标2。",
+      "intent": "grab"
+    }
+  },
+  {
+    "id": "c6x74",
+    "name": "留供",
+    "cost": 2,
+    "type": "应对反制",
+    "mode": "response",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 91,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成91场后习得",
+    "sourceScene": "c6s02",
+    "art": "tool-cardbox",
+    "artExt": "webp",
+    "text": "应对仓促处置：调查+2；保留护身+2。",
+    "shortText": "应对仓促处置：调查+2；保留护身+2。",
+    "conditions": "本轮出现仓促处置时触发，未触发返还费用",
+    "omen": "香还在烧。客没有来，或者已经走了。",
+    "archetype": "黄灯无客",
+    "buildRole": "调查+2；保留护身+2",
+    "designId": "C6X74",
+    "designEffect": "应对仓促处置：调查+2；保留护身+2。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "response",
+      "trigger": "disposition",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "insight",
+          "n": 2
+        },
+        {
+          "op": "retain",
+          "n": 2
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "调查+2；保留护身+2。",
+      "intent": "disposition"
+    }
+  },
+  {
+    "id": "c6x75",
+    "name": "拒客",
+    "cost": 2,
+    "type": "应对反制",
+    "mode": "response",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 92,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成92场后习得",
+    "sourceScene": "c6s03",
+    "art": "tool-board",
+    "artExt": "webp",
+    "text": "应对敌袭：护身+4；目标压力−1。",
+    "shortText": "应对敌袭：护身+4；目标压力−1。",
+    "conditions": "本轮出现敌袭时触发，未触发返还费用",
+    "omen": "备席的人把灯拨亮。亮处没有客。",
+    "archetype": "黄灯无客",
+    "buildRole": "护身+4；目标压力−1",
+    "designId": "C6X75",
+    "designEffect": "应对敌袭：护身+4；目标压力−1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "response",
+      "trigger": "attack",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "shield",
+          "n": 4
+        },
+        {
+          "op": "weaken",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "护身+4；目标压力−1。",
+      "intent": "attack"
+    }
+  },
+  {
+    "id": "c6x76",
+    "name": "安座",
+    "cost": 1,
+    "type": "应对反制",
+    "mode": "response",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 93,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成93场后习得",
+    "sourceScene": "c6s04",
+    "art": "tool-cushion",
+    "artExt": "webp",
+    "text": "应对坠落：护身+3；脚步+1。",
+    "shortText": "应对坠落：护身+3；脚步+1。",
+    "conditions": "本轮出现坠落时触发，未触发返还费用",
+    "omen": "筷还摆着，座是热过的。人对不上名。",
+    "archetype": "黄灯无客",
+    "buildRole": "护身+3；脚步+1",
+    "designId": "C6X76",
+    "designEffect": "应对坠落：护身+3；脚步+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "response",
+      "trigger": "fall",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "shield",
+          "n": 3
+        },
+        {
+          "op": "route",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "护身+3；脚步+1。",
+      "intent": "fall"
+    }
+  },
+  {
+    "id": "c6x77",
+    "name": "洒净",
+    "cost": 0,
+    "type": "应对反制",
+    "mode": "response",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 97,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成97场后习得",
+    "sourceScene": "c6s08",
+    "art": "tool-flask",
+    "artExt": "webp",
+    "text": "迅手（每轮同名限1）。应对转移：脚步+1；消除1疲劳。",
+    "shortText": "迅手（每轮同名限1）。应对转移：脚步+1；消除1疲劳。",
+    "conditions": "本轮出现水险时触发，未触发返还费用",
+    "omen": "坛是净的。受祭的名字还空着。",
+    "archetype": "黄灯无客",
+    "buildRole": "迅手（每轮同名限1）。应对转移：脚步+1；消除1疲劳。",
+    "designId": "C6X77",
+    "designEffect": "迅手（每轮同名限1）。应对转移：脚步+1；消除1疲劳。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "response",
+      "trigger": "water",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "route",
+          "n": 1
+        },
+        {
+          "op": "calm",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "迅手（每轮同名限1）。应对转移：脚步+1；消除1疲劳。",
+      "intent": "transfer"
+    }
+  },
+  {
+    "id": "c6x78",
+    "name": "散席",
+    "cost": 2,
+    "type": "应对反制",
+    "mode": "response",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 95,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成95场后习得",
+    "sourceScene": "c6s06",
+    "art": "v2-prop-bench",
+    "artExt": "webp",
+    "text": "应对转移：通路+1；抽1牌；疲劳+1。",
+    "shortText": "应对转移：通路+1；抽1牌；疲劳+1。",
+    "conditions": "本轮出现转移时触发，未触发返还费用",
+    "omen": "送客的礼做完了，席上仍空着主位。",
+    "archetype": "黄灯无客",
+    "buildRole": "通路+1；抽1牌；疲劳+1",
+    "designId": "C6X78",
+    "designEffect": "应对转移：通路+1；抽1牌；疲劳+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "response",
+      "trigger": "transfer",
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "leverage",
+          "n": 1
+        },
+        {
+          "op": "draw",
+          "n": 1
+        },
+        {
+          "op": "fatigue",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "通路+1；抽1牌；疲劳+1。",
+      "intent": "transfer"
+    }
+  },
+  {
+    "id": "c6x79",
+    "name": "落灯",
+    "cost": 1,
+    "type": "防护技能",
+    "mode": "skill",
+    "modern": true,
+    "legacy": false,
+    "collectible": true,
+    "unlock": 96,
+    "sourceCase": 6,
+    "source": "北段V2 · 黄灯无客 · 完成96场后习得",
+    "sourceScene": "c6s07",
+    "art": "oil",
+    "artExt": "webp",
+    "text": "挡住反光；保留护身+2；下轮费用+1。",
+    "shortText": "挡住反光；保留护身+2；下轮费用+1。",
+    "conditions": "",
+    "omen": "黄灯照着空席。材料只核对人数与碗盏。",
+    "archetype": "黄灯无客",
+    "buildRole": "挡住反光；保留护身+2；下轮费用+1",
+    "designId": "C6X79",
+    "designEffect": "挡住反光；保留护身+2；下轮费用+1。",
+    "catalogRule": {
+      "version": 2,
+      "mode": "skill",
+      "trigger": null,
+      "condition": "any",
+      "goals": [],
+      "case": 0,
+      "enter": [],
+      "effects": [
+        {
+          "op": "cover",
+          "value": "glare"
+        },
+        {
+          "op": "retain",
+          "n": 2
+        },
+        {
+          "op": "nextEnergy",
+          "n": 1
+        }
+      ],
+      "charges": 0,
+      "activateCost": 0,
+      "effectText": "挡住反光；保留护身+2；下轮费用+1。",
+      "intent": null
+    }
+  }
+]

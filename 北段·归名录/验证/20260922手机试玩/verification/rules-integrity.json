@@ -1,0 +1,22 @@
+{
+  "engineAndDataUnchanged": [
+    "card-rebalance.js",
+    "art-map.js",
+    "card-names.js",
+    "horror-rules.js",
+    "card-copy-terms.js",
+    "catalog.js",
+    "story-content.js",
+    "story-revisions.js",
+    "data.js",
+    "card-copy.js",
+    "card-copy-horror.js",
+    "engine.js",
+    "encounter-rules.js",
+    "catalog-rules.js",
+    "catalog-case56.js",
+    "art-overrides.js"
+  ],
+  "mechanicsOnlyChangedPurePreviewFunction": true,
+  "scope": "UI, preview copy, scrolling and responsive layout only. Rules and full campaign source are unchanged."
+}

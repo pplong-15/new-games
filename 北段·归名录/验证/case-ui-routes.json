@@ -1,0 +1,51 @@
+{
+  "url": "http://127.0.0.1:8862/",
+  "status": "PASS",
+  "checks": [
+    {
+      "scene": "c2s01",
+      "status": "PASS",
+      "completedBeforeEntry": 18
+    },
+    {
+      "scene": "c3s01",
+      "status": "PASS",
+      "completedBeforeEntry": 36
+    },
+    {
+      "scene": "c4s11",
+      "status": "PASS",
+      "completedBeforeEntry": 64
+    },
+    {
+      "scene": "c5s01",
+      "status": "PASS",
+      "completedBeforeEntry": 72
+    },
+    {
+      "scene": "c6s04",
+      "status": "PASS",
+      "completedBeforeEntry": 93
+    },
+    {
+      "scene": "c6s11",
+      "status": "PASS",
+      "completedBeforeEntry": 100
+    },
+    {
+      "scene": "c6s14",
+      "status": "PASS",
+      "completedBeforeEntry": 103
+    },
+    {
+      "scene": "c6s18",
+      "status": "PASS",
+      "completedBeforeEntry": 107
+    }
+  ],
+  "endingCompletedViaUI": true,
+  "endingReload": true,
+  "pageErrors": [],
+  "httpErrors": [],
+  "scope": "Later-case UI and ending coverage using legal progress fixtures from an answer-aware run; not a blind campaign playtest."
+}

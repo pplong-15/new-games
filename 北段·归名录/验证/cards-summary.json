@@ -1,0 +1,244 @@
+{
+  "at": "2026-09-08T15:03:53.173Z",
+  "status": "PASS_REAL_CAMPAIGN_REACHABILITY",
+  "frozen": true,
+  "counts": {
+    "person": 24,
+    "skill": 283,
+    "equipment": 104,
+    "setup": 104,
+    "response": 85
+  },
+  "cards": 600,
+  "stableIds": 600,
+  "nonPersonLatestUnlock": 76,
+  "actualReachability": {
+    "passed": 600,
+    "total": 600,
+    "failures": 0,
+    "persistentCards": 232,
+    "responses": 85,
+    "phaseLaterEntry": [
+      {
+        "label": "何巡只在c2s05第三幕到场，仍能在map合法加入",
+        "ok": true,
+        "earlyRejection": "何巡尚未到达这处现场。",
+        "turn": 4
+      },
+      {
+        "label": "c2s07第三幕水险应对可从map带入并等到真实窗口",
+        "ok": true,
+        "earlyRejection": "本幕没有这张应对的触发窗口。",
+        "turn": 5
+      }
+    ]
+  },
+  "regressions": {
+    "passed": 25,
+    "total": 25
+  },
+  "campaigns": [
+    {
+      "style": "balanced",
+      "seed": 77,
+      "completed": 108,
+      "turns": 482,
+      "plays": 485,
+      "uniqueCards": 56,
+      "cases": [
+        {
+          "chapter": 1,
+          "turns": 85,
+          "minHP": 24,
+          "uniqueCards": 27
+        },
+        {
+          "chapter": 2,
+          "turns": 75,
+          "minHP": 25,
+          "uniqueCards": 24
+        },
+        {
+          "chapter": 3,
+          "turns": 70,
+          "minHP": 26,
+          "uniqueCards": 15
+        },
+        {
+          "chapter": 4,
+          "turns": 75,
+          "minHP": 26,
+          "uniqueCards": 16
+        },
+        {
+          "chapter": 5,
+          "turns": 90,
+          "minHP": 26,
+          "uniqueCards": 15
+        },
+        {
+          "chapter": 6,
+          "turns": 87,
+          "minHP": 26,
+          "uniqueCards": 14
+        }
+      ],
+      "failures": 0
+    },
+    {
+      "style": "guard",
+      "seed": 77,
+      "completed": 108,
+      "turns": 474,
+      "plays": 477,
+      "uniqueCards": 54,
+      "cases": [
+        {
+          "chapter": 1,
+          "turns": 83,
+          "minHP": 24,
+          "uniqueCards": 23
+        },
+        {
+          "chapter": 2,
+          "turns": 76,
+          "minHP": 26,
+          "uniqueCards": 26
+        },
+        {
+          "chapter": 3,
+          "turns": 71,
+          "minHP": 26,
+          "uniqueCards": 14
+        },
+        {
+          "chapter": 4,
+          "turns": 74,
+          "minHP": 26,
+          "uniqueCards": 16
+        },
+        {
+          "chapter": 5,
+          "turns": 86,
+          "minHP": 26,
+          "uniqueCards": 15
+        },
+        {
+          "chapter": 6,
+          "turns": 84,
+          "minHP": 27,
+          "uniqueCards": 15
+        }
+      ],
+      "failures": 0
+    },
+    {
+      "style": "insight",
+      "seed": 77,
+      "completed": 108,
+      "turns": 434,
+      "plays": 450,
+      "uniqueCards": 49,
+      "cases": [
+        {
+          "chapter": 1,
+          "turns": 77,
+          "minHP": 25,
+          "uniqueCards": 25
+        },
+        {
+          "chapter": 2,
+          "turns": 75,
+          "minHP": 21,
+          "uniqueCards": 24
+        },
+        {
+          "chapter": 3,
+          "turns": 63,
+          "minHP": 27,
+          "uniqueCards": 13
+        },
+        {
+          "chapter": 4,
+          "turns": 67,
+          "minHP": 26,
+          "uniqueCards": 17
+        },
+        {
+          "chapter": 5,
+          "turns": 74,
+          "minHP": 20,
+          "uniqueCards": 13
+        },
+        {
+          "chapter": 6,
+          "turns": 78,
+          "minHP": 23,
+          "uniqueCards": 14
+        }
+      ],
+      "failures": 0
+    },
+    {
+      "style": "tools",
+      "seed": 77,
+      "completed": 108,
+      "turns": 463,
+      "plays": 518,
+      "uniqueCards": 47,
+      "cases": [
+        {
+          "chapter": 1,
+          "turns": 77,
+          "minHP": 20,
+          "uniqueCards": 29
+        },
+        {
+          "chapter": 2,
+          "turns": 78,
+          "minHP": 18,
+          "uniqueCards": 21
+        },
+        {
+          "chapter": 3,
+          "turns": 67,
+          "minHP": 26,
+          "uniqueCards": 13
+        },
+        {
+          "chapter": 4,
+          "turns": 70,
+          "minHP": 26,
+          "uniqueCards": 14
+        },
+        {
+          "chapter": 5,
+          "turns": 85,
+          "minHP": 26,
+          "uniqueCards": 13
+        },
+        {
+          "chapter": 6,
+          "turns": 86,
+          "minHP": 26,
+          "uniqueCards": 13
+        }
+      ],
+      "failures": 0
+    }
+  ],
+  "hashes": {
+    "catalog.js": "dc19827ccf326313f1725f1f26891f2edd7f3d1825991742ffb5768e544ab0d8",
+    "catalog-rules.js": "78c40bc01935fa9a7d4cce3296ee4e37d977089c1426ad212419a303d7353f8e",
+    "card-copy.js": "975443a8707c6d35ad62933c2df87485c312702f71c9f8a967751470e6193ef7",
+    "card-rebalance.js": "67c13bd50152c515add06baaf180f0c4cb72a76d418885a1eaed5dc41282f6b1",
+    "mechanics.js": "8dcca204caf6587d62af72ee4ea25756d759ce9266a239e7212049bfbb941809",
+    "engine.js": "65a8bd0537b3475a6374abbc2e1b2ee003b88d2fe903541a4615837bedd265a2"
+  },
+  "limits": [
+    "The 600-card audit proves a real usable campaign scene and a material primary effect for each card. It does not enumerate every conditional branch or every deck combination.",
+    "Opening deck order is selected before begin using the ordinary setDeck API under the fixed earned checkpoint seed; no battle state is injected.",
+    "Campaign strategy reads correct investigation answers. This is rules and availability evidence, not a deduction blind test.",
+    "Earlier cards-seeds reports precede this reachability repair and are superseded for the final source by these four seed-77 campaign runs."
+  ]
+}

@@ -1,0 +1,10 @@
+[
+  {"file":"v2-scene05.png","ratio":"16:9","scene":"第五案停灵偏厅另一机位：棺侧只见出去的脚印。"},
+  {"file":"v2-scene06.png","ratio":"16:9","scene":"第六案宴厅另一机位：主位空碗，灯火通明无人。"},
+  {"file":"tool-notebook-face.png","ratio":"4:3","ref":"tool-notebook.png","change":"名册上原本空白的一行，现在有了墨痕。其余构图光线不变。"},
+  {"file":"card-new05-face.png","ratio":"4:3","ref":"card-new05.png","change":"右边那张多出的一行字变得更清楚，像刚写上。其余不变。"},
+  {"file":"card-new21-face.png","ratio":"4:3","ref":"card-new21.png","change":"灯只剩一缕烟，半边墙更黑。其余不变。"},
+  {"file":"v2-action-strike-face.png","ratio":"4:3","ref":"v2-action-strike.png","change":"剑影里多出一只按剑的手。其余不变。"},
+  {"file":"lantern-face.png","ratio":"4:3","ref":"lantern.png","change":"地上影子从两只手变成三只。其余不变。"},
+  {"file":"v2-card-xiaohao-face.png","ratio":"4:3","ref":"v2-card-xiaohao.png","change":"被涂掉的那一行纸背名字更清楚了。其余不变。"}
+]

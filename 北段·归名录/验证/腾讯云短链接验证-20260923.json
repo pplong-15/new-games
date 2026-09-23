@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "shortUrl": "http://101.43.115.235/playtest/beiduan/",
+  "legacyUrl": "http://101.43.115.235/playtest/beiduan-bd90eeb6c5695c9f6c45bfde/",
+  "releasePath": "/var/www/beiduan-playtest/releases/20260923T004836Z-v2",
+  "nginxConfigurationTest": "PASS",
+  "nginxGracefulReload": "PASS",
+  "nginxBackupPath": "/var/backups/beiduan-playtest/shortlink-20260923T011044Z/beiduan-playtest.locations",
+  "nginxBackupSha256": "cc46e5d0bfe2f856eb9cf4647348704a644c5bc61e51cfdafa15efddf7807b07",
+  "noSlashUrl": "http://101.43.115.235/playtest/beiduan",
+  "noSlashStatus": 302,
+  "noSlashFinalUrl": "http://101.43.115.235/playtest/beiduan/",
+  "shortIndexStatus": 200,
+  "shortIndexNoindex": "noindex, nofollow, noarchive",
+  "sampleResources": [
+    {
+      "file": "app.js",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "file": "mobile.css",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "file": "assets/card-frame.webp",
+      "status": 200,
+      "hashMatches": true
+    }
+  ],
+  "legacyIndexStatus": 200,
+  "publicBrowserCheck": {
+    "url": "http://101.43.115.235/playtest/beiduan/",
+    "status": "PASS",
+    "checkedAt": "2026-09-23T01:11:21.327229+00:00",
+    "checks": [
+      {
+        "viewport": "desktop",
+        "status": "PASS",
+        "meta": {
+          "cards": 764,
+          "encounters": 108,
+          "version": 5
+        },
+        "saveReload": true,
+        "invalidImportPreservedSave": true,
+        "V4FileInputImport": true,
+        "exportMatches": true,
+        "handAndMaterials": true,
+        "pageErrors": [],
+        "requestFailures": [],
+        "httpErrors": []
+      },
+      {
+        "viewport": "mobile",
+        "status": "PASS",
+        "meta": {
+          "cards": 764,
+          "encounters": 108,
+          "version": 5
+        },
+        "saveReload": true,
+        "invalidImportPreservedSave": true,
+        "V4FileInputImport": true,
+        "exportMatches": true,
+        "handAndMaterials": true,
+        "pageErrors": [],
+        "requestFailures": [],
+        "httpErrors": []
+      }
+    ],
+    "scope": "Fresh desktop and mobile-size Chromium; real UI and file inputs. Not real-phone or human-player acceptance."
+  },
+  "realIphoneTested": false,
+  "checkedAt": "2026-09-23T01:12:46.010279+00:00"
+}

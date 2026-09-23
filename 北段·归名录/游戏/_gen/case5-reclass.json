@@ -1,0 +1,209 @@
+[
+  {
+    "id": "card511",
+    "sourceCase": 0,
+    "name": "法印",
+    "text": "入场：抽1牌。每轮首次调查行动后：若有装备，调查+1；挡住散页。共3次。",
+    "shortText": "入场：抽1牌。每轮首次调查行动后：若有装备，调查+1；挡住散页。共3次。",
+    "omen": "印落页上，散页才收得住。",
+    "personsUnchanged": [
+      "严鹤生",
+      "余雪梅",
+      "柏正"
+    ],
+    "opsUnchanged": true,
+    "catalogRule": {
+      "trigger": "goal_insight",
+      "enter": [
+        {
+          "op": "draw",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "if",
+          "condition": "equipped",
+          "effects": [
+            {
+              "op": "insight",
+              "n": 1
+            }
+          ]
+        },
+        {
+          "op": "cover",
+          "value": "scatter"
+        }
+      ]
+    }
+  },
+  {
+    "id": "card512",
+    "sourceCase": 0,
+    "name": "令旗",
+    "text": "入场：信任+1。每轮首次解救行动后：解1道束缚；交涉+1。共3次。",
+    "shortText": "入场：信任+1。每轮首次解救行动后：解1道束缚；交涉+1。共3次。",
+    "omen": "旗立住，人才跟得上。",
+    "opsUnchanged": true,
+    "catalogRule": {
+      "trigger": "goal_rescue",
+      "enter": [
+        {
+          "op": "resolve",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "cut",
+          "n": 1
+        },
+        {
+          "op": "courage",
+          "n": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "card513",
+    "sourceCase": 0,
+    "name": "步罡",
+    "text": "入场：目标破绽+1。每轮首次通路行动后：若脚步至少2，目标压力−1。共3次。",
+    "shortText": "入场：目标破绽+1。每轮首次通路行动后：若脚步至少2，目标压力−1。共3次。",
+    "omen": "步位对了，路才走得通。",
+    "opsUnchanged": true,
+    "catalogRule": {
+      "trigger": "goal_open",
+      "enter": [
+        {
+          "op": "expose",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "if",
+          "condition": "route2",
+          "effects": [
+            {
+              "op": "weaken",
+              "n": 1
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "card514",
+    "sourceCase": 0,
+    "name": "水盂",
+    "text": "入场：挡住水险。每轮首次应对成功后：调查+1；保留护身+2。共3次。",
+    "shortText": "入场：挡住水险。每轮首次应对成功后：调查+1；保留护身+2。共3次。",
+    "omen": "水在盂中，才洒得净。",
+    "opsUnchanged": true,
+    "catalogRule": {
+      "trigger": "response",
+      "enter": [
+        {
+          "op": "cover",
+          "value": "water"
+        }
+      ],
+      "effects": [
+        {
+          "op": "insight",
+          "n": 1
+        },
+        {
+          "op": "retain",
+          "n": 2
+        }
+      ]
+    }
+  },
+  {
+    "id": "card515",
+    "sourceCase": 0,
+    "name": "安镇",
+    "text": "入场：护身+2。每轮首次通路行动后：若有两名协作者，护身+3。共3次。",
+    "shortText": "入场：护身+2。每轮首次通路行动后：若有两名协作者，护身+3。共3次。",
+    "omen": "方位置定，人才立得住。",
+    "opsUnchanged": true,
+    "catalogRule": {
+      "trigger": "goal_open",
+      "enter": [
+        {
+          "op": "shield",
+          "n": 2
+        }
+      ],
+      "effects": [
+        {
+          "op": "if",
+          "condition": "people2",
+          "effects": [
+            {
+              "op": "shield",
+              "n": 3
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "card516",
+    "sourceCase": 0,
+    "name": "杨柳枝",
+    "text": "入场：挡住水险。每轮首次解救行动后：解1道束缚；保留护身+2。共3次。",
+    "shortText": "入场：挡住水险。每轮首次解救行动后：解1道束缚；保留护身+2。共3次。",
+    "omen": "枝蘸过水，才解得开。",
+    "opsUnchanged": true,
+    "catalogRule": {
+      "trigger": "goal_rescue",
+      "enter": [
+        {
+          "op": "cover",
+          "value": "water"
+        }
+      ],
+      "effects": [
+        {
+          "op": "cut",
+          "n": 1
+        },
+        {
+          "op": "retain",
+          "n": 2
+        }
+      ]
+    }
+  },
+  {
+    "id": "card519",
+    "sourceCase": 0,
+    "name": "镇物",
+    "text": "入场：保留护身+1。每轮首次调查行动后：取回弃牌顶首张装备。共3次。",
+    "shortText": "入场：保留护身+1。每轮首次调查行动后：取回弃牌顶首张装备。共3次。",
+    "omen": "物压在坛上，器用才归得位。",
+    "opsUnchanged": true,
+    "catalogRule": {
+      "trigger": "goal_insight",
+      "enter": [
+        {
+          "op": "retain",
+          "n": 1
+        }
+      ],
+      "effects": [
+        {
+          "op": "recycle",
+          "value": "equipment"
+        }
+      ]
+    }
+  }
+]

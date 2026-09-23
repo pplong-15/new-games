@@ -1,0 +1,94 @@
+{
+  "scope": "Engineering UI regression through visible controls; legal map progress imports, not a blind full playthrough.",
+  "home": {
+    "hiddenSixthNotAdvertised": true,
+    "libraryCount": 764
+  },
+  "misread": {
+    "hpBefore": 28,
+    "hpAfter": 26,
+    "displayed": "26",
+    "costVisible": true
+  },
+  "defeat": {
+    "retryWithoutReload": true,
+    "completedPreserved": true,
+    "freshHP": 30
+  },
+  "cardReadAndPlay": {
+    "name": "朱笔",
+    "titleOnlyReads": true,
+    "compareDetailsOnlyReads": true,
+    "explicitPlayCost": 1
+  },
+  "targetSelection": {
+    "cancelCostsNothing": true,
+    "chosen": "挤进门的围观者",
+    "chosenHpAfter": 0,
+    "otherUntouched": true
+  },
+  "hush": {
+    "visibleEscape": true,
+    "cleared": true
+  },
+  "callname": {
+    "disabledCardExplained": true
+  },
+  "mobile": {
+    "allActionRects": [
+      {
+        "width": 190,
+        "height": 46
+      },
+      {
+        "width": 190,
+        "height": 46
+      },
+      {
+        "width": 190,
+        "height": 46
+      },
+      {
+        "width": 190,
+        "height": 46
+      },
+      {
+        "width": 190,
+        "height": 46
+      },
+      {
+        "width": 190,
+        "height": 46
+      },
+      {
+        "width": 190,
+        "height": 46
+      },
+      {
+        "width": 190,
+        "height": 46
+      },
+      {
+        "width": 190,
+        "height": 46
+      },
+      {
+        "width": 190,
+        "height": 46
+      },
+      {
+        "width": 190,
+        "height": 46
+      },
+      {
+        "width": 190,
+        "height": 46
+      }
+    ],
+    "minActionHeight": 46,
+    "readDoesNotPlay": true,
+    "noPageOverflow": true
+  },
+  "pageErrors": [],
+  "httpErrors": []
+}

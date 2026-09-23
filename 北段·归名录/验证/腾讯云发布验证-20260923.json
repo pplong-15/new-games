@@ -1,0 +1,145 @@
+{
+  "url": "http://101.43.115.235/playtest/beiduan/",
+  "releasePath": "/var/www/beiduan-playtest/releases/20260923T004836Z-v2",
+  "previousReleasePath": "/var/www/beiduan-playtest/releases/20260908T161630Z-v2",
+  "archiveSha256": "f33924a2b76f771de8129b4c82451c2a3a0df41178290a4c1f152bc3023eb470",
+  "committed": true,
+  "originSelfCheck": "PASS",
+  "publicBrowserCheck": "PASS",
+  "readiness": [
+    {
+      "attempt": 1,
+      "file": "index.html",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "attempt": 1,
+      "file": "engine.js",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "attempt": 1,
+      "file": "catalog.js",
+      "status": 200,
+      "hashMatches": true
+    },
+    {
+      "attempt": 1,
+      "file": "v2.css",
+      "status": 200,
+      "hashMatches": true
+    }
+  ],
+  "scope": "Unlisted HTTP player test. Anyone holding the link can access. No homepage link or promotion.",
+  "nginxConfigurationChanged": true,
+  "publicBrowserSummary": {
+    "status": "PASS",
+    "checkedAt": "2026-09-23T01:11:21.327229+00:00",
+    "viewports": [
+      {
+        "viewport": "desktop",
+        "status": "PASS",
+        "meta": {
+          "cards": 764,
+          "encounters": 108,
+          "version": 5
+        },
+        "saveReload": true,
+        "invalidImportPreservedSave": true,
+        "V4FileInputImport": true,
+        "exportMatches": true,
+        "handAndMaterials": true,
+        "pageErrors": [],
+        "requestFailures": [],
+        "httpErrors": []
+      },
+      {
+        "viewport": "mobile",
+        "status": "PASS",
+        "meta": {
+          "cards": 764,
+          "encounters": 108,
+          "version": 5
+        },
+        "saveReload": true,
+        "invalidImportPreservedSave": true,
+        "V4FileInputImport": true,
+        "exportMatches": true,
+        "handAndMaterials": true,
+        "pageErrors": [],
+        "requestFailures": [],
+        "httpErrors": []
+      }
+    ]
+  },
+  "publicRuntimeCheck": {
+    "status": "PASS",
+    "checkedAt": "2026-09-23T00:53:35.707347+00:00",
+    "files": 180,
+    "passed": 180,
+    "failed": 0
+  },
+  "publicBoundaryCheck": {
+    "status": "PASS",
+    "checkedAt": "2026-09-23T00:53:56.244164+00:00",
+    "privateFilesAndDirectoryListing": [
+      {
+        "path": "assets/",
+        "status": 403
+      },
+      {
+        "path": "design/cards-author.js",
+        "status": 404
+      },
+      {
+        "path": "validation/cards-summary.json",
+        "status": 404
+      },
+      {
+        "path": "不存在.txt",
+        "status": 404
+      }
+    ],
+    "existingGameRoutes": {
+      "/yeban/": 200,
+      "/guimeipo-v8-1/": 200,
+      "/duoyige/": 200
+    }
+  },
+  "artifact": {
+    "version": "V2.1.1",
+    "runtimeFiles": 180,
+    "cards": 764,
+    "encounters": 108,
+    "packageZipSha256": "e0556377e317c3adb972eee38d94a99b4efe93fdff1d20c7e2f60458279394c1",
+    "packageZipBytes": 46042356
+  },
+  "verifiedAt": "2026-09-23T01:12:46.010279+00:00",
+  "legacyUrl": "http://101.43.115.235/playtest/beiduan-bd90eeb6c5695c9f6c45bfde/",
+  "nginxBackupPath": "/var/backups/beiduan-playtest/shortlink-20260923T011044Z/beiduan-playtest.locations",
+  "nginxBackupSha256": "cc46e5d0bfe2f856eb9cf4647348704a644c5bc61e51cfdafa15efddf7807b07",
+  "shortLink": {
+    "status": "PASS",
+    "url": "http://101.43.115.235/playtest/beiduan/",
+    "legacyUrl": "http://101.43.115.235/playtest/beiduan-bd90eeb6c5695c9f6c45bfde/",
+    "sameReleasePath": "/var/www/beiduan-playtest/releases/20260923T004836Z-v2",
+    "noSlashRedirect": "302 to http://101.43.115.235/playtest/beiduan/",
+    "robots": "noindex, nofollow, noarchive",
+    "nginxTest": "PASS",
+    "nginxReload": "PASS"
+  },
+  "shortLinkPublicSmoke": {
+    "status": "PASS",
+    "shortIndexStatus": 200,
+    "sampleResources": [
+      "app.js",
+      "mobile.css",
+      "assets/card-frame.webp"
+    ],
+    "sampleHashesMatch": true,
+    "legacyIndexStatus": 200,
+    "checkedAt": "2026-09-23T01:12:46.007401+00:00"
+  }
+}

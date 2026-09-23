@@ -1,0 +1,737 @@
+{
+  "entryChecks": [
+    {
+      "scene": "c1s01",
+      "completedBeforeEntry": 0,
+      "status": "PASS"
+    },
+    {
+      "scene": "c1s02",
+      "completedBeforeEntry": 1,
+      "status": "PASS"
+    },
+    {
+      "scene": "c1s03",
+      "completedBeforeEntry": 2,
+      "status": "PASS"
+    },
+    {
+      "scene": "c1s04",
+      "completedBeforeEntry": 3,
+      "status": "PASS"
+    },
+    {
+      "scene": "c1s05",
+      "completedBeforeEntry": 4,
+      "status": "PASS"
+    },
+    {
+      "scene": "c1s06",
+      "completedBeforeEntry": 5,
+      "status": "PASS"
+    },
+    {
+      "scene": "c1s07",
+      "completedBeforeEntry": 6,
+      "status": "PASS"
+    },
+    {
+      "scene": "c1s08",
+      "completedBeforeEntry": 7,
+      "status": "PASS"
+    },
+    {
+      "scene": "c1s09",
+      "completedBeforeEntry": 8,
+      "status": "PASS"
+    },
+    {
+      "scene": "c1s10",
+      "completedBeforeEntry": 9,
+      "status": "PASS"
+    },
+    {
+      "scene": "c1s11",
+      "completedBeforeEntry": 10,
+      "status": "PASS"
+    },
+    {
+      "scene": "c1s12",
+      "completedBeforeEntry": 11,
+      "status": "PASS"
+    },
+    {
+      "scene": "c1s13",
+      "completedBeforeEntry": 12,
+      "status": "PASS"
+    },
+    {
+      "scene": "c1s14",
+      "completedBeforeEntry": 13,
+      "status": "PASS"
+    },
+    {
+      "scene": "c1s15",
+      "completedBeforeEntry": 14,
+      "status": "PASS"
+    },
+    {
+      "scene": "c1s16",
+      "completedBeforeEntry": 15,
+      "status": "PASS"
+    },
+    {
+      "scene": "c1s17",
+      "completedBeforeEntry": 16,
+      "status": "PASS"
+    },
+    {
+      "scene": "c1s18",
+      "completedBeforeEntry": 17,
+      "status": "PASS"
+    },
+    {
+      "scene": "c2s01",
+      "completedBeforeEntry": 18,
+      "status": "PASS"
+    },
+    {
+      "scene": "c2s02",
+      "completedBeforeEntry": 19,
+      "status": "PASS"
+    },
+    {
+      "scene": "c2s03",
+      "completedBeforeEntry": 20,
+      "status": "PASS"
+    },
+    {
+      "scene": "c2s04",
+      "completedBeforeEntry": 21,
+      "status": "PASS"
+    },
+    {
+      "scene": "c2s05",
+      "completedBeforeEntry": 22,
+      "status": "PASS"
+    },
+    {
+      "scene": "c2s06",
+      "completedBeforeEntry": 23,
+      "status": "PASS"
+    },
+    {
+      "scene": "c2s07",
+      "completedBeforeEntry": 24,
+      "status": "PASS"
+    },
+    {
+      "scene": "c2s08",
+      "completedBeforeEntry": 25,
+      "status": "PASS"
+    },
+    {
+      "scene": "c2s09",
+      "completedBeforeEntry": 26,
+      "status": "PASS"
+    },
+    {
+      "scene": "c2s10",
+      "completedBeforeEntry": 27,
+      "status": "PASS"
+    },
+    {
+      "scene": "c2s11",
+      "completedBeforeEntry": 28,
+      "status": "PASS"
+    },
+    {
+      "scene": "c2s12",
+      "completedBeforeEntry": 29,
+      "status": "PASS"
+    },
+    {
+      "scene": "c2s13",
+      "completedBeforeEntry": 30,
+      "status": "PASS"
+    },
+    {
+      "scene": "c2s14",
+      "completedBeforeEntry": 31,
+      "status": "PASS"
+    },
+    {
+      "scene": "c2s15",
+      "completedBeforeEntry": 32,
+      "status": "PASS"
+    },
+    {
+      "scene": "c2s16",
+      "completedBeforeEntry": 33,
+      "status": "PASS"
+    },
+    {
+      "scene": "c2s17",
+      "completedBeforeEntry": 34,
+      "status": "PASS"
+    },
+    {
+      "scene": "c2s18",
+      "completedBeforeEntry": 35,
+      "status": "PASS"
+    },
+    {
+      "scene": "c3s01",
+      "completedBeforeEntry": 36,
+      "status": "PASS"
+    },
+    {
+      "scene": "c3s02",
+      "completedBeforeEntry": 37,
+      "status": "PASS"
+    },
+    {
+      "scene": "c3s03",
+      "completedBeforeEntry": 38,
+      "status": "PASS"
+    },
+    {
+      "scene": "c3s04",
+      "completedBeforeEntry": 39,
+      "status": "PASS"
+    },
+    {
+      "scene": "c3s05",
+      "completedBeforeEntry": 40,
+      "status": "PASS"
+    },
+    {
+      "scene": "c3s06",
+      "completedBeforeEntry": 41,
+      "status": "PASS"
+    },
+    {
+      "scene": "c3s07",
+      "completedBeforeEntry": 42,
+      "status": "PASS"
+    },
+    {
+      "scene": "c3s08",
+      "completedBeforeEntry": 43,
+      "status": "PASS"
+    },
+    {
+      "scene": "c3s09",
+      "completedBeforeEntry": 44,
+      "status": "PASS"
+    },
+    {
+      "scene": "c3s10",
+      "completedBeforeEntry": 45,
+      "status": "PASS"
+    },
+    {
+      "scene": "c3s11",
+      "completedBeforeEntry": 46,
+      "status": "PASS"
+    },
+    {
+      "scene": "c3s12",
+      "completedBeforeEntry": 47,
+      "status": "PASS"
+    },
+    {
+      "scene": "c3s13",
+      "completedBeforeEntry": 48,
+      "status": "PASS"
+    },
+    {
+      "scene": "c3s14",
+      "completedBeforeEntry": 49,
+      "status": "PASS"
+    },
+    {
+      "scene": "c3s15",
+      "completedBeforeEntry": 50,
+      "status": "PASS"
+    },
+    {
+      "scene": "c3s16",
+      "completedBeforeEntry": 51,
+      "status": "PASS"
+    },
+    {
+      "scene": "c3s17",
+      "completedBeforeEntry": 52,
+      "status": "PASS"
+    },
+    {
+      "scene": "c3s18",
+      "completedBeforeEntry": 53,
+      "status": "PASS"
+    },
+    {
+      "scene": "c4s01",
+      "completedBeforeEntry": 54,
+      "status": "PASS"
+    },
+    {
+      "scene": "c4s02",
+      "completedBeforeEntry": 55,
+      "status": "PASS"
+    },
+    {
+      "scene": "c4s03",
+      "completedBeforeEntry": 56,
+      "status": "PASS"
+    },
+    {
+      "scene": "c4s04",
+      "completedBeforeEntry": 57,
+      "status": "PASS"
+    },
+    {
+      "scene": "c4s05",
+      "completedBeforeEntry": 58,
+      "status": "PASS"
+    },
+    {
+      "scene": "c4s06",
+      "completedBeforeEntry": 59,
+      "status": "PASS"
+    },
+    {
+      "scene": "c4s07",
+      "completedBeforeEntry": 60,
+      "status": "PASS"
+    },
+    {
+      "scene": "c4s08",
+      "completedBeforeEntry": 61,
+      "status": "PASS"
+    },
+    {
+      "scene": "c4s09",
+      "completedBeforeEntry": 62,
+      "status": "PASS"
+    },
+    {
+      "scene": "c4s10",
+      "completedBeforeEntry": 63,
+      "status": "PASS"
+    },
+    {
+      "scene": "c4s11",
+      "completedBeforeEntry": 64,
+      "status": "PASS"
+    },
+    {
+      "scene": "c4s12",
+      "completedBeforeEntry": 65,
+      "status": "PASS"
+    },
+    {
+      "scene": "c4s13",
+      "completedBeforeEntry": 66,
+      "status": "PASS"
+    },
+    {
+      "scene": "c4s14",
+      "completedBeforeEntry": 67,
+      "status": "PASS"
+    },
+    {
+      "scene": "c4s15",
+      "completedBeforeEntry": 68,
+      "status": "PASS"
+    },
+    {
+      "scene": "c4s16",
+      "completedBeforeEntry": 69,
+      "status": "PASS"
+    },
+    {
+      "scene": "c4s17",
+      "completedBeforeEntry": 70,
+      "status": "PASS"
+    },
+    {
+      "scene": "c4s18",
+      "completedBeforeEntry": 71,
+      "status": "PASS"
+    },
+    {
+      "scene": "c5s01",
+      "completedBeforeEntry": 72,
+      "status": "PASS"
+    },
+    {
+      "scene": "c5s02",
+      "completedBeforeEntry": 73,
+      "status": "PASS"
+    },
+    {
+      "scene": "c5s03",
+      "completedBeforeEntry": 74,
+      "status": "PASS"
+    },
+    {
+      "scene": "c5s04",
+      "completedBeforeEntry": 75,
+      "status": "PASS"
+    },
+    {
+      "scene": "c5s05",
+      "completedBeforeEntry": 76,
+      "status": "PASS"
+    },
+    {
+      "scene": "c5s06",
+      "completedBeforeEntry": 77,
+      "status": "PASS"
+    },
+    {
+      "scene": "c5s07",
+      "completedBeforeEntry": 78,
+      "status": "PASS"
+    },
+    {
+      "scene": "c5s08",
+      "completedBeforeEntry": 79,
+      "status": "PASS"
+    },
+    {
+      "scene": "c5s09",
+      "completedBeforeEntry": 80,
+      "status": "PASS"
+    },
+    {
+      "scene": "c5s10",
+      "completedBeforeEntry": 81,
+      "status": "PASS"
+    },
+    {
+      "scene": "c5s11",
+      "completedBeforeEntry": 82,
+      "status": "PASS"
+    },
+    {
+      "scene": "c5s12",
+      "completedBeforeEntry": 83,
+      "status": "PASS"
+    },
+    {
+      "scene": "c5s13",
+      "completedBeforeEntry": 84,
+      "status": "PASS"
+    },
+    {
+      "scene": "c5s14",
+      "completedBeforeEntry": 85,
+      "status": "PASS"
+    },
+    {
+      "scene": "c5s15",
+      "completedBeforeEntry": 86,
+      "status": "PASS"
+    },
+    {
+      "scene": "c5s16",
+      "completedBeforeEntry": 87,
+      "status": "PASS"
+    },
+    {
+      "scene": "c5s17",
+      "completedBeforeEntry": 88,
+      "status": "PASS"
+    },
+    {
+      "scene": "c5s18",
+      "completedBeforeEntry": 89,
+      "status": "PASS"
+    },
+    {
+      "scene": "c6s01",
+      "completedBeforeEntry": 90,
+      "status": "PASS"
+    },
+    {
+      "scene": "c6s02",
+      "completedBeforeEntry": 91,
+      "status": "PASS"
+    },
+    {
+      "scene": "c6s03",
+      "completedBeforeEntry": 92,
+      "status": "PASS"
+    },
+    {
+      "scene": "c6s04",
+      "completedBeforeEntry": 93,
+      "status": "PASS"
+    },
+    {
+      "scene": "c6s05",
+      "completedBeforeEntry": 94,
+      "status": "PASS"
+    },
+    {
+      "scene": "c6s06",
+      "completedBeforeEntry": 95,
+      "status": "PASS"
+    },
+    {
+      "scene": "c6s07",
+      "completedBeforeEntry": 96,
+      "status": "PASS"
+    },
+    {
+      "scene": "c6s08",
+      "completedBeforeEntry": 97,
+      "status": "PASS"
+    },
+    {
+      "scene": "c6s09",
+      "completedBeforeEntry": 98,
+      "status": "PASS"
+    },
+    {
+      "scene": "c6s10",
+      "completedBeforeEntry": 99,
+      "status": "PASS"
+    },
+    {
+      "scene": "c6s11",
+      "completedBeforeEntry": 100,
+      "status": "PASS"
+    },
+    {
+      "scene": "c6s12",
+      "completedBeforeEntry": 101,
+      "status": "PASS"
+    },
+    {
+      "scene": "c6s13",
+      "completedBeforeEntry": 102,
+      "status": "PASS"
+    },
+    {
+      "scene": "c6s14",
+      "completedBeforeEntry": 103,
+      "status": "PASS"
+    },
+    {
+      "scene": "c6s15",
+      "completedBeforeEntry": 104,
+      "status": "PASS"
+    },
+    {
+      "scene": "c6s16",
+      "completedBeforeEntry": 105,
+      "status": "PASS"
+    },
+    {
+      "scene": "c6s17",
+      "completedBeforeEntry": 106,
+      "status": "PASS"
+    },
+    {
+      "scene": "c6s18",
+      "completedBeforeEntry": 107,
+      "status": "PASS"
+    }
+  ],
+  "ending": {
+    "completed": 108,
+    "turns": 476,
+    "reloadEqual": true,
+    "exportImportEqual": true
+  },
+  "gallery": {
+    "pages": [
+      {
+        "label": "← 上页\n1 / 32 页 · 764 张\n下页 →",
+        "rows": 24
+      },
+      {
+        "label": "← 上页\n2 / 32 页 · 764 张\n下页 →",
+        "rows": 24
+      },
+      {
+        "label": "← 上页\n3 / 32 页 · 764 张\n下页 →",
+        "rows": 24
+      },
+      {
+        "label": "← 上页\n4 / 32 页 · 764 张\n下页 →",
+        "rows": 24
+      },
+      {
+        "label": "← 上页\n5 / 32 页 · 764 张\n下页 →",
+        "rows": 24
+      },
+      {
+        "label": "← 上页\n6 / 32 页 · 764 张\n下页 →",
+        "rows": 24
+      },
+      {
+        "label": "← 上页\n7 / 32 页 · 764 张\n下页 →",
+        "rows": 24
+      },
+      {
+        "label": "← 上页\n8 / 32 页 · 764 张\n下页 →",
+        "rows": 24
+      },
+      {
+        "label": "← 上页\n9 / 32 页 · 764 张\n下页 →",
+        "rows": 24
+      },
+      {
+        "label": "← 上页\n10 / 32 页 · 764 张\n下页 →",
+        "rows": 24
+      },
+      {
+        "label": "← 上页\n11 / 32 页 · 764 张\n下页 →",
+        "rows": 24
+      },
+      {
+        "label": "← 上页\n12 / 32 页 · 764 张\n下页 →",
+        "rows": 24
+      },
+      {
+        "label": "← 上页\n13 / 32 页 · 764 张\n下页 →",
+        "rows": 24
+      },
+      {
+        "label": "← 上页\n14 / 32 页 · 764 张\n下页 →",
+        "rows": 24
+      },
+      {
+        "label": "← 上页\n15 / 32 页 · 764 张\n下页 →",
+        "rows": 24
+      },
+      {
+        "label": "← 上页\n16 / 32 页 · 764 张\n下页 →",
+        "rows": 24
+      },
+      {
+        "label": "← 上页\n17 / 32 页 · 764 张\n下页 →",
+        "rows": 24
+      },
+      {
+        "label": "← 上页\n18 / 32 页 · 764 张\n下页 →",
+        "rows": 24
+      },
+      {
+        "label": "← 上页\n19 / 32 页 · 764 张\n下页 →",
+        "rows": 24
+      },
+      {
+        "label": "← 上页\n20 / 32 页 · 764 张\n下页 →",
+        "rows": 24
+      },
+      {
+        "label": "← 上页\n21 / 32 页 · 764 张\n下页 →",
+        "rows": 24
+      },
+      {
+        "label": "← 上页\n22 / 32 页 · 764 张\n下页 →",
+        "rows": 24
+      },
+      {
+        "label": "← 上页\n23 / 32 页 · 764 张\n下页 →",
+        "rows": 24
+      },
+      {
+        "label": "← 上页\n24 / 32 页 · 764 张\n下页 →",
+        "rows": 24
+      },
+      {
+        "label": "← 上页\n25 / 32 页 · 764 张\n下页 →",
+        "rows": 24
+      },
+      {
+        "label": "← 上页\n26 / 32 页 · 764 张\n下页 →",
+        "rows": 24
+      },
+      {
+        "label": "← 上页\n27 / 32 页 · 764 张\n下页 →",
+        "rows": 24
+      },
+      {
+        "label": "← 上页\n28 / 32 页 · 764 张\n下页 →",
+        "rows": 24
+      },
+      {
+        "label": "← 上页\n29 / 32 页 · 764 张\n下页 →",
+        "rows": 24
+      },
+      {
+        "label": "← 上页\n30 / 32 页 · 764 张\n下页 →",
+        "rows": 24
+      },
+      {
+        "label": "← 上页\n31 / 32 页 · 764 张\n下页 →",
+        "rows": 24
+      },
+      {
+        "label": "← 上页\n32 / 32 页 · 764 张\n下页 →",
+        "rows": 20
+      }
+    ],
+    "cards": 764
+  },
+  "artExamples": [
+    {
+      "name": "长明灯",
+      "title": "长明灯",
+      "src": "assets/v3-ritual-props-a.webp"
+    },
+    {
+      "name": "香炉",
+      "title": "香炉",
+      "src": "assets/tool-warmstone.webp"
+    },
+    {
+      "name": "博山炉",
+      "title": "博山炉",
+      "src": "assets/v3-ritual-corrections.webp"
+    },
+    {
+      "name": "纸马",
+      "title": "纸马",
+      "src": "assets/v3-ritual-props-a.webp"
+    },
+    {
+      "name": "牌位",
+      "title": "牌位",
+      "src": "assets/v3-ritual-props-a.webp"
+    },
+    {
+      "name": "八仙桌",
+      "title": "八仙桌",
+      "src": "assets/v3-ritual-props-a.webp"
+    },
+    {
+      "name": "磬",
+      "title": "磬",
+      "src": "assets/v3-ritual-props-a.webp"
+    },
+    {
+      "name": "素秋姨母",
+      "title": "素秋姨母",
+      "src": "assets/v3-people-actions.webp"
+    },
+    {
+      "name": "值班女医",
+      "title": "值班女医",
+      "src": "assets/v3-people-actions.webp"
+    }
+  ],
+  "fileLauncher": {
+    "battle": true,
+    "reloadSavedProgress": true,
+    "errors": []
+  },
+  "pageErrors": [],
+  "httpErrors": []
+}

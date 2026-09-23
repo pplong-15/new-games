@@ -1,0 +1,29 @@
+{
+  "changed": [
+    "index.html",
+    "mechanics.js",
+    "art-map.js",
+    "horror-rules.js",
+    "story-revisions.js",
+    "physical-skin.css",
+    "engine.js",
+    "encounter-rules.js",
+    "catalog-rules.js",
+    "catalog-case56.js",
+    "app.js",
+    "art-overrides.js",
+    "_gen/build-case56.js",
+    "_gen/case5-cards.json",
+    "_gen/inject-payload.json",
+    "_gen/ritual-cards.json",
+    "_gen/case6-cards.json"
+  ],
+  "added": [
+    "assets/v3-ritual-corrections.webp",
+    "assets/v3-ritual-props-a.webp",
+    "assets/v3-ritual-props-b.webp",
+    "assets/v3-ritual-details.webp",
+    "assets/v3-people-actions.webp",
+    "assets/v3-ritual-actions.webp"
+  ]
+}

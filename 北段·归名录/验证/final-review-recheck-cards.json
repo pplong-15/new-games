@@ -1,0 +1,891 @@
+{
+  "at": "2026-09-08T15:09:33.444Z",
+  "verdict": "PREVIOUS_CARD_BLOCKERS_RESOLVED",
+  "unreachableResponses": [],
+  "old47ModeDisposition": [
+    {
+      "id": "card340",
+      "oldMode": "response",
+      "mode": "skill",
+      "unlock": 19,
+      "name": "咬住布巾"
+    },
+    {
+      "id": "card341",
+      "oldMode": "response",
+      "mode": "skill",
+      "unlock": 19,
+      "name": "卷毡垫脚"
+    },
+    {
+      "id": "card342",
+      "oldMode": "response",
+      "mode": "skill",
+      "unlock": 20,
+      "name": "按倒横杆"
+    },
+    {
+      "id": "card343",
+      "oldMode": "response",
+      "mode": "skill",
+      "unlock": 20,
+      "name": "拂去脸上灰土"
+    },
+    {
+      "id": "card344",
+      "oldMode": "response",
+      "mode": "skill",
+      "unlock": 20,
+      "name": "撬开堵塞的窗"
+    },
+    {
+      "id": "card355",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 0,
+      "name": "遮住强光"
+    },
+    {
+      "id": "card356",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 0,
+      "name": "吹灭晃灯"
+    },
+    {
+      "id": "card357",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 0,
+      "name": "把灯接稳"
+    },
+    {
+      "id": "card358",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 0,
+      "name": "移开镜片"
+    },
+    {
+      "id": "card359",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 0,
+      "name": "转身避光"
+    },
+    {
+      "id": "card365",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 20,
+      "name": "不用现在决定"
+    },
+    {
+      "id": "card366",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 20,
+      "name": "先给口水"
+    },
+    {
+      "id": "card367",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 20,
+      "name": "制止围逼"
+    },
+    {
+      "id": "card368",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 20,
+      "name": "把门关住"
+    },
+    {
+      "id": "card369",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 20,
+      "name": "留出喘息"
+    },
+    {
+      "id": "card520",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 12,
+      "name": "咬住牵引绳"
+    },
+    {
+      "id": "card521",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 12,
+      "name": "用棍隔犬"
+    },
+    {
+      "id": "card522",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 12,
+      "name": "抛出诱饵"
+    },
+    {
+      "id": "card523",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 12,
+      "name": "护犬人先退"
+    },
+    {
+      "id": "card524",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 12,
+      "name": "压牢隔栏"
+    },
+    {
+      "id": "card525",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 3,
+      "name": "抓牢物件"
+    },
+    {
+      "id": "card526",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 3,
+      "name": "锁上匣扣"
+    },
+    {
+      "id": "card527",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 3,
+      "name": "挡回伸手"
+    },
+    {
+      "id": "card528",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 3,
+      "name": "追到门边"
+    },
+    {
+      "id": "card529",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 3,
+      "name": "抱住册箱"
+    },
+    {
+      "id": "card535",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 36,
+      "name": "收回未核凭条"
+    },
+    {
+      "id": "card536",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 36,
+      "name": "请值守留步"
+    },
+    {
+      "id": "card537",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 36,
+      "name": "拦住仓促交付"
+    },
+    {
+      "id": "card538",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 36,
+      "name": "当面点清"
+    },
+    {
+      "id": "card539",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 36,
+      "name": "留下核验副联"
+    },
+    {
+      "id": "card540",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 2,
+      "name": "握住扶手"
+    },
+    {
+      "id": "card541",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 2,
+      "name": "掩护向下跳"
+    },
+    {
+      "id": "card542",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 2,
+      "name": "顺坡翻滚"
+    },
+    {
+      "id": "card543",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 2,
+      "name": "绳上换手"
+    },
+    {
+      "id": "card544",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 10,
+      "name": "捂住伤口"
+    },
+    {
+      "id": "card545",
+      "oldMode": "response",
+      "mode": "skill",
+      "unlock": 38,
+      "name": "翻盆护住物件"
+    },
+    {
+      "id": "card546",
+      "oldMode": "response",
+      "mode": "skill",
+      "unlock": 39,
+      "name": "扯开缠腿的布"
+    },
+    {
+      "id": "card547",
+      "oldMode": "response",
+      "mode": "skill",
+      "unlock": 40,
+      "name": "双人架扶撤离"
+    },
+    {
+      "id": "card548",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 4,
+      "name": "赶在浪头前"
+    },
+    {
+      "id": "card549",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 4,
+      "name": "堵住破舱口"
+    },
+    {
+      "id": "card550",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 10,
+      "name": "拿木棍顶住"
+    },
+    {
+      "id": "card551",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 10,
+      "name": "拦住第二人"
+    },
+    {
+      "id": "card552",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 10,
+      "name": "借盾撞回"
+    },
+    {
+      "id": "card553",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 0,
+      "name": "把灯护在怀里"
+    },
+    {
+      "id": "card554",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 20,
+      "name": "拦下追问的人"
+    },
+    {
+      "id": "card555",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 0,
+      "name": "等原话说完"
+    },
+    {
+      "id": "card556",
+      "oldMode": "response",
+      "mode": "response",
+      "unlock": 1,
+      "name": "两手护住档案"
+    }
+  ],
+  "replays": [
+    {
+      "id": "card340",
+      "encounter": "c2s02",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 1
+    },
+    {
+      "id": "card341",
+      "encounter": "c2s02",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 1
+    },
+    {
+      "id": "card342",
+      "encounter": "c2s04",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 1
+    },
+    {
+      "id": "card343",
+      "encounter": "c2s03",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 1
+    },
+    {
+      "id": "card344",
+      "encounter": "c2s04",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 1
+    },
+    {
+      "id": "card355",
+      "encounter": "c1s01",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 5
+    },
+    {
+      "id": "card356",
+      "encounter": "c1s01",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 5
+    },
+    {
+      "id": "card357",
+      "encounter": "c1s01",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 5
+    },
+    {
+      "id": "card358",
+      "encounter": "c1s01",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 5
+    },
+    {
+      "id": "card359",
+      "encounter": "c1s01",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 5
+    },
+    {
+      "id": "card365",
+      "encounter": "c2s06",
+      "phase": 1,
+      "viable": true,
+      "early": "本幕没有这张应对的触发窗口。",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 12
+    },
+    {
+      "id": "card366",
+      "encounter": "c2s06",
+      "phase": 1,
+      "viable": true,
+      "early": "本幕没有这张应对的触发窗口。",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 12
+    },
+    {
+      "id": "card367",
+      "encounter": "c2s06",
+      "phase": 1,
+      "viable": true,
+      "early": "本幕没有这张应对的触发窗口。",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 10
+    },
+    {
+      "id": "card368",
+      "encounter": "c2s06",
+      "phase": 1,
+      "viable": true,
+      "early": "本幕没有这张应对的触发窗口。",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 10
+    },
+    {
+      "id": "card369",
+      "encounter": "c2s06",
+      "phase": 1,
+      "viable": true,
+      "early": "本幕没有这张应对的触发窗口。",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 12
+    },
+    {
+      "id": "card520",
+      "encounter": "c1s15",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 5
+    },
+    {
+      "id": "card521",
+      "encounter": "c1s15",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 5
+    },
+    {
+      "id": "card522",
+      "encounter": "c1s15",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 5
+    },
+    {
+      "id": "card523",
+      "encounter": "c1s15",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 5
+    },
+    {
+      "id": "card524",
+      "encounter": "c1s15",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 5
+    },
+    {
+      "id": "card525",
+      "encounter": "c1s05",
+      "phase": 1,
+      "viable": true,
+      "early": "本幕没有这张应对的触发窗口。",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 12
+    },
+    {
+      "id": "card526",
+      "encounter": "c1s05",
+      "phase": 1,
+      "viable": true,
+      "early": "本幕没有这张应对的触发窗口。",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 12
+    },
+    {
+      "id": "card527",
+      "encounter": "c1s05",
+      "phase": 1,
+      "viable": true,
+      "early": "本幕没有这张应对的触发窗口。",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 12
+    },
+    {
+      "id": "card528",
+      "encounter": "c1s05",
+      "phase": 1,
+      "viable": true,
+      "early": "本幕没有这张应对的触发窗口。",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 12
+    },
+    {
+      "id": "card529",
+      "encounter": "c1s05",
+      "phase": 1,
+      "viable": true,
+      "early": "本幕没有这张应对的触发窗口。",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 12
+    },
+    {
+      "id": "card535",
+      "encounter": "c3s05",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 5
+    },
+    {
+      "id": "card536",
+      "encounter": "c3s05",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 5
+    },
+    {
+      "id": "card537",
+      "encounter": "c3s05",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 5
+    },
+    {
+      "id": "card538",
+      "encounter": "c3s05",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 5
+    },
+    {
+      "id": "card539",
+      "encounter": "c3s05",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 5
+    },
+    {
+      "id": "card540",
+      "encounter": "c1s04",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 6
+    },
+    {
+      "id": "card541",
+      "encounter": "c1s04",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 5
+    },
+    {
+      "id": "card542",
+      "encounter": "c1s04",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 5
+    },
+    {
+      "id": "card543",
+      "encounter": "c1s04",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 5
+    },
+    {
+      "id": "card544",
+      "encounter": "c1s15",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 6
+    },
+    {
+      "id": "card545",
+      "encounter": "c3s03",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 1
+    },
+    {
+      "id": "card546",
+      "encounter": "c3s04",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 1
+    },
+    {
+      "id": "card547",
+      "encounter": "c3s05",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 1
+    },
+    {
+      "id": "card548",
+      "encounter": "c1s07",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 5
+    },
+    {
+      "id": "card549",
+      "encounter": "c1s07",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 5
+    },
+    {
+      "id": "card550",
+      "encounter": "c1s15",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 5
+    },
+    {
+      "id": "card551",
+      "encounter": "c1s15",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 5
+    },
+    {
+      "id": "card552",
+      "encounter": "c1s15",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 4
+    },
+    {
+      "id": "card553",
+      "encounter": "c1s01",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 5
+    },
+    {
+      "id": "card554",
+      "encounter": "c2s06",
+      "phase": 1,
+      "viable": true,
+      "early": "本幕没有这张应对的触发窗口。",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 10
+    },
+    {
+      "id": "card555",
+      "encounter": "c1s01",
+      "phase": 2,
+      "viable": true,
+      "early": "本幕没有这张应对的触发窗口。",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 17
+    },
+    {
+      "id": "card556",
+      "encounter": "c1s03",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": null,
+      "steps": 4
+    },
+    {
+      "id": "card018",
+      "encounter": "c1s02",
+      "phase": 0,
+      "viable": true,
+      "early": "",
+      "effective": 1,
+      "endEffect": {
+        "before": {
+          "phase": 0,
+          "turn": 1,
+          "shield": 3,
+          "hp": 30,
+          "people": [
+            "card018"
+          ]
+        },
+        "after": {
+          "phase": 0,
+          "turn": 2,
+          "shield": 2,
+          "hp": 28,
+          "people": [
+            "card018"
+          ],
+          "conditions": {
+            "card018:otherAlone": 1
+          }
+        }
+      },
+      "steps": 5
+    }
+  ],
+  "mapCheckpointCount": 108,
+  "cardCounts": {
+    "person": 24,
+    "skill": 283,
+    "response": 85,
+    "equipment": 104,
+    "setup": 104
+  },
+  "summaryHashesMatch": true,
+  "independentFreshCampaign": {
+    "completed": 108,
+    "failures": 0,
+    "mapCount": 108,
+    "cachedCheckpointDifferences": [],
+    "seed": 77,
+    "readsCorrectInvestigationAnswers": true
+  },
+  "replayedAll600FromFreshEarnedMaps": {
+    "passed": 600,
+    "failures": [],
+    "elapsedMs": 5743
+  },
+  "futurePhaseIndependentReplays": [
+    {
+      "id": "card016",
+      "name": "何巡",
+      "scene": "c2s05",
+      "mapViable": true,
+      "phase0Reason": "何巡尚未到达这处现场。",
+      "phase2PlaySucceeded": true,
+      "note": "This separate gate checks deployment; persistent effect is covered by the all-600 proof."
+    },
+    {
+      "id": "new15",
+      "scene": "c2s07",
+      "mapViable": true,
+      "phase0Reason": "本幕没有这张应对的触发窗口。",
+      "phase2ResponseSucceeded": true,
+      "effectiveResponseCount": 1
+    }
+  ],
+  "scriptInspection": {
+    "battleInjectionFound": false,
+    "checkpointOrigin": "Independent public API baseline reproduced all 108 cached map states exactly.",
+    "ordinaryDeckOrder": "The test inverses deterministic shuffle before setDeck; this proves existence of a draw order, not random draw reliability.",
+    "costFalsePositive": "put deducts card cost before execute captures effectState; use deducts activation cost before trigger executes. Charges and trigger counters are excluded from effectState.",
+    "persistentRequirement": "effective(id:persistent), not enter or mere trigger event. execute compares substantive battle state; refresh also compares usedTurn.",
+    "responseRequirement": "A real available unresolved intent must match; response protects that intent and then runs its effects. This does not prove every optional effect is useful in every state.",
+    "answerKnowledge": "Baseline and trace replay use correct investigation IDs. These are legal play/reachability checks, not blind deduction."
+  },
+  "scopeLimit": "Closes prior unreachable-window and patrol-self-condition blockers, plus checks scene-wide deck eligibility/current-phase play eligibility. Does not enumerate every conditional branch/deck or approve balance, art, UI or human play."
+}

@@ -1,0 +1,20 @@
+{
+  "scope": "Real browser script order without DOM; card rules and text consistency, not visual quality.",
+  "scripts": [
+    "data.js",
+    "catalog.js",
+    "catalog-rules.js",
+    "story-content.js",
+    "card-copy.js",
+    "art-overrides.js",
+    "art-map.js",
+    "story-revisions.js",
+    "encounter-rules.js",
+    "card-rebalance.js",
+    "mechanics.js",
+    "engine.js"
+  ],
+  "cards": 600,
+  "status": "PASS",
+  "findings": []
+}

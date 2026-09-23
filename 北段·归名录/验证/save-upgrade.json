@@ -1,0 +1,50 @@
+{
+  "scope": "V1.1 save migration and round-trip; not a whole-campaign playtest.",
+  "checks": [
+    {
+      "name": "V4 home",
+      "status": "PASS",
+      "resultView": "home"
+    },
+    {
+      "name": "V4 first map",
+      "status": "PASS",
+      "resultView": "map"
+    },
+    {
+      "name": "V4 active first battle",
+      "status": "PASS",
+      "resultView": "map"
+    },
+    {
+      "name": "V4 c2s16 completed progress",
+      "status": "PASS",
+      "resultView": "map"
+    },
+    {
+      "name": "V4 c3s17 completed progress",
+      "status": "PASS",
+      "resultView": "map"
+    },
+    {
+      "name": "V4 c4s13 completed progress",
+      "status": "PASS",
+      "resultView": "map"
+    },
+    {
+      "name": "V4 c5s16 completed progress",
+      "status": "PASS",
+      "resultView": "map"
+    },
+    {
+      "name": "V4 c6s14 completed progress",
+      "status": "PASS",
+      "resultView": "map"
+    },
+    {
+      "name": "V4 complete ending",
+      "status": "PASS",
+      "resultView": "ending"
+    }
+  ]
+}

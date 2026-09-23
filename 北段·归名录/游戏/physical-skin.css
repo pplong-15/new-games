@@ -1,0 +1,947 @@
+/* ===================================================================
+   实体牌桌皮肤 · physical-skin.css
+   V2 的 tabletop.css 保留了全部实体结构（clip-path、宝石、卡框），
+   只是打包时把素材图删了、url() 换成了 none。这里把它们接回来，
+   并把 card-v2 的现代卡面改回实体卡。
+   加载顺序必须在 v2.css 之后。
+   =================================================================== */
+
+/* ---------- 1. 木质牌桌 ---------- */
+.table-arena .desk-surface{
+  background:radial-gradient(ellipse,#00000010,#00000070 85%),
+             url('assets/ref-table-felt.webp') center/100% 100% !important;
+  opacity:1 !important;
+  box-shadow:0 24px 45px #000a,inset 0 0 60px #000a !important;
+  filter:none !important;
+  border:0 !important;
+}
+.desk-surface:after{display:none !important}
+.table-arena .scene-window{opacity:.32 !important;filter:saturate(.7) brightness(.8)}
+.table-arena .scene-window-image{border-radius:10px}
+
+/* ---------- 2. 宝石数值 ---------- */
+.gem-cost{background:url('assets/ref-gem-cost.webp') center/130% 130% !important}
+.gem-atk{background:url('assets/ref-gem-atk.webp') center/135% 135% !important}
+.gem-hp{background:url('assets/ref-gem-hp.webp') center/135% 135% !important}
+.mana-crystals{
+  display:flex !important;gap:1px !important;max-width:115px !important;flex-wrap:wrap !important;
+}
+.mana-crystals i{
+  display:block !important;width:15px !important;height:19px !important;
+  background:url('assets/ref-gem-mana.webp') center/contain no-repeat !important;
+  clip-path:polygon(50% 0,90% 25%,90% 75%,50% 100%,10% 75%,10% 25%);
+}
+.mana-crystals i.on{background:url('assets/ref-gem-mana.webp') center/contain no-repeat !important}
+.mana-crystals i.off,.mana-crystals .off{filter:grayscale(1) brightness(.3)}
+
+/* ---------- 3. 人物头像金环 ---------- */
+.hero-medallion::before{
+  content:"" !important;display:block !important;position:absolute !important;
+  inset:0 7px 10px !important;border-radius:50% !important;
+  background:url('assets/ref-hero-ring.webp') center/100% 100% no-repeat !important;
+  opacity:1 !important;filter:drop-shadow(0 5px 10px #000a);z-index:1 !important;
+}
+.revised-table .hero-medallion.player{
+  display:block !important;position:relative !important;width:91px !important;height:98px !important;
+  min-width:91px !important;padding:0 !important;grid-template-columns:none !important;
+  grid-template-rows:none !important;background:none !important;overflow:visible !important;
+}
+.revised-table .hero-medallion.player>img{
+  position:absolute !important;left:18px !important;right:18px !important;top:11px !important;
+  width:55px !important;height:55px !important;border-radius:50% !important;
+  object-fit:cover !important;object-position:center 25% !important;z-index:2 !important;
+  border:1px solid #806c43 !important;margin:0 !important;grid-column:auto !important;grid-row:auto !important;
+}
+.revised-table .hero-medallion.player>span,
+.player-strip .hero-medallion>span{
+  position:absolute !important;left:0 !important;right:0 !important;top:auto !important;bottom:11px !important;
+  font:11px var(--serif) !important;color:#e0cba3 !important;text-align:center !important;
+  grid-column:auto !important;grid-row:auto !important;white-space:nowrap !important;z-index:3 !important;
+}
+.revised-table .hero-medallion.player .hero-life{
+  position:absolute !important;right:0 !important;left:auto !important;bottom:16px !important;
+  width:30px !important;height:30px !important;
+  display:grid !important;place-items:center !important;padding:0 !important;margin:0 !important;
+  background:url('assets/ref-gem-hp.webp') center/100% 100% no-repeat !important;
+  font:15px/1 var(--serif) !important;color:#fff3da !important;text-shadow:0 2px 3px #000c !important;
+  grid-column:auto !important;grid-row:auto !important;z-index:4 !important;
+}
+.revised-table .hero-medallion.player .hero-life i{display:none}
+.revised-table .hero-medallion.player .hero-life:before,
+.revised-table .hero-medallion.player .hero-life:after{content:none !important}
+.revised-table .hero-medallion.player .hero-shield{
+  position:absolute !important;left:10px !important;right:10px !important;bottom:-2px !important;
+  font:9px var(--sans) !important;color:#f0dfb5 !important;padding:1px 5px !important;
+  background:#28190fd9 !important;border:1px solid #a9844f66 !important;border-radius:8px !important;
+  grid-column:auto !important;grid-row:auto !important;z-index:4 !important;text-align:center !important;
+}
+
+/* ---------- 4. 结束回合的木牌 ---------- */
+.physical-end,
+.revised-table .physical-end,
+.physical-end:hover:not(:disabled){
+  background:url('assets/ref-btn-end-turn.webp') center/100% 100% no-repeat !important;
+  border:0 !important;color:#f4e3c0 !important;text-shadow:0 2px 3px #000b !important;
+  box-shadow:none !important;filter:drop-shadow(0 6px 10px #000a) !important;
+}
+
+/* ---------- 5. 手牌：card-v2 → 实体卡（对齐旧原型 physical-card） ----------
+   雕花框 card-frame.webp：椭圆肖像透明、中段横幅透明、下方面板是不透明羊皮纸。
+   框本身 z-index:2；插画 1；规则/横幅/按钮 3–6，文字压在羊皮纸之上。 */
+.card.physical-card.card-v2,
+.revised-table .spread-hand .card.physical-card.card-v2,
+.revised-table .compact-hand .card.physical-card.card-v2{
+  position:relative !important;display:block !important;
+  width:168px !important;min-width:168px !important;height:232px !important;min-height:232px !important;
+  padding:0 !important;margin:0 !important;border:0 !important;border-radius:0 !important;
+  background:none !important;box-shadow:none !important;overflow:visible !important;
+  isolation:isolate !important;color:#30261c !important;filter:drop-shadow(0 5px 8px #000b);
+  clip-path:none !important;transform:none !important;grid-template-rows:none !important;gap:0 !important;
+  cursor:pointer;
+}
+.card.physical-card.card-v2:hover,
+.revised-table .spread-hand .card-v2:hover,
+.detail .card-v2:hover{
+  transform:none !important;filter:drop-shadow(0 8px 12px #000c);box-shadow:none !important;
+}
+.card.physical-card.card-v2.playable{
+  outline:none !important;
+  filter:drop-shadow(0 0 7px #e5ba68a0) drop-shadow(0 5px 8px #000b);
+}
+.card.physical-card.card-v2.selected{outline:none;filter:drop-shadow(0 0 12px #f1c364)}
+
+/* 类型色收成同一黄铜：人物/器物/布置/应对/技能只靠横幅下的文字区分，不再分色描边 */
+.card-v2,
+.card-v2.mode-person,
+.card-v2.mode-equipment,
+.card-v2.mode-setup,
+.card-v2.mode-response,
+.card-v2.mode-skill{
+  --card-color:#c5a66c !important;
+}
+.card-v2:before{
+  border-top-color:var(--card-color,#c5a66c) !important;
+}
+
+.card.physical-card.card-v2::before{
+  content:'' !important;position:absolute !important;inset:0 !important;
+  border:0 !important;z-index:2 !important;pointer-events:none !important;
+  background:url('assets/card-frame.webp') center/100% 100% no-repeat !important;
+  clip-path:none !important;
+}
+.card.physical-card.card-v2::after{display:none !important}
+
+.card-v2 .card-v2-top{
+  position:absolute !important;inset:0 !important;display:block !important;
+  padding:0 !important;background:none !important;pointer-events:none !important;
+  grid-row:auto !important;
+}
+.card-v2 .card-v2-sigil{display:none !important}
+.card-v2 .card-v2-kind{
+  position:absolute !important;left:33% !important;right:33% !important;bottom:1% !important;top:auto !important;
+  z-index:4 !important;height:15px !important;line-height:13px !important;
+  font-size:9px !important;letter-spacing:0 !important;text-align:center !important;
+  color:#c4ac81 !important;background:#28190fdd !important;border:1px solid #a9844f66 !important;
+  border-radius:0 !important;padding:0 !important;font-family:var(--serif,serif) !important;
+}
+.card-v2 .card-v2-cost{
+  position:absolute !important;left:0 !important;top:2% !important;z-index:5 !important;
+  width:38px !important;height:38px !important;display:grid !important;place-items:center !important;
+  background:url('assets/ref-gem-cost.webp') center/130% 130% no-repeat !important;
+  border:0 !important;border-radius:0 !important;pointer-events:none !important;
+}
+.card-v2 .card-v2-cost b{
+  font-size:22px !important;font-family:var(--serif,serif) !important;font-weight:700 !important;
+  color:#fff2dc !important;text-shadow:0 2px 2px #000,-1px 0 #27180b !important;line-height:1 !important;
+}
+.card-v2 .card-v2-cost small{display:none !important}
+
+.card-v2 .card-illustration{
+  position:absolute !important;left:13% !important;right:13% !important;top:14% !important;
+  width:auto !important;height:45% !important;margin:0 !important;padding:0 !important;
+  border:0 !important;border-radius:50% !important;overflow:hidden !important;
+  background:#1a1410 !important;z-index:1 !important;box-shadow:inset 0 0 12px #0008 !important;
+  grid-row:auto !important;
+}
+.card-v2 .card-illustration > img{
+  width:100% !important;height:100% !important;object-fit:cover !important;
+  object-position:var(--card-art-position,50% 30%) !important;display:block !important;
+}
+.card-v2 .card-illustration .art-sprite{
+  position:relative !important;display:block !important;width:100% !important;height:100% !important;
+  overflow:hidden !important;
+}
+.card-v2 .card-illustration .art-sprite img{
+  width:400% !important;height:400% !important;max-width:none !important;
+  object-fit:fill !important;position:absolute !important;
+}
+
+.card-v2 .card-v2-title{
+  position:absolute !important;left:3% !important;right:3% !important;top:54% !important;
+  height:27px !important;line-height:25px !important;margin:0 !important;padding:0 8px !important;
+  display:block !important;font-family:var(--serif,serif) !important;font-size:14px !important;font-weight:700 !important;
+  letter-spacing:0 !important;text-align:center !important;white-space:nowrap !important;
+  overflow:hidden !important;text-overflow:ellipsis !important;
+  color:#f0dfb5 !important;background:linear-gradient(#553c21,#281a0c) !important;
+  border:1px solid #d0ae6c !important;border-top-width:1px !important;border-bottom-width:1px !important;
+  clip-path:polygon(5% 0,95% 0,100% 50%,95% 100%,5% 100%,0 50%);
+  text-shadow:0 1px #000 !important;z-index:4 !important;grid-row:auto !important;
+}
+
+.card-v2 .card-v2-rule{
+  position:absolute !important;left:12% !important;right:12% !important;top:62% !important;
+  height:24% !important;margin:0 !important;padding:1px 2px 0 !important;
+  font-family:var(--serif,serif) !important;font-size:9px !important;line-height:1.32 !important;
+  color:#312319 !important;text-align:center !important;text-shadow:0 1px #fff1 !important;
+  background:none !important;overflow:hidden !important;
+  display:-webkit-box !important;-webkit-box-orient:vertical !important;-webkit-line-clamp:3 !important;
+  align-items:unset !important;justify-content:unset !important;
+  z-index:3 !important;grid-row:auto !important;pointer-events:none !important;
+  bottom:auto !important;max-height:24% !important;
+}
+.card-v2 .card-v2-rule .card-v2-mood{
+  font-size:8.5px !important;line-height:1.28 !important;opacity:.88 !important;
+}
+.card-v2 .card-v2-rule .card-v2-mech{
+  font-size:9px !important;line-height:1.32 !important;
+}
+
+.card-v2 .card-v2-target,
+.card-v2 .card-v2-condition{display:none !important}
+
+.card-v2 .card-v2-footer{
+  position:absolute !important;inset:auto 33% 5% 33% !important;margin:0 !important;padding:0 !important;
+  display:block !important;background:none !important;border:0 !important;z-index:6 !important;
+  grid-row:auto !important;
+}
+.card-v2 .card-v2-footer small,
+.card-v2 .card-v2-footer>span{display:none !important}
+.card-v2 .card-play-v2{
+  position:static !important;width:100% !important;min-width:0 !important;height:20px !important;
+  min-height:20px !important;padding:0 !important;line-height:17px !important;font-size:10px !important;
+  color:#f2dfb5 !important;background:linear-gradient(#644928,#312010) !important;
+  border:1px solid #d1ac6c !important;border-radius:3px !important;box-shadow:0 2px 3px #0007 !important;
+}
+.card-v2 .card-play-v2:disabled{opacity:.55 !important;background:linear-gradient(#4a3a28,#2a2014) !important;color:#cbb896 !important}
+.revised-table .compact-hand .card-play-v2{opacity:0 !important;pointer-events:none !important}
+.revised-table .compact-hand .hand-slot:hover .card-play-v2,
+.revised-table .compact-hand .hand-slot:focus-within .card-play-v2{
+  opacity:1 !important;pointer-events:auto !important;
+}
+
+.detail-frame .card.physical-card.card-v2,
+.detail .card-v2,
+.detail .card-v2:hover{
+  transform:none !important;width:174px !important;min-width:174px !important;height:244px !important;
+}
+.detail .detail-frame{min-height:260px !important;display:grid;place-items:center}
+
+/* ---------- 6. 敌人：竖向实体牌位 ---------- */
+.risk-card,
+.revised-table .enemy-rank .risk-card{
+  position:relative !important;display:block !important;
+  width:128px !important;min-width:128px !important;min-height:176px !important;height:176px !important;
+  padding:0 !important;margin:0 !important;border:0 !important;border-radius:0 !important;
+  background:none !important;box-shadow:none !important;overflow:hidden !important;
+  isolation:isolate !important;filter:drop-shadow(0 6px 7px #0009);
+  grid-template-columns:none !important;grid-template-rows:none !important;gap:0 !important;
+  color:#30261c !important;text-align:center !important;
+}
+.risk-card::after{
+  content:'' !important;position:absolute !important;inset:0 !important;
+  z-index:2 !important;pointer-events:none !important;border:0 !important;
+  background:url('assets/card-frame.webp') center/100% 100% no-repeat !important;
+}
+.risk-card .risk-art{
+  position:absolute !important;left:13% !important;right:13% !important;top:14% !important;
+  width:auto !important;height:46% !important;margin:0 !important;padding:0 !important;
+  border:0 !important;border-radius:50% !important;overflow:hidden !important;
+  background:#1a1410 !important;z-index:1 !important;opacity:1 !important;
+}
+.risk-card .risk-art > img{
+  width:100% !important;height:100% !important;object-fit:cover !important;
+  object-position:50% 26% !important;display:block !important;opacity:1 !important;
+}
+.risk-card .risk-art .art-sprite{
+  position:relative !important;display:block !important;width:100% !important;height:100% !important;
+  overflow:hidden !important;
+}
+.risk-card .risk-art .art-sprite img{
+  width:400% !important;height:400% !important;max-width:none !important;
+  object-fit:fill !important;position:absolute !important;
+}
+.risk-card .risk-kind{
+  position:absolute !important;left:28% !important;right:28% !important;bottom:2% !important;
+  z-index:4 !important;margin:0 !important;padding:0 !important;
+  font-size:8px !important;letter-spacing:0 !important;line-height:13px !important;
+  color:#c4ac81 !important;background:#28190fdd !important;border:1px solid #a9844f66 !important;
+  border-radius:0 !important;
+}
+.risk-card h3{
+  position:absolute !important;left:3% !important;right:3% !important;top:61% !important;
+  height:19px !important;line-height:18px !important;margin:0 !important;padding:0 4px !important;
+  font-size:11px !important;font-family:var(--serif,serif) !important;font-weight:700 !important;
+  color:#f0ddb7 !important;text-align:center !important;white-space:nowrap !important;
+  overflow:hidden !important;text-overflow:ellipsis !important;
+  background:linear-gradient(#473219,#201609) !important;
+  border:1px solid #bda16d !important;z-index:4 !important;
+  clip-path:polygon(4% 0,96% 0,100% 50%,96% 100%,4% 100%,0 50%);
+}
+.risk-card .risk-values{
+  position:static !important;display:block !important;margin:0 !important;gap:0 !important;
+  height:0 !important;overflow:visible !important;
+}
+.risk-card .risk-values span{
+  position:absolute !important;bottom:8px !important;width:22px !important;height:22px !important;
+  display:grid !important;place-items:center !important;z-index:5 !important;
+  background:url('assets/ref-gem-hp.webp') center/100% 100% no-repeat !important;
+}
+.risk-card .risk-values span:first-child{left:6px !important;right:auto !important}
+.risk-card .risk-values span:last-child{
+  right:6px !important;left:auto !important;
+  background:url('assets/ref-gem-atk.webp') center/100% 100% no-repeat !important;
+}
+.risk-card .risk-values small{display:none !important}
+.risk-card .risk-values b{
+  font-size:15px !important;color:#fff3da !important;text-shadow:0 2px 3px #000c !important;
+  font-family:var(--serif,serif) !important;
+}
+.risk-card>p{
+  position:absolute !important;left:16% !important;right:16% !important;top:71% !important;
+  height:14% !important;margin:0 !important;padding:0 2px !important;
+  font-size:8.5px !important;line-height:1.25 !important;color:#312319 !important;
+  text-align:center !important;opacity:1 !important;overflow:hidden !important;
+  display:-webkit-box !important;-webkit-line-clamp:2 !important;-webkit-box-orient:vertical !important;
+  z-index:3 !important;grid-column:auto !important;
+}
+.risk-card>strong{
+  position:absolute !important;inset:auto 18% 18% 18% !important;
+  z-index:6 !important;background:#b48548 !important;color:#1d2616 !important;
+  font-size:10px !important;text-align:center !important;padding:2px 0 !important;
+}
+.risk-card.targetable{
+  outline:0 !important;transform:translateY(-5px) !important;
+  filter:drop-shadow(0 0 10px #ffd172) drop-shadow(0 6px 7px #0009) !important;
+}
+.risk-card:hover:not(:disabled){
+  background:none !important;transform:translateY(-6px) !important;
+  filter:drop-shadow(0 0 10px #e5ba68) !important;
+}
+.risk-card.dead{opacity:.35 !important;filter:grayscale(1) !important}
+
+/* ---------- 7. 己方随行者：接回透明卡框 ---------- */
+.table-unit.unit,
+.table-unit.enemy{
+  width:102px !important;height:141px !important;min-height:141px !important;
+  background:none !important;border:0 !important;border-radius:0 !important;
+}
+.table-unit-frame,
+.physical-frame{
+  position:absolute !important;inset:0 !important;
+  background:url('assets/card-frame.webp') center/100% 100% no-repeat !important;
+  border:0 !important;border-radius:0 !important;clip-path:none !important;
+  z-index:2 !important;pointer-events:none !important;
+}
+.table-unit-art{
+  left:13% !important;right:13% !important;top:14% !important;height:46% !important;
+  border-radius:50% !important;z-index:1 !important;
+}
+.table-unit-name{
+  top:61% !important;z-index:4 !important;
+  background:linear-gradient(#473219,#201609) !important;color:#f0ddb7 !important;
+  border:1px solid #bda16d !important;
+  clip-path:polygon(4% 0,96% 0,100% 50%,96% 100%,4% 100%,0 50%);
+}
+.table-unit-atk,
+.table-unit-hp{
+  width:28px !important;height:28px !important;bottom:4% !important;z-index:5 !important;
+  border:0 !important;border-radius:0 !important;clip-path:none !important;
+}
+.table-unit-atk{background:url('assets/ref-gem-atk.webp') center/100% 100% no-repeat !important}
+.table-unit-hp{background:url('assets/ref-gem-hp.webp') center/100% 100% no-repeat !important}
+.table-unit-state{color:#40311c !important;z-index:4 !important}
+
+/* ---------- 8. 上下对阵：敌人在上、己方在下、中间留出桌面 ---------- */
+@media(min-width:761px) and (min-height:501px){
+  .tabletop.battle.revised-table{
+    height:calc(100svh - 48px) !important;max-height:calc(100svh - 48px) !important;
+    min-height:0 !important;overflow:visible !important;
+    grid-template-rows:76px minmax(220px,1fr) 300px !important;
+    align-content:stretch !important;align-items:stretch !important;
+  }
+  .revised-table .physical-hand.hand-section{
+    height:300px !important;min-height:300px !important;max-height:300px !important;
+    overflow:visible !important;
+  }
+}
+.tabletop.battle.revised-table{
+  align-content:stretch !important;align-items:stretch !important;
+}
+.revised-table .table-arena{
+  display:grid !important;
+  grid-template-rows:minmax(176px,1fr) 28px auto 24px auto 88px !important;
+  min-height:0 !important;height:auto !important;align-self:stretch !important;
+  align-content:stretch !important;gap:4px !important;padding:8px 12px 6px !important;
+  position:relative !important;overflow:hidden !important;
+}
+.revised-table .scene-window{
+  position:absolute !important;inset:0 !important;z-index:-2 !important;
+  width:100% !important;height:100% !important;opacity:.32 !important;
+  border:0 !important;pointer-events:none !important;box-shadow:none !important;
+}
+.scene-window>span{display:none !important}
+.revised-table .desk-surface{
+  position:absolute !important;z-index:-1 !important;
+  left:-12px !important;right:-12px !important;top:8px !important;bottom:78px !important;
+  border-radius:45% !important;opacity:1 !important;
+}
+.revised-table .enemy-rank{
+  grid-row:1 !important;align-self:start !important;justify-content:center !important;
+  align-items:flex-end !important;min-height:176px !important;padding:12px 0 20px !important;gap:16px !important;
+}
+.revised-table .table-selection{
+  grid-row:2 !important;align-self:center !important;z-index:4 !important;
+}
+.revised-table .ally-rank{
+  grid-row:3 !important;align-self:end !important;justify-content:center !important;
+  align-items:flex-end !important;min-height:0 !important;padding:0 0 2px !important;
+  gap:12px !important;flex-wrap:wrap !important;overflow:visible !important;
+}
+.revised-table .ally-rank:has(.deployed-piece),.revised-table .ally-rank:has(.table-unit){
+  min-height:132px !important;
+}
+.revised-table .combo-bar{grid-row:4 !important;justify-content:center !important}
+.revised-table .table-status{grid-row:5 !important}
+.revised-table .player-strip{
+  grid-row:6 !important;min-height:90px !important;gap:18px !important;
+  border-top:0 !important;z-index:3 !important;overflow:visible !important;
+}
+.revised-table .empty-deploy{
+  background:#190e0dcc !important;border:1px solid #bda16d55 !important;
+  border-radius:8px !important;padding:4px 10px !important;max-width:260px !important;
+  margin:0 auto 2px !important;gap:8px !important;
+}
+.revised-table .empty-deploy .empty-seal{font-size:16px !important;padding:1px 5px !important}
+.revised-table .empty-deploy b{font-size:11px !important}
+.revised-table .empty-deploy span:not(.empty-seal){display:none !important}
+
+/* ---------- 9. 扇形手牌（compact-hand）/ 平铺（spread-hand） ---------- */
+.revised-table .physical-hand.hand-section,
+.revised-table .compact-hand.physical-hand{
+  min-height:0 !important;overflow:visible !important;
+  background:linear-gradient(0deg,#1a120ce8,#120c0894) !important;
+  border-top-color:#a9844f55 !important;
+}
+.revised-table .compact-hand.physical-hand{height:auto !important}
+.revised-table .hand-header h2 span{color:#c4ac81 !important}
+.revised-table .hand-tools button{
+  color:#e0cba3 !important;border-color:#a9844f66 !important;
+  background:#28190f55 !important;
+}
+.revised-table .hand-tools>span{color:#c4ac81 !important}
+.revised-table .effect-receipt{
+  background:#1a140fd9 !important;border-color:#a9844f66 !important;color:#f0dec1 !important;
+}
+.revised-table .compact-hand .fan-hand.hand{
+  display:flex !important;justify-content:center !important;align-items:flex-end !important;
+  gap:0 !important;height:244px !important;min-height:244px !important;max-height:244px !important;
+  width:100% !important;max-width:990px !important;margin:0 auto !important;
+  padding:12px 45px 12px !important;overflow:visible !important;scroll-snap-type:none !important;
+}
+.revised-table .compact-hand .hand-slot,
+.revised-table .compact-hand .hand-slot:hover,
+.revised-table .compact-hand .hand-slot:focus-within,
+.revised-table .compact-hand .hand-slot:last-child{
+  position:relative !important;flex:0 1 114px !important;flex-basis:114px !important;
+  width:168px !important;height:244px !important;min-width:40px !important;min-height:0 !important;
+  transform-origin:50% 95% !important;
+  transform:translateY(var(--offset,0px)) rotate(var(--angle,0deg)) !important;
+  z-index:calc(2 + var(--order,0)) !important;
+  scroll-snap-align:none !important;transition:transform .18s !important;
+}
+.revised-table .compact-hand .hand-slot:last-child,
+.revised-table .compact-hand .hand-slot:last-child:hover,
+.revised-table .compact-hand .hand-slot:last-child:focus-within{
+  flex-basis:168px !important;min-width:168px !important;
+}
+.revised-table .compact-hand .hand-slot:hover,
+.revised-table .compact-hand .hand-slot:focus-within{
+  z-index:30 !important;
+  transform:translateY(-45px) rotate(0) scale(1.08) !important;
+}
+.revised-table .compact-hand .hand-availability,
+.revised-table .spread-hand .hand-availability{display:none !important}
+
+.revised-table .spread-hand .fan-hand.hand{
+  display:flex !important;justify-content:flex-start !important;align-items:flex-start !important;
+  gap:12px !important;height:auto !important;min-height:252px !important;max-height:none !important;
+  padding:8px 8px 6px !important;overflow-x:auto !important;overflow-y:hidden !important;
+}
+.revised-table .spread-hand .hand-slot,
+.revised-table .spread-hand .hand-slot:hover,
+.revised-table .spread-hand .hand-slot:focus-within,
+.revised-table .spread-hand .hand-slot:last-child{
+  flex:0 0 168px !important;width:168px !important;min-width:168px !important;
+  height:244px !important;min-height:244px !important;transform:none !important;
+}
+.revised-table .spread-hand .hand-slot:hover{z-index:8 !important;transform:translateY(-8px) !important}
+
+.revised-table .hand-tip{color:#c1ad89 !important}
+
+@media(min-width:1500px){
+  .revised-table .compact-hand .fan-hand.hand{max-width:1150px !important}
+  .revised-table .compact-hand .hand-slot,
+  .revised-table .compact-hand .hand-slot:hover,
+  .revised-table .compact-hand .hand-slot:focus-within{
+    flex-basis:120px !important;
+  }
+  .revised-table .compact-hand .hand-slot:last-child,
+  .revised-table .compact-hand .hand-slot:last-child:hover,
+  .revised-table .compact-hand .hand-slot:last-child:focus-within{
+    flex-basis:168px !important;
+  }
+  .table-unit.unit,.table-unit.enemy{width:114px !important;height:157px !important;min-height:157px !important}
+}
+
+@media(max-width:1050px) and (min-width:761px) and (min-height:501px){
+  .revised-table .compact-hand .hand-slot,
+  .revised-table .compact-hand .hand-slot:hover,
+  .revised-table .compact-hand .hand-slot:focus-within{
+    flex-basis:100px !important;
+  }
+  .revised-table .compact-hand .hand-slot:last-child,
+  .revised-table .compact-hand .hand-slot:last-child:hover,
+  .revised-table .compact-hand .hand-slot:last-child:focus-within{
+    flex-basis:168px !important;
+  }
+  .table-unit.unit,.table-unit.enemy{width:92px !important;height:130px !important;min-height:130px !important}
+  .risk-card,.revised-table .enemy-rank .risk-card{
+    width:110px !important;min-width:110px !important;height:152px !important;min-height:152px !important;
+  }
+}
+
+@media(hover:none){
+  .revised-table .compact-hand .card-play-v2{
+    opacity:1 !important;pointer-events:auto !important;
+  }
+}
+
+@media (max-width:760px), (max-width:1024px) and (max-height:500px){
+  body[data-view="battle"]{padding-bottom:calc(220px + env(safe-area-inset-bottom,0px)) !important}
+  .tabletop.battle.revised-table{
+    overflow:visible !important;height:auto !important;max-height:none !important;
+    min-height:calc(100svh - 54px) !important;
+    padding-bottom:0 !important;
+  }
+  .revised-table .table-arena{
+    grid-template-rows:148px 28px auto 18px auto 64px !important;
+    min-height:280px !important;padding:4px 2px 0 !important;overflow:visible !important;
+  }
+  .revised-table .desk-surface{left:-6px !important;right:-6px !important;bottom:56px !important}
+  .revised-table .enemy-rank{min-height:140px !important;padding:8px 0 12px !important}
+  .risk-card,.revised-table .enemy-rank .risk-card{
+    width:104px !important;min-width:104px !important;height:146px !important;min-height:146px !important;
+  }
+  .risk-card h3{font-size:9px !important;height:16px !important;line-height:15px !important}
+  .risk-card>p{font-size:8px !important}
+  .revised-table .empty-deploy{max-width:100% !important;padding:3px 8px !important;gap:6px !important}
+  .revised-table .physical-hand.hand-section,
+  .revised-table .compact-hand.physical-hand{
+    position:fixed !important;left:0 !important;right:0 !important;
+    bottom:calc(78px + env(safe-area-inset-bottom,0px)) !important;
+    z-index:40 !important;
+    height:142px !important;min-height:0 !important;max-height:142px !important;
+    margin:0 !important;padding:4px 8px 6px !important;
+    background:linear-gradient(180deg,#1a120ee8,#100c08f5 36%) !important;
+    border-top:1px solid #8b704659 !important;
+    box-shadow:0 -10px 26px #000a !important;
+    overflow:hidden !important;
+  }
+  .revised-table .hand-header{
+    min-height:18px !important;padding:0 2px 2px !important;margin:0 !important;
+  }
+  .revised-table .hand-header h2{font-size:11px !important}
+  .revised-table .hand-tools{gap:4px !important}
+  .revised-table .hand-tools button{min-height:22px !important;font-size:9px !important;padding:2px 6px !important}
+  .revised-table .hand-tools>span,.revised-table .hand-tip{display:none !important}
+  .revised-table .compact-hand .fan-hand.hand,
+  .revised-table .spread-hand .fan-hand.hand{
+    height:118px !important;min-height:0 !important;max-height:118px !important;
+    justify-content:flex-start !important;align-items:flex-end !important;
+    overflow-x:auto !important;overflow-y:hidden !important;
+    padding:2px 4px 4px !important;max-width:none !important;margin:0 !important;
+    -webkit-overflow-scrolling:touch;scroll-snap-type:x proximity;
+  }
+  .revised-table .compact-hand .hand-slot,
+  .revised-table .compact-hand .hand-slot:hover,
+  .revised-table .compact-hand .hand-slot:focus-within,
+  .revised-table .compact-hand .hand-slot:last-child,
+  .revised-table .spread-hand .hand-slot,
+  .revised-table .spread-hand .hand-slot:hover,
+  .revised-table .spread-hand .hand-slot:focus-within,
+  .revised-table .spread-hand .hand-slot:last-child{
+    flex:0 0 96px !important;flex-basis:96px !important;min-width:96px !important;width:96px !important;
+    height:114px !important;min-height:0 !important;transform:none !important;transition:none !important;
+    scroll-snap-align:center;z-index:auto !important;
+  }
+  .revised-table .compact-hand .card.physical-card.card-v2,
+  .revised-table .spread-hand .card.physical-card.card-v2,
+  .card.physical-card.card-v2{
+    width:96px !important;min-width:0 !important;height:114px !important;min-height:0 !important;
+    overflow:hidden !important;
+  }
+  .card-v2 .card-v2-title{height:16px !important;line-height:15px !important;font-size:9px !important;padding:0 4px !important}
+  .card-v2 .card-v2-rule{
+    font-size:6.5px !important;line-height:1.28 !important;top:60% !important;height:26% !important;
+    max-height:26% !important;-webkit-line-clamp:3 !important;left:8% !important;right:8% !important;
+  }
+  .card-v2 .card-v2-rule .card-v2-mood{font-size:6px !important;margin:0 !important}
+  .card-v2 .card-v2-rule .card-v2-mech{font-size:6.5px !important}
+  .card-v2 .card-v2-cost{width:24px !important;height:24px !important}
+  .card-v2 .card-v2-cost b{font-size:13px !important}
+  .card-v2 .card-v2-kind{font-size:7px !important;height:12px !important;line-height:11px !important}
+  .revised-table .compact-hand .card-play-v2,
+  .revised-table .spread-hand .card-play-v2,
+  .card-v2 .card-play-v2{
+    opacity:1 !important;pointer-events:auto !important;
+    height:15px !important;min-height:15px !important;font-size:8px !important;line-height:13px !important;
+    bottom:5% !important;
+  }
+  .revised-table .card-v2 .card-v2-footer{inset:auto 18% 5% 18% !important}
+  .revised-table .effect-receipt{
+    position:fixed !important;left:8px !important;right:8px !important;
+    bottom:calc(220px + env(safe-area-inset-bottom,0px)) !important;
+    z-index:41 !important;margin:0 !important;
+  }
+  .mobile-battle-nav{z-index:45 !important}
+  .modal-open .revised-table .physical-hand.hand-section{display:none !important}
+  .revised-table .hero-medallion.player{width:75px !important;min-width:75px !important;height:87px !important}
+  .revised-table .hero-medallion.player>img{width:48px !important;height:48px !important;left:14px !important;right:14px !important}
+  .revised-table .hero-medallion.player .hero-life{width:24px !important;height:24px !important;bottom:18px !important;font-size:13px !important}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .hand-slot,.hand-slot:hover,.hand-slot:focus-within,
+  .risk-card.targetable,.risk-card:hover:not(:disabled),
+  .table-unit:hover:not(:disabled){
+    transition:none !important;transform:none !important;
+  }
+}
+
+/* ===== 夜禁脾气：把「规矩」写在危险身上 ===== */
+.risk-rule{display:block;margin:5px 7px 0;padding:4px 7px;
+ font-size:9px;line-height:1.4;text-align:left;
+ color:#f2cf9c;background:#3a1d14e8;border:1px solid #9c6238;border-radius:5px}
+.risk-rule b{display:block;font-weight:600;letter-spacing:.1em;color:#ffd79a}
+.risk-rule i{display:block;font-style:normal;opacity:.85;margin-top:1px}
+.risk-named{display:block;margin:4px 7px 0;font-size:9px;letter-spacing:.08em;
+ color:#9fd8c0;text-align:center}
+
+/* ===== 出牌动画：中式恐怖要慢、要静，不要爆炸特效 ===== */
+@keyframes bd-card-commit{
+  0%{transform:translateY(0) scale(1);filter:brightness(1)}
+  38%{transform:translateY(-16px) scale(1.04);filter:brightness(1.18)}
+  100%{transform:translateY(-52px) scale(.86);filter:brightness(.5);opacity:0}
+}
+.card.physical-card.committing{animation:bd-card-commit .42s ease-in forwards;z-index:60!important;pointer-events:none}
+
+/* 墨痕：牌离手时在桌面上洇开一团，而不是炸开 */
+@keyframes bd-ink{
+  0%{transform:scale(.3);opacity:0}
+  30%{opacity:.5}
+  100%{transform:scale(2.6);opacity:0}
+}
+.bd-ink{position:fixed;width:120px;height:120px;margin:-60px 0 0 -60px;
+ border-radius:50%;pointer-events:none;z-index:55;
+ background:radial-gradient(circle,#0b0906cc 0%,#0b090688 40%,transparent 70%);
+ animation:bd-ink .7s ease-out forwards}
+
+/* 危险动手时，整张牌桌沉一下 —— 压迫感来自环境，不是来自特效 */
+@keyframes bd-table-dread{
+  0%{filter:brightness(1)}
+  22%{filter:brightness(.62) saturate(.8)}
+  100%{filter:brightness(1)}
+}
+.table-arena.dread{animation:bd-table-dread 1.1s ease-out}
+
+/* 被「应名」的牌：名字渗出墨色，卡面压暗 */
+.card.physical-card.called{filter:grayscale(.55) brightness(.62)}
+.card.physical-card.called .card-v2-title{
+ background:linear-gradient(#8d7a55,#6b5a3c)!important;color:#1a1208!important}
+.card.physical-card.called::after{
+ content:'被叫过名字';position:absolute;left:0;right:0;bottom:38%;z-index:9;
+ text-align:center;font-size:10px;letter-spacing:.14em;color:#e8d3a6;
+ text-shadow:0 1px 3px #000}
+
+/* ===== 手牌：悬停原地放大看清，不再弹窗 ===== */
+.hand .hand-slot:hover,.hand .hand-slot:focus-within{z-index:80!important}
+.hand .hand-slot:hover .card.physical-card,
+.hand .hand-slot:focus-within .card.physical-card{
+  transform:translateY(-58px) scale(1.34)!important;
+  box-shadow:0 22px 44px #000c,0 0 0 1px #8a6a36 inset!important;
+  transition:transform .16s ease-out!important;
+}
+/* 放大后规则文字要能读全 */
+.hand .hand-slot:hover .card-v2-rule,
+.hand .hand-slot:focus-within .card-v2-rule{
+  -webkit-line-clamp:6!important;font-size:10px!important;height:28%!important;max-height:28%!important;top:60%!important;
+}
+.hand .hand-slot:hover .card-v2-rule .card-v2-mood,
+.hand .hand-slot:focus-within .card-v2-rule .card-v2-mood{font-size:9px!important}
+.hand .hand-slot:hover .card-v2-rule .card-v2-mech,
+.hand .hand-slot:focus-within .card-v2-rule .card-v2-mech{font-size:10px!important}
+.hand .hand-slot:hover .card-v2-target,
+.hand .hand-slot:hover .card-v2-condition{
+  display:block!important;margin:0 9px!important;padding:2px 5px!important;
+  font-size:8.5px!important;line-height:1.35!important;color:#4a3826!important;
+  background:linear-gradient(#d8c49c,#c5ad83)!important;text-align:center!important}
+.card.physical-card{cursor:pointer}
+
+/* ===== 突脸：打出时卡里的东西扑到脸上 ===== */
+@keyframes bd-lunge{
+  0%{transform:translate(-50%,-50%) scale(.18);opacity:0;filter:brightness(.4) contrast(1.1)}
+  18%{opacity:1}
+  46%{transform:translate(-50%,-50%) scale(1.02);opacity:1;filter:brightness(1.15) contrast(1.35)}
+  62%{transform:translate(-50%,-50%) scale(1.06) rotate(.7deg);filter:brightness(.85) contrast(1.5)}
+  100%{transform:translate(-50%,-50%) scale(1.14);opacity:0;filter:brightness(.3) contrast(1.6)}
+}
+.bd-lunge{
+  position:fixed;left:50%;top:46%;z-index:200;pointer-events:none;
+  width:min(46vw,540px);aspect-ratio:3/4;border-radius:10px;overflow:hidden;
+  box-shadow:0 0 0 2px #8a6a36,0 30px 80px #000e;
+  animation:bd-lunge .58s cubic-bezier(.2,.9,.25,1) forwards;
+}
+.bd-lunge img{width:100%;height:100%;object-fit:cover;display:block;
+  filter:saturate(.72) contrast(1.25)}
+/* 扑过来的一瞬间，四周暗下去 */
+@keyframes bd-blackout{0%{opacity:0}30%{opacity:.82}100%{opacity:0}}
+.bd-blackout{position:fixed;inset:0;z-index:199;pointer-events:none;
+  background:radial-gradient(ellipse at 50% 46%,transparent 18%,#000 78%);
+  animation:bd-blackout .58s ease-out forwards}
+@media(prefers-reduced-motion:reduce){
+  .bd-lunge,.bd-blackout,.card.physical-card.committing{animation:none!important;display:none}
+}
+
+/* ================= 牌本身要阴森 =================
+   现有插画是"沉静的夜"，不是"吓人"。在不重画美术的前提下，
+   用色调、暗角和纸纹把它压成夜禁里的东西。 */
+.card-v2 .card-illustration{position:relative}
+.card-v2 .card-illustration img{
+  filter:saturate(.55) contrast(1.28) brightness(.74) sepia(.18)!important;
+  transition:filter .2s}
+/* 四角往里啃的暗影 */
+.card-v2 .card-illustration::after{
+  content:'';position:absolute;inset:0;pointer-events:none;z-index:2;
+  background:
+    radial-gradient(ellipse at 50% 42%,transparent 34%,#05040390 78%,#050403e0 100%),
+    linear-gradient(180deg,#0b0805aa,transparent 38%,transparent 62%,#0b0805cc);
+  mix-blend-mode:multiply}
+/* 纸纹与霉斑：细密的斜向纹理，让插画像贴在旧纸上 */
+.card-v2 .card-illustration::before{
+  content:'';position:absolute;inset:0;pointer-events:none;z-index:3;opacity:.22;
+  background:repeating-linear-gradient(112deg,#000 0 1px,transparent 1px 3px),
+             repeating-linear-gradient(8deg,#6b5a3c22 0 2px,transparent 2px 7px);
+  mix-blend-mode:overlay}
+/* 悬停时它"醒过来"：色调回来一点，像被灯照到 */
+.hand-slot:hover .card-v2 .card-illustration img{
+  filter:saturate(.72) contrast(1.35) brightness(.86) sepia(.1)!important}
+
+/* 卡名横幅压成旧纸，带一道洇开的墨 */
+.card-v2 .card-v2-title{
+  background:linear-gradient(#d9c39a,#b89b6c)!important;
+  color:#241708!important;
+  box-shadow:inset 0 -6px 9px #6b512c55,inset 0 1px 0 #fff3!important}
+.card-v2 .card-v2-rule{
+  background:linear-gradient(#d3bd94,#bfa77c)!important;color:#2a1d12!important}
+
+/* ================= 突脸：扑到一半要"变脸" ================= */
+@keyframes bd-lunge-face{
+  0%{transform:translate(-50%,-50%) scale(.2);opacity:0;filter:brightness(.35) contrast(1.1) saturate(.5)}
+  16%{opacity:1}
+  40%{transform:translate(-50%,-50%) scale(1);opacity:1;filter:brightness(.95) contrast(1.4) saturate(.6)}
+  /* 就是这一帧：它抬头看你 */
+  46%{transform:translate(-50%,-52%) scale(1.09) rotate(-1.4deg);
+      filter:invert(.88) contrast(2.1) saturate(.25) brightness(1.1)}
+  52%{transform:translate(-50%,-49%) scale(1.04) rotate(1deg);
+      filter:invert(.1) contrast(1.9) saturate(.5) brightness(.8)}
+  58%{transform:translate(-50%,-50%) scale(1.07) rotate(-.4deg);
+      filter:invert(.62) contrast(2) saturate(.3)}
+  100%{transform:translate(-50%,-50%) scale(1.16);opacity:0;filter:brightness(.2) contrast(1.8)}
+}
+.bd-lunge{animation:bd-lunge-face .62s cubic-bezier(.2,.9,.25,1) forwards!important}
+/* 变脸那一瞬间，红渗出来 */
+@keyframes bd-bleed{
+  0%,38%{opacity:0}
+  46%{opacity:.5}
+  60%{opacity:.14}
+  100%{opacity:0}
+}
+.bd-lunge::after{
+  content:'';position:absolute;inset:0;z-index:4;pointer-events:none;
+  background:radial-gradient(ellipse at 50% 38%,#7c1a0f88,transparent 62%),
+             linear-gradient(0deg,#5c120aaa,transparent 46%);
+  animation:bd-bleed .62s ease-out forwards;mix-blend-mode:screen}
+/* 整个屏幕跟着抽一下 */
+@keyframes bd-jolt{
+  0%,40%{transform:translate(0,0)}
+  44%{transform:translate(-7px,4px)}
+  48%{transform:translate(6px,-3px)}
+  53%{transform:translate(-3px,2px)}
+  60%,100%{transform:translate(0,0)}
+}
+body.bd-jolt{animation:bd-jolt .62s ease-out}
+
+/* 变脸重做：负片会把画面打亮，像故障不像闹鬼。
+   改成「暗下去 + 逼近 + 血渗 + 失焦」——东西是从暗处过来的。 */
+@keyframes bd-lunge-face{
+  0%{transform:translate(-50%,-50%) scale(.2);opacity:0;
+     filter:brightness(.3) contrast(1.2) saturate(.4) blur(3px)}
+  18%{opacity:1}
+  38%{transform:translate(-50%,-50%) scale(.98);opacity:1;
+      filter:brightness(.82) contrast(1.45) saturate(.5) blur(0)}
+  /* 它到跟前了：骤暗、贴脸、偏红 */
+  46%{transform:translate(-50%,-51%) scale(1.22) rotate(-1.2deg);
+      filter:brightness(.34) contrast(2.3) saturate(1.5) hue-rotate(-16deg) blur(.6px)}
+  53%{transform:translate(-50%,-49.4%) scale(1.15) rotate(.8deg);
+      filter:brightness(.5) contrast(2) saturate(1.2) hue-rotate(-10deg)}
+  61%{transform:translate(-50%,-50%) scale(1.2) rotate(-.3deg);
+      filter:brightness(.3) contrast(2.2) saturate(1.3) hue-rotate(-14deg) blur(1px)}
+  100%{transform:translate(-50%,-50%) scale(1.3);opacity:0;
+       filter:brightness(.1) contrast(2) blur(4px)}
+}
+/* 血色从下方和眼睛高度渗上来，不是盖一层红 */
+@keyframes bd-bleed{
+  0%,34%{opacity:0}
+  46%{opacity:.72}
+  58%{opacity:.3}
+  100%{opacity:0}
+}
+.bd-lunge::after{
+  background:
+    radial-gradient(ellipse at 50% 34%,#8d1a0dcc,transparent 52%),
+    linear-gradient(0deg,#4a0f08dd,transparent 40%)!important;
+  mix-blend-mode:multiply!important}
+/* 贴脸时四周彻底黑掉，只剩中间那一块 */
+.bd-blackout{
+  background:radial-gradient(ellipse at 50% 46%,transparent 10%,#000 62%)!important}
+@keyframes bd-blackout{0%{opacity:0}34%{opacity:.6}48%{opacity:.95}100%{opacity:0}}
+.bd-lunge-soft{width:min(28vw,280px)!important;top:38%!important}
+.bd-lunge-soft::after{display:none!important}
+
+@keyframes bd-misread-flash{0%{opacity:0}40%{opacity:.82}100%{opacity:0}}
+.bd-misread-flash{position:fixed;inset:0;z-index:198;pointer-events:none;
+  background:#090604ee;animation:bd-misread-flash .28s ease-out forwards}
+
+@keyframes bd-lantern-glow{0%{opacity:0}28%{opacity:.62}100%{opacity:0}}
+.bd-lantern-glow{position:fixed;inset:0;z-index:198;pointer-events:none;
+  background:radial-gradient(ellipse at 50% 48%,#e8d4a099 0%,#8a6a3640 32%,transparent 68%);
+  animation:bd-lantern-glow .9s ease-out forwards}
+
+.combo-bar .combo-hint{display:block;width:100%;margin-top:4px;font-size:11px;
+  letter-spacing:.08em;color:#cbb58a;font-style:normal;opacity:.86}
+
+@media(prefers-reduced-motion:reduce){
+  .bd-misread-flash,.bd-lantern-glow,.bd-lunge-soft{animation:none!important;display:none}
+}
+
+/* 高频插画后期：只照亮一侧，另一侧沉下去 */
+.card-v2[data-art="v2-action-guard"] .card-illustration::after,
+.card-v2[data-art="v2-action-strike"] .card-illustration::after,
+.card-v2[data-art="v2-action-rescue"] .card-illustration::after{
+  background:
+    linear-gradient(90deg,#050403e8 0%,transparent 38%,#050403cc 100%),
+    radial-gradient(ellipse at 22% 36%,transparent 20%,#050403d0 78%)!important}
+.card-v2[data-art="card-new05"] .card-illustration::after,
+.card-v2[data-art="tool-notebook"] .card-illustration::after,
+.card-v2[data-art="tool-pageclip"] .card-illustration::after,
+.card-v2[data-art="card-new09"] .card-illustration::after{
+  background:
+    linear-gradient(180deg,#070503aa 0%,transparent 28%,transparent 58%,#070503e0 100%),
+    radial-gradient(ellipse at 78% 30%,#cbb58a22 0%,transparent 42%),
+    radial-gradient(ellipse at 50% 42%,transparent 30%,#050403d8 100%)!important}
+.card-v2[data-art="card-new21"] .card-illustration::after,
+.card-v2[data-art="card-new24"] .card-illustration::after,
+.card-v2[data-art="card-new26"] .card-illustration::after,
+.card-v2[data-art="v2-tool-map"] .card-illustration::after{
+  background:
+    linear-gradient(105deg,#000d 0 28%,transparent 48%,#0009 100%),
+    radial-gradient(ellipse at 18% 40%,#e8d4a033 0%,transparent 34%)!important}
+.card-v2[data-art="tool-wedge"] .card-illustration::after,
+.card-v2[data-art="tool-board"] .card-illustration::after,
+.card-v2[data-art="tool-warmstone"] .card-illustration::after,
+.card-v2[data-art="v2-tool-roll"] .card-illustration::after,
+.card-v2[data-art="v2-tool-bag"] .card-illustration::after,
+.card-v2[data-art="card-new22"] .card-illustration::after,
+.card-v2[data-art="card-new12"] .card-illustration::after,
+.card-v2[data-art="tool-cardbox"] .card-illustration::after,
+.card-v2[data-art="tool-cushion"] .card-illustration::after{
+  background:
+    radial-gradient(ellipse at 70% 28%,transparent 18%,#050403c4 72%,#050403f0 100%),
+    linear-gradient(90deg,#0008 0%,transparent 40%)!important}
+
+/* 组合技变脸：灯灭 / 多名一行 / 底稿浮出 */
+@keyframes bd-face-cue{
+  0%,34%{opacity:0}
+  46%{opacity:1}
+  62%{opacity:.45}
+  100%{opacity:0}
+}
+.bd-lunge.bd-face-lamp::before{
+  content:'';position:absolute;inset:0;z-index:5;pointer-events:none;
+  background:
+    radial-gradient(ellipse at 16% 38%,#f0dfb966 0%,transparent 32%),
+    linear-gradient(90deg,transparent 24%,#000 70%);
+  animation:bd-face-cue .62s ease-out forwards}
+.bd-lunge.bd-face-name::before{
+  content:'这一行的名字偏了';position:absolute;left:8%;right:8%;top:42%;z-index:5;
+  font:700 15px/1.4 serif;letter-spacing:.18em;color:#e8d4a0;text-align:center;
+  text-shadow:0 0 12px #000,0 2px 0 #3a1208;pointer-events:none;
+  animation:bd-face-cue .62s ease-out forwards}
+.bd-lunge.bd-face-record::before{
+  content:'底稿上还有一行';position:absolute;left:10%;right:10%;bottom:18%;z-index:5;
+  font:13px/1.35 serif;letter-spacing:.12em;color:#c4b08a;text-align:center;
+  border-top:1px solid #8a6a3688;padding-top:8px;pointer-events:none;
+  animation:bd-face-cue .62s ease-out forwards}
+/* V2.1: reading and committing a card are separate, touch-sized actions. */
+.judgment-cost{margin:10px 0 0;padding-top:8px;border-top:1px solid #b8735266;color:#ffdfb4;font:600 15px/1.7 var(--sans,sans-serif)}
+.compare-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+.compare-actions button{min-height:44px;padding:10px 12px;font-size:14px;line-height:1.45}
+.hand-compare .card-v2 .card-v2-footer{display:none!important}
+.card.physical-card[tabindex]:focus-visible{outline:2px solid #f0d494!important;outline-offset:4px}
+.modal .close{min-height:44px;min-width:64px}
+.card-v2 .card-illustration img{filter:brightness(1.12) contrast(1.03)!important}
+.card-v2 .card-illustration::after{opacity:.35}
+@media (max-width:760px), (max-width:1024px) and (max-height:500px){
+ .hand-compare .compare-card{display:grid;grid-template-columns:104px minmax(0,1fr);gap:12px;padding:12px;align-items:start}
+ .hand-compare .compare-card .card.physical-card.card-v2{width:104px!important;min-width:104px!important;height:148px!important;min-height:148px!important;flex-basis:104px!important;margin:0!important}
+ .hand-compare .compare-copy{padding-top:0;min-width:0}
+ .hand-compare .compare-copy h3{font-size:20px;margin-top:0}
+ .hand-compare .compare-copy p{font-size:14px;line-height:1.7}
+ .hand-compare .compare-copy small,.hand-compare .compare-copy strong{font-size:12px;line-height:1.7}
+ .hand-compare .compare-actions{grid-template-columns:1fr;gap:8px}
+ .hand-compare .compare-actions button{min-height:46px;font-size:14px}
+ .detail .detail-frame .card.physical-card.card-v2{width:200px!important;min-width:200px!important;height:280px!important;min-height:280px!important}
+ .detail .detail-frame{min-height:286px!important}
+ .detail .card-v2 .card-v2-title{font-size:16px!important;line-height:26px!important;height:28px!important}
+ .detail .card-v2 .card-v2-rule,.detail .card-v2 .card-v2-mech{font-size:10px!important;line-height:1.45!important}
+ .detail .card-v2 .card-v2-mood{font-size:10px!important}
+ .detail .card-v2 .card-v2-kind{font-size:10px!important;height:16px!important;line-height:14px!important}
+ .detail .card-v2 .card-v2-cost{width:38px!important;height:38px!important}
+ .detail .card-v2 .card-v2-cost b{font-size:22px!important}
+ .detail .primary{width:100%;min-height:48px;font-size:15px}
+ .revised-table .hand .card-play-v2{display:none!important}
+ .revised-table .hand-tools{display:none!important}
+ .revised-table .hand-header h2{font-size:12px!important}
+ .revised-table .hand-header h2:after{content:' · 点牌查看作用';font-size:11px;color:#cbbb9a}
+ .mobile-battle-nav button{min-height:44px}
+}
+.bd-lunge[data-sprite]{overflow:hidden}
+.art-sprite img,.card-v2 .card-illustration .art-sprite img,.risk-card .risk-art .art-sprite img,.bd-lunge[data-sprite] img{position:absolute!important;width:var(--sprite-width,400%)!important;height:var(--sprite-height,400%)!important;left:var(--sprite-left,0)!important;top:var(--sprite-top,0)!important;max-width:none!important;object-fit:fill!important}
+.full-art>.art-sprite{display:block;position:relative;width:100%;max-width:600px;min-width:0;height:auto;aspect-ratio:var(--sprite-aspect,1.5);max-height:none;overflow:hidden;margin:auto}
+.revised-table .night-rules{grid-column:1/-1;width:100%;padding:11px 13px;background:#302219e8;border:1px solid #a0764659;border-left:3px solid #b79051;color:#e5d5b6}
+.night-rules h3{font-size:12px;margin:0 0 6px;color:#e5b574;letter-spacing:.08em}
+.night-rules p{font-size:12px;line-height:1.65;margin:0}
+.night-rules p+p{margin-top:8px}
+.night-rules b{color:#ffe0a1}
+.night-rules span{display:block;margin-top:3px;color:#d5c3a3}
+@media (max-width:760px), (max-width:1024px) and (max-height:500px){.night-rules p{font-size:14px}.night-rules h3{font-size:13px}}

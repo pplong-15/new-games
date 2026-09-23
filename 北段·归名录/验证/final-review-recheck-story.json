@@ -1,0 +1,228 @@
+{
+  "reviewedAt": "2026-09-08T14:55:52.927Z",
+  "verdict": "PREVIOUS_STORY_FINDINGS_RESOLVED",
+  "releaseApproval": false,
+  "scope": "Bounded independent reread of final engine-loaded runtime; only previous story findings plus c1s02 cabinet-side passage. No blind play, no card-pool recheck, no game mutation.",
+  "findings": [
+    {
+      "id": "P1-CORE-REVEAL",
+      "status": "resolved",
+      "reason": "c6s03/04 preserve rescue facts and the emotional alibi without explaining first-injury timing; c6s05 requires combining the injured request content with18:18/18:20/18:24. Only submitted judgment and closing retract whole-night coverage.",
+      "evidence": {
+        "c6s03Closing": [
+          {
+            "speaker": "现场",
+            "text": "宋绮的呼吸稍稳，被担架抬出门。温的袖口沾了血，仍跟着女医交代该怎样压住伤口。"
+          },
+          {
+            "speaker": "沈砚",
+            "text": "刚才还在廊下说话，怎么会这样……那声响的时候，你明明就在我身边。"
+          }
+        ],
+        "c6s04Closing": [
+          {
+            "speaker": "现场",
+            "text": "何巡翻开空白时间表。沈砚写的廊下时辰还孤零零地落在一栏，旁边没有填字。"
+          },
+          {
+            "speaker": "何巡",
+            "text": "回单到了先叫我。阿豆也留下，我要听他自己说一遍。"
+          },
+          {
+            "speaker": "后续",
+            "text": "沈砚没有落笔签担保。他把笔搁在廊下，等值房送来那张回单。"
+          }
+        ],
+        "c6s05Materials": [
+          {
+            "label": "阿豆实际送出的原纸",
+            "text": "这就是她从递口交给我的那张回单，背面写着“请何巡来，我受伤了”。我跑到值房交给何巡，原回单夹在收件簿里。折角是我跑时捏的，收件值役看见了。",
+            "source": {
+              "sceneId": "c6s05",
+              "section": "phases",
+              "phaseIndex": 0,
+              "lineIndex": 2
+            }
+          },
+          {
+            "label": "院钟与收件记录",
+            "text": "收件簿记约18:18收到阿豆交来的回单。我收好纸，回到廊口，才见温走到沈砚旁边，记的是18:20。敲门那阵重响记在18:24栏，我一直在廊口。三栏都照同一院钟，钟走得稍有误差。",
+            "source": {
+              "sceneId": "c6s05",
+              "section": "phases",
+              "phaseIndex": 1,
+              "lineIndex": 2
+            }
+          },
+          {
+            "label": "何巡受通知到门前",
+            "text": "阿豆到值房交纸，我跟他来敲门。那张纸留在值房，别叫人混进别的收件里。",
+            "source": {
+              "sceneId": "c6s03",
+              "section": "phases",
+              "phaseIndex": 2,
+              "lineIndex": 0
+            }
+          }
+        ],
+        "c6s05Closing": [
+          {
+            "speaker": "何巡",
+            "text": "18:18收到的纸已经写着受伤。18:24那声响另留一栏，问宋绮醒后记得什么。"
+          },
+          {
+            "speaker": "现场",
+            "text": "沈砚把“整晚”划去，手在纸上停了很久。他留下自己亲见的廊下那一段，推回何巡面前。"
+          },
+          {
+            "speaker": "后续",
+            "text": "何巡修正时间表，阿豆不再被说成听见重响后才来报信；调查转向早段接触和失物，而非无限寻找逃窗机关。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "P1-CORE-REVEAL-C6S06",
+      "status": "resolved",
+      "reason": "The injured witness supplies experienced fragments: her own latch action and later fall when answering the door. The player must combine these with broken latch remaining in the frame, an otherwise empty room and earlier room structure to infer attacker departure before closure. No witness asserts seeing the attacker depart.",
+      "evidence": {
+        "materials": [
+          {
+            "label": "宋醒来后摸到内闩",
+            "text": "我背身锁柜前，他说告辞。我没看见他走出门，也没看见谁举手。醒来时，我躺在柜边，后脑疼得厉害。纸递出去以后，我爬到门边，够着内闩推了上去，手指还被木刺扎了一下。",
+            "source": {
+              "sceneId": "c6s06",
+              "section": "phases",
+              "phaseIndex": 1,
+              "lineIndex": 2
+            }
+          },
+          {
+            "label": "应门时抓住洗手架",
+            "text": "门外有人喊我的名字，我听出是何巡。想站起来时眼前发黑，只抓到洗手架的边沿；架子朝我倒过来，我摔到膝盖，喊了一声。",
+            "source": {
+              "sceneId": "c6s06",
+              "section": "phases",
+              "phaseIndex": 0,
+              "lineIndex": 2
+            }
+          },
+          {
+            "label": "破门后的闩与架",
+            "text": "门破开时，室内只有宋绮，一截断闩舌仍卡在门框里。你和值役将倒下的洗手架抬到墙边，温跪到宋绮身旁；何巡从门外叫来另一位医者。",
+            "source": {
+              "sceneId": "c6s03",
+              "section": "phases",
+              "phaseIndex": 1,
+              "lineIndex": 1
+            }
+          },
+          {
+            "label": "首访的实际通路",
+            "text": "你与当值役核好平面图：房门有内闩，高窗固定铁栅，门边递口只够信封通过；北面屏风后是洗手架，墙封实。黄灯室到公共廊下二十余步，外区小院经内门才到保护区。",
+            "source": {
+              "sceneId": "c6s02",
+              "section": "phases",
+              "phaseIndex": 1,
+              "lineIndex": 2
+            }
+          }
+        ],
+        "prompt": "把插闩的手、破门留下的断舌和倒架声接起来，哪种房内经过与它们相合？",
+        "options": [
+          {
+            "id": "injured-witness-0",
+            "label": "伤人者先从房门离开，宋随后插闩；倒架声出自她起身应门",
+            "correct": true,
+            "feedback": "宋自己推闩、破门后断舌仍咬在门框，解释门后来为何锁住；她应门时扶架跌倒，解释较晚的响声，不需要新增逃路。 密室在首次袭击后形成，后来的重响另有起身跌倒解释；施袭者仍待核。 随后：宋绮看过刚写的话，指着“告辞”说：“他说过。走出门，我没看到。”沈砚将后面那一格留空，等女医示意才退出去。"
+          },
+          {
+            "id": "injured-witness-1",
+            "label": "房门始终没有上闩，是倒架顶门；沈砚把阻力当成了门锁",
+            "correct": false,
+            "feedback": "洗手架确实倒了，但门框里仍卡着断闩舌，宋也记得亲手推闩。顶门说解释不了这两条独立事实。 请按材料中的人、物和时段重新核对。"
+          },
+          {
+            "id": "injured-witness-2",
+            "label": "伤人者插闩后留到重响，趁她倒下从屏风后的通路离开",
+            "correct": false,
+            "feedback": "屏风后为实墙，高窗又有固定栅；首访结构没有这条逃路，且宋明确记得插闩是自己的动作。 请按材料中的人、物和时段重新核对。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "P2-DENIAL-NOT-STAGED",
+      "status": "resolved",
+      "reason": "c6s09 now performs the question and denial before the later submission; c6s11 directly references that exact earlier line.",
+      "evidence": {
+        "question": {
+          "speaker": "沈砚",
+          "text": "先把这一项问清：你离开黄灯室时，拿过桌边的“转乙六”副件吗？",
+          "v2SourceKey": "c6s09:1:0"
+        },
+        "denial": {
+          "speaker": "温既白",
+          "text": "没有。那份副件我没拿过。我只带走自己的药袋。",
+          "v2SourceKey": "c6s09:1:1"
+        },
+        "laterMaterial": {
+          "label": "温当面对沈砚的否认",
+          "text": "没有。那份副件我没拿过。我只带走自己的药袋。",
+          "source": {
+            "sceneId": "c6s09",
+            "section": "phases",
+            "phaseIndex": 1,
+            "lineIndex": 3
+          }
+        }
+      }
+    },
+    {
+      "id": "P2-FINAL-MAPPING",
+      "status": "resolved",
+      "reason": "c6s16 no longer has any investigation object; no compulsory semantically obvious mapping test remains."
+    },
+    {
+      "id": "C1S02-CABINET-PASSAGE",
+      "status": "resolved_for_authored_route",
+      "reason": "The narrow cabinet-side path is now disclosed before play and explicitly used by the clerk in the next phase; clearing every queued box is no longer implicitly required by the prose.",
+      "evidence": {
+        "phase1": [
+          {
+            "speaker": "现场",
+            "text": "退岸后，你们从侧门走进隔街的河埠值房。待交箱子占着柜前大半过道，木架歪向侧门；沿柜边还有一线窄空，得先留出让值役侧身往返的路。"
+          },
+          {
+            "speaker": "当值役",
+            "text": "这些箱子还没点交，先别混着搬。柜边若留得下一人走，我就能绕过去取原册；你们也可以把柜前腾开，但请扶住侧门那座架子。"
+          }
+        ],
+        "phase2": [
+          {
+            "speaker": "现场",
+            "text": "沿你们留出的柜侧取册路，当值役把原册送上柜台，翻到开渡鼓那栏：“巡查何巡与当值役清点交接物，自开渡鼓前至第二遍鼓后，均在值房柜前。”两名经手人的签押俱在。"
+          },
+          {
+            "speaker": "当值役",
+            "text": "鼓响时，我和何巡正在这儿逐箱清点，中途没人离开。你那张查询条送到后，我才去柜里取这本原册。"
+          }
+        ],
+        "tactic": "通路准备代表沿柜侧留出一人往返的取册小路，柜前箱子可保持待交原位；稳住木架能免除坠落压力。"
+      }
+    }
+  ],
+  "displayGateReview": {
+    "feedback": "app evidenceBody shows inv.feedback only after state has feedback; raw correct feedback and conclusion are not independently rendered before answering.",
+    "closing": "app passageLines(closing) requires completed.length > encounter; engine doneGoal requires investigation.solved.",
+    "limit": "Source inspection of gating, not independent live browser execution."
+  },
+  "remainingQualityBoundary": "These are guided low-to-medium difficulty deductions, not proof of expert puzzle depth. This closes the specific early-full-solution, missing-denial and trivial-final-test findings; it does not approve full campaign suspense, card reachability, balance or UI.",
+  "snapshotHashes": {
+    "story-content.js": "af92957e6ed5c83321341650e7e450a949553f4b17adfd71f2567e002594b613",
+    "story-revisions.js": "1e9e30fddc62bf6d84dbbc4faf9ab557c8be32677380de974b31fdc227c15da4",
+    "encounter-rules.js": "835f130611f487cd2fbbf999597a3ff3429db86e47eb8d5f81824f7b4b719bbc",
+    "engine.js": "b64220c806e995c0e77b9eccf428ad18af92071f44ec55dfb65eb65ccdc22cc7",
+    "app.js": "0cc8b323742cf7d5c70442b396d9eb9beca846658b5fbfe7529ed60490836b09"
+  }
+}

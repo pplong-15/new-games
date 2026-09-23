@@ -1,0 +1,2380 @@
+{
+  "checks": [
+    {
+      "name": "c1s01-shoe-order one correct",
+      "ok": true
+    },
+    {
+      "name": "c1s02-name-and-duty one correct",
+      "ok": true
+    },
+    {
+      "name": "c1s03-beneficiary-limit one correct",
+      "ok": true
+    },
+    {
+      "name": "c1s04-flight-direction one correct",
+      "ok": true
+    },
+    {
+      "name": "c1s05-own-words one correct",
+      "ok": true
+    },
+    {
+      "name": "c1s07-missing-man one correct",
+      "ok": true
+    },
+    {
+      "name": "c1s09-letter-custody one correct",
+      "ok": true
+    },
+    {
+      "name": "c1s12-clothes-not-body one correct",
+      "ok": true
+    },
+    {
+      "name": "c1s13-motive-and-action one correct",
+      "ok": true
+    },
+    {
+      "name": "c1s16-hound-action-chain one correct",
+      "ok": true
+    },
+    {
+      "name": "c1s18-m1-handoff one correct",
+      "ok": true
+    },
+    {
+      "name": "c2s02-banquet-map one correct",
+      "ok": true
+    },
+    {
+      "name": "c2s04-paint-clothes one correct",
+      "ok": true
+    },
+    {
+      "name": "c2s08-mei-correction one correct",
+      "ok": true
+    },
+    {
+      "name": "c2s09-half-a-witness one correct",
+      "ok": true
+    },
+    {
+      "name": "c2s10-drug-limit one correct",
+      "ok": true
+    },
+    {
+      "name": "c2s11-handoff-gap one correct",
+      "ok": true
+    },
+    {
+      "name": "c2s12-shortfall-before-loss one correct",
+      "ok": true
+    },
+    {
+      "name": "c2s13-pawn-payment one correct",
+      "ok": true
+    },
+    {
+      "name": "c2s15-three-acts one correct",
+      "ok": true
+    },
+    {
+      "name": "c2s18-m2-handoff one correct",
+      "ok": true
+    },
+    {
+      "name": "c3s05-false-death-time one correct",
+      "ok": true
+    },
+    {
+      "name": "c3s06-body-custody one correct",
+      "ok": true
+    },
+    {
+      "name": "c3s09-bed-and-deposit one correct",
+      "ok": true
+    },
+    {
+      "name": "c3s10-living-identity one correct",
+      "ok": true
+    },
+    {
+      "name": "c3s12-planned-transfer one correct",
+      "ok": true
+    },
+    {
+      "name": "c3s13-father-son-scope one correct",
+      "ok": true
+    },
+    {
+      "name": "c3s15-m3-versions one correct",
+      "ok": true
+    },
+    {
+      "name": "c3s16-father-involvement one correct",
+      "ok": true
+    },
+    {
+      "name": "c3s18-m3-next-address one correct",
+      "ok": true
+    },
+    {
+      "name": "c4s02-key-is-not-only-route one correct",
+      "ok": true
+    },
+    {
+      "name": "c4s05-will-status one correct",
+      "ok": true
+    },
+    {
+      "name": "c4s06-missing-worker one correct",
+      "ok": true
+    },
+    {
+      "name": "c4s09-letters-command one correct",
+      "ok": true
+    },
+    {
+      "name": "c4s11-night-window one correct",
+      "ok": true
+    },
+    {
+      "name": "c4s12-two-victims one correct",
+      "ok": true
+    },
+    {
+      "name": "c4s15-old-letter-custody one correct",
+      "ok": true
+    },
+    {
+      "name": "c4s18-m4-handoff one correct",
+      "ok": true
+    },
+    {
+      "name": "c5s02-name-on-clothes one correct",
+      "ok": true
+    },
+    {
+      "name": "c5s03-rain-comparison one correct",
+      "ok": true
+    },
+    {
+      "name": "c5s05-weighted-package one correct",
+      "ok": true
+    },
+    {
+      "name": "c5s06-wet-ticket-limit one correct",
+      "ok": true
+    },
+    {
+      "name": "c5s08-attack-and-staging one correct",
+      "ok": true
+    },
+    {
+      "name": "c5s09-two-identities one correct",
+      "ok": true
+    },
+    {
+      "name": "c5s11-fire-command-chain one correct",
+      "ok": true
+    },
+    {
+      "name": "c5s12-two-disasters one correct",
+      "ok": true
+    },
+    {
+      "name": "c5s13-old-and-new-orders one correct",
+      "ok": true
+    },
+    {
+      "name": "c5s18-public-review-gate one correct",
+      "ok": true
+    },
+    {
+      "name": "c6s02-document-and-access one correct",
+      "ok": true
+    },
+    {
+      "name": "c6s05-two-events one correct",
+      "ok": true
+    },
+    {
+      "name": "c6s06-injured-witness one correct",
+      "ok": true
+    },
+    {
+      "name": "c6s08-missing-transfer one correct",
+      "ok": true
+    },
+    {
+      "name": "c6s11-actual-presentation one correct",
+      "ok": true
+    },
+    {
+      "name": "c6s12-paper-match one correct",
+      "ok": true
+    },
+    {
+      "name": "c6s13-new-violence one correct",
+      "ok": true
+    },
+    {
+      "name": "108 scenes",
+      "ok": true
+    },
+    {
+      "name": "55 investigations",
+      "ok": true
+    },
+    {
+      "name": "R08 placed then remained at dorm",
+      "ok": true
+    },
+    {
+      "name": "R09 memory and records are actual prior materials",
+      "ok": true
+    },
+    {
+      "name": "R09 rescuer identity remains unconfirmed",
+      "ok": true
+    },
+    {
+      "name": "R10 same-number evidence not declared missing original",
+      "ok": true
+    },
+    {
+      "name": "R10 match still in next scene",
+      "ok": true
+    },
+    {
+      "name": "R11 cabinet discovery comes after action",
+      "ok": true
+    }
+  ],
+  "sourceChecks": [
+    {
+      "investigation": "c1s01-shoe-order",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c1s01",
+        "section": "opening",
+        "phaseIndex": null,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c1s01-shoe-order",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c1s01",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c1s01-shoe-order",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c1s01",
+        "section": "opening",
+        "phaseIndex": null,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c1s02-name-and-duty",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c1s02",
+        "section": "opening",
+        "phaseIndex": null,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c1s02-name-and-duty",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c1s02",
+        "section": "phases",
+        "phaseIndex": 2,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c1s02-name-and-duty",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c1s02",
+        "section": "phases",
+        "phaseIndex": 2,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c1s03-beneficiary-limit",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c1s03",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c1s03-beneficiary-limit",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c1s03",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c1s04-flight-direction",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c1s04",
+        "section": "opening",
+        "phaseIndex": null,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c1s04-flight-direction",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c1s04",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c1s04-flight-direction",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c1s04",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c1s05-own-words",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c1s05",
+        "section": "opening",
+        "phaseIndex": null,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c1s05-own-words",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c1s05",
+        "section": "opening",
+        "phaseIndex": null,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c1s05-own-words",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c1s05",
+        "section": "phases",
+        "phaseIndex": 2,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c1s07-missing-man",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c1s06",
+        "section": "closing",
+        "phaseIndex": null,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c1s07-missing-man",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c1s07",
+        "section": "phases",
+        "phaseIndex": 2,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c1s07-missing-man",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c1s06",
+        "section": "closing",
+        "phaseIndex": null,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c1s09-letter-custody",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c1s09",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c1s09-letter-custody",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c1s09",
+        "section": "opening",
+        "phaseIndex": null,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c1s09-letter-custody",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c1s09",
+        "section": "opening",
+        "phaseIndex": null,
+        "lineIndex": 3
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c1s09-letter-custody",
+      "materialIndex": 3,
+      "source": {
+        "sceneId": "c1s09",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c1s12-clothes-not-body",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c1s06",
+        "section": "closing",
+        "phaseIndex": null,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c1s12-clothes-not-body",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c1s12",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c1s12-clothes-not-body",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c1s12",
+        "section": "phases",
+        "phaseIndex": 2,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c1s13-motive-and-action",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c1s13",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c1s13-motive-and-action",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c1s13",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c1s13-motive-and-action",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c1s13",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 3
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c1s13-motive-and-action",
+      "materialIndex": 3,
+      "source": {
+        "sceneId": "c1s10",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c1s16-hound-action-chain",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c1s16",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c1s16-hound-action-chain",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c1s16",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c1s16-hound-action-chain",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c1s12",
+        "section": "closing",
+        "phaseIndex": null,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c1s16-hound-action-chain",
+      "materialIndex": 3,
+      "source": {
+        "sceneId": "c1s13",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 3
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c1s18-m1-handoff",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c1s17",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c1s18-m1-handoff",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c1s17",
+        "section": "phases",
+        "phaseIndex": 2,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c1s18-m1-handoff",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c1s18",
+        "section": "phases",
+        "phaseIndex": 2,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c2s02-banquet-map",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c2s02",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c2s02-banquet-map",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c2s02",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c2s02-banquet-map",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c2s02",
+        "section": "phases",
+        "phaseIndex": 2,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c2s04-paint-clothes",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c2s04",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c2s04-paint-clothes",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c2s04",
+        "section": "phases",
+        "phaseIndex": 2,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c2s04-paint-clothes",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c2s04",
+        "section": "phases",
+        "phaseIndex": 2,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c2s08-mei-correction",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c2s08",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c2s08-mei-correction",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c2s08",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c2s08-mei-correction",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c2s08",
+        "section": "opening",
+        "phaseIndex": null,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c2s09-half-a-witness",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c2s09",
+        "section": "opening",
+        "phaseIndex": null,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c2s09-half-a-witness",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c2s09",
+        "section": "opening",
+        "phaseIndex": null,
+        "lineIndex": 3
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c2s09-half-a-witness",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c2s08",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c2s09-half-a-witness",
+      "materialIndex": 3,
+      "source": {
+        "sceneId": "c2s05",
+        "section": "phases",
+        "phaseIndex": 2,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c2s10-drug-limit",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c2s10",
+        "section": "opening",
+        "phaseIndex": null,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c2s10-drug-limit",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c2s10",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c2s10-drug-limit",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c2s10",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c2s11-handoff-gap",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c2s11",
+        "section": "opening",
+        "phaseIndex": null,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c2s11-handoff-gap",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c2s11",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c2s11-handoff-gap",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c2s11",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c2s12-shortfall-before-loss",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c2s12",
+        "section": "opening",
+        "phaseIndex": null,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c2s12-shortfall-before-loss",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c2s12",
+        "section": "opening",
+        "phaseIndex": null,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c2s12-shortfall-before-loss",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c2s06",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c2s13-pawn-payment",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c2s11",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c2s13-pawn-payment",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c2s13",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c2s13-pawn-payment",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c2s13",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 3
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c2s15-three-acts",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c2s11",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c2s15-three-acts",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c2s13",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c2s15-three-acts",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c2s15",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c2s18-m2-handoff",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c2s17",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c2s18-m2-handoff",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c2s17",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c2s18-m2-handoff",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c2s13",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c3s05-false-death-time",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c3s05",
+        "section": "phases",
+        "phaseIndex": 2,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c3s05-false-death-time",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c3s05",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c3s05-false-death-time",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c3s04",
+        "section": "closing",
+        "phaseIndex": null,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c3s06-body-custody",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c3s04",
+        "section": "phases",
+        "phaseIndex": 2,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c3s06-body-custody",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c3s06",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c3s06-body-custody",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c3s06",
+        "section": "phases",
+        "phaseIndex": 2,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c3s06-body-custody",
+      "materialIndex": 3,
+      "source": {
+        "sceneId": "c3s06",
+        "section": "opening",
+        "phaseIndex": null,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c3s09-bed-and-deposit",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c3s09",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c3s09-bed-and-deposit",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c3s05",
+        "section": "phases",
+        "phaseIndex": 2,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c3s09-bed-and-deposit",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c3s06",
+        "section": "closing",
+        "phaseIndex": null,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c3s10-living-identity",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c3s10",
+        "section": "opening",
+        "phaseIndex": null,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c3s10-living-identity",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c3s10",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c3s10-living-identity",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c3s10",
+        "section": "phases",
+        "phaseIndex": 2,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c3s10-living-identity",
+      "materialIndex": 3,
+      "source": {
+        "sceneId": "c3s09",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c3s12-planned-transfer",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c3s12",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c3s12-planned-transfer",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c3s12",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c3s12-planned-transfer",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c3s12",
+        "section": "opening",
+        "phaseIndex": null,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c3s13-father-son-scope",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c3s13",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c3s13-father-son-scope",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c3s13",
+        "section": "opening",
+        "phaseIndex": null,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c3s13-father-son-scope",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c3s08",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c3s15-m3-versions",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c3s15",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c3s15-m3-versions",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c3s15",
+        "section": "phases",
+        "phaseIndex": 2,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c3s15-m3-versions",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c3s15",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c3s16-father-involvement",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c3s16",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c3s16-father-involvement",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c3s16",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c3s16-father-involvement",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c3s16",
+        "section": "opening",
+        "phaseIndex": null,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c3s18-m3-next-address",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c3s18",
+        "section": "opening",
+        "phaseIndex": null,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c3s18-m3-next-address",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c3s18",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c3s18-m3-next-address",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c3s16",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c4s02-key-is-not-only-route",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c4s02",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c4s02-key-is-not-only-route",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c4s02",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c4s02-key-is-not-only-route",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c4s02",
+        "section": "phases",
+        "phaseIndex": 2,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c4s05-will-status",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c4s05",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c4s05-will-status",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c4s05",
+        "section": "opening",
+        "phaseIndex": null,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c4s05-will-status",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c4s05",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c4s05-will-status",
+      "materialIndex": 3,
+      "source": {
+        "sceneId": "c4s05",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c4s06-missing-worker",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c4s06",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c4s06-missing-worker",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c4s06",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c4s06-missing-worker",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c4s06",
+        "section": "opening",
+        "phaseIndex": null,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c4s09-letters-command",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c4s09",
+        "section": "opening",
+        "phaseIndex": null,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c4s09-letters-command",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c4s09",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c4s09-letters-command",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c4s04",
+        "section": "phases",
+        "phaseIndex": 2,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c4s09-letters-command",
+      "materialIndex": 3,
+      "source": {
+        "sceneId": "c4s09",
+        "section": "opening",
+        "phaseIndex": null,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c4s11-night-window",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c4s11",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c4s11-night-window",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c4s04",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c4s11-night-window",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c4s11",
+        "section": "phases",
+        "phaseIndex": 2,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c4s12-two-victims",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c4s11",
+        "section": "phases",
+        "phaseIndex": 2,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c4s12-two-victims",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c4s12",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c4s12-two-victims",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c4s07",
+        "section": "opening",
+        "phaseIndex": null,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c4s12-two-victims",
+      "materialIndex": 3,
+      "source": {
+        "sceneId": "c4s12",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c4s15-old-letter-custody",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c4s15",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c4s15-old-letter-custody",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c4s15",
+        "section": "phases",
+        "phaseIndex": 2,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c4s15-old-letter-custody",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c4s15",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c4s18-m4-handoff",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c4s17",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c4s18-m4-handoff",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c4s17",
+        "section": "opening",
+        "phaseIndex": null,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c4s18-m4-handoff",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c3s18",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c5s02-name-on-clothes",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c5s02",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c5s02-name-on-clothes",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c5s02",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c5s02-name-on-clothes",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c5s02",
+        "section": "phases",
+        "phaseIndex": 2,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c5s03-rain-comparison",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c5s03",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c5s03-rain-comparison",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c5s03",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c5s03-rain-comparison",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c5s03",
+        "section": "phases",
+        "phaseIndex": 2,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c5s05-weighted-package",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c5s05",
+        "section": "opening",
+        "phaseIndex": null,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c5s05-weighted-package",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c5s05",
+        "section": "phases",
+        "phaseIndex": 2,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c5s05-weighted-package",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c5s05",
+        "section": "phases",
+        "phaseIndex": 2,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c5s06-wet-ticket-limit",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c5s06",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c5s06-wet-ticket-limit",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c5s06",
+        "section": "opening",
+        "phaseIndex": null,
+        "lineIndex": 3
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c5s06-wet-ticket-limit",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c5s02",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c5s08-attack-and-staging",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c5s07",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c5s08-attack-and-staging",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c5s08",
+        "section": "opening",
+        "phaseIndex": null,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c5s08-attack-and-staging",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c5s08",
+        "section": "opening",
+        "phaseIndex": null,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c5s08-attack-and-staging",
+      "materialIndex": 3,
+      "source": {
+        "sceneId": "c5s08",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c5s09-two-identities",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c4s17",
+        "section": "opening",
+        "phaseIndex": null,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c5s09-two-identities",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c5s09",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c5s09-two-identities",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c5s09",
+        "section": "opening",
+        "phaseIndex": null,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c5s11-fire-command-chain",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c5s11",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c5s11-fire-command-chain",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c5s11",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c5s11-fire-command-chain",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c5s11",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c5s12-two-disasters",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c5s12",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c5s12-two-disasters",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c5s12",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c5s12-two-disasters",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c5s12",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c5s13-old-and-new-orders",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c5s13",
+        "section": "opening",
+        "phaseIndex": null,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c5s13-old-and-new-orders",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c5s13",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c5s13-old-and-new-orders",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c5s11",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c5s18-public-review-gate",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c5s11",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c5s18-public-review-gate",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c5s11",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c5s18-public-review-gate",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c5s16",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c5s18-public-review-gate",
+      "materialIndex": 3,
+      "source": {
+        "sceneId": "c5s18",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c6s02-document-and-access",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c6s02",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c6s02-document-and-access",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c6s02",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c6s05-two-events",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c6s05",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c6s05-two-events",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c6s05",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c6s05-two-events",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c6s03",
+        "section": "phases",
+        "phaseIndex": 2,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c6s06-injured-witness",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c6s06",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c6s06-injured-witness",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c6s06",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c6s06-injured-witness",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c6s03",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 1
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c6s06-injured-witness",
+      "materialIndex": 3,
+      "source": {
+        "sceneId": "c6s02",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c6s08-missing-transfer",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c6s08",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c6s08-missing-transfer",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c6s02",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c6s08-missing-transfer",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c6s08",
+        "section": "phases",
+        "phaseIndex": 2,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c6s11-actual-presentation",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c6s11",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c6s11-actual-presentation",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c6s09",
+        "section": "phases",
+        "phaseIndex": 1,
+        "lineIndex": 3
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c6s11-actual-presentation",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c6s08",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c6s12-paper-match",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c6s12",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c6s12-paper-match",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c6s02",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c6s12-paper-match",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c6s11",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c6s13-new-violence",
+      "materialIndex": 0,
+      "source": {
+        "sceneId": "c6s09",
+        "section": "phases",
+        "phaseIndex": 2,
+        "lineIndex": 0
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c6s13-new-violence",
+      "materialIndex": 1,
+      "source": {
+        "sceneId": "c6s11",
+        "section": "phases",
+        "phaseIndex": 0,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c6s13-new-violence",
+      "materialIndex": 2,
+      "source": {
+        "sceneId": "c6s13",
+        "section": "phases",
+        "phaseIndex": 2,
+        "lineIndex": 2
+      },
+      "available": true,
+      "exact": true
+    },
+    {
+      "investigation": "c6s13-new-violence",
+      "materialIndex": 3,
+      "source": {
+        "sceneId": "c6s13",
+        "section": "phases",
+        "phaseIndex": 2,
+        "lineIndex": 3
+      },
+      "available": true,
+      "exact": true
+    }
+  ],
+  "failures": [],
+  "summary": {
+    "cases": 6,
+    "scenes": 108,
+    "investigations": 55,
+    "materials": 176,
+    "futureReferences": 0,
+    "textMismatches": 0,
+    "passed": true
+  }
+}

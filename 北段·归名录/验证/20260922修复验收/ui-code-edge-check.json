@@ -1,0 +1,53 @@
+{
+  "checks": [
+    {
+      "name": "键盘Enter查看卡面且不出牌",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "详情Escape解除弹窗",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "搜索重绘保留输入与焦点",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "图鉴动态总量",
+      "ok": true,
+      "detail": {
+        "runtimeCards": 764,
+        "heading": "131 / 764 已收集\n\n随身牌组\n30 / 30"
+      }
+    },
+    {
+      "name": "牌组图鉴详情没有手牌出牌按钮",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "图鉴详情返回牌组",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "旧版导入确认说明本场重试",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "旧版导入迁移后显示准备页",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "旧版迁移后可正常开局",
+      "ok": true,
+      "detail": null
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,472 @@
+{
+  "generatedAt": "2026-09-22T09:20:34.164Z",
+  "normalApi": true,
+  "fixtures": "engine-validated map prefixes; no direct battle mutation",
+  "tests": [
+    {
+      "name": "all-764-cards-have-a-post-unlock-window",
+      "ok": true,
+      "detail": {
+        "cards": 764,
+        "phaseChecks": 247536,
+        "dead": []
+      }
+    },
+    {
+      "name": "six-repaired-responses-trigger-through-normal-API",
+      "ok": true,
+      "detail": [
+        {
+          "id": "c5x70",
+          "name": "孟婆汤",
+          "unlock": 85,
+          "scene": "c5s14",
+          "phase": 1,
+          "intent": "transfer",
+          "responses": 1
+        },
+        {
+          "id": "c6x69",
+          "name": "莫应",
+          "unlock": 92,
+          "scene": "c6s03",
+          "phase": 0,
+          "intent": "fall",
+          "responses": 1
+        },
+        {
+          "id": "c6x70",
+          "name": "禁语",
+          "unlock": 96,
+          "scene": "c6s07",
+          "phase": 1,
+          "intent": "interrupt",
+          "responses": 1
+        },
+        {
+          "id": "c6x71",
+          "name": "背灯",
+          "unlock": 100,
+          "scene": "c6s11",
+          "phase": 1,
+          "intent": "grab",
+          "responses": 1
+        },
+        {
+          "id": "c6x72",
+          "name": "压席",
+          "unlock": 97,
+          "scene": "c6s08",
+          "phase": 1,
+          "intent": "scatter",
+          "responses": 1
+        },
+        {
+          "id": "c6x77",
+          "name": "洒净",
+          "unlock": 97,
+          "scene": "c6s08",
+          "phase": 2,
+          "intent": "transfer",
+          "responses": 1
+        }
+      ]
+    },
+    {
+      "name": "all-eleven-repaired-target-skills-require-and-honor-target",
+      "ok": true,
+      "detail": {
+        "ids": [
+          "c5x08",
+          "c5x09",
+          "c5x10",
+          "c5x25",
+          "c5x32",
+          "c5x33",
+          "c6x06",
+          "c6x35",
+          "c6x36",
+          "c6x37",
+          "ritual08"
+        ],
+        "selected": "挤进门的围观者",
+        "untouched": "倒在伤员旁的洗手架",
+        "extra": [
+          {
+            "id": "c6x35",
+            "scene": "c6s12",
+            "hpBefore": 2,
+            "hpAfter": 2,
+            "stunned": true
+          },
+          {
+            "id": "c6x36",
+            "scene": "c6s13",
+            "hpBefore": 1,
+            "hpAfter": 0,
+            "stunned": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "recursive-single-target-skill-effects-always-require-enemy-target",
+      "ok": true,
+      "detail": {
+        "cardsScanned": 764,
+        "skillsWithDirectedEffects": 77,
+        "conditionalSkillIds": [
+          "card006",
+          "card007",
+          "card028",
+          "card031",
+          "card035",
+          "card036",
+          "card043",
+          "card047",
+          "card062",
+          "card155",
+          "card430",
+          "card449",
+          "c5x08",
+          "c5x09",
+          "c5x10",
+          "c5x33",
+          "c6x36"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "name": "three-conditional-target-skills-honor-selected-enemy-and-reject-empty-field",
+      "ok": true,
+      "detail": [
+        {
+          "id": "c5x08",
+          "name": "判官笔",
+          "fixture": "UI-conditional-c5x08-map.json",
+          "seed": 4129079545,
+          "startingHand": [
+            "card437",
+            "c5x08",
+            "c6x21",
+            "card269",
+            "card269",
+            "card161"
+          ],
+          "provenance": "Fresh seed77 balanced campaign map; only legal setDeck arrangement changed.",
+          "scene": "c6s03",
+          "phase": 0,
+          "resourceCard": "card161",
+          "resources": {
+            "focus": 1,
+            "resolve": 1
+          },
+          "selectedEnemy": "挤进门的围观者",
+          "property": "atk",
+          "before": 2,
+          "after": 1,
+          "firstEnemyUnchanged": true,
+          "missingTargetRejectedWithoutMutation": true,
+          "emptyPhase": 2,
+          "emptyFieldReason": "本幕没有可作用的威胁。",
+          "emptyFieldRejectedWithoutMutation": true
+        },
+        {
+          "id": "c5x09",
+          "name": "勾牒",
+          "fixture": "UI-conditional-c5x09-map.json",
+          "seed": 4129079545,
+          "startingHand": [
+            "card437",
+            "c5x09",
+            "c6x21",
+            "card269",
+            "card269",
+            "card161"
+          ],
+          "provenance": "Fresh seed77 balanced campaign map; only legal setDeck arrangement changed.",
+          "scene": "c6s03",
+          "phase": 0,
+          "resourceCard": "card161",
+          "resources": {
+            "focus": 1,
+            "resolve": 1
+          },
+          "selectedEnemy": "挤进门的围观者",
+          "property": "stunned",
+          "before": 0,
+          "after": true,
+          "firstEnemyUnchanged": true,
+          "missingTargetRejectedWithoutMutation": true,
+          "emptyPhase": 2,
+          "emptyFieldReason": "本幕没有可作用的威胁。",
+          "emptyFieldRejectedWithoutMutation": true
+        },
+        {
+          "id": "c5x33",
+          "name": "望乡台",
+          "fixture": "UI-conditional-c5x33-map.json",
+          "seed": 4129079545,
+          "startingHand": [
+            "card437",
+            "c5x33",
+            "c6x21",
+            "card269",
+            "card269",
+            "card161"
+          ],
+          "provenance": "Fresh seed77 balanced campaign map; only legal setDeck arrangement changed.",
+          "scene": "c6s03",
+          "phase": 0,
+          "resourceCard": "card161",
+          "resources": {
+            "focus": 1,
+            "resolve": 1
+          },
+          "selectedEnemy": "挤进门的围观者",
+          "property": "exposed",
+          "before": 0,
+          "after": 1,
+          "firstEnemyUnchanged": true,
+          "missingTargetRejectedWithoutMutation": true,
+          "emptyPhase": 2,
+          "emptyFieldReason": "本幕没有可作用的威胁。",
+          "emptyFieldRejectedWithoutMutation": true
+        }
+      ]
+    },
+    {
+      "name": "instant-investigation-counts-each-point-for-tangle",
+      "ok": true,
+      "detail": {
+        "before": {
+          "insight": 0,
+          "atk": 2
+        },
+        "after": {
+          "insight": 2,
+          "atk": 4
+        }
+      }
+    },
+    {
+      "name": "basic-and-persistent-investigation-share-tangle",
+      "ok": true,
+      "detail": {
+        "before": {
+          "insight": 0,
+          "atk": 0
+        },
+        "after": {
+          "insight": 2,
+          "atk": 2
+        },
+        "persistentTriggers": 1
+      }
+    },
+    {
+      "name": "next-phase-preparation-also-counts-for-tangle",
+      "ok": true,
+      "detail": {
+        "insight": 1,
+        "atk": 1
+      }
+    },
+    {
+      "name": "resource-threshold-checks-after-the-prior-gain",
+      "ok": true,
+      "detail": {
+        "before": {
+          "resolve": 1,
+          "drawn": 8
+        },
+        "after": {
+          "resolve": 2,
+          "drawn": 9
+        },
+        "combo": true
+      }
+    },
+    {
+      "name": "callname-block-persists-through-round-and-save-then-releases-on-kill",
+      "ok": true,
+      "detail": {
+        "firstCalled": "new09",
+        "nextCalled": "card049",
+        "killedCaller": true,
+        "released": null
+      }
+    },
+    {
+      "name": "callname-clears-on-phase-transition",
+      "ok": true,
+      "detail": {
+        "phase": 1,
+        "calledName": null
+      }
+    },
+    {
+      "name": "hush-keeps-basic-safe-exit-and-does-not-disable-cards",
+      "ok": true,
+      "detail": {
+        "previewBefore": "噤口可先护现场解除",
+        "cleared": true,
+        "baseStrike": 2
+      }
+    },
+    {
+      "name": "claim-automatically-discards-rightmost-card",
+      "ok": true,
+      "detail": {
+        "discarded": "card070",
+        "name": "朱砂剑",
+        "rule": "每回合末自动弃掉最右侧1张手牌；空手时失去2心神。先打出想保留其效果的牌，或化解它。"
+      }
+    },
+    {
+      "name": "night-rules-only-existing-hazards-and-all-six-cases",
+      "ok": true,
+      "detail": [
+        {
+          "case": 1,
+          "scene": "c1s01",
+          "phase": 0,
+          "trait": "claim"
+        },
+        {
+          "case": 1,
+          "scene": "c1s02",
+          "phase": 0,
+          "trait": "watch"
+        },
+        {
+          "case": 1,
+          "scene": "c1s02",
+          "phase": 1,
+          "trait": "tangle"
+        },
+        {
+          "case": 1,
+          "scene": "c1s04",
+          "phase": 1,
+          "trait": "tangle"
+        },
+        {
+          "case": 1,
+          "scene": "c1s07",
+          "phase": 0,
+          "trait": "callname"
+        },
+        {
+          "case": 1,
+          "scene": "c1s11",
+          "phase": 0,
+          "trait": "hush"
+        },
+        {
+          "case": 2,
+          "scene": "c2s04",
+          "phase": 0,
+          "trait": "claim"
+        },
+        {
+          "case": 2,
+          "scene": "c2s07",
+          "phase": 1,
+          "trait": "hush"
+        },
+        {
+          "case": 2,
+          "scene": "c2s14",
+          "phase": 0,
+          "trait": "callname"
+        },
+        {
+          "case": 3,
+          "scene": "c3s01",
+          "phase": 0,
+          "trait": "claim"
+        },
+        {
+          "case": 3,
+          "scene": "c3s09",
+          "phase": 1,
+          "trait": "callname"
+        },
+        {
+          "case": 3,
+          "scene": "c3s11",
+          "phase": 2,
+          "trait": "watch"
+        },
+        {
+          "case": 4,
+          "scene": "c4s06",
+          "phase": 0,
+          "trait": "callname"
+        },
+        {
+          "case": 4,
+          "scene": "c4s10",
+          "phase": 0,
+          "trait": "hush"
+        },
+        {
+          "case": 4,
+          "scene": "c4s13",
+          "phase": 1,
+          "trait": "watch"
+        },
+        {
+          "case": 5,
+          "scene": "c5s01",
+          "phase": 0,
+          "trait": "claim"
+        },
+        {
+          "case": 5,
+          "scene": "c5s03",
+          "phase": 1,
+          "trait": "callname"
+        },
+        {
+          "case": 5,
+          "scene": "c5s07",
+          "phase": 0,
+          "trait": "hush"
+        },
+        {
+          "case": 5,
+          "scene": "c5s15",
+          "phase": 2,
+          "trait": "watch"
+        },
+        {
+          "case": 6,
+          "scene": "c6s03",
+          "phase": 0,
+          "trait": "watch"
+        },
+        {
+          "case": 6,
+          "scene": "c6s11",
+          "phase": 1,
+          "trait": "claim"
+        },
+        {
+          "case": 6,
+          "scene": "c6s12",
+          "phase": 1,
+          "trait": "callname"
+        },
+        {
+          "case": 6,
+          "scene": "c6s14",
+          "phase": 0,
+          "trait": "hush"
+        }
+      ]
+    }
+  ]
+}

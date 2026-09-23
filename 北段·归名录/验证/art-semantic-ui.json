@@ -1,0 +1,57 @@
+{
+  "url": "http://127.0.0.1:8863/",
+  "status": "PASS_BOUNDED_VISUAL_REVIEW",
+  "cards": [
+    {
+      "id": "card011",
+      "name": "翻找行囊",
+      "src": "assets/v2-tool-bag.webp",
+      "alt": "装有补给的行囊",
+      "position": "50% 50%"
+    },
+    {
+      "id": "card070",
+      "name": "短木棍",
+      "src": "assets/v2-action-strike.webp",
+      "alt": "举杖挡棍",
+      "position": "50% 65%"
+    },
+    {
+      "id": "card092",
+      "name": "口袋放大镜",
+      "src": "assets/v2-tool-magnifier.webp",
+      "alt": "放大镜",
+      "position": "50% 50%"
+    },
+    {
+      "id": "card094",
+      "name": "双头铜哨",
+      "src": "assets/v2-tool-whistle.webp",
+      "alt": "黄铜哨子",
+      "position": "50% 50%"
+    },
+    {
+      "id": "card111",
+      "name": "耐磨皮手套",
+      "src": "assets/v2-prop-sheet.webp",
+      "alt": "皮制工作手套",
+      "position": "50% 50%"
+    },
+    {
+      "id": "card387",
+      "name": "卷边旧地图",
+      "src": "assets/v2-tool-map.webp",
+      "alt": "旧镇地图",
+      "position": "50% 50%"
+    },
+    {
+      "id": "card390",
+      "name": "强光手电",
+      "src": "assets/v2-prop-sheet.webp",
+      "alt": "手电",
+      "position": "50% 50%"
+    }
+  ],
+  "scope": "Seven actual card-detail views; object meaning needs visual review, not inferred from successful image loading.",
+  "review": "Root visually reviewed all seven card details and the full sixteen-object atlas; observed objects correspond to mapped subjects. This does not certify all 600 cards as independent artwork."
+}

@@ -1,0 +1,42 @@
+{
+  "url": "http://127.0.0.1:8863/",
+  "status": "PASS",
+  "checkedAt": "2026-09-08T16:13:00.018627+00:00",
+  "checks": [
+    {
+      "viewport": "desktop",
+      "status": "PASS",
+      "meta": {
+        "cards": 600,
+        "encounters": 108,
+        "version": 5
+      },
+      "saveReload": true,
+      "invalidImportPreservedSave": true,
+      "V4FileInputImport": true,
+      "exportMatches": true,
+      "handAndMaterials": true,
+      "pageErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    },
+    {
+      "viewport": "mobile",
+      "status": "PASS",
+      "meta": {
+        "cards": 600,
+        "encounters": 108,
+        "version": 5
+      },
+      "saveReload": true,
+      "invalidImportPreservedSave": true,
+      "V4FileInputImport": true,
+      "exportMatches": true,
+      "handAndMaterials": true,
+      "pageErrors": [],
+      "requestFailures": [],
+      "httpErrors": []
+    }
+  ],
+  "scope": "Fresh desktop and mobile-size Chromium; real UI and file inputs. Not real-phone or human-player acceptance."
+}

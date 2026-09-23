@@ -1,0 +1,297 @@
+{
+  "checkedAt": "2026-09-22T08:38:36.716Z",
+  "source": "/Users/Zhuanz/Desktop/北段·归名录V2/游戏",
+  "hashes": {
+    "data.js": "5e9b30fd358cc8bb4ab687fbb6c52432bc79d1f480ad97719d0bda58659dbfb2",
+    "catalog.js": "3060b0ff6b2a5853c9a098847fc994c88ce17b1c51d885641e6a3a254152f4ad",
+    "catalog-case56.js": "0bc9b0511961c1092252bcf3fad91edbaff7ef97bdc83d683a91dae4ff6dfa81",
+    "catalog-rules.js": "07fefa78eb7f89d2257d0b2c40727cfc976a708c62b86745373696350e1a0e82",
+    "story-content.js": "af92957e6ed5c83321341650e7e450a949553f4b17adfd71f2567e002594b613",
+    "card-copy.js": "975443a8707c6d35ad62933c2df87485c312702f71c9f8a967751470e6193ef7",
+    "art-overrides.js": "b250d3529d173b113133b8370ff63399ec6c88d705a6893a7a5454689721ae29",
+    "art-map.js": "31fd5ba9f918a79b1ffc8a6ead1babeab24590cf897b58fd05d8acaf2352748b",
+    "story-revisions.js": "cfa53b6db33cbd98941536679522a093edb697beec9a678731d8046f5a470560",
+    "encounter-rules.js": "67bb1d72097006133b12c6cc67bd0793214f43d8248d4b9ce190a947450c548d",
+    "card-rebalance.js": "67c13bd50152c515add06baaf180f0c4cb72a76d418885a1eaed5dc41282f6b1",
+    "card-names.js": "6a98daaabf057f50cc96ae1581b2bfc18a984666843f378e1404a0f1f974e16c",
+    "card-copy-horror.js": "671890de4011742e6612484d6433bd3a578c7c6acabe3bf548beebfed39c82f2",
+    "card-copy-terms.js": "1138f968c31e070ee2c14cdea30d6e7d891f204ed93bc88c66206487fb74736e",
+    "mechanics.js": "5f51d65bf12af0d0e54a50572aaf60621f5795d3a6c10bd566c24a31a335e334",
+    "engine.js": "fbd2c0369f8e9bd0ad1d66ed7bc59efdf013a2918fce00ec15c0c301529fe448",
+    "horror-rules.js": "7b69f1c69e4dd49762e5a6d35fe2da062e848487c0c0dbba210635512cb3f27e",
+    "app.js": "d47d8df471a4c719870e313f0704c70e415dcbc2bbb7e8b69c4bfe678cc08f30",
+    "index.html": "fab58512c25d1e3cdc658fbec2af3be1a0b421adefa10170fefd426600525c49",
+    "physical-skin.css": "c677ac8dd091ba7360af4e475c23facfeacb6a3aa62287b43994a5847daced99"
+  },
+  "scope": "Current index order, four seed77 answer-aware rule playthroughs; earned map fixtures for UI checks. Not independent human or blind campaign.",
+  "results": [
+    {
+      "style": "balanced",
+      "seed": 77,
+      "completed": 108,
+      "view": "ending",
+      "turns": 474,
+      "played": 545,
+      "fails": [],
+      "cleared": true,
+      "cases": [
+        {
+          "chapter": 1,
+          "scenes": 18,
+          "turns": 82,
+          "plays": 120,
+          "triggers": 20,
+          "minHP": 24,
+          "uniqueCards": 28
+        },
+        {
+          "chapter": 2,
+          "scenes": 18,
+          "turns": 71,
+          "plays": 114,
+          "triggers": 10,
+          "minHP": 25,
+          "uniqueCards": 25
+        },
+        {
+          "chapter": 3,
+          "scenes": 18,
+          "turns": 71,
+          "plays": 86,
+          "triggers": 20,
+          "minHP": 26,
+          "uniqueCards": 19
+        },
+        {
+          "chapter": 4,
+          "scenes": 18,
+          "turns": 75,
+          "plays": 69,
+          "triggers": 23,
+          "minHP": 27,
+          "uniqueCards": 17
+        },
+        {
+          "chapter": 5,
+          "scenes": 18,
+          "turns": 85,
+          "plays": 79,
+          "triggers": 17,
+          "minHP": 26,
+          "uniqueCards": 18
+        },
+        {
+          "chapter": 6,
+          "scenes": 18,
+          "turns": 90,
+          "plays": 77,
+          "triggers": 14,
+          "minHP": 24,
+          "uniqueCards": 17
+        }
+      ],
+      "elapsedMs": 6277
+    },
+    {
+      "style": "guard",
+      "seed": 77,
+      "completed": 108,
+      "view": "ending",
+      "turns": 476,
+      "played": 515,
+      "fails": [],
+      "cleared": true,
+      "cases": [
+        {
+          "chapter": 1,
+          "scenes": 18,
+          "turns": 85,
+          "plays": 105,
+          "triggers": 44,
+          "minHP": 25,
+          "uniqueCards": 24
+        },
+        {
+          "chapter": 2,
+          "scenes": 18,
+          "turns": 75,
+          "plays": 107,
+          "triggers": 37,
+          "minHP": 27,
+          "uniqueCards": 25
+        },
+        {
+          "chapter": 3,
+          "scenes": 18,
+          "turns": 73,
+          "plays": 78,
+          "triggers": 33,
+          "minHP": 24,
+          "uniqueCards": 15
+        },
+        {
+          "chapter": 4,
+          "scenes": 18,
+          "turns": 74,
+          "plays": 71,
+          "triggers": 29,
+          "minHP": 27,
+          "uniqueCards": 17
+        },
+        {
+          "chapter": 5,
+          "scenes": 18,
+          "turns": 83,
+          "plays": 78,
+          "triggers": 24,
+          "minHP": 28,
+          "uniqueCards": 18
+        },
+        {
+          "chapter": 6,
+          "scenes": 18,
+          "turns": 86,
+          "plays": 76,
+          "triggers": 32,
+          "minHP": 25,
+          "uniqueCards": 18
+        }
+      ],
+      "elapsedMs": 6047
+    },
+    {
+      "style": "insight",
+      "seed": 77,
+      "completed": 108,
+      "view": "ending",
+      "turns": 433,
+      "played": 495,
+      "fails": [],
+      "cleared": true,
+      "cases": [
+        {
+          "chapter": 1,
+          "scenes": 18,
+          "turns": 81,
+          "plays": 110,
+          "triggers": 19,
+          "minHP": 25,
+          "uniqueCards": 25
+        },
+        {
+          "chapter": 2,
+          "scenes": 18,
+          "turns": 72,
+          "plays": 85,
+          "triggers": 16,
+          "minHP": 24,
+          "uniqueCards": 24
+        },
+        {
+          "chapter": 3,
+          "scenes": 18,
+          "turns": 62,
+          "plays": 78,
+          "triggers": 9,
+          "minHP": 26,
+          "uniqueCards": 16
+        },
+        {
+          "chapter": 4,
+          "scenes": 18,
+          "turns": 67,
+          "plays": 75,
+          "triggers": 9,
+          "minHP": 26,
+          "uniqueCards": 18
+        },
+        {
+          "chapter": 5,
+          "scenes": 18,
+          "turns": 71,
+          "plays": 74,
+          "triggers": 11,
+          "minHP": 18,
+          "uniqueCards": 17
+        },
+        {
+          "chapter": 6,
+          "scenes": 18,
+          "turns": 80,
+          "plays": 73,
+          "triggers": 8,
+          "minHP": 17,
+          "uniqueCards": 18
+        }
+      ],
+      "elapsedMs": 4960
+    },
+    {
+      "style": "tools",
+      "seed": 77,
+      "completed": 108,
+      "view": "ending",
+      "turns": 463,
+      "played": 567,
+      "fails": [],
+      "cleared": true,
+      "cases": [
+        {
+          "chapter": 1,
+          "scenes": 18,
+          "turns": 81,
+          "plays": 110,
+          "triggers": 27,
+          "minHP": 15,
+          "uniqueCards": 30
+        },
+        {
+          "chapter": 2,
+          "scenes": 18,
+          "turns": 77,
+          "plays": 110,
+          "triggers": 39,
+          "minHP": 21,
+          "uniqueCards": 24
+        },
+        {
+          "chapter": 3,
+          "scenes": 18,
+          "turns": 66,
+          "plays": 101,
+          "triggers": 25,
+          "minHP": 26,
+          "uniqueCards": 18
+        },
+        {
+          "chapter": 4,
+          "scenes": 18,
+          "turns": 70,
+          "plays": 79,
+          "triggers": 27,
+          "minHP": 25,
+          "uniqueCards": 16
+        },
+        {
+          "chapter": 5,
+          "scenes": 18,
+          "turns": 82,
+          "plays": 85,
+          "triggers": 37,
+          "minHP": 23,
+          "uniqueCards": 16
+        },
+        {
+          "chapter": 6,
+          "scenes": 18,
+          "turns": 87,
+          "plays": 82,
+          "triggers": 42,
+          "minHP": 21,
+          "uniqueCards": 18
+        }
+      ],
+      "elapsedMs": 6127
+    }
+  ]
+}

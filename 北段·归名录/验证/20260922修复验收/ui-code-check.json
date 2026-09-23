@@ -1,0 +1,449 @@
+{
+  "errors": [],
+  "checks": [
+    {
+      "name": "首页不直说隐藏第六案",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "手牌卡面查看不出牌 0",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "详情沿用准确手牌索引 0",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "插画返回保留准确索引 0",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "详情关闭返回比较页 0",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "手牌卡面查看不出牌 1",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "详情沿用准确手牌索引 1",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "插画返回保留准确索引 1",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "详情关闭返回比较页 1",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "手牌卡面查看不出牌 2",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "详情沿用准确手牌索引 2",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "插画返回保留准确索引 2",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "详情关闭返回比较页 2",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "手牌卡面查看不出牌 3",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "详情沿用准确手牌索引 3",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "插画返回保留准确索引 3",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "详情关闭返回比较页 3",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "手牌卡面查看不出牌 4",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "详情沿用准确手牌索引 4",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "插画返回保留准确索引 4",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "详情关闭返回比较页 4",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "手牌卡面查看不出牌 5",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "详情沿用准确手牌索引 5",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "插画返回保留准确索引 5",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "详情关闭返回比较页 5",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "比较页关闭解除modal",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "比较页大按钮只打出一次",
+      "ok": true,
+      "detail": {
+        "id": "new05",
+        "before": 0,
+        "after": 1
+      }
+    },
+    {
+      "name": "出牌关闭比较弹窗",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "目标牌先选目标不扣费",
+      "ok": true,
+      "detail": {
+        "scene": "c1s04",
+        "card": {
+          "id": "card027",
+          "i": 1,
+          "target": "enemy",
+          "why": ""
+        }
+      }
+    },
+    {
+      "name": "目标选择取消不改牌局",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "误判扣2且刷新牌桌心神",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "误判弹窗呈现费用",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "误判归零立即失败不留材料弹窗",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "失败存档重载仍可重试",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "失败重试回到原场准备",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "重试新牌局心神恢复",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "比较页操作尺寸 390",
+      "ok": true,
+      "detail": [
+        {
+          "height": 46,
+          "width": 190,
+          "disabled": false
+        },
+        {
+          "height": 46,
+          "width": 190,
+          "disabled": false
+        },
+        {
+          "height": 46,
+          "width": 190,
+          "disabled": false
+        },
+        {
+          "height": 46,
+          "width": 190,
+          "disabled": false
+        },
+        {
+          "height": 46,
+          "width": 190,
+          "disabled": false
+        },
+        {
+          "height": 46,
+          "width": 190,
+          "disabled": false
+        },
+        {
+          "height": 46,
+          "width": 190,
+          "disabled": false
+        },
+        {
+          "height": 46,
+          "width": 190,
+          "disabled": false
+        },
+        {
+          "height": 46,
+          "width": 190,
+          "disabled": false
+        },
+        {
+          "height": 46,
+          "width": 190,
+          "disabled": false
+        },
+        {
+          "height": 46,
+          "width": 190,
+          "disabled": false
+        },
+        {
+          "height": 46,
+          "width": 190,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "name": "比较页无横向溢出 390",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "比较页操作尺寸 760",
+      "ok": true,
+      "detail": [
+        {
+          "height": 46,
+          "width": 560,
+          "disabled": false
+        },
+        {
+          "height": 46,
+          "width": 560,
+          "disabled": false
+        },
+        {
+          "height": 46,
+          "width": 560,
+          "disabled": false
+        },
+        {
+          "height": 46,
+          "width": 560,
+          "disabled": false
+        },
+        {
+          "height": 46,
+          "width": 560,
+          "disabled": false
+        },
+        {
+          "height": 46,
+          "width": 560,
+          "disabled": false
+        },
+        {
+          "height": 46,
+          "width": 560,
+          "disabled": false
+        },
+        {
+          "height": 46,
+          "width": 560,
+          "disabled": false
+        },
+        {
+          "height": 46,
+          "width": 560,
+          "disabled": false
+        },
+        {
+          "height": 46,
+          "width": 560,
+          "disabled": false
+        },
+        {
+          "height": 46,
+          "width": 560,
+          "disabled": false
+        },
+        {
+          "height": 46,
+          "width": 560,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "name": "比较页无横向溢出 760",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "比较页操作尺寸 761",
+      "ok": true,
+      "detail": [
+        {
+          "height": 44,
+          "width": 182,
+          "disabled": false
+        },
+        {
+          "height": 44,
+          "width": 182,
+          "disabled": false
+        },
+        {
+          "height": 44,
+          "width": 182,
+          "disabled": false
+        },
+        {
+          "height": 44,
+          "width": 182,
+          "disabled": false
+        },
+        {
+          "height": 44,
+          "width": 182,
+          "disabled": false
+        },
+        {
+          "height": 44,
+          "width": 182,
+          "disabled": false
+        },
+        {
+          "height": 44,
+          "width": 182,
+          "disabled": false
+        },
+        {
+          "height": 44,
+          "width": 182,
+          "disabled": false
+        },
+        {
+          "height": 44,
+          "width": 182,
+          "disabled": false
+        },
+        {
+          "height": 44,
+          "width": 182,
+          "disabled": false
+        },
+        {
+          "height": 44,
+          "width": 182,
+          "disabled": false
+        },
+        {
+          "height": 44,
+          "width": 182,
+          "disabled": false
+        }
+      ]
+    },
+    {
+      "name": "比较页无横向溢出 761",
+      "ok": true,
+      "detail": null
+    }
+  ],
+  "startingHand": [
+    {
+      "id": "card027",
+      "i": 0,
+      "target": "enemy",
+      "why": ""
+    },
+    {
+      "id": "new05",
+      "i": 1,
+      "target": null,
+      "why": ""
+    },
+    {
+      "id": "new09",
+      "i": 2,
+      "target": null,
+      "why": ""
+    },
+    {
+      "id": "card011",
+      "i": 3,
+      "target": null,
+      "why": ""
+    },
+    {
+      "id": "card006",
+      "i": 4,
+      "target": "enemy",
+      "why": ""
+    },
+    {
+      "id": "card070",
+      "i": 5,
+      "target": null,
+      "why": ""
+    }
+  ],
+  "targetTestReached": true
+}

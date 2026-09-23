@@ -1,0 +1,987 @@
+{
+  "scope": "Engineering matrix: Chromium and desktop WebKit with touch viewports. Nonzero safe-area variables are synthetic geometry stress tests, not real iPhone sensor or keyboard measurements.",
+  "results": [
+    {
+      "engine": "chromium",
+      "profile": "se",
+      "viewport": [
+        375,
+        667
+      ],
+      "simulatedSafeInsets": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "headerButtons": [
+        {
+          "text": "线索册 0",
+          "rect": {
+            "x": 147.390625,
+            "y": 4.5,
+            "width": 62.203125,
+            "height": 44,
+            "top": 4.5,
+            "right": 209.59375,
+            "bottom": 48.5,
+            "left": 147.390625
+          }
+        },
+        {
+          "text": "牌组 30",
+          "rect": {
+            "x": 211.59375,
+            "y": 4.5,
+            "width": 57.40625,
+            "height": 44,
+            "top": 4.5,
+            "right": 269,
+            "bottom": 48.5,
+            "left": 211.59375
+          }
+        },
+        {
+          "text": "怎么玩",
+          "rect": {
+            "x": 271,
+            "y": 4.5,
+            "width": 48,
+            "height": 44,
+            "top": 4.5,
+            "right": 319,
+            "bottom": 48.5,
+            "left": 271
+          }
+        },
+        {
+          "text": "菜单",
+          "rect": {
+            "x": 321,
+            "y": 4.5,
+            "width": 44,
+            "height": 44,
+            "top": 4.5,
+            "right": 365,
+            "bottom": 48.5,
+            "left": 321
+          }
+        }
+      ],
+      "goalPanel": {
+        "arenaHidden": true,
+        "handHidden": true,
+        "coveredPreview": "回合末会发生\n\n已应对：本轮「反光打断」不会触发。对手施压和夜禁仍会结算。",
+        "feedbackVisible": true
+      },
+      "handScrollRestored": {
+        "before": 763,
+        "after": 763
+      },
+      "deckSearch": true,
+      "basicTargetSwitch": true,
+      "dialogActionsReachable": true,
+      "status": "PASS",
+      "errors": [],
+      "httpErrors": []
+    },
+    {
+      "engine": "chromium",
+      "profile": "notch",
+      "viewport": [
+        390,
+        844
+      ],
+      "simulatedSafeInsets": {
+        "top": 47,
+        "right": 0,
+        "bottom": 34,
+        "left": 0
+      },
+      "headerButtons": [
+        {
+          "text": "线索册 0",
+          "rect": {
+            "x": 162.390625,
+            "y": 51.5,
+            "width": 62.203125,
+            "height": 44,
+            "top": 51.5,
+            "right": 224.59375,
+            "bottom": 95.5,
+            "left": 162.390625
+          }
+        },
+        {
+          "text": "牌组 30",
+          "rect": {
+            "x": 226.59375,
+            "y": 51.5,
+            "width": 57.40625,
+            "height": 44,
+            "top": 51.5,
+            "right": 284,
+            "bottom": 95.5,
+            "left": 226.59375
+          }
+        },
+        {
+          "text": "怎么玩",
+          "rect": {
+            "x": 286,
+            "y": 51.5,
+            "width": 48,
+            "height": 44,
+            "top": 51.5,
+            "right": 334,
+            "bottom": 95.5,
+            "left": 286
+          }
+        },
+        {
+          "text": "菜单",
+          "rect": {
+            "x": 336,
+            "y": 51.5,
+            "width": 44,
+            "height": 44,
+            "top": 51.5,
+            "right": 380,
+            "bottom": 95.5,
+            "left": 336
+          }
+        }
+      ],
+      "goalPanel": {
+        "arenaHidden": true,
+        "handHidden": true,
+        "coveredPreview": "回合末会发生\n\n已应对：本轮「反光打断」不会触发。对手施压和夜禁仍会结算。",
+        "feedbackVisible": true
+      },
+      "handScrollRestored": {
+        "before": 738,
+        "after": 738
+      },
+      "deckSearch": true,
+      "basicTargetSwitch": true,
+      "dialogActionsReachable": true,
+      "status": "PASS",
+      "errors": [],
+      "httpErrors": []
+    },
+    {
+      "engine": "chromium",
+      "profile": "island",
+      "viewport": [
+        393,
+        852
+      ],
+      "simulatedSafeInsets": {
+        "top": 59,
+        "right": 0,
+        "bottom": 34,
+        "left": 0
+      },
+      "headerButtons": [
+        {
+          "text": "线索册 0",
+          "rect": {
+            "x": 165.390625,
+            "y": 63.5,
+            "width": 62.203125,
+            "height": 44,
+            "top": 63.5,
+            "right": 227.59375,
+            "bottom": 107.5,
+            "left": 165.390625
+          }
+        },
+        {
+          "text": "牌组 30",
+          "rect": {
+            "x": 229.59375,
+            "y": 63.5,
+            "width": 57.40625,
+            "height": 44,
+            "top": 63.5,
+            "right": 287,
+            "bottom": 107.5,
+            "left": 229.59375
+          }
+        },
+        {
+          "text": "怎么玩",
+          "rect": {
+            "x": 289,
+            "y": 63.5,
+            "width": 48,
+            "height": 44,
+            "top": 63.5,
+            "right": 337,
+            "bottom": 107.5,
+            "left": 289
+          }
+        },
+        {
+          "text": "菜单",
+          "rect": {
+            "x": 339,
+            "y": 63.5,
+            "width": 44,
+            "height": 44,
+            "top": 63.5,
+            "right": 383,
+            "bottom": 107.5,
+            "left": 339
+          }
+        }
+      ],
+      "goalPanel": {
+        "arenaHidden": true,
+        "handHidden": true,
+        "coveredPreview": "回合末会发生\n\n已应对：本轮「反光打断」不会触发。对手施压和夜禁仍会结算。",
+        "feedbackVisible": true
+      },
+      "handScrollRestored": {
+        "before": 669,
+        "after": 669
+      },
+      "deckSearch": true,
+      "basicTargetSwitch": true,
+      "dialogActionsReachable": true,
+      "status": "PASS",
+      "errors": [],
+      "httpErrors": []
+    },
+    {
+      "engine": "chromium",
+      "profile": "large",
+      "viewport": [
+        430,
+        932
+      ],
+      "simulatedSafeInsets": {
+        "top": 59,
+        "right": 0,
+        "bottom": 34,
+        "left": 0
+      },
+      "headerButtons": [
+        {
+          "text": "线索册 0",
+          "rect": {
+            "x": 202.390625,
+            "y": 63.5,
+            "width": 62.203125,
+            "height": 44,
+            "top": 63.5,
+            "right": 264.59375,
+            "bottom": 107.5,
+            "left": 202.390625
+          }
+        },
+        {
+          "text": "牌组 30",
+          "rect": {
+            "x": 266.59375,
+            "y": 63.5,
+            "width": 57.40625,
+            "height": 44,
+            "top": 63.5,
+            "right": 324,
+            "bottom": 107.5,
+            "left": 266.59375
+          }
+        },
+        {
+          "text": "怎么玩",
+          "rect": {
+            "x": 326,
+            "y": 63.5,
+            "width": 48,
+            "height": 44,
+            "top": 63.5,
+            "right": 374,
+            "bottom": 107.5,
+            "left": 326
+          }
+        },
+        {
+          "text": "菜单",
+          "rect": {
+            "x": 376,
+            "y": 63.5,
+            "width": 44,
+            "height": 44,
+            "top": 63.5,
+            "right": 420,
+            "bottom": 107.5,
+            "left": 376
+          }
+        }
+      ],
+      "goalPanel": {
+        "arenaHidden": true,
+        "handHidden": true,
+        "coveredPreview": "回合末会发生\n\n已应对：本轮「反光打断」不会触发。对手施压和夜禁仍会结算。",
+        "feedbackVisible": true
+      },
+      "handScrollRestored": {
+        "before": 677,
+        "after": 677
+      },
+      "deckSearch": true,
+      "basicTargetSwitch": true,
+      "dialogActionsReachable": true,
+      "status": "PASS",
+      "errors": [],
+      "httpErrors": []
+    },
+    {
+      "engine": "chromium",
+      "profile": "small",
+      "viewport": [
+        320,
+        568
+      ],
+      "simulatedSafeInsets": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "headerButtons": [
+        {
+          "text": "线索册 0",
+          "rect": {
+            "x": 92.390625,
+            "y": 4.5,
+            "width": 62.203125,
+            "height": 44,
+            "top": 4.5,
+            "right": 154.59375,
+            "bottom": 48.5,
+            "left": 92.390625
+          }
+        },
+        {
+          "text": "牌组 30",
+          "rect": {
+            "x": 156.59375,
+            "y": 4.5,
+            "width": 57.40625,
+            "height": 44,
+            "top": 4.5,
+            "right": 214,
+            "bottom": 48.5,
+            "left": 156.59375
+          }
+        },
+        {
+          "text": "怎么玩",
+          "rect": {
+            "x": 216,
+            "y": 4.5,
+            "width": 48,
+            "height": 44,
+            "top": 4.5,
+            "right": 264,
+            "bottom": 48.5,
+            "left": 216
+          }
+        },
+        {
+          "text": "菜单",
+          "rect": {
+            "x": 266,
+            "y": 4.5,
+            "width": 44,
+            "height": 44,
+            "top": 4.5,
+            "right": 310,
+            "bottom": 48.5,
+            "left": 266
+          }
+        }
+      ],
+      "goalPanel": {
+        "arenaHidden": true,
+        "handHidden": true,
+        "coveredPreview": "回合末会发生\n\n已应对：本轮「反光打断」不会触发。对手施压和夜禁仍会结算。",
+        "feedbackVisible": true
+      },
+      "handScrollRestored": {
+        "before": 926,
+        "after": 926
+      },
+      "deckSearch": true,
+      "basicTargetSwitch": true,
+      "dialogActionsReachable": true,
+      "status": "PASS",
+      "errors": [],
+      "httpErrors": []
+    },
+    {
+      "engine": "chromium",
+      "profile": "landscape",
+      "viewport": [
+        852,
+        393
+      ],
+      "simulatedSafeInsets": {
+        "top": 0,
+        "right": 59,
+        "bottom": 21,
+        "left": 59
+      },
+      "headerButtons": [
+        {
+          "text": "线索册 0",
+          "rect": {
+            "x": 565.390625,
+            "y": 4.5,
+            "width": 62.203125,
+            "height": 44,
+            "top": 4.5,
+            "right": 627.59375,
+            "bottom": 48.5,
+            "left": 565.390625
+          }
+        },
+        {
+          "text": "牌组 30",
+          "rect": {
+            "x": 629.59375,
+            "y": 4.5,
+            "width": 57.40625,
+            "height": 44,
+            "top": 4.5,
+            "right": 687,
+            "bottom": 48.5,
+            "left": 629.59375
+          }
+        },
+        {
+          "text": "怎么玩",
+          "rect": {
+            "x": 689,
+            "y": 4.5,
+            "width": 48,
+            "height": 44,
+            "top": 4.5,
+            "right": 737,
+            "bottom": 48.5,
+            "left": 689
+          }
+        },
+        {
+          "text": "菜单",
+          "rect": {
+            "x": 739,
+            "y": 4.5,
+            "width": 44,
+            "height": 44,
+            "top": 4.5,
+            "right": 783,
+            "bottom": 48.5,
+            "left": 739
+          }
+        }
+      ],
+      "status": "FAIL",
+      "failure": "('basicActionObscured', {'x': 429.5, 'y': 410.828125, 'width': 350.5, 'height': 53}, {'x': 0, 'y': 294, 'width': 852, 'height': 99})",
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "profile": "se",
+      "viewport": [
+        375,
+        667
+      ],
+      "simulatedSafeInsets": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "headerButtons": [
+        {
+          "text": "线索册 0",
+          "rect": {
+            "x": 147.390625,
+            "y": 4.5,
+            "width": 62.203125,
+            "height": 44,
+            "top": 4.5,
+            "right": 209.59375,
+            "bottom": 48.5,
+            "left": 147.390625
+          }
+        },
+        {
+          "text": "牌组 30",
+          "rect": {
+            "x": 211.59375,
+            "y": 4.5,
+            "width": 57.40625,
+            "height": 44,
+            "top": 4.5,
+            "right": 269,
+            "bottom": 48.5,
+            "left": 211.59375
+          }
+        },
+        {
+          "text": "怎么玩",
+          "rect": {
+            "x": 271,
+            "y": 4.5,
+            "width": 48,
+            "height": 44,
+            "top": 4.5,
+            "right": 319,
+            "bottom": 48.5,
+            "left": 271
+          }
+        },
+        {
+          "text": "菜单",
+          "rect": {
+            "x": 321,
+            "y": 4.5,
+            "width": 44,
+            "height": 44,
+            "top": 4.5,
+            "right": 365,
+            "bottom": 48.5,
+            "left": 321
+          }
+        }
+      ],
+      "goalPanel": {
+        "arenaHidden": true,
+        "handHidden": true,
+        "coveredPreview": "回合末会发生\n\n已应对：本轮「反光打断」不会触发。对手施压和夜禁仍会结算。",
+        "feedbackVisible": true
+      },
+      "handScrollRestored": {
+        "before": 762,
+        "after": 762
+      },
+      "deckSearch": true,
+      "basicTargetSwitch": true,
+      "dialogActionsReachable": true,
+      "status": "PASS",
+      "errors": [],
+      "httpErrors": []
+    },
+    {
+      "engine": "webkit",
+      "profile": "notch",
+      "viewport": [
+        390,
+        844
+      ],
+      "simulatedSafeInsets": {
+        "top": 47,
+        "right": 0,
+        "bottom": 34,
+        "left": 0
+      },
+      "headerButtons": [
+        {
+          "text": "线索册 0",
+          "rect": {
+            "x": 162.390625,
+            "y": 51.5,
+            "width": 62.203125,
+            "height": 44,
+            "top": 51.5,
+            "right": 224.59375,
+            "bottom": 95.5,
+            "left": 162.390625
+          }
+        },
+        {
+          "text": "牌组 30",
+          "rect": {
+            "x": 226.59375,
+            "y": 51.5,
+            "width": 57.40625,
+            "height": 44,
+            "top": 51.5,
+            "right": 284,
+            "bottom": 95.5,
+            "left": 226.59375
+          }
+        },
+        {
+          "text": "怎么玩",
+          "rect": {
+            "x": 286,
+            "y": 51.5,
+            "width": 48,
+            "height": 44,
+            "top": 51.5,
+            "right": 334,
+            "bottom": 95.5,
+            "left": 286
+          }
+        },
+        {
+          "text": "菜单",
+          "rect": {
+            "x": 336,
+            "y": 51.5,
+            "width": 44,
+            "height": 44,
+            "top": 51.5,
+            "right": 380,
+            "bottom": 95.5,
+            "left": 336
+          }
+        }
+      ],
+      "goalPanel": {
+        "arenaHidden": true,
+        "handHidden": true,
+        "coveredPreview": "回合末会发生\n\n已应对：本轮「反光打断」不会触发。对手施压和夜禁仍会结算。",
+        "feedbackVisible": true
+      },
+      "handScrollRestored": {
+        "before": 667,
+        "after": 667
+      },
+      "deckSearch": true,
+      "basicTargetSwitch": true,
+      "dialogActionsReachable": true,
+      "status": "PASS",
+      "errors": [],
+      "httpErrors": []
+    },
+    {
+      "engine": "webkit",
+      "profile": "island",
+      "viewport": [
+        393,
+        852
+      ],
+      "simulatedSafeInsets": {
+        "top": 59,
+        "right": 0,
+        "bottom": 34,
+        "left": 0
+      },
+      "headerButtons": [
+        {
+          "text": "线索册 0",
+          "rect": {
+            "x": 165.390625,
+            "y": 63.5,
+            "width": 62.203125,
+            "height": 44,
+            "top": 63.5,
+            "right": 227.59375,
+            "bottom": 107.5,
+            "left": 165.390625
+          }
+        },
+        {
+          "text": "牌组 30",
+          "rect": {
+            "x": 229.59375,
+            "y": 63.5,
+            "width": 57.40625,
+            "height": 44,
+            "top": 63.5,
+            "right": 287,
+            "bottom": 107.5,
+            "left": 229.59375
+          }
+        },
+        {
+          "text": "怎么玩",
+          "rect": {
+            "x": 289,
+            "y": 63.5,
+            "width": 48,
+            "height": 44,
+            "top": 63.5,
+            "right": 337,
+            "bottom": 107.5,
+            "left": 289
+          }
+        },
+        {
+          "text": "菜单",
+          "rect": {
+            "x": 339,
+            "y": 63.5,
+            "width": 44,
+            "height": 44,
+            "top": 63.5,
+            "right": 383,
+            "bottom": 107.5,
+            "left": 339
+          }
+        }
+      ],
+      "goalPanel": {
+        "arenaHidden": true,
+        "handHidden": true,
+        "coveredPreview": "回合末会发生\n\n已应对：本轮「反光打断」不会触发。对手施压和夜禁仍会结算。",
+        "feedbackVisible": true
+      },
+      "handScrollRestored": {
+        "before": 693,
+        "after": 693
+      },
+      "deckSearch": true,
+      "basicTargetSwitch": true,
+      "dialogActionsReachable": true,
+      "status": "PASS",
+      "errors": [],
+      "httpErrors": []
+    },
+    {
+      "engine": "webkit",
+      "profile": "large",
+      "viewport": [
+        430,
+        932
+      ],
+      "simulatedSafeInsets": {
+        "top": 59,
+        "right": 0,
+        "bottom": 34,
+        "left": 0
+      },
+      "headerButtons": [
+        {
+          "text": "线索册 0",
+          "rect": {
+            "x": 202.390625,
+            "y": 63.5,
+            "width": 62.203125,
+            "height": 44,
+            "top": 63.5,
+            "right": 264.59375,
+            "bottom": 107.5,
+            "left": 202.390625
+          }
+        },
+        {
+          "text": "牌组 30",
+          "rect": {
+            "x": 266.59375,
+            "y": 63.5,
+            "width": 57.40625,
+            "height": 44,
+            "top": 63.5,
+            "right": 324,
+            "bottom": 107.5,
+            "left": 266.59375
+          }
+        },
+        {
+          "text": "怎么玩",
+          "rect": {
+            "x": 326,
+            "y": 63.5,
+            "width": 48,
+            "height": 44,
+            "top": 63.5,
+            "right": 374,
+            "bottom": 107.5,
+            "left": 326
+          }
+        },
+        {
+          "text": "菜单",
+          "rect": {
+            "x": 376,
+            "y": 63.5,
+            "width": 44,
+            "height": 44,
+            "top": 63.5,
+            "right": 420,
+            "bottom": 107.5,
+            "left": 376
+          }
+        }
+      ],
+      "goalPanel": {
+        "arenaHidden": true,
+        "handHidden": true,
+        "coveredPreview": "回合末会发生\n\n已应对：本轮「反光打断」不会触发。对手施压和夜禁仍会结算。",
+        "feedbackVisible": true
+      },
+      "handScrollRestored": {
+        "before": 653,
+        "after": 653
+      },
+      "deckSearch": true,
+      "basicTargetSwitch": true,
+      "dialogActionsReachable": true,
+      "status": "PASS",
+      "errors": [],
+      "httpErrors": []
+    },
+    {
+      "engine": "webkit",
+      "profile": "small",
+      "viewport": [
+        320,
+        568
+      ],
+      "simulatedSafeInsets": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "headerButtons": [
+        {
+          "text": "线索册 0",
+          "rect": {
+            "x": 92.390625,
+            "y": 4.5,
+            "width": 62.203125,
+            "height": 44,
+            "top": 4.5,
+            "right": 154.59375,
+            "bottom": 48.5,
+            "left": 92.390625
+          }
+        },
+        {
+          "text": "牌组 30",
+          "rect": {
+            "x": 156.59375,
+            "y": 4.5,
+            "width": 57.40625,
+            "height": 44,
+            "top": 4.5,
+            "right": 214,
+            "bottom": 48.5,
+            "left": 156.59375
+          }
+        },
+        {
+          "text": "怎么玩",
+          "rect": {
+            "x": 216,
+            "y": 4.5,
+            "width": 48,
+            "height": 44,
+            "top": 4.5,
+            "right": 264,
+            "bottom": 48.5,
+            "left": 216
+          }
+        },
+        {
+          "text": "菜单",
+          "rect": {
+            "x": 266,
+            "y": 4.5,
+            "width": 44,
+            "height": 44,
+            "top": 4.5,
+            "right": 310,
+            "bottom": 48.5,
+            "left": 266
+          }
+        }
+      ],
+      "goalPanel": {
+        "arenaHidden": true,
+        "handHidden": true,
+        "coveredPreview": "回合末会发生\n\n已应对：本轮「反光打断」不会触发。对手施压和夜禁仍会结算。",
+        "feedbackVisible": true
+      },
+      "handScrollRestored": {
+        "before": 950,
+        "after": 950
+      },
+      "deckSearch": true,
+      "basicTargetSwitch": true,
+      "dialogActionsReachable": true,
+      "status": "PASS",
+      "errors": [],
+      "httpErrors": []
+    },
+    {
+      "engine": "webkit",
+      "profile": "landscape",
+      "viewport": [
+        852,
+        393
+      ],
+      "simulatedSafeInsets": {
+        "top": 0,
+        "right": 59,
+        "bottom": 21,
+        "left": 59
+      },
+      "headerButtons": [
+        {
+          "text": "线索册 0",
+          "rect": {
+            "x": 565.390625,
+            "y": 4.5,
+            "width": 62.203125,
+            "height": 44,
+            "top": 4.5,
+            "right": 627.59375,
+            "bottom": 48.5,
+            "left": 565.390625
+          }
+        },
+        {
+          "text": "牌组 30",
+          "rect": {
+            "x": 629.59375,
+            "y": 4.5,
+            "width": 57.40625,
+            "height": 44,
+            "top": 4.5,
+            "right": 687,
+            "bottom": 48.5,
+            "left": 629.59375
+          }
+        },
+        {
+          "text": "怎么玩",
+          "rect": {
+            "x": 689,
+            "y": 4.5,
+            "width": 48,
+            "height": 44,
+            "top": 4.5,
+            "right": 737,
+            "bottom": 48.5,
+            "left": 689
+          }
+        },
+        {
+          "text": "菜单",
+          "rect": {
+            "x": 739,
+            "y": 4.5,
+            "width": 44,
+            "height": 44,
+            "top": 4.5,
+            "right": 783,
+            "bottom": 48.5,
+            "left": 739
+          }
+        }
+      ],
+      "status": "FAIL",
+      "failure": "('basicActionObscured', {'x': 429.5, 'y': 410.828125, 'width': 350.5, 'height': 53}, {'x': 0, 'y': 294, 'width': 852, 'height': 99})",
+      "errors": []
+    }
+  ]
+}
