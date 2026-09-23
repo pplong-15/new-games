@@ -59,3 +59,4 @@ body[data-view="battle"]{background:#0c1511}body[data-view="battle"] .top{height
 .card-illustration>.art-sprite{width:114px;height:76px;max-height:100%;margin:auto}
 .full-art>.art-sprite{width:min(70vw,760px);height:auto;aspect-ratio:3/2;max-height:65vh;margin:auto}
 .play-fx>.art-sprite{width:220px;height:147px;max-width:60vw}
+.passage-line .passage-beat{display:inline-block;margin:0 0 14px;padding:5px 10px;border:1px solid #bb99575c;background:#1b261daa;color:#e1c997;font-size:12px;letter-spacing:.08em}

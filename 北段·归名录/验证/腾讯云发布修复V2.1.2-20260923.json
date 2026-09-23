@@ -1,0 +1,31 @@
+{
+  "version": "V2.1.2",
+  "verifiedAt": "2026-09-23T02:58:28+00:00",
+  "url": "http://101.43.115.235/playtest/beiduan/",
+  "releasePath": "/var/www/beiduan-playtest/releases/20260923T025709Z-v2_1_2",
+  "previousReleasePath": "/var/www/beiduan-playtest/releases/20260923T004836Z-v2",
+  "deployment": "Atomic current symlink switch; previous release preserved for rollback.",
+  "scope": "Unlisted HTTP playtest; existing noindex,nofollow,noarchive preserved.",
+  "changes": [
+    "Judgment modal explains that options are unavailable until the scene preparation is complete; disabled options show a not-allowed cursor.",
+    "Phase and closing passages explicitly identify the transition, and each passage modal has a distinct accessible name.",
+    "End-judgment action copy clarifies that it continues turn resolution."
+  ],
+  "checks": {
+    "nodeSyntax": "PASS",
+    "gitDiffCheck": "PASS",
+    "localBrowserOpeningPassage": "PASS",
+    "liveIndexHttp": "200",
+    "liveResourceHttp": "200",
+    "liveResourceHashesMatchLocal": true,
+    "title": "V2.1.2",
+    "debugHorseEmoji": false,
+    "fullHumanPlaythroughRepeated": false
+  },
+  "sha256": {
+    "index.html": "73c388e765335052855e7d026e7e3358faf0be6358bb722852770eab6bc7523b",
+    "app.js": "f14661ceabf7be904e2da0d4dc342c385748600eb639ee85969e66282064eec3",
+    "revision.css": "05e85428640668bd1077f5542cfdd515789751f047da6b4b8e0fd2bfe0fc5273",
+    "v2.css": "b030364f5bbc4502e72ce5c9a8a917a8da0248ea6729508402e80335a6f42e8e"
+  }
+}
